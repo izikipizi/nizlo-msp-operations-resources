@@ -10,6 +10,7 @@ This external library is maintained by the Nizlo team. Nizlo is a Windows-first 
 - [RMM change-window and rollback-plan template](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-change-window-rollback-plan.html): Field definitions and a public 26-control CSV for reversible RMM changes.
 - [Citation and preservation](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html): Authorship, version, repository, CFF metadata, and Software Heritage identifiers.
 - [Machine-readable resource index](https://izikipizi.github.io/nizlo-msp-operations-resources/resource-index.json): Structured catalogue with titles, categories, audiences, access status, and canonical URLs.
+- [Data Package descriptor](https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json): Standards-based metadata, schemas, byte counts, and SHA-256 hashes for both CSV templates.
 - [Atom feed](https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml): Feed-reader and aggregator discovery for the resource collection.
 
 ## Reusable templates

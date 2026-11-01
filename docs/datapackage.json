@@ -1,0 +1,90 @@
+{
+  "$schema": "https://datapackage.org/profiles/2.0/datapackage.json",
+  "profile": "data-package",
+  "name": "nizlo-rmm-operations-templates",
+  "id": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
+  "title": "Nizlo RMM Operations Templates",
+  "description": "Two public, vendor-neutral CSV templates for RMM deployment readiness and controlled change execution.",
+  "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/",
+  "version": "1.11.0",
+  "created": "2026-11-01",
+  "contributors": [
+    {
+      "title": "Kip Ecklund",
+      "role": "author"
+    },
+    {
+      "title": "Nizlo",
+      "path": "https://nizlo.com/",
+      "role": "publisher"
+    }
+  ],
+  "keywords": [
+    "RMM",
+    "managed service provider",
+    "deployment readiness",
+    "change management",
+    "rollback plan",
+    "endpoint management"
+  ],
+  "resources": [
+    {
+      "profile": "tabular-data-resource",
+      "name": "rmm-deployment-readiness",
+      "title": "RMM deployment-readiness checklist template",
+      "description": "Thirty-three controls for preparation, pilot, wave rollout, verification, and closeout.",
+      "path": "templates/rmm-deployment-readiness.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 3137,
+      "hash": "sha256:e4084d765ae0ddf399e707f81aa2baa1f774be76f6accf5e9653a5ae52011e7d",
+      "schema": {
+        "fields": [
+          { "name": "phase", "type": "string" },
+          { "name": "control_id", "type": "string" },
+          { "name": "control", "type": "string" },
+          { "name": "owner", "type": "string" },
+          { "name": "status", "type": "string" },
+          { "name": "evidence", "type": "string" },
+          { "name": "exception_owner", "type": "string" },
+          { "name": "due_date", "type": "string" },
+          { "name": "rollback_trigger", "type": "string" },
+          { "name": "notes", "type": "string" }
+        ],
+        "primaryKey": "control_id"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "rmm-change-window-rollback-plan",
+      "title": "RMM change-window and rollback-plan template",
+      "description": "Twenty-six controls for approval, pilot, rollout, validation, rollback, communications, and closure.",
+      "path": "templates/rmm-change-window-rollback-plan.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 6525,
+      "hash": "sha256:2da759e66d4c4dfcbde5f531e1c246c699be28c6fed2a662007ccd6a7960e840",
+      "schema": {
+        "fields": [
+          { "name": "phase", "type": "string" },
+          { "name": "control_id", "type": "string" },
+          { "name": "activity", "type": "string" },
+          { "name": "owner", "type": "string" },
+          { "name": "planned_start_utc", "type": "string" },
+          { "name": "planned_end_utc", "type": "string" },
+          { "name": "success_criteria", "type": "string" },
+          { "name": "evidence", "type": "string" },
+          { "name": "rollback_trigger", "type": "string" },
+          { "name": "rollback_action", "type": "string" },
+          { "name": "decision_owner", "type": "string" },
+          { "name": "communication_audience", "type": "string" },
+          { "name": "status", "type": "string" },
+          { "name": "notes", "type": "string" }
+        ],
+        "primaryKey": "control_id"
+      }
+    }
+  ]
+}

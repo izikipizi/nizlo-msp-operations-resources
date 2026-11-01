@@ -1,6 +1,7 @@
 {
   "schema_version": "1.0",
   "publisher": { "name": "Nizlo", "url": "https://nizlo.com/", "resources_url": "https://nizlo.com/tools" },
+  "data_package": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
   "updated": "2026-11-01",
   "resources": [
     { "id": "rmm-evaluation-checklist", "title": "RMM evaluation checklist", "category": "selection", "url": "https://nizlo.com/guides/rmm-evaluation-checklist", "audience": ["MSP", "IT team"], "access": "public", "account_required": false },
