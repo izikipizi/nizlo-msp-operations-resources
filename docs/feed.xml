@@ -12,6 +12,15 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>RMM migration checklist workbook</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-workbook-template.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-workbook-template.html" />
+    <updated>2026-11-01T00:00:00Z</updated>
+    <category term="migration" />
+    <category term="change-management" />
+    <summary>Use 30 vendor-neutral controls to plan RMM discovery, pilot, coexistence, cutover, validation, source retirement, and closeout.</summary>
+  </entry>
+  <entry>
     <title>RMM incident response runbook template</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-incident-response-runbook-template.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-incident-response-runbook-template.html" />

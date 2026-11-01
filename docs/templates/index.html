@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Free RMM Operations &amp; Incident Response Templates | Nizlo</title>
-    <meta name="description" content="Download three free, vendor-neutral CSV templates for RMM deployment readiness, change control, rollback, and incident response." />
+    <title>Free RMM Operations, Migration &amp; Incident Response Templates | Nizlo</title>
+    <meta name="description" content="Download four free, vendor-neutral CSV templates for RMM deployment, migration, change control, rollback, and incident response." />
     <meta name="robots" content="index,follow,max-image-preview:large" />
     <link rel="canonical" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/" />
     <link rel="alternate" type="application/atom+xml" title="Nizlo MSP Operations Resources" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Free RMM Operations &amp; Incident Response Templates" />
-    <meta property="og:description" content="Three public, ungated CSV templates for controlled RMM operations and security incidents." />
+    <meta property="og:description" content="Four public, ungated CSV templates for controlled RMM operations, migration, and security incidents." />
     <meta property="og:url" content="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/" />
     <meta property="og:image" content="https://nizlo.com/opengraph-image" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -20,13 +20,13 @@
         "@context": "https://schema.org",
         "@type": "CollectionPage",
         "name": "Free RMM operations and incident response templates",
-        "description": "Three free, vendor-neutral CSV templates for RMM deployment readiness, controlled change execution, and incident response.",
+        "description": "Four free, vendor-neutral CSV templates for RMM deployment readiness, platform migration, controlled change execution, and incident response.",
         "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/",
         "isPartOf": { "@type": "WebSite", "name": "Nizlo MSP Operations Resources", "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/" },
         "publisher": { "@type": "Organization", "name": "Nizlo", "url": "https://nizlo.com/" },
         "mainEntity": {
           "@type": "ItemList",
-          "numberOfItems": 3,
+          "numberOfItems": 4,
           "itemListElement": [
             {
               "@type": "ListItem",
@@ -62,6 +62,18 @@
                 "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-incident-response-runbook-template.html",
                 "isAccessibleForFree": true,
                 "distribution": { "@type": "DataDownload", "contentUrl": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-incident-response-runbook.csv", "encodingFormat": "text/csv" }
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "item": {
+                "@type": "Dataset",
+                "name": "RMM migration checklist workbook",
+                "description": "A 30-control CSV for discovery, pilot, coexistence, cutover, validation, source retirement, and closeout.",
+                "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-workbook-template.html",
+                "isAccessibleForFree": true,
+                "distribution": { "@type": "DataDownload", "contentUrl": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-migration-workbook.csv", "encodingFormat": "text/csv" }
               }
             }
           ]
@@ -102,7 +114,7 @@
     <main class="wrap">
       <div class="eyebrow">Public · Ungated · Vendor-neutral</div>
       <h1>RMM operations and incident response templates.</h1>
-      <p class="lede">Turn endpoint-management changes and security incidents into owned, reviewable records. All three templates are plain CSV files—no account, email address, or product installation required.</p>
+      <p class="lede">Turn endpoint-management changes, migrations, and security incidents into owned, reviewable records. All four templates are plain CSV files—no account, email address, or product installation required.</p>
       <section class="grid" aria-label="RMM templates">
         <article>
           <div class="tag">33 controls · CSV</div>
@@ -125,10 +137,17 @@
           <ul><li>Set success and stop criteria</li><li>Name the rollback decision owner</li><li>Close the record with evidence</li></ul>
           <div class="actions"><a class="button primary" href="rmm-change-window-rollback-plan.csv" download>Download CSV</a><a class="button" href="../rmm-change-window-rollback-plan.html">Open template guide</a></div>
         </article>
+        <article>
+          <div class="tag">30 controls · CSV</div>
+          <h2>RMM migration workbook</h2>
+          <p>Reconcile source inventory, target mappings, pilot evidence, coexistence, cutover waves, rollback, retirement, and final acceptance.</p>
+          <ul><li>Prevent duplicate automation during coexistence</li><li>Track every endpoint and migration exception</li><li>Retire source access with evidence</li></ul>
+          <div class="actions"><a class="button primary" href="rmm-migration-workbook.csv" download>Download CSV</a><a class="button" href="../rmm-migration-workbook-template.html">Open workbook guide</a></div>
+        </article>
       </section>
-      <aside class="note"><strong>Machine-readable package:</strong> Data tools can consume all three CSV resources, field schemas, byte counts, and SHA-256 hashes through the standards-based <a href="../datapackage.json">Data Package descriptor</a>.</aside>
+      <aside class="note"><strong>Machine-readable package:</strong> Data tools can consume all four CSV resources, field schemas, byte counts, and SHA-256 hashes through the standards-based <a href="../datapackage.json">Data Package descriptor</a>.</aside>
       <aside class="note"><strong>Relationship disclosure:</strong> Nizlo, a Windows-first RMM and IT-management platform, maintains these resources. The templates are designed for use with any RMM and do not claim that any vendor passes their controls.</aside>
     </main>
-    <footer class="wrap"><span>Maintained by Nizlo · Updated November 1, 2026</span><span><a href="../datapackage.json">Data Package</a> · <a href="../feed.xml">Atom feed</a> · <a href="../citation.html">Citation &amp; preservation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources/tree/v1.13.0">Version 1.13.0</a></span></footer>
+    <footer class="wrap"><span>Maintained by Nizlo · Updated November 1, 2026</span><span><a href="../datapackage.json">Data Package</a> · <a href="../feed.xml">Atom feed</a> · <a href="../citation.html">Citation &amp; preservation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources/tree/v1.14.0">Version 1.14.0</a></span></footer>
   </body>
 </html>

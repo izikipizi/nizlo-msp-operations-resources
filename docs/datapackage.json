@@ -4,9 +4,9 @@
   "name": "nizlo-rmm-operations-templates",
   "id": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
   "title": "Nizlo RMM Operations Templates",
-  "description": "Three public, vendor-neutral CSV templates for RMM deployment readiness, controlled change execution, and incident response.",
+  "description": "Four public, vendor-neutral CSV templates for RMM deployment readiness, controlled change execution, incident response, and platform migration.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/",
-  "version": "1.13.0",
+  "version": "1.14.0",
   "created": "2026-11-01",
   "contributors": [
     {
@@ -27,7 +27,8 @@
     "rollback plan",
     "endpoint management",
     "incident response",
-    "RMM security"
+    "RMM security",
+    "RMM migration"
   ],
   "resources": [
     {
@@ -111,6 +112,33 @@
           { "name": "decision", "type": "string" },
           { "name": "communication_audience", "type": "string" },
           { "name": "next_review_utc", "type": "string" },
+          { "name": "notes", "type": "string" }
+        ],
+        "primaryKey": "control_id"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "rmm-migration-workbook",
+      "title": "RMM migration checklist workbook",
+      "description": "Thirty controls for discovery, target mapping, pilot, coexistence, cutover, validation, source retirement, and closeout.",
+      "path": "templates/rmm-migration-workbook.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 4861,
+      "hash": "sha256:9402d4e6027ca0ba837dce4d4316833088d69e28314f20ebdd01803fd315ebe0",
+      "schema": {
+        "fields": [
+          { "name": "phase", "type": "string" },
+          { "name": "control_id", "type": "string" },
+          { "name": "activity", "type": "string" },
+          { "name": "owner", "type": "string" },
+          { "name": "status", "type": "string" },
+          { "name": "evidence", "type": "string" },
+          { "name": "dependency", "type": "string" },
+          { "name": "rollback_plan", "type": "string" },
+          { "name": "decision_due_utc", "type": "string" },
           { "name": "notes", "type": "string" }
         ],
         "primaryKey": "control_id"
