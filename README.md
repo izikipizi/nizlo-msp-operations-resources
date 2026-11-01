@@ -10,6 +10,7 @@ Every resource below is public, ungated, and written to be usable independently 
 | --- | --- |
 | [RMM evaluation checklist](https://nizlo.com/guides/rmm-evaluation-checklist) | Comparing products through evidence rather than feature-list claims |
 | [RMM vendor due-diligence checklist](https://nizlo.com/guides/rmm-vendor-due-diligence) | Comparing security, support, pilot evidence, pricing, commercial terms, and exit readiness |
+| [RMM security checklist](https://nizlo.com/guides/rmm-security-checklist) | Reviewing device identity, tenant isolation, MFA, permissions, signed actions, audit logs, recovery, and removal |
 | [RMM migration checklist](https://nizlo.com/guides/rmm-migration-checklist) | Planning discovery, pilot, coexistence, cutover, rollback, and cleanup |
 
 ## Client lifecycle
@@ -26,6 +27,7 @@ Every resource below is public, ungated, and written to be usable independently 
 | [RMM automation safety checklist](https://nizlo.com/guides/rmm-automation-safety-checklist) | Reviewing targeting, privilege, rollout, rollback, evidence, and failure handling |
 | [RMM alert-tuning checklist](https://nizlo.com/guides/rmm-alert-tuning-checklist) | Turning noisy endpoint signals into owned, actionable service work |
 | [Endpoint exception-management guide](https://nizlo.com/guides/endpoint-exception-management) | Turning failed patches, offline devices, pending reboots, and unknown states into owned work |
+| [Endpoint inventory and CMDB readiness checklist](https://nizlo.com/guides/endpoint-inventory-cmdb-readiness) | Establishing durable identities, source provenance, lifecycle states, and exception handling before a CMDB project |
 | [Windows patch-management checklist](https://nizlo.com/guides/windows-patch-management-checklist) | Defining rings, maintenance windows, approvals, exceptions, rollback, and reporting |
 
 ## Machine-readable index

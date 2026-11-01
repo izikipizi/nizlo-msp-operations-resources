@@ -26,6 +26,15 @@
       "account_required": false
     },
     {
+      "id": "rmm-security-checklist",
+      "title": "RMM security checklist",
+      "category": "security",
+      "url": "https://nizlo.com/guides/rmm-security-checklist",
+      "audience": ["MSP", "IT team"],
+      "access": "public",
+      "account_required": false
+    },
+    {
       "id": "rmm-migration-checklist",
       "title": "RMM migration checklist",
       "category": "migration",
@@ -75,6 +84,15 @@
       "title": "Endpoint exception-management guide",
       "category": "operations",
       "url": "https://nizlo.com/guides/endpoint-exception-management",
+      "audience": ["MSP", "IT team"],
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "endpoint-inventory-cmdb-readiness",
+      "title": "Endpoint inventory and CMDB readiness checklist",
+      "category": "operations",
+      "url": "https://nizlo.com/guides/endpoint-inventory-cmdb-readiness",
       "audience": ["MSP", "IT team"],
       "access": "public",
       "account_required": false
