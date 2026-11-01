@@ -10,6 +10,7 @@ Every resource below is public, ungated, and written to be usable independently 
 | --- | --- |
 | [RMM evaluation checklist](https://nizlo.com/guides/rmm-evaluation-checklist) | Comparing products through evidence rather than feature-list claims |
 | [RMM vendor due-diligence checklist](https://nizlo.com/guides/rmm-vendor-due-diligence) | Comparing security, support, pilot evidence, pricing, commercial terms, and exit readiness |
+| [RMM cost calculator and pricing dataset](https://nizlo.com/guides/cheapest-rmm-for-small-msps) | Comparing six source-dated public pricing models for a small MSP without giving up an email address |
 | [RMM security checklist](https://nizlo.com/guides/rmm-security-checklist) | Reviewing device identity, tenant isolation, MFA, permissions, signed actions, audit logs, recovery, and removal |
 | [RMM migration checklist](https://nizlo.com/guides/rmm-migration-checklist) | Planning discovery, pilot, coexistence, cutover, rollback, and cleanup |
 

@@ -5,6 +5,7 @@
   "resources": [
     { "id": "rmm-evaluation-checklist", "title": "RMM evaluation checklist", "category": "selection", "url": "https://nizlo.com/guides/rmm-evaluation-checklist", "audience": ["MSP", "IT team"], "access": "public", "account_required": false },
     { "id": "rmm-vendor-due-diligence", "title": "RMM vendor due-diligence checklist", "category": "selection", "url": "https://nizlo.com/guides/rmm-vendor-due-diligence", "audience": ["MSP", "IT team"], "access": "public", "account_required": false },
+    { "id": "rmm-cost-calculator", "title": "RMM cost calculator and pricing dataset", "category": "pricing", "url": "https://nizlo.com/guides/cheapest-rmm-for-small-msps", "audience": ["MSP", "IT team"], "access": "public", "account_required": false },
     { "id": "rmm-security-checklist", "title": "RMM security checklist", "category": "security", "url": "https://nizlo.com/guides/rmm-security-checklist", "audience": ["MSP", "IT team"], "access": "public", "account_required": false },
     { "id": "rmm-migration-checklist", "title": "RMM migration checklist", "category": "migration", "url": "https://nizlo.com/guides/rmm-migration-checklist", "audience": ["MSP", "IT team"], "access": "public", "account_required": false },
     { "id": "msp-client-onboarding-checklist", "title": "MSP client onboarding checklist", "category": "client-lifecycle", "url": "https://nizlo.com/guides/msp-client-onboarding-checklist", "audience": ["MSP"], "access": "public", "account_required": false },
