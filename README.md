@@ -12,6 +12,7 @@ Every resource below is public, ungated, and written to be usable independently 
 | [RMM vendor due-diligence checklist](https://nizlo.com/guides/rmm-vendor-due-diligence) | Comparing security, support, pilot evidence, pricing, commercial terms, and exit readiness |
 | [RMM cost calculator and pricing dataset](https://nizlo.com/guides/cheapest-rmm-for-small-msps) | Comparing six source-dated public pricing models for a small MSP without giving up an email address |
 | [RMM security checklist](https://nizlo.com/guides/rmm-security-checklist) | Reviewing device identity, tenant isolation, MFA, permissions, signed actions, audit logs, recovery, and removal |
+| [RMM incident response checklist](https://nizlo.com/guides/rmm-incident-response-checklist) | Preparing independent control paths, scoping impact, containing access, preserving evidence, recovering safely, and reconciling endpoints |
 | [RMM migration checklist](https://nizlo.com/guides/rmm-migration-checklist) | Planning discovery, pilot, coexistence, cutover, rollback, and cleanup |
 
 ## Client lifecycle
@@ -49,7 +50,7 @@ Use the dedicated [RMM deployment-readiness checklist template](https://izikipiz
 
 Use the [RMM change-window and rollback-plan template](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-change-window-rollback-plan.html) when a deployment, migration, policy change, or automation rollout needs explicit timing, go/no-go authority, success criteria, communications, and a reversible execution path. The underlying [26-control CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-change-window-rollback-plan.csv) is public and ungated.
 
-Use the [RMM incident response runbook template](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-incident-response-runbook-template.html) to coordinate readiness, detection, evidence preservation, containment, investigation, recovery, stakeholder communication, and corrective action after a suspected RMM security event. The underlying [30-control CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-incident-response-runbook.csv) is public and ungated.
+Use the [RMM incident response runbook template](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-incident-response-runbook-template.html) to coordinate readiness, detection, evidence preservation, containment, investigation, recovery, stakeholder communication, and corrective action after a suspected RMM security event. The underlying [30-control CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-incident-response-runbook.csv) is public and ungated, and the canonical [RMM incident response checklist](https://nizlo.com/guides/rmm-incident-response-checklist) explains the full eight-stage workflow.
 
 Use the [RMM migration checklist workbook](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-workbook-template.html) to reconcile source inventory, target mappings, pilot evidence, coexistence, cutover waves, rollback, source retirement, and final acceptance. The underlying [30-control CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-migration-workbook.csv) is public and ungated.
 

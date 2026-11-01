@@ -12,6 +12,15 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>RMM incident response checklist</title>
+    <id>https://nizlo.com/guides/rmm-incident-response-checklist</id>
+    <link href="https://nizlo.com/guides/rmm-incident-response-checklist" />
+    <updated>2026-11-01T00:00:00Z</updated>
+    <category term="security" />
+    <category term="incident-response" />
+    <summary>Use an eight-stage workflow to prepare independent control paths, declare and scope an RMM incident, contain access, preserve evidence, recover safely, reconcile endpoints, and verify corrective action.</summary>
+  </entry>
+  <entry>
     <title>RMM migration checklist workbook</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-workbook-template.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-workbook-template.html" />
@@ -38,13 +47,13 @@
     <summary>Use 33 vendor-neutral controls to govern, inventory, prepare, pilot, roll out, verify, and close an RMM deployment.</summary>
   </entry>
   <entry>
-    <title>Free RMM deployment and rollback template library</title>
+    <title>Free RMM operations template library</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/templates/</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/" />
     <updated>2026-11-01T00:00:00Z</updated>
     <category term="deployment" />
     <category term="change-management" />
-    <summary>Download two vendor-neutral CSV templates for RMM deployment readiness, change-window approval, validation, rollback, communications, and closeout.</summary>
+    <summary>Download four vendor-neutral CSV templates for RMM deployment readiness, change-window control, incident response, migration, validation, rollback, communications, and closeout.</summary>
   </entry>
   <entry>
     <title>RMM change-window and rollback-plan template</title>

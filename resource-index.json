@@ -44,6 +44,15 @@
       "account_required": false
     },
     {
+      "id": "rmm-incident-response-checklist",
+      "title": "RMM incident response checklist",
+      "category": "security",
+      "url": "https://nizlo.com/guides/rmm-incident-response-checklist",
+      "audience": ["MSP", "IT team"],
+      "access": "public",
+      "account_required": false
+    },
+    {
       "id": "rmm-migration-checklist",
       "title": "RMM migration checklist",
       "category": "migration",

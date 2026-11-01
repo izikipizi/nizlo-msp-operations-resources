@@ -1,14 +1,15 @@
 # Nizlo MSP Operations Resources
 
-> Fourteen public, ungated field guides and four reusable CSV templates for managed service providers and lean IT teams evaluating, deploying, operating, securing, migrating, and offboarding remote monitoring and management software.
+> Fifteen public, ungated field guides and four reusable CSV templates for managed service providers and lean IT teams evaluating, deploying, operating, securing, migrating, and offboarding remote monitoring and management software.
 
 This external library is maintained by the Nizlo team. Nizlo is a Windows-first RMM and IT-management platform. The resources are vendor-neutral, but they are vendor-created and do not represent independent research or an endorsement of Nizlo.
 
 ## Primary pages
 
-- [Resource library](https://izikipizi.github.io/nizlo-msp-operations-resources/): Human-readable collection of all fourteen maintained guides.
+- [Resource library](https://izikipizi.github.io/nizlo-msp-operations-resources/): Human-readable collection of all fifteen maintained guides.
 - [RMM change-window and rollback-plan template](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-change-window-rollback-plan.html): Field definitions and a public 26-control CSV for reversible RMM changes.
 - [RMM incident response runbook template](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-incident-response-runbook-template.html): Field guidance and a public 30-control CSV for RMM security incident readiness, containment, investigation, recovery, and improvement.
+- [RMM incident response checklist](https://nizlo.com/guides/rmm-incident-response-checklist): Eight-stage guide covering preparation, declaration, scope, containment, evidence, recovery, reconciliation, and corrective action.
 - [RMM migration checklist workbook](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-workbook-template.html): Field guidance and a public 30-control CSV for discovery, pilot, coexistence, cutover, validation, source retirement, and closeout.
 - [Citation and preservation](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html): Authorship, version, repository, CFF metadata, and Software Heritage identifiers.
 - [Machine-readable resource index](https://izikipizi.github.io/nizlo-msp-operations-resources/resource-index.json): Structured catalogue with titles, categories, audiences, access status, and canonical URLs.
