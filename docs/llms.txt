@@ -1,6 +1,6 @@
 # Nizlo MSP Operations Resources
 
-> Fourteen public, ungated field guides and two reusable CSV templates for managed service providers and lean IT teams evaluating, deploying, operating, migrating, and offboarding remote monitoring and management software.
+> Fourteen public, ungated field guides and three reusable CSV templates for managed service providers and lean IT teams evaluating, deploying, operating, securing, migrating, and offboarding remote monitoring and management software.
 
 This external library is maintained by the Nizlo team. Nizlo is a Windows-first RMM and IT-management platform. The resources are vendor-neutral, but they are vendor-created and do not represent independent research or an endorsement of Nizlo.
 
@@ -8,16 +8,18 @@ This external library is maintained by the Nizlo team. Nizlo is a Windows-first 
 
 - [Resource library](https://izikipizi.github.io/nizlo-msp-operations-resources/): Human-readable collection of all fourteen maintained guides.
 - [RMM change-window and rollback-plan template](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-change-window-rollback-plan.html): Field definitions and a public 26-control CSV for reversible RMM changes.
+- [RMM incident response runbook template](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-incident-response-runbook-template.html): Field guidance and a public 30-control CSV for RMM security incident readiness, containment, investigation, recovery, and improvement.
 - [Citation and preservation](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html): Authorship, version, repository, CFF metadata, and Software Heritage identifiers.
 - [Machine-readable resource index](https://izikipizi.github.io/nizlo-msp-operations-resources/resource-index.json): Structured catalogue with titles, categories, audiences, access status, and canonical URLs.
-- [Data Package descriptor](https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json): Standards-based metadata, schemas, byte counts, and SHA-256 hashes for both CSV templates.
+- [Data Package descriptor](https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json): Standards-based metadata, schemas, byte counts, and SHA-256 hashes for all three CSV templates.
 - [Atom feed](https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml): Feed-reader and aggregator discovery for the resource collection.
 
 ## Reusable templates
 
-- [RMM deployment and rollback template library](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/): Landing page for both public CSV templates with usage guidance.
+- [RMM operations and incident response template library](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/): Landing page for all three public CSV templates with usage guidance.
 - [RMM deployment-readiness checklist template](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-deployment-readiness-template.html): Focused guide and 33-control CSV covering governance, inventory, preparation, pilot, wave rollout, verification, and closeout.
 - [RMM change-window and rollback-plan CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-change-window-rollback-plan.csv): 26 controls covering approval, pre-change evidence, pilot, rollout, validation, rollback, communications, and closure.
+- [RMM incident response runbook CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-incident-response-runbook.csv): 30 controls covering readiness, detection, containment, investigation, recovery, communication, and corrective action.
 
 ## Canonical source and product relationship
 

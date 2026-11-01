@@ -4,9 +4,9 @@
   "name": "nizlo-rmm-operations-templates",
   "id": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
   "title": "Nizlo RMM Operations Templates",
-  "description": "Two public, vendor-neutral CSV templates for RMM deployment readiness and controlled change execution.",
+  "description": "Three public, vendor-neutral CSV templates for RMM deployment readiness, controlled change execution, and incident response.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/",
-  "version": "1.12.0",
+  "version": "1.13.0",
   "created": "2026-11-01",
   "contributors": [
     {
@@ -25,7 +25,9 @@
     "deployment readiness",
     "change management",
     "rollback plan",
-    "endpoint management"
+    "endpoint management",
+    "incident response",
+    "RMM security"
   ],
   "resources": [
     {
@@ -81,6 +83,34 @@
           { "name": "decision_owner", "type": "string" },
           { "name": "communication_audience", "type": "string" },
           { "name": "status", "type": "string" },
+          { "name": "notes", "type": "string" }
+        ],
+        "primaryKey": "control_id"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "rmm-incident-response-runbook",
+      "title": "RMM incident response runbook template",
+      "description": "Thirty controls for readiness, detection, containment, investigation, recovery, communication, and post-incident improvement.",
+      "path": "templates/rmm-incident-response-runbook.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 3197,
+      "hash": "sha256:24fcd51c018802e2150c4c2491ee553251d05fc8d30ee74785bf3e72804c4f8a",
+      "schema": {
+        "fields": [
+          { "name": "phase", "type": "string" },
+          { "name": "control_id", "type": "string" },
+          { "name": "activity", "type": "string" },
+          { "name": "owner", "type": "string" },
+          { "name": "priority", "type": "string" },
+          { "name": "status", "type": "string" },
+          { "name": "evidence", "type": "string" },
+          { "name": "decision", "type": "string" },
+          { "name": "communication_audience", "type": "string" },
+          { "name": "next_review_utc", "type": "string" },
           { "name": "notes", "type": "string" }
         ],
         "primaryKey": "control_id"

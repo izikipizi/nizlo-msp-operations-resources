@@ -70,6 +70,25 @@
       {
         "@context": "https://schema.org",
         "@type": "Dataset",
+        "name": "RMM incident response runbook template",
+        "description": "A vendor-neutral CSV with 30 controls for readiness, detection, containment, investigation, recovery, and post-incident improvement.",
+        "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-incident-response-runbook-template.html",
+        "creator": { "@type": "Organization", "name": "Nizlo", "url": "https://nizlo.com/" },
+        "dateModified": "2026-11-01",
+        "isAccessibleForFree": true,
+        "inLanguage": "en",
+        "keywords": ["RMM incident response", "MSP incident response runbook", "RMM security incident", "RMM compromise"],
+        "distribution": {
+          "@type": "DataDownload",
+          "contentUrl": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-incident-response-runbook.csv",
+          "encodingFormat": "text/csv"
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Dataset",
         "name": "RMM deployment-readiness checklist template",
         "description": "A vendor-neutral CSV with 33 controls for planning, piloting, rolling out, verifying, and closing an RMM deployment.",
         "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-deployment-readiness-template.html",
@@ -227,6 +246,7 @@
           <a class="button button-secondary" href="resource-index.json">Use the JSON index</a>
           <a class="button button-secondary" href="templates/rmm-deployment-readiness.csv" download>Download deployment CSV</a>
           <a class="button button-secondary" href="rmm-change-window-rollback-plan.html">Use the rollback plan</a>
+          <a class="button button-secondary" href="rmm-incident-response-runbook-template.html">Use the incident runbook</a>
         </div>
       </section>
 
@@ -256,13 +276,14 @@
 
       <section class="method" aria-labelledby="template-title">
         <h2 id="template-title">Take the change record into your own workflow.</h2>
-        <p>Use the 33-control deployment-readiness CSV to reconcile owners and exceptions, or the 26-control change-window and rollback-plan template to set timing, success criteria, go/no-go authority, communications, and reversible actions.</p>
+        <p>Use the 33-control deployment-readiness CSV to reconcile rollout owners and exceptions, the 26-control change-window template to set reversible actions, or the 30-control incident-response runbook to coordinate evidence, containment, recovery, communication, and improvement.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="templates/">Browse both CSV templates</a>
+          <a class="button button-primary" href="templates/">Browse all three CSV templates</a>
           <a class="button button-secondary" href="rmm-change-window-rollback-plan.html">Open rollback-plan template</a>
           <a class="button button-secondary" href="rmm-deployment-readiness-template.html">Open deployment template guide</a>
+          <a class="button button-secondary" href="rmm-incident-response-runbook-template.html">Open incident runbook</a>
           <a class="button button-secondary" href="datapackage.json">Use the Data Package</a>
-          <a class="button button-secondary" href="https://github.com/izikipizi/nizlo-msp-operations-resources/releases/tag/v1.12.0">View the release</a>
+          <a class="button button-secondary" href="https://github.com/izikipizi/nizlo-msp-operations-resources/releases/tag/v1.13.0">View the release</a>
         </div>
       </section>
 
@@ -280,7 +301,7 @@
 
     <footer class="wrap">
       <span>Maintained by Nizlo · Updated November 1, 2026</span>
-      <span><a href="https://nizlo.com/tools">More free RMM tools</a> · <a href="templates/">CSV templates</a> · <a href="datapackage.json">Data Package</a> · <a href="feed.xml">Atom feed</a> · <a href="llms.txt">LLM profile</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources/tree/v1.12.0">Version 1.12.0</a></span>
+      <span><a href="https://nizlo.com/tools">More free RMM tools</a> · <a href="templates/">CSV templates</a> · <a href="datapackage.json">Data Package</a> · <a href="feed.xml">Atom feed</a> · <a href="llms.txt">LLM profile</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources/tree/v1.13.0">Version 1.13.0</a></span>
     </footer>
   </body>
 </html>

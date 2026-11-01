@@ -156,6 +156,17 @@
       "controls": 26,
       "access": "public",
       "account_required": false
+    },
+    {
+      "id": "rmm-incident-response-runbook",
+      "title": "RMM incident response runbook template",
+      "category": "security",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-incident-response-runbook-template.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-incident-response-runbook.csv",
+      "format": "text/csv",
+      "controls": 30,
+      "access": "public",
+      "account_required": false
     }
   ]
 }
