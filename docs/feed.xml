@@ -12,6 +12,14 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>RMM deployment-readiness checklist template</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-deployment-readiness-template.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-deployment-readiness-template.html" />
+    <updated>2026-11-01T00:00:00Z</updated>
+    <category term="deployment" />
+    <summary>Use 33 vendor-neutral controls to govern, inventory, prepare, pilot, roll out, verify, and close an RMM deployment.</summary>
+  </entry>
+  <entry>
     <title>Free RMM deployment and rollback template library</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/templates/</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/" />

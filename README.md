@@ -45,7 +45,7 @@ Citation metadata is available in [`CITATION.cff`](CITATION.cff) and on the publ
 
 Browse the public [RMM deployment and rollback template library](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/) for direct downloads and usage guidance.
 
-Download the [RMM deployment-readiness CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-deployment-readiness.csv) to assign owners, record evidence, define rollback triggers, and reconcile exceptions across preparation, pilot, wave rollout, verification, and closeout. It is intentionally vendor-neutral and works in a spreadsheet or ticketing system.
+Use the dedicated [RMM deployment-readiness checklist template](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-deployment-readiness-template.html) for phase guidance, field documentation, and the public 33-control CSV. It helps assign owners, record evidence, define rollback triggers, and reconcile exceptions across governance, inventory, preparation, pilot, wave rollout, verification, and closeout.
 
 Use the [RMM change-window and rollback-plan template](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-change-window-rollback-plan.html) when a deployment, migration, policy change, or automation rollout needs explicit timing, go/no-go authority, success criteria, communications, and a reversible execution path. The underlying [26-control CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-change-window-rollback-plan.csv) is public and ungated.
 

@@ -16,7 +16,7 @@ This external library is maintained by the Nizlo team. Nizlo is a Windows-first 
 ## Reusable templates
 
 - [RMM deployment and rollback template library](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/): Landing page for both public CSV templates with usage guidance.
-- [RMM deployment-readiness CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-deployment-readiness.csv): 33 controls across preparation, pilot, wave rollout, verification, and closeout.
+- [RMM deployment-readiness checklist template](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-deployment-readiness-template.html): Focused guide and 33-control CSV covering governance, inventory, preparation, pilot, wave rollout, verification, and closeout.
 - [RMM change-window and rollback-plan CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-change-window-rollback-plan.csv): 26 controls covering approval, pre-change evidence, pilot, rollout, validation, rollback, communications, and closure.
 
 ## Canonical source and product relationship

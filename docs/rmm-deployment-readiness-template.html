@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Free RMM Deployment Readiness Checklist Template</title>
+    <meta name="description" content="Download a free, vendor-neutral RMM deployment-readiness CSV with 33 controls for governance, inventory, preparation, pilot, rollout waves, verification, and closeout." />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <link rel="canonical" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-deployment-readiness-template.html" />
+    <link rel="alternate" type="application/atom+xml" title="Nizlo MSP Operations Resources" href="feed.xml" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="RMM Deployment Readiness Checklist Template" />
+    <meta property="og:description" content="A free 33-control worksheet for governing, piloting, scaling, verifying, and closing an RMM deployment." />
+    <meta property="og:url" content="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-deployment-readiness-template.html" />
+    <meta property="og:image" content="https://nizlo.com/opengraph-image" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#07171d" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "name": "RMM deployment-readiness checklist template",
+        "description": "A vendor-neutral CSV with 33 controls for governing, inventorying, preparing, piloting, rolling out, verifying, and closing an RMM deployment.",
+        "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-deployment-readiness-template.html",
+        "creator": { "@type": "Organization", "name": "Nizlo", "url": "https://nizlo.com/" },
+        "dateModified": "2026-11-01",
+        "isAccessibleForFree": true,
+        "inLanguage": "en",
+        "keywords": ["RMM deployment checklist", "deployment readiness", "MSP rollout plan", "endpoint management", "RMM pilot"],
+        "variableMeasured": ["Phase", "Control owner", "Control status", "Evidence", "Exception owner", "Due date", "Rollback trigger"],
+        "distribution": {
+          "@type": "DataDownload",
+          "contentUrl": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-deployment-readiness.csv",
+          "encodingFormat": "text/csv"
+        }
+      }
+    </script>
+    <style>
+      :root { color-scheme:dark; --bg:#06141a; --panel:#0a2028; --line:#21424c; --text:#edf8fa; --muted:#a9c0c7; --teal:#1dc6c7; --ink:#03282d; }
+      * { box-sizing:border-box; }
+      body { margin:0; background:radial-gradient(circle at 82% -10%,rgba(29,198,199,.17),transparent 36rem),linear-gradient(180deg,#07171d,var(--bg)); color:var(--text); font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif; line-height:1.65; }
+      a { color:#8be7e4; } a:focus-visible { outline:3px solid #8be7e4; outline-offset:4px; }
+      .wrap { width:min(980px,calc(100% - 2rem)); margin:0 auto; }
+      header { padding:1.2rem 0; border-bottom:1px solid rgba(139,231,228,.14); }
+      nav { display:flex; justify-content:space-between; gap:1rem; }
+      nav a { text-decoration:none; font-weight:800; }
+      main { padding:5.5rem 0; }
+      .eyebrow { color:#8be7e4; font-size:.8rem; font-weight:900; letter-spacing:.1em; text-transform:uppercase; }
+      h1 { max-width:15ch; margin:.8rem 0 1.25rem; font-size:clamp(2.5rem,7vw,5rem); line-height:1; letter-spacing:-.05em; }
+      .lede { max-width:760px; color:var(--muted); font-size:1.2rem; }
+      .actions { display:flex; flex-wrap:wrap; gap:.8rem; margin:2rem 0 4rem; }
+      .button { display:inline-flex; padding:.8rem 1.1rem; border-radius:.8rem; background:var(--teal); color:var(--ink); text-decoration:none; font-weight:900; }
+      .secondary { background:transparent; color:var(--text); border:1px solid var(--line); }
+      section { margin:3rem 0; padding:2rem; border:1px solid var(--line); border-radius:1.1rem; background:rgba(10,32,40,.9); }
+      h2 { margin-top:0; font-size:clamp(1.6rem,4vw,2.4rem); letter-spacing:-.03em; }
+      .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; }
+      .card { padding:1rem; background:#0e2932; border-radius:.8rem; }
+      .card strong { display:block; margin-bottom:.3rem; }
+      .card span, .note { color:var(--muted); }
+      footer { padding:2rem 0 3rem; border-top:1px solid var(--line); color:var(--muted); }
+      @media(max-width:650px){ main{padding-top:3.5rem}.grid{grid-template-columns:1fr}section{padding:1.25rem} }
+    </style>
+  </head>
+  <body>
+    <header><nav class="wrap"><a href="./">Nizlo MSP resources</a><a href="templates/">All CSV templates</a></nav></header>
+    <main class="wrap">
+      <p class="eyebrow">Free operational template · 33 controls</p>
+      <h1>RMM deployment readiness checklist</h1>
+      <p class="lede">A vendor-neutral worksheet for making an RMM rollout owned, measurable, and reversible. The CSV covers governance, endpoint inventory, preparation, pilot checks, wave deployment, verification, and closeout—without requiring an account or email address.</p>
+      <div class="actions">
+        <a class="button" href="templates/rmm-deployment-readiness.csv" download>Download the CSV</a>
+        <a class="button secondary" href="https://nizlo.com/guides/rmm-deployment-checklist">Read the deployment guide</a>
+        <a class="button secondary" href="datapackage.json">Validate the data package</a>
+      </div>
+
+      <section>
+        <h2>Seven deployment phases</h2>
+        <div class="grid">
+          <div class="card"><strong>Governance · 4 controls</strong><span>Name the decision owner, approved scope, success criteria, stop conditions, and maintenance windows.</span></div>
+          <div class="card"><strong>Inventory · 4 controls</strong><span>Reconcile authoritative endpoints, stale records, critical workloads, operating systems, zones, and ownership.</span></div>
+          <div class="card"><strong>Preparation · 6 controls</strong><span>Confirm prerequisites, recovery paths, package integrity, communications, exclusions, and support readiness.</span></div>
+          <div class="card"><strong>Pilot · 7 controls</strong><span>Validate identity, check-in, inventory, alerts, automation, patch policy, remote support, and uninstall behavior.</span></div>
+          <div class="card"><strong>Wave rollout · 4 controls</strong><span>Set wave boundaries, reconcile every result, record exceptions, and require explicit go/no-go decisions.</span></div>
+          <div class="card"><strong>Verification and closeout · 8 controls</strong><span>Confirm coverage, health, policy state, access, documentation, exception ownership, evidence, and final approval.</span></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>How to use it</h2>
+        <ol>
+          <li>Import the CSV into a spreadsheet, ticket, or change-management record.</li>
+          <li>Replace generic owners, dates, and rollback triggers with named people and measurable thresholds.</li>
+          <li>Complete the pilot controls before approving a wider wave.</li>
+          <li>Reconcile successful, failed, excluded, offline, and unknown endpoints after every wave.</li>
+          <li>Keep exceptions open until each has an owner, due date, evidence, and disposition.</li>
+        </ol>
+        <p class="note">The checklist is an operational planning aid. It does not replace your organization’s security, backup, change-control, or incident-response requirements.</p>
+      </section>
+
+      <section>
+        <h2>Field reference</h2>
+        <p>Each row includes a <strong>phase</strong>, stable <strong>control ID</strong>, <strong>control</strong>, <strong>owner</strong>, <strong>status</strong>, <strong>evidence</strong>, <strong>exception owner</strong>, <strong>due date</strong>, <strong>rollback trigger</strong>, and <strong>notes</strong>. The <a href="datapackage.json">Data Package descriptor</a> publishes the field schema, byte count, and SHA-256 hash for automated validation.</p>
+      </section>
+
+      <section>
+        <h2>Relationship disclosure</h2>
+        <p>Nizlo, a Windows-first RMM and IT-management platform, maintains this public template. It is designed for use with any RMM and does not claim that Nizlo or another vendor passes the controls.</p>
+      </section>
+    </main>
+    <footer><div class="wrap">Maintained by <a href="https://nizlo.com/">Nizlo</a> · <a href="citation.html">Citation and preservation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source repository</a></div></footer>
+  </body>
+</html>
