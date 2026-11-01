@@ -141,6 +141,60 @@
       "audience": ["MSP", "IT team"],
       "access": "public",
       "account_required": false
+    },
+    {
+      "id": "how-to-test-rmm-software",
+      "title": "How to Test RMM Software Safely Before Production",
+      "category": "deployment",
+      "url": "https://nizlo.com/guides/how-to-test-rmm-software",
+      "audience": ["MSP", "IT team"],
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "rmm-for-mac-and-windows",
+      "title": "RMM for Mac and Windows: A Mixed-Fleet Guide",
+      "category": "selection",
+      "url": "https://nizlo.com/guides/rmm-for-mac-and-windows",
+      "audience": ["MSP", "IT team"],
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "rmm-for-new-msps",
+      "title": "RMM for a New MSP: A First-Customer Buying Guide",
+      "category": "selection",
+      "url": "https://nizlo.com/guides/rmm-for-new-msps",
+      "audience": ["MSP"],
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "rmm-for-small-it-teams",
+      "title": "RMM for Small IT Teams: A Practical Evaluation Guide",
+      "category": "selection",
+      "url": "https://nizlo.com/guides/rmm-for-small-it-teams",
+      "audience": ["IT team"],
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "rmm-pricing-models",
+      "title": "RMM Pricing Calculator & Cost Comparison",
+      "category": "pricing",
+      "url": "https://nizlo.com/guides/rmm-pricing-models",
+      "audience": ["MSP", "IT team"],
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "rmm-vs-intune",
+      "title": "RMM vs. Microsoft Intune for MSPs",
+      "category": "selection",
+      "url": "https://nizlo.com/guides/rmm-vs-intune",
+      "audience": ["MSP", "IT team"],
+      "access": "public",
+      "account_required": false
     }
   ],
   "templates": [

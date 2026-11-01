@@ -1,12 +1,18 @@
 # Nizlo MSP Operations Resources
 
-> Fifteen public, ungated field guides and four reusable CSV templates for managed service providers and lean IT teams evaluating, deploying, operating, securing, migrating, and offboarding remote monitoring and management software.
+> Twenty-one public, ungated field guides and four reusable CSV templates for managed service providers and lean IT teams evaluating, pricing, testing, deploying, operating, securing, migrating, and offboarding remote monitoring and management software.
 
 This external library is maintained by the Nizlo team. Nizlo is a Windows-first RMM and IT-management platform. The resources are vendor-neutral, but they are vendor-created and do not represent independent research or an endorsement of Nizlo.
 
 ## Primary pages
 
-- [Resource library](https://izikipizi.github.io/nizlo-msp-operations-resources/): Human-readable collection of all fifteen maintained guides.
+- [Resource library](https://izikipizi.github.io/nizlo-msp-operations-resources/): Human-readable collection of all twenty-one maintained guides.
+- [How to test RMM software safely](https://nizlo.com/guides/how-to-test-rmm-software): Staged pre-production pilot for agents, permissions, monitoring, patching, automation, remote access, and removal.
+- [RMM for Mac and Windows](https://nizlo.com/guides/rmm-for-mac-and-windows): Mixed-fleet evaluation across enrollment, inventory, alerts, automation, updates, remote access, and removal.
+- [RMM for a new MSP](https://nizlo.com/guides/rmm-for-new-msps): First-customer buying guide covering operational simplicity, real costs, pilot scope, and lock-in.
+- [RMM for small IT teams](https://nizlo.com/guides/rmm-for-small-it-teams): Practical evaluation guide for internal IT teams weighing RMM, Intune, and a safe pilot.
+- [RMM pricing models](https://nizlo.com/guides/rmm-pricing-models): Calculator and comparison of per-device, per-technician, tiered, and total-cost models.
+- [RMM vs. Microsoft Intune](https://nizlo.com/guides/rmm-vs-intune): Comparison of multi-tenant operations, monitoring, scripts, patching, application management, remote support, and cost.
 - [RMM change-window and rollback-plan template](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-change-window-rollback-plan.html): Field definitions and a public 26-control CSV for reversible RMM changes.
 - [RMM incident response runbook template](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-incident-response-runbook-template.html): Field guidance and a public 30-control CSV for RMM security incident readiness, containment, investigation, recovery, and improvement.
 - [RMM incident response checklist](https://nizlo.com/guides/rmm-incident-response-checklist): Eight-stage guide covering preparation, declaration, scope, containment, evidence, recovery, reconciliation, and corrective action.

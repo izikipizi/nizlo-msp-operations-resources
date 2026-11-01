@@ -12,6 +12,54 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>How to Test RMM Software Safely Before Production</title>
+    <id>https://nizlo.com/guides/how-to-test-rmm-software</id>
+    <link href="https://nizlo.com/guides/how-to-test-rmm-software" />
+    <updated>2026-11-01T00:00:00Z</updated>
+    <category term="deployment" />
+    <summary>Use a staged RMM pilot to test agents, permissions, monitoring, patching, automation, remote access, and clean removal before production rollout.</summary>
+  </entry>
+  <entry>
+    <title>RMM for Mac and Windows: A Mixed-Fleet Guide</title>
+    <id>https://nizlo.com/guides/rmm-for-mac-and-windows</id>
+    <link href="https://nizlo.com/guides/rmm-for-mac-and-windows" />
+    <updated>2026-11-01T00:00:00Z</updated>
+    <category term="selection" />
+    <summary>Evaluate RMM software for mixed Windows and macOS fleets across enrollment, inventory, alerts, automation, updates, remote access, and removal.</summary>
+  </entry>
+  <entry>
+    <title>RMM for a New MSP: A First-Customer Buying Guide</title>
+    <id>https://nizlo.com/guides/rmm-for-new-msps</id>
+    <link href="https://nizlo.com/guides/rmm-for-new-msps" />
+    <updated>2026-11-01T00:00:00Z</updated>
+    <category term="selection" />
+    <summary>Choose a first RMM platform with simple ticketing and endpoint control, real cost comparisons, a representative pilot, and an exit plan.</summary>
+  </entry>
+  <entry>
+    <title>RMM for Small IT Teams: A Practical Evaluation Guide</title>
+    <id>https://nizlo.com/guides/rmm-for-small-it-teams</id>
+    <link href="https://nizlo.com/guides/rmm-for-small-it-teams" />
+    <updated>2026-11-01T00:00:00Z</updated>
+    <category term="selection" />
+    <summary>Decide whether a small internal IT team needs an RMM, where Intune fits, what to test, and how to run a safe pilot.</summary>
+  </entry>
+  <entry>
+    <title>RMM Pricing Calculator &amp; Cost Comparison</title>
+    <id>https://nizlo.com/guides/rmm-pricing-models</id>
+    <link href="https://nizlo.com/guides/rmm-pricing-models" />
+    <updated>2026-11-01T00:00:00Z</updated>
+    <category term="pricing" />
+    <summary>Compare per-device and per-technician costs, tiered pricing, worked examples, and total-cost risks.</summary>
+  </entry>
+  <entry>
+    <title>RMM vs. Microsoft Intune for MSPs</title>
+    <id>https://nizlo.com/guides/rmm-vs-intune</id>
+    <link href="https://nizlo.com/guides/rmm-vs-intune" />
+    <updated>2026-11-01T00:00:00Z</updated>
+    <category term="selection" />
+    <summary>Compare RMM and Microsoft Intune for multi-tenant operations, monitoring, scripts, patching, application management, remote support, and total cost.</summary>
+  </entry>
+  <entry>
     <title>RMM incident response checklist</title>
     <id>https://nizlo.com/guides/rmm-incident-response-checklist</id>
     <link href="https://nizlo.com/guides/rmm-incident-response-checklist" />

@@ -14,6 +14,11 @@ Every resource below is public, ungated, and written to be usable independently 
 | [RMM security checklist](https://nizlo.com/guides/rmm-security-checklist) | Reviewing device identity, tenant isolation, MFA, permissions, signed actions, audit logs, recovery, and removal |
 | [RMM incident response checklist](https://nizlo.com/guides/rmm-incident-response-checklist) | Preparing independent control paths, scoping impact, containing access, preserving evidence, recovering safely, and reconciling endpoints |
 | [RMM migration checklist](https://nizlo.com/guides/rmm-migration-checklist) | Planning discovery, pilot, coexistence, cutover, rollback, and cleanup |
+| [RMM for Mac and Windows](https://nizlo.com/guides/rmm-for-mac-and-windows) | Evaluating enrollment, inventory, alerts, automation, updates, remote access, and removal across a mixed fleet |
+| [RMM for a new MSP](https://nizlo.com/guides/rmm-for-new-msps) | Choosing a first platform without overcomplicating ticketing, endpoint control, pricing, or exit planning |
+| [RMM for small IT teams](https://nizlo.com/guides/rmm-for-small-it-teams) | Deciding whether an internal IT team needs RMM, where Intune fits, and what to test in a safe pilot |
+| [RMM pricing models](https://nizlo.com/guides/rmm-pricing-models) | Comparing per-device and per-technician pricing, tier effects, worked examples, and total-cost risks |
+| [RMM vs. Microsoft Intune](https://nizlo.com/guides/rmm-vs-intune) | Comparing multi-tenant operations, monitoring, scripting, patching, application management, remote support, and cost |
 
 ## Client lifecycle
 
@@ -33,6 +38,7 @@ Every resource below is public, ungated, and written to be usable independently 
 | [Windows patch-management checklist](https://nizlo.com/guides/windows-patch-management-checklist) | Defining rings, maintenance windows, approvals, exceptions, rollback, and reporting |
 | [RMM deployment checklist](https://nizlo.com/guides/rmm-deployment-checklist) | Moving from endpoint preparation through a controlled pilot, wave rollout, verification, and rollback |
 | [RMM agent installation troubleshooting guide](https://nizlo.com/guides/rmm-agent-installation-troubleshooting) | Diagnosing enrollment, service, connectivity, permission, proxy, and first-check-in failures without repeatedly reinstalling |
+| [How to test RMM software safely](https://nizlo.com/guides/how-to-test-rmm-software) | Running a staged pre-production pilot for agents, permissions, monitoring, patching, automation, remote access, and clean removal |
 
 ## Machine-readable index
 
