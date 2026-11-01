@@ -35,11 +35,11 @@ Every resource below is public, ungated, and written to be usable independently 
 
 ## Machine-readable index
 
-[`resource-index.json`](resource-index.json) exposes the same catalogue as structured data for internal portals, documentation tools, and agents. The public [Atom feed](https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml) makes the catalogue available to feed readers and aggregators. Each entry points to the maintained canonical guide rather than an unversioned copy.
+[`resource-index.json`](resource-index.json) exposes the same catalogue as structured data for internal portals, documentation tools, and agents. The public [Atom feed](https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml) makes the catalogue available to feed readers and aggregators, while [`llms.txt`](https://izikipizi.github.io/nizlo-msp-operations-resources/llms.txt) provides a compact answer-engine profile. Each entry points to the maintained canonical guide rather than an unversioned copy.
 
 ## Citation and preservation
 
-Citation metadata is available in [`CITATION.cff`](CITATION.cff). Software Heritage preserves release `v1.8.0` and its repository history as snapshot [`swh:1:snp:3c38ba5618ffd319087e451e4ec8ba13e7689e4b`](https://archive.softwareheritage.org/browse/snapshot/3c38ba5618ffd319087e451e4ec8ba13e7689e4b/). The archive is a preservation service, not an endorsement of Nizlo or these resources.
+Citation metadata is available in [`CITATION.cff`](CITATION.cff) and on the public [citation and preservation page](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html). Software Heritage preserves release `v1.8.0` and its repository history as snapshot [`swh:1:snp:3c38ba5618ffd319087e451e4ec8ba13e7689e4b`](https://archive.softwareheritage.org/browse/snapshot/3c38ba5618ffd319087e451e4ec8ba13e7689e4b/). The archive is a preservation service, not an endorsement of Nizlo or these resources.
 
 ## Reusable field templates
 

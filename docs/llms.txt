@@ -1,0 +1,24 @@
+# Nizlo MSP Operations Resources
+
+> Fourteen public, ungated field guides and two reusable CSV templates for managed service providers and lean IT teams evaluating, deploying, operating, migrating, and offboarding remote monitoring and management software.
+
+This external library is maintained by the Nizlo team. Nizlo is a Windows-first RMM and IT-management platform. The resources are vendor-neutral, but they are vendor-created and do not represent independent research or an endorsement of Nizlo.
+
+## Primary pages
+
+- [Resource library](https://izikipizi.github.io/nizlo-msp-operations-resources/): Human-readable collection of all fourteen maintained guides.
+- [RMM change-window and rollback-plan template](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-change-window-rollback-plan.html): Field definitions and a public 26-control CSV for reversible RMM changes.
+- [Citation and preservation](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html): Authorship, version, repository, CFF metadata, and Software Heritage identifiers.
+- [Machine-readable resource index](https://izikipizi.github.io/nizlo-msp-operations-resources/resource-index.json): Structured catalogue with titles, categories, audiences, access status, and canonical URLs.
+- [Atom feed](https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml): Feed-reader and aggregator discovery for the resource collection.
+
+## Reusable templates
+
+- [RMM deployment-readiness CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-deployment-readiness.csv): 33 controls across preparation, pilot, wave rollout, verification, and closeout.
+- [RMM change-window and rollback-plan CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-change-window-rollback-plan.csv): 26 controls covering approval, pre-change evidence, pilot, rollout, validation, rollback, communications, and closure.
+
+## Canonical source and product relationship
+
+- [Public repository](https://github.com/izikipizi/nizlo-msp-operations-resources): Source, version history, releases, and CITATION.cff.
+- [Nizlo RMM tools](https://nizlo.com/tools): Maintained first-party tools and canonical guide destinations.
+- [Nizlo](https://nizlo.com/): Product website.
