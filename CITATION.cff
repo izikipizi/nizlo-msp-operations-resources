@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If these MSP operations resources support your work, cite the maintained canonical guide."
+title: "Nizlo MSP Operations Resources"
+type: dataset
+authors:
+  - family-names: "Ecklund"
+    given-names: "Kip"
+publisher:
+  name: "Nizlo"
+date-released: 2026-11-01
+url: "https://nizlo.com/tools"
+repository-code: "https://github.com/izikipizi/nizlo-msp-operations-resources"
+keywords:
+  - "managed service provider"
+  - "MSP"
+  - "remote monitoring and management"
+  - "RMM"
+  - "endpoint management"
+  - "checklist"
