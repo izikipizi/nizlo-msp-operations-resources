@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Free MSP &amp; RMM Operations Checklists | Nizlo</title>
+    <meta
+      name="description"
+      content="Seven free, ungated checklists for RMM evaluation, migration, MSP client onboarding and offboarding, automation safety, alert tuning, and Windows patch management."
+    />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <link rel="canonical" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Free MSP &amp; RMM Operations Checklists" />
+    <meta
+      property="og:description"
+      content="Practical, vendor-neutral field guides for selecting, operating, migrating, and offboarding RMM software."
+    />
+    <meta property="og:url" content="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="theme-color" content="#07171d" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Nizlo MSP Operations Resources",
+        "description": "Seven free operational checklists for managed service providers and IT teams.",
+        "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "Nizlo",
+          "url": "https://nizlo.com/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Nizlo",
+          "url": "https://nizlo.com/"
+        },
+        "mainEntity": {
+          "@type": "ItemList",
+          "numberOfItems": 7,
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "url": "https://nizlo.com/guides/rmm-evaluation-checklist", "name": "RMM evaluation checklist" },
+            { "@type": "ListItem", "position": 2, "url": "https://nizlo.com/guides/rmm-migration-checklist", "name": "RMM migration checklist" },
+            { "@type": "ListItem", "position": 3, "url": "https://nizlo.com/guides/msp-client-onboarding-checklist", "name": "MSP client onboarding checklist" },
+            { "@type": "ListItem", "position": 4, "url": "https://nizlo.com/guides/msp-client-offboarding-checklist", "name": "MSP client offboarding checklist" },
+            { "@type": "ListItem", "position": 5, "url": "https://nizlo.com/guides/rmm-automation-safety-checklist", "name": "RMM automation safety checklist" },
+            { "@type": "ListItem", "position": 6, "url": "https://nizlo.com/guides/rmm-alert-tuning-checklist", "name": "RMM alert-tuning checklist" },
+            { "@type": "ListItem", "position": 7, "url": "https://nizlo.com/guides/windows-patch-management-checklist", "name": "Windows patch-management checklist" }
+          ]
+        }
+      }
+    </script>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #06141a;
+        --panel: #0a2028;
+        --panel-2: #0e2932;
+        --line: #21424c;
+        --text: #edf8fa;
+        --muted: #a9c0c7;
+        --teal: #1dc6c7;
+        --teal-soft: #8be7e4;
+        --ink: #03282d;
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        background:
+          radial-gradient(circle at 82% -10%, rgba(29, 198, 199, 0.17), transparent 36rem),
+          linear-gradient(180deg, #07171d 0%, var(--bg) 100%);
+        color: var(--text);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.6;
+      }
+
+      a { color: inherit; }
+      a:focus-visible { outline: 3px solid var(--teal-soft); outline-offset: 4px; }
+
+      .wrap { width: min(1120px, calc(100% - 2rem)); margin: 0 auto; }
+      header { padding: 1.2rem 0; border-bottom: 1px solid rgba(139, 231, 228, 0.12); }
+      nav { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+      .brand { display: inline-flex; align-items: center; gap: 0.7rem; font-weight: 800; text-decoration: none; letter-spacing: 0.04em; }
+      .mark { width: 2rem; height: 2rem; border-radius: 0.65rem; display: grid; place-items: center; background: var(--teal); color: var(--ink); font-weight: 950; }
+      .repo-link { color: var(--muted); text-decoration-thickness: 1px; text-underline-offset: 0.25rem; }
+      .repo-link:hover { color: var(--text); }
+
+      .hero { padding: 6rem 0 4.5rem; max-width: 880px; }
+      .eyebrow { display: inline-flex; padding: 0.35rem 0.75rem; border: 1px solid rgba(139, 231, 228, 0.28); border-radius: 999px; color: var(--teal-soft); font-size: 0.78rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
+      h1 { margin: 1.4rem 0 1.25rem; max-width: 13ch; font-size: clamp(2.65rem, 7vw, 5.4rem); line-height: 0.98; letter-spacing: -0.055em; }
+      .lede { max-width: 690px; margin: 0; color: var(--muted); font-size: clamp(1.05rem, 2vw, 1.3rem); }
+      .hero-actions { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 2rem; }
+      .button { display: inline-flex; align-items: center; justify-content: center; min-height: 3rem; padding: 0.75rem 1.05rem; border-radius: 0.8rem; text-decoration: none; font-weight: 800; }
+      .button-primary { background: var(--teal); color: var(--ink); }
+      .button-secondary { border: 1px solid var(--line); color: var(--text); }
+      .button:hover { transform: translateY(-1px); }
+
+      .section-head { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 2rem; align-items: end; margin-bottom: 1.5rem; }
+      h2 { margin: 0; font-size: clamp(1.8rem, 4vw, 3rem); line-height: 1.08; letter-spacing: -0.035em; }
+      .section-head p { margin: 0; color: var(--muted); }
+
+      .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+      .card { position: relative; min-height: 15.5rem; padding: 1.5rem; border: 1px solid var(--line); border-radius: 1.15rem; background: linear-gradient(145deg, rgba(14, 41, 50, 0.9), rgba(8, 28, 35, 0.95)); overflow: hidden; }
+      .card::after { content: ""; position: absolute; width: 7rem; height: 7rem; right: -3.5rem; bottom: -3.5rem; border: 1px solid rgba(29, 198, 199, 0.22); border-radius: 50%; }
+      .card-wide { grid-column: span 2; min-height: 13rem; }
+      .kicker { margin: 0 0 0.7rem; color: var(--teal-soft); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.11em; text-transform: uppercase; }
+      h3 { margin: 0; font-size: 1.45rem; letter-spacing: -0.02em; }
+      .card p:not(.kicker) { max-width: 62ch; color: var(--muted); }
+      .card a { position: absolute; left: 1.5rem; bottom: 1.4rem; color: var(--teal-soft); font-weight: 800; text-underline-offset: 0.25rem; }
+
+      .method { margin: 5rem 0; padding: 2rem; border-radius: 1.25rem; background: var(--panel); border: 1px solid var(--line); }
+      .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1.8rem; counter-reset: step; }
+      .step { padding: 1.25rem; background: var(--panel-2); border-radius: 0.9rem; counter-increment: step; }
+      .step::before { content: "0" counter(step); display: block; color: var(--teal); font-weight: 900; margin-bottom: 0.6rem; }
+      .step strong { display: block; margin-bottom: 0.4rem; }
+      .step span { color: var(--muted); font-size: 0.95rem; }
+
+      .disclosure { margin: 4.5rem 0; padding: 1.5rem 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); color: var(--muted); }
+      .disclosure strong { color: var(--text); }
+      footer { display: flex; justify-content: space-between; gap: 1rem; padding: 2rem 0 3rem; color: var(--muted); font-size: 0.9rem; }
+      footer a { color: var(--teal-soft); }
+
+      @media (max-width: 720px) {
+        .hero { padding-top: 4rem; }
+        .section-head, .grid, .steps { grid-template-columns: 1fr; }
+        .card-wide { grid-column: span 1; min-height: 15.5rem; }
+        footer { flex-direction: column; }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+        .button:hover { transform: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <nav aria-label="Primary navigation">
+          <a class="brand" href="https://nizlo.com/" aria-label="Nizlo home"><span class="mark">N</span><span>NIZLO</span></a>
+          <a class="repo-link" href="https://github.com/izikipizi/nizlo-msp-operations-resources">View source and JSON</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="hero" aria-labelledby="page-title">
+        <span class="eyebrow">MSP operations field library</span>
+        <h1 id="page-title">Seven checklists for safer endpoint operations.</h1>
+        <p class="lede">Choose an RMM, move between platforms, onboard or offboard a client, and operate automation, alerts, and Windows patching with explicit evidence and ownership.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#library">Browse the library</a>
+          <a class="button button-secondary" href="resource-index.json">Use the JSON index</a>
+        </div>
+      </section>
+
+      <section id="library" aria-labelledby="library-title">
+        <div class="section-head">
+          <h2 id="library-title">Start with the decision in front of you.</h2>
+          <p>Each guide is public and ungated. Use it as a pilot plan, review agenda, handoff record, or starting point for your own operating procedure.</p>
+        </div>
+
+        <div class="grid">
+          <article class="card"><p class="kicker">Select</p><h3>RMM evaluation</h3><p>Test identity, permissions, monitoring, patch evidence, automation, remote access, reporting, and exit readiness.</p><a href="https://nizlo.com/guides/rmm-evaluation-checklist">Open checklist →</a></article>
+          <article class="card"><p class="kicker">Change</p><h3>RMM migration</h3><p>Plan inventory, pilot scope, coexistence, cutover, rollback, cleanup, and final acceptance.</p><a href="https://nizlo.com/guides/rmm-migration-checklist">Open checklist →</a></article>
+          <article class="card"><p class="kicker">Begin service</p><h3>Client onboarding</h3><p>Define authority, scope, trust paths, access, monitoring, patching, backup, evidence, and ownership.</p><a href="https://nizlo.com/guides/msp-client-onboarding-checklist">Open checklist →</a></article>
+          <article class="card"><p class="kicker">End service</p><h3>Client offboarding</h3><p>Remove access and agents without abandoning data, automation, evidence, or responsibility.</p><a href="https://nizlo.com/guides/msp-client-offboarding-checklist">Open checklist →</a></article>
+          <article class="card"><p class="kicker">Automate</p><h3>Automation safety</h3><p>Review targeting, privilege, approvals, staged rollout, failure handling, rollback, and audit evidence.</p><a href="https://nizlo.com/guides/rmm-automation-safety-checklist">Open checklist →</a></article>
+          <article class="card"><p class="kicker">Respond</p><h3>Alert tuning</h3><p>Turn endpoint signals into actionable service work with owners, thresholds, suppression, and review.</p><a href="https://nizlo.com/guides/rmm-alert-tuning-checklist">Open checklist →</a></article>
+          <article class="card card-wide"><p class="kicker">Maintain</p><h3>Windows patch management</h3><p>Define rings, maintenance windows, approvals, exceptions, reboot behavior, rollback, and reporting before the next patch cycle.</p><a href="https://nizlo.com/guides/windows-patch-management-checklist">Open checklist →</a></article>
+        </div>
+      </section>
+
+      <section class="method" aria-labelledby="method-title">
+        <h2 id="method-title">Use a checklist as evidence, not decoration.</h2>
+        <div class="steps">
+          <div class="step"><strong>Set the boundary.</strong><span>Name the tenant, device group, owner, success criteria, and stop conditions.</span></div>
+          <div class="step"><strong>Run the control.</strong><span>Record what happened, who approved it, and where the supporting artifact lives.</span></div>
+          <div class="step"><strong>Reconcile exceptions.</strong><span>Assign every unknown, failure, or deferral an owner, due date, and disposition.</span></div>
+        </div>
+      </section>
+
+      <aside class="disclosure"><strong>Relationship disclosure:</strong> this library is maintained by the Nizlo team. Nizlo is a Windows-first RMM and IT-management platform. These vendor-neutral checklists do not claim that Nizlo—or any other product—passes every control.</aside>
+    </main>
+
+    <footer class="wrap">
+      <span>Maintained by Nizlo · Updated November 1, 2026</span>
+      <span><a href="https://nizlo.com/tools">More free RMM tools</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources/releases/tag/v1.0.0">Stable release</a></span>
+    </footer>
+  </body>
+</html>
