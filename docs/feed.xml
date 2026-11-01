@@ -12,6 +12,15 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>Free RMM deployment and rollback template library</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/templates/</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/" />
+    <updated>2026-11-01T00:00:00Z</updated>
+    <category term="deployment" />
+    <category term="change-management" />
+    <summary>Download two vendor-neutral CSV templates for RMM deployment readiness, change-window approval, validation, rollback, communications, and closeout.</summary>
+  </entry>
+  <entry>
     <title>RMM change-window and rollback-plan template</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-change-window-rollback-plan.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-change-window-rollback-plan.html" />
