@@ -66,6 +66,43 @@
         }
       }
     </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "name": "RMM deployment-readiness checklist template",
+        "description": "A vendor-neutral CSV with 33 controls for planning, piloting, rolling out, verifying, and closing an RMM deployment.",
+        "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-deployment-readiness.csv",
+        "creator": {
+          "@type": "Organization",
+          "name": "Nizlo",
+          "url": "https://nizlo.com/"
+        },
+        "dateModified": "2026-11-01",
+        "isAccessibleForFree": true,
+        "inLanguage": "en",
+        "keywords": [
+          "RMM deployment checklist",
+          "managed service provider",
+          "endpoint management",
+          "deployment readiness",
+          "rollback planning"
+        ],
+        "variableMeasured": [
+          "Control owner",
+          "Control status",
+          "Evidence",
+          "Exception owner",
+          "Due date",
+          "Rollback trigger"
+        ],
+        "distribution": {
+          "@type": "DataDownload",
+          "contentUrl": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-deployment-readiness.csv",
+          "encodingFormat": "text/csv"
+        }
+      }
+    </script>
     <style>
       :root {
         color-scheme: dark;
@@ -197,6 +234,15 @@
         </div>
       </section>
 
+      <section class="method" aria-labelledby="template-title">
+        <h2 id="template-title">Take the deployment record into your own workflow.</h2>
+        <p>The reusable CSV contains 33 vendor-neutral controls across governance, inventory, preparation, pilot, wave rollout, verification, and closeout. Assign owners, attach evidence, record exceptions and due dates, and define rollback triggers in a spreadsheet or ticketing system.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="templates/rmm-deployment-readiness.csv" download>Download the CSV</a>
+          <a class="button button-secondary" href="https://github.com/izikipizi/nizlo-msp-operations-resources/releases/tag/v1.7.0">View the release</a>
+        </div>
+      </section>
+
       <section class="method" aria-labelledby="method-title">
         <h2 id="method-title">Use a checklist as evidence, not decoration.</h2>
         <div class="steps">
@@ -211,7 +257,7 @@
 
     <footer class="wrap">
       <span>Maintained by Nizlo · Updated November 1, 2026</span>
-      <span><a href="https://nizlo.com/tools">More free RMM tools</a> · <a href="feed.xml">Atom feed</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources/tree/v1.7.0">Version 1.7.0</a></span>
+      <span><a href="https://nizlo.com/tools">More free RMM tools</a> · <a href="feed.xml">Atom feed</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources/tree/v1.7.1">Version 1.7.1</a></span>
     </footer>
   </body>
 </html>
