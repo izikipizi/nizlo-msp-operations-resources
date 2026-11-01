@@ -37,9 +37,11 @@ Every resource below is public, ungated, and written to be usable independently 
 
 [`resource-index.json`](resource-index.json) exposes the same catalogue as structured data for internal portals, documentation tools, and agents. The public [Atom feed](https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml) makes the catalogue available to feed readers and aggregators. Each entry points to the maintained canonical guide rather than an unversioned copy.
 
-## Reusable field template
+## Reusable field templates
 
 Download the [RMM deployment-readiness CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-deployment-readiness.csv) to assign owners, record evidence, define rollback triggers, and reconcile exceptions across preparation, pilot, wave rollout, verification, and closeout. It is intentionally vendor-neutral and works in a spreadsheet or ticketing system.
+
+Use the [RMM change-window and rollback-plan template](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-change-window-rollback-plan.html) when a deployment, migration, policy change, or automation rollout needs explicit timing, go/no-go authority, success criteria, communications, and a reversible execution path. The underlying [26-control CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-change-window-rollback-plan.csv) is public and ungated.
 
 ## More free tools
 

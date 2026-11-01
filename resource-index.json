@@ -133,5 +133,29 @@
       "access": "public",
       "account_required": false
     }
+  ],
+  "templates": [
+    {
+      "id": "rmm-deployment-readiness",
+      "title": "RMM deployment-readiness checklist template",
+      "category": "deployment",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-deployment-readiness.csv",
+      "format": "text/csv",
+      "controls": 33,
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "rmm-change-window-rollback-plan",
+      "title": "RMM change-window and rollback-plan template",
+      "category": "change-management",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-change-window-rollback-plan.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-change-window-rollback-plan.csv",
+      "format": "text/csv",
+      "controls": 26,
+      "access": "public",
+      "account_required": false
+    }
   ]
 }

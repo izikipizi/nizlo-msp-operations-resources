@@ -12,6 +12,14 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>RMM change-window and rollback-plan template</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-change-window-rollback-plan.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-change-window-rollback-plan.html" />
+    <updated>2026-11-01T00:00:00Z</updated>
+    <category term="change-management" />
+    <summary>Plan RMM changes with named owners, success criteria, evidence, rollout gates, rollback triggers, communications, and closure checks.</summary>
+  </entry>
+  <entry>
     <title>RMM evaluation checklist</title>
     <id>https://nizlo.com/guides/rmm-evaluation-checklist</id>
     <link href="https://nizlo.com/guides/rmm-evaluation-checklist" />
