@@ -15,6 +15,7 @@
     { "id": "endpoint-exception-management", "title": "Endpoint exception-management guide", "category": "operations", "url": "https://nizlo.com/guides/endpoint-exception-management", "audience": ["MSP", "IT team"], "access": "public", "account_required": false },
     { "id": "endpoint-inventory-cmdb-readiness", "title": "Endpoint inventory and CMDB readiness checklist", "category": "operations", "url": "https://nizlo.com/guides/endpoint-inventory-cmdb-readiness", "audience": ["MSP", "IT team"], "access": "public", "account_required": false },
     { "id": "windows-patch-management-checklist", "title": "Windows patch-management checklist", "category": "patch-management", "url": "https://nizlo.com/guides/windows-patch-management-checklist", "audience": ["MSP", "IT team"], "access": "public", "account_required": false },
+    { "id": "rmm-deployment-checklist", "title": "RMM deployment checklist", "category": "deployment", "url": "https://nizlo.com/guides/rmm-deployment-checklist", "audience": ["MSP", "IT team"], "access": "public", "account_required": false },
     { "id": "rmm-agent-installation-troubleshooting", "title": "RMM agent installation troubleshooting guide", "category": "deployment", "url": "https://nizlo.com/guides/rmm-agent-installation-troubleshooting", "audience": ["MSP", "IT team"], "access": "public", "account_required": false }
   ]
 }

@@ -30,6 +30,7 @@ Every resource below is public, ungated, and written to be usable independently 
 | [Endpoint exception-management guide](https://nizlo.com/guides/endpoint-exception-management) | Turning failed patches, offline devices, pending reboots, and unknown states into owned work |
 | [Endpoint inventory and CMDB readiness checklist](https://nizlo.com/guides/endpoint-inventory-cmdb-readiness) | Establishing durable identities, source provenance, lifecycle states, and exception handling before a CMDB project |
 | [Windows patch-management checklist](https://nizlo.com/guides/windows-patch-management-checklist) | Defining rings, maintenance windows, approvals, exceptions, rollback, and reporting |
+| [RMM deployment checklist](https://nizlo.com/guides/rmm-deployment-checklist) | Moving from endpoint preparation through a controlled pilot, wave rollout, verification, and rollback |
 | [RMM agent installation troubleshooting guide](https://nizlo.com/guides/rmm-agent-installation-troubleshooting) | Diagnosing enrollment, service, connectivity, permission, proxy, and first-check-in failures without repeatedly reinstalling |
 
 ## Machine-readable index

@@ -116,6 +116,15 @@
       "account_required": false
     },
     {
+      "id": "rmm-deployment-checklist",
+      "title": "RMM deployment checklist",
+      "category": "deployment",
+      "url": "https://nizlo.com/guides/rmm-deployment-checklist",
+      "audience": ["MSP", "IT team"],
+      "access": "public",
+      "account_required": false
+    },
+    {
       "id": "rmm-agent-installation-troubleshooting",
       "title": "RMM agent installation troubleshooting guide",
       "category": "deployment",
