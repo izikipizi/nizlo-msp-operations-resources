@@ -6,7 +6,7 @@
   "title": "Nizlo RMM Operations Templates",
   "description": "Two public, vendor-neutral CSV templates for RMM deployment readiness and controlled change execution.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/",
-  "version": "1.11.0",
+  "version": "1.11.1",
   "created": "2026-11-01",
   "contributors": [
     {
