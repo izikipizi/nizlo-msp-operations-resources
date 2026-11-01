@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Nizlo MSP Operations Resources</title>
+  <subtitle>Free, ungated checklists and field guides for MSP and IT operations.</subtitle>
+  <id>https://izikipizi.github.io/nizlo-msp-operations-resources/</id>
+  <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
+  <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
+  <updated>2026-11-01T00:00:00Z</updated>
+  <author>
+    <name>Nizlo</name>
+    <uri>https://nizlo.com/</uri>
+  </author>
+  <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>RMM evaluation checklist</title>
+    <id>https://nizlo.com/guides/rmm-evaluation-checklist</id>
+    <link href="https://nizlo.com/guides/rmm-evaluation-checklist" />
+    <updated>2026-11-01T00:00:00Z</updated>
+    <category term="selection" />
+    <summary>Evaluate RMM software against operational, security, deployment, support, and commercial requirements.</summary>
+  </entry>
+  <entry>
+    <title>RMM vendor due-diligence checklist</title>
+    <id>https://nizlo.com/guides/rmm-vendor-due-diligence</id>
+    <link href="https://nizlo.com/guides/rmm-vendor-due-diligence" />
+    <updated>2026-11-01T00:00:00Z</updated>
+    <category term="selection" />
+    <summary>Review vendor ownership, security, support, data handling, contracts, and exit readiness before purchase.</summary>
+  </entry>
+  <entry>
+    <title>RMM cost calculator and pricing dataset</title>
+    <id>https://nizlo.com/guides/cheapest-rmm-for-small-msps</id>
+    <link href="https://nizlo.com/guides/cheapest-rmm-for-small-msps" />
+    <updated>2026-11-01T00:00:00Z</updated>
+    <category term="pricing" />
+    <summary>Compare public RMM pricing scenarios with source dates, assumptions, and a practical calculator.</summary>
+  </entry>
+  <entry>
+    <title>RMM security checklist</title>
+    <id>https://nizlo.com/guides/rmm-security-checklist</id>
+    <link href="https://nizlo.com/guides/rmm-security-checklist" />
+    <updated>2026-11-01T00:00:00Z</updated>
+    <category term="security" />
+    <summary>Assess identity, access, agent, automation, logging, vulnerability, and incident-response controls.</summary>
+  </entry>
+  <entry>
+    <title>RMM migration checklist</title>
+    <id>https://nizlo.com/guides/rmm-migration-checklist</id>
+    <link href="https://nizlo.com/guides/rmm-migration-checklist" />
+    <updated>2026-11-01T00:00:00Z</updated>
+    <category term="migration" />
+    <summary>Plan an RMM migration with inventory, pilot, rollback, security, documentation, and validation steps.</summary>
+  </entry>
+  <entry>
+    <title>MSP client onboarding checklist</title>
+    <id>https://nizlo.com/guides/msp-client-onboarding-checklist</id>
+    <link href="https://nizlo.com/guides/msp-client-onboarding-checklist" />
+    <updated>2026-11-01T00:00:00Z</updated>
+    <category term="client-lifecycle" />
+    <summary>Structure discovery, access, endpoint enrollment, policy rollout, documentation, and handoff for a new MSP client.</summary>
+  </entry>
+  <entry>
+    <title>MSP client offboarding checklist</title>
+    <id>https://nizlo.com/guides/msp-client-offboarding-checklist</id>
+    <link href="https://nizlo.com/guides/msp-client-offboarding-checklist" />
+    <updated>2026-11-01T00:00:00Z</updated>
+    <category term="client-lifecycle" />
+    <summary>Transfer access, documentation, assets, agents, data, and responsibilities cleanly when an MSP relationship ends.</summary>
+  </entry>
+  <entry>
+    <title>RMM automation safety checklist</title>
+    <id>https://nizlo.com/guides/rmm-automation-safety-checklist</id>
+    <link href="https://nizlo.com/guides/rmm-automation-safety-checklist" />
+    <updated>2026-11-01T00:00:00Z</updated>
+    <category term="operations" />
+    <summary>Design, test, approve, scope, observe, and roll back RMM automations with less operational risk.</summary>
+  </entry>
+  <entry>
+    <title>RMM alert-tuning checklist</title>
+    <id>https://nizlo.com/guides/rmm-alert-tuning-checklist</id>
+    <link href="https://nizlo.com/guides/rmm-alert-tuning-checklist" />
+    <updated>2026-11-01T00:00:00Z</updated>
+    <category term="operations" />
+    <summary>Reduce alert noise by defining ownership, severity, thresholds, suppression, routing, and review cycles.</summary>
+  </entry>
+  <entry>
+    <title>Endpoint exception-management guide</title>
+    <id>https://nizlo.com/guides/endpoint-exception-management</id>
+    <link href="https://nizlo.com/guides/endpoint-exception-management" />
+    <updated>2026-11-01T00:00:00Z</updated>
+    <category term="operations" />
+    <summary>Record, approve, time-limit, monitor, and reconcile endpoint exceptions without losing accountability.</summary>
+  </entry>
+  <entry>
+    <title>Endpoint inventory and CMDB readiness checklist</title>
+    <id>https://nizlo.com/guides/endpoint-inventory-cmdb-readiness</id>
+    <link href="https://nizlo.com/guides/endpoint-inventory-cmdb-readiness" />
+    <updated>2026-11-01T00:00:00Z</updated>
+    <category term="operations" />
+    <summary>Improve endpoint identity, ownership, lifecycle, normalization, reconciliation, and CMDB-ready evidence.</summary>
+  </entry>
+  <entry>
+    <title>Windows patch-management checklist</title>
+    <id>https://nizlo.com/guides/windows-patch-management-checklist</id>
+    <link href="https://nizlo.com/guides/windows-patch-management-checklist" />
+    <updated>2026-11-01T00:00:00Z</updated>
+    <category term="patch-management" />
+    <summary>Define Windows patch rings, maintenance windows, testing, exceptions, failure handling, and reporting.</summary>
+  </entry>
+  <entry>
+    <title>RMM deployment checklist</title>
+    <id>https://nizlo.com/guides/rmm-deployment-checklist</id>
+    <link href="https://nizlo.com/guides/rmm-deployment-checklist" />
+    <updated>2026-11-01T00:00:00Z</updated>
+    <category term="deployment" />
+    <summary>Prepare, pilot, verify, and scale an RMM deployment with explicit safety and rollback controls.</summary>
+  </entry>
+  <entry>
+    <title>RMM agent installation troubleshooting guide</title>
+    <id>https://nizlo.com/guides/rmm-agent-installation-troubleshooting</id>
+    <link href="https://nizlo.com/guides/rmm-agent-installation-troubleshooting" />
+    <updated>2026-11-01T00:00:00Z</updated>
+    <category term="deployment" />
+    <summary>Diagnose common RMM agent installation failures across prerequisites, permissions, networking, services, and cleanup.</summary>
+  </entry>
+</feed>
