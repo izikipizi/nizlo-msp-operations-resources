@@ -17,6 +17,15 @@
       "account_required": false
     },
     {
+      "id": "rmm-vendor-due-diligence",
+      "title": "RMM vendor due-diligence checklist",
+      "category": "selection",
+      "url": "https://nizlo.com/guides/rmm-vendor-due-diligence",
+      "audience": ["MSP", "IT team"],
+      "access": "public",
+      "account_required": false
+    },
+    {
       "id": "rmm-migration-checklist",
       "title": "RMM migration checklist",
       "category": "migration",
@@ -57,6 +66,15 @@
       "title": "RMM alert-tuning checklist",
       "category": "operations",
       "url": "https://nizlo.com/guides/rmm-alert-tuning-checklist",
+      "audience": ["MSP", "IT team"],
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "endpoint-exception-management",
+      "title": "Endpoint exception-management guide",
+      "category": "operations",
+      "url": "https://nizlo.com/guides/endpoint-exception-management",
       "audience": ["MSP", "IT team"],
       "access": "public",
       "account_required": false

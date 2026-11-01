@@ -4,11 +4,13 @@
   "updated": "2026-11-01",
   "resources": [
     { "id": "rmm-evaluation-checklist", "title": "RMM evaluation checklist", "category": "selection", "url": "https://nizlo.com/guides/rmm-evaluation-checklist", "audience": ["MSP", "IT team"], "access": "public", "account_required": false },
+    { "id": "rmm-vendor-due-diligence", "title": "RMM vendor due-diligence checklist", "category": "selection", "url": "https://nizlo.com/guides/rmm-vendor-due-diligence", "audience": ["MSP", "IT team"], "access": "public", "account_required": false },
     { "id": "rmm-migration-checklist", "title": "RMM migration checklist", "category": "migration", "url": "https://nizlo.com/guides/rmm-migration-checklist", "audience": ["MSP", "IT team"], "access": "public", "account_required": false },
     { "id": "msp-client-onboarding-checklist", "title": "MSP client onboarding checklist", "category": "client-lifecycle", "url": "https://nizlo.com/guides/msp-client-onboarding-checklist", "audience": ["MSP"], "access": "public", "account_required": false },
     { "id": "msp-client-offboarding-checklist", "title": "MSP client offboarding checklist", "category": "client-lifecycle", "url": "https://nizlo.com/guides/msp-client-offboarding-checklist", "audience": ["MSP"], "access": "public", "account_required": false },
     { "id": "rmm-automation-safety-checklist", "title": "RMM automation safety checklist", "category": "operations", "url": "https://nizlo.com/guides/rmm-automation-safety-checklist", "audience": ["MSP", "IT team"], "access": "public", "account_required": false },
     { "id": "rmm-alert-tuning-checklist", "title": "RMM alert-tuning checklist", "category": "operations", "url": "https://nizlo.com/guides/rmm-alert-tuning-checklist", "audience": ["MSP", "IT team"], "access": "public", "account_required": false },
+    { "id": "endpoint-exception-management", "title": "Endpoint exception-management guide", "category": "operations", "url": "https://nizlo.com/guides/endpoint-exception-management", "audience": ["MSP", "IT team"], "access": "public", "account_required": false },
     { "id": "windows-patch-management-checklist", "title": "Windows patch-management checklist", "category": "patch-management", "url": "https://nizlo.com/guides/windows-patch-management-checklist", "audience": ["MSP", "IT team"], "access": "public", "account_required": false }
   ]
 }
