@@ -1,0 +1,11 @@
+criterion_id,criterion,weight,score_0,score_1,score_2,evidence_or_notes,risk_owner,retest_date,decision
+inventory,Inventory and device identity,1,Failed or unacceptable risk,"Partial, ambiguous, or manual",Reliable and controlled,,,,
+monitoring,Monitoring and alert handling,1,Failed or unacceptable risk,"Partial, ambiguous, or manual",Reliable and controlled,,,,
+patching,Windows patch management,1,Failed or unacceptable risk,"Partial, ambiguous, or manual",Reliable and controlled,,,,
+automation,Scripts and automation,1,Failed or unacceptable risk,"Partial, ambiguous, or manual",Reliable and controlled,,,,
+remote,Remote support,1,Failed or unacceptable risk,"Partial, ambiguous, or manual",Reliable and controlled,,,,
+permissions,Permissions and tenant separation,1,Failed or unacceptable risk,"Partial, ambiguous, or manual",Reliable and controlled,,,,
+evidence,Reporting and audit evidence,1,Failed or unacceptable risk,"Partial, ambiguous, or manual",Reliable and controlled,,,,
+recovery,Failure and recovery,1,Failed or unacceptable risk,"Partial, ambiguous, or manual",Reliable and controlled,,,,
+removal,Removal and revocation,1,Failed or unacceptable risk,"Partial, ambiguous, or manual",Reliable and controlled,,,,
+usability,Technician usability,1,Failed or unacceptable risk,"Partial, ambiguous, or manual",Reliable and controlled,,,,

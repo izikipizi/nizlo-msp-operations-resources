@@ -4,9 +4,9 @@
   "name": "nizlo-rmm-operations-templates",
   "id": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
   "title": "Nizlo RMM Operations Templates",
-  "description": "Four public, vendor-neutral CSV templates for RMM deployment readiness, controlled change execution, incident response, and platform migration.",
+  "description": "Five public, vendor-neutral CSV templates for RMM evaluation, deployment readiness, controlled change execution, incident response, and platform migration.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/",
-  "version": "1.14.0",
+  "version": "1.17.0",
   "created": "2026-11-01",
   "contributors": [
     {
@@ -28,7 +28,8 @@
     "endpoint management",
     "incident response",
     "RMM security",
-    "RMM migration"
+    "RMM migration",
+    "RMM evaluation scorecard"
   ],
   "resources": [
     {
@@ -142,6 +143,33 @@
           { "name": "notes", "type": "string" }
         ],
         "primaryKey": "control_id"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "rmm-evaluation-scorecard",
+      "title": "RMM evaluation scorecard template",
+      "description": "Ten evidence-based evaluation areas for comparing RMM products during a controlled pilot.",
+      "path": "templates/rmm-evaluation-scorecard.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 1351,
+      "hash": "sha256:599de6b2383e7ea1abe78baebd86927d2a94d6e0567d16d5751c1d7fce597df7",
+      "schema": {
+        "fields": [
+          { "name": "criterion_id", "type": "string" },
+          { "name": "criterion", "type": "string" },
+          { "name": "weight", "type": "integer" },
+          { "name": "score_0", "type": "string" },
+          { "name": "score_1", "type": "string" },
+          { "name": "score_2", "type": "string" },
+          { "name": "evidence_or_notes", "type": "string" },
+          { "name": "risk_owner", "type": "string" },
+          { "name": "retest_date", "type": "string" },
+          { "name": "decision", "type": "string" }
+        ],
+        "primaryKey": "criterion_id"
       }
     }
   ]

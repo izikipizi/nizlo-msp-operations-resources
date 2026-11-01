@@ -42,7 +42,7 @@ Every resource below is public, ungated, and written to be usable independently 
 
 ## Machine-readable index
 
-[`resource-index.json`](resource-index.json) exposes the same catalogue as structured data for internal portals, documentation tools, and agents. The public [Data Package descriptor](https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json) supplies schemas, byte counts, and SHA-256 hashes for all four CSV templates. The [Atom feed](https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml) makes the catalogue available to feed readers and aggregators, while [`llms.txt`](https://izikipizi.github.io/nizlo-msp-operations-resources/llms.txt) provides a compact answer-engine profile. Each entry points to the maintained canonical guide rather than an unversioned copy.
+[`resource-index.json`](resource-index.json) exposes the same catalogue as structured data for internal portals, documentation tools, and agents. The public [Data Package descriptor](https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json) supplies schemas, byte counts, and SHA-256 hashes for all five CSV templates. The [Atom feed](https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml) makes the catalogue available to feed readers and aggregators, while [`llms.txt`](https://izikipizi.github.io/nizlo-msp-operations-resources/llms.txt) provides a compact answer-engine profile. Each entry points to the maintained canonical guide rather than an unversioned copy.
 
 ## Citation and preservation
 
@@ -59,6 +59,8 @@ Use the [RMM change-window and rollback-plan template](https://izikipizi.github.
 Use the [RMM incident response runbook template](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-incident-response-runbook-template.html) to coordinate readiness, detection, evidence preservation, containment, investigation, recovery, stakeholder communication, and corrective action after a suspected RMM security event. The underlying [30-control CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-incident-response-runbook.csv) is public and ungated, and the canonical [RMM incident response checklist](https://nizlo.com/guides/rmm-incident-response-checklist) explains the full eight-stage workflow.
 
 Use the [RMM migration checklist workbook](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-workbook-template.html) to reconcile source inventory, target mappings, pilot evidence, coexistence, cutover waves, rollback, source retirement, and final acceptance. The underlying [30-control CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-migration-workbook.csv) is public and ungated.
+
+Use the [RMM evaluation scorecard](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-evaluation-scorecard-template.html) to compare observed pilot evidence across inventory, monitoring, patching, automation, remote support, permissions, audit evidence, recovery, removal, and technician usability. The underlying [10-area CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-evaluation-scorecard.csv) is public and ungated.
 
 ## More free tools
 

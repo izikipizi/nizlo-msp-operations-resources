@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If these MSP operations resources support your work, cite the maintained canonical guide."
 title: "Nizlo MSP Operations Resources"
 type: dataset
-version: "1.16.1"
+version: "1.17.0"
 authors:
   - family-names: "Ecklund"
     given-names: "Kip"
@@ -34,3 +34,4 @@ keywords:
   - "rollback plan"
   - "RMM incident response"
   - "incident response runbook"
+  - "RMM evaluation scorecard"

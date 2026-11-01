@@ -241,6 +241,17 @@
       "controls": 30,
       "access": "public",
       "account_required": false
+    },
+    {
+      "id": "rmm-evaluation-scorecard",
+      "title": "RMM evaluation scorecard template",
+      "category": "selection",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-evaluation-scorecard-template.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-evaluation-scorecard.csv",
+      "format": "text/csv",
+      "controls": 10,
+      "access": "public",
+      "account_required": false
     }
   ]
 }
