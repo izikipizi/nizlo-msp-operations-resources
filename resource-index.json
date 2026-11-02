@@ -294,6 +294,7 @@
       "category": "pricing",
       "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html",
       "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/data/public-rmm-pricing-comparison-2026-10-30.csv",
+      "metadata_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/data/public-rmm-pricing-comparison-2026-10-30.jsonld",
       "canonical_guide": "https://nizlo.com/guides/cheapest-rmm-for-small-msps",
       "format": "text/csv",
       "rows": 6,

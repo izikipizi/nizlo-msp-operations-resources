@@ -46,7 +46,7 @@ Every resource below is public, ungated, and written to be usable independently 
 
 ## Source-dated pricing dataset
 
-The [public RMM pricing dataset](https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html) normalizes six published pricing models to one technician and fleets of 10, 50, 100, and 500 endpoints. Download the [CSV snapshot](https://izikipizi.github.io/nizlo-msp-operations-resources/data/public-rmm-pricing-comparison-2026-10-30.csv), verify every row against its linked vendor source, and use the maintained [calculator and methodology](https://nizlo.com/guides/cheapest-rmm-for-small-msps) for context. Nizlo maintains the dataset and is one of the compared products; the rows are subscription math, not an independent endorsement or a feature-equivalence claim.
+The [public RMM pricing dataset](https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html) normalizes six published pricing models to one technician and fleets of 10, 50, 100, and 500 endpoints. Download the [CSV snapshot](https://izikipizi.github.io/nizlo-msp-operations-resources/data/public-rmm-pricing-comparison-2026-10-30.csv), consume its [Schema.org and DCAT JSON-LD metadata](https://izikipizi.github.io/nizlo-msp-operations-resources/data/public-rmm-pricing-comparison-2026-10-30.jsonld), verify every row against its linked vendor source, and use the maintained [calculator and methodology](https://nizlo.com/guides/cheapest-rmm-for-small-msps) for context. Nizlo maintains the dataset and is one of the compared products; the rows are subscription math, not an independent endorsement or a feature-equivalence claim.
 
 ## Citation and preservation
 
