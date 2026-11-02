@@ -1,47 +1,433 @@
 {
   "schema_version": "1.0",
-  "publisher": { "name": "Nizlo", "url": "https://nizlo.com/", "resources_url": "https://nizlo.com/tools" },
-  "data_package": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
+  "publisher": {
+    "name": "Nizlo",
+    "url": "https://nizlo.com/",
+    "resources_url": "https://nizlo.com/tools"
+  },
   "updated": "2026-11-02",
   "resources": [
-    { "id": "rmm-evaluation-checklist", "title": "RMM evaluation checklist", "category": "selection", "url": "https://nizlo.com/guides/rmm-evaluation-checklist", "audience": ["MSP", "IT team"], "access": "public", "account_required": false },
-    { "id": "rmm-vendor-due-diligence", "title": "RMM vendor due-diligence checklist", "category": "selection", "url": "https://nizlo.com/guides/rmm-vendor-due-diligence", "audience": ["MSP", "IT team"], "access": "public", "account_required": false },
-    { "id": "rmm-cost-calculator", "title": "RMM cost calculator and pricing dataset", "category": "pricing", "url": "https://nizlo.com/guides/cheapest-rmm-for-small-msps", "audience": ["MSP", "IT team"], "access": "public", "account_required": false },
-    { "id": "rmm-security-checklist", "title": "RMM security checklist", "category": "security", "url": "https://nizlo.com/guides/rmm-security-checklist", "audience": ["MSP", "IT team"], "access": "public", "account_required": false },
-    { "id": "rmm-incident-response-checklist", "title": "RMM incident response checklist", "category": "security", "url": "https://nizlo.com/guides/rmm-incident-response-checklist", "audience": ["MSP", "IT team"], "access": "public", "account_required": false },
-    { "id": "rmm-migration-checklist", "title": "RMM migration checklist", "category": "migration", "url": "https://nizlo.com/guides/rmm-migration-checklist", "audience": ["MSP", "IT team"], "access": "public", "account_required": false },
-    { "id": "msp-client-onboarding-checklist", "title": "MSP client onboarding checklist", "category": "client-lifecycle", "url": "https://nizlo.com/guides/msp-client-onboarding-checklist", "audience": ["MSP"], "access": "public", "account_required": false },
-    { "id": "msp-client-offboarding-checklist", "title": "MSP client offboarding checklist", "category": "client-lifecycle", "url": "https://nizlo.com/guides/msp-client-offboarding-checklist", "audience": ["MSP"], "access": "public", "account_required": false },
-    { "id": "rmm-automation-safety-checklist", "title": "RMM automation safety checklist", "category": "operations", "url": "https://nizlo.com/guides/rmm-automation-safety-checklist", "audience": ["MSP", "IT team"], "access": "public", "account_required": false },
-    { "id": "rmm-alert-tuning-checklist", "title": "RMM alert-tuning checklist", "category": "operations", "url": "https://nizlo.com/guides/rmm-alert-tuning-checklist", "audience": ["MSP", "IT team"], "access": "public", "account_required": false },
-    { "id": "endpoint-exception-management", "title": "Endpoint exception-management guide", "category": "operations", "url": "https://nizlo.com/guides/endpoint-exception-management", "audience": ["MSP", "IT team"], "access": "public", "account_required": false },
-    { "id": "endpoint-inventory-cmdb-readiness", "title": "Endpoint inventory and CMDB readiness checklist", "category": "operations", "url": "https://nizlo.com/guides/endpoint-inventory-cmdb-readiness", "audience": ["MSP", "IT team"], "access": "public", "account_required": false },
-    { "id": "windows-patch-management-checklist", "title": "Windows patch-management checklist", "category": "patch-management", "url": "https://nizlo.com/guides/windows-patch-management-checklist", "audience": ["MSP", "IT team"], "access": "public", "account_required": false },
-    { "id": "rmm-deployment-checklist", "title": "RMM deployment checklist", "category": "deployment", "url": "https://nizlo.com/guides/rmm-deployment-checklist", "audience": ["MSP", "IT team"], "access": "public", "account_required": false },
-    { "id": "rmm-agent-installation-troubleshooting", "title": "RMM agent installation troubleshooting guide", "category": "deployment", "url": "https://nizlo.com/guides/rmm-agent-installation-troubleshooting", "audience": ["MSP", "IT team"], "access": "public", "account_required": false },
-    { "id": "how-to-test-rmm-software", "title": "How to Test RMM Software Safely Before Production", "category": "deployment", "url": "https://nizlo.com/guides/how-to-test-rmm-software", "audience": ["MSP", "IT team"], "access": "public", "account_required": false },
-    { "id": "rmm-for-mac-and-windows", "title": "RMM for Mac and Windows: A Mixed-Fleet Guide", "category": "selection", "url": "https://nizlo.com/guides/rmm-for-mac-and-windows", "audience": ["MSP", "IT team"], "access": "public", "account_required": false },
-    { "id": "rmm-for-new-msps", "title": "RMM for a New MSP: A First-Customer Buying Guide", "category": "selection", "url": "https://nizlo.com/guides/rmm-for-new-msps", "audience": ["MSP"], "access": "public", "account_required": false },
-    { "id": "rmm-for-small-it-teams", "title": "RMM for Small IT Teams: A Practical Evaluation Guide", "category": "selection", "url": "https://nizlo.com/guides/rmm-for-small-it-teams", "audience": ["IT team"], "access": "public", "account_required": false },
-    { "id": "rmm-pricing-models", "title": "RMM Pricing Calculator & Cost Comparison", "category": "pricing", "url": "https://nizlo.com/guides/rmm-pricing-models", "audience": ["MSP", "IT team"], "access": "public", "account_required": false },
-    { "id": "rmm-vs-intune", "title": "RMM vs. Microsoft Intune for MSPs", "category": "selection", "url": "https://nizlo.com/guides/rmm-vs-intune", "audience": ["MSP", "IT team"], "access": "public", "account_required": false }
+    {
+      "id": "rmm-evaluation-checklist",
+      "title": "RMM evaluation checklist",
+      "category": "selection",
+      "url": "https://nizlo.com/guides/rmm-evaluation-checklist",
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "rmm-vendor-due-diligence",
+      "title": "RMM vendor due-diligence checklist",
+      "category": "selection",
+      "url": "https://nizlo.com/guides/rmm-vendor-due-diligence",
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "rmm-cost-calculator",
+      "title": "RMM cost calculator and pricing dataset",
+      "category": "pricing",
+      "url": "https://nizlo.com/guides/cheapest-rmm-for-small-msps",
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "rmm-security-checklist",
+      "title": "RMM security checklist",
+      "category": "security",
+      "url": "https://nizlo.com/guides/rmm-security-checklist",
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "rmm-incident-response-checklist",
+      "title": "RMM incident response checklist",
+      "category": "security",
+      "url": "https://nizlo.com/guides/rmm-incident-response-checklist",
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "rmm-migration-checklist",
+      "title": "RMM migration checklist",
+      "category": "migration",
+      "url": "https://nizlo.com/guides/rmm-migration-checklist",
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "msp-client-onboarding-checklist",
+      "title": "MSP client onboarding checklist",
+      "category": "client-lifecycle",
+      "url": "https://nizlo.com/guides/msp-client-onboarding-checklist",
+      "audience": [
+        "MSP"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "msp-client-offboarding-checklist",
+      "title": "MSP client offboarding checklist",
+      "category": "client-lifecycle",
+      "url": "https://nizlo.com/guides/msp-client-offboarding-checklist",
+      "audience": [
+        "MSP"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "rmm-automation-safety-checklist",
+      "title": "RMM automation safety checklist",
+      "category": "operations",
+      "url": "https://nizlo.com/guides/rmm-automation-safety-checklist",
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "rmm-alert-tuning-checklist",
+      "title": "RMM alert-tuning checklist",
+      "category": "operations",
+      "url": "https://nizlo.com/guides/rmm-alert-tuning-checklist",
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "endpoint-exception-management",
+      "title": "Endpoint exception-management guide",
+      "category": "operations",
+      "url": "https://nizlo.com/guides/endpoint-exception-management",
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "endpoint-inventory-cmdb-readiness",
+      "title": "Endpoint inventory and CMDB readiness checklist",
+      "category": "operations",
+      "url": "https://nizlo.com/guides/endpoint-inventory-cmdb-readiness",
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "windows-patch-management-checklist",
+      "title": "Windows patch-management checklist",
+      "category": "patch-management",
+      "url": "https://nizlo.com/guides/windows-patch-management-checklist",
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "rmm-deployment-checklist",
+      "title": "RMM deployment checklist",
+      "category": "deployment",
+      "url": "https://nizlo.com/guides/rmm-deployment-checklist",
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "rmm-agent-installation-troubleshooting",
+      "title": "RMM agent installation troubleshooting guide",
+      "category": "deployment",
+      "url": "https://nizlo.com/guides/rmm-agent-installation-troubleshooting",
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "how-to-test-rmm-software",
+      "title": "How to Test RMM Software Safely Before Production",
+      "category": "deployment",
+      "url": "https://nizlo.com/guides/how-to-test-rmm-software",
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "rmm-for-mac-and-windows",
+      "title": "RMM for Mac and Windows: A Mixed-Fleet Guide",
+      "category": "selection",
+      "url": "https://nizlo.com/guides/rmm-for-mac-and-windows",
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "rmm-for-new-msps",
+      "title": "RMM for a New MSP: A First-Customer Buying Guide",
+      "category": "selection",
+      "url": "https://nizlo.com/guides/rmm-for-new-msps",
+      "audience": [
+        "MSP"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "rmm-for-small-it-teams",
+      "title": "RMM for Small IT Teams: A Practical Evaluation Guide",
+      "category": "selection",
+      "url": "https://nizlo.com/guides/rmm-for-small-it-teams",
+      "audience": [
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "rmm-pricing-models",
+      "title": "RMM Pricing Calculator & Cost Comparison",
+      "category": "pricing",
+      "url": "https://nizlo.com/guides/rmm-pricing-models",
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "rmm-vs-intune",
+      "title": "RMM vs. Microsoft Intune for MSPs",
+      "category": "selection",
+      "url": "https://nizlo.com/guides/rmm-vs-intune",
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    }
   ],
   "templates": [
-    { "id": "rmm-pilot-test-evidence-pack", "title": "RMM pilot test plan and evidence pack", "category": "evaluation", "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-pilot-test-evidence-pack.html", "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-pilot-test-evidence-pack.csv", "format": "text/csv", "controls": 25, "access": "public", "account_required": false },
-    { "id": "rmm-deployment-readiness", "title": "RMM deployment-readiness checklist template", "category": "deployment", "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-deployment-readiness-template.html", "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-deployment-readiness.csv", "format": "text/csv", "controls": 33, "access": "public", "account_required": false },
-    { "id": "rmm-change-window-rollback-plan", "title": "RMM change-window and rollback-plan template", "category": "change-management", "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-change-window-rollback-plan.html", "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-change-window-rollback-plan.csv", "format": "text/csv", "controls": 26, "access": "public", "account_required": false },
-    { "id": "rmm-incident-response-runbook", "title": "RMM incident response runbook template", "category": "security", "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-incident-response-runbook-template.html", "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-incident-response-runbook.csv", "format": "text/csv", "controls": 30, "access": "public", "account_required": false },
-    { "id": "rmm-migration-workbook", "title": "RMM migration checklist workbook", "category": "migration", "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-workbook-template.html", "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-migration-workbook.csv", "format": "text/csv", "controls": 30, "access": "public", "account_required": false },
-    { "id": "rmm-evaluation-scorecard", "title": "RMM evaluation scorecard template", "category": "selection", "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-evaluation-scorecard-template.html", "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-evaluation-scorecard.csv", "format": "text/csv", "controls": 10, "access": "public", "account_required": false },
-    { "id": "rmm-first-endpoint-acceptance", "title": "RMM first-endpoint pilot acceptance checklist", "category": "selection", "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-acceptance-checklist.html", "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-first-endpoint-acceptance.csv", "format": "text/csv", "controls": 5, "access": "public", "account_required": false },
-    { "id": "windows-patch-exception-review", "title": "Windows patch exception review and closure template", "category": "patch-management", "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-exception-review-template.html", "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/windows-patch-exception-review.csv", "format": "text/csv", "controls": 18, "access": "public", "account_required": false },
-    { "id": "endpoint-inventory-cmdb-readiness", "title": "Endpoint inventory and CMDB readiness template", "category": "inventory", "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/endpoint-inventory-cmdb-template.html", "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/endpoint-inventory-cmdb-readiness.csv", "format": "text/csv", "controls": 23, "access": "public", "account_required": false },
-    { "id": "rmm-technician-access-review", "title": "RMM technician access review matrix", "category": "security", "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-technician-access-review-matrix.html", "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-technician-access-review.csv", "format": "text/csv", "controls": 29, "access": "public", "account_required": false },
-    { "id": "msp-client-onboarding-evidence-register", "title": "MSP client onboarding checklist and evidence register", "category": "client-lifecycle", "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-onboarding-evidence-register.html", "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-client-onboarding-evidence-register.csv", "format": "text/csv", "controls": 30, "access": "public", "account_required": false },
-    { "id": "six-week-msp-onboarding-project-plan", "title": "Six-week MSP onboarding project plan", "category": "client-lifecycle", "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/six-week-msp-onboarding-project-plan.html", "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/six-week-msp-onboarding-project-plan.csv", "format": "text/csv", "controls": 30, "access": "public", "account_required": false },
-    { "id": "msp-client-offboarding-evidence-register", "title": "MSP client offboarding checklist and evidence register", "category": "client-lifecycle", "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-offboarding-evidence-register.html", "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-client-offboarding-evidence-register.csv", "format": "text/csv", "controls": 32, "access": "public", "account_required": false }
+    {
+      "id": "rmm-deployment-readiness",
+      "title": "RMM deployment-readiness checklist template",
+      "category": "deployment",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-deployment-readiness-template.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-deployment-readiness.csv",
+      "format": "text/csv",
+      "controls": 33,
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "rmm-change-window-rollback-plan",
+      "title": "RMM change-window and rollback-plan template",
+      "category": "change-management",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-change-window-rollback-plan.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-change-window-rollback-plan.csv",
+      "format": "text/csv",
+      "controls": 26,
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "rmm-incident-response-runbook",
+      "title": "RMM incident response runbook template",
+      "category": "security",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-incident-response-runbook-template.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-incident-response-runbook.csv",
+      "format": "text/csv",
+      "controls": 30,
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "rmm-migration-workbook",
+      "title": "RMM migration checklist workbook",
+      "category": "migration",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-workbook-template.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-migration-workbook.csv",
+      "format": "text/csv",
+      "controls": 30,
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "rmm-evaluation-scorecard",
+      "title": "RMM evaluation scorecard template",
+      "category": "selection",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-evaluation-scorecard-template.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-evaluation-scorecard.csv",
+      "format": "text/csv",
+      "controls": 10,
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "rmm-first-endpoint-acceptance",
+      "title": "RMM first-endpoint pilot acceptance checklist",
+      "category": "selection",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-acceptance-checklist.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-first-endpoint-acceptance.csv",
+      "format": "text/csv",
+      "controls": 5,
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "windows-patch-exception-review",
+      "title": "Windows patch exception review and closure template",
+      "category": "patch-management",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-exception-review-template.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/windows-patch-exception-review.csv",
+      "format": "text/csv",
+      "controls": 18,
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "endpoint-inventory-cmdb-readiness",
+      "title": "Endpoint inventory and CMDB readiness template",
+      "category": "inventory",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/endpoint-inventory-cmdb-template.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/endpoint-inventory-cmdb-readiness.csv",
+      "format": "text/csv",
+      "controls": 23,
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "rmm-technician-access-review",
+      "title": "RMM technician access review matrix",
+      "category": "security",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-technician-access-review-matrix.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-technician-access-review.csv",
+      "format": "text/csv",
+      "controls": 29,
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "rmm-pilot-test-evidence-pack",
+      "title": "RMM pilot test plan and evidence pack",
+      "category": "evaluation",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-pilot-test-evidence-pack.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-pilot-test-evidence-pack.csv",
+      "format": "text/csv",
+      "controls": 25,
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "msp-client-onboarding-evidence-register",
+      "title": "MSP client onboarding checklist and evidence register",
+      "category": "client-lifecycle",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-onboarding-evidence-register.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-client-onboarding-evidence-register.csv",
+      "format": "text/csv",
+      "controls": 30,
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "six-week-msp-onboarding-project-plan",
+      "title": "Six-week MSP onboarding project plan",
+      "category": "client-lifecycle",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/six-week-msp-onboarding-project-plan.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/six-week-msp-onboarding-project-plan.csv",
+      "format": "text/csv",
+      "controls": 30,
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "msp-client-offboarding-evidence-register",
+      "title": "MSP client offboarding checklist and evidence register",
+      "category": "client-lifecycle",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-offboarding-evidence-register.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-client-offboarding-evidence-register.csv",
+      "format": "text/csv",
+      "controls": 32,
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "msp-daily-weekly-monthly-maintenance-checklist",
+      "title": "MSP daily, weekly, monthly, and quarterly maintenance checklist",
+      "category": "operations",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/msp-daily-weekly-monthly-maintenance-checklist.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-daily-weekly-monthly-maintenance-checklist.csv",
+      "format": "text/csv",
+      "controls": 28,
+      "access": "public",
+      "account_required": false
+    }
   ],
   "datasets": [
-    { "id": "public-rmm-pricing-comparison-2026-10-30", "title": "Public RMM pricing comparison for one-technician MSPs", "category": "pricing", "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html", "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/data/public-rmm-pricing-comparison-2026-10-30.csv", "metadata_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/data/public-rmm-pricing-comparison-2026-10-30.jsonld", "canonical_guide": "https://nizlo.com/guides/cheapest-rmm-for-small-msps", "format": "text/csv", "rows": 6, "fact_checked": "2026-10-30", "license": "CC-BY-4.0", "relationship_disclosure": "Nizlo maintains the dataset and is one of the compared products.", "access": "public", "account_required": false }
+    {
+      "id": "public-rmm-pricing-comparison-2026-10-30",
+      "title": "Public RMM pricing comparison for one-technician MSPs",
+      "category": "pricing",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/data/public-rmm-pricing-comparison-2026-10-30.csv",
+      "metadata_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/data/public-rmm-pricing-comparison-2026-10-30.jsonld",
+      "canonical_guide": "https://nizlo.com/guides/cheapest-rmm-for-small-msps",
+      "format": "text/csv",
+      "rows": 6,
+      "fact_checked": "2026-10-30",
+      "license": "CC-BY-4.0",
+      "relationship_disclosure": "Nizlo maintains the dataset and is one of the compared products.",
+      "access": "public",
+      "account_required": false
+    }
   ]
 }

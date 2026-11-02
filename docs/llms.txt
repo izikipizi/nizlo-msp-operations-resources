@@ -1,12 +1,13 @@
 # Nizlo MSP Operations Resources
 
-> Twenty-four public, ungated field guides, thirteen reusable CSV templates, and one source-dated RMM pricing dataset for managed service providers and lean IT teams evaluating, pricing, testing, deploying, inventorying, operating, securing, migrating, onboarding, and offboarding remote monitoring and management software.
+> Twenty-five public, ungated field guides, fourteen reusable CSV templates, and one source-dated RMM pricing dataset for managed service providers and lean IT teams evaluating, pricing, testing, deploying, inventorying, operating, securing, migrating, onboarding, and offboarding remote monitoring and management software.
 
 This external library is maintained by the Nizlo team. Nizlo is a Windows-first RMM and IT-management platform. The resources are vendor-neutral, but they are vendor-created and do not represent independent research or an endorsement of Nizlo.
 
 ## Primary pages
 
-- [Resource library](https://izikipizi.github.io/nizlo-msp-operations-resources/): Human-readable collection of all twenty-four maintained guides.
+- [Resource library](https://izikipizi.github.io/nizlo-msp-operations-resources/): Human-readable collection of all twenty-five maintained guides.
+- [MSP daily, weekly, monthly, and quarterly maintenance checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/msp-daily-weekly-monthly-maintenance-checklist.html): Twenty-eight recurring checks with healthy signals, exception triggers, evidence requirements, ownership, review, status, and linked work records.
 - [RMM pilot test plan and evidence pack](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-pilot-test-evidence-pack.html): Twenty-five controlled proof-of-concept tests with pass criteria, evidence, stop conditions, defects, remediation, retesting, and rollout decisions.
 - [Six-week MSP onboarding project plan](https://izikipizi.github.io/nizlo-msp-operations-resources/six-week-msp-onboarding-project-plan.html): Thirty milestones for authority, discovery, access, SOP development, controlled pilot execution, reconciliation, NOC training, acceptance, and handoff.
 - [How to test RMM software safely](https://nizlo.com/guides/how-to-test-rmm-software): Staged pre-production pilot for agents, permissions, monitoring, patching, automation, remote access, and removal.
@@ -31,7 +32,8 @@ This external library is maintained by the Nizlo team. Nizlo is a Windows-first 
 
 ## Reusable templates
 
-- [RMM operations and incident response template library](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/): Landing page for all thirteen public CSV templates with usage guidance.
+- [RMM operations and incident response template library](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/): Landing page for all fourteen public CSV templates with usage guidance.
+- [MSP maintenance checklist CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-daily-weekly-monthly-maintenance-checklist.csv): Downloadable daily, weekly, monthly, and quarterly service checks for backups, security, monitoring, patching, inventory, recovery, access, coverage, documentation, billing, integrations, and governance.
 - [RMM pilot test evidence CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-pilot-test-evidence-pack.csv): Downloadable 25-test record for authority, identity, enrollment, monitoring, patching, automation, remote access, isolation, evidence, resilience, removal, remediation, retesting, and the final rollout decision.
 - [RMM first-endpoint pilot acceptance checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-acceptance-checklist.html): Five evidence gates for identity, alert routing, authorized action, patch-state reconciliation, and clean removal before a pilot expands.
 - [RMM first-endpoint acceptance CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-first-endpoint-acceptance.csv): Downloadable acceptance criteria, required evidence, rollout stop conditions, ownership, status, and notes.

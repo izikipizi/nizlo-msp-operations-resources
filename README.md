@@ -44,7 +44,7 @@ Every resource below is public, ungated, and written to be usable independently 
 
 ## Machine-readable index
 
-[`resource-index.json`](resource-index.json) exposes the same catalogue as structured data for internal portals, documentation tools, and agents. The public [Data Package descriptor](https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json) supplies schemas, byte counts, and SHA-256 hashes for thirteen CSV templates plus the source-dated RMM pricing dataset. The [Atom feed](https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml) makes the catalogue available to feed readers and aggregators, while [`llms.txt`](https://izikipizi.github.io/nizlo-msp-operations-resources/llms.txt) provides a compact answer-engine profile. Each entry points to the maintained canonical guide rather than an unversioned copy.
+[`resource-index.json`](resource-index.json) exposes the same catalogue as structured data for internal portals, documentation tools, and agents. The public [Data Package descriptor](https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json) supplies schemas, byte counts, and SHA-256 hashes for fourteen CSV templates plus the source-dated RMM pricing dataset. The [Atom feed](https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml) makes the catalogue available to feed readers and aggregators, while [`llms.txt`](https://izikipizi.github.io/nizlo-msp-operations-resources/llms.txt) provides a compact answer-engine profile. Each entry points to the maintained canonical guide rather than an unversioned copy.
 
 ## Source-dated pricing dataset
 
@@ -83,6 +83,8 @@ Use the [six-week MSP onboarding project plan](https://izikipizi.github.io/nizlo
 Use the [RMM pilot test plan and evidence pack](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-pilot-test-evidence-pack.html) to test authority, identity, enrollment, tenant placement, monitoring, patching, automation, remote access, isolation, audit evidence, resilience, removal, and the final rollout decision. The underlying [25-test CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-pilot-test-evidence-pack.csv) is public and ungated.
 
 Use the [MSP client offboarding checklist and evidence register](https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-offboarding-evidence-register.html) to coordinate transition authority, inventory, secure handoff, account and token revocation, RMM and remote-support agent removal, data disposition, customer acceptance, and post-exit verification. The underlying [32-control CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-client-offboarding-evidence-register.csv) is public and ungated.
+
+Use the [MSP daily, weekly, monthly, and quarterly maintenance checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/msp-daily-weekly-monthly-maintenance-checklist.html) to assign recurring backup, security, monitoring, patching, automation, inventory, recovery, access, coverage, documentation, service-quality, billing, integration, and governance checks. The underlying [28-check CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-daily-weekly-monthly-maintenance-checklist.csv) records healthy signals, exception triggers, evidence, ownership, review, status, and linked work without requiring an account.
 
 ## More free tools
 

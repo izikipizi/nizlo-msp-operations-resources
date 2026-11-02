@@ -12,7 +12,10 @@
       "title": "RMM evaluation checklist",
       "category": "selection",
       "url": "https://nizlo.com/guides/rmm-evaluation-checklist",
-      "audience": ["MSP", "IT team"],
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
       "access": "public",
       "account_required": false
     },
@@ -21,7 +24,10 @@
       "title": "RMM vendor due-diligence checklist",
       "category": "selection",
       "url": "https://nizlo.com/guides/rmm-vendor-due-diligence",
-      "audience": ["MSP", "IT team"],
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
       "access": "public",
       "account_required": false
     },
@@ -30,7 +36,10 @@
       "title": "RMM cost calculator and pricing dataset",
       "category": "pricing",
       "url": "https://nizlo.com/guides/cheapest-rmm-for-small-msps",
-      "audience": ["MSP", "IT team"],
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
       "access": "public",
       "account_required": false
     },
@@ -39,7 +48,10 @@
       "title": "RMM security checklist",
       "category": "security",
       "url": "https://nizlo.com/guides/rmm-security-checklist",
-      "audience": ["MSP", "IT team"],
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
       "access": "public",
       "account_required": false
     },
@@ -48,7 +60,10 @@
       "title": "RMM incident response checklist",
       "category": "security",
       "url": "https://nizlo.com/guides/rmm-incident-response-checklist",
-      "audience": ["MSP", "IT team"],
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
       "access": "public",
       "account_required": false
     },
@@ -57,7 +72,10 @@
       "title": "RMM migration checklist",
       "category": "migration",
       "url": "https://nizlo.com/guides/rmm-migration-checklist",
-      "audience": ["MSP", "IT team"],
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
       "access": "public",
       "account_required": false
     },
@@ -66,7 +84,9 @@
       "title": "MSP client onboarding checklist",
       "category": "client-lifecycle",
       "url": "https://nizlo.com/guides/msp-client-onboarding-checklist",
-      "audience": ["MSP"],
+      "audience": [
+        "MSP"
+      ],
       "access": "public",
       "account_required": false
     },
@@ -75,7 +95,9 @@
       "title": "MSP client offboarding checklist",
       "category": "client-lifecycle",
       "url": "https://nizlo.com/guides/msp-client-offboarding-checklist",
-      "audience": ["MSP"],
+      "audience": [
+        "MSP"
+      ],
       "access": "public",
       "account_required": false
     },
@@ -84,7 +106,10 @@
       "title": "RMM automation safety checklist",
       "category": "operations",
       "url": "https://nizlo.com/guides/rmm-automation-safety-checklist",
-      "audience": ["MSP", "IT team"],
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
       "access": "public",
       "account_required": false
     },
@@ -93,7 +118,10 @@
       "title": "RMM alert-tuning checklist",
       "category": "operations",
       "url": "https://nizlo.com/guides/rmm-alert-tuning-checklist",
-      "audience": ["MSP", "IT team"],
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
       "access": "public",
       "account_required": false
     },
@@ -102,7 +130,10 @@
       "title": "Endpoint exception-management guide",
       "category": "operations",
       "url": "https://nizlo.com/guides/endpoint-exception-management",
-      "audience": ["MSP", "IT team"],
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
       "access": "public",
       "account_required": false
     },
@@ -111,7 +142,10 @@
       "title": "Endpoint inventory and CMDB readiness checklist",
       "category": "operations",
       "url": "https://nizlo.com/guides/endpoint-inventory-cmdb-readiness",
-      "audience": ["MSP", "IT team"],
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
       "access": "public",
       "account_required": false
     },
@@ -120,7 +154,10 @@
       "title": "Windows patch-management checklist",
       "category": "patch-management",
       "url": "https://nizlo.com/guides/windows-patch-management-checklist",
-      "audience": ["MSP", "IT team"],
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
       "access": "public",
       "account_required": false
     },
@@ -129,7 +166,10 @@
       "title": "RMM deployment checklist",
       "category": "deployment",
       "url": "https://nizlo.com/guides/rmm-deployment-checklist",
-      "audience": ["MSP", "IT team"],
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
       "access": "public",
       "account_required": false
     },
@@ -138,7 +178,10 @@
       "title": "RMM agent installation troubleshooting guide",
       "category": "deployment",
       "url": "https://nizlo.com/guides/rmm-agent-installation-troubleshooting",
-      "audience": ["MSP", "IT team"],
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
       "access": "public",
       "account_required": false
     },
@@ -147,7 +190,10 @@
       "title": "How to Test RMM Software Safely Before Production",
       "category": "deployment",
       "url": "https://nizlo.com/guides/how-to-test-rmm-software",
-      "audience": ["MSP", "IT team"],
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
       "access": "public",
       "account_required": false
     },
@@ -156,7 +202,10 @@
       "title": "RMM for Mac and Windows: A Mixed-Fleet Guide",
       "category": "selection",
       "url": "https://nizlo.com/guides/rmm-for-mac-and-windows",
-      "audience": ["MSP", "IT team"],
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
       "access": "public",
       "account_required": false
     },
@@ -165,7 +214,9 @@
       "title": "RMM for a New MSP: A First-Customer Buying Guide",
       "category": "selection",
       "url": "https://nizlo.com/guides/rmm-for-new-msps",
-      "audience": ["MSP"],
+      "audience": [
+        "MSP"
+      ],
       "access": "public",
       "account_required": false
     },
@@ -174,7 +225,9 @@
       "title": "RMM for Small IT Teams: A Practical Evaluation Guide",
       "category": "selection",
       "url": "https://nizlo.com/guides/rmm-for-small-it-teams",
-      "audience": ["IT team"],
+      "audience": [
+        "IT team"
+      ],
       "access": "public",
       "account_required": false
     },
@@ -183,7 +236,10 @@
       "title": "RMM Pricing Calculator & Cost Comparison",
       "category": "pricing",
       "url": "https://nizlo.com/guides/rmm-pricing-models",
-      "audience": ["MSP", "IT team"],
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
       "access": "public",
       "account_required": false
     },
@@ -192,7 +248,10 @@
       "title": "RMM vs. Microsoft Intune for MSPs",
       "category": "selection",
       "url": "https://nizlo.com/guides/rmm-vs-intune",
-      "audience": ["MSP", "IT team"],
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
       "access": "public",
       "account_required": false
     }
@@ -338,6 +397,17 @@
       "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-client-offboarding-evidence-register.csv",
       "format": "text/csv",
       "controls": 32,
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "msp-daily-weekly-monthly-maintenance-checklist",
+      "title": "MSP daily, weekly, monthly, and quarterly maintenance checklist",
+      "category": "operations",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/msp-daily-weekly-monthly-maintenance-checklist.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-daily-weekly-monthly-maintenance-checklist.csv",
+      "format": "text/csv",
+      "controls": 28,
       "access": "public",
       "account_required": false
     }

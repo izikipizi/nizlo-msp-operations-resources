@@ -4,9 +4,9 @@
   "name": "nizlo-rmm-operations-resources",
   "id": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
   "title": "Nizlo RMM Operations Resources",
-  "description": "Thirteen public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
+  "description": "Fourteen public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
-  "version": "1.27.0",
+  "version": "1.28.0",
   "created": "2026-11-01",
   "contributors": [
     {
@@ -52,7 +52,9 @@
     "patch deferral",
     "patch exception expiry",
     "RMM pricing",
-    "RMM pricing dataset"
+    "RMM pricing dataset",
+    "MSP maintenance checklist",
+    "daily weekly monthly checklist"
   ],
   "resources": [
     {
@@ -68,16 +70,46 @@
       "hash": "sha256:e4084d765ae0ddf399e707f81aa2baa1f774be76f6accf5e9653a5ae52011e7d",
       "schema": {
         "fields": [
-          { "name": "phase", "type": "string" },
-          { "name": "control_id", "type": "string" },
-          { "name": "control", "type": "string" },
-          { "name": "owner", "type": "string" },
-          { "name": "status", "type": "string" },
-          { "name": "evidence", "type": "string" },
-          { "name": "exception_owner", "type": "string" },
-          { "name": "due_date", "type": "string" },
-          { "name": "rollback_trigger", "type": "string" },
-          { "name": "notes", "type": "string" }
+          {
+            "name": "phase",
+            "type": "string"
+          },
+          {
+            "name": "control_id",
+            "type": "string"
+          },
+          {
+            "name": "control",
+            "type": "string"
+          },
+          {
+            "name": "owner",
+            "type": "string"
+          },
+          {
+            "name": "status",
+            "type": "string"
+          },
+          {
+            "name": "evidence",
+            "type": "string"
+          },
+          {
+            "name": "exception_owner",
+            "type": "string"
+          },
+          {
+            "name": "due_date",
+            "type": "string"
+          },
+          {
+            "name": "rollback_trigger",
+            "type": "string"
+          },
+          {
+            "name": "notes",
+            "type": "string"
+          }
         ],
         "primaryKey": "control_id"
       }
@@ -95,20 +127,62 @@
       "hash": "sha256:2da759e66d4c4dfcbde5f531e1c246c699be28c6fed2a662007ccd6a7960e840",
       "schema": {
         "fields": [
-          { "name": "phase", "type": "string" },
-          { "name": "control_id", "type": "string" },
-          { "name": "activity", "type": "string" },
-          { "name": "owner", "type": "string" },
-          { "name": "planned_start_utc", "type": "string" },
-          { "name": "planned_end_utc", "type": "string" },
-          { "name": "success_criteria", "type": "string" },
-          { "name": "evidence", "type": "string" },
-          { "name": "rollback_trigger", "type": "string" },
-          { "name": "rollback_action", "type": "string" },
-          { "name": "decision_owner", "type": "string" },
-          { "name": "communication_audience", "type": "string" },
-          { "name": "status", "type": "string" },
-          { "name": "notes", "type": "string" }
+          {
+            "name": "phase",
+            "type": "string"
+          },
+          {
+            "name": "control_id",
+            "type": "string"
+          },
+          {
+            "name": "activity",
+            "type": "string"
+          },
+          {
+            "name": "owner",
+            "type": "string"
+          },
+          {
+            "name": "planned_start_utc",
+            "type": "string"
+          },
+          {
+            "name": "planned_end_utc",
+            "type": "string"
+          },
+          {
+            "name": "success_criteria",
+            "type": "string"
+          },
+          {
+            "name": "evidence",
+            "type": "string"
+          },
+          {
+            "name": "rollback_trigger",
+            "type": "string"
+          },
+          {
+            "name": "rollback_action",
+            "type": "string"
+          },
+          {
+            "name": "decision_owner",
+            "type": "string"
+          },
+          {
+            "name": "communication_audience",
+            "type": "string"
+          },
+          {
+            "name": "status",
+            "type": "string"
+          },
+          {
+            "name": "notes",
+            "type": "string"
+          }
         ],
         "primaryKey": "control_id"
       }
@@ -126,17 +200,50 @@
       "hash": "sha256:24fcd51c018802e2150c4c2491ee553251d05fc8d30ee74785bf3e72804c4f8a",
       "schema": {
         "fields": [
-          { "name": "phase", "type": "string" },
-          { "name": "control_id", "type": "string" },
-          { "name": "activity", "type": "string" },
-          { "name": "owner", "type": "string" },
-          { "name": "priority", "type": "string" },
-          { "name": "status", "type": "string" },
-          { "name": "evidence", "type": "string" },
-          { "name": "decision", "type": "string" },
-          { "name": "communication_audience", "type": "string" },
-          { "name": "next_review_utc", "type": "string" },
-          { "name": "notes", "type": "string" }
+          {
+            "name": "phase",
+            "type": "string"
+          },
+          {
+            "name": "control_id",
+            "type": "string"
+          },
+          {
+            "name": "activity",
+            "type": "string"
+          },
+          {
+            "name": "owner",
+            "type": "string"
+          },
+          {
+            "name": "priority",
+            "type": "string"
+          },
+          {
+            "name": "status",
+            "type": "string"
+          },
+          {
+            "name": "evidence",
+            "type": "string"
+          },
+          {
+            "name": "decision",
+            "type": "string"
+          },
+          {
+            "name": "communication_audience",
+            "type": "string"
+          },
+          {
+            "name": "next_review_utc",
+            "type": "string"
+          },
+          {
+            "name": "notes",
+            "type": "string"
+          }
         ],
         "primaryKey": "control_id"
       }
@@ -154,16 +261,46 @@
       "hash": "sha256:9402d4e6027ca0ba837dce4d4316833088d69e28314f20ebdd01803fd315ebe0",
       "schema": {
         "fields": [
-          { "name": "phase", "type": "string" },
-          { "name": "control_id", "type": "string" },
-          { "name": "activity", "type": "string" },
-          { "name": "owner", "type": "string" },
-          { "name": "status", "type": "string" },
-          { "name": "evidence", "type": "string" },
-          { "name": "dependency", "type": "string" },
-          { "name": "rollback_plan", "type": "string" },
-          { "name": "decision_due_utc", "type": "string" },
-          { "name": "notes", "type": "string" }
+          {
+            "name": "phase",
+            "type": "string"
+          },
+          {
+            "name": "control_id",
+            "type": "string"
+          },
+          {
+            "name": "activity",
+            "type": "string"
+          },
+          {
+            "name": "owner",
+            "type": "string"
+          },
+          {
+            "name": "status",
+            "type": "string"
+          },
+          {
+            "name": "evidence",
+            "type": "string"
+          },
+          {
+            "name": "dependency",
+            "type": "string"
+          },
+          {
+            "name": "rollback_plan",
+            "type": "string"
+          },
+          {
+            "name": "decision_due_utc",
+            "type": "string"
+          },
+          {
+            "name": "notes",
+            "type": "string"
+          }
         ],
         "primaryKey": "control_id"
       }
@@ -177,20 +314,50 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "bytes": 1362,
-      "hash": "sha256:53241f5d6956300936cc6ebeb8f2a962a197589a614f67e973e2269cefa9809e",
+      "bytes": 1351,
+      "hash": "sha256:599de6b2383e7ea1abe78baebd86927d2a94d6e0567d16d5751c1d7fce597df7",
       "schema": {
         "fields": [
-          { "name": "criterion_id", "type": "string" },
-          { "name": "criterion", "type": "string" },
-          { "name": "weight", "type": "integer" },
-          { "name": "score_0", "type": "string" },
-          { "name": "score_1", "type": "string" },
-          { "name": "score_2", "type": "string" },
-          { "name": "evidence_or_notes", "type": "string" },
-          { "name": "risk_owner", "type": "string" },
-          { "name": "retest_date", "type": "string" },
-          { "name": "decision", "type": "string" }
+          {
+            "name": "criterion_id",
+            "type": "string"
+          },
+          {
+            "name": "criterion",
+            "type": "string"
+          },
+          {
+            "name": "weight",
+            "type": "integer"
+          },
+          {
+            "name": "score_0",
+            "type": "string"
+          },
+          {
+            "name": "score_1",
+            "type": "string"
+          },
+          {
+            "name": "score_2",
+            "type": "string"
+          },
+          {
+            "name": "evidence_or_notes",
+            "type": "string"
+          },
+          {
+            "name": "risk_owner",
+            "type": "string"
+          },
+          {
+            "name": "retest_date",
+            "type": "string"
+          },
+          {
+            "name": "decision",
+            "type": "string"
+          }
         ],
         "primaryKey": "criterion_id"
       }
@@ -204,18 +371,42 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "bytes": 1723,
-      "hash": "sha256:2e0fceb8c38490917e794953364f07d0940e43473528a6b3b029934277259f37",
+      "bytes": 1717,
+      "hash": "sha256:2f49bb73af73f9629f310e380c750ecc70ffc1c5a27be48f2a51bbcf2fad1b8c",
       "schema": {
         "fields": [
-          { "name": "gate_id", "type": "string" },
-          { "name": "acceptance_gate", "type": "string" },
-          { "name": "success_criterion", "type": "string" },
-          { "name": "evidence_to_capture", "type": "string" },
-          { "name": "stop_condition", "type": "string" },
-          { "name": "owner", "type": "string" },
-          { "name": "status", "type": "string" },
-          { "name": "notes", "type": "string" }
+          {
+            "name": "gate_id",
+            "type": "string"
+          },
+          {
+            "name": "acceptance_gate",
+            "type": "string"
+          },
+          {
+            "name": "success_criterion",
+            "type": "string"
+          },
+          {
+            "name": "evidence_to_capture",
+            "type": "string"
+          },
+          {
+            "name": "stop_condition",
+            "type": "string"
+          },
+          {
+            "name": "owner",
+            "type": "string"
+          },
+          {
+            "name": "status",
+            "type": "string"
+          },
+          {
+            "name": "notes",
+            "type": "string"
+          }
         ],
         "primaryKey": "gate_id"
       }
@@ -233,16 +424,46 @@
       "hash": "sha256:71af9a4fd8395a683aaace1cf4337833feaac7ed5cc8e133d001d99ac1532746",
       "schema": {
         "fields": [
-          { "name": "phase", "type": "string" },
-          { "name": "control_id", "type": "string" },
-          { "name": "control", "type": "string" },
-          { "name": "owner", "type": "string" },
-          { "name": "status", "type": "string" },
-          { "name": "evidence", "type": "string" },
-          { "name": "exception_owner", "type": "string" },
-          { "name": "due_date", "type": "date" },
-          { "name": "risk", "type": "string" },
-          { "name": "notes", "type": "string" }
+          {
+            "name": "phase",
+            "type": "string"
+          },
+          {
+            "name": "control_id",
+            "type": "string"
+          },
+          {
+            "name": "control",
+            "type": "string"
+          },
+          {
+            "name": "owner",
+            "type": "string"
+          },
+          {
+            "name": "status",
+            "type": "string"
+          },
+          {
+            "name": "evidence",
+            "type": "string"
+          },
+          {
+            "name": "exception_owner",
+            "type": "string"
+          },
+          {
+            "name": "due_date",
+            "type": "date"
+          },
+          {
+            "name": "risk",
+            "type": "string"
+          },
+          {
+            "name": "notes",
+            "type": "string"
+          }
         ],
         "primaryKey": "control_id"
       }
@@ -256,33 +477,102 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "bytes": 840,
-      "hash": "sha256:a38609321119f62306912d38316d5b821609c6210a99194026cd47efec997d74",
+      "bytes": 838,
+      "hash": "sha256:047bfa232509dc47044057b9f2da3de753643ec985bd3555411c969bd3f10eaa",
       "schema": {
         "fields": [
-          { "name": "record_id", "type": "string" },
-          { "name": "device_name", "type": "string" },
-          { "name": "serial_number", "type": "string" },
-          { "name": "hardware_uuid", "type": "string" },
-          { "name": "management_agent_id", "type": "string" },
-          { "name": "directory_device_id", "type": "string" },
-          { "name": "operating_system", "type": "string" },
-          { "name": "os_version", "type": "string" },
-          { "name": "hardware_model", "type": "string" },
-          { "name": "primary_user", "type": "string" },
-          { "name": "customer_or_department", "type": "string" },
-          { "name": "site_or_location", "type": "string" },
-          { "name": "business_service", "type": "string" },
-          { "name": "support_group", "type": "string" },
-          { "name": "lifecycle_state", "type": "string" },
-          { "name": "management_state", "type": "string" },
-          { "name": "last_check_in_utc", "type": "datetime" },
-          { "name": "source_system", "type": "string" },
-          { "name": "source_observed_at_utc", "type": "datetime" },
-          { "name": "confidence_or_exception", "type": "string" },
-          { "name": "exception_owner", "type": "string" },
-          { "name": "next_review_at_utc", "type": "datetime" },
-          { "name": "notes", "type": "string" }
+          {
+            "name": "record_id",
+            "type": "string"
+          },
+          {
+            "name": "device_name",
+            "type": "string"
+          },
+          {
+            "name": "serial_number",
+            "type": "string"
+          },
+          {
+            "name": "hardware_uuid",
+            "type": "string"
+          },
+          {
+            "name": "management_agent_id",
+            "type": "string"
+          },
+          {
+            "name": "directory_device_id",
+            "type": "string"
+          },
+          {
+            "name": "operating_system",
+            "type": "string"
+          },
+          {
+            "name": "os_version",
+            "type": "string"
+          },
+          {
+            "name": "hardware_model",
+            "type": "string"
+          },
+          {
+            "name": "primary_user",
+            "type": "string"
+          },
+          {
+            "name": "customer_or_department",
+            "type": "string"
+          },
+          {
+            "name": "site_or_location",
+            "type": "string"
+          },
+          {
+            "name": "business_service",
+            "type": "string"
+          },
+          {
+            "name": "support_group",
+            "type": "string"
+          },
+          {
+            "name": "lifecycle_state",
+            "type": "string"
+          },
+          {
+            "name": "management_state",
+            "type": "string"
+          },
+          {
+            "name": "last_check_in_utc",
+            "type": "datetime"
+          },
+          {
+            "name": "source_system",
+            "type": "string"
+          },
+          {
+            "name": "source_observed_at_utc",
+            "type": "datetime"
+          },
+          {
+            "name": "confidence_or_exception",
+            "type": "string"
+          },
+          {
+            "name": "exception_owner",
+            "type": "string"
+          },
+          {
+            "name": "next_review_at_utc",
+            "type": "datetime"
+          },
+          {
+            "name": "notes",
+            "type": "string"
+          }
         ],
         "primaryKey": "record_id"
       }
@@ -296,39 +586,126 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "bytes": 1009,
-      "hash": "sha256:a991280778ed8555ae2cee6fb728b3224459c10c270d726bb4ea9d41869d954b",
+      "bytes": 1007,
+      "hash": "sha256:b9c99ba241aba883f5397b83c9981b2e095bc9341e4e1b25a9a6f1034188dbfc",
       "schema": {
         "fields": [
-          { "name": "assignment_id", "type": "string" },
-          { "name": "technician_or_role", "type": "string" },
-          { "name": "employment_status", "type": "string" },
-          { "name": "customer_or_tenant_scope", "type": "string" },
-          { "name": "site_or_device_scope", "type": "string" },
-          { "name": "access_tier", "type": "string" },
-          { "name": "business_justification", "type": "string" },
-          { "name": "rmm_console_access", "type": "string" },
-          { "name": "remote_control", "type": "string" },
-          { "name": "background_tools", "type": "string" },
-          { "name": "script_execution", "type": "string" },
-          { "name": "automation_edit", "type": "string" },
-          { "name": "patch_approval", "type": "string" },
-          { "name": "alert_configuration", "type": "string" },
-          { "name": "credential_or_vault_access", "type": "string" },
-          { "name": "user_and_role_admin", "type": "string" },
-          { "name": "api_or_integration_admin", "type": "string" },
-          { "name": "billing_or_commercial_access", "type": "string" },
-          { "name": "mfa_enforced", "type": "string" },
-          { "name": "managed_admin_device_required", "type": "string" },
-          { "name": "approval_owner", "type": "string" },
-          { "name": "approved_at_utc", "type": "datetime" },
-          { "name": "last_reviewed_at_utc", "type": "datetime" },
-          { "name": "next_review_due_utc", "type": "datetime" },
-          { "name": "temporary_expiration_utc", "type": "datetime" },
-          { "name": "exception_or_ticket", "type": "string" },
-          { "name": "remediation_owner", "type": "string" },
-          { "name": "decision", "type": "string" },
-          { "name": "notes", "type": "string" }
+          {
+            "name": "assignment_id",
+            "type": "string"
+          },
+          {
+            "name": "technician_or_role",
+            "type": "string"
+          },
+          {
+            "name": "employment_status",
+            "type": "string"
+          },
+          {
+            "name": "customer_or_tenant_scope",
+            "type": "string"
+          },
+          {
+            "name": "site_or_device_scope",
+            "type": "string"
+          },
+          {
+            "name": "access_tier",
+            "type": "string"
+          },
+          {
+            "name": "business_justification",
+            "type": "string"
+          },
+          {
+            "name": "rmm_console_access",
+            "type": "string"
+          },
+          {
+            "name": "remote_control",
+            "type": "string"
+          },
+          {
+            "name": "background_tools",
+            "type": "string"
+          },
+          {
+            "name": "script_execution",
+            "type": "string"
+          },
+          {
+            "name": "automation_edit",
+            "type": "string"
+          },
+          {
+            "name": "patch_approval",
+            "type": "string"
+          },
+          {
+            "name": "alert_configuration",
+            "type": "string"
+          },
+          {
+            "name": "credential_or_vault_access",
+            "type": "string"
+          },
+          {
+            "name": "user_and_role_admin",
+            "type": "string"
+          },
+          {
+            "name": "api_or_integration_admin",
+            "type": "string"
+          },
+          {
+            "name": "billing_or_commercial_access",
+            "type": "string"
+          },
+          {
+            "name": "mfa_enforced",
+            "type": "string"
+          },
+          {
+            "name": "managed_admin_device_required",
+            "type": "string"
+          },
+          {
+            "name": "approval_owner",
+            "type": "string"
+          },
+          {
+            "name": "approved_at_utc",
+            "type": "datetime"
+          },
+          {
+            "name": "last_reviewed_at_utc",
+            "type": "datetime"
+          },
+          {
+            "name": "next_review_due_utc",
+            "type": "datetime"
+          },
+          {
+            "name": "temporary_expiration_utc",
+            "type": "datetime"
+          },
+          {
+            "name": "exception_or_ticket",
+            "type": "string"
+          },
+          {
+            "name": "remediation_owner",
+            "type": "string"
+          },
+          {
+            "name": "decision",
+            "type": "string"
+          },
+          {
+            "name": "notes",
+            "type": "string"
+          }
         ],
         "primaryKey": "assignment_id"
       }
@@ -346,21 +723,66 @@
       "hash": "sha256:65d9b20f9e833994a530f7245e8ecfdb48c10d2ebcee5b00a1670de897f22826",
       "schema": {
         "fields": [
-          { "name": "phase", "type": "string" },
-          { "name": "control_id", "type": "string" },
-          { "name": "control", "type": "string" },
-          { "name": "msp_owner", "type": "string" },
-          { "name": "customer_owner", "type": "string" },
-          { "name": "due_utc", "type": "datetime" },
-          { "name": "status", "type": "string" },
-          { "name": "evidence", "type": "string" },
-          { "name": "access_or_asset", "type": "string" },
-          { "name": "source_or_system", "type": "string" },
-          { "name": "acceptance_criteria", "type": "string" },
-          { "name": "acceptance_owner", "type": "string" },
-          { "name": "exception_or_ticket", "type": "string" },
-          { "name": "next_review_utc", "type": "datetime" },
-          { "name": "notes", "type": "string" }
+          {
+            "name": "phase",
+            "type": "string"
+          },
+          {
+            "name": "control_id",
+            "type": "string"
+          },
+          {
+            "name": "control",
+            "type": "string"
+          },
+          {
+            "name": "msp_owner",
+            "type": "string"
+          },
+          {
+            "name": "customer_owner",
+            "type": "string"
+          },
+          {
+            "name": "due_utc",
+            "type": "datetime"
+          },
+          {
+            "name": "status",
+            "type": "string"
+          },
+          {
+            "name": "evidence",
+            "type": "string"
+          },
+          {
+            "name": "access_or_asset",
+            "type": "string"
+          },
+          {
+            "name": "source_or_system",
+            "type": "string"
+          },
+          {
+            "name": "acceptance_criteria",
+            "type": "string"
+          },
+          {
+            "name": "acceptance_owner",
+            "type": "string"
+          },
+          {
+            "name": "exception_or_ticket",
+            "type": "string"
+          },
+          {
+            "name": "next_review_utc",
+            "type": "datetime"
+          },
+          {
+            "name": "notes",
+            "type": "string"
+          }
         ],
         "primaryKey": "control_id"
       }
@@ -378,21 +800,66 @@
       "hash": "sha256:a619cf509fc9a3b522d51d3de8d5ad97bd38ff2559d5d109f7775bc8d3c59c0d",
       "schema": {
         "fields": [
-          { "name": "week", "type": "integer" },
-          { "name": "phase", "type": "string" },
-          { "name": "task_id", "type": "string" },
-          { "name": "task", "type": "string" },
-          { "name": "primary_owner", "type": "string" },
-          { "name": "customer_owner", "type": "string" },
-          { "name": "dependency", "type": "string" },
-          { "name": "deliverable", "type": "string" },
-          { "name": "acceptance_criteria", "type": "string" },
-          { "name": "evidence_link", "type": "string" },
-          { "name": "status", "type": "string" },
-          { "name": "risk_or_blocker", "type": "string" },
-          { "name": "decision_owner", "type": "string" },
-          { "name": "due_utc", "type": "datetime" },
-          { "name": "notes", "type": "string" }
+          {
+            "name": "week",
+            "type": "integer"
+          },
+          {
+            "name": "phase",
+            "type": "string"
+          },
+          {
+            "name": "task_id",
+            "type": "string"
+          },
+          {
+            "name": "task",
+            "type": "string"
+          },
+          {
+            "name": "primary_owner",
+            "type": "string"
+          },
+          {
+            "name": "customer_owner",
+            "type": "string"
+          },
+          {
+            "name": "dependency",
+            "type": "string"
+          },
+          {
+            "name": "deliverable",
+            "type": "string"
+          },
+          {
+            "name": "acceptance_criteria",
+            "type": "string"
+          },
+          {
+            "name": "evidence_link",
+            "type": "string"
+          },
+          {
+            "name": "status",
+            "type": "string"
+          },
+          {
+            "name": "risk_or_blocker",
+            "type": "string"
+          },
+          {
+            "name": "decision_owner",
+            "type": "string"
+          },
+          {
+            "name": "due_utc",
+            "type": "datetime"
+          },
+          {
+            "name": "notes",
+            "type": "string"
+          }
         ],
         "primaryKey": "task_id"
       }
@@ -406,25 +873,70 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "bytes": 4498,
-      "hash": "sha256:678591559492ce4fceab7a1ccc939e200fbc3a1ddf2733e9eb1217fefc89fb4b",
+      "bytes": 4465,
+      "hash": "sha256:9708ca312fbb35a0865cb8ad0af1f36e793635a365a52164a47c2e3268a022e1",
       "schema": {
         "fields": [
-          { "name": "phase", "type": "string" },
-          { "name": "control_id", "type": "string" },
-          { "name": "control", "type": "string" },
-          { "name": "owner", "type": "string" },
-          { "name": "customer_owner", "type": "string" },
-          { "name": "due_at_utc", "type": "datetime" },
-          { "name": "status", "type": "string" },
-          { "name": "evidence", "type": "string" },
-          { "name": "access_or_asset", "type": "string" },
-          { "name": "data_disposition", "type": "string" },
-          { "name": "successor_or_recipient", "type": "string" },
-          { "name": "acceptance_owner", "type": "string" },
-          { "name": "exception_or_ticket", "type": "string" },
-          { "name": "follow_up_at_utc", "type": "datetime" },
-          { "name": "notes", "type": "string" }
+          {
+            "name": "phase",
+            "type": "string"
+          },
+          {
+            "name": "control_id",
+            "type": "string"
+          },
+          {
+            "name": "control",
+            "type": "string"
+          },
+          {
+            "name": "owner",
+            "type": "string"
+          },
+          {
+            "name": "customer_owner",
+            "type": "string"
+          },
+          {
+            "name": "due_at_utc",
+            "type": "datetime"
+          },
+          {
+            "name": "status",
+            "type": "string"
+          },
+          {
+            "name": "evidence",
+            "type": "string"
+          },
+          {
+            "name": "access_or_asset",
+            "type": "string"
+          },
+          {
+            "name": "data_disposition",
+            "type": "string"
+          },
+          {
+            "name": "successor_or_recipient",
+            "type": "string"
+          },
+          {
+            "name": "acceptance_owner",
+            "type": "string"
+          },
+          {
+            "name": "exception_or_ticket",
+            "type": "string"
+          },
+          {
+            "name": "follow_up_at_utc",
+            "type": "datetime"
+          },
+          {
+            "name": "notes",
+            "type": "string"
+          }
         ],
         "primaryKey": "control_id"
       }
@@ -442,26 +954,165 @@
       "hash": "sha256:61b4675d8cd32622a745c987ecaaf2ef2c69c83f5f942e2f07f15f3460b76a92",
       "schema": {
         "fields": [
-          { "name": "test_id", "type": "string" },
-          { "name": "phase", "type": "string" },
-          { "name": "control_area", "type": "string" },
-          { "name": "test_objective", "type": "string" },
-          { "name": "pilot_scope", "type": "string" },
-          { "name": "precondition", "type": "string" },
-          { "name": "procedure", "type": "string" },
-          { "name": "expected_result", "type": "string" },
-          { "name": "evidence_required", "type": "string" },
-          { "name": "stop_condition", "type": "string" },
-          { "name": "owner", "type": "string" },
-          { "name": "approver", "type": "string" },
-          { "name": "result", "type": "string" },
-          { "name": "evidence_link", "type": "string" },
-          { "name": "defect_or_risk", "type": "string" },
-          { "name": "remediation_owner", "type": "string" },
-          { "name": "retest_date_utc", "type": "datetime" },
-          { "name": "decision", "type": "string" }
+          {
+            "name": "test_id",
+            "type": "string"
+          },
+          {
+            "name": "phase",
+            "type": "string"
+          },
+          {
+            "name": "control_area",
+            "type": "string"
+          },
+          {
+            "name": "test_objective",
+            "type": "string"
+          },
+          {
+            "name": "pilot_scope",
+            "type": "string"
+          },
+          {
+            "name": "precondition",
+            "type": "string"
+          },
+          {
+            "name": "procedure",
+            "type": "string"
+          },
+          {
+            "name": "expected_result",
+            "type": "string"
+          },
+          {
+            "name": "evidence_required",
+            "type": "string"
+          },
+          {
+            "name": "stop_condition",
+            "type": "string"
+          },
+          {
+            "name": "owner",
+            "type": "string"
+          },
+          {
+            "name": "approver",
+            "type": "string"
+          },
+          {
+            "name": "result",
+            "type": "string"
+          },
+          {
+            "name": "evidence_link",
+            "type": "string"
+          },
+          {
+            "name": "defect_or_risk",
+            "type": "string"
+          },
+          {
+            "name": "remediation_owner",
+            "type": "string"
+          },
+          {
+            "name": "retest_date_utc",
+            "type": "datetime"
+          },
+          {
+            "name": "decision",
+            "type": "string"
+          }
         ],
         "primaryKey": "test_id"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "msp-daily-weekly-monthly-maintenance-checklist",
+      "title": "MSP daily, weekly, monthly, and quarterly maintenance checklist",
+      "description": "Twenty-eight vendor-neutral recurring service checks for backups, security, monitoring, patching, automation, inventory, recovery, access, coverage, documentation, service quality, billing, integrations, customer governance, and cadence review.",
+      "path": "templates/msp-daily-weekly-monthly-maintenance-checklist.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 15219,
+      "hash": "sha256:d831689e14469927401dde3657e708b0e13970bf875dc0e19d2b78a9327fec1f",
+      "schema": {
+        "fields": [
+          {
+            "name": "check_id",
+            "type": "string"
+          },
+          {
+            "name": "cadence",
+            "type": "string"
+          },
+          {
+            "name": "service_area",
+            "type": "string"
+          },
+          {
+            "name": "check_name",
+            "type": "string"
+          },
+          {
+            "name": "scope",
+            "type": "string"
+          },
+          {
+            "name": "procedure",
+            "type": "string"
+          },
+          {
+            "name": "healthy_signal",
+            "type": "string"
+          },
+          {
+            "name": "exception_trigger",
+            "type": "string"
+          },
+          {
+            "name": "evidence_required",
+            "type": "string"
+          },
+          {
+            "name": "system_of_record",
+            "type": "string"
+          },
+          {
+            "name": "owner",
+            "type": "string"
+          },
+          {
+            "name": "reviewer",
+            "type": "string"
+          },
+          {
+            "name": "last_completed_utc",
+            "type": "datetime"
+          },
+          {
+            "name": "next_due_utc",
+            "type": "datetime"
+          },
+          {
+            "name": "status",
+            "type": "string"
+          },
+          {
+            "name": "ticket_or_evidence_link",
+            "type": "string"
+          },
+          {
+            "name": "notes",
+            "type": "string"
+          }
+        ],
+        "primaryKey": "check_id"
       }
     },
     {
@@ -473,8 +1124,8 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "bytes": 1646,
-      "hash": "sha256:094413e0ffa5d4042b33ada8e0a24a05cbfac9d23ba83337d06711c4179cac4e",
+      "bytes": 1639,
+      "hash": "sha256:eec44fefd50f1ea794739bf08c8a9cee8478b6b64e09f532f7de197b93767624",
       "licenses": [
         {
           "name": "CC-BY-4.0",
@@ -483,17 +1134,51 @@
       ],
       "schema": {
         "fields": [
-          { "name": "product", "type": "string" },
-          { "name": "pricing_model", "type": "string" },
-          { "name": "billing_term_for_estimate", "type": "string" },
-          { "name": "one_technician_endpoints_10_usd_month", "type": "number" },
-          { "name": "one_technician_endpoints_50_usd_month", "type": "number" },
-          { "name": "one_technician_endpoints_100_usd_month", "type": "number" },
-          { "name": "one_technician_endpoints_500_usd_month", "type": "number" },
-          { "name": "month_to_month_alternative_usd", "type": "number" },
-          { "name": "source_url", "type": "string", "format": "uri" },
-          { "name": "fact_checked", "type": "date" },
-          { "name": "notes", "type": "string" }
+          {
+            "name": "product",
+            "type": "string"
+          },
+          {
+            "name": "pricing_model",
+            "type": "string"
+          },
+          {
+            "name": "billing_term_for_estimate",
+            "type": "string"
+          },
+          {
+            "name": "one_technician_endpoints_10_usd_month",
+            "type": "number"
+          },
+          {
+            "name": "one_technician_endpoints_50_usd_month",
+            "type": "number"
+          },
+          {
+            "name": "one_technician_endpoints_100_usd_month",
+            "type": "number"
+          },
+          {
+            "name": "one_technician_endpoints_500_usd_month",
+            "type": "number"
+          },
+          {
+            "name": "month_to_month_alternative_usd",
+            "type": "number"
+          },
+          {
+            "name": "source_url",
+            "type": "string",
+            "format": "uri"
+          },
+          {
+            "name": "fact_checked",
+            "type": "date"
+          },
+          {
+            "name": "notes",
+            "type": "string"
+          }
         ],
         "primaryKey": "product"
       }
