@@ -44,6 +44,18 @@
       "account_required": false
     },
     {
+      "id": "rmm-migration-cost-calculator",
+      "title": "RMM migration cost and break-even calculator",
+      "category": "pricing",
+      "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-cost-calculator.html",
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
       "id": "rmm-security-checklist",
       "title": "RMM security checklist",
       "category": "security",

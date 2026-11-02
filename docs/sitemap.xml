@@ -156,4 +156,10 @@
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-cost-calculator.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
 </urlset>
