@@ -4,9 +4,9 @@
   "name": "nizlo-rmm-operations-templates",
   "id": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
   "title": "Nizlo RMM Operations Templates",
-  "description": "Seven public, vendor-neutral CSV templates for RMM evaluation, endpoint inventory, technician access review, deployment readiness, controlled change execution, incident response, and platform migration.",
+  "description": "Eight public, vendor-neutral CSV templates for RMM evaluation, endpoint inventory, technician access review, MSP client offboarding, deployment readiness, controlled change execution, incident response, and platform migration.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/",
-  "version": "1.19.0",
+  "version": "1.20.0",
   "created": "2026-11-01",
   "contributors": [
     {
@@ -34,7 +34,11 @@
     "CMDB readiness",
     "RMM permissions matrix",
     "technician access review",
-    "least privilege"
+    "least privilege",
+    "MSP client offboarding",
+    "MSP exit checklist",
+    "access revocation",
+    "RMM agent removal"
   ],
   "resources": [
     {
@@ -261,6 +265,38 @@
           { "name": "notes", "type": "string" }
         ],
         "primaryKey": "assignment_id"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "msp-client-offboarding-evidence-register",
+      "title": "MSP client offboarding checklist and evidence register",
+      "description": "Thirty-two controls for authorization, inventory, secure transfer, access revocation, agent removal, data disposition, acceptance, and post-exit verification.",
+      "path": "templates/msp-client-offboarding-evidence-register.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 4465,
+      "hash": "sha256:9708ca312fbb35a0865cb8ad0af1f36e793635a365a52164a47c2e3268a022e1",
+      "schema": {
+        "fields": [
+          { "name": "phase", "type": "string" },
+          { "name": "control_id", "type": "string" },
+          { "name": "control", "type": "string" },
+          { "name": "owner", "type": "string" },
+          { "name": "customer_owner", "type": "string" },
+          { "name": "due_at_utc", "type": "datetime" },
+          { "name": "status", "type": "string" },
+          { "name": "evidence", "type": "string" },
+          { "name": "access_or_asset", "type": "string" },
+          { "name": "data_disposition", "type": "string" },
+          { "name": "successor_or_recipient", "type": "string" },
+          { "name": "acceptance_owner", "type": "string" },
+          { "name": "exception_or_ticket", "type": "string" },
+          { "name": "follow_up_at_utc", "type": "datetime" },
+          { "name": "notes", "type": "string" }
+        ],
+        "primaryKey": "control_id"
       }
     }
   ]

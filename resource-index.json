@@ -274,6 +274,17 @@
       "controls": 29,
       "access": "public",
       "account_required": false
+    },
+    {
+      "id": "msp-client-offboarding-evidence-register",
+      "title": "MSP client offboarding checklist and evidence register",
+      "category": "client-lifecycle",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-offboarding-evidence-register.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-client-offboarding-evidence-register.csv",
+      "format": "text/csv",
+      "controls": 32,
+      "access": "public",
+      "account_required": false
     }
   ]
 }

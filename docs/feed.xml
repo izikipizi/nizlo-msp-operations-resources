@@ -12,6 +12,15 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>MSP client offboarding checklist and evidence register</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-offboarding-evidence-register.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-offboarding-evidence-register.html" />
+    <updated>2026-11-01T00:00:00Z</updated>
+    <category term="client-lifecycle" />
+    <category term="offboarding" />
+    <summary>Use 32 vendor-neutral controls to coordinate MSP transition authority, inventory, secure handoff, access revocation, agent removal, data disposition, acceptance, and post-exit verification.</summary>
+  </entry>
+  <entry>
     <title>RMM technician access review matrix</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-technician-access-review-matrix.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-technician-access-review-matrix.html" />
@@ -128,7 +137,7 @@
     <updated>2026-11-01T00:00:00Z</updated>
     <category term="deployment" />
     <category term="change-management" />
-    <summary>Download seven vendor-neutral CSV templates for RMM evaluation, technician access review, endpoint inventory, CMDB readiness, deployment, change-window control, incident response, migration, validation, rollback, communications, and closeout.</summary>
+    <summary>Download eight vendor-neutral CSV templates for RMM evaluation, technician access review, MSP client offboarding, endpoint inventory, CMDB readiness, deployment, change-window control, incident response, migration, validation, rollback, communications, and closeout.</summary>
   </entry>
   <entry>
     <title>RMM change-window and rollback-plan template</title>

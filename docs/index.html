@@ -205,6 +205,25 @@
         }
       }
     </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "name": "MSP client offboarding checklist and evidence register",
+        "description": "A vendor-neutral CSV with 32 controls for transition authority, inventory, secure handoff, access revocation, agent removal, data disposition, acceptance, and post-exit verification.",
+        "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-offboarding-evidence-register.html",
+        "creator": { "@type": "Organization", "name": "Nizlo", "url": "https://nizlo.com/" },
+        "dateModified": "2026-11-01",
+        "isAccessibleForFree": true,
+        "inLanguage": "en",
+        "keywords": ["MSP client offboarding checklist", "MSP exit plan", "RMM agent removal", "MSP access revocation"],
+        "distribution": {
+          "@type": "DataDownload",
+          "contentUrl": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-client-offboarding-evidence-register.csv",
+          "encodingFormat": "text/csv"
+        }
+      }
+    </script>
     <style>
       :root {
         color-scheme: dark;
@@ -313,6 +332,7 @@
           <a class="button button-secondary" href="rmm-incident-response-runbook-template.html">Use the incident runbook</a>
           <a class="button button-secondary" href="rmm-migration-workbook-template.html">Use the migration workbook</a>
           <a class="button button-secondary" href="rmm-technician-access-review-matrix.html">Review technician access</a>
+          <a class="button button-secondary" href="msp-client-offboarding-evidence-register.html">Run an offboarding</a>
         </div>
       </section>
 
@@ -330,7 +350,7 @@
           <article class="card"><p class="kicker">Respond</p><h3>RMM incident response</h3><p>Prepare independent control paths, scope impact, contain access, preserve evidence, recover safely, and reconcile endpoints.</p><a href="https://nizlo.com/guides/rmm-incident-response-checklist">Open incident guide →</a></article>
           <article class="card"><p class="kicker">Change</p><h3>RMM migration</h3><p>Plan inventory, pilot scope, coexistence, cutover, rollback, cleanup, and final acceptance.</p><a href="https://nizlo.com/guides/rmm-migration-checklist">Open checklist →</a></article>
           <article class="card"><p class="kicker">Begin service</p><h3>Client onboarding</h3><p>Define authority, scope, trust paths, access, monitoring, patching, backup, evidence, and ownership.</p><a href="https://nizlo.com/guides/msp-client-onboarding-checklist">Open checklist →</a></article>
-          <article class="card"><p class="kicker">End service</p><h3>Client offboarding</h3><p>Remove access and agents without abandoning data, automation, evidence, or responsibility.</p><a href="https://nizlo.com/guides/msp-client-offboarding-checklist">Open checklist →</a></article>
+          <article class="card"><p class="kicker">End service</p><h3>Client offboarding</h3><p>Remove access and agents without abandoning data, automation, evidence, or responsibility.</p><a href="https://nizlo.com/guides/msp-client-offboarding-checklist">Open checklist →</a> · <a href="msp-client-offboarding-evidence-register.html">Use the evidence register →</a></article>
           <article class="card"><p class="kicker">Automate</p><h3>Automation safety</h3><p>Review targeting, privilege, approvals, staged rollout, failure handling, rollback, and audit evidence.</p><a href="https://nizlo.com/guides/rmm-automation-safety-checklist">Open checklist →</a></article>
           <article class="card"><p class="kicker">Respond</p><h3>Alert tuning</h3><p>Turn endpoint signals into actionable service work with owners, thresholds, suppression, and review.</p><a href="https://nizlo.com/guides/rmm-alert-tuning-checklist">Open checklist →</a></article>
           <article class="card"><p class="kicker">Reconcile</p><h3>Endpoint exceptions</h3><p>Turn failed patches, offline devices, pending reboots, and unknown states into owned work with closure evidence.</p><a href="https://nizlo.com/guides/endpoint-exception-management">Open guide →</a></article>
@@ -350,9 +370,10 @@
 
       <section class="method" aria-labelledby="template-title">
         <h2 id="template-title">Take the change record into your own workflow.</h2>
-        <p>Use the 10-area evaluation scorecard to compare pilot evidence, the 29-field access-review matrix to enforce least privilege, the 23-field endpoint inventory CSV to prepare trustworthy CMDB records, the 33-control deployment-readiness CSV to reconcile rollout owners and exceptions, the 26-control change-window template to set reversible actions, the 30-control incident-response runbook to coordinate containment and recovery, or the 30-control migration workbook to reconcile discovery through source retirement.</p>
+        <p>Use the 10-area evaluation scorecard to compare pilot evidence, the 29-field access-review matrix to enforce least privilege, the 32-control offboarding register to prove a service exit, the 23-field endpoint inventory CSV to prepare trustworthy CMDB records, the 33-control deployment-readiness CSV to reconcile rollout owners and exceptions, the 26-control change-window template to set reversible actions, the 30-control incident-response runbook to coordinate containment and recovery, or the 30-control migration workbook to reconcile discovery through source retirement.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="templates/">Browse all seven CSV templates</a>
+          <a class="button button-primary" href="templates/">Browse all eight CSV templates</a>
+          <a class="button button-secondary" href="msp-client-offboarding-evidence-register.html">Open offboarding register</a>
           <a class="button button-secondary" href="rmm-technician-access-review-matrix.html">Open access-review matrix</a>
           <a class="button button-secondary" href="rmm-evaluation-scorecard-template.html">Open evaluation scorecard</a>
           <a class="button button-secondary" href="rmm-change-window-rollback-plan.html">Open rollback-plan template</a>
@@ -361,7 +382,7 @@
           <a class="button button-secondary" href="rmm-migration-workbook-template.html">Open migration workbook</a>
           <a class="button button-secondary" href="endpoint-inventory-cmdb-template.html">Open endpoint inventory template</a>
           <a class="button button-secondary" href="datapackage.json">Use the Data Package</a>
-          <a class="button button-secondary" href="https://github.com/izikipizi/nizlo-msp-operations-resources/releases/tag/v1.19.0">View the release</a>
+          <a class="button button-secondary" href="https://github.com/izikipizi/nizlo-msp-operations-resources/releases/tag/v1.20.0">View the release</a>
         </div>
       </section>
 
@@ -379,7 +400,7 @@
 
     <footer class="wrap">
       <span>Maintained by Nizlo · Updated November 1, 2026</span>
-      <span><a href="https://nizlo.com/tools">More free RMM tools</a> · <a href="templates/">CSV templates</a> · <a href="datapackage.json">Data Package</a> · <a href="feed.xml">Atom feed</a> · <a href="llms.txt">LLM profile</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources/tree/v1.19.0">Version 1.19.0</a></span>
+      <span><a href="https://nizlo.com/tools">More free RMM tools</a> · <a href="templates/">CSV templates</a> · <a href="datapackage.json">Data Package</a> · <a href="feed.xml">Atom feed</a> · <a href="llms.txt">LLM profile</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources/tree/v1.20.0">Version 1.20.0</a></span>
     </footer>
   </body>
 </html>
