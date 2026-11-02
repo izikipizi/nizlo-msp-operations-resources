@@ -430,6 +430,7 @@
       "category": "monitoring",
       "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-escalation-matrix-template.html",
       "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-alert-escalation-matrix.csv",
+      "canonical_guide": "https://nizlo.com/guides/rmm-alert-escalation-policy-template",
       "format": "text/csv",
       "controls": 27,
       "fields": 25,
