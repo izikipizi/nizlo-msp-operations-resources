@@ -4,6 +4,8 @@ Free, practical checklists for managed service providers and lean IT teams evalu
 
 Every resource below is public, ungated, and written to be usable independently of Nizlo's product. The canonical guides include downloadable field templates where available.
 
+Start with the [free RMM calculators collection](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-calculators.html) to model migration cost and break-even, compare public prices, evaluate common pricing structures, and build an ROI case without an account or email gate.
+
 ## RMM selection and change
 
 | Resource | Use it when |
