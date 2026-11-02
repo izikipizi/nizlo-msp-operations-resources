@@ -13,8 +13,8 @@ url: "https://nizlo.com/tools"
 repository-code: "https://github.com/izikipizi/nizlo-msp-operations-resources"
 identifiers:
   - type: swh
-    value: "swh:1:snp:68c31554c6afeafc9a65a713c6045412ad9362d7"
-    description: "Software Heritage snapshot of release v1.17.0 and its repository history"
+    value: "swh:1:snp:869ffca04cc7b9a1e00991a796655f1c5c6f8676"
+    description: "Software Heritage snapshot containing release v1.33.0 and its repository history"
 keywords:
   - "managed service provider"
   - "MSP"
