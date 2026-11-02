@@ -5,12 +5,22 @@
   <id>https://izikipizi.github.io/nizlo-msp-operations-resources/</id>
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-01T00:00:00Z</updated>
+  <updated>2026-11-02T00:00:00Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>RMM first-endpoint pilot acceptance checklist</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-acceptance-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-acceptance-checklist.html" />
+    <updated>2026-11-02T00:00:00Z</updated>
+    <category term="selection" />
+    <category term="template" />
+    <category term="rmm-pilot" />
+    <summary>Use five evidence gates to prove endpoint identity, alert routing, authorized action, patch-state reconciliation, and clean removal before an RMM pilot expands.</summary>
+  </entry>
   <entry>
     <title>Public RMM pricing dataset for one-technician MSPs</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html</id>
@@ -143,10 +153,10 @@
     <title>Free RMM operations template library</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/templates/</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/" />
-    <updated>2026-11-01T00:00:00Z</updated>
+    <updated>2026-11-02T00:00:00Z</updated>
     <category term="deployment" />
     <category term="change-management" />
-    <summary>Download eight vendor-neutral CSV templates for RMM evaluation, technician access review, MSP client offboarding, endpoint inventory, CMDB readiness, deployment, change-window control, incident response, migration, validation, rollback, communications, and closeout.</summary>
+    <summary>Download nine vendor-neutral CSV templates for RMM evaluation, first-endpoint acceptance, technician access review, MSP client offboarding, endpoint inventory, CMDB readiness, deployment, change-window control, incident response, migration, validation, rollback, communications, and closeout.</summary>
   </entry>
   <entry>
     <title>RMM change-window and rollback-plan template</title>

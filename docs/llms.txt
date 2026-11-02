@@ -1,6 +1,6 @@
 # Nizlo MSP Operations Resources
 
-> Twenty-one public, ungated field guides, eight reusable CSV templates, and one source-dated RMM pricing dataset for managed service providers and lean IT teams evaluating, pricing, testing, deploying, inventorying, operating, securing, migrating, and offboarding remote monitoring and management software.
+> Twenty-one public, ungated field guides, nine reusable CSV templates, and one source-dated RMM pricing dataset for managed service providers and lean IT teams evaluating, pricing, testing, deploying, inventorying, operating, securing, migrating, and offboarding remote monitoring and management software.
 
 This external library is maintained by the Nizlo team. Nizlo is a Windows-first RMM and IT-management platform. The resources are vendor-neutral, but they are vendor-created and do not represent independent research or an endorsement of Nizlo.
 
@@ -19,7 +19,7 @@ This external library is maintained by the Nizlo team. Nizlo is a Windows-first 
 - [RMM migration checklist workbook](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-workbook-template.html): Field guidance and a public 30-control CSV for discovery, pilot, coexistence, cutover, validation, source retirement, and closeout.
 - [Citation and preservation](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html): Authorship, version, repository, CFF metadata, and Software Heritage identifiers.
 - [Machine-readable resource index](https://izikipizi.github.io/nizlo-msp-operations-resources/resource-index.json): Structured catalogue with titles, categories, audiences, access status, and canonical URLs.
-- [Data Package descriptor](https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json): Standards-based metadata, schemas, byte counts, and SHA-256 hashes for eight templates and the public pricing dataset.
+- [Data Package descriptor](https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json): Standards-based metadata, schemas, byte counts, and SHA-256 hashes for nine templates and the public pricing dataset.
 - [Atom feed](https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml): Feed-reader and aggregator discovery for the resource collection.
 
 ## Pricing data
@@ -29,7 +29,9 @@ This external library is maintained by the Nizlo team. Nizlo is a Windows-first 
 
 ## Reusable templates
 
-- [RMM operations and incident response template library](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/): Landing page for all eight public CSV templates with usage guidance.
+- [RMM operations and incident response template library](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/): Landing page for all nine public CSV templates with usage guidance.
+- [RMM first-endpoint pilot acceptance checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-acceptance-checklist.html): Five evidence gates for identity, alert routing, authorized action, patch-state reconciliation, and clean removal before a pilot expands.
+- [RMM first-endpoint acceptance CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-first-endpoint-acceptance.csv): Downloadable acceptance criteria, required evidence, rollout stop conditions, ownership, status, and notes.
 - [RMM deployment-readiness checklist template](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-deployment-readiness-template.html): Focused guide and 33-control CSV covering governance, inventory, preparation, pilot, wave rollout, verification, and closeout.
 - [RMM change-window and rollback-plan CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-change-window-rollback-plan.csv): 26 controls covering approval, pre-change evidence, pilot, rollout, validation, rollback, communications, and closure.
 - [RMM incident response runbook CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-incident-response-runbook.csv): 30 controls covering readiness, detection, containment, investigation, recovery, communication, and corrective action.

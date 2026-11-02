@@ -4,9 +4,9 @@
   "name": "nizlo-rmm-operations-resources",
   "id": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
   "title": "Nizlo RMM Operations Resources",
-  "description": "Eight public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
+  "description": "Nine public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
-  "version": "1.22.0",
+  "version": "1.23.0",
   "created": "2026-11-01",
   "contributors": [
     {
@@ -30,6 +30,8 @@
     "RMM security",
     "RMM migration",
     "RMM evaluation scorecard",
+    "RMM pilot acceptance",
+    "first endpoint acceptance",
     "endpoint inventory",
     "CMDB readiness",
     "RMM permissions matrix",
@@ -181,6 +183,31 @@
           { "name": "decision", "type": "string" }
         ],
         "primaryKey": "criterion_id"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "rmm-first-endpoint-acceptance",
+      "title": "RMM first-endpoint pilot acceptance checklist",
+      "description": "Five evidence gates for accepting the first endpoint in an RMM pilot before a wider rollout.",
+      "path": "templates/rmm-first-endpoint-acceptance.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 1717,
+      "hash": "sha256:2f49bb73af73f9629f310e380c750ecc70ffc1c5a27be48f2a51bbcf2fad1b8c",
+      "schema": {
+        "fields": [
+          { "name": "gate_id", "type": "string" },
+          { "name": "acceptance_gate", "type": "string" },
+          { "name": "success_criterion", "type": "string" },
+          { "name": "evidence_to_capture", "type": "string" },
+          { "name": "stop_condition", "type": "string" },
+          { "name": "owner", "type": "string" },
+          { "name": "status", "type": "string" },
+          { "name": "notes", "type": "string" }
+        ],
+        "primaryKey": "gate_id"
       }
     },
     {

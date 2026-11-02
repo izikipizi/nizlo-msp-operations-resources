@@ -4,13 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Free RMM Evaluation &amp; Operations Templates | Nizlo</title>
-    <meta name="description" content="Download eight free, vendor-neutral CSV templates for RMM evaluation, technician access review, MSP client offboarding, endpoint inventory, deployment, migration, change control, and incident response." />
+    <meta name="description" content="Download nine free, vendor-neutral CSV templates for RMM evaluation, first-endpoint acceptance, technician access review, MSP client offboarding, endpoint inventory, deployment, migration, change control, and incident response." />
     <meta name="robots" content="index,follow,max-image-preview:large" />
     <link rel="canonical" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/" />
     <link rel="alternate" type="application/atom+xml" title="Nizlo MSP Operations Resources" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Free RMM Evaluation &amp; Operations Templates" />
-    <meta property="og:description" content="Eight public, ungated CSV templates for RMM evaluation, access review, MSP client offboarding, endpoint inventory, controlled operations, migration, and security incidents." />
+    <meta property="og:description" content="Nine public, ungated CSV templates for RMM evaluation, first-endpoint acceptance, access review, MSP client offboarding, endpoint inventory, controlled operations, migration, and security incidents." />
     <meta property="og:url" content="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/" />
     <meta property="og:image" content="https://nizlo.com/opengraph-image" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -20,13 +20,13 @@
         "@context": "https://schema.org",
         "@type": "CollectionPage",
         "name": "Free RMM evaluation and operations templates",
-        "description": "Eight free, vendor-neutral CSV templates for RMM evaluation, technician access review, MSP client offboarding, endpoint inventory, deployment readiness, platform migration, controlled change execution, and incident response.",
+        "description": "Nine free, vendor-neutral CSV templates for RMM evaluation, first-endpoint acceptance, technician access review, MSP client offboarding, endpoint inventory, deployment readiness, platform migration, controlled change execution, and incident response.",
         "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/",
         "isPartOf": { "@type": "WebSite", "name": "Nizlo MSP Operations Resources", "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/" },
         "publisher": { "@type": "Organization", "name": "Nizlo", "url": "https://nizlo.com/" },
         "mainEntity": {
           "@type": "ItemList",
-          "numberOfItems": 8,
+          "numberOfItems": 9,
           "itemListElement": [
             {
               "@type": "ListItem",
@@ -123,6 +123,18 @@
                 "isAccessibleForFree": true,
                 "distribution": { "@type": "DataDownload", "contentUrl": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-client-offboarding-evidence-register.csv", "encodingFormat": "text/csv" }
               }
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "item": {
+                "@type": "Dataset",
+                "name": "RMM first-endpoint pilot acceptance checklist",
+                "description": "A five-gate CSV for proving identity, alert routing, authorized actions, patch reconciliation, and clean removal before an RMM pilot expands.",
+                "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-acceptance-checklist.html",
+                "isAccessibleForFree": true,
+                "distribution": { "@type": "DataDownload", "contentUrl": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-first-endpoint-acceptance.csv", "encodingFormat": "text/csv" }
+              }
             }
           ]
         }
@@ -162,7 +174,7 @@
     <main class="wrap">
       <div class="eyebrow">Public · Ungated · Vendor-neutral</div>
       <h1>RMM evaluation and operations templates.</h1>
-      <p class="lede">Turn product evaluations, technician access reviews, client exits, endpoint inventory, endpoint-management changes, migrations, and security incidents into owned, reviewable records. All eight templates are plain CSV files—no account, email address, or product installation required.</p>
+      <p class="lede">Turn product evaluations, first-endpoint acceptance, technician access reviews, client exits, endpoint inventory, endpoint-management changes, migrations, and security incidents into owned, reviewable records. All nine templates are plain CSV files—no account, email address, or product installation required.</p>
       <section class="grid" aria-label="RMM templates">
         <article>
           <div class="tag">33 controls · CSV</div>
@@ -200,6 +212,13 @@
           <div class="actions"><a class="button primary" href="rmm-evaluation-scorecard.csv" download>Download CSV</a><a class="button" href="../rmm-evaluation-scorecard-template.html">Open scorecard guide</a></div>
         </article>
         <article>
+          <div class="tag">5 gates · CSV</div>
+          <h2>RMM first-endpoint acceptance</h2>
+          <p>Separate an installed agent from an operationally accepted endpoint before a pilot expands.</p>
+          <ul><li>Define success evidence for each gate</li><li>Record rollout-blocking stop conditions</li><li>Prove clean removal and handoff</li></ul>
+          <div class="actions"><a class="button primary" href="rmm-first-endpoint-acceptance.csv" download>Download CSV</a><a class="button" href="../rmm-first-endpoint-acceptance-checklist.html">Open acceptance guide</a></div>
+        </article>
+        <article>
           <div class="tag">23 fields · CSV</div>
           <h2>Endpoint inventory and CMDB readiness</h2>
           <p>Build a trustworthy endpoint record before uncertain inventory is synchronized into a CMDB.</p>
@@ -221,9 +240,9 @@
           <div class="actions"><a class="button primary" href="msp-client-offboarding-evidence-register.csv" download>Download CSV</a><a class="button" href="../msp-client-offboarding-evidence-register.html">Open offboarding guide</a></div>
         </article>
       </section>
-      <aside class="note"><strong>Machine-readable package:</strong> Data tools can consume all eight CSV resources, field schemas, byte counts, and SHA-256 hashes through the standards-based <a href="../datapackage.json">Data Package descriptor</a>.</aside>
+      <aside class="note"><strong>Machine-readable package:</strong> Data tools can consume all nine CSV resources, field schemas, byte counts, and SHA-256 hashes through the standards-based <a href="../datapackage.json">Data Package descriptor</a>.</aside>
       <aside class="note"><strong>Relationship disclosure:</strong> Nizlo, a Windows-first RMM and IT-management platform, maintains these resources. The templates are designed for use with any relevant RMM, inventory, ITAM, service-desk, or CMDB workflow and do not claim that any vendor passes their controls or supports every field.</aside>
     </main>
-    <footer class="wrap"><span>Maintained by Nizlo · Updated November 1, 2026</span><span><a href="../datapackage.json">Data Package</a> · <a href="../feed.xml">Atom feed</a> · <a href="../citation.html">Citation &amp; preservation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources/tree/v1.22.0">Version 1.22.0</a></span></footer>
+    <footer class="wrap"><span>Maintained by Nizlo · Updated November 2, 2026</span><span><a href="../datapackage.json">Data Package</a> · <a href="../feed.xml">Atom feed</a> · <a href="../citation.html">Citation &amp; preservation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources/tree/v1.23.0">Version 1.23.0</a></span></footer>
   </body>
 </html>
