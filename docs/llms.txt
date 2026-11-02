@@ -32,8 +32,8 @@ This external library is maintained by the Nizlo team. Nizlo is a Windows-first 
 
 ## Pricing data
 
-- [Public RMM pricing dataset](https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html): Six public price models normalized to one technician and 10, 50, 100, and 500 endpoints, with methodology, caveats, source links, and an explicit Nizlo relationship disclosure.
-- [Download the source-dated CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/data/public-rmm-pricing-comparison-2026-10-30.csv): Machine-readable October 30, 2026 snapshot licensed under CC BY 4.0.
+- [Public RMM pricing dataset](https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html): Fourteen public RMM price disclosures covering numeric rates, free tiers, published ranges, source-available software, and quote-only vendors, with normalized one-technician scenarios where exact public rates permit calculation.
+- [Download the source-dated CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/data/public-rmm-pricing-comparison-2026-11-02.csv): Machine-readable November 2, 2026 snapshot licensed under CC BY 4.0.
 
 ## Reusable templates
 

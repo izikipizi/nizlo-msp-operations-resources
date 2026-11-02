@@ -1,0 +1,83 @@
+{
+  "@context": {
+    "schema": "https://schema.org/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html#dataset",
+  "@type": ["schema:Dataset", "dcat:Dataset"],
+  "schema:name": "Public RMM pricing and price-visibility comparison for one-technician MSPs",
+  "schema:description": "Fourteen source-dated RMM pricing records covering published numeric prices, free tiers, source-available software, published ranges, and quote-only vendors, with normalized one-technician scenarios at 10, 50, 100, and 500 endpoints where public rates permit exact calculation.",
+  "schema:url": "https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html",
+  "schema:mainEntityOfPage": "https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html",
+  "schema:sameAs": "https://nizlo.com/guides/cheapest-rmm-for-small-msps",
+  "schema:creator": {
+    "@type": "schema:Organization",
+    "schema:name": "Nizlo",
+    "schema:url": "https://nizlo.com/"
+  },
+  "schema:dateCreated": "2026-10-30",
+  "schema:dateModified": "2026-11-02",
+  "schema:version": "2026-11-02",
+  "schema:isAccessibleForFree": true,
+  "schema:license": "https://creativecommons.org/licenses/by/4.0/",
+  "schema:inLanguage": "en-US",
+  "schema:measurementTechnique": "Manual normalization of public vendor pricing and price-visibility disclosures to one technician and four endpoint-count scenarios. Numeric cells are populated only when official public rates support exact arithmetic; every row retains its vendor source URL and fact-checked date.",
+  "schema:temporalCoverage": "2026-10-30/2026-11-02",
+  "schema:spatialCoverage": {
+    "@type": "schema:Place",
+    "schema:name": "United States public pricing"
+  },
+  "schema:keywords": [
+    "RMM pricing",
+    "MSP software cost",
+    "pricing transparency",
+    "remote monitoring and management",
+    "RMM cost comparison"
+  ],
+  "schema:variableMeasured": [
+    "Product",
+    "Pricing model",
+    "Billing term",
+    "Public price visibility",
+    "Monthly cost at 10 endpoints",
+    "Monthly cost at 50 endpoints",
+    "Monthly cost at 100 endpoints",
+    "Monthly cost at 500 endpoints",
+    "Source URL",
+    "Fact-checked date"
+  ],
+  "schema:identifier": [
+    "nizlo-public-rmm-pricing-2026-11-02",
+    {
+      "@type": "schema:PropertyValue",
+      "schema:propertyID": "SHA-256",
+      "schema:value": "7501f3a1cc9cd52db640168b9448d0cc38f23e153b561827c158b43176e296ea"
+    }
+  ],
+  "schema:includedInDataCatalog": {
+    "@type": "schema:DataCatalog",
+    "schema:name": "Nizlo MSP Operations Resources",
+    "schema:url": "https://izikipizi.github.io/nizlo-msp-operations-resources/"
+  },
+  "schema:distribution": [
+    {
+      "@type": "schema:DataDownload",
+      "schema:name": "CSV snapshot",
+      "schema:contentUrl": "https://izikipizi.github.io/nizlo-msp-operations-resources/data/public-rmm-pricing-comparison-2026-11-02.csv",
+      "schema:encodingFormat": "text/csv",
+      "schema:contentSize": "4274 bytes"
+    },
+    {
+      "@type": "schema:DataDownload",
+      "schema:name": "Frictionless Data Package descriptor",
+      "schema:contentUrl": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
+      "schema:encodingFormat": "application/json"
+    }
+  ],
+  "dcat:landingPage": {
+    "@id": "https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html"
+  },
+  "dct:issued": "2026-10-30",
+  "dct:modified": "2026-11-02"
+}

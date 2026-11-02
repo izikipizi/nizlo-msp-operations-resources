@@ -1243,15 +1243,15 @@
     },
     {
       "profile": "tabular-data-resource",
-      "name": "public-rmm-pricing-comparison-2026-10-30",
-      "title": "Public RMM pricing comparison for one-technician MSPs",
-      "description": "Six source-dated public price models normalized to one technician and fleets of 10, 50, 100, and 500 endpoints. Nizlo maintains the dataset and is one of the compared products.",
-      "path": "data/public-rmm-pricing-comparison-2026-10-30.csv",
+      "name": "public-rmm-pricing-comparison-2026-11-02",
+      "title": "Public RMM pricing and price-visibility comparison for one-technician MSPs",
+      "description": "Fourteen source-dated RMM pricing records covering published numeric prices, free tiers, source-available software, published ranges, and quote-only vendors, with exact one-technician scenarios at 10, 50, 100, and 500 endpoints where public rates permit calculation. Nizlo maintains the dataset and is one of the compared products.",
+      "path": "data/public-rmm-pricing-comparison-2026-11-02.csv",
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "bytes": 1639,
-      "hash": "sha256:eec44fefd50f1ea794739bf08c8a9cee8478b6b64e09f532f7de197b93767624",
+      "bytes": 4274,
+      "hash": "sha256:7501f3a1cc9cd52db640168b9448d0cc38f23e153b561827c158b43176e296ea",
       "licenses": [
         {
           "name": "CC-BY-4.0",
@@ -1271,6 +1271,19 @@
           {
             "name": "billing_term_for_estimate",
             "type": "string"
+          },
+          {
+            "name": "public_price_visibility",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "numeric_public",
+                "free_tier_only",
+                "source_available",
+                "range_and_quote",
+                "quote_only"
+              ]
+            }
           },
           {
             "name": "one_technician_endpoints_10_usd_month",

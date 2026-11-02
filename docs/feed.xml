@@ -119,7 +119,7 @@
     <updated>2026-11-01T00:00:00Z</updated>
     <category term="pricing" />
     <category term="dataset" />
-    <summary>Download a source-dated CSV comparing six public RMM pricing models for one technician at 10, 50, 100, and 500 endpoints, with source links, methodology, caveats, and an explicit Nizlo relationship disclosure.</summary>
+    <summary>Download a source-dated CSV comparing fourteen RMM price disclosures—including public rates, free tiers, published ranges, source-available software, and quote-only vendors—with exact one-technician scenario math where public rates permit it.</summary>
   </entry>
   <entry>
     <title>MSP client offboarding checklist and evidence register</title>

@@ -4,33 +4,33 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Public RMM Pricing Dataset for Small MSPs | Nizlo</title>
-    <meta name="description" content="Download a free, source-dated CSV comparing six public RMM pricing models for one-technician MSPs at 10, 50, 100, and 500 endpoints." />
+    <meta name="description" content="Download a free, source-dated CSV comparing pricing and price visibility for fourteen RMM products at 10, 50, 100, and 500 endpoints." />
     <meta name="robots" content="index,follow" />
     <link rel="canonical" href="https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html" />
-    <link rel="alternate" type="application/ld+json" href="data/public-rmm-pricing-comparison-2026-10-30.jsonld" title="Dataset metadata" />
+    <link rel="alternate" type="application/ld+json" href="data/public-rmm-pricing-comparison-2026-11-02.jsonld" title="Dataset metadata" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Public RMM Pricing Dataset for Small MSPs" />
-    <meta property="og:description" content="Six source-dated public pricing models normalized to one technician and four endpoint counts." />
+    <meta property="og:description" content="Fourteen source-dated RMM pricing records covering public rates, free tiers, published ranges, source-available software, and quote-only vendors." />
     <meta property="og:url" content="https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html" />
     <meta name="twitter:card" content="summary" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Dataset",
-        "name": "Public RMM pricing comparison for one-technician MSPs",
-        "description": "Six source-dated public RMM pricing models normalized to one technician and fleets of 10, 50, 100, and 500 endpoints.",
+        "name": "Public RMM pricing and price-visibility comparison for one-technician MSPs",
+        "description": "Fourteen source-dated RMM pricing records covering published numeric prices, free tiers, source-available software, published ranges, and quote-only vendors.",
         "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html",
         "sameAs": "https://nizlo.com/guides/cheapest-rmm-for-small-msps",
         "creator": { "@type": "Organization", "name": "Nizlo", "url": "https://nizlo.com/" },
-        "dateModified": "2026-10-30",
+        "dateModified": "2026-11-02",
         "isAccessibleForFree": true,
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "inLanguage": "en",
-        "keywords": ["RMM pricing", "MSP software cost", "remote monitoring and management", "RMM cost comparison"],
-        "variableMeasured": ["Product", "Pricing model", "Billing term", "Monthly cost at 10 endpoints", "Monthly cost at 50 endpoints", "Monthly cost at 100 endpoints", "Monthly cost at 500 endpoints", "Source URL", "Fact-checked date"],
+        "keywords": ["RMM pricing", "MSP software cost", "pricing transparency", "remote monitoring and management", "RMM cost comparison"],
+        "variableMeasured": ["Product", "Pricing model", "Billing term", "Public price visibility", "Monthly cost at 10 endpoints", "Monthly cost at 50 endpoints", "Monthly cost at 100 endpoints", "Monthly cost at 500 endpoints", "Source URL", "Fact-checked date"],
         "distribution": {
           "@type": "DataDownload",
-          "contentUrl": "https://izikipizi.github.io/nizlo-msp-operations-resources/data/public-rmm-pricing-comparison-2026-10-30.csv",
+          "contentUrl": "https://izikipizi.github.io/nizlo-msp-operations-resources/data/public-rmm-pricing-comparison-2026-11-02.csv",
           "encodingFormat": "text/csv"
         }
       }
@@ -64,14 +64,14 @@
   <body>
     <header><a class="brand" href="./">NIZLO · MSP OPERATIONS RESOURCES</a></header>
     <main>
-      <p class="eyebrow">Public dataset · fact-checked October 30, 2026</p>
+      <p class="eyebrow">Public dataset · updated November 2, 2026</p>
       <h1>RMM pricing data for a one-technician MSP</h1>
-      <p class="lede">This dataset compares six public price models at 10, 50, 100, and 500 endpoints. It separates published subscription math from product fit: feature scope, support, add-ons, platform coverage, migration work, and retained tools can reverse a price-only conclusion.</p>
+      <p class="lede">This dataset compares fourteen RMM price disclosures at 10, 50, 100, and 500 endpoints. It records published rates, free tiers, source-available software, public ranges, and quote-only pricing without filling gaps with estimates. Feature scope, support, add-ons, platform coverage, migration work, and retained tools can reverse a price-only conclusion.</p>
       <div class="actions">
-        <a class="button primary" href="data/public-rmm-pricing-comparison-2026-10-30.csv" download>Download the CSV</a>
+        <a class="button primary" href="data/public-rmm-pricing-comparison-2026-11-02.csv" download>Download the CSV</a>
         <a class="button" href="https://nizlo.com/guides/cheapest-rmm-for-small-msps">Open calculator and methodology</a>
         <a class="button" href="datapackage.json">Validate with the Data Package</a>
-        <a class="button" href="data/public-rmm-pricing-comparison-2026-10-30.jsonld">Open JSON-LD/DCAT metadata</a>
+        <a class="button" href="data/public-rmm-pricing-comparison-2026-11-02.jsonld">Open JSON-LD/DCAT metadata</a>
       </div>
 
       <div class="panel">
@@ -81,24 +81,33 @@
       <h2>Normalized monthly subscription estimates</h2>
       <div class="table-wrap">
         <table>
-          <thead><tr><th>Product</th><th>Published model</th><th>10 endpoints</th><th>50 endpoints</th><th>100 endpoints</th><th>500 endpoints</th><th>Source</th></tr></thead>
+          <thead><tr><th>Product</th><th>Published model</th><th>Visibility</th><th>10 endpoints</th><th>50 endpoints</th><th>100 endpoints</th><th>500 endpoints</th><th>Source</th></tr></thead>
           <tbody>
-            <tr><td>Fathom Free / Core</td><td>Free through 50 devices; then per technician</td><td>$0</td><td>$0</td><td>$109 annual</td><td>$109 annual</td><td><a href="https://fathomitsm.app/pricing">Vendor pricing</a></td></tr>
-            <tr><td>MSP360 Community Edition</td><td>Free through 50 endpoints for MSPs</td><td>$0</td><td>$0</td><td>Use calculator</td><td>Use calculator</td><td><a href="https://www.msp360.com/rmm/free-rmm-software/">Vendor pricing</a></td></tr>
-            <tr><td>Level</td><td>First 10 free; then $2/device for the whole fleet</td><td>$0</td><td>$100</td><td>$200</td><td>$1,000</td><td><a href="https://level.io/pricing">Vendor pricing</a></td></tr>
-            <tr><td>Nizlo Core</td><td>Flat plan; one technician; unlimited RMM endpoints</td><td>$59</td><td>$59</td><td>$59</td><td>$59</td><td><a href="https://nizlo.com/pricing">Vendor pricing</a></td></tr>
-            <tr><td>Atera MSP Pro</td><td>Per technician; unlimited devices</td><td>$129 annual</td><td>$129 annual</td><td>$129 annual</td><td>$129 annual</td><td><a href="https://www.atera.com/msp-pricing/">Vendor pricing</a></td></tr>
-            <tr><td>Syncro Core</td><td>Per technician; unlimited endpoints</td><td>$129 annual</td><td>$129 annual</td><td>$129 annual</td><td>$129 annual</td><td><a href="https://syncrosecure.com/pricing/">Vendor pricing</a></td></tr>
+            <tr><td>Fathom Free / Core</td><td>Free through 50 devices; then per technician</td><td>Numeric public</td><td>$0</td><td>$0</td><td>$109</td><td>$109</td><td><a href="https://fathomitsm.app/pricing">Vendor pricing</a></td></tr>
+            <tr><td>MSP360 Community Edition</td><td>Free through 50 endpoints</td><td>Free tier only</td><td>$0</td><td>$0</td><td>Not published</td><td>Not published</td><td><a href="https://www.msp360.com/rmm/free-rmm-software/">Vendor pricing</a></td></tr>
+            <tr><td>Level</td><td>First 10 free; then $2/device</td><td>Numeric public</td><td>$0</td><td>$100</td><td>$200</td><td>$1,000</td><td><a href="https://level.io/pricing">Vendor pricing</a></td></tr>
+            <tr><td>Nizlo Core</td><td>Flat plan; unlimited RMM endpoints</td><td>Numeric public</td><td>$59</td><td>$59</td><td>$59</td><td>$59</td><td><a href="https://nizlo.com/pricing">Vendor pricing</a></td></tr>
+            <tr><td>Atera MSP Pro</td><td>Per technician; unlimited devices</td><td>Numeric public</td><td>$129</td><td>$129</td><td>$129</td><td>$129</td><td><a href="https://www.atera.com/msp-pricing-/">Vendor pricing</a></td></tr>
+            <tr><td>Syncro Core</td><td>Per technician; unlimited endpoints</td><td>Numeric public</td><td>$129</td><td>$129</td><td>$129</td><td>$129</td><td><a href="https://syncrosecure.com/pricing/">Vendor pricing</a></td></tr>
+            <tr><td>ManageEngine RMM Central</td><td>Free through 25 devices; annual device tiers</td><td>Numeric public</td><td>$0</td><td>$99.58</td><td>$178.75</td><td>$641.25</td><td><a href="https://store.manageengine.com/remote-monitoring-management/">Vendor store</a></td></tr>
+            <tr><td>Action1</td><td>First 200 endpoints free; quote above</td><td>Free tier only</td><td>$0</td><td>$0</td><td>$0</td><td>Not published</td><td><a href="https://www.action1.com/documentation/licensing-and-subscription-allowance/">Vendor licensing</a></td></tr>
+            <tr><td>Tactical RMM</td><td>Source-available and self-hosted</td><td>Source available</td><td>$0 license</td><td>$0 license</td><td>$0 license</td><td>$0 license</td><td><a href="https://docs.tacticalrmm.com/faq/">Vendor documentation</a></td></tr>
+            <tr><td>NinjaOne Endpoint Management</td><td>Tiered per device; exact quote varies</td><td>Range + quote</td><td>$37.50</td><td>$187.50</td><td>Not published</td><td>Not published</td><td><a href="https://www.ninjaone.com/pricing/">Vendor pricing</a></td></tr>
+            <tr><td>SuperOps Prime</td><td>Per endpoint; 150-endpoint minimum</td><td>Quote only</td><td>Quote</td><td>Quote</td><td>Quote</td><td>Quote</td><td><a href="https://superops.com/pricing">Vendor pricing</a></td></tr>
+            <tr><td>ConnectWise RMM</td><td>Package-based RMM pricing</td><td>Quote only</td><td>Quote</td><td>Quote</td><td>Quote</td><td>Quote</td><td><a href="https://www.connectwise.com/pricing">Vendor pricing</a></td></tr>
+            <tr><td>Kaseya VSA 10</td><td>Varies by deployment, volume, and package</td><td>Quote only</td><td>Quote</td><td>Quote</td><td>Quote</td><td>Quote</td><td><a href="https://www.kaseya.com/products/kaseya-vsa/">Vendor pricing statement</a></td></tr>
+            <tr><td>Datto RMM</td><td>Tailored partner pricing</td><td>Quote only</td><td>Quote</td><td>Quote</td><td>Quote</td><td>Quote</td><td><a href="https://www.datto.com/pricing/">Vendor pricing</a></td></tr>
           </tbody>
         </table>
       </div>
 
       <h2>Method and limits</h2>
       <ul>
-        <li>Prices were manually checked against the linked vendor pages on October 30, 2026.</li>
+        <li>Prices and visibility statements were manually checked against the linked vendor pages on the date recorded in each CSV row.</li>
         <li>Estimates assume one technician, U.S. public pricing, no tax, and no optional add-ons.</li>
         <li>When a public annual and month-to-month rate both exist, the table uses the annual-billing monthly equivalent and the CSV preserves the month-to-month alternative.</li>
-        <li>Blank CSV cells mean the public page requires a calculator or quote; they are not zero.</li>
+        <li>Blank CSV cells mean an exact public rate was unavailable for that scenario; they are not zero.</li>
+        <li>Source-available software can still incur hosting, operations, support, code-signing, and security-management costs; $0 denotes only the base software license in this comparison.</li>
         <li>The dataset is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Cite the fact-checked date because prices change.</li>
       </ul>
     </main>
