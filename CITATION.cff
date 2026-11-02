@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If these MSP operations resources support your work, cite the maintained canonical guide."
 title: "Nizlo MSP Operations Resources"
 type: dataset
-version: "1.26.0"
+version: "1.27.0"
 authors:
   - family-names: "Ecklund"
     given-names: "Kip"
@@ -37,6 +37,9 @@ keywords:
   - "incident response runbook"
   - "RMM evaluation scorecard"
   - "RMM pilot acceptance"
+  - "RMM pilot test plan"
+  - "RMM proof of concept checklist"
+  - "RMM testing evidence"
   - "first endpoint acceptance"
   - "RMM permissions matrix"
   - "technician access review"

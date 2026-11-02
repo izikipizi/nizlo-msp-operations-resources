@@ -12,6 +12,16 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>RMM pilot test plan and evidence pack</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-pilot-test-evidence-pack.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-pilot-test-evidence-pack.html" />
+    <updated>2026-11-02T00:00:00Z</updated>
+    <category term="evaluation" />
+    <category term="pilot" />
+    <category term="template" />
+    <summary>Run 25 vendor-neutral RMM proof-of-concept tests with explicit pass criteria, evidence, stop conditions, defects, remediation, retesting, and rollout decisions.</summary>
+  </entry>
+  <entry>
     <title>Six-week MSP onboarding project plan</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/six-week-msp-onboarding-project-plan.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/six-week-msp-onboarding-project-plan.html" />
@@ -186,7 +196,7 @@
     <updated>2026-11-02T00:00:00Z</updated>
     <category term="deployment" />
     <category term="change-management" />
-    <summary>Download twelve vendor-neutral CSV templates for RMM evaluation, Windows patch exceptions, first-endpoint acceptance, technician access review, MSP client onboarding and offboarding, six-week transition planning, endpoint inventory, CMDB readiness, deployment, change-window control, incident response, migration, validation, rollback, communications, and closeout.</summary>
+    <summary>Download thirteen vendor-neutral CSV templates for RMM pilot testing, evaluation, Windows patch exceptions, first-endpoint acceptance, technician access review, MSP client onboarding and offboarding, six-week transition planning, endpoint inventory, CMDB readiness, deployment, change-window control, incident response, migration, validation, rollback, communications, and closeout.</summary>
   </entry>
   <entry>
     <title>RMM change-window and rollback-plan template</title>

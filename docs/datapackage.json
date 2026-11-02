@@ -4,9 +4,9 @@
   "name": "nizlo-rmm-operations-resources",
   "id": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
   "title": "Nizlo RMM Operations Resources",
-  "description": "Twelve public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
+  "description": "Thirteen public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
-  "version": "1.26.0",
+  "version": "1.27.0",
   "created": "2026-11-01",
   "contributors": [
     {
@@ -30,6 +30,9 @@
     "RMM security",
     "RMM migration",
     "RMM evaluation scorecard",
+    "RMM pilot test plan",
+    "RMM proof of concept checklist",
+    "RMM testing evidence",
     "RMM pilot acceptance",
     "first endpoint acceptance",
     "endpoint inventory",
@@ -174,8 +177,8 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "bytes": 1351,
-      "hash": "sha256:599de6b2383e7ea1abe78baebd86927d2a94d6e0567d16d5751c1d7fce597df7",
+      "bytes": 1362,
+      "hash": "sha256:53241f5d6956300936cc6ebeb8f2a962a197589a614f67e973e2269cefa9809e",
       "schema": {
         "fields": [
           { "name": "criterion_id", "type": "string" },
@@ -201,8 +204,8 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "bytes": 1717,
-      "hash": "sha256:2f49bb73af73f9629f310e380c750ecc70ffc1c5a27be48f2a51bbcf2fad1b8c",
+      "bytes": 1723,
+      "hash": "sha256:2e0fceb8c38490917e794953364f07d0940e43473528a6b3b029934277259f37",
       "schema": {
         "fields": [
           { "name": "gate_id", "type": "string" },
@@ -253,8 +256,8 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "bytes": 838,
-      "hash": "sha256:047bfa232509dc47044057b9f2da3de753643ec985bd3555411c969bd3f10eaa",
+      "bytes": 840,
+      "hash": "sha256:a38609321119f62306912d38316d5b821609c6210a99194026cd47efec997d74",
       "schema": {
         "fields": [
           { "name": "record_id", "type": "string" },
@@ -293,8 +296,8 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "bytes": 1007,
-      "hash": "sha256:b9c99ba241aba883f5397b83c9981b2e095bc9341e4e1b25a9a6f1034188dbfc",
+      "bytes": 1009,
+      "hash": "sha256:a991280778ed8555ae2cee6fb728b3224459c10c270d726bb4ea9d41869d954b",
       "schema": {
         "fields": [
           { "name": "assignment_id", "type": "string" },
@@ -403,8 +406,8 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "bytes": 4465,
-      "hash": "sha256:9708ca312fbb35a0865cb8ad0af1f36e793635a365a52164a47c2e3268a022e1",
+      "bytes": 4498,
+      "hash": "sha256:678591559492ce4fceab7a1ccc939e200fbc3a1ddf2733e9eb1217fefc89fb4b",
       "schema": {
         "fields": [
           { "name": "phase", "type": "string" },
@@ -428,6 +431,41 @@
     },
     {
       "profile": "tabular-data-resource",
+      "name": "rmm-pilot-test-evidence-pack",
+      "title": "RMM pilot test plan and evidence pack",
+      "description": "Twenty-five vendor-neutral proof-of-concept tests for authority, identity, enrollment, monitoring, patching, automation, remote access, tenant isolation, evidence, resilience, removal, and rollout decisions.",
+      "path": "templates/rmm-pilot-test-evidence-pack.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 12376,
+      "hash": "sha256:61b4675d8cd32622a745c987ecaaf2ef2c69c83f5f942e2f07f15f3460b76a92",
+      "schema": {
+        "fields": [
+          { "name": "test_id", "type": "string" },
+          { "name": "phase", "type": "string" },
+          { "name": "control_area", "type": "string" },
+          { "name": "test_objective", "type": "string" },
+          { "name": "pilot_scope", "type": "string" },
+          { "name": "precondition", "type": "string" },
+          { "name": "procedure", "type": "string" },
+          { "name": "expected_result", "type": "string" },
+          { "name": "evidence_required", "type": "string" },
+          { "name": "stop_condition", "type": "string" },
+          { "name": "owner", "type": "string" },
+          { "name": "approver", "type": "string" },
+          { "name": "result", "type": "string" },
+          { "name": "evidence_link", "type": "string" },
+          { "name": "defect_or_risk", "type": "string" },
+          { "name": "remediation_owner", "type": "string" },
+          { "name": "retest_date_utc", "type": "datetime" },
+          { "name": "decision", "type": "string" }
+        ],
+        "primaryKey": "test_id"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
       "name": "public-rmm-pricing-comparison-2026-10-30",
       "title": "Public RMM pricing comparison for one-technician MSPs",
       "description": "Six source-dated public price models normalized to one technician and fleets of 10, 50, 100, and 500 endpoints. Nizlo maintains the dataset and is one of the compared products.",
@@ -435,8 +473,8 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "bytes": 1639,
-      "hash": "sha256:eec44fefd50f1ea794739bf08c8a9cee8478b6b64e09f532f7de197b93767624",
+      "bytes": 1646,
+      "hash": "sha256:094413e0ffa5d4042b33ada8e0a24a05cbfac9d23ba83337d06711c4179cac4e",
       "licenses": [
         {
           "name": "CC-BY-4.0",

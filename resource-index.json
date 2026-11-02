@@ -298,6 +298,17 @@
       "account_required": false
     },
     {
+      "id": "rmm-pilot-test-evidence-pack",
+      "title": "RMM pilot test plan and evidence pack",
+      "category": "evaluation",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-pilot-test-evidence-pack.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-pilot-test-evidence-pack.csv",
+      "format": "text/csv",
+      "controls": 25,
+      "access": "public",
+      "account_required": false
+    },
+    {
       "id": "msp-client-onboarding-evidence-register",
       "title": "MSP client onboarding checklist and evidence register",
       "category": "client-lifecycle",

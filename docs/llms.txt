@@ -1,12 +1,13 @@
 # Nizlo MSP Operations Resources
 
-> Twenty-three public, ungated field guides, twelve reusable CSV templates, and one source-dated RMM pricing dataset for managed service providers and lean IT teams evaluating, pricing, testing, deploying, inventorying, operating, securing, migrating, onboarding, and offboarding remote monitoring and management software.
+> Twenty-four public, ungated field guides, thirteen reusable CSV templates, and one source-dated RMM pricing dataset for managed service providers and lean IT teams evaluating, pricing, testing, deploying, inventorying, operating, securing, migrating, onboarding, and offboarding remote monitoring and management software.
 
 This external library is maintained by the Nizlo team. Nizlo is a Windows-first RMM and IT-management platform. The resources are vendor-neutral, but they are vendor-created and do not represent independent research or an endorsement of Nizlo.
 
 ## Primary pages
 
-- [Resource library](https://izikipizi.github.io/nizlo-msp-operations-resources/): Human-readable collection of all twenty-three maintained guides.
+- [Resource library](https://izikipizi.github.io/nizlo-msp-operations-resources/): Human-readable collection of all twenty-four maintained guides.
+- [RMM pilot test plan and evidence pack](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-pilot-test-evidence-pack.html): Twenty-five controlled proof-of-concept tests with pass criteria, evidence, stop conditions, defects, remediation, retesting, and rollout decisions.
 - [Six-week MSP onboarding project plan](https://izikipizi.github.io/nizlo-msp-operations-resources/six-week-msp-onboarding-project-plan.html): Thirty milestones for authority, discovery, access, SOP development, controlled pilot execution, reconciliation, NOC training, acceptance, and handoff.
 - [How to test RMM software safely](https://nizlo.com/guides/how-to-test-rmm-software): Staged pre-production pilot for agents, permissions, monitoring, patching, automation, remote access, and removal.
 - [RMM for Mac and Windows](https://nizlo.com/guides/rmm-for-mac-and-windows): Mixed-fleet evaluation across enrollment, inventory, alerts, automation, updates, remote access, and removal.
@@ -20,7 +21,7 @@ This external library is maintained by the Nizlo team. Nizlo is a Windows-first 
 - [RMM migration checklist workbook](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-workbook-template.html): Field guidance and a public 30-control CSV for discovery, pilot, coexistence, cutover, validation, source retirement, and closeout.
 - [Citation and preservation](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html): Authorship, version, repository, CFF metadata, and Software Heritage identifiers.
 - [Machine-readable resource index](https://izikipizi.github.io/nizlo-msp-operations-resources/resource-index.json): Structured catalogue with titles, categories, audiences, access status, and canonical URLs.
-- [Data Package descriptor](https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json): Standards-based metadata, schemas, byte counts, and SHA-256 hashes for twelve templates and the public pricing dataset.
+- [Data Package descriptor](https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json): Standards-based metadata, schemas, byte counts, and SHA-256 hashes for thirteen templates and the public pricing dataset.
 - [Atom feed](https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml): Feed-reader and aggregator discovery for the resource collection.
 
 ## Pricing data
@@ -30,7 +31,8 @@ This external library is maintained by the Nizlo team. Nizlo is a Windows-first 
 
 ## Reusable templates
 
-- [RMM operations and incident response template library](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/): Landing page for all twelve public CSV templates with usage guidance.
+- [RMM operations and incident response template library](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/): Landing page for all thirteen public CSV templates with usage guidance.
+- [RMM pilot test evidence CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-pilot-test-evidence-pack.csv): Downloadable 25-test record for authority, identity, enrollment, monitoring, patching, automation, remote access, isolation, evidence, resilience, removal, remediation, retesting, and the final rollout decision.
 - [RMM first-endpoint pilot acceptance checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-acceptance-checklist.html): Five evidence gates for identity, alert routing, authorized action, patch-state reconciliation, and clean removal before a pilot expands.
 - [RMM first-endpoint acceptance CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-first-endpoint-acceptance.csv): Downloadable acceptance criteria, required evidence, rollout stop conditions, ownership, status, and notes.
 - [Windows patch exception review and closure template](https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-exception-review-template.html): Guide and 18-control CSV for exception scope, evidence, risk, approval, compensating controls, monitoring, expiry, retest, and closure.
