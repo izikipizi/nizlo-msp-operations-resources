@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If these MSP operations resources support your work, cite the maintained canonical guide."
 title: "Nizlo MSP Operations Resources"
 type: dataset
-version: "1.28.0"
+version: "1.29.0"
 authors:
   - family-names: "Ecklund"
     given-names: "Kip"
@@ -42,6 +42,11 @@ keywords:
   - "MSP monthly maintenance checklist"
   - "managed services maintenance"
   - "RMM maintenance checklist"
+  - "RMM alert escalation matrix"
+  - "MSP alert routing"
+  - "RMM severity matrix"
+  - "alert response targets"
+  - "alert triage template"
   - "RMM pilot test plan"
   - "RMM proof of concept checklist"
   - "RMM testing evidence"

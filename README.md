@@ -35,6 +35,7 @@ Every resource below is public, ungated, and written to be usable independently 
 | --- | --- |
 | [RMM automation safety checklist](https://nizlo.com/guides/rmm-automation-safety-checklist) | Reviewing targeting, privilege, rollout, rollback, evidence, and failure handling |
 | [RMM alert-tuning checklist](https://nizlo.com/guides/rmm-alert-tuning-checklist) | Turning noisy endpoint signals into owned, actionable service work |
+| [RMM alert escalation matrix](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-escalation-matrix-template.html) | Assigning severity, owners, response targets, escalation paths, customer notification, evidence, suppression, and closure to alert rules |
 | [Endpoint exception-management guide](https://nizlo.com/guides/endpoint-exception-management) | Turning failed patches, offline devices, pending reboots, and unknown states into owned work |
 | [Endpoint inventory and CMDB readiness checklist](https://nizlo.com/guides/endpoint-inventory-cmdb-readiness) | Establishing durable identities, source provenance, lifecycle states, and exception handling before a CMDB project |
 | [Windows patch-management checklist](https://nizlo.com/guides/windows-patch-management-checklist) | Defining rings, maintenance windows, approvals, exceptions, rollback, and reporting |
@@ -44,7 +45,7 @@ Every resource below is public, ungated, and written to be usable independently 
 
 ## Machine-readable index
 
-[`resource-index.json`](resource-index.json) exposes the same catalogue as structured data for internal portals, documentation tools, and agents. The public [Data Package descriptor](https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json) supplies schemas, byte counts, and SHA-256 hashes for fourteen CSV templates plus the source-dated RMM pricing dataset. The [Atom feed](https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml) makes the catalogue available to feed readers and aggregators, while [`llms.txt`](https://izikipizi.github.io/nizlo-msp-operations-resources/llms.txt) provides a compact answer-engine profile. Each entry points to the maintained canonical guide rather than an unversioned copy.
+[`resource-index.json`](resource-index.json) exposes the same catalogue as structured data for internal portals, documentation tools, and agents. The public [Data Package descriptor](https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json) supplies schemas, byte counts, and SHA-256 hashes for fifteen CSV templates plus the source-dated RMM pricing dataset. The [Atom feed](https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml) makes the catalogue available to feed readers and aggregators, while [`llms.txt`](https://izikipizi.github.io/nizlo-msp-operations-resources/llms.txt) provides a compact answer-engine profile. Each entry points to the maintained canonical guide rather than an unversioned copy.
 
 ## Source-dated pricing dataset
 
@@ -57,6 +58,8 @@ Citation metadata is available in [`CITATION.cff`](CITATION.cff) and on the publ
 ## Reusable field templates
 
 Browse the public [RMM operations and incident response template library](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/) for direct downloads and usage guidance.
+
+Use the [RMM alert escalation matrix](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-escalation-matrix-template.html) to map 27 example alert rules to confirmation windows, owners, response and acknowledgement targets, escalation paths, customer notifications, suppression conditions, evidence, closure tests, and false-positive review. The [25-field CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-alert-escalation-matrix.csv) is public, ungated, and intended to be rewritten and tested before production use.
 
 Use the dedicated [RMM deployment-readiness checklist template](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-deployment-readiness-template.html) for phase guidance, field documentation, and the public 33-control CSV. It helps assign owners, record evidence, define rollback triggers, and reconcile exceptions across governance, inventory, preparation, pilot, wave rollout, verification, and closeout.
 

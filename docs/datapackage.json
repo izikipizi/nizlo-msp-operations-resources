@@ -4,9 +4,9 @@
   "name": "nizlo-rmm-operations-resources",
   "id": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
   "title": "Nizlo RMM Operations Resources",
-  "description": "Fourteen public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
+  "description": "Fifteen public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
-  "version": "1.28.0",
+  "version": "1.29.0",
   "created": "2026-11-01",
   "contributors": [
     {
@@ -54,7 +54,12 @@
     "RMM pricing",
     "RMM pricing dataset",
     "MSP maintenance checklist",
-    "daily weekly monthly checklist"
+    "daily weekly monthly checklist",
+    "RMM alert escalation matrix",
+    "MSP alert routing",
+    "RMM severity matrix",
+    "alert response targets",
+    "alert triage template"
   ],
   "resources": [
     {
@@ -1113,6 +1118,48 @@
           }
         ],
         "primaryKey": "check_id"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "rmm-alert-escalation-matrix",
+      "title": "RMM alert escalation matrix template",
+      "description": "Twenty-seven example alert rules with explicit severity, confirmation, ownership, response, acknowledgement, escalation, notification, suppression, evidence, closure, and tuning fields.",
+      "path": "templates/rmm-alert-escalation-matrix.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 20725,
+      "hash": "sha256:a5a063471ed10d7ad88d0b8b7797daef50410733f883eb5949bff33573068fd0",
+      "schema": {
+        "fields": [
+          { "name": "alert_rule_id", "type": "string" },
+          { "name": "category", "type": "string" },
+          { "name": "signal", "type": "string" },
+          { "name": "scope", "type": "string" },
+          { "name": "severity", "type": "string" },
+          { "name": "trigger_condition", "type": "string" },
+          { "name": "confirmation_window_minutes", "type": "integer" },
+          { "name": "maintenance_window_behavior", "type": "string" },
+          { "name": "deduplication_key", "type": "string" },
+          { "name": "initial_owner", "type": "string" },
+          { "name": "response_target_minutes", "type": "integer" },
+          { "name": "acknowledgement_target_minutes", "type": "integer" },
+          { "name": "escalation_level_1", "type": "string" },
+          { "name": "escalate_after_minutes", "type": "integer" },
+          { "name": "escalation_level_2", "type": "string" },
+          { "name": "customer_notification_condition", "type": "string" },
+          { "name": "suppression_condition", "type": "string" },
+          { "name": "runbook_url", "type": "string" },
+          { "name": "evidence_required", "type": "string" },
+          { "name": "auto_close_condition", "type": "string" },
+          { "name": "false_positive_review_owner", "type": "string" },
+          { "name": "last_reviewed_at_utc", "type": "datetime" },
+          { "name": "next_review_due_utc", "type": "datetime" },
+          { "name": "status", "type": "string" },
+          { "name": "notes", "type": "string" }
+        ],
+        "primaryKey": "alert_rule_id"
       }
     },
     {

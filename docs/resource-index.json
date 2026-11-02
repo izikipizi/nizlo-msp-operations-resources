@@ -401,6 +401,18 @@
       "account_required": false
     },
     {
+      "id": "rmm-alert-escalation-matrix",
+      "title": "RMM alert escalation matrix template",
+      "category": "monitoring",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-escalation-matrix-template.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-alert-escalation-matrix.csv",
+      "format": "text/csv",
+      "controls": 27,
+      "fields": 25,
+      "access": "public",
+      "account_required": false
+    },
+    {
       "id": "msp-daily-weekly-monthly-maintenance-checklist",
       "title": "MSP daily, weekly, monthly, and quarterly maintenance checklist",
       "category": "operations",

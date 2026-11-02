@@ -12,6 +12,17 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>RMM alert escalation matrix template</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-escalation-matrix-template.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-escalation-matrix-template.html" />
+    <updated>2026-11-02T00:00:00Z</updated>
+    <category term="monitoring" />
+    <category term="alerting" />
+    <category term="escalation" />
+    <category term="template" />
+    <summary>Use 27 example alert rules with severity, confirmation, ownership, response, acknowledgement, escalation, notification, suppression, evidence, closure, and tuning fields.</summary>
+  </entry>
+  <entry>
     <title>MSP daily, weekly, monthly, and quarterly maintenance checklist</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/msp-daily-weekly-monthly-maintenance-checklist.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/msp-daily-weekly-monthly-maintenance-checklist.html" />
@@ -205,7 +216,7 @@
     <updated>2026-11-02T00:00:00Z</updated>
     <category term="deployment" />
     <category term="change-management" />
-    <summary>Download thirteen vendor-neutral CSV templates for RMM pilot testing, evaluation, Windows patch exceptions, first-endpoint acceptance, technician access review, MSP client onboarding and offboarding, six-week transition planning, endpoint inventory, CMDB readiness, deployment, change-window control, incident response, migration, validation, rollback, communications, and closeout.</summary>
+    <summary>Download fifteen vendor-neutral CSV templates for RMM alert escalation, pilot testing, evaluation, Windows patch exceptions, first-endpoint acceptance, technician access review, MSP client onboarding and offboarding, six-week transition planning, endpoint inventory, CMDB readiness, deployment, change-window control, incident response, migration, validation, rollback, communications, and closeout.</summary>
   </entry>
   <entry>
     <title>RMM change-window and rollback-plan template</title>
