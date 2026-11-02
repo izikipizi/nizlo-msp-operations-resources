@@ -46,7 +46,7 @@ Every resource below is public, ungated, and written to be usable independently 
 
 ## Citation and preservation
 
-Citation metadata is available in [`CITATION.cff`](CITATION.cff) and on the public [citation and preservation page](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html). Software Heritage preserves release `v1.14.0` and its repository history as snapshot [`swh:1:snp:65075b3149fe2c23e83862b820c7e9a192436860`](https://archive.softwareheritage.org/browse/snapshot/65075b3149fe2c23e83862b820c7e9a192436860/). The archive is a preservation service, not an endorsement of Nizlo or these resources.
+Citation metadata is available in [`CITATION.cff`](CITATION.cff) and on the public [citation and preservation page](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html). Software Heritage preserves release `v1.17.0` and its repository history as snapshot [`swh:1:snp:68c31554c6afeafc9a65a713c6045412ad9362d7`](https://archive.softwareheritage.org/browse/snapshot/68c31554c6afeafc9a65a713c6045412ad9362d7/). The archive is a preservation service, not an endorsement of Nizlo or these resources.
 
 ## Reusable field templates
 
