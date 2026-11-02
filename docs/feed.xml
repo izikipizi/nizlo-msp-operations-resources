@@ -12,6 +12,15 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>Endpoint inventory and CMDB readiness template</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/endpoint-inventory-cmdb-template.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/endpoint-inventory-cmdb-template.html" />
+    <updated>2026-11-01T00:00:00Z</updated>
+    <category term="inventory" />
+    <category term="cmdb" />
+    <summary>Use 23 vendor-neutral fields to record durable endpoint identity, ownership, lifecycle, management state, source provenance, freshness, and exceptions before CMDB synchronization.</summary>
+  </entry>
+  <entry>
     <title>How to Test RMM Software Safely Before Production</title>
     <id>https://nizlo.com/guides/how-to-test-rmm-software</id>
     <link href="https://nizlo.com/guides/how-to-test-rmm-software" />
@@ -110,7 +119,7 @@
     <updated>2026-11-01T00:00:00Z</updated>
     <category term="deployment" />
     <category term="change-management" />
-    <summary>Download five vendor-neutral CSV templates for RMM evaluation, deployment readiness, change-window control, incident response, migration, validation, rollback, communications, and closeout.</summary>
+    <summary>Download six vendor-neutral CSV templates for RMM evaluation, endpoint inventory, CMDB readiness, deployment, change-window control, incident response, migration, validation, rollback, communications, and closeout.</summary>
   </entry>
   <entry>
     <title>RMM change-window and rollback-plan template</title>

@@ -4,9 +4,9 @@
   "name": "nizlo-rmm-operations-templates",
   "id": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
   "title": "Nizlo RMM Operations Templates",
-  "description": "Five public, vendor-neutral CSV templates for RMM evaluation, deployment readiness, controlled change execution, incident response, and platform migration.",
+  "description": "Six public, vendor-neutral CSV templates for RMM evaluation, endpoint inventory, deployment readiness, controlled change execution, incident response, and platform migration.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/",
-  "version": "1.17.0",
+  "version": "1.18.0",
   "created": "2026-11-01",
   "contributors": [
     {
@@ -29,7 +29,9 @@
     "incident response",
     "RMM security",
     "RMM migration",
-    "RMM evaluation scorecard"
+    "RMM evaluation scorecard",
+    "endpoint inventory",
+    "CMDB readiness"
   ],
   "resources": [
     {
@@ -170,6 +172,46 @@
           { "name": "decision", "type": "string" }
         ],
         "primaryKey": "criterion_id"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "endpoint-inventory-cmdb-readiness",
+      "title": "Endpoint inventory and CMDB readiness template",
+      "description": "Twenty-three fields for durable endpoint identity, ownership, lifecycle, management state, source provenance, freshness, and exception handling.",
+      "path": "templates/endpoint-inventory-cmdb-readiness.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 838,
+      "hash": "sha256:047bfa232509dc47044057b9f2da3de753643ec985bd3555411c969bd3f10eaa",
+      "schema": {
+        "fields": [
+          { "name": "record_id", "type": "string" },
+          { "name": "device_name", "type": "string" },
+          { "name": "serial_number", "type": "string" },
+          { "name": "hardware_uuid", "type": "string" },
+          { "name": "management_agent_id", "type": "string" },
+          { "name": "directory_device_id", "type": "string" },
+          { "name": "operating_system", "type": "string" },
+          { "name": "os_version", "type": "string" },
+          { "name": "hardware_model", "type": "string" },
+          { "name": "primary_user", "type": "string" },
+          { "name": "customer_or_department", "type": "string" },
+          { "name": "site_or_location", "type": "string" },
+          { "name": "business_service", "type": "string" },
+          { "name": "support_group", "type": "string" },
+          { "name": "lifecycle_state", "type": "string" },
+          { "name": "management_state", "type": "string" },
+          { "name": "last_check_in_utc", "type": "datetime" },
+          { "name": "source_system", "type": "string" },
+          { "name": "source_observed_at_utc", "type": "datetime" },
+          { "name": "confidence_or_exception", "type": "string" },
+          { "name": "exception_owner", "type": "string" },
+          { "name": "next_review_at_utc", "type": "datetime" },
+          { "name": "notes", "type": "string" }
+        ],
+        "primaryKey": "record_id"
       }
     }
   ]

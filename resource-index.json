@@ -252,6 +252,17 @@
       "controls": 10,
       "access": "public",
       "account_required": false
+    },
+    {
+      "id": "endpoint-inventory-cmdb-readiness",
+      "title": "Endpoint inventory and CMDB readiness template",
+      "category": "inventory",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/endpoint-inventory-cmdb-template.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/endpoint-inventory-cmdb-readiness.csv",
+      "format": "text/csv",
+      "controls": 23,
+      "access": "public",
+      "account_required": false
     }
   ]
 }
