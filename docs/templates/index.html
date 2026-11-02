@@ -4,13 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Free RMM Evaluation &amp; Operations Templates | Nizlo</title>
-    <meta name="description" content="Download six free, vendor-neutral CSV templates for RMM evaluation, endpoint inventory, CMDB readiness, deployment, migration, change control, rollback, and incident response." />
+    <meta name="description" content="Download seven free, vendor-neutral CSV templates for RMM evaluation, technician access review, endpoint inventory, deployment, migration, change control, rollback, and incident response." />
     <meta name="robots" content="index,follow,max-image-preview:large" />
     <link rel="canonical" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/" />
     <link rel="alternate" type="application/atom+xml" title="Nizlo MSP Operations Resources" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Free RMM Evaluation &amp; Operations Templates" />
-    <meta property="og:description" content="Six public, ungated CSV templates for RMM evaluation, endpoint inventory, controlled operations, migration, and security incidents." />
+    <meta property="og:description" content="Seven public, ungated CSV templates for RMM evaluation, technician access review, endpoint inventory, controlled operations, migration, and security incidents." />
     <meta property="og:url" content="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/" />
     <meta property="og:image" content="https://nizlo.com/opengraph-image" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -20,7 +20,7 @@
         "@context": "https://schema.org",
         "@type": "CollectionPage",
         "name": "Free RMM evaluation and operations templates",
-        "description": "Six free, vendor-neutral CSV templates for RMM evaluation, endpoint inventory, deployment readiness, platform migration, controlled change execution, and incident response.",
+        "description": "Seven free, vendor-neutral CSV templates for RMM evaluation, technician access review, endpoint inventory, deployment readiness, platform migration, controlled change execution, and incident response.",
         "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/",
         "isPartOf": { "@type": "WebSite", "name": "Nizlo MSP Operations Resources", "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/" },
         "publisher": { "@type": "Organization", "name": "Nizlo", "url": "https://nizlo.com/" },
@@ -99,6 +99,18 @@
                 "isAccessibleForFree": true,
                 "distribution": { "@type": "DataDownload", "contentUrl": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/endpoint-inventory-cmdb-readiness.csv", "encodingFormat": "text/csv" }
               }
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "item": {
+                "@type": "Dataset",
+                "name": "RMM technician access review matrix",
+                "description": "A 29-field CSV for reviewing technician and role scope, privileged capabilities, business justification, MFA, approvals, review dates, exceptions, and remediation.",
+                "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-technician-access-review-matrix.html",
+                "isAccessibleForFree": true,
+                "distribution": { "@type": "DataDownload", "contentUrl": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-technician-access-review.csv", "encodingFormat": "text/csv" }
+              }
             }
           ]
         }
@@ -138,7 +150,7 @@
     <main class="wrap">
       <div class="eyebrow">Public · Ungated · Vendor-neutral</div>
       <h1>RMM evaluation and operations templates.</h1>
-      <p class="lede">Turn product evaluations, endpoint inventory, endpoint-management changes, migrations, and security incidents into owned, reviewable records. All six templates are plain CSV files—no account, email address, or product installation required.</p>
+      <p class="lede">Turn product evaluations, technician access reviews, endpoint inventory, endpoint-management changes, migrations, and security incidents into owned, reviewable records. All seven templates are plain CSV files—no account, email address, or product installation required.</p>
       <section class="grid" aria-label="RMM templates">
         <article>
           <div class="tag">33 controls · CSV</div>
@@ -182,10 +194,17 @@
           <ul><li>Keep device identity durable across change</li><li>Record source and observation time</li><li>Assign lifecycle and data exceptions</li></ul>
           <div class="actions"><a class="button primary" href="endpoint-inventory-cmdb-readiness.csv" download>Download CSV</a><a class="button" href="../endpoint-inventory-cmdb-template.html">Open inventory guide</a></div>
         </article>
+        <article>
+          <div class="tag">29 fields · CSV</div>
+          <h2>RMM technician access review</h2>
+          <p>Review each technician or role against tenant scope, privileged capabilities, justification, approvals, MFA, expiration, and remediation.</p>
+          <ul><li>Separate remote control, scripts, automation, and administration</li><li>Verify MFA and managed admin devices</li><li>Record retain, reduce, revoke, or investigate</li></ul>
+          <div class="actions"><a class="button primary" href="rmm-technician-access-review.csv" download>Download CSV</a><a class="button" href="../rmm-technician-access-review-matrix.html">Open access-review guide</a></div>
+        </article>
       </section>
-      <aside class="note"><strong>Machine-readable package:</strong> Data tools can consume all six CSV resources, field schemas, byte counts, and SHA-256 hashes through the standards-based <a href="../datapackage.json">Data Package descriptor</a>.</aside>
+      <aside class="note"><strong>Machine-readable package:</strong> Data tools can consume all seven CSV resources, field schemas, byte counts, and SHA-256 hashes through the standards-based <a href="../datapackage.json">Data Package descriptor</a>.</aside>
       <aside class="note"><strong>Relationship disclosure:</strong> Nizlo, a Windows-first RMM and IT-management platform, maintains these resources. The templates are designed for use with any relevant RMM, inventory, ITAM, service-desk, or CMDB workflow and do not claim that any vendor passes their controls or supports every field.</aside>
     </main>
-    <footer class="wrap"><span>Maintained by Nizlo · Updated November 1, 2026</span><span><a href="../datapackage.json">Data Package</a> · <a href="../feed.xml">Atom feed</a> · <a href="../citation.html">Citation &amp; preservation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources/tree/v1.18.0">Version 1.18.0</a></span></footer>
+    <footer class="wrap"><span>Maintained by Nizlo · Updated November 1, 2026</span><span><a href="../datapackage.json">Data Package</a> · <a href="../feed.xml">Atom feed</a> · <a href="../citation.html">Citation &amp; preservation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources/tree/v1.19.0">Version 1.19.0</a></span></footer>
   </body>
 </html>

@@ -77,6 +77,25 @@
       {
         "@context": "https://schema.org",
         "@type": "Dataset",
+        "name": "RMM technician access review matrix",
+        "description": "A vendor-neutral CSV with 29 fields for reviewing RMM technician and role scope, privileged capabilities, business justification, MFA, approvals, review dates, exceptions, and remediation.",
+        "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-technician-access-review-matrix.html",
+        "creator": { "@type": "Organization", "name": "Nizlo", "url": "https://nizlo.com/" },
+        "dateModified": "2026-11-01",
+        "isAccessibleForFree": true,
+        "inLanguage": "en",
+        "keywords": ["RMM permissions matrix", "technician access review", "MSP least privilege", "RMM role review"],
+        "distribution": {
+          "@type": "DataDownload",
+          "contentUrl": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-technician-access-review.csv",
+          "encodingFormat": "text/csv"
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Dataset",
         "name": "RMM incident response runbook template",
         "description": "A vendor-neutral CSV with 30 controls for readiness, detection, containment, investigation, recovery, and post-incident improvement.",
         "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-incident-response-runbook-template.html",
@@ -293,6 +312,7 @@
           <a class="button button-secondary" href="rmm-change-window-rollback-plan.html">Use the rollback plan</a>
           <a class="button button-secondary" href="rmm-incident-response-runbook-template.html">Use the incident runbook</a>
           <a class="button button-secondary" href="rmm-migration-workbook-template.html">Use the migration workbook</a>
+          <a class="button button-secondary" href="rmm-technician-access-review-matrix.html">Review technician access</a>
         </div>
       </section>
 
@@ -315,6 +335,7 @@
           <article class="card"><p class="kicker">Respond</p><h3>Alert tuning</h3><p>Turn endpoint signals into actionable service work with owners, thresholds, suppression, and review.</p><a href="https://nizlo.com/guides/rmm-alert-tuning-checklist">Open checklist →</a></article>
           <article class="card"><p class="kicker">Reconcile</p><h3>Endpoint exceptions</h3><p>Turn failed patches, offline devices, pending reboots, and unknown states into owned work with closure evidence.</p><a href="https://nizlo.com/guides/endpoint-exception-management">Open guide →</a></article>
           <article class="card"><p class="kicker">Inventory</p><h3>CMDB readiness</h3><p>Establish durable endpoint identities, source provenance, lifecycle states, and exception handling before a CMDB project.</p><a href="https://nizlo.com/guides/endpoint-inventory-cmdb-readiness">Open checklist →</a></article>
+          <article class="card"><p class="kicker">Control access</p><h3>RMM technician access review</h3><p>Map technician and role scope to privileged capabilities, business justification, authentication controls, review dates, decisions, and remediation.</p><a href="rmm-technician-access-review-matrix.html">Open matrix →</a></article>
           <article class="card card-wide"><p class="kicker">Maintain</p><h3>Windows patch management</h3><p>Define rings, maintenance windows, approvals, exceptions, reboot behavior, rollback, and reporting before the next patch cycle.</p><a href="https://nizlo.com/guides/windows-patch-management-checklist">Open checklist →</a></article>
           <article class="card card-wide"><p class="kicker">Roll out</p><h3>RMM deployment</h3><p>Define ownership, prepare endpoints, run a controlled pilot, deploy in waves, verify outcomes, and keep a tested rollback path.</p><a href="https://nizlo.com/guides/rmm-deployment-checklist">Open deployment checklist →</a></article>
           <article class="card card-wide"><p class="kicker">Deploy</p><h3>Agent installation troubleshooting</h3><p>Trace enrollment, service, connectivity, proxy, permission, and first-check-in failures before reinstalling or widening access.</p><a href="https://nizlo.com/guides/rmm-agent-installation-troubleshooting">Open troubleshooting guide →</a></article>
@@ -329,9 +350,10 @@
 
       <section class="method" aria-labelledby="template-title">
         <h2 id="template-title">Take the change record into your own workflow.</h2>
-        <p>Use the 10-area evaluation scorecard to compare pilot evidence, the 23-field endpoint inventory CSV to prepare trustworthy CMDB records, the 33-control deployment-readiness CSV to reconcile rollout owners and exceptions, the 26-control change-window template to set reversible actions, the 30-control incident-response runbook to coordinate containment and recovery, or the 30-control migration workbook to reconcile discovery through source retirement.</p>
+        <p>Use the 10-area evaluation scorecard to compare pilot evidence, the 29-field access-review matrix to enforce least privilege, the 23-field endpoint inventory CSV to prepare trustworthy CMDB records, the 33-control deployment-readiness CSV to reconcile rollout owners and exceptions, the 26-control change-window template to set reversible actions, the 30-control incident-response runbook to coordinate containment and recovery, or the 30-control migration workbook to reconcile discovery through source retirement.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="templates/">Browse all six CSV templates</a>
+          <a class="button button-primary" href="templates/">Browse all seven CSV templates</a>
+          <a class="button button-secondary" href="rmm-technician-access-review-matrix.html">Open access-review matrix</a>
           <a class="button button-secondary" href="rmm-evaluation-scorecard-template.html">Open evaluation scorecard</a>
           <a class="button button-secondary" href="rmm-change-window-rollback-plan.html">Open rollback-plan template</a>
           <a class="button button-secondary" href="rmm-deployment-readiness-template.html">Open deployment template guide</a>
@@ -339,7 +361,7 @@
           <a class="button button-secondary" href="rmm-migration-workbook-template.html">Open migration workbook</a>
           <a class="button button-secondary" href="endpoint-inventory-cmdb-template.html">Open endpoint inventory template</a>
           <a class="button button-secondary" href="datapackage.json">Use the Data Package</a>
-          <a class="button button-secondary" href="https://github.com/izikipizi/nizlo-msp-operations-resources/releases/tag/v1.18.0">View the release</a>
+          <a class="button button-secondary" href="https://github.com/izikipizi/nizlo-msp-operations-resources/releases/tag/v1.19.0">View the release</a>
         </div>
       </section>
 
@@ -357,7 +379,7 @@
 
     <footer class="wrap">
       <span>Maintained by Nizlo · Updated November 1, 2026</span>
-      <span><a href="https://nizlo.com/tools">More free RMM tools</a> · <a href="templates/">CSV templates</a> · <a href="datapackage.json">Data Package</a> · <a href="feed.xml">Atom feed</a> · <a href="llms.txt">LLM profile</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources/tree/v1.18.0">Version 1.18.0</a></span>
+      <span><a href="https://nizlo.com/tools">More free RMM tools</a> · <a href="templates/">CSV templates</a> · <a href="datapackage.json">Data Package</a> · <a href="feed.xml">Atom feed</a> · <a href="llms.txt">LLM profile</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources/tree/v1.19.0">Version 1.19.0</a></span>
     </footer>
   </body>
 </html>

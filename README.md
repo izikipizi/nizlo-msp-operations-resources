@@ -42,7 +42,7 @@ Every resource below is public, ungated, and written to be usable independently 
 
 ## Machine-readable index
 
-[`resource-index.json`](resource-index.json) exposes the same catalogue as structured data for internal portals, documentation tools, and agents. The public [Data Package descriptor](https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json) supplies schemas, byte counts, and SHA-256 hashes for all six CSV templates. The [Atom feed](https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml) makes the catalogue available to feed readers and aggregators, while [`llms.txt`](https://izikipizi.github.io/nizlo-msp-operations-resources/llms.txt) provides a compact answer-engine profile. Each entry points to the maintained canonical guide rather than an unversioned copy.
+[`resource-index.json`](resource-index.json) exposes the same catalogue as structured data for internal portals, documentation tools, and agents. The public [Data Package descriptor](https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json) supplies schemas, byte counts, and SHA-256 hashes for all seven CSV templates. The [Atom feed](https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml) makes the catalogue available to feed readers and aggregators, while [`llms.txt`](https://izikipizi.github.io/nizlo-msp-operations-resources/llms.txt) provides a compact answer-engine profile. Each entry points to the maintained canonical guide rather than an unversioned copy.
 
 ## Citation and preservation
 
@@ -63,6 +63,8 @@ Use the [RMM migration checklist workbook](https://izikipizi.github.io/nizlo-msp
 Use the [RMM evaluation scorecard](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-evaluation-scorecard-template.html) to compare observed pilot evidence across inventory, monitoring, patching, automation, remote support, permissions, audit evidence, recovery, removal, and technician usability. The underlying [10-area CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-evaluation-scorecard.csv) is public and ungated.
 
 Use the [endpoint inventory and CMDB readiness template](https://izikipizi.github.io/nizlo-msp-operations-resources/endpoint-inventory-cmdb-template.html) to record durable device identity, ownership, lifecycle, management state, source provenance, freshness, and exceptions before synchronizing inventory into a CMDB. The underlying [23-field CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/endpoint-inventory-cmdb-readiness.csv) includes one clearly marked example row and is public and ungated.
+
+Use the [RMM technician access review matrix](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-technician-access-review-matrix.html) to map each technician or role to customer scope, device scope, privileged capabilities, business justification, MFA, approval, review dates, exceptions, and remediation. The underlying [29-field CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-technician-access-review.csv) includes one clearly marked example row and is public and ungated.
 
 ## More free tools
 

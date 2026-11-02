@@ -4,9 +4,9 @@
   "name": "nizlo-rmm-operations-templates",
   "id": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
   "title": "Nizlo RMM Operations Templates",
-  "description": "Six public, vendor-neutral CSV templates for RMM evaluation, endpoint inventory, deployment readiness, controlled change execution, incident response, and platform migration.",
+  "description": "Seven public, vendor-neutral CSV templates for RMM evaluation, endpoint inventory, technician access review, deployment readiness, controlled change execution, incident response, and platform migration.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/",
-  "version": "1.18.1",
+  "version": "1.19.0",
   "created": "2026-11-01",
   "contributors": [
     {
@@ -31,7 +31,10 @@
     "RMM migration",
     "RMM evaluation scorecard",
     "endpoint inventory",
-    "CMDB readiness"
+    "CMDB readiness",
+    "RMM permissions matrix",
+    "technician access review",
+    "least privilege"
   ],
   "resources": [
     {
@@ -212,6 +215,52 @@
           { "name": "notes", "type": "string" }
         ],
         "primaryKey": "record_id"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "rmm-technician-access-review",
+      "title": "RMM technician access review matrix",
+      "description": "Twenty-nine fields for reviewing technician and role scope, privileged capabilities, justification, authentication, approval, review, exceptions, and remediation.",
+      "path": "templates/rmm-technician-access-review.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 1007,
+      "hash": "sha256:b9c99ba241aba883f5397b83c9981b2e095bc9341e4e1b25a9a6f1034188dbfc",
+      "schema": {
+        "fields": [
+          { "name": "assignment_id", "type": "string" },
+          { "name": "technician_or_role", "type": "string" },
+          { "name": "employment_status", "type": "string" },
+          { "name": "customer_or_tenant_scope", "type": "string" },
+          { "name": "site_or_device_scope", "type": "string" },
+          { "name": "access_tier", "type": "string" },
+          { "name": "business_justification", "type": "string" },
+          { "name": "rmm_console_access", "type": "string" },
+          { "name": "remote_control", "type": "string" },
+          { "name": "background_tools", "type": "string" },
+          { "name": "script_execution", "type": "string" },
+          { "name": "automation_edit", "type": "string" },
+          { "name": "patch_approval", "type": "string" },
+          { "name": "alert_configuration", "type": "string" },
+          { "name": "credential_or_vault_access", "type": "string" },
+          { "name": "user_and_role_admin", "type": "string" },
+          { "name": "api_or_integration_admin", "type": "string" },
+          { "name": "billing_or_commercial_access", "type": "string" },
+          { "name": "mfa_enforced", "type": "string" },
+          { "name": "managed_admin_device_required", "type": "string" },
+          { "name": "approval_owner", "type": "string" },
+          { "name": "approved_at_utc", "type": "datetime" },
+          { "name": "last_reviewed_at_utc", "type": "datetime" },
+          { "name": "next_review_due_utc", "type": "datetime" },
+          { "name": "temporary_expiration_utc", "type": "datetime" },
+          { "name": "exception_or_ticket", "type": "string" },
+          { "name": "remediation_owner", "type": "string" },
+          { "name": "decision", "type": "string" },
+          { "name": "notes", "type": "string" }
+        ],
+        "primaryKey": "assignment_id"
       }
     }
   ]

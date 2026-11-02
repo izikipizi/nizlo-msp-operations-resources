@@ -12,6 +12,15 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>RMM technician access review matrix</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-technician-access-review-matrix.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-technician-access-review-matrix.html" />
+    <updated>2026-11-01T00:00:00Z</updated>
+    <category term="security" />
+    <category term="least-privilege" />
+    <summary>Use 29 vendor-neutral fields to review RMM technician and role scope, privileged capabilities, business justification, MFA, approvals, review dates, exceptions, decisions, and remediation.</summary>
+  </entry>
+  <entry>
     <title>Endpoint inventory and CMDB readiness template</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/endpoint-inventory-cmdb-template.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/endpoint-inventory-cmdb-template.html" />
@@ -119,7 +128,7 @@
     <updated>2026-11-01T00:00:00Z</updated>
     <category term="deployment" />
     <category term="change-management" />
-    <summary>Download six vendor-neutral CSV templates for RMM evaluation, endpoint inventory, CMDB readiness, deployment, change-window control, incident response, migration, validation, rollback, communications, and closeout.</summary>
+    <summary>Download seven vendor-neutral CSV templates for RMM evaluation, technician access review, endpoint inventory, CMDB readiness, deployment, change-window control, incident response, migration, validation, rollback, communications, and closeout.</summary>
   </entry>
   <entry>
     <title>RMM change-window and rollback-plan template</title>
