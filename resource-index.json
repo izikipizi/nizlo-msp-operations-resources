@@ -309,6 +309,17 @@
       "account_required": false
     },
     {
+      "id": "six-week-msp-onboarding-project-plan",
+      "title": "Six-week MSP onboarding project plan",
+      "category": "client-lifecycle",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/six-week-msp-onboarding-project-plan.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/six-week-msp-onboarding-project-plan.csv",
+      "format": "text/csv",
+      "controls": 30,
+      "access": "public",
+      "account_required": false
+    },
+    {
       "id": "msp-client-offboarding-evidence-register",
       "title": "MSP client offboarding checklist and evidence register",
       "category": "client-lifecycle",

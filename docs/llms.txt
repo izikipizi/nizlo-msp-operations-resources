@@ -1,12 +1,13 @@
 # Nizlo MSP Operations Resources
 
-> Twenty-two public, ungated field guides, eleven reusable CSV templates, and one source-dated RMM pricing dataset for managed service providers and lean IT teams evaluating, pricing, testing, deploying, inventorying, operating, securing, migrating, onboarding, and offboarding remote monitoring and management software.
+> Twenty-three public, ungated field guides, twelve reusable CSV templates, and one source-dated RMM pricing dataset for managed service providers and lean IT teams evaluating, pricing, testing, deploying, inventorying, operating, securing, migrating, onboarding, and offboarding remote monitoring and management software.
 
 This external library is maintained by the Nizlo team. Nizlo is a Windows-first RMM and IT-management platform. The resources are vendor-neutral, but they are vendor-created and do not represent independent research or an endorsement of Nizlo.
 
 ## Primary pages
 
-- [Resource library](https://izikipizi.github.io/nizlo-msp-operations-resources/): Human-readable collection of all twenty-two maintained guides.
+- [Resource library](https://izikipizi.github.io/nizlo-msp-operations-resources/): Human-readable collection of all twenty-three maintained guides.
+- [Six-week MSP onboarding project plan](https://izikipizi.github.io/nizlo-msp-operations-resources/six-week-msp-onboarding-project-plan.html): Thirty milestones for authority, discovery, access, SOP development, controlled pilot execution, reconciliation, NOC training, acceptance, and handoff.
 - [How to test RMM software safely](https://nizlo.com/guides/how-to-test-rmm-software): Staged pre-production pilot for agents, permissions, monitoring, patching, automation, remote access, and removal.
 - [RMM for Mac and Windows](https://nizlo.com/guides/rmm-for-mac-and-windows): Mixed-fleet evaluation across enrollment, inventory, alerts, automation, updates, remote access, and removal.
 - [RMM for a new MSP](https://nizlo.com/guides/rmm-for-new-msps): First-customer buying guide covering operational simplicity, real costs, pilot scope, and lock-in.
@@ -19,7 +20,7 @@ This external library is maintained by the Nizlo team. Nizlo is a Windows-first 
 - [RMM migration checklist workbook](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-workbook-template.html): Field guidance and a public 30-control CSV for discovery, pilot, coexistence, cutover, validation, source retirement, and closeout.
 - [Citation and preservation](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html): Authorship, version, repository, CFF metadata, and Software Heritage identifiers.
 - [Machine-readable resource index](https://izikipizi.github.io/nizlo-msp-operations-resources/resource-index.json): Structured catalogue with titles, categories, audiences, access status, and canonical URLs.
-- [Data Package descriptor](https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json): Standards-based metadata, schemas, byte counts, and SHA-256 hashes for eleven templates and the public pricing dataset.
+- [Data Package descriptor](https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json): Standards-based metadata, schemas, byte counts, and SHA-256 hashes for twelve templates and the public pricing dataset.
 - [Atom feed](https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml): Feed-reader and aggregator discovery for the resource collection.
 
 ## Pricing data
@@ -29,7 +30,7 @@ This external library is maintained by the Nizlo team. Nizlo is a Windows-first 
 
 ## Reusable templates
 
-- [RMM operations and incident response template library](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/): Landing page for all eleven public CSV templates with usage guidance.
+- [RMM operations and incident response template library](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/): Landing page for all twelve public CSV templates with usage guidance.
 - [RMM first-endpoint pilot acceptance checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-acceptance-checklist.html): Five evidence gates for identity, alert routing, authorized action, patch-state reconciliation, and clean removal before a pilot expands.
 - [RMM first-endpoint acceptance CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-first-endpoint-acceptance.csv): Downloadable acceptance criteria, required evidence, rollout stop conditions, ownership, status, and notes.
 - [Windows patch exception review and closure template](https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-exception-review-template.html): Guide and 18-control CSV for exception scope, evidence, risk, approval, compensating controls, monitoring, expiry, retest, and closure.
@@ -43,6 +44,7 @@ This external library is maintained by the Nizlo team. Nizlo is a Windows-first 
 - [RMM technician access review matrix](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-technician-access-review-matrix.html): Guide and 29-field CSV for reviewing technician and role scope, privileged capabilities, justification, MFA, approvals, review dates, decisions, and remediation.
 - [MSP client onboarding checklist and evidence register](https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-onboarding-evidence-register.html): Guide and 30-control CSV for authority, discovery, access, RMM deployment, security, backup, service desk, documentation, communication, and acceptance.
 - [MSP client onboarding evidence CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-client-onboarding-evidence-register.csv): Downloadable register for assigning owners, linking evidence, defining acceptance criteria, tracking exceptions, and closing onboarding controls.
+- [Six-week MSP onboarding project plan CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/six-week-msp-onboarding-project-plan.csv): Downloadable 30-milestone plan with weekly tasks, owners, dependencies, deliverables, acceptance criteria, evidence, risks, and decision ownership.
 - [MSP client offboarding checklist and evidence register](https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-offboarding-evidence-register.html): Guide and 32-control CSV for transition authority, inventory, secure handoff, access revocation, agent removal, data disposition, acceptance, and post-exit verification.
 
 ## Canonical source and product relationship

@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If these MSP operations resources support your work, cite the maintained canonical guide."
 title: "Nizlo MSP Operations Resources"
 type: dataset
-version: "1.25.0"
+version: "1.26.0"
 authors:
   - family-names: "Ecklund"
     given-names: "Kip"
@@ -43,6 +43,8 @@ keywords:
   - "least privilege"
   - "MSP client onboarding"
   - "MSP onboarding checklist"
+  - "six-week MSP onboarding project plan"
+  - "MSP onboarding timeline"
   - "client acceptance"
   - "MSP client offboarding"
   - "MSP exit checklist"

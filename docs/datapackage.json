@@ -4,9 +4,9 @@
   "name": "nizlo-rmm-operations-resources",
   "id": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
   "title": "Nizlo RMM Operations Resources",
-  "description": "Eleven public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
+  "description": "Twelve public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
-  "version": "1.25.0",
+  "version": "1.26.0",
   "created": "2026-11-01",
   "contributors": [
     {
@@ -39,6 +39,7 @@
     "least privilege",
     "MSP client onboarding",
     "MSP onboarding checklist",
+    "six-week MSP onboarding project plan",
     "client acceptance",
     "MSP client offboarding",
     "MSP exit checklist",
@@ -359,6 +360,38 @@
           { "name": "notes", "type": "string" }
         ],
         "primaryKey": "control_id"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "six-week-msp-onboarding-project-plan",
+      "title": "Six-week MSP onboarding project plan",
+      "description": "Thirty milestones for authority, discovery, access, SOP development, lab validation, one controlled pilot, reconciliation, NOC training, acceptance, and handoff.",
+      "path": "templates/six-week-msp-onboarding-project-plan.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 8155,
+      "hash": "sha256:a619cf509fc9a3b522d51d3de8d5ad97bd38ff2559d5d109f7775bc8d3c59c0d",
+      "schema": {
+        "fields": [
+          { "name": "week", "type": "integer" },
+          { "name": "phase", "type": "string" },
+          { "name": "task_id", "type": "string" },
+          { "name": "task", "type": "string" },
+          { "name": "primary_owner", "type": "string" },
+          { "name": "customer_owner", "type": "string" },
+          { "name": "dependency", "type": "string" },
+          { "name": "deliverable", "type": "string" },
+          { "name": "acceptance_criteria", "type": "string" },
+          { "name": "evidence_link", "type": "string" },
+          { "name": "status", "type": "string" },
+          { "name": "risk_or_blocker", "type": "string" },
+          { "name": "decision_owner", "type": "string" },
+          { "name": "due_utc", "type": "datetime" },
+          { "name": "notes", "type": "string" }
+        ],
+        "primaryKey": "task_id"
       }
     },
     {
