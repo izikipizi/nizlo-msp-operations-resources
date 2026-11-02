@@ -254,6 +254,18 @@
       ],
       "access": "public",
       "account_required": false
+    },
+    {
+      "id": "rmm-vendor-due-diligence-evidence-register",
+      "title": "RMM vendor due-diligence evidence register",
+      "category": "selection",
+      "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vendor-due-diligence-evidence-register.html",
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
     }
   ],
   "templates": [

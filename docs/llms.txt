@@ -1,12 +1,13 @@
 # Nizlo MSP Operations Resources
 
-> Twenty-eight public, ungated field guides, fifteen reusable CSV templates, and one source-dated RMM pricing dataset for managed service providers and lean IT teams evaluating, pricing, testing, deploying, inventorying, operating, securing, migrating, onboarding, and offboarding remote monitoring and management software.
+> Twenty-nine public, ungated field guides, sixteen reusable CSV templates, and one source-dated RMM pricing dataset for managed service providers and lean IT teams evaluating, pricing, testing, deploying, inventorying, operating, securing, migrating, onboarding, and offboarding remote monitoring and management software.
 
 This external library is maintained by the Nizlo team. Nizlo is a Windows-first RMM and IT-management platform. The resources are vendor-neutral, but they are vendor-created and do not represent independent research or an endorsement of Nizlo.
 
 ## Primary pages
 
-- [Resource library](https://izikipizi.github.io/nizlo-msp-operations-resources/): Human-readable collection of all twenty-eight maintained guides.
+- [Resource library](https://izikipizi.github.io/nizlo-msp-operations-resources/): Human-readable collection of all twenty-nine maintained guides.
+- [RMM vendor due-diligence evidence register](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vendor-due-diligence-evidence-register.html): Thirty review controls for vendor evidence, findings, risk, remediation, exceptions, and renewal review.
 - [RMM alert escalation matrix](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-escalation-matrix-template.html): Twenty-seven example alert rules with severity, confirmation, ownership, time targets, escalation, communication, suppression, evidence, closure, and tuning fields.
 - [MSP daily, weekly, monthly, and quarterly maintenance checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/msp-daily-weekly-monthly-maintenance-checklist.html): Twenty-eight recurring checks with healthy signals, exception triggers, evidence requirements, ownership, review, status, and linked work records.
 - [RMM pilot test plan and evidence pack](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-pilot-test-evidence-pack.html): Twenty-five controlled proof-of-concept tests with pass criteria, evidence, stop conditions, defects, remediation, retesting, and rollout decisions.
@@ -23,7 +24,7 @@ This external library is maintained by the Nizlo team. Nizlo is a Windows-first 
 - [RMM migration checklist workbook](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-workbook-template.html): Field guidance and a public 30-control CSV for discovery, pilot, coexistence, cutover, validation, source retirement, and closeout.
 - [Citation and preservation](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html): Authorship, version, repository, CFF metadata, and Software Heritage identifiers.
 - [Machine-readable resource index](https://izikipizi.github.io/nizlo-msp-operations-resources/resource-index.json): Structured catalogue with titles, categories, audiences, access status, and canonical URLs.
-- [Data Package descriptor](https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json): Standards-based metadata, schemas, byte counts, and SHA-256 hashes for fifteen templates and the public pricing dataset.
+- [Data Package descriptor](https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json): Standards-based metadata, schemas, byte counts, and SHA-256 hashes for sixteen templates and the public pricing dataset.
 - [Atom feed](https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml): Feed-reader and aggregator discovery for the resource collection.
 
 ## Pricing data
@@ -33,7 +34,8 @@ This external library is maintained by the Nizlo team. Nizlo is a Windows-first 
 
 ## Reusable templates
 
-- [RMM operations and incident response template library](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/): Landing page for all fifteen public CSV templates with usage guidance.
+- [RMM operations and incident response template library](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/): Landing page for all sixteen public CSV templates with usage guidance.
+- [RMM vendor due-diligence evidence register CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-vendor-due-diligence-evidence-register.csv): Seventeen fields for requested evidence, status, references, findings, risk, remediation, exceptions, and renewal dates.
 - [RMM alert escalation matrix CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-alert-escalation-matrix.csv): Twenty-five fields for severity, confirmation, ownership, response, acknowledgement, escalation, customer communication, suppression, evidence, closure, and false-positive review.
 - [MSP maintenance checklist CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-daily-weekly-monthly-maintenance-checklist.csv): Downloadable daily, weekly, monthly, and quarterly service checks for backups, security, monitoring, patching, inventory, recovery, access, coverage, documentation, billing, integrations, and governance.
 - [RMM pilot test evidence CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-pilot-test-evidence-pack.csv): Downloadable 25-test record for authority, identity, enrollment, monitoring, patching, automation, remote access, isolation, evidence, resilience, removal, remediation, retesting, and the final rollout decision.

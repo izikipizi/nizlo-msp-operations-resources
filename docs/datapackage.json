@@ -4,9 +4,9 @@
   "name": "nizlo-rmm-operations-resources",
   "id": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
   "title": "Nizlo RMM Operations Resources",
-  "description": "Fifteen public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
+  "description": "Sixteen public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
-  "version": "1.29.0",
+  "version": "1.30.0",
   "created": "2026-11-01",
   "contributors": [
     {
@@ -59,7 +59,11 @@
     "MSP alert routing",
     "RMM severity matrix",
     "alert response targets",
-    "alert triage template"
+    "alert triage template",
+    "RMM vendor due diligence",
+    "RMM vendor assessment",
+    "MSP third-party risk",
+    "RMM evidence register"
   ],
   "resources": [
     {
@@ -1133,31 +1137,106 @@
       "hash": "sha256:a5a063471ed10d7ad88d0b8b7797daef50410733f883eb5949bff33573068fd0",
       "schema": {
         "fields": [
-          { "name": "alert_rule_id", "type": "string" },
-          { "name": "category", "type": "string" },
-          { "name": "signal", "type": "string" },
-          { "name": "scope", "type": "string" },
-          { "name": "severity", "type": "string" },
-          { "name": "trigger_condition", "type": "string" },
-          { "name": "confirmation_window_minutes", "type": "integer" },
-          { "name": "maintenance_window_behavior", "type": "string" },
-          { "name": "deduplication_key", "type": "string" },
-          { "name": "initial_owner", "type": "string" },
-          { "name": "response_target_minutes", "type": "integer" },
-          { "name": "acknowledgement_target_minutes", "type": "integer" },
-          { "name": "escalation_level_1", "type": "string" },
-          { "name": "escalate_after_minutes", "type": "integer" },
-          { "name": "escalation_level_2", "type": "string" },
-          { "name": "customer_notification_condition", "type": "string" },
-          { "name": "suppression_condition", "type": "string" },
-          { "name": "runbook_url", "type": "string" },
-          { "name": "evidence_required", "type": "string" },
-          { "name": "auto_close_condition", "type": "string" },
-          { "name": "false_positive_review_owner", "type": "string" },
-          { "name": "last_reviewed_at_utc", "type": "datetime" },
-          { "name": "next_review_due_utc", "type": "datetime" },
-          { "name": "status", "type": "string" },
-          { "name": "notes", "type": "string" }
+          {
+            "name": "alert_rule_id",
+            "type": "string"
+          },
+          {
+            "name": "category",
+            "type": "string"
+          },
+          {
+            "name": "signal",
+            "type": "string"
+          },
+          {
+            "name": "scope",
+            "type": "string"
+          },
+          {
+            "name": "severity",
+            "type": "string"
+          },
+          {
+            "name": "trigger_condition",
+            "type": "string"
+          },
+          {
+            "name": "confirmation_window_minutes",
+            "type": "integer"
+          },
+          {
+            "name": "maintenance_window_behavior",
+            "type": "string"
+          },
+          {
+            "name": "deduplication_key",
+            "type": "string"
+          },
+          {
+            "name": "initial_owner",
+            "type": "string"
+          },
+          {
+            "name": "response_target_minutes",
+            "type": "integer"
+          },
+          {
+            "name": "acknowledgement_target_minutes",
+            "type": "integer"
+          },
+          {
+            "name": "escalation_level_1",
+            "type": "string"
+          },
+          {
+            "name": "escalate_after_minutes",
+            "type": "integer"
+          },
+          {
+            "name": "escalation_level_2",
+            "type": "string"
+          },
+          {
+            "name": "customer_notification_condition",
+            "type": "string"
+          },
+          {
+            "name": "suppression_condition",
+            "type": "string"
+          },
+          {
+            "name": "runbook_url",
+            "type": "string"
+          },
+          {
+            "name": "evidence_required",
+            "type": "string"
+          },
+          {
+            "name": "auto_close_condition",
+            "type": "string"
+          },
+          {
+            "name": "false_positive_review_owner",
+            "type": "string"
+          },
+          {
+            "name": "last_reviewed_at_utc",
+            "type": "datetime"
+          },
+          {
+            "name": "next_review_due_utc",
+            "type": "datetime"
+          },
+          {
+            "name": "status",
+            "type": "string"
+          },
+          {
+            "name": "notes",
+            "type": "string"
+          }
         ],
         "primaryKey": "alert_rule_id"
       }
@@ -1228,6 +1307,91 @@
           }
         ],
         "primaryKey": "product"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "rmm-vendor-due-diligence-evidence-register",
+      "title": "RMM vendor due-diligence evidence register",
+      "description": "Thirty review controls for collecting vendor evidence, recording findings and risk, assigning remediation, approving exceptions, and scheduling renewal review.",
+      "path": "templates/rmm-vendor-due-diligence-evidence-register.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 6440,
+      "hash": "sha256:395c5423050bdca1c72e5d26356cb4e4df587aa1c8d5ad78108b45b45b0796c3",
+      "schema": {
+        "fields": [
+          {
+            "name": "review_phase",
+            "type": "string"
+          },
+          {
+            "name": "control_id",
+            "type": "string"
+          },
+          {
+            "name": "review_area",
+            "type": "string"
+          },
+          {
+            "name": "due_diligence_question",
+            "type": "string"
+          },
+          {
+            "name": "evidence_requested",
+            "type": "string"
+          },
+          {
+            "name": "evidence_status",
+            "type": "string"
+          },
+          {
+            "name": "evidence_reference",
+            "type": "string"
+          },
+          {
+            "name": "evidence_date",
+            "type": "string"
+          },
+          {
+            "name": "evidence_owner",
+            "type": "string"
+          },
+          {
+            "name": "reviewer",
+            "type": "string"
+          },
+          {
+            "name": "finding",
+            "type": "string"
+          },
+          {
+            "name": "risk_rating",
+            "type": "string"
+          },
+          {
+            "name": "gap_owner",
+            "type": "string"
+          },
+          {
+            "name": "remediation_due",
+            "type": "string"
+          },
+          {
+            "name": "exception_approver",
+            "type": "string"
+          },
+          {
+            "name": "renewal_review_date",
+            "type": "string"
+          },
+          {
+            "name": "notes",
+            "type": "string"
+          }
+        ],
+        "primaryKey": "control_id"
       }
     }
   ]

@@ -12,6 +12,16 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>RMM vendor due-diligence evidence register</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vendor-due-diligence-evidence-register.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vendor-due-diligence-evidence-register.html" />
+    <updated>2026-11-02T00:00:00Z</updated>
+    <category term="vendor-risk" />
+    <category term="due-diligence" />
+    <category term="template" />
+    <summary>Collect and review evidence across thirty RMM vendor controls, with explicit findings, risk ratings, remediation, exceptions, and renewal dates.</summary>
+  </entry>
+  <entry>
     <title>RMM alert escalation matrix template</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-escalation-matrix-template.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-escalation-matrix-template.html" />

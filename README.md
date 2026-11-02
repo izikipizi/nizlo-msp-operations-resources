@@ -10,6 +10,7 @@ Every resource below is public, ungated, and written to be usable independently 
 | --- | --- |
 | [RMM evaluation checklist](https://nizlo.com/guides/rmm-evaluation-checklist) | Comparing products through evidence rather than feature-list claims |
 | [RMM vendor due-diligence checklist](https://nizlo.com/guides/rmm-vendor-due-diligence) | Comparing security, support, pilot evidence, pricing, commercial terms, and exit readiness |
+| [RMM vendor due-diligence evidence register](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vendor-due-diligence-evidence-register.html) | Recording requested evidence, findings, risk, remediation, exceptions, and renewal review across an RMM vendor assessment |
 | [RMM cost calculator and pricing dataset](https://nizlo.com/guides/cheapest-rmm-for-small-msps) | Comparing six source-dated public pricing models for a small MSP without giving up an email address |
 | [RMM security checklist](https://nizlo.com/guides/rmm-security-checklist) | Reviewing device identity, tenant isolation, MFA, permissions, signed actions, audit logs, recovery, and removal |
 | [RMM incident response checklist](https://nizlo.com/guides/rmm-incident-response-checklist) | Preparing independent control paths, scoping impact, containing access, preserving evidence, recovering safely, and reconciling endpoints |
@@ -45,7 +46,7 @@ Every resource below is public, ungated, and written to be usable independently 
 
 ## Machine-readable index
 
-[`resource-index.json`](resource-index.json) exposes the same catalogue as structured data for internal portals, documentation tools, and agents. The public [Data Package descriptor](https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json) supplies schemas, byte counts, and SHA-256 hashes for fifteen CSV templates plus the source-dated RMM pricing dataset. The [Atom feed](https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml) makes the catalogue available to feed readers and aggregators, while [`llms.txt`](https://izikipizi.github.io/nizlo-msp-operations-resources/llms.txt) provides a compact answer-engine profile. Each entry points to the maintained canonical guide rather than an unversioned copy.
+[`resource-index.json`](resource-index.json) exposes the same catalogue as structured data for internal portals, documentation tools, and agents. The public [Data Package descriptor](https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json) supplies schemas, byte counts, and SHA-256 hashes for sixteen CSV templates plus the source-dated RMM pricing dataset. The [Atom feed](https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml) makes the catalogue available to feed readers and aggregators, while [`llms.txt`](https://izikipizi.github.io/nizlo-msp-operations-resources/llms.txt) provides a compact answer-engine profile. Each entry points to the maintained canonical guide rather than an unversioned copy.
 
 ## Source-dated pricing dataset
 
@@ -58,6 +59,8 @@ Citation metadata is available in [`CITATION.cff`](CITATION.cff) and on the publ
 ## Reusable field templates
 
 Browse the public [RMM operations and incident response template library](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/) for direct downloads and usage guidance.
+
+Use the [RMM vendor due-diligence evidence register](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vendor-due-diligence-evidence-register.html) to turn thirty security, operations, privacy, incident-response, commercial, and exit questions into a documented review. The [17-field CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-vendor-due-diligence-evidence-register.csv) records evidence status, references, findings, risk, remediation owners, exception approval, and renewal review without requiring an account.
 
 Use the [RMM alert escalation matrix](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-escalation-matrix-template.html) to map 27 example alert rules to confirmation windows, owners, response and acknowledgement targets, escalation paths, customer notifications, suppression conditions, evidence, closure tests, and false-positive review. The [25-field CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-alert-escalation-matrix.csv) is public, ungated, and intended to be rewritten and tested before production use.
 
