@@ -4,9 +4,9 @@
   "name": "nizlo-rmm-operations-resources",
   "id": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
   "title": "Nizlo RMM Operations Resources",
-  "description": "Nine public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
+  "description": "Ten public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
-  "version": "1.23.0",
+  "version": "1.24.0",
   "created": "2026-11-01",
   "contributors": [
     {
@@ -41,6 +41,9 @@
     "MSP exit checklist",
     "access revocation",
     "RMM agent removal",
+    "Windows patch exception",
+    "patch deferral",
+    "patch exception expiry",
     "RMM pricing",
     "RMM pricing dataset"
   ],
@@ -208,6 +211,33 @@
           { "name": "notes", "type": "string" }
         ],
         "primaryKey": "gate_id"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "windows-patch-exception-review",
+      "title": "Windows patch exception review and closure template",
+      "description": "Eighteen controls for recording patch exception scope, evidence, risk, approval, compensating controls, monitoring, expiry, retest, and closure.",
+      "path": "templates/windows-patch-exception-review.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 2510,
+      "hash": "sha256:71af9a4fd8395a683aaace1cf4337833feaac7ed5cc8e133d001d99ac1532746",
+      "schema": {
+        "fields": [
+          { "name": "phase", "type": "string" },
+          { "name": "control_id", "type": "string" },
+          { "name": "control", "type": "string" },
+          { "name": "owner", "type": "string" },
+          { "name": "status", "type": "string" },
+          { "name": "evidence", "type": "string" },
+          { "name": "exception_owner", "type": "string" },
+          { "name": "due_date", "type": "date" },
+          { "name": "risk", "type": "string" },
+          { "name": "notes", "type": "string" }
+        ],
+        "primaryKey": "control_id"
       }
     },
     {

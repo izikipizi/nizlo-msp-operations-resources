@@ -265,6 +265,17 @@
       "account_required": false
     },
     {
+      "id": "windows-patch-exception-review",
+      "title": "Windows patch exception review and closure template",
+      "category": "patch-management",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-exception-review-template.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/windows-patch-exception-review.csv",
+      "format": "text/csv",
+      "controls": 18,
+      "access": "public",
+      "account_required": false
+    },
+    {
       "id": "endpoint-inventory-cmdb-readiness",
       "title": "Endpoint inventory and CMDB readiness template",
       "category": "inventory",

@@ -4,13 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Free RMM Evaluation &amp; Operations Templates | Nizlo</title>
-    <meta name="description" content="Download nine free, vendor-neutral CSV templates for RMM evaluation, first-endpoint acceptance, technician access review, MSP client offboarding, endpoint inventory, deployment, migration, change control, and incident response." />
+    <meta name="description" content="Download ten free, vendor-neutral CSV templates for RMM evaluation, patch exceptions, first-endpoint acceptance, technician access review, MSP client offboarding, endpoint inventory, deployment, migration, change control, and incident response." />
     <meta name="robots" content="index,follow,max-image-preview:large" />
     <link rel="canonical" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/" />
     <link rel="alternate" type="application/atom+xml" title="Nizlo MSP Operations Resources" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Free RMM Evaluation &amp; Operations Templates" />
-    <meta property="og:description" content="Nine public, ungated CSV templates for RMM evaluation, first-endpoint acceptance, access review, MSP client offboarding, endpoint inventory, controlled operations, migration, and security incidents." />
+    <meta property="og:description" content="Ten public, ungated CSV templates for RMM evaluation, patch exceptions, first-endpoint acceptance, access review, MSP client offboarding, endpoint inventory, controlled operations, migration, and security incidents." />
     <meta property="og:url" content="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/" />
     <meta property="og:image" content="https://nizlo.com/opengraph-image" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -20,7 +20,7 @@
         "@context": "https://schema.org",
         "@type": "CollectionPage",
         "name": "Free RMM evaluation and operations templates",
-        "description": "Nine free, vendor-neutral CSV templates for RMM evaluation, first-endpoint acceptance, technician access review, MSP client offboarding, endpoint inventory, deployment readiness, platform migration, controlled change execution, and incident response.",
+        "description": "Ten free, vendor-neutral CSV templates for RMM evaluation, Windows patch exceptions, first-endpoint acceptance, technician access review, MSP client offboarding, endpoint inventory, deployment readiness, platform migration, controlled change execution, and incident response.",
         "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/",
         "isPartOf": { "@type": "WebSite", "name": "Nizlo MSP Operations Resources", "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/" },
         "publisher": { "@type": "Organization", "name": "Nizlo", "url": "https://nizlo.com/" },
@@ -135,6 +135,18 @@
                 "isAccessibleForFree": true,
                 "distribution": { "@type": "DataDownload", "contentUrl": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-first-endpoint-acceptance.csv", "encodingFormat": "text/csv" }
               }
+            },
+            {
+              "@type": "ListItem",
+              "position": 10,
+              "item": {
+                "@type": "Dataset",
+                "name": "Windows patch exception review and closure template",
+                "description": "An 18-control CSV for patch exception scope, evidence, risk, approval, compensating controls, monitoring, expiry, retest, and closure.",
+                "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-exception-review-template.html",
+                "isAccessibleForFree": true,
+                "distribution": { "@type": "DataDownload", "contentUrl": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/windows-patch-exception-review.csv", "encodingFormat": "text/csv" }
+              }
             }
           ]
         }
@@ -174,7 +186,7 @@
     <main class="wrap">
       <div class="eyebrow">Public · Ungated · Vendor-neutral</div>
       <h1>RMM evaluation and operations templates.</h1>
-      <p class="lede">Turn product evaluations, first-endpoint acceptance, technician access reviews, client exits, endpoint inventory, endpoint-management changes, migrations, and security incidents into owned, reviewable records. All nine templates are plain CSV files—no account, email address, or product installation required.</p>
+      <p class="lede">Turn product evaluations, patch exceptions, first-endpoint acceptance, technician access reviews, client exits, endpoint inventory, endpoint-management changes, migrations, and security incidents into owned, reviewable records. All ten templates are plain CSV files—no account, email address, or product installation required.</p>
       <section class="grid" aria-label="RMM templates">
         <article>
           <div class="tag">33 controls · CSV</div>
@@ -239,10 +251,17 @@
           <ul><li>Reconcile accounts, endpoints, agents, vendors, and documentation</li><li>Prove transfer, revocation, removal, and data disposition</li><li>Monitor unexpected activity after the cutoff</li></ul>
           <div class="actions"><a class="button primary" href="msp-client-offboarding-evidence-register.csv" download>Download CSV</a><a class="button" href="../msp-client-offboarding-evidence-register.html">Open offboarding guide</a></div>
         </article>
+        <article>
+          <div class="tag">18 controls · CSV</div>
+          <h2>Windows patch exception review</h2>
+          <p>Turn a deferred update into a scoped, approved, monitored, time-bound risk record with a clear retest and closure path.</p>
+          <ul><li>Reconcile affected endpoints and risk</li><li>Verify compensating controls and expiry</li><li>Retest, remediate, and close with evidence</li></ul>
+          <div class="actions"><a class="button primary" href="windows-patch-exception-review.csv" download>Download CSV</a><a class="button" href="../windows-patch-exception-review-template.html">Open exception guide</a></div>
+        </article>
       </section>
-      <aside class="note"><strong>Machine-readable package:</strong> Data tools can consume all nine CSV resources, field schemas, byte counts, and SHA-256 hashes through the standards-based <a href="../datapackage.json">Data Package descriptor</a>.</aside>
+      <aside class="note"><strong>Machine-readable package:</strong> Data tools can consume all ten CSV resources, field schemas, byte counts, and SHA-256 hashes through the standards-based <a href="../datapackage.json">Data Package descriptor</a>.</aside>
       <aside class="note"><strong>Relationship disclosure:</strong> Nizlo, a Windows-first RMM and IT-management platform, maintains these resources. The templates are designed for use with any relevant RMM, inventory, ITAM, service-desk, or CMDB workflow and do not claim that any vendor passes their controls or supports every field.</aside>
     </main>
-    <footer class="wrap"><span>Maintained by Nizlo · Updated November 2, 2026</span><span><a href="../datapackage.json">Data Package</a> · <a href="../feed.xml">Atom feed</a> · <a href="../citation.html">Citation &amp; preservation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources/tree/v1.23.0">Version 1.23.0</a></span></footer>
+    <footer class="wrap"><span>Maintained by Nizlo · Updated November 2, 2026</span><span><a href="../datapackage.json">Data Package</a> · <a href="../feed.xml">Atom feed</a> · <a href="../citation.html">Citation &amp; preservation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources/tree/v1.24.0">Version 1.24.0</a></span></footer>
   </body>
 </html>

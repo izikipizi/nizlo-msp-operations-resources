@@ -12,6 +12,16 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>Windows patch exception review and closure template</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-exception-review-template.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-exception-review-template.html" />
+    <updated>2026-11-02T00:00:00Z</updated>
+    <category term="patch-management" />
+    <category term="template" />
+    <category term="exception-management" />
+    <summary>Use 18 vendor-neutral controls to record a Windows patch exception's scope, evidence, risk, approval, compensating controls, monitoring, expiry, retest, and closure.</summary>
+  </entry>
+  <entry>
     <title>RMM first-endpoint pilot acceptance checklist</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-acceptance-checklist.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-acceptance-checklist.html" />
@@ -156,7 +166,7 @@
     <updated>2026-11-02T00:00:00Z</updated>
     <category term="deployment" />
     <category term="change-management" />
-    <summary>Download nine vendor-neutral CSV templates for RMM evaluation, first-endpoint acceptance, technician access review, MSP client offboarding, endpoint inventory, CMDB readiness, deployment, change-window control, incident response, migration, validation, rollback, communications, and closeout.</summary>
+    <summary>Download ten vendor-neutral CSV templates for RMM evaluation, Windows patch exceptions, first-endpoint acceptance, technician access review, MSP client offboarding, endpoint inventory, CMDB readiness, deployment, change-window control, incident response, migration, validation, rollback, communications, and closeout.</summary>
   </entry>
   <entry>
     <title>RMM change-window and rollback-plan template</title>
