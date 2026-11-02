@@ -4,9 +4,9 @@
   "name": "nizlo-rmm-operations-resources",
   "id": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
   "title": "Nizlo RMM Operations Resources",
-  "description": "Ten public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
+  "description": "Eleven public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
-  "version": "1.24.0",
+  "version": "1.25.0",
   "created": "2026-11-01",
   "contributors": [
     {
@@ -37,6 +37,9 @@
     "RMM permissions matrix",
     "technician access review",
     "least privilege",
+    "MSP client onboarding",
+    "MSP onboarding checklist",
+    "client acceptance",
     "MSP client offboarding",
     "MSP exit checklist",
     "access revocation",
@@ -324,6 +327,38 @@
           { "name": "notes", "type": "string" }
         ],
         "primaryKey": "assignment_id"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "msp-client-onboarding-evidence-register",
+      "title": "MSP client onboarding checklist and evidence register",
+      "description": "Thirty controls for authority, discovery, access, RMM deployment, security, backup, service desk, documentation, communication, and acceptance.",
+      "path": "templates/msp-client-onboarding-evidence-register.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 4496,
+      "hash": "sha256:65d9b20f9e833994a530f7245e8ecfdb48c10d2ebcee5b00a1670de897f22826",
+      "schema": {
+        "fields": [
+          { "name": "phase", "type": "string" },
+          { "name": "control_id", "type": "string" },
+          { "name": "control", "type": "string" },
+          { "name": "msp_owner", "type": "string" },
+          { "name": "customer_owner", "type": "string" },
+          { "name": "due_utc", "type": "datetime" },
+          { "name": "status", "type": "string" },
+          { "name": "evidence", "type": "string" },
+          { "name": "access_or_asset", "type": "string" },
+          { "name": "source_or_system", "type": "string" },
+          { "name": "acceptance_criteria", "type": "string" },
+          { "name": "acceptance_owner", "type": "string" },
+          { "name": "exception_or_ticket", "type": "string" },
+          { "name": "next_review_utc", "type": "datetime" },
+          { "name": "notes", "type": "string" }
+        ],
+        "primaryKey": "control_id"
       }
     },
     {

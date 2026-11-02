@@ -12,6 +12,16 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>MSP client onboarding checklist and evidence register</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-onboarding-evidence-register.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-onboarding-evidence-register.html" />
+    <updated>2026-11-02T00:00:00Z</updated>
+    <category term="client-lifecycle" />
+    <category term="onboarding" />
+    <category term="template" />
+    <summary>Use 30 vendor-neutral controls to coordinate MSP client authority, discovery, access, RMM deployment, security, backup, service desk, documentation, communication, and acceptance.</summary>
+  </entry>
+  <entry>
     <title>Windows patch exception review and closure template</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-exception-review-template.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-exception-review-template.html" />
@@ -166,7 +176,7 @@
     <updated>2026-11-02T00:00:00Z</updated>
     <category term="deployment" />
     <category term="change-management" />
-    <summary>Download ten vendor-neutral CSV templates for RMM evaluation, Windows patch exceptions, first-endpoint acceptance, technician access review, MSP client offboarding, endpoint inventory, CMDB readiness, deployment, change-window control, incident response, migration, validation, rollback, communications, and closeout.</summary>
+    <summary>Download eleven vendor-neutral CSV templates for RMM evaluation, Windows patch exceptions, first-endpoint acceptance, technician access review, MSP client onboarding and offboarding, endpoint inventory, CMDB readiness, deployment, change-window control, incident response, migration, validation, rollback, communications, and closeout.</summary>
   </entry>
   <entry>
     <title>RMM change-window and rollback-plan template</title>

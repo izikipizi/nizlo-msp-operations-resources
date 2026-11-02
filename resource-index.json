@@ -298,6 +298,17 @@
       "account_required": false
     },
     {
+      "id": "msp-client-onboarding-evidence-register",
+      "title": "MSP client onboarding checklist and evidence register",
+      "category": "client-lifecycle",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-onboarding-evidence-register.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-client-onboarding-evidence-register.csv",
+      "format": "text/csv",
+      "controls": 30,
+      "access": "public",
+      "account_required": false
+    },
+    {
       "id": "msp-client-offboarding-evidence-register",
       "title": "MSP client offboarding checklist and evidence register",
       "category": "client-lifecycle",
