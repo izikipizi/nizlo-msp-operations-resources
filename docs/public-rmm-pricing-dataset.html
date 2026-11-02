@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Public RMM Pricing Dataset for Small MSPs | Nizlo</title>
+    <meta name="description" content="Download a free, source-dated CSV comparing six public RMM pricing models for one-technician MSPs at 10, 50, 100, and 500 endpoints." />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Public RMM Pricing Dataset for Small MSPs" />
+    <meta property="og:description" content="Six source-dated public pricing models normalized to one technician and four endpoint counts." />
+    <meta property="og:url" content="https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html" />
+    <meta name="twitter:card" content="summary" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "name": "Public RMM pricing comparison for one-technician MSPs",
+        "description": "Six source-dated public RMM pricing models normalized to one technician and fleets of 10, 50, 100, and 500 endpoints.",
+        "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html",
+        "sameAs": "https://nizlo.com/guides/cheapest-rmm-for-small-msps",
+        "creator": { "@type": "Organization", "name": "Nizlo", "url": "https://nizlo.com/" },
+        "dateModified": "2026-10-30",
+        "isAccessibleForFree": true,
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "inLanguage": "en",
+        "keywords": ["RMM pricing", "MSP software cost", "remote monitoring and management", "RMM cost comparison"],
+        "variableMeasured": ["Product", "Pricing model", "Billing term", "Monthly cost at 10 endpoints", "Monthly cost at 50 endpoints", "Monthly cost at 100 endpoints", "Monthly cost at 500 endpoints", "Source URL", "Fact-checked date"],
+        "distribution": {
+          "@type": "DataDownload",
+          "contentUrl": "https://izikipizi.github.io/nizlo-msp-operations-resources/data/public-rmm-pricing-comparison-2026-10-30.csv",
+          "encodingFormat": "text/csv"
+        }
+      }
+    </script>
+    <style>
+      :root { color-scheme: dark; --bg:#07171d; --panel:#0d2730; --line:#23444d; --text:#eefafb; --muted:#a9c0c5; --accent:#8be7e4; }
+      * { box-sizing: border-box; }
+      body { margin:0; font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; background:linear-gradient(145deg,#07171d,#0a2028); color:var(--text); line-height:1.65; }
+      a { color:var(--accent); }
+      header, main, footer { width:min(1120px,calc(100% - 2rem)); margin:auto; }
+      header { padding:2rem 0 1rem; }
+      .brand { font-weight:850; text-decoration:none; letter-spacing:.04em; }
+      main { padding:3rem 0 5rem; }
+      .eyebrow { color:var(--accent); text-transform:uppercase; letter-spacing:.13em; font-size:.78rem; font-weight:800; }
+      h1 { max-width:15ch; font-size:clamp(2.5rem,7vw,5rem); line-height:1; letter-spacing:-.05em; margin:.8rem 0 1.25rem; }
+      h2 { margin-top:2.6rem; line-height:1.2; }
+      .lede { max-width:72ch; color:var(--muted); font-size:1.12rem; }
+      .actions { display:flex; flex-wrap:wrap; gap:.8rem; margin:1.8rem 0; }
+      .button { display:inline-flex; align-items:center; min-height:3rem; padding:.7rem 1rem; border-radius:.75rem; border:1px solid var(--line); font-weight:800; text-decoration:none; }
+      .primary { color:#062026; background:var(--accent); border-color:var(--accent); }
+      .panel { padding:1.2rem; border:1px solid var(--line); border-radius:1rem; background:rgba(13,39,48,.78); }
+      .table-wrap { overflow-x:auto; border:1px solid var(--line); border-radius:1rem; }
+      table { width:100%; border-collapse:collapse; min-width:850px; background:rgba(13,39,48,.72); }
+      th, td { padding:.8rem; text-align:left; vertical-align:top; border-bottom:1px solid var(--line); }
+      th { color:var(--accent); font-size:.82rem; }
+      td:not(:first-child):not(:nth-child(2)) { white-space:nowrap; }
+      ul { padding-left:1.25rem; }
+      footer { padding:1.5rem 0 3rem; color:var(--muted); border-top:1px solid var(--line); }
+    </style>
+  </head>
+  <body>
+    <header><a class="brand" href="./">NIZLO · MSP OPERATIONS RESOURCES</a></header>
+    <main>
+      <p class="eyebrow">Public dataset · fact-checked October 30, 2026</p>
+      <h1>RMM pricing data for a one-technician MSP</h1>
+      <p class="lede">This dataset compares six public price models at 10, 50, 100, and 500 endpoints. It separates published subscription math from product fit: feature scope, support, add-ons, platform coverage, migration work, and retained tools can reverse a price-only conclusion.</p>
+      <div class="actions">
+        <a class="button primary" href="data/public-rmm-pricing-comparison-2026-10-30.csv" download>Download the CSV</a>
+        <a class="button" href="https://nizlo.com/guides/cheapest-rmm-for-small-msps">Open calculator and methodology</a>
+        <a class="button" href="datapackage.json">Validate with the Data Package</a>
+      </div>
+
+      <div class="panel">
+        <strong>Relationship disclosure.</strong> Nizlo created and maintains this dataset and is one of the compared products. The Nizlo row is not an independent endorsement, and the products are not feature-equivalent. Every row links to the vendor's own public source so buyers can recheck current terms.
+      </div>
+
+      <h2>Normalized monthly subscription estimates</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Product</th><th>Published model</th><th>10 endpoints</th><th>50 endpoints</th><th>100 endpoints</th><th>500 endpoints</th><th>Source</th></tr></thead>
+          <tbody>
+            <tr><td>Fathom Free / Core</td><td>Free through 50 devices; then per technician</td><td>$0</td><td>$0</td><td>$109 annual</td><td>$109 annual</td><td><a href="https://fathomitsm.app/pricing">Vendor pricing</a></td></tr>
+            <tr><td>MSP360 Community Edition</td><td>Free through 50 endpoints for MSPs</td><td>$0</td><td>$0</td><td>Use calculator</td><td>Use calculator</td><td><a href="https://www.msp360.com/rmm/free-rmm-software/">Vendor pricing</a></td></tr>
+            <tr><td>Level</td><td>First 10 free; then $2/device for the whole fleet</td><td>$0</td><td>$100</td><td>$200</td><td>$1,000</td><td><a href="https://level.io/pricing">Vendor pricing</a></td></tr>
+            <tr><td>Nizlo Core</td><td>Flat plan; one technician; unlimited RMM endpoints</td><td>$59</td><td>$59</td><td>$59</td><td>$59</td><td><a href="https://nizlo.com/pricing">Vendor pricing</a></td></tr>
+            <tr><td>Atera MSP Pro</td><td>Per technician; unlimited devices</td><td>$129 annual</td><td>$129 annual</td><td>$129 annual</td><td>$129 annual</td><td><a href="https://www.atera.com/msp-pricing/">Vendor pricing</a></td></tr>
+            <tr><td>Syncro Core</td><td>Per technician; unlimited endpoints</td><td>$129 annual</td><td>$129 annual</td><td>$129 annual</td><td>$129 annual</td><td><a href="https://syncrosecure.com/pricing/">Vendor pricing</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Method and limits</h2>
+      <ul>
+        <li>Prices were manually checked against the linked vendor pages on October 30, 2026.</li>
+        <li>Estimates assume one technician, U.S. public pricing, no tax, and no optional add-ons.</li>
+        <li>When a public annual and month-to-month rate both exist, the table uses the annual-billing monthly equivalent and the CSV preserves the month-to-month alternative.</li>
+        <li>Blank CSV cells mean the public page requires a calculator or quote; they are not zero.</li>
+        <li>The dataset is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Cite the fact-checked date because prices change.</li>
+      </ul>
+    </main>
+    <footer><a href="./">Resource library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source repository</a></footer>
+  </body>
+</html>

@@ -42,7 +42,11 @@ Every resource below is public, ungated, and written to be usable independently 
 
 ## Machine-readable index
 
-[`resource-index.json`](resource-index.json) exposes the same catalogue as structured data for internal portals, documentation tools, and agents. The public [Data Package descriptor](https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json) supplies schemas, byte counts, and SHA-256 hashes for all eight CSV templates. The [Atom feed](https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml) makes the catalogue available to feed readers and aggregators, while [`llms.txt`](https://izikipizi.github.io/nizlo-msp-operations-resources/llms.txt) provides a compact answer-engine profile. Each entry points to the maintained canonical guide rather than an unversioned copy.
+[`resource-index.json`](resource-index.json) exposes the same catalogue as structured data for internal portals, documentation tools, and agents. The public [Data Package descriptor](https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json) supplies schemas, byte counts, and SHA-256 hashes for eight CSV templates plus the source-dated RMM pricing dataset. The [Atom feed](https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml) makes the catalogue available to feed readers and aggregators, while [`llms.txt`](https://izikipizi.github.io/nizlo-msp-operations-resources/llms.txt) provides a compact answer-engine profile. Each entry points to the maintained canonical guide rather than an unversioned copy.
+
+## Source-dated pricing dataset
+
+The [public RMM pricing dataset](https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html) normalizes six published pricing models to one technician and fleets of 10, 50, 100, and 500 endpoints. Download the [CSV snapshot](https://izikipizi.github.io/nizlo-msp-operations-resources/data/public-rmm-pricing-comparison-2026-10-30.csv), verify every row against its linked vendor source, and use the maintained [calculator and methodology](https://nizlo.com/guides/cheapest-rmm-for-small-msps) for context. Nizlo maintains the dataset and is one of the compared products; the rows are subscription math, not an independent endorsement or a feature-equivalence claim.
 
 ## Citation and preservation
 

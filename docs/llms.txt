@@ -1,6 +1,6 @@
 # Nizlo MSP Operations Resources
 
-> Twenty-one public, ungated field guides and eight reusable CSV templates for managed service providers and lean IT teams evaluating, pricing, testing, deploying, inventorying, operating, securing, migrating, and offboarding remote monitoring and management software.
+> Twenty-one public, ungated field guides, eight reusable CSV templates, and one source-dated RMM pricing dataset for managed service providers and lean IT teams evaluating, pricing, testing, deploying, inventorying, operating, securing, migrating, and offboarding remote monitoring and management software.
 
 This external library is maintained by the Nizlo team. Nizlo is a Windows-first RMM and IT-management platform. The resources are vendor-neutral, but they are vendor-created and do not represent independent research or an endorsement of Nizlo.
 
@@ -19,8 +19,13 @@ This external library is maintained by the Nizlo team. Nizlo is a Windows-first 
 - [RMM migration checklist workbook](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-workbook-template.html): Field guidance and a public 30-control CSV for discovery, pilot, coexistence, cutover, validation, source retirement, and closeout.
 - [Citation and preservation](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html): Authorship, version, repository, CFF metadata, and Software Heritage identifiers.
 - [Machine-readable resource index](https://izikipizi.github.io/nizlo-msp-operations-resources/resource-index.json): Structured catalogue with titles, categories, audiences, access status, and canonical URLs.
-- [Data Package descriptor](https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json): Standards-based metadata, schemas, byte counts, and SHA-256 hashes for all eight CSV templates.
+- [Data Package descriptor](https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json): Standards-based metadata, schemas, byte counts, and SHA-256 hashes for eight templates and the public pricing dataset.
 - [Atom feed](https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml): Feed-reader and aggregator discovery for the resource collection.
+
+## Pricing data
+
+- [Public RMM pricing dataset](https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html): Six public price models normalized to one technician and 10, 50, 100, and 500 endpoints, with methodology, caveats, source links, and an explicit Nizlo relationship disclosure.
+- [Download the source-dated CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/data/public-rmm-pricing-comparison-2026-10-30.csv): Machine-readable October 30, 2026 snapshot licensed under CC BY 4.0.
 
 ## Reusable templates
 

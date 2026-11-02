@@ -1,12 +1,12 @@
 {
   "$schema": "https://datapackage.org/profiles/2.0/datapackage.json",
   "profile": "data-package",
-  "name": "nizlo-rmm-operations-templates",
+  "name": "nizlo-rmm-operations-resources",
   "id": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
-  "title": "Nizlo RMM Operations Templates",
-  "description": "Eight public, vendor-neutral CSV templates for RMM evaluation, endpoint inventory, technician access review, MSP client offboarding, deployment readiness, controlled change execution, incident response, and platform migration.",
-  "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/",
-  "version": "1.20.0",
+  "title": "Nizlo RMM Operations Resources",
+  "description": "Eight public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
+  "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
+  "version": "1.21.0",
   "created": "2026-11-01",
   "contributors": [
     {
@@ -38,7 +38,9 @@
     "MSP client offboarding",
     "MSP exit checklist",
     "access revocation",
-    "RMM agent removal"
+    "RMM agent removal",
+    "RMM pricing",
+    "RMM pricing dataset"
   ],
   "resources": [
     {
@@ -297,6 +299,40 @@
           { "name": "notes", "type": "string" }
         ],
         "primaryKey": "control_id"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "public-rmm-pricing-comparison-2026-10-30",
+      "title": "Public RMM pricing comparison for one-technician MSPs",
+      "description": "Six source-dated public price models normalized to one technician and fleets of 10, 50, 100, and 500 endpoints. Nizlo maintains the dataset and is one of the compared products.",
+      "path": "data/public-rmm-pricing-comparison-2026-10-30.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 1639,
+      "hash": "sha256:eec44fefd50f1ea794739bf08c8a9cee8478b6b64e09f532f7de197b93767624",
+      "licenses": [
+        {
+          "name": "CC-BY-4.0",
+          "path": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "schema": {
+        "fields": [
+          { "name": "product", "type": "string" },
+          { "name": "pricing_model", "type": "string" },
+          { "name": "billing_term_for_estimate", "type": "string" },
+          { "name": "one_technician_endpoints_10_usd_month", "type": "number" },
+          { "name": "one_technician_endpoints_50_usd_month", "type": "number" },
+          { "name": "one_technician_endpoints_100_usd_month", "type": "number" },
+          { "name": "one_technician_endpoints_500_usd_month", "type": "number" },
+          { "name": "month_to_month_alternative_usd", "type": "number" },
+          { "name": "source_url", "type": "string", "format": "uri" },
+          { "name": "fact_checked", "type": "date" },
+          { "name": "notes", "type": "string" }
+        ],
+        "primaryKey": "product"
       }
     }
   ]

@@ -12,6 +12,15 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>Public RMM pricing dataset for one-technician MSPs</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html" />
+    <updated>2026-11-01T00:00:00Z</updated>
+    <category term="pricing" />
+    <category term="dataset" />
+    <summary>Download a source-dated CSV comparing six public RMM pricing models for one technician at 10, 50, 100, and 500 endpoints, with source links, methodology, caveats, and an explicit Nizlo relationship disclosure.</summary>
+  </entry>
+  <entry>
     <title>MSP client offboarding checklist and evidence register</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-offboarding-evidence-register.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-offboarding-evidence-register.html" />
