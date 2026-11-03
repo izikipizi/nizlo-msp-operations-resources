@@ -13,6 +13,16 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>MSP backup restore test checklist</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/msp-backup-restore-test-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/msp-backup-restore-test-checklist.html" />
+    <updated>2026-11-03T00:00:00Z</updated>
+    <category term="backup" />
+    <category term="recovery" />
+    <category term="checklist" />
+    <summary>Run 24 vendor-neutral checks for recovery scope, isolated restore execution, data integrity, permissions, application usability, timing, exception ownership, cleanup, and closure.</summary>
+  </entry>
+  <entry>
     <title>RMM agent uninstall verification checklist</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-uninstall-verification-checklist.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-uninstall-verification-checklist.html" />

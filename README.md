@@ -33,6 +33,7 @@ Start with the [free RMM calculators collection](https://izikipizi.github.io/niz
 | [Six-week MSP onboarding project plan](https://izikipizi.github.io/nizlo-msp-operations-resources/six-week-msp-onboarding-project-plan.html) | Structuring authority, discovery, SOP development, one controlled pilot, NOC training, acceptance, and handoff |
 | [MSP client offboarding checklist](https://nizlo.com/guides/msp-client-offboarding-checklist) | Removing access and agents without losing evidence, ownership, or responsibility |
 | [RMM agent uninstall verification checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-uninstall-verification-checklist.html) | Proving the agent, remote-access path, credentials, scheduled work, and management record were removed or reconciled |
+| [MSP backup restore test checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/msp-backup-restore-test-checklist.html) | Proving a recovery point produces usable data with validated integrity, permissions, dependencies, timing, and closure evidence |
 
 ## Daily endpoint operations
 
@@ -73,6 +74,8 @@ Use the [RMM vendor due-diligence evidence register](https://izikipizi.github.io
 Use the [RMM alert escalation matrix](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-escalation-matrix-template.html) to map 27 example alert rules to confirmation windows, owners, response and acknowledgement targets, escalation paths, customer notifications, suppression conditions, evidence, closure tests, and false-positive review. The [25-field CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-alert-escalation-matrix.csv) is public and ungated; the maintained [RMM alert escalation policy guide](https://nizlo.com/guides/rmm-alert-escalation-policy-template) explains how to adapt and operationally test it before production use.
 
 Use the [RMM alert noise reduction checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-noise-reduction-checklist.html) to baseline alert load, define actionable conditions, correlate duplicates, route ownership, govern suppression, and measure the effect of each tuning change. The maintained [RMM alert-tuning guide](https://nizlo.com/guides/rmm-alert-tuning-checklist) provides the broader operating workflow.
+
+Use the [MSP backup restore test checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/msp-backup-restore-test-checklist.html) to run a controlled recovery drill across authorization, recovery-point selection, isolated restore execution, byte-level integrity where applicable, permissions, application usability, timing, exception ownership, safe cleanup, and closure. It links to the maintained [Nizlo backup overview](https://nizlo.com/backup) and [RMM with backup guide](https://nizlo.com/solutions/rmm-with-backup) while remaining vendor-neutral.
 
 Use the dedicated [RMM deployment-readiness checklist template](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-deployment-readiness-template.html) for phase guidance, field documentation, and the public 33-control CSV. It helps assign owners, record evidence, define rollback triggers, and reconcile exceptions across governance, inventory, preparation, pilot, wave rollout, verification, and closeout.
 
