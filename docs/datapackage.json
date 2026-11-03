@@ -4,9 +4,9 @@
   "name": "nizlo-rmm-operations-resources",
   "id": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
   "title": "Nizlo RMM Operations Resources",
-  "description": "Seventeen public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
+  "description": "Eighteen public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
-  "version": "1.34.0",
+  "version": "1.35.0",
   "created": "2026-11-01",
   "contributors": [
     {
@@ -68,6 +68,46 @@
     ,"RMM pricing worksheet"
   ],
   "resources": [
+    {
+      "profile": "tabular-data-resource",
+      "name": "rmm-alert-noise-baseline",
+      "title": "RMM alert-noise baseline worksheet",
+      "description": "Eight clearly marked example records and 23 fields for measuring raw events, unique incidents, duplicates, false positives, actionable incidents, after-hours events, acknowledgement, resolution, ownership, tuning actions, and before-and-after results.",
+      "path": "templates/rmm-alert-noise-baseline.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 4431,
+      "hash": "sha256:f0ab137bc0c6f3eb36f0bffb7fa3e60b981fb8ec211957be918299d7c5dc54ca",
+      "schema": {
+        "fields": [
+          { "name": "measurement_id", "type": "string" },
+          { "name": "client_or_site", "type": "string" },
+          { "name": "alert_rule_or_signal", "type": "string" },
+          { "name": "device_scope", "type": "string" },
+          { "name": "baseline_start_utc", "type": "datetime" },
+          { "name": "baseline_end_utc", "type": "datetime" },
+          { "name": "total_events", "type": "integer" },
+          { "name": "unique_incidents", "type": "integer" },
+          { "name": "duplicate_events", "type": "integer" },
+          { "name": "false_positive_incidents", "type": "integer" },
+          { "name": "actionable_incidents", "type": "integer" },
+          { "name": "after_hours_events", "type": "integer" },
+          { "name": "median_ack_minutes", "type": "number" },
+          { "name": "median_resolution_minutes", "type": "number" },
+          { "name": "current_owner", "type": "string" },
+          { "name": "suppression_or_deduplication_condition", "type": "string" },
+          { "name": "proposed_tuning_action", "type": "string" },
+          { "name": "expected_observable_result", "type": "string" },
+          { "name": "review_owner", "type": "string" },
+          { "name": "review_date_utc", "type": "datetime" },
+          { "name": "status", "type": "string" },
+          { "name": "evidence_link", "type": "string" },
+          { "name": "notes", "type": "string" }
+        ],
+        "primaryKey": "measurement_id"
+      }
+    },
     {
       "profile": "tabular-data-resource",
       "name": "rmm-deployment-readiness",

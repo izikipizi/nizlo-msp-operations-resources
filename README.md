@@ -6,6 +6,8 @@ Every resource below is public, ungated, and written to be usable independently 
 
 Start with the [free RMM calculators collection](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-calculators.html) to model migration cost and break-even, compare public prices, evaluate common pricing structures, and build an ROI case without an account or email gate.
 
+Measure alert fatigue with the [RMM alert-noise baseline worksheet](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-noise-baseline-worksheet.html), a public 23-field CSV and 14-day before-and-after method for separating raw events, unique incidents, duplicates, false positives, actionable work, after-hours load, acknowledgement time, and resolution time.
+
 ## RMM selection and change
 
 | Resource | Use it when |

@@ -73,6 +73,15 @@
     <summary>Review a Windows patch policy against 24 practical controls for scope, rings, deadlines, restarts, exceptions, rollback, evidence, ownership, and approval.</summary>
   </entry>
   <entry>
+    <title>RMM alert-noise baseline worksheet</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-noise-baseline-worksheet.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-noise-baseline-worksheet.html" />
+    <updated>2026-11-03T00:00:00Z</updated>
+    <category term="monitoring" />
+    <category term="alert-tuning" />
+    <summary>Measure raw RMM events, unique incidents, duplicates, false positives, actionable yield, after-hours burden, acknowledgement, and resolution with a public 23-field CSV and repeatable 14-day method.</summary>
+  </entry>
+  <entry>
     <title>Free RMM calculators for migration cost, pricing, and ROI</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-calculators.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-calculators.html" />
