@@ -4,9 +4,9 @@
   "name": "nizlo-rmm-operations-resources",
   "id": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
   "title": "Nizlo RMM Operations Resources",
-  "description": "Sixteen public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
+  "description": "Seventeen public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
-  "version": "1.30.0",
+  "version": "1.34.0",
   "created": "2026-11-01",
   "contributors": [
     {
@@ -64,6 +64,8 @@
     "RMM vendor assessment",
     "MSP third-party risk",
     "RMM evidence register"
+    ,"RMM quote comparison"
+    ,"RMM pricing worksheet"
   ],
   "resources": [
     {
@@ -1320,6 +1322,49 @@
           }
         ],
         "primaryKey": "product"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "rmm-quote-comparison-worksheet",
+      "title": "RMM quote comparison worksheet",
+      "description": "Twenty-six fields for normalizing dated RMM proposals across pricing units, minimums, fees, add-ons, implementation, year-one totals, renewal changes, contract terms, and exit costs.",
+      "path": "templates/rmm-quote-comparison-worksheet.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 575,
+      "hash": "sha256:6ba841345d852426c0e52b343ec1b76e913a66b35dde1754490cbe17bd1311f4",
+      "schema": {
+        "fields": [
+          { "name": "record_id", "type": "string" },
+          { "name": "vendor", "type": "string" },
+          { "name": "quote_date", "type": "date" },
+          { "name": "currency", "type": "string" },
+          { "name": "billing_basis", "type": "string" },
+          { "name": "contract_term_months", "type": "integer" },
+          { "name": "minimum_spend_or_seats", "type": "string" },
+          { "name": "base_platform_fee", "type": "number" },
+          { "name": "included_technicians", "type": "integer" },
+          { "name": "included_endpoints", "type": "integer" },
+          { "name": "additional_technician_fee", "type": "number" },
+          { "name": "additional_endpoint_fee", "type": "number" },
+          { "name": "mandatory_addons_monthly", "type": "number" },
+          { "name": "optional_addons_monthly", "type": "number" },
+          { "name": "implementation_fee", "type": "number" },
+          { "name": "training_fee", "type": "number" },
+          { "name": "estimated_monthly_total", "type": "number" },
+          { "name": "estimated_year_one_total", "type": "number" },
+          { "name": "renewal_uplift_or_cap", "type": "string" },
+          { "name": "early_termination_terms", "type": "string" },
+          { "name": "data_export_or_exit_cost", "type": "string" },
+          { "name": "source_or_quote_reference", "type": "string" },
+          { "name": "assumptions", "type": "string" },
+          { "name": "decision_owner", "type": "string" },
+          { "name": "status", "type": "string" },
+          { "name": "notes", "type": "string" }
+        ],
+        "primaryKey": "record_id"
       }
     },
     {

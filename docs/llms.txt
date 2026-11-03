@@ -1,6 +1,6 @@
 # Nizlo MSP Operations Resources
 
-> Thirty-five public, ungated field guides, sixteen reusable CSV templates, and one source-dated RMM pricing dataset for managed service providers and lean IT teams evaluating, pricing, testing, deploying, inventorying, operating, securing, recovering, migrating, onboarding, and offboarding remote monitoring and management software.
+> Thirty-six public, ungated field guides, seventeen reusable CSV templates, and one source-dated RMM pricing dataset for managed service providers and lean IT teams evaluating, pricing, testing, deploying, inventorying, operating, securing, recovering, migrating, onboarding, and offboarding remote monitoring and management software.
 
 This external library is maintained by the Nizlo team. Nizlo is a Windows-first RMM and IT-management platform. The resources are vendor-neutral, but they are vendor-created and do not represent independent research or an endorsement of Nizlo.
 
@@ -31,10 +31,11 @@ This external library is maintained by the Nizlo team. Nizlo is a Windows-first 
 - [RMM incident response checklist](https://nizlo.com/guides/rmm-incident-response-checklist): Eight-stage guide covering preparation, declaration, scope, containment, evidence, recovery, reconciliation, and corrective action.
 - [RMM migration checklist workbook](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-workbook-template.html): Field guidance and a public 30-control CSV for discovery, pilot, coexistence, cutover, validation, source retirement, and closeout.
 - [RMM migration cost and break-even calculator](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-cost-calculator.html): Browser-only modeling for migration labor, fees, subscription overlap, retained tools, recurring cost change, first-year impact, and payback time with published formulas.
+- [RMM quote comparison worksheet](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html): Vendor-neutral worksheet for normalizing actual RMM proposals across fees, minimums, included technicians and endpoints, add-ons, contract terms, renewal uplifts, and exit costs.
 - [Free RMM calculators](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-calculators.html): Collection page for migration cost, public price comparison, pricing-model, and ROI calculators, with explicit limitations and no email gate.
 - [Citation and preservation](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html): Authorship, version, repository, CFF metadata, and Software Heritage identifiers.
 - [Machine-readable resource index](https://izikipizi.github.io/nizlo-msp-operations-resources/resource-index.json): Structured catalogue with titles, categories, audiences, access status, and canonical URLs.
-- [Data Package descriptor](https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json): Standards-based metadata, schemas, byte counts, and SHA-256 hashes for sixteen templates and the public pricing dataset.
+- [Data Package descriptor](https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json): Standards-based metadata, schemas, byte counts, and SHA-256 hashes for seventeen templates and the public pricing dataset.
 - [Atom feed](https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml): Feed-reader and aggregator discovery for the resource collection.
 
 ## Pricing data
@@ -44,7 +45,7 @@ This external library is maintained by the Nizlo team. Nizlo is a Windows-first 
 
 ## Reusable templates
 
-- [RMM operations and incident response template library](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/): Landing page for all sixteen public CSV templates with usage guidance.
+- [RMM operations and incident response template library](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/): Landing page for all seventeen public CSV templates with usage guidance.
 - [RMM vendor due-diligence evidence register CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-vendor-due-diligence-evidence-register.csv): Seventeen fields for requested evidence, status, references, findings, risk, remediation, exceptions, and renewal dates.
 - [RMM alert escalation matrix CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-alert-escalation-matrix.csv): Twenty-five fields for severity, confirmation, ownership, response, acknowledgement, escalation, customer communication, suppression, evidence, closure, and false-positive review.
 - [MSP maintenance checklist CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-daily-weekly-monthly-maintenance-checklist.csv): Downloadable daily, weekly, monthly, and quarterly service checks for backups, security, monitoring, patching, inventory, recovery, access, coverage, documentation, billing, integrations, and governance.
@@ -58,6 +59,7 @@ This external library is maintained by the Nizlo team. Nizlo is a Windows-first 
 - [RMM incident response runbook CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-incident-response-runbook.csv): 30 controls covering readiness, detection, containment, investigation, recovery, communication, and corrective action.
 - [RMM migration workbook CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-migration-workbook.csv): 30 controls covering source inventory, target mapping, pilot evidence, coexistence, cutover, rollback, retirement, and closeout.
 - [RMM evaluation scorecard CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-evaluation-scorecard.csv): Ten evidence-based areas for comparing RMM behavior during a controlled pilot, with risk ownership, retest, and decision fields.
+- [RMM quote comparison worksheet CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-quote-comparison-worksheet.csv): Twenty-six fields for dated quote evidence, pricing units, minimums, platform and add-on fees, implementation, first-year totals, renewal changes, contract terms, and exit costs.
 - [Endpoint inventory and CMDB readiness template](https://izikipizi.github.io/nizlo-msp-operations-resources/endpoint-inventory-cmdb-template.html): Guide and 23-field CSV for durable device identity, ownership, lifecycle, management state, source provenance, freshness, and exceptions.
 - [RMM technician access review matrix](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-technician-access-review-matrix.html): Guide and 29-field CSV for reviewing technician and role scope, privileged capabilities, justification, MFA, approvals, review dates, decisions, and remediation.
 - [MSP client onboarding checklist and evidence register](https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-onboarding-evidence-register.html): Guide and 30-control CSV for authority, discovery, access, RMM deployment, security, backup, service desk, documentation, communication, and acceptance.

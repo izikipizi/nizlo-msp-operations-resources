@@ -2,19 +2,19 @@ cff-version: 1.2.0
 message: "If these MSP operations resources support your work, cite the maintained canonical guide."
 title: "Nizlo MSP Operations Resources"
 type: dataset
-version: "1.33.0"
+version: "1.34.0"
 authors:
   - family-names: "Ecklund"
     given-names: "Kip"
 publisher:
   name: "Nizlo"
-date-released: 2026-11-02
+date-released: 2026-11-03
 url: "https://nizlo.com/tools"
 repository-code: "https://github.com/izikipizi/nizlo-msp-operations-resources"
 identifiers:
   - type: swh
     value: "swh:1:snp:869ffca04cc7b9a1e00991a796655f1c5c6f8676"
-    description: "Software Heritage snapshot containing release v1.33.0 and its repository history"
+    description: "Software Heritage snapshot containing the earlier release v1.33.0 and its repository history"
 keywords:
   - "managed service provider"
   - "MSP"
@@ -29,6 +29,8 @@ keywords:
   - "RMM pricing"
   - "RMM cost calculator"
   - "RMM pricing dataset"
+  - "RMM quote comparison"
+  - "RMM pricing worksheet"
   - "endpoint exceptions"
   - "RMM security"
   - "CMDB readiness"

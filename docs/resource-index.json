@@ -376,6 +376,17 @@
       "account_required": false
     },
     {
+      "id": "rmm-quote-comparison-worksheet",
+      "title": "RMM quote comparison worksheet",
+      "category": "pricing",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-quote-comparison-worksheet.csv",
+      "format": "text/csv",
+      "fields": 26,
+      "access": "public",
+      "account_required": false
+    },
+    {
       "id": "rmm-first-endpoint-acceptance",
       "title": "RMM first-endpoint pilot acceptance checklist",
       "category": "selection",
