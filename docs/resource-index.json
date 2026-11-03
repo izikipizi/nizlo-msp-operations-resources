@@ -307,6 +307,18 @@
       "account_required": false
     },
     {
+      "id": "manageengine-endpoint-central-msp-alternative",
+      "title": "ManageEngine Endpoint Central Alternative for MSPs",
+      "category": "comparison",
+      "url": "https://nizlo.com/compare/manageengine-endpoint-central-msp-alternative",
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
       "id": "rmm-vs-intune",
       "title": "RMM vs. Microsoft Intune for MSPs",
       "category": "selection",
