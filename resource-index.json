@@ -514,6 +514,18 @@
       "account_required": false
     },
     {
+      "id": "msp-client-onboarding-questionnaire",
+      "title": "MSP client onboarding questionnaire",
+      "category": "client-lifecycle",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-onboarding-evidence-register.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-client-onboarding-questionnaire.csv",
+      "canonical_guide": "https://nizlo.com/guides/msp-client-onboarding-checklist",
+      "format": "text/csv",
+      "questions": 16,
+      "access": "public",
+      "account_required": false
+    },
+    {
       "id": "six-week-msp-onboarding-project-plan",
       "title": "Six-week MSP onboarding project plan",
       "category": "client-lifecycle",

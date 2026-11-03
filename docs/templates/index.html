@@ -153,11 +153,14 @@
               "position": 11,
               "item": {
                 "@type": "Dataset",
-                "name": "MSP client onboarding checklist and evidence register",
-                "description": "A 30-control CSV for authority, discovery, access, RMM deployment, security, backup, service desk, documentation, communication, and acceptance.",
+                "name": "MSP client onboarding checklist, questionnaire, and evidence register",
+                "description": "A 16-question discovery CSV and 30-control evidence register for authority, scope, access, RMM deployment, security, backup, service desk, documentation, communication, and acceptance.",
                 "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-onboarding-evidence-register.html",
                 "isAccessibleForFree": true,
-                "distribution": { "@type": "DataDownload", "contentUrl": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-client-onboarding-evidence-register.csv", "encodingFormat": "text/csv" }
+                "distribution": [
+                  { "@type": "DataDownload", "name": "MSP client onboarding questionnaire", "contentUrl": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-client-onboarding-questionnaire.csv", "encodingFormat": "text/csv" },
+                  { "@type": "DataDownload", "name": "MSP client onboarding evidence register", "contentUrl": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-client-onboarding-evidence-register.csv", "encodingFormat": "text/csv" }
+                ]
               }
             },
             {
@@ -402,11 +405,11 @@
           <div class="actions"><a class="button primary" href="rmm-technician-access-review.csv" download>Download CSV</a><a class="button" href="../rmm-technician-access-review-matrix.html">Open access-review guide</a></div>
         </article>
         <article>
-          <div class="tag">30 controls · CSV</div>
-          <h2>MSP client onboarding evidence register</h2>
-          <p>Coordinate an authorized service start without losing track of scope, access, agents, security, documentation, exceptions, or customer acceptance.</p>
-          <ul><li>Assign MSP and customer owners</li><li>Link evidence without storing secrets in the register</li><li>Close every phase with explicit acceptance criteria</li></ul>
-          <div class="actions"><a class="button primary" href="msp-client-onboarding-evidence-register.csv" download>Download CSV</a><a class="button" href="../msp-client-onboarding-evidence-register.html">Open onboarding guide</a></div>
+          <div class="tag">16 questions + 30 controls · CSV</div>
+          <h2>MSP client onboarding questionnaire and evidence register</h2>
+          <p>Collect the operating facts first, then coordinate an authorized service start without losing track of scope, access, agents, security, documentation, exceptions, or customer acceptance.</p>
+          <ul><li>Ask the same sixteen discovery questions consistently</li><li>Assign MSP and customer owners</li><li>Link evidence without storing secrets in the register</li><li>Close every phase with explicit acceptance criteria</li></ul>
+          <div class="actions"><a class="button primary" href="msp-client-onboarding-questionnaire.csv" download>Download questionnaire</a><a class="button" href="msp-client-onboarding-evidence-register.csv" download>Download evidence register</a><a class="button" href="../msp-client-onboarding-evidence-register.html">Open onboarding guide</a></div>
         </article>
         <article>
           <div class="tag">6 weeks · 30 milestones · CSV</div>

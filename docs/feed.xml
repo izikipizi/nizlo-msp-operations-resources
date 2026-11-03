@@ -13,6 +13,17 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>MSP client onboarding questionnaire</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-client-onboarding-questionnaire.csv</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-onboarding-evidence-register.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-client-onboarding-questionnaire.csv" />
+    <updated>2026-11-03T00:00:00Z</updated>
+    <category term="client-lifecycle" />
+    <category term="discovery" />
+    <category term="template" />
+    <summary>Ask sixteen consistent discovery questions about authority, scope, assets, identity, applications, networks, management tools, privileged access, governance, recovery, change control, escalation, known risks, and acceptance.</summary>
+  </entry>
+  <entry>
     <title>RMM requirements matrix and RFP worksheet</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-requirements-matrix-template.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-requirements-matrix-template.html" />
