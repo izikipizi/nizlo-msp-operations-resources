@@ -23,7 +23,7 @@ This external library is maintained by the Nizlo team. Nizlo is a Windows-first 
 - [RMM for Mac and Windows](https://nizlo.com/guides/rmm-for-mac-and-windows): Mixed-fleet evaluation across enrollment, inventory, alerts, automation, updates, remote access, and removal.
 - [RMM for a new MSP](https://nizlo.com/guides/rmm-for-new-msps): First-customer buying guide covering operational simplicity, real costs, pilot scope, and lock-in.
 - [RMM for small IT teams](https://nizlo.com/guides/rmm-for-small-it-teams): Practical evaluation guide for internal IT teams weighing RMM, Intune, and a safe pilot.
-- [RMM pricing models](https://nizlo.com/guides/rmm-pricing-models): Calculator and comparison of per-device, per-technician, tiered, and total-cost models.
+- [RMM pricing 2026 calculator](https://nizlo.com/guides/rmm-pricing-models): Calculate costs for 10, 25, 50, 100, or 500 endpoints and compare per-device, per-technician, flat monthly, add-on, and annual totals.
 - [RMM vs. Microsoft Intune](https://nizlo.com/guides/rmm-vs-intune): Comparison of multi-tenant operations, monitoring, scripts, patching, application management, remote support, and cost.
 - [Windows patch policy template for MSPs](https://nizlo.com/guides/windows-patch-policy-template): Vendor-neutral policy template for scope, deployment rings, deadlines, restart controls, exceptions, emergency changes, rollback, evidence, and review.
 - [Windows patch policy Markdown download](https://nizlo.com/guides/windows-patch-policy-template/template.md): No-gate reusable policy document with decision tables, deployment rings, exception fields, cycle evidence, and approvals.

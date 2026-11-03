@@ -260,12 +260,12 @@
     <summary>Decide whether a small internal IT team needs an RMM, where Intune fits, what to test, and how to run a safe pilot.</summary>
   </entry>
   <entry>
-    <title>RMM Pricing Calculator &amp; Cost Comparison</title>
+    <title>RMM Pricing 2026: Cost Calculator &amp; Pricing Models</title>
     <id>https://nizlo.com/guides/rmm-pricing-models</id>
     <link href="https://nizlo.com/guides/rmm-pricing-models" />
-    <updated>2026-11-01T00:00:00Z</updated>
+    <updated>2026-11-03T00:00:00Z</updated>
     <category term="pricing" />
-    <summary>Compare per-device and per-technician costs, tiered pricing, worked examples, and total-cost risks.</summary>
+    <summary>Calculate RMM costs for 10, 25, 50, 100, or 500 endpoints and compare per-device, per-technician, flat monthly, add-on, and annual totals.</summary>
   </entry>
   <entry>
     <title>RMM vs. Microsoft Intune for MSPs</title>
