@@ -13,6 +13,16 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>Windows patch failure triage checklist for MSPs</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-failure-triage-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-failure-triage-checklist.html" />
+    <updated>2026-11-03T00:00:00Z</updated>
+    <category term="patch-management" />
+    <category term="troubleshooting" />
+    <category term="checklist" />
+    <summary>Run 24 vendor-neutral checks for failure evidence, fleet scope, prerequisites, servicing health, remediation safety, post-change validation, exception ownership, and closure.</summary>
+  </entry>
+  <entry>
     <title>MSP backup restore test checklist</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/msp-backup-restore-test-checklist.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/msp-backup-restore-test-checklist.html" />

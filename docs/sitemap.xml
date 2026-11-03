@@ -7,6 +7,12 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-failure-triage-checklist.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://izikipizi.github.io/nizlo-msp-operations-resources/msp-backup-restore-test-checklist.html</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>yearly</changefreq>

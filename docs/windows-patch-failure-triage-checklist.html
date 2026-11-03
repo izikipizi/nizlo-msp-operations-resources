@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Windows Patch Failure Triage Checklist for MSPs | Nizlo</title>
+    <meta name="description" content="Triage failed Windows updates with 24 vendor-neutral checks for scope, evidence, error classification, prerequisites, servicing health, retry safety, validation, exceptions, and closure." />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <link rel="canonical" href="https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-failure-triage-checklist.html" />
+    <link rel="alternate" type="application/atom+xml" title="Nizlo MSP Operations Resources" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Windows Patch Failure Triage Checklist for MSPs" />
+    <meta property="og:description" content="Twenty-four practical checks for diagnosing a failed Windows update without hiding risk, repeatedly retrying, or losing closure evidence." />
+    <meta property="og:url" content="https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-failure-triage-checklist.html" />
+    <meta name="twitter:card" content="summary" />
+    <style>
+      :root { color-scheme:dark; --bg:#07171d; --panel:#0d242d; --line:#23414c; --text:#ecf8fa; --muted:#aac0c7; --teal:#22d3c5; --soft:#8af1e8; }
+      * { box-sizing:border-box; }
+      body { margin:0; font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; background:var(--bg); color:var(--text); line-height:1.65; }
+      a { color:var(--soft); }
+      .wrap { width:min(1100px,calc(100% - 2rem)); margin:auto; }
+      header { border-bottom:1px solid var(--line); }
+      nav { display:flex; justify-content:space-between; gap:1rem; align-items:center; padding:1rem 0; }
+      .brand { font-weight:900; letter-spacing:.08em; text-decoration:none; color:var(--text); }
+      .hero { padding:5rem 0 3rem; }
+      .eyebrow { color:var(--teal); font-size:.78rem; font-weight:900; letter-spacing:.13em; text-transform:uppercase; }
+      h1 { max-width:18ch; margin:.75rem 0 1.1rem; font-size:clamp(2.6rem,7vw,5.2rem); line-height:.98; letter-spacing:-.055em; }
+      h2 { margin-top:0; font-size:1.55rem; }
+      .lede { max-width:78ch; color:var(--muted); font-size:1.12rem; }
+      .actions { display:flex; flex-wrap:wrap; gap:.8rem; margin-top:1.6rem; }
+      .button { display:inline-block; padding:.8rem 1rem; border:1px solid var(--line); border-radius:.7rem; font-weight:800; text-decoration:none; }
+      .button-primary { background:var(--teal); color:#052128; border-color:var(--teal); }
+      .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; padding:1rem 0 4rem; }
+      section.card { padding:1.4rem; border:1px solid var(--line); border-radius:1rem; background:var(--panel); }
+      ol { margin:0; padding-left:1.35rem; }
+      li + li { margin-top:.55rem; }
+      .use { margin:0 0 4rem; padding:1.5rem; border-left:4px solid var(--teal); background:var(--panel); }
+      .disclosure { margin:0 0 4rem; padding:1.3rem 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line); color:var(--muted); }
+      footer { padding:2rem 0 3rem; border-top:1px solid var(--line); color:var(--muted); }
+      @media (max-width:760px) { .hero{padding-top:3rem}.grid{grid-template-columns:1fr}nav{align-items:flex-start;flex-direction:column} }
+      @media print { :root{color-scheme:light}body{background:#fff;color:#111}header,.actions,footer{display:none}.hero{padding:1rem 0}.card,.use{break-inside:avoid;background:#fff!important;border-color:#999!important}.lede,.disclosure{color:#333!important} }
+    </style>
+    <script type="application/ld+json">
+      {
+        "@context":"https://schema.org",
+        "@type":"TechArticle",
+        "headline":"Windows Patch Failure Triage Checklist for MSPs",
+        "description":"A vendor-neutral 24-control checklist for scoping, diagnosing, remediating, validating, and closing failed Windows update work.",
+        "datePublished":"2026-11-03",
+        "dateModified":"2026-11-03",
+        "author":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},
+        "publisher":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},
+        "mainEntityOfPage":"https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-failure-triage-checklist.html",
+        "license":"https://creativecommons.org/licenses/by/4.0/"
+      }
+    </script>
+  </head>
+  <body>
+    <header><nav class="wrap"><a class="brand" href="./">NIZLO · MSP OPERATIONS RESOURCES</a><a href="https://github.com/izikipizi/nizlo-msp-operations-resources">View source</a></nav></header>
+    <main class="wrap">
+      <section class="hero">
+        <span class="eyebrow">Vendor-neutral Windows update operations</span>
+        <h1>Turn a failed patch into owned work.</h1>
+        <p class="lede">A retry is not a diagnosis. Use these 24 checks to identify the affected scope, preserve the original failure evidence, classify the cause, restore servicing health safely, validate the final state, and keep every unresolved endpoint visible until closure.</p>
+        <div class="actions">
+          <a class="button button-primary" href="https://nizlo.com/patch-management">Review Nizlo patch management</a>
+          <a class="button" href="https://nizlo.com/guides/windows-patch-management-checklist">Plan the patch cycle</a>
+          <a class="button" href="https://nizlo.com/guides/endpoint-exception-management">Manage unresolved exceptions</a>
+          <a class="button" href="javascript:window.print()">Print this checklist</a>
+        </div>
+      </section>
+      <div class="grid" aria-label="Windows patch failure triage controls">
+        <section class="card"><h2>1. Preserve the failure</h2><ol>
+          <li>Record the customer, endpoint, operating-system build, update identifier, update class, deployment ring, maintenance window, and responsible technician.</li>
+          <li>Capture the original error code, message, job state, timestamps, reboot state, scan age, and management-console evidence before changing the endpoint.</li>
+          <li>Confirm whether the update is still applicable and whether the apparent failure is an install failure, reporting delay, stale scan, supersedence, or pending reboot.</li>
+          <li>Check for the same update and error across the ring or fleet before treating the event as an isolated device problem.</li>
+        </ol></section>
+        <section class="card"><h2>2. Bound the risk</h2><ol start="5">
+          <li>Identify the update's security severity, known exploitation context, deadline, business impact, and any approved deferral or emergency-change requirement.</li>
+          <li>Confirm the device owner, workload criticality, active user impact, backup or recovery readiness, and the next authorized change window.</li>
+          <li>Pause broader deployment when the failure pattern suggests a bad update, application conflict, boot risk, data-loss risk, or unreliable rollback.</li>
+          <li>Create one owned incident, problem, or exception record with affected devices, next action, due date, escalation path, and customer communication status.</li>
+        </ol></section>
+        <section class="card"><h2>3. Check prerequisites</h2><ol start="9">
+          <li>Verify network reachability to required update services, proxy behavior, TLS inspection, DNS, time synchronization, and sufficient download access.</li>
+          <li>Check free disk space, power state, battery policy, maintenance-window duration, active restart blockers, and whether another installer is running.</li>
+          <li>Confirm Windows Update, BITS, Cryptographic Services, and related servicing components are present and in an expected state.</li>
+          <li>Review policy sources, pause settings, deferrals, WSUS or cloud-update configuration, conflicting management tools, and pending servicing-stack requirements.</li>
+        </ol></section>
+        <section class="card"><h2>4. Diagnose before retrying</h2><ol start="13">
+          <li>Correlate Windows Update history, event logs, management job output, setup logs, and vendor documentation to the recorded error code.</li>
+          <li>Check component-store and system-file health with approved diagnostic methods; preserve results before attempting repair.</li>
+          <li>Identify prerequisite, superseded, blocked, incompatible, withdrawn, language-pack, driver, application, firmware, or encryption dependencies.</li>
+          <li>Choose the least-disruptive approved remediation and define success, stop, rollback, and escalation conditions before execution.</li>
+        </ol></section>
+        <section class="card"><h2>5. Remediate and validate</h2><ol start="17">
+          <li>Apply the approved repair or prerequisite change to one representative endpoint first and retain the command, actor, start time, output, and result.</li>
+          <li>Retry the update only after the diagnosed blocker is removed; avoid unbounded retry loops or clearing evidence merely to obtain a green status.</li>
+          <li>Complete any authorized reboot, then run a fresh update scan and confirm the installed build, update history, applicability, device health, and management check-in.</li>
+          <li>Validate representative business services, encryption, security tooling, networking, startup behavior, and user access after the change.</li>
+        </ol></section>
+        <section class="card"><h2>6. Close or govern the exception</h2><ol start="21">
+          <li>Reconcile the entire affected set—not only the pilot device—and record installed, not applicable, superseded, deferred, failed, offline, and unknown outcomes.</li>
+          <li>For unresolved devices, document compensating controls, exposure, approval, expiry, monitoring, next retry, vendor case, and explicit closure criteria.</li>
+          <li>Update patch rules, ring timing, capacity thresholds, prerequisites, runbooks, alerts, and technician guidance when the failure exposed a repeatable gap.</li>
+          <li>Close only when current scan evidence supports the final state, service health is validated, the owner accepts residual risk, and every exception has a dated next action.</li>
+        </ol></section>
+      </div>
+      <section class="use"><h2>Definition of a resolved patch failure</h2><p>A failed patch is resolved when current endpoint evidence shows the update installed, no longer applies, was superseded, or is governed by an approved time-bounded exception; the endpoint and required services remain healthy; the affected fleet is reconciled; and the evidence, owner, next action, and closure decision are recorded. Repeated retries or a cleared error message alone do not establish resolution.</p></section>
+      <aside class="disclosure"><strong>Relationship disclosure:</strong> this checklist is maintained by the Nizlo team. Nizlo offers Windows-first RMM and patch-management capabilities. The checklist is vendor-neutral and does not claim that Nizlo—or any other product—automatically diagnoses or resolves every Windows update failure.</aside>
+    </main>
+    <footer><div class="wrap">Maintained by Nizlo · Updated November 3, 2026 · <a href="./">Browse all MSP operations resources</a></div></footer>
+  </body>
+</html>
