@@ -8,6 +8,8 @@ Start with the [free RMM calculators collection](https://izikipizi.github.io/niz
 
 Measure alert fatigue with the [RMM alert-noise baseline worksheet](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-noise-baseline-worksheet.html), a public 23-field CSV and 14-day before-and-after method for separating raw events, unique incidents, duplicates, false positives, actionable work, after-hours load, acknowledgement time, and resolution time.
 
+Define buying criteria before vendor demos with the [RMM requirements matrix and RFP worksheet](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-requirements-matrix-template.html), a public 32-requirement, 18-field CSV for priorities, evidence requests, pilot tests, acceptance criteria, owned gaps, remediation commitments, and decisions.
+
 ## RMM selection and change
 
 | Resource | Use it when |

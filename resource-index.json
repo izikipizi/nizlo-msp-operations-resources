@@ -321,6 +321,18 @@
   ],
   "templates": [
     {
+      "id": "rmm-requirements-matrix",
+      "title": "RMM requirements matrix and RFP worksheet",
+      "category": "selection",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-requirements-matrix-template.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-requirements-matrix.csv",
+      "format": "text/csv",
+      "requirements": 32,
+      "fields": 18,
+      "access": "public",
+      "account_required": false
+    },
+    {
       "id": "rmm-alert-noise-baseline",
       "title": "RMM alert-noise baseline worksheet",
       "category": "monitoring",

@@ -4,9 +4,9 @@
   "name": "nizlo-rmm-operations-resources",
   "id": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
   "title": "Nizlo RMM Operations Resources",
-  "description": "Eighteen public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
+  "description": "Nineteen public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
-  "version": "1.35.0",
+  "version": "1.36.0",
   "created": "2026-11-01",
   "contributors": [
     {
@@ -66,8 +66,45 @@
     "RMM evidence register"
     ,"RMM quote comparison"
     ,"RMM pricing worksheet"
+    ,"RMM requirements matrix"
+    ,"RMM RFP template"
   ],
   "resources": [
+    {
+      "profile": "tabular-data-resource",
+      "name": "rmm-requirements-matrix",
+      "title": "RMM requirements matrix and RFP worksheet",
+      "description": "Thirty-two clearly marked example RMM requirements and 18 fields for priority, business reason, vendor response, evidence, pilot tests, acceptance criteria, dependencies, gaps, remediation, and decisions.",
+      "path": "templates/rmm-requirements-matrix.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 13166,
+      "hash": "sha256:9d57906b6bb8658bc33121de9242ce6704f79885ed0c68e7780392b0941201e0",
+      "schema": {
+        "fields": [
+          { "name": "requirement_id", "type": "string" },
+          { "name": "category", "type": "string" },
+          { "name": "requirement", "type": "string" },
+          { "name": "priority", "type": "string" },
+          { "name": "business_reason", "type": "string" },
+          { "name": "current_process", "type": "string" },
+          { "name": "vendor_response", "type": "string" },
+          { "name": "evidence_source", "type": "string" },
+          { "name": "pilot_test", "type": "string" },
+          { "name": "acceptance_criteria", "type": "string" },
+          { "name": "security_or_compliance_impact", "type": "string" },
+          { "name": "integration_or_dependency", "type": "string" },
+          { "name": "implementation_owner", "type": "string" },
+          { "name": "estimated_effort", "type": "string" },
+          { "name": "gap_or_exception", "type": "string" },
+          { "name": "remediation_commitment", "type": "string" },
+          { "name": "target_date", "type": "date" },
+          { "name": "decision_notes", "type": "string" }
+        ],
+        "primaryKey": "requirement_id"
+      }
+    },
     {
       "profile": "tabular-data-resource",
       "name": "rmm-alert-noise-baseline",
