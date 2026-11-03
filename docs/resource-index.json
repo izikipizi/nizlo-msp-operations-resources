@@ -138,6 +138,20 @@
       "account_required": false
     },
     {
+      "id": "rmm-alert-noise-reduction-checklist",
+      "title": "RMM alert noise reduction checklist for MSPs",
+      "category": "operations",
+      "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-noise-reduction-checklist.html",
+      "canonical_guide": "https://nizlo.com/guides/rmm-alert-tuning-checklist",
+      "controls": 24,
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
       "id": "endpoint-exception-management",
       "title": "Endpoint exception-management guide",
       "category": "operations",
