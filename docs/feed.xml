@@ -13,6 +13,16 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>RMM agent uninstall verification checklist</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-uninstall-verification-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-uninstall-verification-checklist.html" />
+    <updated>2026-11-03T00:00:00Z</updated>
+    <category term="offboarding" />
+    <category term="agent-removal" />
+    <category term="checklist" />
+    <summary>Verify RMM agent removal with 24 vendor-neutral checks for authority, inventory, uninstall execution, access revocation, residual artifacts, evidence, and post-removal monitoring.</summary>
+  </entry>
+  <entry>
     <title>RMM alert noise reduction checklist for MSPs</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-noise-reduction-checklist.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-noise-reduction-checklist.html" />

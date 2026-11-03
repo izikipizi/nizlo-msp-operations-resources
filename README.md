@@ -32,6 +32,7 @@ Start with the [free RMM calculators collection](https://izikipizi.github.io/niz
 | [MSP client onboarding checklist](https://nizlo.com/guides/msp-client-onboarding-checklist) | Establishing authority, scope, access, monitoring, patching, backup, and acceptance |
 | [Six-week MSP onboarding project plan](https://izikipizi.github.io/nizlo-msp-operations-resources/six-week-msp-onboarding-project-plan.html) | Structuring authority, discovery, SOP development, one controlled pilot, NOC training, acceptance, and handoff |
 | [MSP client offboarding checklist](https://nizlo.com/guides/msp-client-offboarding-checklist) | Removing access and agents without losing evidence, ownership, or responsibility |
+| [RMM agent uninstall verification checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-uninstall-verification-checklist.html) | Proving the agent, remote-access path, credentials, scheduled work, and management record were removed or reconciled |
 
 ## Daily endpoint operations
 
