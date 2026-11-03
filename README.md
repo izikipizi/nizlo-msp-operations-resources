@@ -35,7 +35,7 @@ Define buying criteria before vendor demos with the [RMM requirements matrix and
 | Resource | Use it when |
 | --- | --- |
 | [RMM pilot test plan and evidence pack](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-pilot-test-evidence-pack.html) | Running a controlled proof of concept with explicit evidence, stop conditions, remediation, retesting, and a rollout decision |
-| [MSP client onboarding checklist](https://nizlo.com/guides/msp-client-onboarding-checklist) | Establishing authority, scope, access, monitoring, patching, backup, and acceptance |
+| [Free MSP client onboarding checklist](https://nizlo.com/guides/msp-client-onboarding-checklist?utm_source=github&utm_medium=resource&utm_campaign=msp_client_onboarding) | Establishing authority, scope, access, monitoring, patching, backup, and acceptance with reusable CSV and Markdown templates |
 | [Six-week MSP onboarding project plan](https://izikipizi.github.io/nizlo-msp-operations-resources/six-week-msp-onboarding-project-plan.html) | Structuring authority, discovery, SOP development, one controlled pilot, NOC training, acceptance, and handoff |
 | [MSP client offboarding checklist](https://nizlo.com/guides/msp-client-offboarding-checklist) | Removing access and agents without losing evidence, ownership, or responsibility |
 | [RMM agent uninstall verification checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-uninstall-verification-checklist.html) | Proving the agent, remote-access path, credentials, scheduled work, and management record were removed or reconciled |
