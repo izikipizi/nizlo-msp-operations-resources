@@ -5,7 +5,7 @@
     "url": "https://nizlo.com/",
     "resources_url": "https://nizlo.com/tools"
   },
-  "updated": "2026-11-02",
+  "updated": "2026-11-03",
   "resources": [
     {
       "id": "rmm-evaluation-checklist",
@@ -170,6 +170,17 @@
         "MSP",
         "IT team"
       ],
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "windows-patch-policy-template",
+      "title": "Windows patch policy template for MSPs",
+      "category": "patch-management",
+      "url": "https://nizlo.com/guides/windows-patch-policy-template",
+      "download_url": "https://nizlo.com/guides/windows-patch-policy-template/template.md",
+      "format": "text/markdown",
+      "audience": ["MSP", "IT team"],
       "access": "public",
       "account_required": false
     },

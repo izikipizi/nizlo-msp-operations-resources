@@ -6,7 +6,7 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-02T00:00:00Z</updated>
+  <updated>2026-11-03T00:00:00Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
@@ -352,6 +352,15 @@
     <updated>2026-11-01T00:00:00Z</updated>
     <category term="patch-management" />
     <summary>Define Windows patch rings, maintenance windows, testing, exceptions, failure handling, and reporting.</summary>
+  </entry>
+  <entry>
+    <title>Windows patch policy template for MSPs</title>
+    <id>https://nizlo.com/guides/windows-patch-policy-template</id>
+    <link href="https://nizlo.com/guides/windows-patch-policy-template" />
+    <updated>2026-11-03T00:00:00Z</updated>
+    <category term="patch-management" />
+    <category term="template" />
+    <summary>Download a vendor-neutral Markdown policy for patch scope, deployment rings, deadlines, reboots, exceptions, emergency changes, rollback, evidence, reporting, and review.</summary>
   </entry>
   <entry>
     <title>RMM deployment checklist</title>
