@@ -295,6 +295,18 @@
       "account_required": false
     },
     {
+      "id": "rmm-software-comparison-directory",
+      "title": "RMM Software Comparison: 54 Guides (2026)",
+      "category": "comparison",
+      "url": "https://nizlo.com/compare",
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
       "id": "rmm-vs-mdm",
       "title": "RMM vs MDM: 6 Differences and When You Need Both",
       "category": "selection",
