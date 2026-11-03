@@ -185,6 +185,17 @@
       "account_required": false
     },
     {
+      "id": "windows-patch-policy-review-checklist",
+      "title": "Windows patch policy review checklist for MSPs",
+      "category": "patch-management",
+      "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-policy-review-checklist.html",
+      "canonical_guide": "https://nizlo.com/guides/windows-patch-policy-template",
+      "controls": 24,
+      "audience": ["MSP", "IT team"],
+      "access": "public",
+      "account_required": false
+    },
+    {
       "id": "rmm-deployment-checklist",
       "title": "RMM deployment checklist",
       "category": "deployment",

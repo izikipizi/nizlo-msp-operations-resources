@@ -1,6 +1,6 @@
 # Nizlo MSP Operations Resources
 
-> Twenty-nine public, ungated field guides, sixteen reusable CSV templates, and one source-dated RMM pricing dataset for managed service providers and lean IT teams evaluating, pricing, testing, deploying, inventorying, operating, securing, migrating, onboarding, and offboarding remote monitoring and management software.
+> Thirty-one public, ungated field guides, sixteen reusable CSV templates, and one source-dated RMM pricing dataset for managed service providers and lean IT teams evaluating, pricing, testing, deploying, inventorying, operating, securing, migrating, onboarding, and offboarding remote monitoring and management software.
 
 This external library is maintained by the Nizlo team. Nizlo is a Windows-first RMM and IT-management platform. The resources are vendor-neutral, but they are vendor-created and do not represent independent research or an endorsement of Nizlo.
 
@@ -21,6 +21,7 @@ This external library is maintained by the Nizlo team. Nizlo is a Windows-first 
 - [RMM vs. Microsoft Intune](https://nizlo.com/guides/rmm-vs-intune): Comparison of multi-tenant operations, monitoring, scripts, patching, application management, remote support, and cost.
 - [Windows patch policy template for MSPs](https://nizlo.com/guides/windows-patch-policy-template): Vendor-neutral policy template for scope, deployment rings, deadlines, restart controls, exceptions, emergency changes, rollback, evidence, and review.
 - [Windows patch policy Markdown download](https://nizlo.com/guides/windows-patch-policy-template/template.md): No-gate reusable policy document with decision tables, deployment rings, exception fields, cycle evidence, and approvals.
+- [Windows patch policy review checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-policy-review-checklist.html): Twenty-four practical controls for authority, scope, update classes, rings, deadlines, restarts, exceptions, rollback, evidence, and policy review.
 - [RMM change-window and rollback-plan template](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-change-window-rollback-plan.html): Field definitions and a public 26-control CSV for reversible RMM changes.
 - [RMM incident response runbook template](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-incident-response-runbook-template.html): Field guidance and a public 30-control CSV for RMM security incident readiness, containment, investigation, recovery, and improvement.
 - [RMM incident response checklist](https://nizlo.com/guides/rmm-incident-response-checklist): Eight-stage guide covering preparation, declaration, scope, containment, evidence, recovery, reconciliation, and corrective action.

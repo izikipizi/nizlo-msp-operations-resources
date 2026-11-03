@@ -13,6 +13,16 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>Windows patch policy review checklist for MSPs</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-policy-review-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-policy-review-checklist.html" />
+    <updated>2026-11-03T00:00:00Z</updated>
+    <category term="patch-management" />
+    <category term="policy" />
+    <category term="checklist" />
+    <summary>Review a Windows patch policy against 24 practical controls for scope, rings, deadlines, restarts, exceptions, rollback, evidence, ownership, and approval.</summary>
+  </entry>
+  <entry>
     <title>Free RMM calculators for migration cost, pricing, and ROI</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-calculators.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-calculators.html" />
