@@ -295,6 +295,18 @@
       "account_required": false
     },
     {
+      "id": "rmm-vs-mdm",
+      "title": "RMM vs MDM: 6 Differences and When You Need Both",
+      "category": "selection",
+      "url": "https://nizlo.com/guides/rmm-vs-mdm",
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
       "id": "rmm-vs-intune",
       "title": "RMM vs. Microsoft Intune for MSPs",
       "category": "selection",

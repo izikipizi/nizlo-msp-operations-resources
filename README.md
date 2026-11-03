@@ -27,6 +27,7 @@ Define buying criteria before vendor demos with the [RMM requirements matrix and
 | [RMM for a new MSP](https://nizlo.com/guides/rmm-for-new-msps) | Choosing a first platform without overcomplicating ticketing, endpoint control, pricing, or exit planning |
 | [RMM for small IT teams](https://nizlo.com/guides/rmm-for-small-it-teams) | Deciding whether an internal IT team needs RMM, where Intune fits, and what to test in a safe pilot |
 | [RMM pricing 2026 calculator](https://nizlo.com/guides/rmm-pricing-models?utm_source=github&utm_medium=resource&utm_campaign=rmm_pricing_models) | Calculating costs for 10, 25, 50, 100, or 500 endpoints and comparing per-device, per-technician, flat monthly, add-on, and annual totals |
+| [RMM vs MDM: 6 differences and when you need both](https://nizlo.com/guides/rmm-vs-mdm?utm_source=github&utm_medium=resource&utm_campaign=rmm_vs_mdm) | Separating endpoint operations from managed-device authority across monitoring, patching, enrollment, compliance, applications, security policy, and device retirement |
 | [RMM vs. Microsoft Intune](https://nizlo.com/guides/rmm-vs-intune) | Comparing multi-tenant operations, monitoring, scripting, patching, application management, remote support, and cost |
 
 ## Client lifecycle
