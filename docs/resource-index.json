@@ -651,6 +651,20 @@
       ],
       "access": "public",
       "account_required": false
+    },
+    {
+      "id": "rmm-remote-access-session-authorization-checklist",
+      "title": "RMM remote access session authorization checklist",
+      "category": "security",
+      "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-session-authorization-checklist.html",
+      "canonical_guide": "https://nizlo.com/remote-management?utm_source=github_pages&utm_medium=resource_index&utm_campaign=remote_access_authorization",
+      "controls": 24,
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
     }
   ],
   "datasets": [

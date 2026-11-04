@@ -13,6 +13,16 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>RMM remote access session authorization checklist</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-session-authorization-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-session-authorization-checklist.html" />
+    <updated>2026-11-04T00:00:00Z</updated>
+    <category term="remote-access" />
+    <category term="security" />
+    <category term="checklist" />
+    <summary>Use 24 controls to define authority, technician identity, attended and unattended session approval, scoped work, audit evidence, revocation, and review.</summary>
+  </entry>
+  <entry>
     <title>RMM API integration preflight checklist</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-api-integration-preflight-checklist.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-api-integration-preflight-checklist.html" />

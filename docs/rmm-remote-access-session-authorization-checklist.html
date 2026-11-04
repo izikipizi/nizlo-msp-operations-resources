@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RMM Remote Access Session Authorization Checklist | Nizlo</title>
+    <meta name="description" content="Use 24 vendor-neutral checks to authorize, conduct, audit, revoke, and review attended or unattended RMM remote-access sessions." />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <link rel="canonical" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-session-authorization-checklist.html" />
+    <link rel="alternate" type="application/atom+xml" title="Nizlo MSP Operations Resources" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="RMM Remote Access Session Authorization Checklist" />
+    <meta property="og:description" content="Twenty-four practical controls for proving who may open a remote session, why, under what scope, and with what evidence." />
+    <meta property="og:url" content="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-session-authorization-checklist.html" />
+    <meta property="og:image" content="https://nizlo.com/opengraph-image" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <style>
+      :root { color-scheme:dark; --bg:#07171d; --panel:#0d242d; --line:#23414c; --text:#ecf8fa; --muted:#aac0c7; --teal:#22d3c5; --soft:#8af1e8; }
+      * { box-sizing:border-box; }
+      body { margin:0; font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; background:var(--bg); color:var(--text); line-height:1.65; }
+      a { color:var(--soft); }
+      a:focus-visible { outline:3px solid var(--soft); outline-offset:4px; }
+      .wrap { width:min(1100px,calc(100% - 2rem)); margin:auto; }
+      header { border-bottom:1px solid var(--line); }
+      nav { display:flex; justify-content:space-between; gap:1rem; align-items:center; padding:1rem 0; }
+      .brand { font-weight:900; letter-spacing:.08em; text-decoration:none; color:var(--text); }
+      .hero { padding:5rem 0 3rem; }
+      .eyebrow { color:var(--teal); font-size:.78rem; font-weight:900; letter-spacing:.13em; text-transform:uppercase; }
+      h1 { max-width:18ch; margin:.75rem 0 1.1rem; font-size:clamp(2.6rem,7vw,5.2rem); line-height:.98; letter-spacing:-.055em; }
+      h2 { margin-top:0; font-size:1.55rem; }
+      .lede { max-width:78ch; color:var(--muted); font-size:1.12rem; }
+      .actions { display:flex; flex-wrap:wrap; gap:.8rem; margin-top:1.6rem; }
+      .button { display:inline-block; padding:.8rem 1rem; border:1px solid var(--line); border-radius:.7rem; font-weight:800; text-decoration:none; }
+      .button-primary { background:var(--teal); color:#052128; border-color:var(--teal); }
+      .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; padding:1rem 0 4rem; }
+      section.card { padding:1.4rem; border:1px solid var(--line); border-radius:1rem; background:var(--panel); }
+      ol { margin:0; padding-left:1.35rem; }
+      li + li { margin-top:.55rem; }
+      .use { margin:0 0 4rem; padding:1.5rem; border-left:4px solid var(--teal); background:var(--panel); }
+      .disclosure { margin:0 0 4rem; padding:1.3rem 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line); color:var(--muted); }
+      footer { padding:2rem 0 3rem; border-top:1px solid var(--line); color:var(--muted); }
+      @media (max-width:760px) { .hero{padding-top:3rem}.grid{grid-template-columns:1fr}nav{align-items:flex-start;flex-direction:column} }
+      @media print { :root{color-scheme:light}body{background:#fff;color:#111}header,.actions,footer{display:none}.hero{padding:1rem 0}.card,.use{break-inside:avoid;background:#fff!important;border-color:#999!important}.lede,.disclosure{color:#333!important} }
+    </style>
+    <script type="application/ld+json">
+      {
+        "@context":"https://schema.org",
+        "@type":"TechArticle",
+        "headline":"RMM Remote Access Session Authorization Checklist",
+        "description":"A vendor-neutral 24-control checklist for authorizing, conducting, auditing, revoking, and reviewing RMM remote-access sessions.",
+        "datePublished":"2026-11-04",
+        "dateModified":"2026-11-04",
+        "author":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},
+        "publisher":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},
+        "mainEntityOfPage":"https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-session-authorization-checklist.html",
+        "keywords":["RMM remote access policy","remote support authorization checklist","unattended access policy","MSP remote session audit","remote desktop security checklist"],
+        "license":"https://creativecommons.org/licenses/by/4.0/"
+      }
+    </script>
+  </head>
+  <body>
+    <header><nav class="wrap"><a class="brand" href="./">NIZLO · MSP OPERATIONS RESOURCES</a><a href="https://github.com/izikipizi/nizlo-msp-operations-resources">View source</a></nav></header>
+    <main class="wrap">
+      <section class="hero">
+        <span class="eyebrow">Vendor-neutral remote support governance</span>
+        <h1>Prove every remote session was authorized.</h1>
+        <p class="lede">Use these 24 checks to define who may connect, which endpoints they may reach, when attended or unattended access is permitted, what the technician may do, and which evidence must survive after the session closes. Adapt the checklist to customer agreements, applicable law, product capabilities, and the risk of the managed system.</p>
+        <div class="actions">
+          <a class="button button-primary" href="https://nizlo.com/remote-management?utm_source=github_pages&amp;utm_medium=resource&amp;utm_campaign=remote_access_authorization">Evaluate RMM remote access</a>
+          <a class="button" href="rmm-technician-access-review-matrix.html">Review technician permissions</a>
+          <a class="button" href="rmm-incident-response-runbook-template.html">Prepare an incident runbook</a>
+          <a class="button" href="javascript:window.print()">Print this checklist</a>
+        </div>
+      </section>
+
+      <div class="grid" aria-label="RMM remote access authorization controls">
+        <section class="card"><h2>1. Establish authority</h2><ol>
+          <li>Document the customer agreement, policy, ticket, or named approver that permits remote support for the endpoint class.</li>
+          <li>Separate attended support, approved unattended administration, emergency access, and prohibited access instead of using one global rule.</li>
+          <li>Define which customers, sites, device groups, operating systems, and critical systems require additional approval or are out of scope.</li>
+          <li>Record the legal, privacy, notification, consent, recording, and data-retention requirements that apply to the session.</li>
+        </ol></section>
+        <section class="card"><h2>2. Verify the technician</h2><ol start="5">
+          <li>Require a named technician identity, strong authentication, and an approved administrative device before granting remote-control rights.</li>
+          <li>Limit access by role, customer, site, device, capability, support window, and expiration rather than relying on broad team membership.</li>
+          <li>Review employment status, business justification, last use, temporary elevation, exceptions, and the next access-review date.</li>
+          <li>Prohibit shared credentials, unexplained persistent sessions, unmanaged technician devices, and access that cannot be attributed to one person.</li>
+        </ol></section>
+        <section class="card"><h2>3. Authorize the session</h2><ol start="9">
+          <li>Bind the session request to a customer, endpoint, issue, ticket, requester, expected work, support window, and approving authority.</li>
+          <li>Confirm the endpoint identity and tenant placement before connecting; stop when hostnames, users, serials, sites, or customer context conflict.</li>
+          <li>Use customer notice or interactive consent when required, and record the approved unattended-access exception when consent is not interactive.</li>
+          <li>Choose the least-capable mode that can complete the work, such as view-only, terminal, file transfer, background tools, or full remote control.</li>
+        </ol></section>
+        <section class="card"><h2>4. Control the work</h2><ol start="13">
+          <li>Display the customer and endpoint identity throughout the session and warn before crossing into a different tenant, device, or privilege boundary.</li>
+          <li>Set idle, maximum-duration, reconnect, clipboard, file-transfer, recording, and local-input rules appropriate to the endpoint risk.</li>
+          <li>Require separate approval for destructive commands, credential changes, security-control changes, bulk actions, or access to regulated data.</li>
+          <li>Prevent hidden persistence, unauthorized account creation, unexplained tool installation, or transfer of customer data outside the approved workflow.</li>
+        </ol></section>
+        <section class="card"><h2>5. Retain evidence</h2><ol start="17">
+          <li>Record the technician, approver, customer, endpoint, session ID, source context, start and end time, access mode, and final outcome.</li>
+          <li>Link the ticket, approval, commands or changes, file transfers, recording or audit reference, customer communication, and follow-up work.</li>
+          <li>Use synchronized time and durable audit storage so the session can be reconstructed without relying on one technician's notes.</li>
+          <li>Alert on sessions outside approved windows, unknown technicians, high-risk endpoints, missing tickets, failed authentication, or policy bypass.</li>
+        </ol></section>
+        <section class="card"><h2>6. Close and review</h2><ol start="21">
+          <li>End the session explicitly, confirm no hidden reconnect or unattended process remains, and verify the endpoint returns to the intended state.</li>
+          <li>Revoke temporary elevation, one-time approvals, shared links, transferred secrets, or emergency access immediately after the work.</li>
+          <li>Escalate unexpected access, unexplained commands, data exposure, policy bypass, or missing evidence through the incident-response process.</li>
+          <li>Review exceptions, false positives, customer complaints, abandoned sessions, and repeated work to improve policy, roles, training, and controls.</li>
+        </ol></section>
+      </div>
+
+      <section class="use"><h2>Minimum session record</h2><p>A defensible record identifies the actor, approver, customer, endpoint, reason, ticket, access mode, start and end time, material actions, file transfers, outcome, evidence reference, and any exception or follow-up owner. A tool showing only “connected” and “disconnected” is not enough to prove authorization or explain what happened.</p></section>
+      <aside class="disclosure"><strong>Relationship disclosure:</strong> this checklist is maintained by the Nizlo team. Nizlo is a Windows-first RMM and IT-management platform. The checklist is vendor-neutral and does not claim that Nizlo—or any other product—passes every control.</aside>
+    </main>
+    <footer><div class="wrap">Maintained by Nizlo · Updated November 4, 2026 · <a href="./">Browse all MSP operations resources</a></div></footer>
+  </body>
+</html>

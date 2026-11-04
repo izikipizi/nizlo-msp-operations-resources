@@ -53,6 +53,7 @@ Validate an integration before it can touch production with the [RMM API integra
 | Resource | Use it when |
 | --- | --- |
 | [RMM automation safety checklist](https://nizlo.com/guides/rmm-automation-safety-checklist) | Reviewing targeting, privilege, rollout, rollback, evidence, and failure handling |
+| [RMM remote access session authorization checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-session-authorization-checklist.html) | Proving who may connect, why, to which endpoint, under what scope, and with what session evidence across attended and unattended support |
 | [RMM alert-tuning checklist](https://nizlo.com/guides/rmm-alert-tuning-checklist) | Turning noisy endpoint signals into owned, actionable service work |
 | [RMM alert noise reduction checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-noise-reduction-checklist.html) | Reviewing baselines, thresholds, confirmation, deduplication, routing, suppression, ownership, evidence, and tuning outcomes against 24 practical controls |
 | [RMM alert escalation matrix](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-escalation-matrix-template.html) | Assigning severity, owners, response targets, escalation paths, customer notification, evidence, suppression, and closure to alert rules |
@@ -77,7 +78,7 @@ The [public RMM pricing dataset](https://izikipizi.github.io/nizlo-msp-operation
 
 ## Citation and preservation
 
-Citation metadata is available in [`CITATION.cff`](CITATION.cff) and on the public [citation and preservation page](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html). The current collection is released as `v1.44.0`; Software Heritage preserves the prior `v1.42.0` release and its repository history as snapshot [`swh:1:snp:3cf565acfcb846034803426b0883b572dc2a4a66`](https://archive.softwareheritage.org/browse/snapshot/3cf565acfcb846034803426b0883b572dc2a4a66/). The archive is a preservation service, not an endorsement of Nizlo or these resources.
+Citation metadata is available in [`CITATION.cff`](CITATION.cff) and on the public [citation and preservation page](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html). The current collection is released as `v1.45.0`; Software Heritage preserves the prior `v1.42.0` release and its repository history as snapshot [`swh:1:snp:3cf565acfcb846034803426b0883b572dc2a4a66`](https://archive.softwareheritage.org/browse/snapshot/3cf565acfcb846034803426b0883b572dc2a4a66/). The archive is a preservation service, not an endorsement of Nizlo or these resources.
 
 ## Reusable field templates
 
