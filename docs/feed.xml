@@ -13,6 +13,16 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>RMM API integration preflight checklist</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-api-integration-preflight-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-api-integration-preflight-checklist.html" />
+    <updated>2026-11-04T00:00:00Z</updated>
+    <category term="integration" />
+    <category term="security" />
+    <category term="checklist" />
+    <summary>Run 18 evidence checks for integration identity, least privilege, tenant isolation, pagination, rate limits, retries, idempotency, webhooks, audit evidence, rollback, monitoring, and production ownership.</summary>
+  </entry>
+  <entry>
     <title>RMM free trial: no credit card required</title>
     <id>https://nizlo.com/solutions/rmm-free-trial</id>
     <link href="https://nizlo.com/solutions/rmm-free-trial?utm_source=atom&amp;utm_medium=resource_feed&amp;utm_campaign=rmm_free_trial" />

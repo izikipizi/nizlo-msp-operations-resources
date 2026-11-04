@@ -10,6 +10,8 @@ Measure alert fatigue with the [RMM alert-noise baseline worksheet](https://izik
 
 Define buying criteria before vendor demos with the [RMM requirements matrix and RFP worksheet](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-requirements-matrix-template.html), a public 32-requirement, 18-field CSV for priorities, evidence requests, pilot tests, acceptance criteria, owned gaps, remediation commitments, and decisions.
 
+Validate an integration before it can touch production with the [RMM API integration preflight checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-api-integration-preflight-checklist.html), an ungated 18-check review for identity, tenant isolation, pagination, rate limits, retry safety, webhooks, audit evidence, rollback, and production ownership.
+
 ## RMM selection and change
 
 | Resource | Use it when |
@@ -17,6 +19,7 @@ Define buying criteria before vendor demos with the [RMM requirements matrix and
 | [RMM evaluation checklist](https://nizlo.com/guides/rmm-evaluation-checklist) | Comparing products through evidence rather than feature-list claims |
 | [RMM vendor due-diligence checklist](https://nizlo.com/guides/rmm-vendor-due-diligence) | Comparing security, support, pilot evidence, pricing, commercial terms, and exit readiness |
 | [RMM vendor due-diligence evidence register](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vendor-due-diligence-evidence-register.html) | Recording requested evidence, findings, risk, remediation, exceptions, and renewal review across an RMM vendor assessment |
+| [RMM API integration preflight checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-api-integration-preflight-checklist.html) | Proving identity, least privilege, tenant isolation, pagination, rate limits, write safety, webhook validation, audit evidence, rollback, and ownership before production |
 | [RMM cost calculator and pricing dataset](https://nizlo.com/guides/cheapest-rmm-for-small-msps) | Comparing fourteen source-dated RMM price disclosures, including public rates, free tiers, ranges, source-available software, and quote-only vendors |
 | [RMM quote comparison worksheet](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html) | Normalizing actual vendor proposals across fees, minimums, included technicians and endpoints, add-ons, contract terms, renewal uplifts, and exit costs |
 | [RMM migration cost and break-even calculator](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-cost-calculator.html) | Estimating migration labor, implementation fees, platform overlap, recurring cost change, first-year impact, and break-even with your own assumptions |
