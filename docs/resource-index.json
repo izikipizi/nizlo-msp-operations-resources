@@ -244,7 +244,10 @@
       "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-policy-review-checklist.html",
       "canonical_guide": "https://nizlo.com/guides/windows-patch-policy-template",
       "controls": 24,
-      "audience": ["MSP", "IT team"],
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
       "access": "public",
       "account_required": false
     },
@@ -715,6 +718,19 @@
       "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-daily-weekly-monthly-maintenance-checklist.csv",
       "format": "text/csv",
       "controls": 28,
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "msp-sla-response-time-template",
+      "title": "MSP SLA response time template",
+      "category": "service-delivery",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/msp-sla-response-time-template.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-sla-response-time-template.csv",
+      "canonical_guide": "https://nizlo.com/guides/msp-sla-response-time-template",
+      "format": "text/csv",
+      "examples": 4,
+      "fields": 20,
       "access": "public",
       "account_required": false
     }

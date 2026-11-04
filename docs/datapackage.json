@@ -6,7 +6,7 @@
   "title": "Nizlo RMM Operations Resources",
   "description": "Nineteen public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
-  "version": "1.50.0",
+  "version": "1.51.0",
   "created": "2026-11-01",
   "contributors": [
     {
@@ -63,11 +63,14 @@
     "RMM vendor due diligence",
     "RMM vendor assessment",
     "MSP third-party risk",
-    "RMM evidence register"
-    ,"RMM quote comparison"
-    ,"RMM pricing worksheet"
-    ,"RMM requirements matrix"
-    ,"RMM RFP template"
+    "RMM evidence register",
+    "RMM quote comparison",
+    "RMM pricing worksheet",
+    "RMM requirements matrix",
+    "RMM RFP template",
+    "MSP SLA",
+    "response time",
+    "service restoration"
   ],
   "resources": [
     {
@@ -83,24 +86,78 @@
       "hash": "sha256:9d57906b6bb8658bc33121de9242ce6704f79885ed0c68e7780392b0941201e0",
       "schema": {
         "fields": [
-          { "name": "requirement_id", "type": "string" },
-          { "name": "category", "type": "string" },
-          { "name": "requirement", "type": "string" },
-          { "name": "priority", "type": "string" },
-          { "name": "business_reason", "type": "string" },
-          { "name": "current_process", "type": "string" },
-          { "name": "vendor_response", "type": "string" },
-          { "name": "evidence_source", "type": "string" },
-          { "name": "pilot_test", "type": "string" },
-          { "name": "acceptance_criteria", "type": "string" },
-          { "name": "security_or_compliance_impact", "type": "string" },
-          { "name": "integration_or_dependency", "type": "string" },
-          { "name": "implementation_owner", "type": "string" },
-          { "name": "estimated_effort", "type": "string" },
-          { "name": "gap_or_exception", "type": "string" },
-          { "name": "remediation_commitment", "type": "string" },
-          { "name": "target_date", "type": "date" },
-          { "name": "decision_notes", "type": "string" }
+          {
+            "name": "requirement_id",
+            "type": "string"
+          },
+          {
+            "name": "category",
+            "type": "string"
+          },
+          {
+            "name": "requirement",
+            "type": "string"
+          },
+          {
+            "name": "priority",
+            "type": "string"
+          },
+          {
+            "name": "business_reason",
+            "type": "string"
+          },
+          {
+            "name": "current_process",
+            "type": "string"
+          },
+          {
+            "name": "vendor_response",
+            "type": "string"
+          },
+          {
+            "name": "evidence_source",
+            "type": "string"
+          },
+          {
+            "name": "pilot_test",
+            "type": "string"
+          },
+          {
+            "name": "acceptance_criteria",
+            "type": "string"
+          },
+          {
+            "name": "security_or_compliance_impact",
+            "type": "string"
+          },
+          {
+            "name": "integration_or_dependency",
+            "type": "string"
+          },
+          {
+            "name": "implementation_owner",
+            "type": "string"
+          },
+          {
+            "name": "estimated_effort",
+            "type": "string"
+          },
+          {
+            "name": "gap_or_exception",
+            "type": "string"
+          },
+          {
+            "name": "remediation_commitment",
+            "type": "string"
+          },
+          {
+            "name": "target_date",
+            "type": "date"
+          },
+          {
+            "name": "decision_notes",
+            "type": "string"
+          }
         ],
         "primaryKey": "requirement_id"
       }
@@ -118,29 +175,98 @@
       "hash": "sha256:f0ab137bc0c6f3eb36f0bffb7fa3e60b981fb8ec211957be918299d7c5dc54ca",
       "schema": {
         "fields": [
-          { "name": "measurement_id", "type": "string" },
-          { "name": "client_or_site", "type": "string" },
-          { "name": "alert_rule_or_signal", "type": "string" },
-          { "name": "device_scope", "type": "string" },
-          { "name": "baseline_start_utc", "type": "datetime" },
-          { "name": "baseline_end_utc", "type": "datetime" },
-          { "name": "total_events", "type": "integer" },
-          { "name": "unique_incidents", "type": "integer" },
-          { "name": "duplicate_events", "type": "integer" },
-          { "name": "false_positive_incidents", "type": "integer" },
-          { "name": "actionable_incidents", "type": "integer" },
-          { "name": "after_hours_events", "type": "integer" },
-          { "name": "median_ack_minutes", "type": "number" },
-          { "name": "median_resolution_minutes", "type": "number" },
-          { "name": "current_owner", "type": "string" },
-          { "name": "suppression_or_deduplication_condition", "type": "string" },
-          { "name": "proposed_tuning_action", "type": "string" },
-          { "name": "expected_observable_result", "type": "string" },
-          { "name": "review_owner", "type": "string" },
-          { "name": "review_date_utc", "type": "datetime" },
-          { "name": "status", "type": "string" },
-          { "name": "evidence_link", "type": "string" },
-          { "name": "notes", "type": "string" }
+          {
+            "name": "measurement_id",
+            "type": "string"
+          },
+          {
+            "name": "client_or_site",
+            "type": "string"
+          },
+          {
+            "name": "alert_rule_or_signal",
+            "type": "string"
+          },
+          {
+            "name": "device_scope",
+            "type": "string"
+          },
+          {
+            "name": "baseline_start_utc",
+            "type": "datetime"
+          },
+          {
+            "name": "baseline_end_utc",
+            "type": "datetime"
+          },
+          {
+            "name": "total_events",
+            "type": "integer"
+          },
+          {
+            "name": "unique_incidents",
+            "type": "integer"
+          },
+          {
+            "name": "duplicate_events",
+            "type": "integer"
+          },
+          {
+            "name": "false_positive_incidents",
+            "type": "integer"
+          },
+          {
+            "name": "actionable_incidents",
+            "type": "integer"
+          },
+          {
+            "name": "after_hours_events",
+            "type": "integer"
+          },
+          {
+            "name": "median_ack_minutes",
+            "type": "number"
+          },
+          {
+            "name": "median_resolution_minutes",
+            "type": "number"
+          },
+          {
+            "name": "current_owner",
+            "type": "string"
+          },
+          {
+            "name": "suppression_or_deduplication_condition",
+            "type": "string"
+          },
+          {
+            "name": "proposed_tuning_action",
+            "type": "string"
+          },
+          {
+            "name": "expected_observable_result",
+            "type": "string"
+          },
+          {
+            "name": "review_owner",
+            "type": "string"
+          },
+          {
+            "name": "review_date_utc",
+            "type": "datetime"
+          },
+          {
+            "name": "status",
+            "type": "string"
+          },
+          {
+            "name": "evidence_link",
+            "type": "string"
+          },
+          {
+            "name": "notes",
+            "type": "string"
+          }
         ],
         "primaryKey": "measurement_id"
       }
@@ -1414,32 +1540,110 @@
       "hash": "sha256:6ba841345d852426c0e52b343ec1b76e913a66b35dde1754490cbe17bd1311f4",
       "schema": {
         "fields": [
-          { "name": "record_id", "type": "string" },
-          { "name": "vendor", "type": "string" },
-          { "name": "quote_date", "type": "date" },
-          { "name": "currency", "type": "string" },
-          { "name": "billing_basis", "type": "string" },
-          { "name": "contract_term_months", "type": "integer" },
-          { "name": "minimum_spend_or_seats", "type": "string" },
-          { "name": "base_platform_fee", "type": "number" },
-          { "name": "included_technicians", "type": "integer" },
-          { "name": "included_endpoints", "type": "integer" },
-          { "name": "additional_technician_fee", "type": "number" },
-          { "name": "additional_endpoint_fee", "type": "number" },
-          { "name": "mandatory_addons_monthly", "type": "number" },
-          { "name": "optional_addons_monthly", "type": "number" },
-          { "name": "implementation_fee", "type": "number" },
-          { "name": "training_fee", "type": "number" },
-          { "name": "estimated_monthly_total", "type": "number" },
-          { "name": "estimated_year_one_total", "type": "number" },
-          { "name": "renewal_uplift_or_cap", "type": "string" },
-          { "name": "early_termination_terms", "type": "string" },
-          { "name": "data_export_or_exit_cost", "type": "string" },
-          { "name": "source_or_quote_reference", "type": "string" },
-          { "name": "assumptions", "type": "string" },
-          { "name": "decision_owner", "type": "string" },
-          { "name": "status", "type": "string" },
-          { "name": "notes", "type": "string" }
+          {
+            "name": "record_id",
+            "type": "string"
+          },
+          {
+            "name": "vendor",
+            "type": "string"
+          },
+          {
+            "name": "quote_date",
+            "type": "date"
+          },
+          {
+            "name": "currency",
+            "type": "string"
+          },
+          {
+            "name": "billing_basis",
+            "type": "string"
+          },
+          {
+            "name": "contract_term_months",
+            "type": "integer"
+          },
+          {
+            "name": "minimum_spend_or_seats",
+            "type": "string"
+          },
+          {
+            "name": "base_platform_fee",
+            "type": "number"
+          },
+          {
+            "name": "included_technicians",
+            "type": "integer"
+          },
+          {
+            "name": "included_endpoints",
+            "type": "integer"
+          },
+          {
+            "name": "additional_technician_fee",
+            "type": "number"
+          },
+          {
+            "name": "additional_endpoint_fee",
+            "type": "number"
+          },
+          {
+            "name": "mandatory_addons_monthly",
+            "type": "number"
+          },
+          {
+            "name": "optional_addons_monthly",
+            "type": "number"
+          },
+          {
+            "name": "implementation_fee",
+            "type": "number"
+          },
+          {
+            "name": "training_fee",
+            "type": "number"
+          },
+          {
+            "name": "estimated_monthly_total",
+            "type": "number"
+          },
+          {
+            "name": "estimated_year_one_total",
+            "type": "number"
+          },
+          {
+            "name": "renewal_uplift_or_cap",
+            "type": "string"
+          },
+          {
+            "name": "early_termination_terms",
+            "type": "string"
+          },
+          {
+            "name": "data_export_or_exit_cost",
+            "type": "string"
+          },
+          {
+            "name": "source_or_quote_reference",
+            "type": "string"
+          },
+          {
+            "name": "assumptions",
+            "type": "string"
+          },
+          {
+            "name": "decision_owner",
+            "type": "string"
+          },
+          {
+            "name": "status",
+            "type": "string"
+          },
+          {
+            "name": "notes",
+            "type": "string"
+          }
         ],
         "primaryKey": "record_id"
       }
@@ -1527,6 +1731,103 @@
           }
         ],
         "primaryKey": "control_id"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "msp-sla-response-time-template",
+      "title": "MSP SLA response time template",
+      "description": "Four example priority rows and 20 fields for defining response, restoration, resolution, clock rules, responsibilities, escalation, exclusions, evidence, and approval. Time targets remain placeholders.",
+      "path": "templates/msp-sla-response-time-template.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 4865,
+      "hash": "sha256:0a77454d91b0273a4b6de74125532e117082517e9823158854cb5e823a0fdc49",
+      "schema": {
+        "fields": [
+          {
+            "name": "priority",
+            "type": "string"
+          },
+          {
+            "name": "business_impact",
+            "type": "string"
+          },
+          {
+            "name": "urgency",
+            "type": "string"
+          },
+          {
+            "name": "examples",
+            "type": "string"
+          },
+          {
+            "name": "coverage_window",
+            "type": "string"
+          },
+          {
+            "name": "initial_response_target",
+            "type": "string"
+          },
+          {
+            "name": "restoration_target",
+            "type": "string"
+          },
+          {
+            "name": "resolution_target_or_objective",
+            "type": "string"
+          },
+          {
+            "name": "update_cadence",
+            "type": "string"
+          },
+          {
+            "name": "clock_starts_when",
+            "type": "string"
+          },
+          {
+            "name": "clock_pauses_when",
+            "type": "string"
+          },
+          {
+            "name": "clock_stops_when",
+            "type": "string"
+          },
+          {
+            "name": "customer_responsibilities",
+            "type": "string"
+          },
+          {
+            "name": "provider_owner_role",
+            "type": "string"
+          },
+          {
+            "name": "escalation_role",
+            "type": "string"
+          },
+          {
+            "name": "excluded_or_separately_scoped_work",
+            "type": "string"
+          },
+          {
+            "name": "measurement_source",
+            "type": "string"
+          },
+          {
+            "name": "monthly_review_owner",
+            "type": "string"
+          },
+          {
+            "name": "approved_by",
+            "type": "string"
+          },
+          {
+            "name": "effective_date",
+            "type": "string"
+          }
+        ],
+        "primaryKey": "priority_code"
       }
     }
   ]

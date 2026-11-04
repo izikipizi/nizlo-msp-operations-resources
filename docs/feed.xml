@@ -13,6 +13,17 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>MSP SLA response time template</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/msp-sla-response-time-template.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/msp-sla-response-time-template.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-sla-response-time-template.csv" />
+    <updated>2026-11-04T00:00:00Z</updated>
+    <category term="service-delivery" />
+    <category term="SLA" />
+    <category term="template" />
+    <summary>Define response, restoration, and resolution separately with explicit clock rules, responsibilities, escalation, exclusions, evidence, and approval.</summary>
+  </entry>
+  <entry>
     <title>RMM first endpoint not connecting? Activation troubleshooting checklist</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html" />
