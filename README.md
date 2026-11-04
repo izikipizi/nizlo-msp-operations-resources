@@ -25,6 +25,7 @@ Define buying criteria before vendor demos with the [RMM requirements matrix and
 | [RMM migration checklist](https://nizlo.com/guides/rmm-migration-checklist) | Planning discovery, pilot, coexistence, cutover, rollback, and cleanup |
 | [Mac RMM & Windows RMM mixed-fleet checklist](https://nizlo.com/guides/rmm-for-mac-and-windows?utm_source=github&utm_medium=resource&utm_campaign=mac_windows_rmm) | Evaluating enrollment, inventory, alerts, automation, updates, remote access, and removal across a mixed fleet |
 | [RMM for a new MSP](https://nizlo.com/guides/rmm-for-new-msps) | Choosing a first platform without overcomplicating ticketing, endpoint control, pricing, or exit planning |
+| [RMM for computer repair shops](https://nizlo.com/guides/rmm-for-computer-repair-shops?utm_source=github&utm_medium=resource&utm_campaign=computer_repair_rmm) | Turning break/fix work into a bounded managed-service offer with defined scope, pricing, first-endpoint acceptance, and escalation rules |
 | [RMM for small IT teams](https://nizlo.com/guides/rmm-for-small-it-teams) | Deciding whether an internal IT team needs RMM, where Intune fits, and what to test in a safe pilot |
 | [RMM pricing 2026 calculator](https://nizlo.com/guides/rmm-pricing-models?utm_source=github&utm_medium=resource&utm_campaign=rmm_pricing_models) | Calculating costs for 10, 25, 50, 100, or 500 endpoints and comparing per-device, per-technician, flat monthly, add-on, and annual totals |
 | [RMM software comparison: 54 guides](https://nizlo.com/compare?utm_source=github&utm_medium=resource&utm_campaign=rmm_software_comparison) | Comparing pricing, endpoint coverage, patching, automation, remote support, integrations, deployment, and controlled-pilot fit across head-to-head and alternative guides |
@@ -64,7 +65,7 @@ Define buying criteria before vendor demos with the [RMM requirements matrix and
 
 ## Machine-readable index
 
-[`resource-index.json`](resource-index.json) exposes the same catalogue as structured data for internal portals, documentation tools, and agents. The public [Data Package descriptor](https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json) supplies schemas, byte counts, and SHA-256 hashes for seventeen CSV templates plus the source-dated RMM pricing dataset. The [Atom feed](https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml) makes the catalogue available to feed readers and aggregators, while [`llms.txt`](https://izikipizi.github.io/nizlo-msp-operations-resources/llms.txt) provides a compact answer-engine profile. Each entry points to the maintained canonical guide rather than an unversioned copy.
+[`resource-index.json`](resource-index.json) exposes the same catalogue as structured data for internal portals, documentation tools, and agents. The public [Data Package descriptor](https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json) supplies schemas, byte counts, and SHA-256 hashes for nineteen CSV templates plus the source-dated RMM pricing dataset. The [Atom feed](https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml) makes the catalogue available to feed readers and aggregators, while [`llms.txt`](https://izikipizi.github.io/nizlo-msp-operations-resources/llms.txt) provides a compact answer-engine profile. Each entry points to the maintained canonical guide rather than an unversioned copy.
 
 ## Source-dated pricing dataset
 
@@ -72,7 +73,7 @@ The [public RMM pricing dataset](https://izikipizi.github.io/nizlo-msp-operation
 
 ## Citation and preservation
 
-Citation metadata is available in [`CITATION.cff`](CITATION.cff) and on the public [citation and preservation page](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html). Software Heritage preserves release `v1.42.0` and its repository history as snapshot [`swh:1:snp:3cf565acfcb846034803426b0883b572dc2a4a66`](https://archive.softwareheritage.org/browse/snapshot/3cf565acfcb846034803426b0883b572dc2a4a66/). The archive is a preservation service, not an endorsement of Nizlo or these resources.
+Citation metadata is available in [`CITATION.cff`](CITATION.cff) and on the public [citation and preservation page](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html). The current collection is released as `v1.43.0`; Software Heritage preserves the prior `v1.42.0` release and its repository history as snapshot [`swh:1:snp:3cf565acfcb846034803426b0883b572dc2a4a66`](https://archive.softwareheritage.org/browse/snapshot/3cf565acfcb846034803426b0883b572dc2a4a66/). The archive is a preservation service, not an endorsement of Nizlo or these resources.
 
 ## Reusable field templates
 
