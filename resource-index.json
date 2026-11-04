@@ -392,6 +392,76 @@
       "controls": 18,
       "access": "public",
       "account_required": false
+    },
+    {
+      "id": "windows-patch-failure-triage-checklist",
+      "title": "Windows patch failure triage checklist for MSPs",
+      "category": "patch-management",
+      "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-failure-triage-checklist.html",
+      "canonical_guide": "https://nizlo.com/guides/windows-patch-management-checklist",
+      "controls": 24,
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "msp-backup-restore-test-checklist",
+      "title": "MSP backup restore test checklist",
+      "category": "backup",
+      "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/msp-backup-restore-test-checklist.html",
+      "canonical_guide": "https://nizlo.com/backup",
+      "controls": 24,
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "rmm-agent-uninstall-verification-checklist",
+      "title": "RMM agent uninstall verification checklist",
+      "category": "client-lifecycle",
+      "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-uninstall-verification-checklist.html",
+      "canonical_guide": "https://nizlo.com/guides/msp-client-offboarding-checklist",
+      "controls": 24,
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "rmm-remote-access-session-authorization-checklist",
+      "title": "RMM remote access session authorization checklist",
+      "category": "security",
+      "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-session-authorization-checklist.html",
+      "canonical_guide": "https://nizlo.com/remote-management?utm_source=resource_index&utm_medium=resource&utm_campaign=remote_access_authorization",
+      "controls": 24,
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "rmm-vs-remote-desktop-software",
+      "title": "RMM vs remote desktop software: 8 buyer checks",
+      "category": "selection",
+      "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-remote-desktop-software.html",
+      "canonical_guide": "https://nizlo.com/remote-management?utm_source=resource_index&utm_medium=resource&utm_campaign=rmm_vs_remote_desktop",
+      "controls": 8,
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
     }
   ],
   "templates": [
@@ -607,62 +677,6 @@
       "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-daily-weekly-monthly-maintenance-checklist.csv",
       "format": "text/csv",
       "controls": 28,
-      "access": "public",
-      "account_required": false
-    },
-    {
-      "id": "windows-patch-failure-triage-checklist",
-      "title": "Windows patch failure triage checklist for MSPs",
-      "category": "patch-management",
-      "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-failure-triage-checklist.html",
-      "canonical_guide": "https://nizlo.com/guides/windows-patch-management-checklist",
-      "controls": 24,
-      "audience": [
-        "MSP",
-        "IT team"
-      ],
-      "access": "public",
-      "account_required": false
-    },
-    {
-      "id": "msp-backup-restore-test-checklist",
-      "title": "MSP backup restore test checklist",
-      "category": "backup",
-      "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/msp-backup-restore-test-checklist.html",
-      "canonical_guide": "https://nizlo.com/backup",
-      "controls": 24,
-      "audience": [
-        "MSP",
-        "IT team"
-      ],
-      "access": "public",
-      "account_required": false
-    },
-    {
-      "id": "rmm-agent-uninstall-verification-checklist",
-      "title": "RMM agent uninstall verification checklist",
-      "category": "client-lifecycle",
-      "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-uninstall-verification-checklist.html",
-      "canonical_guide": "https://nizlo.com/guides/msp-client-offboarding-checklist",
-      "controls": 24,
-      "audience": [
-        "MSP",
-        "IT team"
-      ],
-      "access": "public",
-      "account_required": false
-    },
-    {
-      "id": "rmm-remote-access-session-authorization-checklist",
-      "title": "RMM remote access session authorization checklist",
-      "category": "security",
-      "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-session-authorization-checklist.html",
-      "canonical_guide": "https://nizlo.com/remote-management?utm_source=resource_index&utm_medium=resource&utm_campaign=remote_access_authorization",
-      "controls": 24,
-      "audience": [
-        "MSP",
-        "IT team"
-      ],
       "access": "public",
       "account_required": false
     }

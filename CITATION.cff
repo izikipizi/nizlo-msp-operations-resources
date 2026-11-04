@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If these MSP operations resources support your work, cite the maintained canonical guide."
 title: "Nizlo MSP Operations Resources"
 type: dataset
-version: "1.45.0"
+version: "1.46.0"
 authors:
   - family-names: "Ecklund"
     given-names: "Kip"
@@ -62,6 +62,8 @@ keywords:
   - "RMM permissions matrix"
   - "technician access review"
   - "RMM remote access policy"
+  - "RMM vs remote desktop software"
+  - "remote desktop comparison"
   - "remote support authorization"
   - "unattended access governance"
   - "least privilege"
