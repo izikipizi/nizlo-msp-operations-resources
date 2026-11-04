@@ -8,6 +8,18 @@
   "updated": "2026-11-04",
   "resources": [
     {
+      "id": "rmm-first-endpoint-activation-troubleshooting",
+      "title": "RMM first-endpoint activation troubleshooting checklist",
+      "category": "deployment",
+      "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html",
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
       "id": "rmm-patch-compliance-calculator",
       "title": "RMM patch-compliance calculator",
       "category": "patch-management",

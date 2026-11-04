@@ -13,6 +13,16 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>RMM first endpoint not connecting? Activation troubleshooting checklist</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html" />
+    <updated>2026-11-04T00:00:00Z</updated>
+    <category term="deployment" />
+    <category term="troubleshooting" />
+    <category term="activation" />
+    <summary>Trace an RMM agent from installer execution through service state, tenant enrollment, outbound connectivity, and verified dashboard telemetry without disabling security controls.</summary>
+  </entry>
+  <entry>
     <title>RMM patch-compliance calculator: show the denominator</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-patch-compliance-calculator.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-patch-compliance-calculator.html" />
