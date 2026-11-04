@@ -377,6 +377,21 @@
       ],
       "access": "public",
       "account_required": false
+    },
+    {
+      "id": "rmm-api-integration-preflight-checklist",
+      "title": "RMM API integration preflight checklist",
+      "category": "integration",
+      "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-api-integration-preflight-checklist.html",
+      "canonical_product_evidence": "https://nizlo.com/rmm-api",
+      "audience": [
+        "MSP",
+        "IT team",
+        "integration developer"
+      ],
+      "controls": 18,
+      "access": "public",
+      "account_required": false
     }
   ],
   "templates": [
