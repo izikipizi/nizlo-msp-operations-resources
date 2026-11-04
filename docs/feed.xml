@@ -13,6 +13,16 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>RMM patch-compliance calculator: show the denominator</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-patch-compliance-calculator.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-patch-compliance-calculator.html" />
+    <updated>2026-11-04T00:00:00Z</updated>
+    <category term="patch-management" />
+    <category term="calculator" />
+    <category term="reporting" />
+    <summary>Calculate strict verified patch compliance from an explicit endpoint denominator while keeping pending reboots, failures, exclusions, stale devices, and unknown states visible.</summary>
+  </entry>
+  <entry>
     <title>RMM vs remote support vs MDM vs endpoint management</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-remote-support-vs-mdm-vs-endpoint-management.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-remote-support-vs-mdm-vs-endpoint-management.html" />

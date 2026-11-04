@@ -63,6 +63,7 @@ Validate an integration before it can touch production with the [RMM API integra
 | [Endpoint exception-management guide](https://nizlo.com/guides/endpoint-exception-management) | Turning failed patches, offline devices, pending reboots, and unknown states into owned work |
 | [Endpoint inventory and CMDB readiness checklist](https://nizlo.com/guides/endpoint-inventory-cmdb-readiness) | Establishing durable identities, source provenance, lifecycle states, and exception handling before a CMDB project |
 | [Windows patch-management checklist](https://nizlo.com/guides/windows-patch-management-checklist) | Defining rings, maintenance windows, approvals, exceptions, rollback, and reporting |
+| [RMM patch-compliance calculator](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-patch-compliance-calculator.html) | Calculating strict verified compliance from an explicit endpoint denominator while keeping pending reboots, failures, exclusions, stale devices, and unknown states visible |
 | [Windows patch failure triage checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-failure-triage-checklist.html) | Preserving failure evidence, scoping fleet risk, diagnosing prerequisites and servicing health, validating remediation, and governing unresolved endpoints |
 | [Windows patch policy template](https://nizlo.com/guides/windows-patch-policy-template) | Turning update defaults into an approved policy for scope, rings, deadlines, reboots, exceptions, rollback, evidence, and review |
 | [Windows patch policy review checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-policy-review-checklist.html) | Reviewing a proposed policy against 24 practical controls before the next patch cycle |
@@ -80,7 +81,7 @@ The [public RMM pricing dataset](https://izikipizi.github.io/nizlo-msp-operation
 
 ## Citation and preservation
 
-Citation metadata is available in [`CITATION.cff`](CITATION.cff) and on the public [citation and preservation page](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html). The current collection is released as `v1.47.0`; Software Heritage preserves the prior `v1.42.0` release and its repository history as snapshot [`swh:1:snp:3cf565acfcb846034803426b0883b572dc2a4a66`](https://archive.softwareheritage.org/browse/snapshot/3cf565acfcb846034803426b0883b572dc2a4a66/). The archive is a preservation service, not an endorsement of Nizlo or these resources.
+Citation metadata is available in [`CITATION.cff`](CITATION.cff) and on the public [citation and preservation page](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html). The current collection is released as `v1.48.0`; Software Heritage preserves the prior `v1.42.0` release and its repository history as snapshot [`swh:1:snp:3cf565acfcb846034803426b0883b572dc2a4a66`](https://archive.softwareheritage.org/browse/snapshot/3cf565acfcb846034803426b0883b572dc2a4a66/). The archive is a preservation service, not an endorsement of Nizlo or these resources.
 
 ## Reusable field templates
 
