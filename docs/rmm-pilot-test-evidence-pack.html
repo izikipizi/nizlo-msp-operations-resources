@@ -19,7 +19,7 @@
   "identifier":"https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-pilot-test-evidence-pack.csv",
   "creator":{"@type":"Person","name":"Kip Ecklund"},
   "publisher":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},
-  "datePublished":"2026-11-02","dateModified":"2026-11-02","version":"1.29.0",
+  "datePublished":"2026-11-02","dateModified":"2026-11-04","version":"1.50.0",
   "license":"https://creativecommons.org/licenses/by/4.0/","isAccessibleForFree":true,
   "measurementTechnique":"Operator-recorded controlled RMM pilot testing with pass criteria, evidence, stop conditions, defects, remediation, retest dates, and explicit rollout decisions.",
   "keywords":["RMM pilot test plan","RMM proof of concept checklist","RMM evaluation template","RMM testing checklist","remote monitoring and management pilot"],
@@ -38,7 +38,7 @@
 <div class="eyebrow">25 tests · 18 evidence fields · Public CSV · No signup</div>
 <h1>Make an RMM pilot produce a decision—not just a demo.</h1>
 <p class="lede">A controlled pilot should prove who can act, which endpoints are affected, what evidence survives failure, and whether the team can stop and remove the tool safely. Use the same test record for every vendor so the rollout decision follows observed results rather than presentation quality.</p>
-<div class="actions"><a class="button primary" href="templates/rmm-pilot-test-evidence-pack.csv" download>Download the evidence pack</a><a class="button" href="https://nizlo.com/guides/rmm-evaluation-checklist">Open the evaluation guide</a></div>
+<div class="actions"><a class="button primary" href="templates/rmm-pilot-test-evidence-pack.csv" download>Download the evidence pack</a><a class="button" href="https://nizlo.com/guides/rmm-evaluation-checklist?utm_source=github_pages&amp;utm_medium=pilot_resource&amp;utm_campaign=rmm_pilot_evidence">Open the evaluation guide</a><a class="button" href="https://nizlo.com/solutions/rmm-free-trial?utm_source=github_pages&amp;utm_medium=pilot_resource&amp;utm_campaign=rmm_pilot_evidence">Run a controlled 14-day trial</a></div>
 <section class="grid" aria-label="RMM pilot test plan phases">
 <article><h2>Plan the boundary</h2><p>Name authorized devices, technicians, customers, dates, prohibited actions, measurable pass criteria, stop conditions, and independent recovery paths.</p></article>
 <article><h2>Prove identity and enrollment</h2><p>Test unique technician and device identities, MFA, revocation, role scope, installer handling, and deterministic tenant placement.</p></article>
@@ -47,9 +47,10 @@
 <article><h2>Test failure and recovery</h2><p>Make offline state, stale data, queued work, cancellation, service interruption, bounded retries, and reconciliation visible before production.</p></article>
 <article><h2>Remove and decide</h2><p>Prove clean uninstall and credential revocation, record residual risk, then choose go, limited go, remediate and retest, or no-go.</p></article>
 </section>
+<aside class="note"><strong>Use one evidence chain from installation to rollout:</strong> <a href="rmm-first-endpoint-activation-troubleshooting-checklist.html">troubleshoot the first endpoint</a>, apply the <a href="rmm-first-endpoint-acceptance-checklist.html">first-endpoint acceptance gates</a>, and reconcile the result with the <a href="rmm-patch-compliance-calculator.html">patch-compliance calculator</a> before expanding the pilot.</aside>
 <aside class="note"><strong>Use authorized lab or noncritical systems:</strong> do not create destructive failures, cross customer boundaries, weaken security controls, or include production-critical targets without written authority and tested recovery.</aside>
 <aside class="note"><strong>Evidence is part of the result:</strong> a pass without a reproducible observation, export, timestamp, or approval record is not decision-quality evidence. Keep secrets and regulated customer data in their approved systems of record.</aside>
 <aside class="note"><strong>Relationship disclosure:</strong> Nizlo, a Windows-first RMM and IT-management platform, maintains this vendor-neutral template. It does not claim that Nizlo or any other product passes every test, and it is not an audit opinion or security certification.</aside>
 </main>
-<footer class="wrap"><span>Maintained by Nizlo · Updated November 2, 2026</span><span><a href="datapackage.json">Data Package</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources/tree/v1.29.0">Version 1.29.0</a></span></footer>
+<footer class="wrap"><span>Maintained by Nizlo · Updated November 4, 2026</span><span><a href="datapackage.json">Data Package</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources/tree/v1.50.0">Version 1.50.0</a></span></footer>
 </body></html>
