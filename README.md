@@ -8,7 +8,7 @@ Start with the [free RMM calculators collection](https://izikipizi.github.io/niz
 
 Measure alert fatigue with the [RMM alert-noise baseline worksheet](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-noise-baseline-worksheet.html), a public 23-field CSV and 14-day before-and-after method for separating raw events, unique incidents, duplicates, false positives, actionable work, after-hours load, acknowledgement time, and resolution time.
 
-Define buying criteria before vendor demos with the [RMM requirements matrix and RFP worksheet](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-requirements-matrix-template.html), a public 32-requirement, 18-field CSV for priorities, evidence requests, pilot tests, acceptance criteria, owned gaps, remediation commitments, and decisions.
+Define buying criteria before vendor demos with the [RMM requirements matrix and RFP worksheet](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-requirements-matrix-template.html), a public 32-requirement, 18-field CSV for priorities, evidence requests, pilot tests, acceptance criteria, owned gaps, remediation commitments, and decisions. The maintained [RMM RFP template and buyer guide](https://nizlo.com/guides/rmm-rfp-template?utm_source=github&utm_medium=resource&utm_campaign=rmm_rfp_template) adds reusable Markdown, an evidence-request structure, and an issue-to-decision workflow.
 
 Validate an integration before it can touch production with the [RMM API integration preflight checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-api-integration-preflight-checklist.html), an ungated 18-check review for identity, tenant isolation, pagination, rate limits, retry safety, webhooks, audit evidence, rollback, and production ownership.
 
@@ -83,7 +83,7 @@ The [public RMM pricing dataset](https://izikipizi.github.io/nizlo-msp-operation
 
 ## Citation and preservation
 
-Citation metadata is available in [`CITATION.cff`](CITATION.cff) and on the public [citation and preservation page](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html). The current collection is released as `v1.51.1`; Software Heritage preserves release `v1.51.0` and its repository history as snapshot [`swh:1:snp:f50352327fa0a3903b95ee22d08f7120fddb8e74`](https://archive.softwareheritage.org/browse/snapshot/f50352327fa0a3903b95ee22d08f7120fddb8e74/). The archive is a preservation service, not an endorsement of Nizlo or these resources.
+Citation metadata is available in [`CITATION.cff`](CITATION.cff) and on the public [citation and preservation page](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html). The current collection is released as `v1.52.0`; Software Heritage preserves release `v1.51.0` and its repository history as snapshot [`swh:1:snp:f50352327fa0a3903b95ee22d08f7120fddb8e74`](https://archive.softwareheritage.org/browse/snapshot/f50352327fa0a3903b95ee22d08f7120fddb8e74/). The archive is a preservation service, not an endorsement of Nizlo or these resources.
 
 ## Reusable field templates
 

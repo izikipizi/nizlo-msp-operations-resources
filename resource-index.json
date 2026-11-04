@@ -512,6 +512,7 @@
       "category": "selection",
       "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-requirements-matrix-template.html",
       "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-requirements-matrix.csv",
+      "canonical_guide": "https://nizlo.com/guides/rmm-rfp-template?utm_source=resource_index&utm_medium=resource&utm_campaign=rmm_rfp_template",
       "format": "text/csv",
       "requirements": 32,
       "fields": 18,
