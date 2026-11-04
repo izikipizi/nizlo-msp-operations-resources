@@ -13,6 +13,16 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>RMM free trial: no credit card required</title>
+    <id>https://nizlo.com/solutions/rmm-free-trial</id>
+    <link href="https://nizlo.com/solutions/rmm-free-trial?utm_source=atom&amp;utm_medium=resource_feed&amp;utm_campaign=rmm_free_trial" />
+    <updated>2026-11-04T00:00:00Z</updated>
+    <category term="selection" />
+    <category term="pilot" />
+    <category term="free-trial" />
+    <summary>Run a 14-day, no-card RMM evaluation with one representative endpoint, evidence gates, and an explicit stop, extend, or adopt decision.</summary>
+  </entry>
+  <entry>
     <title>MSP client onboarding questionnaire</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-client-onboarding-questionnaire.csv</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-onboarding-evidence-register.html" />

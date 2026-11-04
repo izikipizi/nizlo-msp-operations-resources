@@ -8,6 +8,18 @@
   "updated": "2026-11-04",
   "resources": [
     {
+      "id": "rmm-free-trial",
+      "title": "RMM free trial: no credit card required",
+      "category": "selection",
+      "url": "https://nizlo.com/solutions/rmm-free-trial?utm_source=github&utm_medium=resource_index&utm_campaign=rmm_free_trial",
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
       "id": "rmm-evaluation-checklist",
       "title": "RMM evaluation checklist",
       "category": "selection",

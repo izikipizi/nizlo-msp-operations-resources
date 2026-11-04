@@ -1,6 +1,6 @@
 # Nizlo MSP Operations Resources
 
-> Forty-two public, ungated field guides, nineteen reusable CSV templates, and one source-dated RMM pricing dataset for managed service providers and lean IT teams defining requirements, evaluating, pricing, testing, deploying, inventorying, operating, securing, recovering, migrating, onboarding, and offboarding remote monitoring and management software.
+> Forty-three public, ungated field guides, nineteen reusable CSV templates, and one source-dated RMM pricing dataset for managed service providers and lean IT teams defining requirements, evaluating, pricing, testing, deploying, inventorying, operating, securing, recovering, migrating, onboarding, and offboarding remote monitoring and management software.
 
 This external library is maintained by the Nizlo team. Nizlo is a Windows-first RMM and IT-management platform. The resources are vendor-neutral, but they are vendor-created and do not represent independent research or an endorsement of Nizlo.
 
@@ -23,6 +23,7 @@ This external library is maintained by the Nizlo team. Nizlo is a Windows-first 
 - [Mac RMM & Windows RMM: Mixed-Fleet Checklist](https://nizlo.com/guides/rmm-for-mac-and-windows): Mixed-fleet evaluation across enrollment, inventory, alerts, automation, updates, remote access, and removal.
 - [RMM for a new MSP](https://nizlo.com/guides/rmm-for-new-msps): First-customer buying guide covering operational simplicity, real costs, pilot scope, and lock-in.
 - [RMM for computer repair shops](https://nizlo.com/guides/rmm-for-computer-repair-shops?utm_source=llms_txt&utm_medium=resource_index&utm_campaign=computer_repair_rmm): Guide for turning break/fix work into a bounded managed-service offer with defined scope, pricing, first-endpoint acceptance, and escalation rules.
+- [RMM free trial](https://nizlo.com/solutions/rmm-free-trial?utm_source=llms_txt&utm_medium=resource_index&utm_campaign=rmm_free_trial): A 14-day, no-card evaluation path for testing one representative endpoint, retaining evidence, and making a stop, extend, or adopt decision.
 - [RMM for small IT teams](https://nizlo.com/guides/rmm-for-small-it-teams): Practical evaluation guide for internal IT teams weighing RMM, Intune, and a safe pilot.
 - [RMM pricing 2026 calculator](https://nizlo.com/guides/rmm-pricing-models): Calculate costs for 10, 25, 50, 100, or 500 endpoints and compare per-device, per-technician, flat monthly, add-on, and annual totals.
 - [RMM software comparison directory](https://nizlo.com/compare): Fifty-four head-to-head and alternative guides covering pricing, endpoint coverage, patching, automation, remote support, integrations, deployment, and controlled-pilot fit.
@@ -81,4 +82,4 @@ This external library is maintained by the Nizlo team. Nizlo is a Windows-first 
 
 - [Public repository](https://github.com/izikipizi/nizlo-msp-operations-resources): Source, version history, releases, and CITATION.cff.
 - [Nizlo RMM tools](https://nizlo.com/tools): Maintained first-party tools and canonical guide destinations.
-- [Nizlo](https://nizlo.com/): Product website.
+- [Remote monitoring and management software](https://nizlo.com/?utm_source=llms_txt&utm_medium=resource_index&utm_campaign=remote_monitoring_management): Nizlo product website and current category overview.

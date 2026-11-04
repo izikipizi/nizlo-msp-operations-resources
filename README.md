@@ -26,6 +26,7 @@ Define buying criteria before vendor demos with the [RMM requirements matrix and
 | [Mac RMM & Windows RMM mixed-fleet checklist](https://nizlo.com/guides/rmm-for-mac-and-windows?utm_source=github&utm_medium=resource&utm_campaign=mac_windows_rmm) | Evaluating enrollment, inventory, alerts, automation, updates, remote access, and removal across a mixed fleet |
 | [RMM for a new MSP](https://nizlo.com/guides/rmm-for-new-msps) | Choosing a first platform without overcomplicating ticketing, endpoint control, pricing, or exit planning |
 | [RMM for computer repair shops](https://nizlo.com/guides/rmm-for-computer-repair-shops?utm_source=github&utm_medium=resource&utm_campaign=computer_repair_rmm) | Turning break/fix work into a bounded managed-service offer with defined scope, pricing, first-endpoint acceptance, and escalation rules |
+| [RMM free trial](https://nizlo.com/solutions/rmm-free-trial?utm_source=github&utm_medium=resource&utm_campaign=rmm_free_trial) | Running a 14-day, no-card evaluation with one representative endpoint, evidence gates, and an explicit stop, extend, or adopt decision |
 | [RMM for small IT teams](https://nizlo.com/guides/rmm-for-small-it-teams) | Deciding whether an internal IT team needs RMM, where Intune fits, and what to test in a safe pilot |
 | [RMM pricing 2026 calculator](https://nizlo.com/guides/rmm-pricing-models?utm_source=github&utm_medium=resource&utm_campaign=rmm_pricing_models) | Calculating costs for 10, 25, 50, 100, or 500 endpoints and comparing per-device, per-technician, flat monthly, add-on, and annual totals |
 | [RMM software comparison: 54 guides](https://nizlo.com/compare?utm_source=github&utm_medium=resource&utm_campaign=rmm_software_comparison) | Comparing pricing, endpoint coverage, patching, automation, remote support, integrations, deployment, and controlled-pilot fit across head-to-head and alternative guides |
@@ -129,4 +130,4 @@ The [Nizlo RMM tools hub](https://nizlo.com/tools) also includes cost calculator
 
 This repository is maintained by the Nizlo team. Nizlo is a Windows-first RMM and IT-management platform for MSPs and IT teams. Inclusion here is not an independent endorsement of Nizlo, and the checklists do not claim that any vendor passes their controls.
 
-Product information: [nizlo.com](https://nizlo.com/)
+Product information: [remote monitoring and management software](https://nizlo.com/?utm_source=github&utm_medium=resource_hub&utm_campaign=remote_monitoring_management)
