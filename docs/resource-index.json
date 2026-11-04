@@ -462,6 +462,20 @@
       ],
       "access": "public",
       "account_required": false
+    },
+    {
+      "id": "rmm-vs-remote-support-vs-mdm-vs-endpoint-management",
+      "title": "RMM vs remote support vs MDM vs endpoint management",
+      "category": "selection",
+      "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-remote-support-vs-mdm-vs-endpoint-management.html",
+      "canonical_guide": "https://nizlo.com/guides/rmm-vs-mdm?utm_source=resource_index&utm_medium=resource&utm_campaign=four_way_endpoint_buyer_map",
+      "controls": 16,
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
     }
   ],
   "templates": [
