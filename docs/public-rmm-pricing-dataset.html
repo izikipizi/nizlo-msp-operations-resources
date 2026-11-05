@@ -3,22 +3,22 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Public RMM Pricing Dataset for Small MSPs | Nizlo</title>
-    <meta name="description" content="Download a free, source-dated CSV comparing pricing and price visibility for fourteen RMM products at 10, 50, 100, and 500 endpoints." />
+    <title>RMM Pricing Transparency Dataset: 14 Products | Nizlo</title>
+    <meta name="description" content="Compare 14 source-dated RMM pricing disclosures: 6 publish fully computable numeric pricing, 4 are quote-only, and 4 use free, source-available, or range models." />
     <meta name="robots" content="index,follow" />
     <link rel="canonical" href="https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html" />
     <link rel="alternate" type="application/ld+json" href="data/public-rmm-pricing-comparison-2026-11-02.jsonld" title="Dataset metadata" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Public RMM Pricing Dataset for Small MSPs" />
-    <meta property="og:description" content="Fourteen source-dated RMM pricing records covering public rates, free tiers, published ranges, source-available software, and quote-only vendors." />
+    <meta property="og:title" content="RMM Pricing Transparency Dataset: 14 Products" />
+    <meta property="og:description" content="Six products publish fully computable numeric pricing across the four scenarios; four are quote-only. Download the source-dated CSV." />
     <meta property="og:url" content="https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html" />
     <meta name="twitter:card" content="summary" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Dataset",
-        "name": "Public RMM pricing and price-visibility comparison for one-technician MSPs",
-        "description": "Fourteen source-dated RMM pricing records covering published numeric prices, free tiers, source-available software, published ranges, and quote-only vendors.",
+        "name": "RMM pricing transparency dataset for one-technician MSPs",
+        "description": "Fourteen source-dated RMM pricing records: six with fully computable numeric pricing across four endpoint scenarios, four quote-only records, two free-tier-only records, one published range with quote, and one source-available product.",
         "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html",
         "sameAs": "https://nizlo.com/guides/cheapest-rmm-for-small-msps",
         "creator": { "@type": "Organization", "name": "Nizlo", "url": "https://nizlo.com/" },
@@ -52,6 +52,10 @@
       .button { display:inline-flex; align-items:center; min-height:3rem; padding:.7rem 1rem; border-radius:.75rem; border:1px solid var(--line); font-weight:800; text-decoration:none; }
       .primary { color:#062026; background:var(--accent); border-color:var(--accent); }
       .panel { padding:1.2rem; border:1px solid var(--line); border-radius:1rem; background:rgba(13,39,48,.78); }
+      .stats { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:1rem; margin:1.2rem 0 1.8rem; }
+      .stat { padding:1.2rem; border:1px solid var(--line); border-radius:1rem; background:rgba(13,39,48,.72); }
+      .stat strong { display:block; color:var(--accent); font-size:2rem; line-height:1; }
+      .stat span { display:block; margin-top:.55rem; color:var(--muted); }
       .table-wrap { overflow-x:auto; border:1px solid var(--line); border-radius:1rem; }
       table { width:100%; border-collapse:collapse; min-width:850px; background:rgba(13,39,48,.72); }
       th, td { padding:.8rem; text-align:left; vertical-align:top; border-bottom:1px solid var(--line); }
@@ -59,17 +63,18 @@
       td:not(:first-child):not(:nth-child(2)) { white-space:nowrap; }
       ul { padding-left:1.25rem; }
       footer { padding:1.5rem 0 3rem; color:var(--muted); border-top:1px solid var(--line); }
+      @media (max-width:760px) { .stats { grid-template-columns:repeat(2,minmax(0,1fr)); } }
     </style>
   </head>
   <body>
     <header><a class="brand" href="./">NIZLO · MSP OPERATIONS RESOURCES</a></header>
     <main>
-      <p class="eyebrow">Public dataset · updated November 2, 2026</p>
-      <h1>RMM pricing data for a one-technician MSP</h1>
-      <p class="lede">This dataset compares fourteen RMM price disclosures at 10, 50, 100, and 500 endpoints. It records published rates, free tiers, source-available software, public ranges, and quote-only pricing without filling gaps with estimates. Feature scope, support, add-ons, platform coverage, migration work, and retained tools can reverse a price-only conclusion.</p>
+      <p class="eyebrow">Public dataset · updated November 5, 2026</p>
+      <h1>RMM pricing transparency across 14 products</h1>
+      <p class="lede">Six of the fourteen source-dated records publish enough numeric pricing to calculate all four one-technician scenarios in this dataset. Four are quote-only, while the remaining four expose a free tier, source-available license, or limited published range. The comparison leaves unsupported cells blank instead of turning them into estimates.</p>
       <div class="actions">
         <a class="button primary" href="data/public-rmm-pricing-comparison-2026-11-02.csv" download>Download the CSV</a>
-        <a class="button" href="https://nizlo.com/guides/cheapest-rmm-for-small-msps">Open calculator and methodology</a>
+        <a class="button" href="https://nizlo.com/guides/cheapest-rmm-for-small-msps?utm_source=github_pages&amp;utm_medium=dataset&amp;utm_campaign=rmm_pricing_transparency">Open calculator and methodology</a>
         <a class="button" href="datapackage.json">Validate with the Data Package</a>
         <a class="button" href="data/public-rmm-pricing-comparison-2026-11-02.jsonld">Open JSON-LD/DCAT metadata</a>
       </div>
@@ -77,6 +82,17 @@
       <div class="panel">
         <strong>Relationship disclosure.</strong> Nizlo created and maintains this dataset and is one of the compared products. The Nizlo row is not an independent endorsement, and the products are not feature-equivalent. Every row links to the vendor's own public source so buyers can recheck current terms.
       </div>
+
+      <section aria-labelledby="transparency-findings">
+        <h2 id="transparency-findings">What the 14 disclosures show</h2>
+        <div class="stats">
+          <div class="stat"><strong>6</strong><span>Numeric-public records with exact math at 10, 50, 100, and 500 endpoints</span></div>
+          <div class="stat"><strong>4</strong><span>Quote-only records with no public rate for any of the four scenarios</span></div>
+          <div class="stat"><strong>2</strong><span>Free-tier-only records that require a quote or calculator above the allowance</span></div>
+          <div class="stat"><strong>2</strong><span>Other models: one published range plus quote and one source-available license</span></div>
+        </div>
+        <p class="lede">Price visibility is not a product-quality score. Per-device, per-technician, flat, free-tier, source-available, and package-based products can include materially different capabilities and operating costs. These counts describe only what a buyer could reproduce from each vendor's public source on the recorded fact-check date.</p>
+      </section>
 
       <h2>Normalized monthly subscription estimates</h2>
       <div class="table-wrap">
