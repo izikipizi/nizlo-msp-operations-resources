@@ -602,6 +602,19 @@
   ],
   "templates": [
     {
+      "id": "rmm-vendor-demo-questions-checklist",
+      "title": "30 RMM vendor demo questions checklist",
+      "category": "selection",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vendor-demo-questions-checklist.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-vendor-demo-questions-checklist.csv",
+      "canonical_guide": "https://nizlo.com/guides/how-to-test-rmm-software?utm_source=resource_index&utm_medium=resource&utm_campaign=rmm_demo_questions",
+      "format": "text/csv",
+      "questions": 30,
+      "fields": 8,
+      "access": "public",
+      "account_required": false
+    },
+    {
       "id": "rmm-requirements-matrix",
       "title": "RMM requirements matrix and RFP worksheet",
       "category": "selection",

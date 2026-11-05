@@ -13,6 +13,15 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>30 RMM vendor demo questions checklist</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vendor-demo-questions-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vendor-demo-questions-checklist.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-vendor-demo-questions-checklist.csv" />
+    <updated>2026-11-05T00:00:00Z</updated>
+    <category term="selection" /><category term="evaluation" /><category term="template" />
+    <summary>Ask thirty vendor-neutral RMM demo questions, request specific evidence, run bounded live tests, record red flags, and carry unresolved answers into a controlled pilot.</summary>
+  </entry>
+  <entry>
     <title>RMM replacement migration paths: Atera, ConnectWise, Datto, SuperOps, and Syncro</title>
     <id>https://nizlo.com/guides/rmm-migration-checklist#replacement-paths</id>
     <link href="https://nizlo.com/guides/rmm-migration-checklist?utm_source=atom&amp;utm_medium=resource_feed&amp;utm_campaign=rmm_migration_paths" />

@@ -1,6 +1,6 @@
 # Nizlo MSP Operations Resources
 
-> Fifty-three public, ungated field guides, twenty-three reusable CSV templates, and one source-dated RMM pricing dataset for managed service providers and lean IT teams defining requirements, evaluating, pricing, testing, integrating, deploying, inventorying, operating, securing, recovering, migrating, onboarding, and offboarding remote monitoring and management software.
+> Fifty-four public, ungated field guides, twenty-four reusable CSV templates, and one source-dated RMM pricing dataset for managed service providers and lean IT teams defining requirements, evaluating, pricing, testing, integrating, deploying, inventorying, operating, securing, recovering, migrating, onboarding, and offboarding remote monitoring and management software.
 
 This external library is maintained by the Nizlo team. Nizlo is a Windows-first RMM and IT-management platform. The resources are vendor-neutral, but they are vendor-created and do not represent independent research or an endorsement of Nizlo.
 
@@ -68,7 +68,10 @@ This external library is maintained by the Nizlo team. Nizlo is a Windows-first 
 
 ## Reusable templates
 
-- [RMM operations and incident response template library](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/): Landing page for all twenty-three public CSV templates with usage guidance.
+- [30 RMM vendor demo questions checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vendor-demo-questions-checklist.html): Vendor-neutral sales-demo questions with evidence requests, bounded live tests, red flags, and decision notes.
+- [RMM vendor demo questions CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-vendor-demo-questions-checklist.csv): Thirty questions across commercial scope, agent architecture, monitoring, patching, automation, remote access, security, integrations, implementation, support, and exit.
+
+- [RMM operations and incident response template library](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/): Landing page for all twenty-four public CSV templates with usage guidance.
 - [RMM security evidence checklist CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-security-evidence-checklist.csv): Thirty controls and fifteen fields for evidence requests, validation, status, risk, remediation, exception approval, and retesting.
 - [RMM audit log review checklist CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-audit-log-review-checklist.csv): Twenty-four controls and fifteen fields for audit scope, coverage, attribution, privileged workflows, retention, export, monitoring, investigations, exceptions, and retesting.
 - [MSP SLA response time CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-sla-response-time-template.csv): Twenty fields for priority, impact, urgency, coverage, acknowledgement, restoration, resolution, clock rules, responsibilities, escalation, exclusions, evidence, and approval.
