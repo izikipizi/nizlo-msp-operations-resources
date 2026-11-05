@@ -505,6 +505,7 @@
       "title": "Free RMM API integration checklist: 18 preflight checks",
       "category": "integration",
       "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-api-integration-preflight-checklist.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-api-integration-preflight-checklist.csv",
       "canonical_product_evidence": "https://nizlo.com/rmm-api",
       "audience": [
         "MSP",
@@ -512,6 +513,7 @@
         "integration developer"
       ],
       "controls": 18,
+      "fields": 9,
       "access": "public",
       "account_required": false
     },

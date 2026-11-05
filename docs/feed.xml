@@ -138,11 +138,12 @@
     <title>Free RMM API integration checklist: 18 preflight checks</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-api-integration-preflight-checklist.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-api-integration-preflight-checklist.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-api-integration-preflight-checklist.csv" />
     <updated>2026-11-05T00:00:00Z</updated>
     <category term="integration" />
     <category term="security" />
     <category term="checklist" />
-    <summary>Run 18 evidence checks for integration identity, least privilege, tenant isolation, pagination, rate limits, retries, idempotency, webhooks, audit evidence, rollback, monitoring, and production ownership.</summary>
+    <summary>Run 18 evidence checks and record the result in a public nine-field CSV covering integration identity, least privilege, tenant isolation, pagination, rate limits, retries, idempotency, webhooks, audit evidence, rollback, monitoring, and production ownership.</summary>
   </entry>
   <entry>
     <title>RMM free trial: no credit card required</title>

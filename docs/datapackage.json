@@ -4,9 +4,9 @@
   "name": "nizlo-rmm-operations-resources",
   "id": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
   "title": "Nizlo RMM Operations Resources",
-  "description": "Twenty-five public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
+  "description": "Twenty-six public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
-  "version": "1.60.1",
+  "version": "1.61.0",
   "created": "2026-11-01",
   "contributors": [
     {
@@ -1989,6 +1989,32 @@
           { "name": "notes", "type": "string" }
         ],
         "primaryKey": "control_id"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "rmm-api-integration-preflight-checklist",
+      "title": "RMM API integration preflight checklist",
+      "description": "Eighteen vendor-neutral controls and nine fields for recording RMM API production-readiness evidence, pilot tests, decisions, owners, and notes.",
+      "path": "templates/rmm-api-integration-preflight-checklist.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 6439,
+      "hash": "sha256:9b9321206a6c61a334eac2960e0f553d953d419be4b72ee27cae4d6c4a85298d",
+      "schema": {
+        "fields": [
+          { "name": "phase", "type": "string" },
+          { "name": "check_id", "type": "string" },
+          { "name": "control", "type": "string" },
+          { "name": "why_it_matters", "type": "string" },
+          { "name": "evidence_to_capture", "type": "string" },
+          { "name": "pilot_test", "type": "string" },
+          { "name": "decision", "type": "string" },
+          { "name": "owner", "type": "string" },
+          { "name": "notes", "type": "string" }
+        ],
+        "primaryKey": "check_id"
       }
     }
   ]

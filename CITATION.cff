@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If these MSP operations resources support your work, cite the maintained canonical guide."
 title: "Nizlo MSP Operations Resources"
 type: dataset
-version: "1.60.1"
+version: "1.61.0"
 authors:
   - family-names: "Ecklund"
     given-names: "Kip"
