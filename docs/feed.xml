@@ -49,11 +49,11 @@
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-security-evidence-checklist.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-security-evidence-checklist.html" />
     <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-security-evidence-checklist.csv" />
-    <updated>2026-11-04T00:00:00Z</updated>
+    <updated>2026-11-05T00:00:00Z</updated>
     <category term="security" />
     <category term="RMM" />
     <category term="template" />
-    <summary>Review thirty controls across tenant isolation, identity, agent enrollment, privileged actions, remote access, audit evidence, recovery, data lifecycle, and offboarding.</summary>
+    <summary>Use a free 30-control RMM security checklist and 15-field CSV to test tenant isolation, privileged identity, agent enrollment, remote access, audit evidence, resilience, data lifecycle, and offboarding.</summary>
   </entry>
   <entry>
     <title>MSP SLA response time template</title>
