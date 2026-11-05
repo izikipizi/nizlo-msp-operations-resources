@@ -629,7 +629,7 @@
     },
     {
       "id": "rmm-deployment-readiness",
-      "title": "RMM deployment-readiness checklist template",
+      "title": "RMM deployment checklist and rollout plan template",
       "category": "deployment",
       "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-deployment-readiness-template.html",
       "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-deployment-readiness.csv",

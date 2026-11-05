@@ -3,20 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Free RMM Deployment Readiness Checklist Template</title>
-    <meta name="description" content="Download a free, vendor-neutral RMM deployment-readiness CSV with 33 controls for governance, inventory, preparation, pilot, rollout waves, verification, and closeout." />
+    <title>RMM Deployment Checklist and Rollout Plan Template</title>
+    <meta name="description" content="Download a free 33-control RMM deployment checklist and rollout-plan CSV for inventory, agent preparation, pilot testing, deployment waves, rollback, verification, and closeout." />
     <meta name="robots" content="index,follow,max-image-preview:large" />
     <link rel="canonical" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-deployment-readiness-template.html" />
     <link rel="alternate" type="application/atom+xml" title="Nizlo MSP Operations Resources" href="feed.xml" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="RMM Deployment Readiness Checklist Template" />
-    <meta property="og:description" content="A free 33-control worksheet for governing, piloting, scaling, verifying, and closing an RMM deployment." />
+    <meta property="og:title" content="RMM Deployment Checklist and Rollout Plan" />
+    <meta property="og:description" content="A free 33-control worksheet for preparing, piloting, rolling out, verifying, and closing an RMM agent deployment." />
     <meta property="og:url" content="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-deployment-readiness-template.html" />
     <meta property="og:image" content="https://nizlo.com/opengraph-image" />
     <meta property="og:image:alt" content="Nizlo RMM deployment readiness checklist template" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="RMM Deployment Readiness Checklist Template" />
-    <meta name="twitter:description" content="A free 33-control worksheet for governing, piloting, scaling, verifying, and closing an RMM deployment." />
+    <meta name="twitter:title" content="RMM Deployment Checklist and Rollout Plan" />
+    <meta name="twitter:description" content="A free 33-control worksheet for preparing, piloting, rolling out, verifying, and closing an RMM agent deployment." />
     <meta name="twitter:image" content="https://nizlo.com/opengraph-image" />
     <meta name="twitter:image:alt" content="Nizlo RMM deployment readiness checklist template" />
     <meta name="theme-color" content="#07171d" />
@@ -24,20 +24,43 @@
       {
         "@context": "https://schema.org",
         "@type": "Dataset",
-        "name": "RMM deployment-readiness checklist template",
-        "description": "A vendor-neutral CSV with 33 controls for governing, inventorying, preparing, piloting, rolling out, verifying, and closing an RMM deployment.",
+        "name": "RMM deployment checklist and rollout plan template",
+        "description": "A vendor-neutral CSV with 33 controls for inventorying endpoints, preparing RMM agents, piloting, deploying in waves, defining rollback, verifying coverage, and closing an RMM rollout.",
         "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-deployment-readiness-template.html",
         "creator": { "@type": "Organization", "name": "Nizlo", "url": "https://nizlo.com/" },
-        "dateModified": "2026-11-01",
+        "dateModified": "2026-11-05",
         "isAccessibleForFree": true,
         "inLanguage": "en",
-        "keywords": ["RMM deployment checklist", "deployment readiness", "MSP rollout plan", "endpoint management", "RMM pilot"],
+        "keywords": ["RMM deployment checklist", "RMM deployment plan", "RMM agent deployment", "deployment readiness", "MSP rollout plan", "endpoint management", "RMM pilot"],
         "variableMeasured": ["Phase", "Control owner", "Control status", "Evidence", "Exception owner", "Due date", "Rollback trigger"],
         "distribution": {
           "@type": "DataDownload",
           "contentUrl": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-deployment-readiness.csv",
           "encodingFormat": "text/csv"
         }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What should an RMM deployment checklist include?",
+            "acceptedAnswer": { "@type": "Answer", "text": "An RMM deployment checklist should define ownership and scope, reconcile the endpoint inventory, verify installer and network prerequisites, test representative pilot devices, set wave and rollback thresholds, reconcile every result, and retain evidence for exceptions and final acceptance." }
+          },
+          {
+            "@type": "Question",
+            "name": "How should an MSP deploy RMM agents?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Start with authorized noncritical pilot endpoints, verify identity, telemetry, alerting, patch policy, automation, remote-support authority, and removal, then expand in bounded waves only after success and rollback thresholds are satisfied." }
+          },
+          {
+            "@type": "Question",
+            "name": "How do you verify an RMM rollout is complete?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Reconcile the authoritative endpoint inventory against successful, failed, excluded, offline, and unknown results; verify check-in and policy state; assign every exception; confirm rollback and support paths; and record explicit operational acceptance." }
+          }
+        ]
       }
     </script>
     <style>
@@ -70,11 +93,11 @@
     <header><nav class="wrap"><a href="./">Nizlo MSP resources</a><a href="templates/">All CSV templates</a></nav></header>
     <main class="wrap">
       <p class="eyebrow">Free operational template · 33 controls</p>
-      <h1>RMM deployment readiness checklist</h1>
-      <p class="lede">A vendor-neutral worksheet for making an RMM rollout owned, measurable, and reversible. The CSV covers governance, endpoint inventory, preparation, pilot checks, wave deployment, verification, and closeout—without requiring an account or email address.</p>
+      <h1>RMM deployment checklist and rollout plan</h1>
+      <p class="lede">A vendor-neutral worksheet for making an RMM agent rollout owned, measurable, and reversible. The CSV covers governance, endpoint inventory, preparation, pilot checks, deployment waves, rollback, verification, and closeout—without requiring an account or email address.</p>
       <div class="actions">
         <a class="button" href="templates/rmm-deployment-readiness.csv" download>Download the CSV</a>
-        <a class="button secondary" href="https://nizlo.com/guides/rmm-deployment-checklist">Read the deployment guide</a>
+        <a class="button secondary" href="https://nizlo.com/guides/rmm-deployment-checklist?utm_source=github_pages&amp;utm_medium=external_resource&amp;utm_campaign=rmm_deployment_checklist">Read the deployment guide</a>
         <a class="button secondary" href="datapackage.json">Validate the data package</a>
       </div>
 
@@ -108,10 +131,20 @@
       </section>
 
       <section>
+        <h2>RMM deployment checklist questions</h2>
+        <div class="grid">
+          <div class="card"><strong>What should an RMM deployment checklist include?</strong><span>Define ownership and scope, reconcile the endpoint inventory, verify prerequisites, test representative pilot devices, set wave and rollback thresholds, reconcile every outcome, and retain acceptance evidence.</span></div>
+          <div class="card"><strong>How should an MSP deploy RMM agents?</strong><span>Begin with authorized noncritical pilot endpoints. Verify identity, telemetry, alerting, patch policy, automation, remote-support authority, and removal before expanding in bounded waves.</span></div>
+          <div class="card"><strong>How do you verify an RMM rollout is complete?</strong><span>Account for successful, failed, excluded, offline, and unknown endpoints; verify check-in and policy state; assign every exception; and record explicit operational acceptance.</span></div>
+          <div class="card"><strong>What stops an RMM deployment wave?</strong><span>Pause when install or check-in failures cross the approved threshold, endpoint identity is ambiguous, critical workflows fail, security controls conflict, or rollback cannot be completed safely.</span></div>
+        </div>
+      </section>
+
+      <section>
         <h2>Relationship disclosure</h2>
         <p>Nizlo, a Windows-first RMM and IT-management platform, maintains this public template. It is designed for use with any RMM and does not claim that Nizlo or another vendor passes the controls.</p>
       </section>
     </main>
-    <footer><div class="wrap">Maintained by <a href="https://nizlo.com/">Nizlo</a> · <a href="citation.html">Citation and preservation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source repository</a></div></footer>
+    <footer><div class="wrap">Maintained by <a href="https://nizlo.com/">Nizlo</a> · Updated November 5, 2026 · <a href="citation.html">Citation and preservation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source repository</a></div></footer>
   </body>
 </html>
