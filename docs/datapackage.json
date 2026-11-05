@@ -6,7 +6,7 @@
   "title": "Nizlo RMM Operations Resources",
   "description": "Twenty-three public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
-  "version": "1.57.9",
+  "version": "1.57.10",
   "created": "2026-11-01",
   "contributors": [
     {
@@ -592,7 +592,7 @@
     {
       "profile": "tabular-data-resource",
       "name": "rmm-evaluation-scorecard",
-      "title": "RMM evaluation scorecard template",
+      "title": "RMM evaluation scorecard and comparison template",
       "description": "Ten evidence-based evaluation areas for comparing RMM products during a controlled pilot.",
       "path": "templates/rmm-evaluation-scorecard.csv",
       "format": "csv",

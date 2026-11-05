@@ -463,13 +463,13 @@
     <summary>Use 30 vendor-neutral controls, four migration FAQs, and a linked planning chain to manage RMM discovery, pilot, coexistence, cutover, validation, source retirement, and closeout.</summary>
   </entry>
   <entry>
-    <title>RMM evaluation scorecard template</title>
+    <title>RMM evaluation scorecard and comparison template</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-evaluation-scorecard-template.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-evaluation-scorecard-template.html" />
-    <updated>2026-11-01T00:00:00Z</updated>
+    <updated>2026-11-05T00:00:00Z</updated>
     <category term="selection" />
     <category term="evaluation" />
-    <summary>Compare observed RMM pilot evidence across ten operational areas, assign open risks, set retest dates, and record a rollout decision.</summary>
+    <summary>Compare RMM products across ten evidence-based operational areas, assign open risks, retest failures, and record a defensible go/no-go decision.</summary>
   </entry>
   <entry>
     <title>RMM incident response runbook template</title>

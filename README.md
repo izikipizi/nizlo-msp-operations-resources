@@ -89,7 +89,7 @@ The [RMM pricing transparency dataset](https://izikipizi.github.io/nizlo-msp-ope
 
 ## Citation and preservation
 
-Citation metadata is available in [`CITATION.cff`](CITATION.cff) and on the public [citation and preservation page](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html). The current collection is released as `v1.57.9`; Software Heritage preserves release `v1.57.0` and its repository history as snapshot [`swh:1:snp:ee7731bf72c784a1f6ad953388948f61dc3b8e17`](https://archive.softwareheritage.org/browse/snapshot/ee7731bf72c784a1f6ad953388948f61dc3b8e17/). The archive is a preservation service, not an endorsement of Nizlo or these resources.
+Citation metadata is available in [`CITATION.cff`](CITATION.cff) and on the public [citation and preservation page](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html). The current collection is released as `v1.57.10`; Software Heritage preserves release `v1.57.0` and its repository history as snapshot [`swh:1:snp:ee7731bf72c784a1f6ad953388948f61dc3b8e17`](https://archive.softwareheritage.org/browse/snapshot/ee7731bf72c784a1f6ad953388948f61dc3b8e17/). The archive is a preservation service, not an endorsement of Nizlo or these resources.
 
 ## Reusable field templates
 
@@ -123,7 +123,7 @@ Use the [RMM vendor exit plan checklist and evidence register](https://izikipizi
 
 Use the [RMM migration cost and break-even calculator](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-cost-calculator.html) to model internal labor, implementation fees, parallel subscriptions, retained tools, recurring cost change, first-year impact, and payback time. The formulas are published on the page, the example does not prefill Nizlo pricing, and all figures stay in the browser.
 
-Use the [RMM evaluation scorecard](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-evaluation-scorecard-template.html) to compare observed pilot evidence across inventory, monitoring, patching, automation, remote support, permissions, audit evidence, recovery, removal, and technician usability. The underlying [10-area CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-evaluation-scorecard.csv) is public and ungated.
+Use the [RMM evaluation scorecard and comparison template](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-evaluation-scorecard-template.html) to compare observed pilot evidence across inventory, monitoring, patching, automation, remote support, permissions, audit evidence, recovery, removal, and technician usability. The underlying [10-area CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-evaluation-scorecard.csv) is public and ungated.
 
 Use the [RMM quote comparison worksheet](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html) to normalize dated vendor proposals across platform fees, minimum commitments, billing units, included technicians and endpoints, mandatory add-ons, implementation, training, first-year totals, renewal uplifts, termination terms, and exit costs. The underlying [26-field CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-quote-comparison-worksheet.csv) is public and ungated.
 
