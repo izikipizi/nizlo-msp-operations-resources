@@ -273,7 +273,7 @@
     },
     {
       "id": "windows-patch-policy-review-checklist",
-      "title": "Windows patch policy review checklist for MSPs",
+      "title": "RMM patch management policy checklist for Windows",
       "category": "patch-management",
       "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-policy-review-checklist.html",
       "canonical_guide": "https://nizlo.com/guides/windows-patch-policy-template",

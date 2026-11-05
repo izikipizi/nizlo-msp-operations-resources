@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Windows Patch Policy Review Checklist for MSPs | Nizlo</title>
-    <meta name="description" content="Review a Windows patch policy against 24 practical controls for scope, rings, deadlines, reboots, exceptions, rollback, evidence, ownership, and approval." />
+    <title>RMM Patch Management Policy Checklist for Windows | Nizlo</title>
+    <meta name="description" content="Review an RMM patch management policy against 24 vendor-neutral Windows controls for scope, rings, deadlines, reboots, exceptions, rollback, evidence, and approval." />
     <meta name="robots" content="index,follow,max-image-preview:large" />
     <link rel="canonical" href="https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-policy-review-checklist.html" />
     <link rel="alternate" type="application/atom+xml" title="Nizlo MSP Operations Resources" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="Windows Patch Policy Review Checklist for MSPs" />
-    <meta property="og:description" content="Twenty-four vendor-neutral checks for an approved, testable Windows patch policy." />
+    <meta property="og:title" content="RMM Patch Management Policy Checklist for Windows" />
+    <meta property="og:description" content="Twenty-four vendor-neutral checks for an approved, testable Windows patch management policy." />
     <meta property="og:url" content="https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-policy-review-checklist.html" />
     <meta name="twitter:card" content="summary" />
     <style>
@@ -44,10 +44,10 @@
       {
         "@context":"https://schema.org",
         "@type":"TechArticle",
-        "headline":"Windows Patch Policy Review Checklist for MSPs",
-        "description":"A vendor-neutral 24-control checklist for reviewing Windows patch policy scope, rings, deadlines, reboots, exceptions, rollback, evidence, ownership, and approval.",
+        "headline":"RMM Patch Management Policy Checklist for Windows",
+        "description":"A vendor-neutral 24-control checklist for reviewing an RMM patch management policy across Windows scope, rings, deadlines, reboots, exceptions, rollback, evidence, ownership, and approval.",
         "datePublished":"2026-11-03",
-        "dateModified":"2026-11-03",
+        "dateModified":"2026-11-05",
         "author":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},
         "publisher":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},
         "mainEntityOfPage":"https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-policy-review-checklist.html",
@@ -59,12 +59,13 @@
     <header><nav class="wrap"><a class="brand" href="./">NIZLO · MSP OPERATIONS RESOURCES</a><a href="https://github.com/izikipizi/nizlo-msp-operations-resources">View source</a></nav></header>
     <main class="wrap">
       <section class="hero">
-        <span class="eyebrow">Vendor-neutral policy review</span>
-        <h1>Review the policy before the patch cycle.</h1>
-        <p class="lede">Use these 24 checks to turn a patching default into an approved operating policy. A reviewer should be able to identify what is covered, when devices move, who owns exceptions, how failed changes roll back, and what evidence closes each cycle.</p>
+        <span class="eyebrow">Vendor-neutral RMM patch management review</span>
+        <h1>RMM patch management policy checklist for Windows</h1>
+        <p class="lede">An RMM patch management policy should define which Windows devices and update classes are in scope, how deployment rings promote, when deadlines and restarts apply, who approves exceptions, how failures roll back, and what evidence closes each cycle. Use these 24 checks to review that policy before the next deployment.</p>
         <div class="actions">
-          <a class="button button-primary" href="https://nizlo.com/guides/windows-patch-policy-template">Open the full policy template</a>
-          <a class="button" href="https://nizlo.com/guides/windows-patch-policy-template/template.md">Download the Markdown template</a>
+          <a class="button button-primary" href="https://nizlo.com/guides/windows-patch-management-checklist?utm_source=github_pages&amp;utm_medium=resource_hub&amp;utm_campaign=rmm_patch_management">Open the patch management guide</a>
+          <a class="button" href="https://nizlo.com/guides/windows-patch-policy-template?utm_source=github_pages&amp;utm_medium=resource_hub&amp;utm_campaign=rmm_patch_management&amp;utm_content=policy_template">Use the full policy template</a>
+          <a class="button" href="https://nizlo.com/guides/windows-patch-policy-template/template.md?utm_source=github_pages&amp;utm_medium=resource_download&amp;utm_campaign=rmm_patch_management">Download the Markdown template</a>
           <a class="button" href="javascript:window.print()">Print this checklist</a>
         </div>
       </section>
@@ -113,8 +114,9 @@
       </div>
 
       <section class="use"><h2>Definition of review-ready</h2><p>A patch policy is review-ready when another authorized operator can identify its scope, make the same promotion and exception decisions, stop an unsafe deployment, locate the required evidence, and prove that every endpoint has a known disposition. A green dashboard alone is not closure if failed, offline, excluded, or unknown devices are not reconciled.</p></section>
+      <section class="use"><h2>Primary Windows update guidance</h2><p>This checklist is an operating review, not a replacement for platform documentation. Validate the implemented settings against Microsoft's current guidance for <a href="https://learn.microsoft.com/en-us/windows/deployment/update/windows-update-client-policies">Windows Update client policies</a>, <a href="https://learn.microsoft.com/en-us/windows/deployment/update/waas-configure-wufb">configuring Windows Update client policies</a>, and <a href="https://learn.microsoft.com/en-us/windows/deployment/update/waas-servicing-strategy-windows-10-updates">preparing a Windows client update servicing strategy</a>.</p></section>
       <aside class="disclosure"><strong>Relationship disclosure:</strong> this checklist is maintained by the Nizlo team. Nizlo is a Windows-first RMM and IT-management platform. The checklist is vendor-neutral and does not claim that Nizlo—or any other product—passes every control.</aside>
     </main>
-    <footer><div class="wrap">Maintained by Nizlo · Updated November 3, 2026 · <a href="./">Browse all MSP operations resources</a></div></footer>
+    <footer><div class="wrap">Maintained by Nizlo · Updated November 5, 2026 · <a href="./">Browse all MSP operations resources</a></div></footer>
   </body>
 </html>

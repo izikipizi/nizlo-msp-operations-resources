@@ -208,14 +208,14 @@
     <summary>Reduce RMM alert noise with 24 vendor-neutral checks for baselines, thresholds, confirmation, deduplication, routing, suppression, ownership, evidence, and measured tuning outcomes.</summary>
   </entry>
   <entry>
-    <title>Windows patch policy review checklist for MSPs</title>
+    <title>RMM patch management policy checklist for Windows</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-policy-review-checklist.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-policy-review-checklist.html" />
-    <updated>2026-11-03T00:00:00Z</updated>
+    <updated>2026-11-05T00:00:00Z</updated>
     <category term="patch-management" />
     <category term="policy" />
     <category term="checklist" />
-    <summary>Review a Windows patch policy against 24 practical controls for scope, rings, deadlines, restarts, exceptions, rollback, evidence, ownership, and approval.</summary>
+    <summary>Review an RMM patch management policy against 24 vendor-neutral Windows controls for scope, rings, deadlines, restarts, exceptions, rollback, evidence, ownership, and approval.</summary>
   </entry>
   <entry>
     <title>RMM alert-noise baseline worksheet</title>
