@@ -92,7 +92,13 @@
   </url>
   <url>
     <loc>https://izikipizi.github.io/nizlo-msp-operations-resources/msp-backup-restore-test-checklist.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-backup-restore-test-checklist.csv</loc>
+    <lastmod>2026-11-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>

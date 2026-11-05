@@ -4,9 +4,9 @@
   "name": "nizlo-rmm-operations-resources",
   "id": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
   "title": "Nizlo RMM Operations Resources",
-  "description": "Twenty-six public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
+  "description": "Twenty-seven public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
-  "version": "1.61.0",
+  "version": "1.62.0",
   "created": "2026-11-01",
   "contributors": [
     {
@@ -2015,6 +2015,32 @@
           { "name": "notes", "type": "string" }
         ],
         "primaryKey": "check_id"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "msp-backup-restore-test-checklist",
+      "title": "MSP backup restore test checklist",
+      "description": "Twenty-four vendor-neutral controls and nine fields for recording restore-drill evidence, test methods, status, owners, and notes.",
+      "path": "templates/msp-backup-restore-test-checklist.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 8135,
+      "hash": "sha256:3ee5dd9c70797c6ac5139e2dd707f6f5497de830a6c1e0fcb98ac0d47edce638",
+      "schema": {
+        "fields": [
+          { "name": "phase", "type": "string" },
+          { "name": "control_id", "type": "string" },
+          { "name": "control", "type": "string" },
+          { "name": "why_it_matters", "type": "string" },
+          { "name": "evidence_to_capture", "type": "string" },
+          { "name": "test_method", "type": "string" },
+          { "name": "status", "type": "string" },
+          { "name": "owner", "type": "string" },
+          { "name": "notes", "type": "string" }
+        ],
+        "primaryKey": "control_id"
       }
     }
   ]

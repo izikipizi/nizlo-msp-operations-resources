@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>MSP Backup Restore Test Checklist | Nizlo</title>
-    <meta name="description" content="Run an evidence-based backup restore drill with 24 vendor-neutral checks for scope, recovery points, isolation, integrity, permissions, application validation, timing, exceptions, and closure." />
+    <title>Backup Restore Test Checklist for MSPs (Free CSV) | Nizlo</title>
+    <meta name="description" content="Download a free 24-control backup restore test checklist and CSV for MSP recovery drills, including scope, isolation, integrity, permissions, RPO, RTO, exceptions, and closure." />
     <meta name="robots" content="index,follow,max-image-preview:large" />
     <link rel="canonical" href="https://izikipizi.github.io/nizlo-msp-operations-resources/msp-backup-restore-test-checklist.html" />
     <link rel="alternate" type="application/atom+xml" title="Nizlo MSP Operations Resources" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="MSP Backup Restore Test Checklist" />
-    <meta property="og:description" content="Twenty-four practical checks for proving that a managed backup can produce a usable, authorized, and documented restore." />
+    <meta property="og:title" content="Backup Restore Test Checklist for MSPs (Free CSV)" />
+    <meta property="og:description" content="Twenty-four practical checks and a public nine-field CSV for proving that a managed backup can produce a usable, authorized, and documented restore." />
     <meta property="og:url" content="https://izikipizi.github.io/nizlo-msp-operations-resources/msp-backup-restore-test-checklist.html" />
     <meta name="twitter:card" content="summary" />
     <style>
@@ -44,14 +44,47 @@
       {
         "@context":"https://schema.org",
         "@type":"TechArticle",
-        "headline":"MSP Backup Restore Test Checklist",
-        "description":"A vendor-neutral 24-control checklist for planning, executing, evidencing, and closing a managed backup restore test.",
+        "headline":"Backup Restore Test Checklist for MSPs",
+        "description":"A vendor-neutral 24-control checklist and public CSV for planning, executing, evidencing, and closing a managed backup restore test.",
         "datePublished":"2026-11-03",
-        "dateModified":"2026-11-03",
+        "dateModified":"2026-11-05",
         "author":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},
         "publisher":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},
         "mainEntityOfPage":"https://izikipizi.github.io/nizlo-msp-operations-resources/msp-backup-restore-test-checklist.html",
         "license":"https://creativecommons.org/licenses/by/4.0/"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context":"https://schema.org",
+        "@type":"Dataset",
+        "name":"MSP backup restore test checklist CSV",
+        "description":"A vendor-neutral 24-control, nine-field CSV for recording backup restore test evidence, test methods, status, ownership, and notes.",
+        "url":"https://izikipizi.github.io/nizlo-msp-operations-resources/msp-backup-restore-test-checklist.html",
+        "identifier":"https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-backup-restore-test-checklist.csv",
+        "creator":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},
+        "publisher":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},
+        "datePublished":"2026-11-05",
+        "dateModified":"2026-11-05",
+        "isAccessibleForFree":true,
+        "conditionsOfAccess":"Public and ungated; no account or email address is required.",
+        "inLanguage":"en",
+        "license":"https://creativecommons.org/licenses/by/4.0/",
+        "keywords":["backup restore test checklist","MSP backup checklist","backup recovery test","restore drill","RPO RTO test"],
+        "variableMeasured":["Phase","Control ID","Control","Why it matters","Evidence to capture","Test method","Status","Owner","Notes"],
+        "distribution":{"@type":"DataDownload","name":"MSP backup restore test checklist CSV","contentUrl":"https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-backup-restore-test-checklist.csv","encodingFormat":"text/csv","contentSize":"8135 bytes","sha256":"3ee5dd9c70797c6ac5139e2dd707f6f5497de830a6c1e0fcb98ac0d47edce638"}
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context":"https://schema.org",
+        "@type":"FAQPage",
+        "mainEntity":[
+          {"@type":"Question","name":"What should a backup restore test verify?","acceptedAnswer":{"@type":"Answer","text":"Verify the authorized scope, selected recovery point, isolated destination, restored object counts, content integrity, permissions, application usability, recovery time, recovery-point age, exceptions, cleanup, and approval evidence."}},
+          {"@type":"Question","name":"How often should an MSP test restores?","acceptedAnswer":{"@type":"Answer","text":"Set the cadence from workload criticality, client obligations, recovery objectives, change frequency, prior failures, and risk. Schedule the next test at closure rather than assuming one interval fits every system."}},
+          {"@type":"Question","name":"Does a successful backup job prove recoverability?","acceptedAnswer":{"@type":"Answer","text":"No. A green backup job does not prove that the selected data can be restored safely, opened, reconciled, timed against RPO and RTO targets, and accepted with owned exceptions."}},
+          {"@type":"Question","name":"Is this backup restore test checklist free?","acceptedAnswer":{"@type":"Answer","text":"Yes. The 24-control checklist and nine-field CSV are public and ungated. No account or email address is required."}}
+        ]
       }
     </script>
   </head>
@@ -59,12 +92,13 @@
     <header><nav class="wrap"><a class="brand" href="./">NIZLO · MSP OPERATIONS RESOURCES</a><a href="https://github.com/izikipizi/nizlo-msp-operations-resources">View source</a></nav></header>
     <main class="wrap">
       <section class="hero">
-        <span class="eyebrow">Vendor-neutral recovery validation</span>
-        <h1>Prove the backup can restore.</h1>
+        <span class="eyebrow">24 controls · 9 fields · Public CSV · No signup</span>
+        <h1>Backup restore test checklist for MSPs.</h1>
         <p class="lede">A successful backup job is not recovery evidence. Use these 24 checks to run a controlled restore drill, verify the recovered data and permissions, measure the recovery path, document every exception, and leave production data untouched.</p>
         <div class="actions">
-          <a class="button button-primary" href="https://nizlo.com/backup">Review Nizlo backup capabilities</a>
-          <a class="button" href="https://nizlo.com/solutions/rmm-with-backup">Compare RMM with backup</a>
+          <a class="button button-primary" href="templates/msp-backup-restore-test-checklist.csv" download>Download the CSV checklist</a>
+          <a class="button" href="https://nizlo.com/backup?utm_source=github_pages&amp;utm_medium=resource&amp;utm_campaign=backup_restore_test_checklist">Review Nizlo backup capabilities</a>
+          <a class="button" href="https://nizlo.com/solutions/rmm-with-backup?utm_source=github_pages&amp;utm_medium=resource&amp;utm_campaign=backup_restore_test_checklist">Compare RMM with backup</a>
           <a class="button" href="msp-daily-weekly-monthly-maintenance-checklist.html">Add restore tests to the service cadence</a>
           <a class="button" href="javascript:window.print()">Print this checklist</a>
         </div>
@@ -108,8 +142,9 @@
         </ol></section>
       </div>
       <section class="use"><h2>Definition of a successful restore test</h2><p>A restore test succeeds when an authorized recovery point produces the expected usable data in a safe destination; integrity, permissions, dependencies, recovery timing, and data-loss timing are measured against defined targets; production remains protected; and every exception has an owner and a retest path. A green backup-job status alone is not proof of recoverability.</p></section>
+      <section class="use" aria-labelledby="faq-title"><h2 id="faq-title">Backup restore test questions</h2><h3>What should a restore test verify?</h3><p>Verify scope, recovery point, isolation, object counts, content integrity, permissions, application usability, RPO and RTO evidence, exceptions, cleanup, and approval.</p><h3>How often should an MSP test restores?</h3><p>Set the cadence from workload criticality, client commitments, recovery objectives, change frequency, prior failures, and risk, then schedule the next test at closure.</p><h3>Does a successful backup job prove recoverability?</h3><p>No. A green job does not prove that the data can be restored safely, opened, reconciled, timed, and accepted.</p><h3>Is the checklist free?</h3><p>Yes. The page and nine-field CSV are public and ungated and require no account or email address.</p></section>
       <aside class="disclosure"><strong>Relationship disclosure:</strong> this checklist is maintained by the Nizlo team. Nizlo offers Windows-first RMM and managed cloud-backup capabilities. The checklist is vendor-neutral and does not claim that Nizlo—or any other product—passes every control.</aside>
     </main>
-    <footer><div class="wrap">Maintained by Nizlo · Updated November 3, 2026 · <a href="./">Browse all MSP operations resources</a></div></footer>
+    <footer><div class="wrap">Maintained by Nizlo · Updated November 5, 2026 · <a href="./">Browse all MSP operations resources</a></div></footer>
   </body>
 </html>
