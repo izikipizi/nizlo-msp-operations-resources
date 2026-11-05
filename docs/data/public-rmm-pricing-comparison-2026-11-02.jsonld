@@ -17,7 +17,7 @@
     "schema:url": "https://nizlo.com/"
   },
   "schema:dateCreated": "2026-10-30",
-  "schema:dateModified": "2026-11-02",
+  "schema:dateModified": "2026-11-05",
   "schema:version": "2026-11-02",
   "schema:isAccessibleForFree": true,
   "schema:license": "https://creativecommons.org/licenses/by/4.0/",
@@ -52,7 +52,7 @@
     {
       "@type": "schema:PropertyValue",
       "schema:propertyID": "SHA-256",
-      "schema:value": "7501f3a1cc9cd52db640168b9448d0cc38f23e153b561827c158b43176e296ea"
+      "schema:value": "966cc69560e41681a3bf07894b5c485024d93e4793db6b112572db6608f5e06c"
     }
   ],
   "schema:includedInDataCatalog": {
@@ -66,7 +66,7 @@
       "schema:name": "CSV snapshot",
       "schema:contentUrl": "https://izikipizi.github.io/nizlo-msp-operations-resources/data/public-rmm-pricing-comparison-2026-11-02.csv",
       "schema:encodingFormat": "text/csv",
-      "schema:contentSize": "4274 bytes"
+      "schema:contentSize": "4273 bytes"
     },
     {
       "@type": "schema:DataDownload",
@@ -79,5 +79,5 @@
     "@id": "https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html"
   },
   "dct:issued": "2026-10-30",
-  "dct:modified": "2026-11-02"
+  "dct:modified": "2026-11-05"
 }

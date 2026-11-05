@@ -1525,8 +1525,8 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "bytes": 4274,
-      "hash": "sha256:7501f3a1cc9cd52db640168b9448d0cc38f23e153b561827c158b43176e296ea",
+      "bytes": 4273,
+      "hash": "sha256:966cc69560e41681a3bf07894b5c485024d93e4793db6b112572db6608f5e06c",
       "licenses": [
         {
           "name": "CC-BY-4.0",
