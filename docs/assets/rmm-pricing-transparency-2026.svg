@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">RMM pricing transparency across 14 products</title>
+  <desc id="desc">Nizlo research found six products with fully computable public pricing, four quote-only products, two free-tier-only products, and two other public pricing models.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07171d"/>
+      <stop offset="1" stop-color="#0c2d36"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8be7e4"/>
+      <stop offset="1" stop-color="#16c4c9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" rx="32" fill="url(#background)"/>
+  <circle cx="1090" cy="-25" r="240" fill="#16c4c9" opacity="0.08"/>
+  <circle cx="55" cy="660" r="250" fill="#16c4c9" opacity="0.06"/>
+
+  <g transform="translate(64 52)">
+    <rect width="48" height="48" rx="13" fill="url(#accent)"/>
+    <path d="M11 35V13h7l12 14V13h7v22h-7L18 21v14z" fill="#07171d"/>
+    <text x="64" y="35" fill="#eefafb" font-family="Inter, Arial, sans-serif" font-size="31" font-weight="800" letter-spacing="3">NIZLO</text>
+    <text x="1072" y="32" text-anchor="end" fill="#8be7e4" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="2">PUBLIC DATASET · 2026</text>
+  </g>
+
+  <text x="64" y="160" fill="#8be7e4" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800" letter-spacing="2">RMM PRICING TRANSPARENCY</text>
+  <text x="64" y="216" fill="#eefafb" font-family="Inter, Arial, sans-serif" font-size="54" font-weight="800">What 14 public disclosures show</text>
+  <text x="64" y="252" fill="#a9c0c5" font-family="Inter, Arial, sans-serif" font-size="22">Source-dated records with reproducible links and no invented estimates</text>
+
+  <g transform="translate(64 296)" font-family="Inter, Arial, sans-serif">
+    <g>
+      <rect width="250" height="164" rx="18" fill="#0d2730" stroke="#2e5963"/>
+      <text x="24" y="74" fill="#8be7e4" font-size="56" font-weight="850">6</text>
+      <text x="24" y="111" fill="#eefafb" font-size="20" font-weight="750">fully computable</text>
+      <text x="24" y="138" fill="#a9c0c5" font-size="17">numeric pricing</text>
+    </g>
+    <g transform="translate(270)">
+      <rect width="250" height="164" rx="18" fill="#0d2730" stroke="#2e5963"/>
+      <text x="24" y="74" fill="#8be7e4" font-size="56" font-weight="850">4</text>
+      <text x="24" y="111" fill="#eefafb" font-size="20" font-weight="750">quote-only</text>
+      <text x="24" y="138" fill="#a9c0c5" font-size="17">no public rate</text>
+    </g>
+    <g transform="translate(540)">
+      <rect width="250" height="164" rx="18" fill="#0d2730" stroke="#2e5963"/>
+      <text x="24" y="74" fill="#8be7e4" font-size="56" font-weight="850">2</text>
+      <text x="24" y="111" fill="#eefafb" font-size="20" font-weight="750">free-tier-only</text>
+      <text x="24" y="138" fill="#a9c0c5" font-size="17">quote above allowance</text>
+    </g>
+    <g transform="translate(810)">
+      <rect width="250" height="164" rx="18" fill="#0d2730" stroke="#2e5963"/>
+      <text x="24" y="74" fill="#8be7e4" font-size="56" font-weight="850">2</text>
+      <text x="24" y="111" fill="#eefafb" font-size="20" font-weight="750">other models</text>
+      <text x="24" y="138" fill="#a9c0c5" font-size="17">range or source available</text>
+    </g>
+  </g>
+
+  <line x1="64" y1="500" x2="1136" y2="500" stroke="#23444d"/>
+  <text x="64" y="548" fill="#eefafb" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">Pricing visibility, not a product-quality score.</text>
+  <text x="64" y="582" fill="#a9c0c5" font-family="Inter, Arial, sans-serif" font-size="17">Fact-checked Oct 30–Nov 2, 2026 · CC BY 4.0 · Download CSV + methodology</text>
+  <text x="1136" y="582" text-anchor="end" fill="#8be7e4" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="750">nizlo.com</text>
+</svg>
