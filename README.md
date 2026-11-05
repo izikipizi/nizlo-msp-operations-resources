@@ -75,7 +75,7 @@ Test whether an RMM audit trail can support operations and investigation with th
 | [RMM deployment checklist](https://nizlo.com/guides/rmm-deployment-checklist) | Moving from endpoint preparation through a controlled pilot, wave rollout, verification, and rollback |
 | [RMM agent installation troubleshooting guide](https://nizlo.com/guides/rmm-agent-installation-troubleshooting) | Diagnosing enrollment, service, connectivity, permission, proxy, and first-check-in failures without repeatedly reinstalling |
 | [RMM first-endpoint activation troubleshooting checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html) | Tracing installer execution, service state, tenant enrollment, DNS, TLS, proxy, security controls, and verified first telemetry |
-| [How to test RMM software safely](https://nizlo.com/guides/how-to-test-rmm-software) | Running a staged pre-production pilot for agents, permissions, monitoring, patching, automation, remote access, and clean removal |
+| [How to test RMM software safely](https://nizlo.com/guides/how-to-test-rmm-software?utm_source=github&utm_medium=resource&utm_campaign=rmm_trial_pilot_checklist) | Running a staged pre-production pilot for agents, permissions, monitoring, patching, automation, remote access, and clean removal; includes a [downloadable 12-step Markdown worksheet](https://nizlo.com/guides/how-to-test-rmm-software/checklist.md?utm_source=github&utm_medium=resource_download&utm_campaign=rmm_trial_pilot_checklist) |
 
 ## Machine-readable index
 
@@ -87,7 +87,7 @@ The [public RMM pricing dataset](https://izikipizi.github.io/nizlo-msp-operation
 
 ## Citation and preservation
 
-Citation metadata is available in [`CITATION.cff`](CITATION.cff) and on the public [citation and preservation page](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html). The current collection is released as `v1.55.0`; Software Heritage preserves release `v1.51.0` and its repository history as snapshot [`swh:1:snp:f50352327fa0a3903b95ee22d08f7120fddb8e74`](https://archive.softwareheritage.org/browse/snapshot/f50352327fa0a3903b95ee22d08f7120fddb8e74/). The archive is a preservation service, not an endorsement of Nizlo or these resources.
+Citation metadata is available in [`CITATION.cff`](CITATION.cff) and on the public [citation and preservation page](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html). The current collection is released as `v1.56.0`; Software Heritage preserves release `v1.51.0` and its repository history as snapshot [`swh:1:snp:f50352327fa0a3903b95ee22d08f7120fddb8e74`](https://archive.softwareheritage.org/browse/snapshot/f50352327fa0a3903b95ee22d08f7120fddb8e74/). The archive is a preservation service, not an endorsement of Nizlo or these resources.
 
 ## Reusable field templates
 

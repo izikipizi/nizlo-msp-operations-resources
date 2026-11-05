@@ -5,7 +5,7 @@
     "url": "https://nizlo.com/",
     "resources_url": "https://nizlo.com/tools"
   },
-  "updated": "2026-11-04",
+  "updated": "2026-11-05",
   "resources": [
     {
       "id": "rmm-vendor-exit-plan",
@@ -314,6 +314,7 @@
       "title": "How to Test RMM Software Safely Before Production",
       "category": "deployment",
       "url": "https://nizlo.com/guides/how-to-test-rmm-software",
+      "download_url": "https://nizlo.com/guides/how-to-test-rmm-software/checklist.md",
       "audience": [
         "MSP",
         "IT team"
