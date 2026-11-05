@@ -1829,6 +1829,38 @@
         ],
         "primaryKey": "priority_code"
       }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "rmm-security-evidence-checklist",
+      "title": "RMM security checklist and evidence register",
+      "description": "Thirty vendor-neutral controls and 15 fields for reviewing RMM security evidence, validation, risk, remediation, exceptions, and retesting.",
+      "path": "templates/rmm-security-evidence-checklist.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 7910,
+      "hash": "sha256:d08730017fad81eff0aed56607bdc52abb1f16d20d24e49ab6e18c2fe0aae86b",
+      "schema": {
+        "fields": [
+          { "name": "control_id", "type": "string" },
+          { "name": "security_domain", "type": "string" },
+          { "name": "control_question", "type": "string" },
+          { "name": "required_evidence", "type": "string" },
+          { "name": "validation_method", "type": "string" },
+          { "name": "status", "type": "string" },
+          { "name": "evidence_reference", "type": "string" },
+          { "name": "evidence_date", "type": "string" },
+          { "name": "control_owner", "type": "string" },
+          { "name": "risk_if_missing", "type": "string" },
+          { "name": "gap_owner", "type": "string" },
+          { "name": "remediation_due", "type": "string" },
+          { "name": "exception_approver", "type": "string" },
+          { "name": "retest_date", "type": "string" },
+          { "name": "notes", "type": "string" }
+        ],
+        "primaryKey": "control_id"
+      }
     }
   ]
 }

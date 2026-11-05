@@ -13,6 +13,17 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>RMM security checklist and evidence register</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-security-evidence-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-security-evidence-checklist.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-security-evidence-checklist.csv" />
+    <updated>2026-11-04T00:00:00Z</updated>
+    <category term="security" />
+    <category term="RMM" />
+    <category term="template" />
+    <summary>Review thirty controls across tenant isolation, identity, agent enrollment, privileged actions, remote access, audit evidence, recovery, data lifecycle, and offboarding.</summary>
+  </entry>
+  <entry>
     <title>MSP SLA response time template</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/msp-sla-response-time-template.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/msp-sla-response-time-template.html" />

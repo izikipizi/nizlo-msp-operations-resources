@@ -734,6 +734,19 @@
       "fields": 20,
       "access": "public",
       "account_required": false
+    },
+    {
+      "id": "rmm-security-evidence-checklist",
+      "title": "RMM security checklist and evidence register",
+      "category": "security",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-security-evidence-checklist.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-security-evidence-checklist.csv",
+      "canonical_guide": "https://nizlo.com/guides/rmm-security-checklist",
+      "format": "text/csv",
+      "controls": 30,
+      "fields": 15,
+      "access": "public",
+      "account_required": false
     }
   ],
   "datasets": [
