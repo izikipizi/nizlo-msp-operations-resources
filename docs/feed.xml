@@ -339,10 +339,10 @@
     <title>MSP client offboarding checklist and evidence register</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-offboarding-evidence-register.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-offboarding-evidence-register.html" />
-    <updated>2026-11-01T00:00:00Z</updated>
+    <updated>2026-11-05T00:00:00Z</updated>
     <category term="client-lifecycle" />
     <category term="offboarding" />
-    <summary>Use 32 vendor-neutral controls to coordinate MSP transition authority, inventory, secure handoff, access revocation, agent removal, data disposition, acceptance, and post-exit verification.</summary>
+    <summary>Use a free 32-control MSP client offboarding checklist to coordinate transition authority, inventory, secure handoff, access revocation, RMM agent removal, data disposition, acceptance, and post-exit verification.</summary>
   </entry>
   <entry>
     <title>RMM technician access review matrix</title>
