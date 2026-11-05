@@ -13,6 +13,17 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>RMM audit log review checklist and evidence register</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-audit-log-review-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-audit-log-review-checklist.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-audit-log-review-checklist.csv" />
+    <updated>2026-11-04T00:00:00Z</updated>
+    <category term="security" />
+    <category term="audit-logging" />
+    <category term="template" />
+    <summary>Review twenty-four controls for actor and tenant attribution, endpoint identity, privileged workflows, outcomes, retention, export, monitoring, investigation readiness, and exception closure.</summary>
+  </entry>
+  <entry>
     <title>RMM security checklist and evidence register</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-security-evidence-checklist.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-security-evidence-checklist.html" />

@@ -12,6 +12,8 @@ Define buying criteria before vendor demos with the [RMM requirements matrix and
 
 Validate an integration before it can touch production with the [RMM API integration preflight checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-api-integration-preflight-checklist.html), an ungated 18-check review for identity, tenant isolation, pagination, rate limits, retry safety, webhooks, audit evidence, rollback, and production ownership.
 
+Test whether an RMM audit trail can support operations and investigation with the [RMM audit log review checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-audit-log-review-checklist.html), a public 24-control evidence register for actor, tenant and endpoint attribution; privileged workflows; outcomes; retention; export; monitoring; and exception closure.
+
 ## RMM selection and change
 
 | Resource | Use it when |
@@ -25,6 +27,7 @@ Validate an integration before it can touch production with the [RMM API integra
 | [RMM migration cost and break-even calculator](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-cost-calculator.html) | Estimating migration labor, implementation fees, platform overlap, recurring cost change, first-year impact, and break-even with your own assumptions |
 | [RMM security checklist](https://nizlo.com/guides/rmm-security-checklist) | Reviewing device identity, tenant isolation, MFA, permissions, signed actions, audit logs, recovery, and removal |
 | [RMM security checklist and evidence register](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-security-evidence-checklist.html) | Turning 30 security claims into requested evidence, controlled validation, named risk ownership, exceptions, and retest dates |
+| [RMM audit log review checklist and evidence register](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-audit-log-review-checklist.html) | Verifying actor, tenant, endpoint, action, outcome, retention, export, monitoring, investigation, and exception evidence across privileged RMM workflows |
 | [RMM incident response checklist](https://nizlo.com/guides/rmm-incident-response-checklist) | Preparing independent control paths, scoping impact, containing access, preserving evidence, recovering safely, and reconciling endpoints |
 | [RMM migration checklist](https://nizlo.com/guides/rmm-migration-checklist) | Planning discovery, pilot, coexistence, cutover, rollback, and cleanup |
 | [Mac RMM & Windows RMM mixed-fleet checklist](https://nizlo.com/guides/rmm-for-mac-and-windows?utm_source=github&utm_medium=resource&utm_campaign=mac_windows_rmm) | Evaluating enrollment, inventory, alerts, automation, updates, remote access, and removal across a mixed fleet |
@@ -84,7 +87,7 @@ The [public RMM pricing dataset](https://izikipizi.github.io/nizlo-msp-operation
 
 ## Citation and preservation
 
-Citation metadata is available in [`CITATION.cff`](CITATION.cff) and on the public [citation and preservation page](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html). The current collection is released as `v1.52.0`; Software Heritage preserves release `v1.51.0` and its repository history as snapshot [`swh:1:snp:f50352327fa0a3903b95ee22d08f7120fddb8e74`](https://archive.softwareheritage.org/browse/snapshot/f50352327fa0a3903b95ee22d08f7120fddb8e74/). The archive is a preservation service, not an endorsement of Nizlo or these resources.
+Citation metadata is available in [`CITATION.cff`](CITATION.cff) and on the public [citation and preservation page](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html). The current collection is released as `v1.54.0`; Software Heritage preserves release `v1.51.0` and its repository history as snapshot [`swh:1:snp:f50352327fa0a3903b95ee22d08f7120fddb8e74`](https://archive.softwareheritage.org/browse/snapshot/f50352327fa0a3903b95ee22d08f7120fddb8e74/). The archive is a preservation service, not an endorsement of Nizlo or these resources.
 
 ## Reusable field templates
 
@@ -93,6 +96,8 @@ Browse the public [RMM operations and incident response template library](https:
 Use the [RMM vendor due-diligence evidence register](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vendor-due-diligence-evidence-register.html) to turn thirty security, operations, privacy, incident-response, commercial, and exit questions into a documented review. The [17-field CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-vendor-due-diligence-evidence-register.csv) records evidence status, references, findings, risk, remediation owners, exception approval, and renewal review without requiring an account.
 
 Use the [RMM security checklist and evidence register](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-security-evidence-checklist.html) to review thirty controls across governance, tenant isolation, identity, agent enrollment, privileged actions, remote access, audit logging, software supply chain, resilience, data lifecycle, and offboarding. The [15-field CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-security-evidence-checklist.csv) records the evidence requested, validation method, status, risk, remediation owner, exception approval, and retest date; the maintained [RMM security guide](https://nizlo.com/guides/rmm-security-checklist) explains the broader review workflow.
+
+Use the [RMM audit log review checklist and evidence register](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-audit-log-review-checklist.html) to test twenty-four controls for audit scope, event coverage, actor and tenant attribution, durable endpoint identity, privileged actions, remote sessions, scripts, patching, identity administration, credentials, configuration, denials, integrity, retention, export, monitoring, investigation readiness, and exception closure. The public [15-field CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-audit-log-review-checklist.csv) is ungated and includes evidence, ownership, risk, remediation, exception, and retest fields.
 
 Use the [RMM alert escalation matrix](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-escalation-matrix-template.html) to map 27 example alert rules to confirmation windows, owners, response and acknowledgement targets, escalation paths, customer notifications, suppression conditions, evidence, closure tests, and false-positive review. The [25-field CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-alert-escalation-matrix.csv) is public and ungated; the maintained [RMM alert escalation policy guide](https://nizlo.com/guides/rmm-alert-escalation-policy-template) explains how to adapt and operationally test it before production use.
 

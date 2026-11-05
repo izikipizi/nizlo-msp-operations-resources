@@ -4,9 +4,9 @@
   "name": "nizlo-rmm-operations-resources",
   "id": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
   "title": "Nizlo RMM Operations Resources",
-  "description": "Twenty public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
+  "description": "Twenty-two public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
-  "version": "1.51.1",
+  "version": "1.54.0",
   "created": "2026-11-01",
   "contributors": [
     {
@@ -28,6 +28,8 @@
     "endpoint management",
     "incident response",
     "RMM security",
+    "RMM audit log review",
+    "RMM audit trail",
     "RMM migration",
     "RMM evaluation scorecard",
     "RMM pilot test plan",
@@ -73,6 +75,38 @@
     "service restoration"
   ],
   "resources": [
+    {
+      "profile": "tabular-data-resource",
+      "name": "rmm-audit-log-review-checklist",
+      "title": "RMM audit log review checklist and evidence register",
+      "description": "Twenty-four RMM audit controls and 15 fields for scope, event coverage, attribution, privileged workflows, retention, export, monitoring, investigation readiness, gaps, exceptions, and retesting.",
+      "path": "templates/rmm-audit-log-review-checklist.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 7281,
+      "hash": "sha256:c3ff15fbd97f05739b39220952a3b36661809303e8d9274e03ef1620149fb887",
+      "schema": {
+        "fields": [
+          { "name": "control_id", "type": "string" },
+          { "name": "review_area", "type": "string" },
+          { "name": "control_question", "type": "string" },
+          { "name": "required_evidence", "type": "string" },
+          { "name": "validation_method", "type": "string" },
+          { "name": "status", "type": "string" },
+          { "name": "evidence_reference", "type": "string" },
+          { "name": "evidence_date", "type": "date" },
+          { "name": "control_owner", "type": "string" },
+          { "name": "risk_if_missing", "type": "string" },
+          { "name": "gap_owner", "type": "string" },
+          { "name": "remediation_due", "type": "date" },
+          { "name": "exception_approver", "type": "string" },
+          { "name": "retest_date", "type": "date" },
+          { "name": "notes", "type": "string" }
+        ],
+        "primaryKey": "control_id"
+      }
+    },
     {
       "profile": "tabular-data-resource",
       "name": "rmm-requirements-matrix",
