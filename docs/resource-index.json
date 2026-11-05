@@ -602,6 +602,19 @@
   ],
   "templates": [
     {
+      "id": "msp-qbr-agenda-client-report-checklist",
+      "title": "MSP QBR agenda and client report checklist",
+      "category": "service-delivery",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/msp-qbr-agenda-client-report-checklist.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-qbr-agenda-client-report-checklist.csv",
+      "canonical_guide": "https://nizlo.com/rmm-reporting?utm_source=resource_index&utm_medium=resource&utm_campaign=msp_qbr_template",
+      "format": "text/csv",
+      "items": 24,
+      "fields": 14,
+      "access": "public",
+      "account_required": false
+    },
+    {
       "id": "rmm-vendor-demo-questions-checklist",
       "title": "30 RMM vendor demo questions checklist",
       "category": "selection",

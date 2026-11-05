@@ -4,6 +4,8 @@ Free, practical checklists for managed service providers and lean IT teams evalu
 
 Every resource below is public, ungated, and written to be usable independently of Nizlo's product. The canonical guides include downloadable field templates where available.
 
+Run an evidence-led client review with the [MSP QBR agenda and client report checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/msp-qbr-agenda-client-report-checklist.html). Its public [24-item CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-qbr-agenda-client-report-checklist.csv) covers scope, incidents, ticket demand, SLA clocks, endpoint coverage, alert quality, patch compliance, privileged access, remote support, automation, projects, continuity, commercial scope, decisions, and named next-quarter actions.
+
 Turn sales presentations into evidence-backed evaluations with the [30 RMM vendor demo questions checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vendor-demo-questions-checklist.html). The public [CSV worksheet](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-vendor-demo-questions-checklist.csv) pairs every question with why it matters, evidence to request, a bounded live test, a red flag, and decision notes—without requiring an account or email address.
 
 Start with the [free RMM calculators collection](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-calculators.html) to model migration cost and break-even, compare public prices, evaluate common pricing structures, and build an ROI case without an account or email gate.
@@ -91,7 +93,7 @@ The [RMM pricing transparency dataset](https://izikipizi.github.io/nizlo-msp-ope
 
 ## Citation and preservation
 
-Citation metadata is available in [`CITATION.cff`](CITATION.cff) and on the public [citation and preservation page](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html). The current collection is released as `v1.58.0`; Software Heritage preserves release `v1.57.0` and its repository history as snapshot [`swh:1:snp:ee7731bf72c784a1f6ad953388948f61dc3b8e17`](https://archive.softwareheritage.org/browse/snapshot/ee7731bf72c784a1f6ad953388948f61dc3b8e17/). The archive is a preservation service, not an endorsement of Nizlo or these resources.
+Citation metadata is available in [`CITATION.cff`](CITATION.cff) and on the public [citation and preservation page](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html). The current collection is released as `v1.59.0`; Software Heritage preserves release `v1.57.0` and its repository history as snapshot [`swh:1:snp:ee7731bf72c784a1f6ad953388948f61dc3b8e17`](https://archive.softwareheritage.org/browse/snapshot/ee7731bf72c784a1f6ad953388948f61dc3b8e17/). The archive is a preservation service, not an endorsement of Nizlo or these resources.
 
 ## Reusable field templates
 

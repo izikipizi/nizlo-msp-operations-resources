@@ -4,36 +4,11 @@
   "name": "nizlo-rmm-operations-resources",
   "id": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
   "title": "Nizlo RMM Operations Resources",
-  "description": "Twenty-four public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
+  "description": "Twenty-five public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
-  "version": "1.58.0",
+  "version": "1.59.0",
   "created": "2026-11-01",
   "contributors": [
-    {
-      "profile": "tabular-data-resource",
-      "name": "rmm-vendor-demo-questions-checklist",
-      "title": "30 RMM vendor demo questions checklist",
-      "description": "Thirty vendor-neutral RMM sales-demo questions with evidence requests, bounded live tests, red flags, and decision notes.",
-      "path": "templates/rmm-vendor-demo-questions-checklist.csv",
-      "format": "csv",
-      "mediatype": "text/csv",
-      "encoding": "utf-8",
-      "bytes": 11501,
-      "hash": "sha256:e9a19fd51c1e4661c0118e4edfb3f5488cb3d4b10fd66bf8743c6e6dd9637fe7",
-      "schema": {
-        "fields": [
-          { "name": "section", "type": "string" },
-          { "name": "question_id", "type": "string" },
-          { "name": "demo_question", "type": "string" },
-          { "name": "why_it_matters", "type": "string" },
-          { "name": "evidence_to_request", "type": "string" },
-          { "name": "live_demo_test", "type": "string" },
-          { "name": "red_flag", "type": "string" },
-          { "name": "decision_notes", "type": "string" }
-        ],
-        "primaryKey": "question_id"
-      }
-    },
     {
       "title": "Kip Ecklund",
       "role": "author"
@@ -100,9 +75,68 @@
     "RMM RFP template",
     "MSP SLA",
     "response time",
-    "service restoration"
+    "service restoration",
+    "MSP QBR template",
+    "MSP quarterly business review",
+    "MSP client reporting"
   ],
   "resources": [
+    {
+      "profile": "tabular-data-resource",
+      "name": "msp-qbr-agenda-client-report-checklist",
+      "title": "MSP QBR agenda and client report checklist",
+      "description": "Twenty-four agenda items and fourteen fields for evidence-led managed-services quarterly business reviews across scope, service health, endpoints, monitoring, patching, security, automation, projects, continuity, commercial review, decisions, and actions.",
+      "path": "templates/msp-qbr-agenda-client-report-checklist.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 12531,
+      "hash": "sha256:b58c018d8c3d18f0082b552088154d2d0501289a2add7557ea192f53f74773dc",
+      "schema": {
+        "fields": [
+          { "name": "section", "type": "string" },
+          { "name": "item_id", "type": "string" },
+          { "name": "agenda_item", "type": "string" },
+          { "name": "client_question", "type": "string" },
+          { "name": "evidence_to_prepare", "type": "string" },
+          { "name": "metric_definition", "type": "string" },
+          { "name": "comparison_period", "type": "string" },
+          { "name": "provider_owner", "type": "string" },
+          { "name": "client_owner", "type": "string" },
+          { "name": "decision_or_action", "type": "string" },
+          { "name": "due_date", "type": "date" },
+          { "name": "status", "type": "string" },
+          { "name": "evidence_link", "type": "string" },
+          { "name": "notes", "type": "string" }
+        ],
+        "primaryKey": "item_id"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "rmm-vendor-demo-questions-checklist",
+      "title": "30 RMM vendor demo questions checklist",
+      "description": "Thirty vendor-neutral RMM sales-demo questions with evidence requests, bounded live tests, red flags, and decision notes.",
+      "path": "templates/rmm-vendor-demo-questions-checklist.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 11501,
+      "hash": "sha256:e9a19fd51c1e4661c0118e4edfb3f5488cb3d4b10fd66bf8743c6e6dd9637fe7",
+      "schema": {
+        "fields": [
+          { "name": "section", "type": "string" },
+          { "name": "question_id", "type": "string" },
+          { "name": "demo_question", "type": "string" },
+          { "name": "why_it_matters", "type": "string" },
+          { "name": "evidence_to_request", "type": "string" },
+          { "name": "live_demo_test", "type": "string" },
+          { "name": "red_flag", "type": "string" },
+          { "name": "decision_notes", "type": "string" }
+        ],
+        "primaryKey": "question_id"
+      }
+    },
     {
       "profile": "tabular-data-resource",
       "name": "rmm-vendor-exit-plan",
