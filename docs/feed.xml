@@ -13,6 +13,16 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>RMM replacement migration paths: Atera, ConnectWise, Datto, SuperOps, and Syncro</title>
+    <id>https://nizlo.com/guides/rmm-migration-checklist#replacement-paths</id>
+    <link href="https://nizlo.com/guides/rmm-migration-checklist?utm_source=atom&amp;utm_medium=resource_feed&amp;utm_campaign=rmm_migration_paths" />
+    <updated>2026-11-05T00:00:00Z</updated>
+    <category term="migration" />
+    <category term="comparison" />
+    <category term="RMM" />
+    <summary>Use one common discovery, pilot, coexistence, cutover, rollback, and cleanup workflow with source-dated comparison paths for teams replacing Atera, ConnectWise RMM, Datto RMM, SuperOps, or Syncro.</summary>
+  </entry>
+  <entry>
     <title>RMM vendor exit plan checklist and evidence register</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vendor-exit-plan-checklist.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vendor-exit-plan-checklist.html" />

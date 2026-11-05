@@ -405,6 +405,66 @@
       "account_required": false
     },
     {
+      "id": "atera-alternative",
+      "title": "Atera Alternative: Pricing and Feature Comparison",
+      "category": "comparison",
+      "url": "https://nizlo.com/compare/atera-alternative",
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "connectwise-rmm-alternative",
+      "title": "ConnectWise RMM Alternative for Windows-First MSPs",
+      "category": "comparison",
+      "url": "https://nizlo.com/compare/connectwise-rmm-alternative",
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "datto-rmm-alternative",
+      "title": "Datto RMM Alternative for Windows-First MSPs",
+      "category": "comparison",
+      "url": "https://nizlo.com/compare/datto-rmm-alternative",
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "superops-alternative",
+      "title": "SuperOps Alternative for Small Windows-First MSPs",
+      "category": "comparison",
+      "url": "https://nizlo.com/compare/superops-alternative",
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "syncro-alternative",
+      "title": "Syncro Alternative With Unlimited RMM Endpoints",
+      "category": "comparison",
+      "url": "https://nizlo.com/compare/syncro-alternative",
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
       "id": "manageengine-endpoint-central-msp-alternative",
       "title": "ManageEngine Endpoint Central Alternative for MSPs",
       "category": "comparison",
