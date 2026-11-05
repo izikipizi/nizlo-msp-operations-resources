@@ -158,14 +158,14 @@
     <summary>Turn 32 example RMM requirements into priorities, evidence requests, pilot tests, acceptance criteria, owned gaps, remediation commitments, and defensible decisions, with a maintained full RFP guide.</summary>
   </entry>
   <entry>
-    <title>RMM quote comparison worksheet</title>
+    <title>RMM pricing comparison worksheet</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html" />
-    <updated>2026-11-03T00:00:00Z</updated>
+    <updated>2026-11-05T00:00:00Z</updated>
     <category term="pricing" />
     <category term="selection" />
     <category term="template" />
-    <summary>Normalize dated RMM proposals across platform fees, minimum commitments, technicians, endpoints, add-ons, implementation, first-year totals, renewal changes, contract terms, and exit costs.</summary>
+    <summary>Normalize RMM pricing and dated vendor proposals across platform fees, minimum commitments, technicians, endpoints, add-ons, implementation, first-year totals, renewal changes, contract terms, and exit costs.</summary>
   </entry>
   <entry>
     <title>Windows patch failure triage checklist for MSPs</title>
