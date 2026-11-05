@@ -8,6 +8,7 @@
     <meta name="robots" content="index,follow" />
     <link rel="canonical" href="https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html" />
     <link rel="alternate" type="application/ld+json" href="data/public-rmm-pricing-comparison-2026-11-02.jsonld" title="Dataset metadata" />
+    <link rel="alternate" type="application/ld+json" href="data/public-rmm-pricing-comparison-2026-11-02-croissant.json" title="MLCommons Croissant metadata" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="RMM Pricing Transparency Dataset: 14 Products" />
     <meta property="og:description" content="Six products publish fully computable numeric pricing across the four scenarios; four are quote-only. Download the source-dated CSV." />
@@ -41,6 +42,57 @@
           "contentUrl": "https://izikipizi.github.io/nizlo-msp-operations-resources/data/public-rmm-pricing-comparison-2026-11-02.csv",
           "encodingFormat": "text/csv"
         }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": {
+          "@language": "en",
+          "sc": "https://schema.org/",
+          "cr": "http://mlcommons.org/croissant/"
+        },
+        "@type": "sc:Dataset",
+        "@id": "https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html#dataset",
+        "name": "RMM pricing transparency dataset for one-technician MSPs",
+        "description": "Fourteen source-dated RMM pricing records with exact one-technician scenario costs only where official public rates support the arithmetic.",
+        "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "conformsTo": "http://mlcommons.org/croissant/1.0",
+        "version": "2026-11-02",
+        "datePublished": "2026-10-30",
+        "dateModified": "2026-11-05",
+        "isAccessibleForFree": true,
+        "creator": { "@type": "sc:Organization", "name": "Nizlo", "url": "https://nizlo.com/" },
+        "distribution": [{
+          "@type": "cr:FileObject",
+          "@id": "rmm-pricing.csv",
+          "name": "public-rmm-pricing-comparison-2026-11-02.csv",
+          "contentUrl": "https://izikipizi.github.io/nizlo-msp-operations-resources/data/public-rmm-pricing-comparison-2026-11-02.csv",
+          "encodingFormat": "text/csv",
+          "contentSize": "4273 bytes",
+          "sha256": "966cc69560e41681a3bf07894b5c485024d93e4793db6b112572db6608f5e06c"
+        }],
+        "recordSet": [{
+          "@type": "cr:RecordSet",
+          "@id": "pricing-disclosures",
+          "name": "RMM pricing disclosures",
+          "description": "One record per product or edition, with price visibility, normalized scenario costs, source, and fact-check date.",
+          "key": ["pricing-disclosures/product"],
+          "field": [
+            { "@type": "cr:Field", "@id": "pricing-disclosures/product", "name": "product", "dataType": "sc:Text", "source": { "fileObject": { "@id": "rmm-pricing.csv" }, "extract": { "column": "product" } } },
+            { "@type": "cr:Field", "@id": "pricing-disclosures/pricing_model", "name": "pricing_model", "dataType": "sc:Text", "source": { "fileObject": { "@id": "rmm-pricing.csv" }, "extract": { "column": "pricing_model" } } },
+            { "@type": "cr:Field", "@id": "pricing-disclosures/billing_term_for_estimate", "name": "billing_term_for_estimate", "dataType": "sc:Text", "source": { "fileObject": { "@id": "rmm-pricing.csv" }, "extract": { "column": "billing_term_for_estimate" } } },
+            { "@type": "cr:Field", "@id": "pricing-disclosures/public_price_visibility", "name": "public_price_visibility", "dataType": "sc:Text", "source": { "fileObject": { "@id": "rmm-pricing.csv" }, "extract": { "column": "public_price_visibility" } } },
+            { "@type": "cr:Field", "@id": "pricing-disclosures/one_technician_endpoints_10_usd_month", "name": "one_technician_endpoints_10_usd_month", "dataType": "sc:Float", "source": { "fileObject": { "@id": "rmm-pricing.csv" }, "extract": { "column": "one_technician_endpoints_10_usd_month" } } },
+            { "@type": "cr:Field", "@id": "pricing-disclosures/one_technician_endpoints_50_usd_month", "name": "one_technician_endpoints_50_usd_month", "dataType": "sc:Float", "source": { "fileObject": { "@id": "rmm-pricing.csv" }, "extract": { "column": "one_technician_endpoints_50_usd_month" } } },
+            { "@type": "cr:Field", "@id": "pricing-disclosures/one_technician_endpoints_100_usd_month", "name": "one_technician_endpoints_100_usd_month", "dataType": "sc:Float", "source": { "fileObject": { "@id": "rmm-pricing.csv" }, "extract": { "column": "one_technician_endpoints_100_usd_month" } } },
+            { "@type": "cr:Field", "@id": "pricing-disclosures/one_technician_endpoints_500_usd_month", "name": "one_technician_endpoints_500_usd_month", "dataType": "sc:Float", "source": { "fileObject": { "@id": "rmm-pricing.csv" }, "extract": { "column": "one_technician_endpoints_500_usd_month" } } },
+            { "@type": "cr:Field", "@id": "pricing-disclosures/month_to_month_alternative_usd", "name": "month_to_month_alternative_usd", "dataType": "sc:Float", "source": { "fileObject": { "@id": "rmm-pricing.csv" }, "extract": { "column": "month_to_month_alternative_usd" } } },
+            { "@type": "cr:Field", "@id": "pricing-disclosures/source_url", "name": "source_url", "dataType": "sc:URL", "source": { "fileObject": { "@id": "rmm-pricing.csv" }, "extract": { "column": "source_url" } } },
+            { "@type": "cr:Field", "@id": "pricing-disclosures/fact_checked", "name": "fact_checked", "dataType": "sc:Date", "source": { "fileObject": { "@id": "rmm-pricing.csv" }, "extract": { "column": "fact_checked" } } },
+            { "@type": "cr:Field", "@id": "pricing-disclosures/notes", "name": "notes", "dataType": "sc:Text", "source": { "fileObject": { "@id": "rmm-pricing.csv" }, "extract": { "column": "notes" } } }
+          ]
+        }]
       }
     </script>
     <style>
@@ -86,6 +138,7 @@
         <a class="button" href="https://nizlo.com/guides/cheapest-rmm-for-small-msps?utm_source=github_pages&amp;utm_medium=dataset&amp;utm_campaign=rmm_pricing_transparency">Open calculator and methodology</a>
         <a class="button" href="datapackage.json">Validate with the Data Package</a>
         <a class="button" href="data/public-rmm-pricing-comparison-2026-11-02.jsonld">Open JSON-LD/DCAT metadata</a>
+        <a class="button" href="data/public-rmm-pricing-comparison-2026-11-02-croissant.json">Open Croissant metadata</a>
       </div>
 
       <div class="panel">

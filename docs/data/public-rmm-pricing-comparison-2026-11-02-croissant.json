@@ -1,0 +1,149 @@
+{
+  "@context": {
+    "@language": "en",
+    "sc": "https://schema.org/",
+    "cr": "http://mlcommons.org/croissant/"
+  },
+  "@type": "sc:Dataset",
+  "@id": "https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html#dataset",
+  "name": "RMM pricing transparency dataset for one-technician MSPs",
+  "description": "Fourteen source-dated RMM pricing records covering published numeric prices, free tiers, source-available software, published ranges, and quote-only vendors. Exact monthly costs are provided for one technician at 10, 50, 100, and 500 endpoints only when official public rates support the arithmetic.",
+  "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "version": "2026-11-02",
+  "datePublished": "2026-10-30",
+  "dateModified": "2026-11-05",
+  "isAccessibleForFree": true,
+  "creator": {
+    "@type": "sc:Organization",
+    "name": "Nizlo",
+    "url": "https://nizlo.com/"
+  },
+  "keywords": [
+    "RMM pricing",
+    "MSP software cost",
+    "pricing transparency",
+    "remote monitoring and management",
+    "software pricing"
+  ],
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "rmm-pricing.csv",
+      "name": "public-rmm-pricing-comparison-2026-11-02.csv",
+      "description": "UTF-8 CSV with one source-dated pricing disclosure per product.",
+      "contentUrl": "https://izikipizi.github.io/nizlo-msp-operations-resources/data/public-rmm-pricing-comparison-2026-11-02.csv",
+      "encodingFormat": "text/csv",
+      "contentSize": "4273 bytes",
+      "sha256": "966cc69560e41681a3bf07894b5c485024d93e4793db6b112572db6608f5e06c"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "pricing-disclosures",
+      "name": "RMM pricing disclosures",
+      "description": "One record per RMM product or edition, with public-price visibility, normalized scenario costs, source, and fact-check date.",
+      "key": ["pricing-disclosures/product"],
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "pricing-disclosures/product",
+          "name": "product",
+          "description": "Product or edition name.",
+          "dataType": "sc:Text",
+          "source": { "fileObject": { "@id": "rmm-pricing.csv" }, "extract": { "column": "product" } }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "pricing-disclosures/pricing_model",
+          "name": "pricing_model",
+          "description": "Publicly described pricing structure.",
+          "dataType": "sc:Text",
+          "source": { "fileObject": { "@id": "rmm-pricing.csv" }, "extract": { "column": "pricing_model" } }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "pricing-disclosures/billing_term_for_estimate",
+          "name": "billing_term_for_estimate",
+          "description": "Billing term used for normalized monthly values.",
+          "dataType": "sc:Text",
+          "source": { "fileObject": { "@id": "rmm-pricing.csv" }, "extract": { "column": "billing_term_for_estimate" } }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "pricing-disclosures/public_price_visibility",
+          "name": "public_price_visibility",
+          "description": "Visibility class: numeric_public, free_tier_only, source_available, range_and_quote, or quote_only.",
+          "dataType": "sc:Text",
+          "source": { "fileObject": { "@id": "rmm-pricing.csv" }, "extract": { "column": "public_price_visibility" } }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "pricing-disclosures/one_technician_endpoints_10_usd_month",
+          "name": "one_technician_endpoints_10_usd_month",
+          "description": "Exact public monthly subscription cost in USD for one technician and 10 endpoints; blank when not publicly computable.",
+          "dataType": "sc:Float",
+          "source": { "fileObject": { "@id": "rmm-pricing.csv" }, "extract": { "column": "one_technician_endpoints_10_usd_month" } }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "pricing-disclosures/one_technician_endpoints_50_usd_month",
+          "name": "one_technician_endpoints_50_usd_month",
+          "description": "Exact public monthly subscription cost in USD for one technician and 50 endpoints; blank when not publicly computable.",
+          "dataType": "sc:Float",
+          "source": { "fileObject": { "@id": "rmm-pricing.csv" }, "extract": { "column": "one_technician_endpoints_50_usd_month" } }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "pricing-disclosures/one_technician_endpoints_100_usd_month",
+          "name": "one_technician_endpoints_100_usd_month",
+          "description": "Exact public monthly subscription cost in USD for one technician and 100 endpoints; blank when not publicly computable.",
+          "dataType": "sc:Float",
+          "source": { "fileObject": { "@id": "rmm-pricing.csv" }, "extract": { "column": "one_technician_endpoints_100_usd_month" } }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "pricing-disclosures/one_technician_endpoints_500_usd_month",
+          "name": "one_technician_endpoints_500_usd_month",
+          "description": "Exact public monthly subscription cost in USD for one technician and 500 endpoints; blank when not publicly computable.",
+          "dataType": "sc:Float",
+          "source": { "fileObject": { "@id": "rmm-pricing.csv" }, "extract": { "column": "one_technician_endpoints_500_usd_month" } }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "pricing-disclosures/month_to_month_alternative_usd",
+          "name": "month_to_month_alternative_usd",
+          "description": "Published month-to-month alternative in USD when the normalized estimate uses annual billing.",
+          "dataType": "sc:Float",
+          "source": { "fileObject": { "@id": "rmm-pricing.csv" }, "extract": { "column": "month_to_month_alternative_usd" } }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "pricing-disclosures/source_url",
+          "name": "source_url",
+          "description": "Official vendor source used to verify the record.",
+          "dataType": "sc:URL",
+          "source": { "fileObject": { "@id": "rmm-pricing.csv" }, "extract": { "column": "source_url" } }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "pricing-disclosures/fact_checked",
+          "name": "fact_checked",
+          "description": "Date the linked official source was manually checked.",
+          "dataType": "sc:Date",
+          "source": { "fileObject": { "@id": "rmm-pricing.csv" }, "extract": { "column": "fact_checked" } }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "pricing-disclosures/notes",
+          "name": "notes",
+          "description": "Scope, interpretation, and limitation notes for the record.",
+          "dataType": "sc:Text",
+          "source": { "fileObject": { "@id": "rmm-pricing.csv" }, "extract": { "column": "notes" } }
+        }
+      ]
+    }
+  ]
+}
