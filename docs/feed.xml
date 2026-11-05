@@ -80,7 +80,7 @@
     <title>RMM patch-compliance calculator: show the denominator</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-patch-compliance-calculator.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-patch-compliance-calculator.html" />
-    <updated>2026-11-04T00:00:00Z</updated>
+    <updated>2026-11-05T00:00:00Z</updated>
     <category term="patch-management" />
     <category term="calculator" />
     <category term="reporting" />
@@ -171,7 +171,7 @@
     <title>Windows patch failure triage checklist for MSPs</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-failure-triage-checklist.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-failure-triage-checklist.html" />
-    <updated>2026-11-03T00:00:00Z</updated>
+    <updated>2026-11-05T00:00:00Z</updated>
     <category term="patch-management" />
     <category term="troubleshooting" />
     <category term="checklist" />
@@ -310,7 +310,7 @@
     <title>Windows patch exception review and closure template</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-exception-review-template.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-exception-review-template.html" />
-    <updated>2026-11-02T00:00:00Z</updated>
+    <updated>2026-11-05T00:00:00Z</updated>
     <category term="patch-management" />
     <category term="template" />
     <category term="exception-management" />
