@@ -6,7 +6,7 @@
   "title": "Nizlo RMM Operations Resources",
   "description": "Twenty-three public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
-  "version": "1.57.8",
+  "version": "1.57.9",
   "created": "2026-11-01",
   "contributors": [
     {
@@ -864,7 +864,7 @@
     {
       "profile": "tabular-data-resource",
       "name": "rmm-technician-access-review",
-      "title": "RMM technician access review matrix",
+      "title": "RMM permissions matrix and technician access review",
       "description": "Twenty-nine fields for reviewing technician and role scope, privileged capabilities, justification, authentication, approval, review, exceptions, and remediation.",
       "path": "templates/rmm-technician-access-review.csv",
       "format": "csv",

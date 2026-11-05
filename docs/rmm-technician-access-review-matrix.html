@@ -1,20 +1,20 @@
 <!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Free RMM Technician Access Review Matrix (CSV) | Nizlo</title>
-<meta name="description" content="Download a free RMM technician access review matrix for least-privilege roles, customer scope, remote control, scripts, automation, MFA, approvals, and remediation." />
+<title>RMM Permissions Matrix &amp; Technician Access Review (CSV)</title>
+<meta name="description" content="Download a free 29-field RMM permissions matrix for technician roles, customer scope, remote control, scripts, automation, MFA, approvals, exceptions, and remediation." />
 <meta name="robots" content="index,follow,max-image-preview:large" />
 <link rel="canonical" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-technician-access-review-matrix.html" />
 <link rel="alternate" type="application/atom+xml" title="Nizlo MSP Operations Resources" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
-<meta property="og:type" content="website" /><meta property="og:title" content="Free RMM Technician Access Review Matrix" />
-<meta property="og:description" content="A public CSV for reviewing RMM technician roles, tenant scope, privileged capabilities, approvals, MFA, review dates, and remediation—without an account or email gate." />
+<meta property="og:type" content="website" /><meta property="og:title" content="RMM Permissions Matrix &amp; Technician Access Review" />
+<meta property="og:description" content="A public 29-field CSV for reviewing technician roles, tenant scope, privileged capabilities, approvals, MFA, review dates, exceptions, and remediation." />
 <meta property="og:url" content="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-technician-access-review-matrix.html" />
 <meta property="og:image" content="https://nizlo.com/opengraph-image" /><meta name="twitter:card" content="summary_large_image" /><meta name="theme-color" content="#07171d" />
 <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Dataset",
   "@id": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-technician-access-review-matrix.html#dataset",
-  "name": "RMM technician access review matrix",
+  "name": "RMM permissions matrix and technician access review",
   "alternateName": "RMM permissions matrix template",
   "description": "A public CSV template for reviewing RMM technician roles, customer and device scope, privileged capabilities, business justification, MFA, trusted-admin-device requirements, approval, review dates, exceptions, and remediation.",
   "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-technician-access-review-matrix.html",
@@ -23,28 +23,37 @@
   "creator": { "@type": "Person", "name": "Kip Ecklund" },
   "publisher": { "@type": "Organization", "name": "Nizlo", "url": "https://nizlo.com/" },
   "datePublished": "2026-11-01",
-  "dateModified": "2026-11-01",
-  "version": "1.19.0",
+  "dateModified": "2026-11-05",
+  "version": "1.57.9",
   "isAccessibleForFree": true,
   "conditionsOfAccess": "Public and ungated; no account or email address is required.",
   "inLanguage": "en",
   "includedInDataCatalog": { "@type": "DataCatalog", "name": "Nizlo MSP Operations Resources", "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/" },
   "citation": "https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html",
-  "sameAs": "https://github.com/izikipizi/nizlo-msp-operations-resources/tree/v1.19.0",
+  "sameAs": "https://github.com/izikipizi/nizlo-msp-operations-resources/tree/v1.57.9",
   "measurementTechnique": "Operator-entered access-assignment review with explicit scope, capability, approval, review, exception, and remediation fields.",
   "keywords": ["RMM permissions matrix", "technician access review", "MSP least privilege", "RMM role review", "privileged access checklist"],
   "variableMeasured": ["Technician or role", "Tenant scope", "Device scope", "Privileged capabilities", "MFA", "Managed admin device", "Approval", "Review date", "Decision", "Remediation owner"],
   "distribution": { "@type": "DataDownload", "name": "RMM technician access review CSV", "contentUrl": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-technician-access-review.csv", "encodingFormat": "text/csv" }
 }</script>
+<script type="application/ld+json">{
+  "@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"What should an RMM permissions matrix include?","acceptedAnswer":{"@type":"Answer","text":"An RMM permissions matrix should identify each technician or role, customer and device scope, privileged capabilities, business justification, MFA and managed-admin-device requirements, approver, approval date, last and next review dates, temporary expiration, decision, exception, ticket, and remediation owner."}},
+    {"@type":"Question","name":"Which RMM permissions should be reviewed separately?","acceptedAnswer":{"@type":"Answer","text":"Review interactive remote control, background tools, command execution, scripts, automation, patch approval, alert and policy changes, file transfer, credential or vault access, role administration, API access, billing, and commercial data separately rather than relying on a broad role name."}},
+    {"@type":"Question","name":"How often should RMM technician access be reviewed?","acceptedAnswer":{"@type":"Answer","text":"Review access when a technician joins, changes duties, or leaves; before and after temporary elevation; after incidents or material platform changes; and on a recurring risk-based schedule. Broad customer scope and high-impact permissions should be reviewed first."}},
+    {"@type":"Question","name":"What decisions should an access review record?","acceptedAnswer":{"@type":"Answer","text":"Record a clear decision to retain, reduce, revoke, or investigate each assignment. Every unresolved exception should have an accountable owner, linked work item, target date, compensating control, and follow-up review."}}
+  ]
+}</script>
 <style>:root{color-scheme:dark;--bg:#06141a;--panel:#0b222b;--line:#21424c;--text:#edf8fa;--muted:#abc2c8;--teal:#1dc6c7;--ink:#03282d}*{box-sizing:border-box}body{margin:0;color:var(--text);background:radial-gradient(circle at 80% 0,rgba(29,198,199,.17),transparent 32rem),var(--bg);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6}a{color:inherit}a:focus-visible{outline:3px solid #8be7e4;outline-offset:4px}.wrap{width:min(980px,calc(100% - 2rem));margin:auto}header{padding:1.1rem 0;border-bottom:1px solid rgba(139,231,228,.13)}nav{display:flex;justify-content:space-between;align-items:center;gap:1rem}.brand{display:flex;align-items:center;gap:.7rem;font-weight:850;text-decoration:none}.mark{display:grid;place-items:center;width:2rem;height:2rem;border-radius:.65rem;background:var(--teal);color:var(--ink)}.back{color:var(--muted)}main{padding:5rem 0 4rem}.eyebrow{color:#8be7e4;font-weight:800;text-transform:uppercase;letter-spacing:.12em;font-size:.78rem}h1{max-width:850px;margin:.65rem 0 1rem;font-size:clamp(2.6rem,7vw,5.3rem);line-height:.96;letter-spacing:-.055em}.lede{max-width:780px;margin:0;color:var(--muted);font-size:1.15rem}.actions{display:flex;flex-wrap:wrap;gap:.75rem;margin:2rem 0 3rem}.button{display:inline-flex;padding:.8rem 1.05rem;border-radius:.72rem;border:1px solid var(--line);text-decoration:none;font-weight:800}.primary{background:var(--teal);color:var(--ink);border-color:var(--teal)}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}article{padding:1.5rem;border:1px solid var(--line);border-radius:1.1rem;background:linear-gradient(145deg,rgba(14,41,50,.95),rgba(8,28,35,.96))}h2{margin:.2rem 0 .6rem;font-size:1.45rem}article p{margin:0;color:var(--muted)}.note{margin-top:2rem;padding:1.35rem 1.5rem;border-left:4px solid var(--teal);background:var(--panel);color:var(--muted)}footer{display:flex;justify-content:space-between;gap:1rem;padding:2rem 0;border-top:1px solid var(--line);color:var(--muted);font-size:.92rem}@media(max-width:700px){main{padding-top:3.5rem}.grid{grid-template-columns:1fr}footer{flex-direction:column}}</style>
 </head><body>
 <header><nav class="wrap"><a class="brand" href="./"><span class="mark">N</span><span>Nizlo MSP Operations Resources</span></a><a class="back" href="templates/">All templates</a></nav></header>
-<main class="wrap"><div class="eyebrow">29 fields · Public CSV · No signup</div><h1>Review who can do what in your RMM.</h1>
-<p class="lede">Map each technician or role to its customer scope, device scope, privileged capabilities, business justification, approvals, authentication controls, review dates, and remediation owner.</p>
-<div class="actions"><a class="button primary" href="templates/rmm-technician-access-review.csv" download>Download the CSV</a><a class="button" href="https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final">NIST least privilege</a><a class="button" href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa22-131a">CISA MSP guidance</a></div>
+<main class="wrap"><div class="eyebrow">29 fields · Public CSV · No signup</div><h1>RMM permissions matrix and technician access review.</h1>
+<p class="lede">Use this RMM permissions matrix to map every technician or role to customer scope, device scope, privileged capabilities, business justification, approvals, authentication controls, review dates, exceptions, and remediation.</p>
+<div class="actions"><a class="button primary" href="templates/rmm-technician-access-review.csv" download>Download the CSV</a><a class="button" href="rmm-security-evidence-checklist.html">Use the RMM security checklist</a><a class="button" href="https://nizlo.com/guides/rmm-security-checklist?utm_source=github_pages&amp;utm_medium=resource&amp;utm_campaign=rmm_permissions_matrix">Read the security guide</a><a class="button" href="https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final">NIST least privilege</a></div>
 <section class="grid" aria-label="RMM technician access review guidance"><article><h2>Start with scope</h2><p>Record the customer, tenant, site, and device boundary for every assignment. A narrow capability across every customer can still be excessive privilege.</p></article><article><h2>Separate capabilities</h2><p>Review remote control, background tools, scripts, automation, patch approval, alert changes, credential access, role administration, APIs, and commercial data independently.</p></article><article><h2>Require evidence</h2><p>Name the business reason, approver, approval time, last review, next review, and any temporary expiration rather than treating a role name as proof.</p></article><article><h2>Close exceptions</h2><p>Record retain, reduce, revoke, or investigate as a decision, then assign every open exception a ticket and remediation owner.</p></article></section>
 <aside class="note"><strong>Safe use:</strong> the included row is an example. Delete it before use. Do not record passwords, recovery codes, access tokens, API secrets, or vault contents in the matrix.</aside>
+<section aria-labelledby="faq-heading" style="margin-top:2.5rem"><h2 id="faq-heading">RMM permissions matrix FAQ</h2><div class="grid"><article><h2>What belongs in the matrix?</h2><p>Record each technician or role, customer and device scope, privileged capabilities, justification, MFA and admin-device requirements, approval, review dates, expiration, decision, exception, and remediation owner.</p></article><article><h2>Which permissions need separate review?</h2><p>Separate remote control, background tools, commands, scripts, automation, patch approval, alert and policy changes, file transfer, credentials, role administration, APIs, billing, and commercial data.</p></article><article><h2>How often should access be reviewed?</h2><p>Review at joiner, mover, and leaver events; around temporary elevation; after incidents or platform changes; and on a recurring risk-based schedule. Start with broad scope and high-impact permissions.</p></article><article><h2>What decision should be recorded?</h2><p>Choose retain, reduce, revoke, or investigate. Give every open exception an owner, linked work item, target date, compensating control, and follow-up review.</p></article></div></section>
 <aside class="note"><strong>How to apply it:</strong> review high-impact capabilities and broad customer scope first; verify MFA and managed-admin-device requirements; remove access immediately when employment or duties change; and give temporary elevation an explicit expiration. The template is an operating aid, not a certification or substitute for product-specific access testing.</aside>
 <aside class="note"><strong>Relationship disclosure:</strong> Nizlo, a Windows-first RMM and IT-management platform, maintains this template. It is designed for use with any RMM or privileged-access workflow and does not claim that every product exposes every listed permission.</aside></main>
-<footer class="wrap"><span>Maintained by Nizlo · Updated November 1, 2026</span><span><a href="templates/">Template library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources/tree/v1.19.0">Version 1.19.0</a></span></footer>
+<footer class="wrap"><span>Maintained by Nizlo · Updated November 5, 2026</span><span><a href="templates/">Template library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources/tree/v1.57.9">Version 1.57.9</a></span></footer>
 </body></html>

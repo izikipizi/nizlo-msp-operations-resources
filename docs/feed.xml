@@ -345,13 +345,13 @@
     <summary>Use a free 32-control MSP client offboarding checklist to coordinate transition authority, inventory, secure handoff, access revocation, RMM agent removal, data disposition, acceptance, and post-exit verification.</summary>
   </entry>
   <entry>
-    <title>RMM technician access review matrix</title>
+    <title>RMM permissions matrix and technician access review</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-technician-access-review-matrix.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-technician-access-review-matrix.html" />
-    <updated>2026-11-01T00:00:00Z</updated>
+    <updated>2026-11-05T00:00:00Z</updated>
     <category term="security" />
     <category term="least-privilege" />
-    <summary>Use 29 vendor-neutral fields to review RMM technician and role scope, privileged capabilities, business justification, MFA, approvals, review dates, exceptions, decisions, and remediation.</summary>
+    <summary>Use a free 29-field RMM permissions matrix to review technician and role scope, privileged capabilities, business justification, MFA, approvals, review dates, exceptions, decisions, and remediation.</summary>
   </entry>
   <entry>
     <title>Endpoint inventory template and CMDB spreadsheet</title>
