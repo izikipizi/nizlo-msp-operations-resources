@@ -3,20 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>RMM Deployment Checklist and Rollout Plan Template</title>
-    <meta name="description" content="Download a free 33-control RMM deployment checklist and rollout-plan CSV for inventory, agent preparation, pilot testing, deployment waves, rollback, verification, and closeout." />
+    <title>RMM Implementation Checklist and Rollout Plan Template</title>
+    <meta name="description" content="Download a free 33-control RMM implementation checklist and rollout-plan CSV for planning, inventory, agent preparation, pilot testing, deployment waves, rollback, verification, and closeout." />
     <meta name="robots" content="index,follow,max-image-preview:large" />
     <link rel="canonical" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-deployment-readiness-template.html" />
     <link rel="alternate" type="application/atom+xml" title="Nizlo MSP Operations Resources" href="feed.xml" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="RMM Deployment Checklist and Rollout Plan" />
-    <meta property="og:description" content="A free 33-control worksheet for preparing, piloting, rolling out, verifying, and closing an RMM agent deployment." />
+    <meta property="og:title" content="RMM Implementation Checklist and Rollout Plan" />
+    <meta property="og:description" content="A free 33-control worksheet for planning, preparing, piloting, rolling out, verifying, and closing an RMM implementation." />
     <meta property="og:url" content="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-deployment-readiness-template.html" />
     <meta property="og:image" content="https://nizlo.com/opengraph-image" />
     <meta property="og:image:alt" content="Nizlo RMM deployment readiness checklist template" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="RMM Deployment Checklist and Rollout Plan" />
-    <meta name="twitter:description" content="A free 33-control worksheet for preparing, piloting, rolling out, verifying, and closing an RMM agent deployment." />
+    <meta name="twitter:title" content="RMM Implementation Checklist and Rollout Plan" />
+    <meta name="twitter:description" content="A free 33-control worksheet for planning, preparing, piloting, rolling out, verifying, and closing an RMM implementation." />
     <meta name="twitter:image" content="https://nizlo.com/opengraph-image" />
     <meta name="twitter:image:alt" content="Nizlo RMM deployment readiness checklist template" />
     <meta name="theme-color" content="#07171d" />
@@ -24,14 +24,14 @@
       {
         "@context": "https://schema.org",
         "@type": "Dataset",
-        "name": "RMM deployment checklist and rollout plan template",
-        "description": "A vendor-neutral CSV with 33 controls for inventorying endpoints, preparing RMM agents, piloting, deploying in waves, defining rollback, verifying coverage, and closing an RMM rollout.",
+        "name": "RMM implementation checklist and rollout plan template",
+        "description": "A vendor-neutral CSV with 33 controls for planning an RMM implementation, inventorying endpoints, preparing agents, piloting, deploying in waves, defining rollback, verifying coverage, and closing the rollout.",
         "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-deployment-readiness-template.html",
         "creator": { "@type": "Organization", "name": "Nizlo", "url": "https://nizlo.com/" },
         "dateModified": "2026-11-05",
         "isAccessibleForFree": true,
         "inLanguage": "en",
-        "keywords": ["RMM deployment checklist", "RMM deployment plan", "RMM agent deployment", "deployment readiness", "MSP rollout plan", "endpoint management", "RMM pilot"],
+        "keywords": ["RMM implementation checklist", "RMM implementation plan", "RMM deployment checklist", "RMM deployment plan", "RMM agent deployment", "deployment readiness", "MSP rollout plan", "endpoint management", "RMM pilot"],
         "variableMeasured": ["Phase", "Control owner", "Control status", "Evidence", "Exception owner", "Due date", "Rollback trigger"],
         "distribution": {
           "@type": "DataDownload",
@@ -51,8 +51,13 @@
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "What should an RMM deployment checklist include?",
-            "acceptedAnswer": { "@type": "Answer", "text": "An RMM deployment checklist should define ownership and scope, reconcile the endpoint inventory, verify installer and network prerequisites, test representative pilot devices, set wave and rollback thresholds, reconcile every result, and retain evidence for exceptions and final acceptance." }
+            "name": "What should an RMM implementation checklist include?",
+            "acceptedAnswer": { "@type": "Answer", "text": "An RMM implementation checklist should define ownership and scope, reconcile the endpoint inventory, verify installer and network prerequisites, test representative pilot devices, set deployment-wave and rollback thresholds, reconcile every result, and retain evidence for exceptions and final acceptance." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is RMM implementation different from RMM deployment?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Implementation is the full operating change: goals, inventory, policy design, pilot, technician readiness, deployment, acceptance, and stabilization. Deployment is the narrower act of installing and enrolling agents, so a complete implementation plan must cover both." }
           },
           {
             "@type": "Question",
@@ -97,8 +102,8 @@
     <header><nav class="wrap"><a href="./">Nizlo MSP resources</a><a href="templates/">All CSV templates</a></nav></header>
     <main class="wrap">
       <p class="eyebrow">Free operational template · 33 controls</p>
-      <h1>RMM deployment checklist and rollout plan</h1>
-      <p class="lede">A vendor-neutral worksheet for making an RMM agent rollout owned, measurable, and reversible. The CSV covers governance, endpoint inventory, preparation, pilot checks, deployment waves, rollback, verification, and closeout—without requiring an account or email address.</p>
+      <h1>RMM implementation checklist and rollout plan</h1>
+      <p class="lede">A vendor-neutral worksheet for making an RMM implementation owned, measurable, and reversible. The CSV covers planning and governance, endpoint inventory, agent preparation, pilot checks, deployment waves, rollback, verification, and closeout—without requiring an account or email address.</p>
       <div class="actions">
         <a class="button" href="templates/rmm-deployment-readiness.csv" download>Download the CSV</a>
         <a class="button secondary" href="rmm-pilot-test-evidence-pack.html">Run the 25-test pilot plan</a>
@@ -107,7 +112,7 @@
       </div>
 
       <section>
-        <h2>Seven deployment phases</h2>
+        <h2>Seven implementation and deployment phases</h2>
         <div class="grid">
           <div class="card"><strong>Governance · 4 controls</strong><span>Name the decision owner, approved scope, success criteria, stop conditions, and maintenance windows.</span></div>
           <div class="card"><strong>Inventory · 4 controls</strong><span>Reconcile authoritative endpoints, stale records, critical workloads, operating systems, zones, and ownership.</span></div>
@@ -136,9 +141,10 @@
       </section>
 
       <section>
-        <h2>RMM deployment checklist questions</h2>
+        <h2>RMM implementation checklist questions</h2>
         <div class="grid">
-          <div class="card"><strong>What should an RMM deployment checklist include?</strong><span>Define ownership and scope, reconcile the endpoint inventory, verify prerequisites, test representative pilot devices, set wave and rollback thresholds, reconcile every outcome, and retain acceptance evidence.</span></div>
+          <div class="card"><strong>What should an RMM implementation checklist include?</strong><span>Define ownership and scope, reconcile the endpoint inventory, verify prerequisites, test representative pilot devices, set deployment-wave and rollback thresholds, reconcile every outcome, and retain acceptance evidence.</span></div>
+          <div class="card"><strong>Is implementation different from deployment?</strong><span>Implementation is the full operating change: goals, inventory, policy design, pilot, technician readiness, deployment, acceptance, and stabilization. Deployment is the narrower act of installing and enrolling agents, so a complete implementation plan must cover both.</span></div>
           <div class="card"><strong>How should an MSP deploy RMM agents?</strong><span>Begin with authorized noncritical pilot endpoints. Verify identity, telemetry, alerting, patch policy, automation, remote-support authority, and removal before expanding in bounded waves.</span></div>
           <div class="card"><strong>How do you verify an RMM rollout is complete?</strong><span>Account for successful, failed, excluded, offline, and unknown endpoints; verify check-in and policy state; assign every exception; and record explicit operational acceptance.</span></div>
           <div class="card"><strong>What stops an RMM deployment wave?</strong><span>Pause when install or check-in failures cross the approved threshold, endpoint identity is ambiguous, critical workflows fail, security controls conflict, or rollback cannot be completed safely.</span></div>

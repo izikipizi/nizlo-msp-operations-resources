@@ -499,12 +499,12 @@
     <summary>Use 30 vendor-neutral controls to prepare for, detect, contain, investigate, recover from, and learn from a suspected RMM security incident.</summary>
   </entry>
   <entry>
-    <title>RMM deployment checklist and rollout plan template</title>
+    <title>RMM implementation checklist and rollout plan template</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-deployment-readiness-template.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-deployment-readiness-template.html" />
     <updated>2026-11-05T00:00:00Z</updated>
     <category term="deployment" />
-    <summary>Use 33 vendor-neutral controls to inventory, prepare, pilot, deploy in waves, define rollback, verify, and close an RMM agent rollout.</summary>
+    <summary>Use 33 vendor-neutral controls to plan, inventory, prepare, pilot, deploy in waves, define rollback, verify, and close an RMM implementation.</summary>
   </entry>
   <entry>
     <title>Free RMM operations template library</title>
