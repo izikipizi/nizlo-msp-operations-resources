@@ -354,13 +354,13 @@
     <summary>Use 29 vendor-neutral fields to review RMM technician and role scope, privileged capabilities, business justification, MFA, approvals, review dates, exceptions, decisions, and remediation.</summary>
   </entry>
   <entry>
-    <title>Endpoint inventory and CMDB readiness template</title>
+    <title>Endpoint inventory template and CMDB spreadsheet</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/endpoint-inventory-cmdb-template.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/endpoint-inventory-cmdb-template.html" />
-    <updated>2026-11-01T00:00:00Z</updated>
+    <updated>2026-11-05T00:00:00Z</updated>
     <category term="inventory" />
     <category term="cmdb" />
-    <summary>Use 23 vendor-neutral fields to record durable endpoint identity, ownership, lifecycle, management state, source provenance, freshness, and exceptions before CMDB synchronization.</summary>
+    <summary>Download a free 23-field endpoint inventory CSV for durable device identity, ownership, lifecycle, management state, source provenance, freshness, exceptions, and safer CMDB synchronization.</summary>
   </entry>
   <entry>
     <title>How to Test RMM Software Safely Before Production</title>

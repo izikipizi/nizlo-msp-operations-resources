@@ -89,7 +89,7 @@ The [RMM pricing transparency dataset](https://izikipizi.github.io/nizlo-msp-ope
 
 ## Citation and preservation
 
-Citation metadata is available in [`CITATION.cff`](CITATION.cff) and on the public [citation and preservation page](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html). The current collection is released as `v1.57.4`; Software Heritage preserves release `v1.57.0` and its repository history as snapshot [`swh:1:snp:ee7731bf72c784a1f6ad953388948f61dc3b8e17`](https://archive.softwareheritage.org/browse/snapshot/ee7731bf72c784a1f6ad953388948f61dc3b8e17/). The archive is a preservation service, not an endorsement of Nizlo or these resources.
+Citation metadata is available in [`CITATION.cff`](CITATION.cff) and on the public [citation and preservation page](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html). The current collection is released as `v1.57.6`; Software Heritage preserves release `v1.57.0` and its repository history as snapshot [`swh:1:snp:ee7731bf72c784a1f6ad953388948f61dc3b8e17`](https://archive.softwareheritage.org/browse/snapshot/ee7731bf72c784a1f6ad953388948f61dc3b8e17/). The archive is a preservation service, not an endorsement of Nizlo or these resources.
 
 ## Reusable field templates
 
@@ -131,7 +131,7 @@ Use the [RMM first-endpoint acceptance checklist](https://izikipizi.github.io/ni
 
 Use the [Windows patch exception review and closure template](https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-exception-review-template.html) when an update cannot follow the normal deployment schedule. The underlying [18-control CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/windows-patch-exception-review.csv) records scope, evidence, risk, approval, compensating controls, monitoring, expiry, retest, and closure without turning a deferral into an evergreen waiver.
 
-Use the [endpoint inventory and CMDB readiness template](https://izikipizi.github.io/nizlo-msp-operations-resources/endpoint-inventory-cmdb-template.html) to record durable device identity, ownership, lifecycle, management state, source provenance, freshness, and exceptions before synchronizing inventory into a CMDB. The underlying [23-field CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/endpoint-inventory-cmdb-readiness.csv) includes one clearly marked example row and is public and ungated.
+Use the free [endpoint inventory template and CMDB spreadsheet](https://izikipizi.github.io/nizlo-msp-operations-resources/endpoint-inventory-cmdb-template.html) to record durable device identity, ownership, lifecycle, management state, source provenance, freshness, and exceptions before synchronizing inventory into a CMDB. The underlying [23-field CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/endpoint-inventory-cmdb-readiness.csv) includes one clearly marked example row and is public and ungated.
 
 Use the [RMM technician access review matrix](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-technician-access-review-matrix.html) to map each technician or role to customer scope, device scope, privileged capabilities, business justification, MFA, approval, review dates, exceptions, and remediation. The underlying [29-field CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-technician-access-review.csv) includes one clearly marked example row and is public and ungated.
 

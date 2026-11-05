@@ -717,7 +717,7 @@
     },
     {
       "id": "endpoint-inventory-cmdb-readiness",
-      "title": "Endpoint inventory and CMDB readiness template",
+      "title": "Endpoint inventory template and CMDB spreadsheet",
       "category": "inventory",
       "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/endpoint-inventory-cmdb-template.html",
       "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/endpoint-inventory-cmdb-readiness.csv",
