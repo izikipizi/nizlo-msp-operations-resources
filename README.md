@@ -14,7 +14,7 @@ Define buying criteria before vendor demos with the [RMM requirements matrix and
 
 Validate an integration before it can touch production with the [RMM API integration preflight checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-api-integration-preflight-checklist.html), an ungated 18-check review for identity, tenant isolation, pagination, rate limits, retry safety, webhooks, audit evidence, rollback, and production ownership.
 
-Test whether an RMM audit trail can support operations and investigation with the [RMM audit log review checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-audit-log-review-checklist.html), a public 24-control evidence register for actor, tenant and endpoint attribution; privileged workflows; outcomes; retention; export; monitoring; and exception closure.
+Test whether an RMM audit trail can support operations and investigation with the [RMM audit log review checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-audit-log-review-checklist.html), a public 24-control evidence register for actor, tenant and endpoint attribution; privileged workflows; outcomes; retention; export; monitoring; and exception closure. The page now opens with the exact review question and cites primary CISA guidance for MSP and remote-access logging.
 
 ## RMM selection and change
 
