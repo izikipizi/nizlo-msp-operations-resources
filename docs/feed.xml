@@ -472,13 +472,13 @@
     <summary>Use an eight-stage workflow to prepare independent control paths, declare and scope an RMM incident, contain access, preserve evidence, recover safely, reconcile endpoints, and verify corrective action.</summary>
   </entry>
   <entry>
-    <title>RMM migration checklist workbook</title>
+    <title>RMM migration plan template and checklist workbook</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-workbook-template.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-workbook-template.html" />
-    <updated>2026-11-01T00:00:00Z</updated>
+    <updated>2026-11-05T00:00:00Z</updated>
     <category term="migration" />
     <category term="change-management" />
-    <summary>Use 30 vendor-neutral controls, four migration FAQs, and a linked planning chain to manage RMM discovery, pilot, coexistence, cutover, validation, source retirement, and closeout.</summary>
+    <summary>Use an adjustable six-stage RMM migration project plan, 30 vendor-neutral controls, evidence fields, rollback decisions, and a linked planning chain from discovery through closeout.</summary>
   </entry>
   <entry>
     <title>RMM evaluation scorecard and comparison template</title>
