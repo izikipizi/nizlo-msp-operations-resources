@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Free RMM Pilot Test Plan &amp; Evidence Pack | Nizlo</title>
-<meta name="description" content="Download a free RMM pilot test plan with 25 vendor-neutral tests for identity, enrollment, monitoring, patching, automation, remote access, isolation, evidence, resilience, removal, and rollout decisions." />
+<title>RMM Proof of Concept Checklist: 25-Test Pilot Plan</title>
+<meta name="description" content="Download a free RMM proof of concept checklist with 25 pilot tests, pass criteria, evidence fields, stop conditions, retesting, and a go/no-go decision." />
 <link rel="canonical" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-pilot-test-evidence-pack.html" />
-<meta property="og:type" content="website" /><meta property="og:title" content="Free RMM Pilot Test Plan &amp; Evidence Pack" />
-<meta property="og:description" content="Twenty-five evidence-based RMM pilot tests in a public CSV. No signup." />
+<meta property="og:type" content="website" /><meta property="og:title" content="RMM Proof of Concept Checklist: 25-Test Pilot Plan" />
+<meta property="og:description" content="Run a controlled RMM trial with pass criteria, evidence requirements, stop conditions, retesting, and an explicit rollout decision." />
 <meta property="og:url" content="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-pilot-test-evidence-pack.html" />
 <script type="application/ld+json">
 {
@@ -19,7 +19,7 @@
   "identifier":"https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-pilot-test-evidence-pack.csv",
   "creator":{"@type":"Person","name":"Kip Ecklund"},
   "publisher":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},
-  "datePublished":"2026-11-02","dateModified":"2026-11-04","version":"1.51.1",
+  "datePublished":"2026-11-02","dateModified":"2026-11-05","version":"1.57.4",
   "license":"https://creativecommons.org/licenses/by/4.0/","isAccessibleForFree":true,
   "measurementTechnique":"Operator-recorded controlled RMM pilot testing with pass criteria, evidence, stop conditions, defects, remediation, retest dates, and explicit rollout decisions.",
   "keywords":["RMM pilot test plan","RMM proof of concept checklist","RMM evaluation template","RMM testing checklist","remote monitoring and management pilot"],
@@ -28,16 +28,28 @@
   "isBasedOn":["https://nizlo.com/guides/rmm-evaluation-checklist","https://nizlo.com/guides/how-to-test-rmm-software"]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"What should an RMM proof of concept test?","acceptedAnswer":{"@type":"Answer","text":"Test authority, technician and endpoint identity, enrollment, tenant placement, monitoring freshness, patch-state reconciliation, automation targeting, remote-access controls, audit evidence, failure recovery, clean removal, and the final rollout decision."}},
+    {"@type":"Question","name":"How long should an RMM pilot run?","acceptedAnswer":{"@type":"Answer","text":"Use enough time to observe normal and failure states, but define the dates before installation. A fixed trial window should include setup, daily operations, patch or maintenance events, failure tests, retesting, removal, and a scheduled decision review."}},
+    {"@type":"Question","name":"How many endpoints belong in an RMM trial?","acceptedAnswer":{"@type":"Answer","text":"Start with a small, authorized sample that represents the operating systems, sites, network conditions, roles, and policies you expect in production. Expand only after the first group passes the documented acceptance gates."}},
+    {"@type":"Question","name":"What evidence should an RMM pilot keep?","acceptedAnswer":{"@type":"Answer","text":"Keep timestamps, endpoint and technician identifiers, configuration exports, screenshots or logs, expected and observed results, defects, remediation, retest dates, approvers, residual risks, and the final go, limited-go, retest, or no-go decision."}}
+  ]
+}
+</script>
 <style>
-:root{color-scheme:dark;--bg:#06141a;--panel:#0b222b;--line:#21424c;--text:#edf8fa;--muted:#abc2c8;--teal:#1dc6c7;--ink:#03282d}*{box-sizing:border-box}body{margin:0;color:var(--text);background:radial-gradient(circle at 80% 0,rgba(29,198,199,.17),transparent 32rem),var(--bg);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6}a{color:inherit}a:focus-visible{outline:3px solid #8be7e4;outline-offset:4px}.wrap{width:min(1040px,calc(100% - 2rem));margin:auto}header{padding:1.1rem 0;border-bottom:1px solid rgba(139,231,228,.13)}nav{display:flex;justify-content:space-between;align-items:center;gap:1rem}.brand{display:flex;align-items:center;gap:.7rem;font-weight:850;text-decoration:none}.mark{display:grid;place-items:center;width:2rem;height:2rem;border-radius:.65rem;background:var(--teal);color:var(--ink)}.back{color:var(--muted)}main{padding:5rem 0 4rem}.eyebrow{color:#8be7e4;font-weight:800;text-transform:uppercase;letter-spacing:.12em;font-size:.78rem}h1{max-width:900px;margin:.65rem 0 1rem;font-size:clamp(2.7rem,7vw,5.5rem);line-height:.96;letter-spacing:-.055em}.lede{max-width:800px;margin:0;color:var(--muted);font-size:1.15rem}.actions{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.35rem}.button{display:inline-flex;padding:.75rem 1rem;border-radius:.72rem;border:1px solid var(--line);text-decoration:none;font-weight:800}.primary{background:var(--teal);color:var(--ink);border-color:var(--teal)}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:3rem 0}.grid article{padding:1.5rem;border:1px solid var(--line);border-radius:1.1rem;background:linear-gradient(145deg,rgba(14,41,50,.95),rgba(8,28,35,.96))}h2{margin:.2rem 0 .6rem;font-size:1.55rem;line-height:1.15}.grid p,.note{color:var(--muted)}.note{margin-top:1rem;padding:1.4rem 1.6rem;border-left:4px solid var(--teal);background:var(--panel)}footer{display:flex;justify-content:space-between;gap:1rem;padding:2rem 0;border-top:1px solid var(--line);color:var(--muted);font-size:.92rem}@media(max-width:720px){main{padding-top:3.5rem}.grid{grid-template-columns:1fr}footer{flex-direction:column}}
+:root{color-scheme:dark;--bg:#06141a;--panel:#0b222b;--line:#21424c;--text:#edf8fa;--muted:#abc2c8;--teal:#1dc6c7;--ink:#03282d}*{box-sizing:border-box}body{margin:0;color:var(--text);background:radial-gradient(circle at 80% 0,rgba(29,198,199,.17),transparent 32rem),var(--bg);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6}a{color:inherit}a:focus-visible{outline:3px solid #8be7e4;outline-offset:4px}.wrap{width:min(1040px,calc(100% - 2rem));margin:auto}header{padding:1.1rem 0;border-bottom:1px solid rgba(139,231,228,.13)}nav{display:flex;justify-content:space-between;align-items:center;gap:1rem}.brand{display:flex;align-items:center;gap:.7rem;font-weight:850;text-decoration:none}.mark{display:grid;place-items:center;width:2rem;height:2rem;border-radius:.65rem;background:var(--teal);color:var(--ink)}.back{color:var(--muted)}main{padding:5rem 0 4rem}.eyebrow{color:#8be7e4;font-weight:800;text-transform:uppercase;letter-spacing:.12em;font-size:.78rem}h1{max-width:900px;margin:.65rem 0 1rem;font-size:clamp(2.7rem,7vw,5.5rem);line-height:.96;letter-spacing:-.055em}.lede{max-width:800px;margin:0;color:var(--muted);font-size:1.15rem}.actions{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.35rem}.button{display:inline-flex;padding:.75rem 1rem;border-radius:.72rem;border:1px solid var(--line);text-decoration:none;font-weight:800}.primary{background:var(--teal);color:var(--ink);border-color:var(--teal)}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:3rem 0}.grid article{padding:1.5rem;border:1px solid var(--line);border-radius:1.1rem;background:linear-gradient(145deg,rgba(14,41,50,.95),rgba(8,28,35,.96))}h2{margin:.2rem 0 .6rem;font-size:1.55rem;line-height:1.15}.grid p,.note,.faq p{color:var(--muted)}.note{margin-top:1rem;padding:1.4rem 1.6rem;border-left:4px solid var(--teal);background:var(--panel)}.faq{margin:3rem 0}.faq article{padding:1.2rem 0;border-top:1px solid var(--line)}.faq h3{margin:0 0 .35rem;font-size:1.08rem}.faq p{margin:0}footer{display:flex;justify-content:space-between;gap:1rem;padding:2rem 0;border-top:1px solid var(--line);color:var(--muted);font-size:.92rem}@media(max-width:720px){main{padding-top:3.5rem}.grid{grid-template-columns:1fr}footer{flex-direction:column}}
 </style>
 </head>
 <body>
 <header><nav class="wrap"><a class="brand" href="./"><span class="mark">N</span><span>Nizlo MSP Operations Resources</span></a><a class="back" href="templates/">Template library</a></nav></header>
 <main class="wrap">
 <div class="eyebrow">25 tests · 18 evidence fields · Public CSV · No signup</div>
-<h1>Make an RMM pilot produce a decision—not just a demo.</h1>
-<p class="lede">A controlled pilot should prove who can act, which endpoints are affected, what evidence survives failure, and whether the team can stop and remove the tool safely. Use the same test record for every vendor so the rollout decision follows observed results rather than presentation quality.</p>
+<h1>Turn an RMM proof of concept into a defensible decision.</h1>
+<p class="lede">This RMM proof of concept checklist turns a free trial or vendor pilot into 25 controlled tests. Prove who can act, which endpoints are affected, what evidence survives failure, and whether the team can stop and remove the tool safely. Use the same test record for every vendor so the rollout decision follows observed results rather than presentation quality.</p>
 <div class="actions"><a class="button primary" href="templates/rmm-pilot-test-evidence-pack.csv" download>Download the evidence pack</a><a class="button" href="https://nizlo.com/guides/rmm-evaluation-checklist?utm_source=github_pages&amp;utm_medium=pilot_resource&amp;utm_campaign=rmm_pilot_evidence">Open the evaluation guide</a><a class="button" href="https://nizlo.com/solutions/rmm-free-trial?utm_source=github_pages&amp;utm_medium=pilot_resource&amp;utm_campaign=rmm_pilot_evidence">Run a controlled 14-day trial</a></div>
 <section class="grid" aria-label="RMM pilot test plan phases">
 <article><h2>Plan the boundary</h2><p>Name authorized devices, technicians, customers, dates, prohibited actions, measurable pass criteria, stop conditions, and independent recovery paths.</p></article>
@@ -47,10 +59,17 @@
 <article><h2>Test failure and recovery</h2><p>Make offline state, stale data, queued work, cancellation, service interruption, bounded retries, and reconciliation visible before production.</p></article>
 <article><h2>Remove and decide</h2><p>Prove clean uninstall and credential revocation, record residual risk, then choose go, limited go, remediate and retest, or no-go.</p></article>
 </section>
+<section class="faq" aria-labelledby="faq-title">
+<h2 id="faq-title">RMM proof of concept questions</h2>
+<article><h3>What should an RMM proof of concept test?</h3><p>Test authority, technician and endpoint identity, enrollment, tenant placement, monitoring freshness, patch-state reconciliation, automation targeting, remote-access controls, audit evidence, failure recovery, clean removal, and the final rollout decision.</p></article>
+<article><h3>How long should an RMM pilot run?</h3><p>Define the dates before installation and allow time for setup, ordinary operations, a patch or maintenance event, failure tests, retesting, removal, and a scheduled decision review. A fixed window prevents a pilot from becoming an unowned production deployment.</p></article>
+<article><h3>How many endpoints belong in an RMM trial?</h3><p>Start with a small, authorized sample that represents the operating systems, sites, network conditions, roles, and policies expected in production. Expand only after the first group passes the documented acceptance gates.</p></article>
+<article><h3>What evidence should an RMM pilot keep?</h3><p>Keep timestamps, endpoint and technician identifiers, configuration exports, screenshots or logs, expected and observed results, defects, remediation, retest dates, approvers, residual risks, and the final go, limited-go, retest, or no-go decision.</p></article>
+</section>
 <aside class="note"><strong>Use one evidence chain from installation to rollout:</strong> <a href="rmm-first-endpoint-activation-troubleshooting-checklist.html">troubleshoot the first endpoint</a>, apply the <a href="rmm-first-endpoint-acceptance-checklist.html">first-endpoint acceptance gates</a>, and reconcile the result with the <a href="rmm-patch-compliance-calculator.html">patch-compliance calculator</a> before expanding the pilot.</aside>
 <aside class="note"><strong>Use authorized lab or noncritical systems:</strong> do not create destructive failures, cross customer boundaries, weaken security controls, or include production-critical targets without written authority and tested recovery.</aside>
 <aside class="note"><strong>Evidence is part of the result:</strong> a pass without a reproducible observation, export, timestamp, or approval record is not decision-quality evidence. Keep secrets and regulated customer data in their approved systems of record.</aside>
 <aside class="note"><strong>Relationship disclosure:</strong> Nizlo, a Windows-first RMM and IT-management platform, maintains this vendor-neutral template. It does not claim that Nizlo or any other product passes every test, and it is not an audit opinion or security certification.</aside>
 </main>
-<footer class="wrap"><span>Maintained by Nizlo · Updated November 4, 2026</span><span><a href="datapackage.json">Data Package</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources/tree/v1.51.1">Version 1.51.1</a></span></footer>
+<footer class="wrap"><span>Maintained by Nizlo · Updated November 5, 2026</span><span><a href="datapackage.json">Data Package</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources/tree/v1.57.4">Version 1.57.4</a></span></footer>
 </body></html>

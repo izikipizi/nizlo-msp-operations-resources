@@ -49,7 +49,7 @@ Test whether an RMM audit trail can support operations and investigation with th
 
 | Resource | Use it when |
 | --- | --- |
-| [RMM pilot test plan and evidence pack](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-pilot-test-evidence-pack.html) | Running a controlled proof of concept with explicit evidence, stop conditions, remediation, retesting, and a rollout decision |
+| [RMM proof of concept checklist and pilot evidence pack](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-pilot-test-evidence-pack.html) | Running 25 controlled trial tests with explicit pass criteria, evidence, stop conditions, remediation, retesting, and a rollout decision |
 | [Free MSP client onboarding checklist](https://nizlo.com/guides/msp-client-onboarding-checklist?utm_source=github&utm_medium=resource&utm_campaign=msp_client_onboarding) | Establishing authority, scope, access, monitoring, patching, backup, and acceptance with reusable CSV and Markdown templates |
 | [Six-week MSP onboarding project plan](https://izikipizi.github.io/nizlo-msp-operations-resources/six-week-msp-onboarding-project-plan.html) | Structuring authority, discovery, SOP development, one controlled pilot, NOC training, acceptance, and handoff |
 | [MSP client offboarding checklist](https://nizlo.com/guides/msp-client-offboarding-checklist) | Removing access and agents without losing evidence, ownership, or responsibility |
@@ -89,7 +89,7 @@ The [RMM pricing transparency dataset](https://izikipizi.github.io/nizlo-msp-ope
 
 ## Citation and preservation
 
-Citation metadata is available in [`CITATION.cff`](CITATION.cff) and on the public [citation and preservation page](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html). The current collection is released as `v1.57.3`; Software Heritage preserves release `v1.57.0` and its repository history as snapshot [`swh:1:snp:ee7731bf72c784a1f6ad953388948f61dc3b8e17`](https://archive.softwareheritage.org/browse/snapshot/ee7731bf72c784a1f6ad953388948f61dc3b8e17/). The archive is a preservation service, not an endorsement of Nizlo or these resources.
+Citation metadata is available in [`CITATION.cff`](CITATION.cff) and on the public [citation and preservation page](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html). The current collection is released as `v1.57.4`; Software Heritage preserves release `v1.57.0` and its repository history as snapshot [`swh:1:snp:ee7731bf72c784a1f6ad953388948f61dc3b8e17`](https://archive.softwareheritage.org/browse/snapshot/ee7731bf72c784a1f6ad953388948f61dc3b8e17/). The archive is a preservation service, not an endorsement of Nizlo or these resources.
 
 ## Reusable field templates
 
@@ -139,7 +139,7 @@ Use the [MSP client onboarding checklist and evidence register](https://izikipiz
 
 Use the [six-week MSP onboarding project plan](https://izikipizi.github.io/nizlo-msp-operations-resources/six-week-msp-onboarding-project-plan.html) to turn a bounded onboarding contract into six weekly phases covering authority, observed discovery, SOP development, lab validation, one controlled customer pilot, reconciliation, NOC training, acceptance, and handoff. The underlying [30-milestone CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/six-week-msp-onboarding-project-plan.csv) is public and ungated.
 
-Use the [RMM pilot test plan and evidence pack](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-pilot-test-evidence-pack.html) to test authority, identity, enrollment, tenant placement, monitoring, patching, automation, remote access, isolation, audit evidence, resilience, removal, and the final rollout decision. The underlying [25-test CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-pilot-test-evidence-pack.csv) is public and ungated.
+Use the [RMM proof of concept checklist and pilot evidence pack](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-pilot-test-evidence-pack.html) to test authority, identity, enrollment, tenant placement, monitoring, patching, automation, remote access, isolation, audit evidence, resilience, removal, and the final rollout decision. The underlying [25-test CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-pilot-test-evidence-pack.csv) is public and ungated.
 
 Use the [MSP client offboarding checklist and evidence register](https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-offboarding-evidence-register.html) to coordinate transition authority, inventory, secure handoff, account and token revocation, RMM and remote-support agent removal, data disposition, customer acceptance, and post-exit verification. The underlying [32-control CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-client-offboarding-evidence-register.csv) is public and ungated.
 
