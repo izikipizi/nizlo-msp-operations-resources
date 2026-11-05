@@ -87,7 +87,7 @@ The [public RMM pricing dataset](https://izikipizi.github.io/nizlo-msp-operation
 
 ## Citation and preservation
 
-Citation metadata is available in [`CITATION.cff`](CITATION.cff) and on the public [citation and preservation page](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html). The current collection is released as `v1.54.0`; Software Heritage preserves release `v1.51.0` and its repository history as snapshot [`swh:1:snp:f50352327fa0a3903b95ee22d08f7120fddb8e74`](https://archive.softwareheritage.org/browse/snapshot/f50352327fa0a3903b95ee22d08f7120fddb8e74/). The archive is a preservation service, not an endorsement of Nizlo or these resources.
+Citation metadata is available in [`CITATION.cff`](CITATION.cff) and on the public [citation and preservation page](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html). The current collection is released as `v1.55.0`; Software Heritage preserves release `v1.51.0` and its repository history as snapshot [`swh:1:snp:f50352327fa0a3903b95ee22d08f7120fddb8e74`](https://archive.softwareheritage.org/browse/snapshot/f50352327fa0a3903b95ee22d08f7120fddb8e74/). The archive is a preservation service, not an endorsement of Nizlo or these resources.
 
 ## Reusable field templates
 
@@ -116,6 +116,8 @@ Use the [RMM change-window and rollback-plan template](https://izikipizi.github.
 Use the [RMM incident response runbook template](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-incident-response-runbook-template.html) to coordinate readiness, detection, evidence preservation, containment, investigation, recovery, stakeholder communication, and corrective action after a suspected RMM security event. The underlying [30-control CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-incident-response-runbook.csv) is public and ungated, and the canonical [RMM incident response checklist](https://nizlo.com/guides/rmm-incident-response-checklist) explains the full eight-stage workflow.
 
 Use the [RMM migration checklist workbook](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-workbook-template.html) to reconcile source inventory, target mappings, pilot evidence, coexistence, cutover waves, rollback, source retirement, and final acceptance. The underlying [30-control CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-migration-workbook.csv) is public and ungated.
+
+Use the [RMM vendor exit plan checklist and evidence register](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vendor-exit-plan-checklist.html) before source access, leverage, or operational coverage changes. Its public [32-control CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-vendor-exit-plan.csv) covers contract review, inventory, exports, automation, integrations, credentials, replacement readiness, coexistence, cutover, source-agent removal, access revocation, data disposition, commercial closure, acceptance, and post-exit stabilization.
 
 Use the [RMM migration cost and break-even calculator](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-cost-calculator.html) to model internal labor, implementation fees, parallel subscriptions, retained tools, recurring cost change, first-year impact, and payback time. The formulas are published on the page, the example does not prefill Nizlo pricing, and all figures stay in the browser.
 

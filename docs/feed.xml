@@ -13,6 +13,17 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>RMM vendor exit plan checklist and evidence register</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vendor-exit-plan-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vendor-exit-plan-checklist.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-vendor-exit-plan.csv" />
+    <updated>2026-11-04T00:00:00Z</updated>
+    <category term="migration" />
+    <category term="vendor-exit" />
+    <category term="template" />
+    <summary>Use thirty-two controls to plan contract review, inventory, exports, automation, credentials, replacement readiness, coexistence, cutover, source removal, access revocation, data disposition, commercial closure, acceptance, and stabilization.</summary>
+  </entry>
+  <entry>
     <title>RMM audit log review checklist and evidence register</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-audit-log-review-checklist.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-audit-log-review-checklist.html" />

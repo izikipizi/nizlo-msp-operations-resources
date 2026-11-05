@@ -4,9 +4,9 @@
   "name": "nizlo-rmm-operations-resources",
   "id": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
   "title": "Nizlo RMM Operations Resources",
-  "description": "Twenty-two public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
+  "description": "Twenty-three public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
-  "version": "1.54.0",
+  "version": "1.55.0",
   "created": "2026-11-01",
   "contributors": [
     {
@@ -30,6 +30,9 @@
     "RMM security",
     "RMM audit log review",
     "RMM audit trail",
+    "RMM vendor exit plan",
+    "RMM exit checklist",
+    "RMM replacement checklist",
     "RMM migration",
     "RMM evaluation scorecard",
     "RMM pilot test plan",
@@ -75,6 +78,39 @@
     "service restoration"
   ],
   "resources": [
+    {
+      "profile": "tabular-data-resource",
+      "name": "rmm-vendor-exit-plan",
+      "title": "RMM vendor exit plan checklist and evidence register",
+      "description": "Thirty-two RMM exit controls and 16 fields for authority, contract review, inventory, exports, automation, integrations, credentials, target readiness, coexistence, cutover, source removal, access revocation, data disposition, commercial closure, acceptance, and post-exit monitoring.",
+      "path": "templates/rmm-vendor-exit-plan.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 17647,
+      "hash": "sha256:57db1de556eba4c38ebfbec24560608e52e84e6387c10ce7b956cf9e023d93c6",
+      "schema": {
+        "fields": [
+          { "name": "exit_id", "type": "string" },
+          { "name": "phase", "type": "string" },
+          { "name": "control", "type": "string" },
+          { "name": "required_evidence", "type": "string" },
+          { "name": "validation_method", "type": "string" },
+          { "name": "accountable_owner", "type": "string" },
+          { "name": "target_date", "type": "date" },
+          { "name": "dependency", "type": "string" },
+          { "name": "status", "type": "string" },
+          { "name": "evidence_reference", "type": "string" },
+          { "name": "risk_if_missing", "type": "string" },
+          { "name": "rollback_or_contingency", "type": "string" },
+          { "name": "acceptance_owner", "type": "string" },
+          { "name": "acceptance_date", "type": "date" },
+          { "name": "exception_owner", "type": "string" },
+          { "name": "notes", "type": "string" }
+        ],
+        "primaryKey": "exit_id"
+      }
+    },
     {
       "profile": "tabular-data-resource",
       "name": "rmm-audit-log-review-checklist",

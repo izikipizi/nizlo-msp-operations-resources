@@ -8,6 +8,23 @@
   "updated": "2026-11-04",
   "resources": [
     {
+      "id": "rmm-vendor-exit-plan",
+      "title": "RMM vendor exit plan checklist and evidence register",
+      "category": "migration",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vendor-exit-plan-checklist.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-vendor-exit-plan.csv",
+      "canonical_guide": "https://nizlo.com/guides/rmm-migration-checklist",
+      "format": "text/csv",
+      "controls": 32,
+      "fields": 16,
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
       "id": "rmm-audit-log-review-checklist",
       "title": "RMM audit log review checklist and evidence register",
       "category": "security",

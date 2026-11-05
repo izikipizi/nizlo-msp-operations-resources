@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vendor-exit-plan-checklist.html</loc>
+    <lastmod>2026-11-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-vendor-exit-plan.csv</loc>
+    <lastmod>2026-11-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-audit-log-review-checklist.html</loc>
     <lastmod>2026-11-04</lastmod>
     <changefreq>yearly</changefreq>
