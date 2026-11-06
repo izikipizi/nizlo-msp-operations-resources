@@ -6,7 +6,7 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-05T00:00:00Z</updated>
+  <updated>2026-11-06T00:00:00Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
@@ -512,10 +512,10 @@
     <title>Free RMM operations template library</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/templates/</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/" />
-    <updated>2026-11-02T00:00:00Z</updated>
+    <updated>2026-11-06T00:00:00Z</updated>
     <category term="deployment" />
     <category term="change-management" />
-    <summary>Download seventeen vendor-neutral CSV templates for RMM quote comparison, alert escalation, pilot testing, evaluation, Windows patch exceptions, first-endpoint acceptance, technician access review, MSP client onboarding and offboarding, maintenance, six-week transition planning, endpoint inventory, CMDB readiness, deployment, change-window control, incident response, migration, validation, rollback, communications, and closeout.</summary>
+    <summary>Download twenty-nine vendor-neutral CSV templates for RMM allowlisting, backup restore testing, QBRs, API integrations, requirements, security and audit evidence, vendor exits, quote comparison, alert measurement, SLA response, pilots, access review, client onboarding and offboarding, recurring maintenance, endpoint inventory, deployment, migration, controlled change, and incident response.</summary>
   </entry>
   <entry>
     <title>RMM change-window and rollback-plan template</title>
