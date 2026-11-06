@@ -221,7 +221,7 @@
     <title>RMM alert noise reduction checklist for MSPs</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-noise-reduction-checklist.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-noise-reduction-checklist.html" />
-    <updated>2026-11-05T00:00:00Z</updated>
+    <updated>2026-11-06T00:00:00Z</updated>
     <category term="monitoring" />
     <category term="alerting" />
     <category term="checklist" />
@@ -241,7 +241,7 @@
     <title>RMM alert-noise baseline worksheet</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-noise-baseline-worksheet.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-noise-baseline-worksheet.html" />
-    <updated>2026-11-05T00:00:00Z</updated>
+    <updated>2026-11-06T00:00:00Z</updated>
     <category term="monitoring" />
     <category term="alert-tuning" />
     <summary>Measure raw RMM events, unique incidents, duplicates, false positives, actionable yield, after-hours burden, acknowledgement, and resolution with a public 23-field CSV and repeatable 14-day method.</summary>
