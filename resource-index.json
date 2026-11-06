@@ -872,6 +872,19 @@
       "fields": 15,
       "access": "public",
       "account_required": false
+    },
+    {
+      "id": "rmm-edr-allowlisting-change-record",
+      "title": "RMM EDR allowlisting checklist and change record",
+      "category": "security",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-edr-allowlisting-checklist.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-edr-allowlisting-change-record.csv",
+      "canonical_guide": "https://nizlo.com/guides/nizlo-rmm-security-indicators",
+      "format": "text/csv",
+      "controls": 12,
+      "fields": 9,
+      "access": "public",
+      "account_required": false
     }
   ],
   "datasets": [

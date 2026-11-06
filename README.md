@@ -1,5 +1,7 @@
 # Nizlo MSP operations resources
 
+Build narrow, testable RMM security exceptions with the public [RMM EDR allowlisting checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-edr-allowlisting-checklist.html) and its [CSV change record](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-edr-allowlisting-change-record.csv). It covers source verification, signer and hash evidence, network and endpoint scope, negative tests, telemetry, rollback, approval, expiry, and review.
+
 Free, practical checklists for managed service providers and lean IT teams evaluating, deploying, operating, migrating, and offboarding remote monitoring and management software.
 
 Every resource below is public, ungated, and written to be usable independently of Nizlo's product. The canonical guides include downloadable field templates where available.
