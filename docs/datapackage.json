@@ -4,9 +4,9 @@
   "name": "nizlo-rmm-operations-resources",
   "id": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
   "title": "Nizlo RMM Operations Resources",
-  "description": "Twenty-seven public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
+  "description": "Twenty-nine public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
-  "version": "1.62.0",
+  "version": "1.63.0",
   "created": "2026-11-01",
   "contributors": [
     {
@@ -2041,6 +2041,58 @@
           { "name": "notes", "type": "string" }
         ],
         "primaryKey": "control_id"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "msp-client-onboarding-questionnaire",
+      "title": "MSP client onboarding questionnaire",
+      "description": "Sixteen vendor-neutral discovery questions and ten fields for recording customer answers, evidence, owners, follow-up actions, status, due dates, and notes.",
+      "path": "templates/msp-client-onboarding-questionnaire.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 2353,
+      "hash": "sha256:998c9763537bf88facdf888116bdffdc8dfd23930f8225302b372491ccf96f36",
+      "schema": {
+        "fields": [
+          { "name": "Category", "type": "string" },
+          { "name": "Question", "type": "string" },
+          { "name": "Customer response", "type": "string" },
+          { "name": "Evidence or source", "type": "string" },
+          { "name": "MSP owner", "type": "string" },
+          { "name": "Customer owner", "type": "string" },
+          { "name": "Follow-up action", "type": "string" },
+          { "name": "Status", "type": "string" },
+          { "name": "Due date", "type": "string" },
+          { "name": "Notes", "type": "string" }
+        ]
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "rmm-edr-allowlisting-change-record",
+      "title": "RMM EDR allowlisting checklist and change record",
+      "description": "Twelve vendor-neutral controls and nine fields for scoping, testing, approving, monitoring, and reviewing RMM allowlisting changes in endpoint security tools.",
+      "path": "templates/rmm-edr-allowlisting-change-record.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 3083,
+      "hash": "sha256:3afe76d8b51192bbb5e0c21a47c29401f1c101c2506f9b0ca436e52436ad550c",
+      "schema": {
+        "fields": [
+          { "name": "Control ID", "type": "string" },
+          { "name": "Phase", "type": "string" },
+          { "name": "Control", "type": "string" },
+          { "name": "Evidence required", "type": "string" },
+          { "name": "Test", "type": "string" },
+          { "name": "Owner", "type": "string" },
+          { "name": "Status", "type": "string" },
+          { "name": "Review date", "type": "string" },
+          { "name": "Notes", "type": "string" }
+        ],
+        "primaryKey": "Control ID"
       }
     }
   ]
