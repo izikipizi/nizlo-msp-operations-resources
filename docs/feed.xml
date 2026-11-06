@@ -67,7 +67,7 @@
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-security-evidence-checklist.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-security-evidence-checklist.html" />
     <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-security-evidence-checklist.csv" />
-    <updated>2026-11-05T00:00:00Z</updated>
+    <updated>2026-11-06T00:00:00Z</updated>
     <category term="security" />
     <category term="RMM" />
     <category term="template" />
@@ -270,7 +270,7 @@
     <title>RMM vendor due-diligence evidence register</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vendor-due-diligence-evidence-register.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vendor-due-diligence-evidence-register.html" />
-    <updated>2026-11-05T00:00:00Z</updated>
+    <updated>2026-11-06T00:00:00Z</updated>
     <category term="vendor-risk" />
     <category term="due-diligence" />
     <category term="template" />
@@ -320,7 +320,7 @@
     <title>MSP client onboarding checklist and evidence register</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-onboarding-evidence-register.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-onboarding-evidence-register.html" />
-    <updated>2026-11-05T00:00:00Z</updated>
+    <updated>2026-11-06T00:00:00Z</updated>
     <category term="client-lifecycle" />
     <category term="onboarding" />
     <category term="template" />
@@ -521,7 +521,7 @@
     <title>RMM change-window and rollback-plan template</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-change-window-rollback-plan.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-change-window-rollback-plan.html" />
-    <updated>2026-11-01T00:00:00Z</updated>
+    <updated>2026-11-06T00:00:00Z</updated>
     <category term="change-management" />
     <summary>Plan RMM changes with named owners, success criteria, evidence, rollout gates, rollback triggers, communications, and closure checks.</summary>
   </entry>
