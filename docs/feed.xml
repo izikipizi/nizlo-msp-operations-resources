@@ -108,7 +108,7 @@
     <title>RMM vs remote support vs MDM vs endpoint management</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-remote-support-vs-mdm-vs-endpoint-management.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-remote-support-vs-mdm-vs-endpoint-management.html" />
-    <updated>2026-11-05T00:00:00Z</updated>
+    <updated>2026-11-06T00:00:00Z</updated>
     <category term="selection" />
     <category term="endpoint-management" />
     <category term="comparison" />
@@ -118,7 +118,7 @@
     <title>RMM vs remote desktop software: 8 buyer checks</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-remote-desktop-software.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-remote-desktop-software.html" />
-    <updated>2026-11-04T00:00:00Z</updated>
+    <updated>2026-11-06T00:00:00Z</updated>
     <category term="selection" />
     <category term="remote-desktop" />
     <category term="comparison" />
@@ -128,7 +128,7 @@
     <title>RMM remote access session authorization checklist</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-session-authorization-checklist.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-session-authorization-checklist.html" />
-    <updated>2026-11-04T00:00:00Z</updated>
+    <updated>2026-11-06T00:00:00Z</updated>
     <category term="remote-access" />
     <category term="security" />
     <category term="checklist" />
@@ -170,7 +170,7 @@
     <title>RMM RFP requirements matrix template</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-requirements-matrix-template.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-requirements-matrix-template.html" />
-    <updated>2026-11-05T00:00:00Z</updated>
+    <updated>2026-11-06T00:00:00Z</updated>
     <category term="selection" />
     <category term="procurement" />
     <category term="template" />
@@ -377,7 +377,7 @@
     <title>Endpoint inventory template and CMDB spreadsheet</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/endpoint-inventory-cmdb-template.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/endpoint-inventory-cmdb-template.html" />
-    <updated>2026-11-05T00:00:00Z</updated>
+    <updated>2026-11-06T00:00:00Z</updated>
     <category term="inventory" />
     <category term="cmdb" />
     <summary>Download a free 23-field endpoint inventory CSV for durable device identity, ownership, lifecycle, management state, source provenance, freshness, exceptions, and safer CMDB synchronization.</summary>
