@@ -87,7 +87,7 @@ Test whether an RMM audit trail can support operations and investigation with th
 
 ## Machine-readable index
 
-[`resource-index.json`](resource-index.json) exposes the same catalogue as structured data for internal portals, documentation tools, and agents. The public [Data Package descriptor](https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json) supplies schemas, byte counts, and SHA-256 hashes for reusable CSV templates plus the source-dated RMM pricing dataset. The [Atom feed](https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml) makes the catalogue available to feed readers and aggregators, while [`llms.txt`](https://izikipizi.github.io/nizlo-msp-operations-resources/llms.txt) provides a compact answer-engine profile. Each entry points to the maintained canonical guide rather than an unversioned copy.
+[`resource-index.json`](resource-index.json) exposes the same catalogue as structured data for internal portals, documentation tools, and agents. The public [sitemap](https://izikipizi.github.io/nizlo-msp-operations-resources/sitemap.xml) exposes every canonical page and all 29 reusable CSV templates. The [Data Package descriptor](https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json) supplies schemas, byte counts, and SHA-256 hashes for those templates plus the source-dated RMM pricing dataset. The [Atom feed](https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml) makes the catalogue available to feed readers and aggregators, while [`llms.txt`](https://izikipizi.github.io/nizlo-msp-operations-resources/llms.txt) provides a compact answer-engine profile. Each entry points to the maintained canonical guide rather than an unversioned copy.
 
 ## Source-dated pricing dataset
 
@@ -95,7 +95,7 @@ The [RMM pricing transparency dataset](https://izikipizi.github.io/nizlo-msp-ope
 
 ## Citation and preservation
 
-Citation metadata is available in [`CITATION.cff`](CITATION.cff) and on the public [citation and preservation page](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html). The current metadata is released as `v1.63.1`; Software Heritage preserves content release `v1.60.0` and repository history through commit `876e61c` as snapshot [`swh:1:snp:80937f6aa4430e6542f62a9dc494a1c2d9a42822`](https://archive.softwareheritage.org/browse/snapshot/80937f6aa4430e6542f62a9dc494a1c2d9a42822/). The archive is a preservation service, not an endorsement of Nizlo or these resources.
+Citation metadata is available in [`CITATION.cff`](CITATION.cff) and on the public [citation and preservation page](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html). The current metadata is released as `v1.63.2`; Software Heritage preserves content release `v1.60.0` and repository history through commit `876e61c` as snapshot [`swh:1:snp:80937f6aa4430e6542f62a9dc494a1c2d9a42822`](https://archive.softwareheritage.org/browse/snapshot/80937f6aa4430e6542f62a9dc494a1c2d9a42822/). The archive is a preservation service, not an endorsement of Nizlo or these resources.
 
 ## Reusable field templates
 
