@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>RMM Pricing Transparency Dataset: 14 Products | Nizlo</title>
-    <meta name="description" content="Compare 14 source-dated RMM pricing disclosures: 6 publish fully computable numeric pricing, 4 are quote-only, and 4 use free, source-available, or range models." />
+    <meta name="description" content="Compare per-endpoint, per-technician, flat, free-tier, source-available, and quote-only RMM pricing across 14 source-dated product disclosures." />
     <meta name="robots" content="index,follow" />
     <link rel="canonical" href="https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html" />
     <link rel="alternate" type="application/ld+json" href="data/public-rmm-pricing-comparison-2026-11-02.jsonld" title="Dataset metadata" />
@@ -35,13 +35,45 @@
         "isAccessibleForFree": true,
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "inLanguage": "en",
-        "keywords": ["RMM pricing", "MSP software cost", "pricing transparency", "remote monitoring and management", "RMM cost comparison"],
+        "keywords": ["RMM pricing", "RMM pricing per endpoint", "RMM pricing per technician", "MSP software cost", "pricing transparency", "remote monitoring and management", "RMM cost comparison"],
         "variableMeasured": ["Product", "Pricing model", "Billing term", "Public price visibility", "Monthly cost at 10 endpoints", "Monthly cost at 50 endpoints", "Monthly cost at 100 endpoints", "Monthly cost at 500 endpoints", "Source URL", "Fact-checked date"],
         "distribution": {
           "@type": "DataDownload",
           "contentUrl": "https://izikipizi.github.io/nizlo-msp-operations-resources/data/public-rmm-pricing-comparison-2026-11-02.csv",
           "encodingFormat": "text/csv"
         }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the difference between per-endpoint and per-technician RMM pricing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Per-endpoint pricing changes with the managed device count. Per-technician pricing changes with the number of licensed operators and may include unlimited endpoints. A fair comparison keeps both endpoint count and technician count explicit, then adds mandatory implementation, support, security, remote-access, and retained-tool costs."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which RMM pricing model is cheaper for a small MSP?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "There is no universally cheapest model. Per-technician or flat pricing can become less expensive as endpoints per technician increase, while per-endpoint pricing can remain attractive for small fleets. Free tiers, minimum commitments, included features, add-ons, and migration costs can change the result."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why are some prices blank in the RMM dataset?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A blank value means the vendor's public source did not support an exact calculation for that scenario on the recorded fact-check date. Blank does not mean zero. Quote-only and limited-public-pricing records are kept visible without inventing estimates."
+            }
+          }
+        ]
       }
     </script>
     <script type="application/ld+json">
@@ -164,6 +196,24 @@
           <div class="stat"><strong>2</strong><span>Other models: one published range plus quote and one source-available license</span></div>
         </div>
         <p class="lede">Price visibility is not a product-quality score. Per-device, per-technician, flat, free-tier, source-available, and package-based products can include materially different capabilities and operating costs. These counts describe only what a buyer could reproduce from each vendor's public source on the recorded fact-check date.</p>
+      </section>
+
+      <section aria-labelledby="pricing-model-comparison">
+        <h2 id="pricing-model-comparison">Per-endpoint vs per-technician RMM pricing</h2>
+        <p class="lede">The billing unit changes which input drives the subscription total. Compare models with the same technician count, endpoint count, billing term, minimum commitment, and mandatory add-ons before treating one published rate as cheaper.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Pricing model</th><th>Core calculation</th><th>What can change the result</th><th>Dataset examples</th></tr></thead>
+            <tbody>
+              <tr><td>Per endpoint</td><td>Managed endpoints × published device rate</td><td>Volume tiers, minimum fleet size, server/workstation differences, and required add-ons</td><td>Level; ManageEngine RMM Central; NinjaOne's limited published range; SuperOps' quote-only minimum</td></tr>
+              <tr><td>Per technician</td><td>Licensed technicians × published technician rate</td><td>Included technician count, annual commitment, PSA scope, support, and optional security or backup products</td><td>Atera MSP Pro; Syncro Core; Fathom Core above its free allowance</td></tr>
+              <tr><td>Flat workspace or plan</td><td>Published plan fee within the documented allowance</td><td>Technician limits, endpoint allowances, usage boundaries, and retained tools</td><td>Nizlo Core in this one-technician scenario</td></tr>
+              <tr><td>Free tier or source available</td><td>Published base fee can be zero within stated limits</td><td>Hosting, operations, support, code signing, security management, usage limits, and paid capacity above the allowance</td><td>MSP360 Community Edition; Action1; Tactical RMM</td></tr>
+              <tr><td>Quote only or package based</td><td>No reproducible public total</td><td>Volume, contract term, bundle composition, implementation, support, and negotiated terms</td><td>ConnectWise RMM; Kaseya VSA 10; Datto RMM</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Use the <a href="https://nizlo.com/guides/rmm-pricing-models?utm_source=github_pages&amp;utm_medium=authority_bridge&amp;utm_campaign=rmm_pricing_per_endpoint_vs_technician&amp;utm_content=model_comparison">RMM pricing-model calculator</a> to test endpoint and technician counts, then record non-subscription assumptions in the <a href="rmm-quote-comparison-worksheet.html">quote-comparison worksheet</a>. The table above describes billing mechanics; it does not establish feature equivalence or total cost of ownership.</p>
       </section>
 
       <h2>Normalized monthly subscription estimates</h2>

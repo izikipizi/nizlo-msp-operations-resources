@@ -353,7 +353,7 @@
     <updated>2026-11-06T00:00:00Z</updated>
     <category term="pricing" />
     <category term="dataset" />
-    <summary>Compare fourteen source-dated RMM pricing disclosures: six publish fully computable numeric pricing across four endpoint scenarios, four are quote-only, and four use free-tier, source-available, or range-plus-quote models.</summary>
+    <summary>Compare per-endpoint, per-technician, flat, free-tier, source-available, and quote-only RMM pricing across fourteen source-dated product disclosures.</summary>
   </entry>
   <entry>
     <title>MSP client offboarding checklist and evidence register</title>
