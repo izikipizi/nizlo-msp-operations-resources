@@ -26,7 +26,7 @@
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vendor-demo-questions-checklist.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vendor-demo-questions-checklist.html" />
     <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-vendor-demo-questions-checklist.csv" />
-    <updated>2026-11-05T00:00:00Z</updated>
+    <updated>2026-11-06T00:00:00Z</updated>
     <category term="selection" /><category term="evaluation" /><category term="template" />
     <summary>Ask thirty vendor-neutral RMM demo questions, request specific evidence, run bounded live tests, record red flags, and carry unresolved answers into a controlled pilot.</summary>
   </entry>
@@ -180,7 +180,7 @@
     <title>RMM pricing comparison worksheet</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html" />
-    <updated>2026-11-05T00:00:00Z</updated>
+    <updated>2026-11-06T00:00:00Z</updated>
     <category term="pricing" />
     <category term="selection" />
     <category term="template" />
@@ -486,7 +486,7 @@
     <title>RMM evaluation scorecard and comparison template</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-evaluation-scorecard-template.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-evaluation-scorecard-template.html" />
-    <updated>2026-11-05T00:00:00Z</updated>
+    <updated>2026-11-06T00:00:00Z</updated>
     <category term="selection" />
     <category term="evaluation" />
     <summary>Compare RMM products across ten evidence-based operational areas, assign open risks, retest failures, and record a defensible go/no-go decision.</summary>
