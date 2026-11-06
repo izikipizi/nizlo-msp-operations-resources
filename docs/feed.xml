@@ -190,7 +190,7 @@
     <title>Windows patch failure triage checklist for MSPs</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-failure-triage-checklist.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-failure-triage-checklist.html" />
-    <updated>2026-11-05T00:00:00Z</updated>
+    <updated>2026-11-06T00:00:00Z</updated>
     <category term="patch-management" />
     <category term="troubleshooting" />
     <category term="checklist" />
@@ -231,7 +231,7 @@
     <title>RMM patch management policy checklist for Windows</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-policy-review-checklist.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-policy-review-checklist.html" />
-    <updated>2026-11-05T00:00:00Z</updated>
+    <updated>2026-11-06T00:00:00Z</updated>
     <category term="patch-management" />
     <category term="policy" />
     <category term="checklist" />
@@ -291,7 +291,7 @@
     <title>MSP daily, weekly, monthly, and quarterly maintenance checklist</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/msp-daily-weekly-monthly-maintenance-checklist.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/msp-daily-weekly-monthly-maintenance-checklist.html" />
-    <updated>2026-11-02T00:00:00Z</updated>
+    <updated>2026-11-06T00:00:00Z</updated>
     <category term="operations" />
     <category term="maintenance" />
     <summary>Use 28 evidence-based recurring checks across daily, weekly, monthly, and quarterly MSP operations.</summary>
@@ -330,7 +330,7 @@
     <title>Windows patch exception review and closure template</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-exception-review-template.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-exception-review-template.html" />
-    <updated>2026-11-05T00:00:00Z</updated>
+    <updated>2026-11-06T00:00:00Z</updated>
     <category term="patch-management" />
     <category term="template" />
     <category term="exception-management" />
