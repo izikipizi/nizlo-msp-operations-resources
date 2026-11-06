@@ -5,7 +5,7 @@
     "url": "https://nizlo.com/",
     "resources_url": "https://nizlo.com/tools"
   },
-  "updated": "2026-11-05",
+  "updated": "2026-11-06",
   "resources": [
     {
       "id": "rmm-vendor-exit-plan",
@@ -883,6 +883,70 @@
       "format": "text/csv",
       "controls": 12,
       "fields": 9,
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "msp-backup-restore-test-checklist",
+      "title": "MSP backup restore test checklist",
+      "category": "backup",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/msp-backup-restore-test-checklist.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-backup-restore-test-checklist.csv",
+      "canonical_guide": "https://nizlo.com/backup",
+      "format": "text/csv",
+      "controls": 24,
+      "fields": 9,
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "rmm-api-integration-preflight-checklist",
+      "title": "RMM API integration preflight checklist",
+      "category": "integration",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-api-integration-preflight-checklist.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-api-integration-preflight-checklist.csv",
+      "canonical_product_evidence": "https://nizlo.com/rmm-api",
+      "format": "text/csv",
+      "controls": 18,
+      "fields": 9,
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "rmm-audit-log-review-checklist",
+      "title": "RMM audit log review checklist and evidence register",
+      "category": "security",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-audit-log-review-checklist.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-audit-log-review-checklist.csv",
+      "canonical_guide": "https://nizlo.com/guides/rmm-security-checklist",
+      "format": "text/csv",
+      "controls": 24,
+      "fields": 15,
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "rmm-vendor-due-diligence-evidence-register",
+      "title": "RMM vendor due-diligence evidence register",
+      "category": "selection",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vendor-due-diligence-evidence-register.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-vendor-due-diligence-evidence-register.csv",
+      "format": "text/csv",
+      "controls": 30,
+      "fields": 17,
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "rmm-vendor-exit-plan",
+      "title": "RMM vendor exit plan checklist and evidence register",
+      "category": "migration",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vendor-exit-plan-checklist.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-vendor-exit-plan.csv",
+      "canonical_guide": "https://nizlo.com/guides/rmm-migration-checklist",
+      "format": "text/csv",
+      "controls": 32,
+      "fields": 16,
       "access": "public",
       "account_required": false
     }
