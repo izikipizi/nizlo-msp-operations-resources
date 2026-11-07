@@ -8,6 +8,34 @@
   "updated": "2026-11-07",
   "resources": [
     {
+      "id": "rmm-remote-access-not-connecting-troubleshooting-checklist",
+      "title": "RMM remote access not connecting troubleshooting checklist",
+      "category": "operations",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-not-connecting-troubleshooting-checklist.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-remote-access-not-connecting-troubleshooting-checklist.csv",
+      "canonical_guide": "https://nizlo.com/features/remote-support",
+      "format": "text/csv",
+      "controls": 24,
+      "fields": 11,
+      "audience": ["MSP", "IT team"],
+      "access": "public",
+      "account_required": false,
+      "relationship_disclosure": "Nizlo maintains the checklist; the workflow is vendor-neutral."
+    },
+    {
+      "id": "msp-endpoint-exception-register",
+      "title": "MSP endpoint exception register",
+      "category": "operations",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/msp-endpoint-exception-register.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-endpoint-exception-register.csv",
+      "canonical_guide": "https://nizlo.com/guides/endpoint-exception-management",
+      "format": "text/csv",
+      "controls": 5,
+      "fields": 15,
+      "access": "public",
+      "account_required": false
+    },
+    {
       "id": "rmm-agent-certificate-tls-enrollment-troubleshooting-checklist",
       "title": "RMM agent certificate or TLS enrollment failure troubleshooting checklist",
       "category": "operations",

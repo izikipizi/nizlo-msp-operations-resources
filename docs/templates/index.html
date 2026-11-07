@@ -37,8 +37,40 @@
   },
   "mainEntity": {
     "@type": "ItemList",
-    "numberOfItems": 35,
+    "numberOfItems": 37,
     "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 36,
+        "item": {
+          "@type": "Dataset",
+          "name": "RMM agent certificate or TLS enrollment troubleshooting checklist",
+          "description": "Twenty-four controls and eleven fields for endpoint time, DNS, proxy, TLS, trust chain, revocation, inspection, cryptographic policy, enrollment identity, bounded repair, and functional recovery.",
+          "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-agent-certificate-tls-enrollment-troubleshooting-checklist.csv",
+          "isAccessibleForFree": true,
+          "distribution": {
+            "@type": "DataDownload",
+            "contentUrl": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-agent-certificate-tls-enrollment-troubleshooting-checklist.csv",
+            "encodingFormat": "text/csv"
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 37,
+        "item": {
+          "@type": "Dataset",
+          "name": "RMM remote access not connecting troubleshooting checklist",
+          "description": "Twenty-four controls and eleven fields for authority, endpoint and service state, DNS, proxy, TLS, relay health, session lifecycle, display evidence, bounded repair, retesting, and closure.",
+          "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-remote-access-not-connecting-troubleshooting-checklist.csv",
+          "isAccessibleForFree": true,
+          "distribution": {
+            "@type": "DataDownload",
+            "contentUrl": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-remote-access-not-connecting-troubleshooting-checklist.csv",
+            "encodingFormat": "text/csv"
+          }
+        }
+      },
       {
         "@type": "ListItem",
         "position": 1,
@@ -639,6 +671,20 @@
       <h1>RMM evaluation and operations templates.</h1>
       <p class="lede">Turn endpoint exceptions, network-monitoring acceptance, service desk escalation, RMM agent performance, offline-agent and duplicate-device troubleshooting, allowlisting, backup restore tests, MSP QBRs, API integrations, requirements, security and audit evidence, vendor exits, quotes, alert measurements, service commitments, access reviews, client lifecycle work, endpoint changes, migrations, and incidents into owned, reviewable records. All thirty-five templates are plain CSV files—no account, email address, or product installation required.</p>
       <section class="grid" aria-label="RMM templates">
+        <article>
+          <div class="tag">24 controls · 11 fields · CSV</div>
+          <h2>RMM remote access not connecting troubleshooting checklist</h2>
+          <p>Separate authorization, endpoint, support-service, network, relay, session, display, and security-control failures before unsafe workarounds or broad retries.</p>
+          <ul><li>Preserve the failed session and authorization evidence</li><li>Trace endpoint, service, DNS, proxy, TLS, and relay state</li><li>Retest one bounded session and verify clean termination</li></ul>
+          <div class="actions"><a class="button primary" href="rmm-remote-access-not-connecting-troubleshooting-checklist.csv" download>Download CSV</a><a class="button" href="../rmm-remote-access-not-connecting-troubleshooting-checklist.html">Open troubleshooting guide</a></div>
+        </article>
+        <article>
+          <div class="tag">24 controls · 11 fields · CSV</div>
+          <h2>RMM agent certificate or TLS enrollment troubleshooting checklist</h2>
+          <p>Separate endpoint time, DNS, proxy, TLS, trust-chain, revocation, inspection, policy, and enrollment-identity failures before weakening controls.</p>
+          <ul><li>Preserve the original trust and enrollment evidence</li><li>Trace the path and validate the presented chain</li><li>Repair one verified dependency and prove functional recovery</li></ul>
+          <div class="actions"><a class="button primary" href="rmm-agent-certificate-tls-enrollment-troubleshooting-checklist.csv" download>Download CSV</a><a class="button" href="../rmm-agent-certificate-tls-enrollment-troubleshooting-checklist.html">Open troubleshooting guide</a></div>
+        </article>
         <article>
           <div class="tag">24 controls · 9 fields · CSV</div>
           <h2>RMM network device monitoring acceptance</h2>

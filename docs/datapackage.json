@@ -4,7 +4,7 @@
   "name": "nizlo-rmm-operations-resources",
   "id": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
   "title": "Nizlo RMM Operations Resources",
-  "description": "Thirty-five public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
+  "description": "Thirty-seven public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
   "version": "1.76.3",
   "created": "2026-11-01",
@@ -90,6 +90,62 @@
     "MSP client reporting"
   ],
   "resources": [
+    {
+      "profile": "tabular-data-resource",
+      "name": "rmm-remote-access-not-connecting-troubleshooting-checklist",
+      "title": "RMM remote access not connecting troubleshooting checklist",
+      "description": "Twenty-four vendor-neutral controls and eleven fields for authority, endpoint and support-service state, DNS, proxy, TLS, relay health, session lifecycle, display evidence, bounded repair, retesting, and closure.",
+      "path": "templates/rmm-remote-access-not-connecting-troubleshooting-checklist.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 3989,
+      "hash": "sha256:2ab9758f4037a3d7ab8dbac8b82442bd59a5930d2710bcac9406949f100e6c85",
+      "schema": {
+        "fields": [
+          { "name": "control_id", "type": "string" },
+          { "name": "phase", "type": "string" },
+          { "name": "control", "type": "string" },
+          { "name": "evidence_to_capture", "type": "string" },
+          { "name": "status", "type": "string" },
+          { "name": "owner", "type": "string" },
+          { "name": "due_date", "type": "date" },
+          { "name": "exception_or_risk", "type": "string" },
+          { "name": "rollback_or_next_action", "type": "string" },
+          { "name": "verified_by", "type": "string" },
+          { "name": "verified_at_utc", "type": "datetime" }
+        ],
+        "primaryKey": "control_id"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "rmm-agent-certificate-tls-enrollment-troubleshooting-checklist",
+      "title": "RMM agent certificate or TLS enrollment troubleshooting checklist",
+      "description": "Twenty-four vendor-neutral controls and eleven fields for endpoint time, DNS, proxy, TLS, trust chain, revocation, inspection, cryptographic policy, enrollment identity, bounded repair, and functional recovery.",
+      "path": "templates/rmm-agent-certificate-tls-enrollment-troubleshooting-checklist.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 7356,
+      "hash": "sha256:d6b2e4f5909f14dd794ba8e29e2e2ba797ee5facd74f7e2625860e5195878d8b",
+      "schema": {
+        "fields": [
+          { "name": "Phase", "type": "string" },
+          { "name": "Control ID", "type": "string" },
+          { "name": "Check", "type": "string" },
+          { "name": "Evidence to capture", "type": "string" },
+          { "name": "Likely cause", "type": "string" },
+          { "name": "Safe next action", "type": "string" },
+          { "name": "Escalation trigger", "type": "string" },
+          { "name": "Owner", "type": "string" },
+          { "name": "Status", "type": "string" },
+          { "name": "Due date", "type": "date" },
+          { "name": "Notes", "type": "string" }
+        ],
+        "primaryKey": "Control ID"
+      }
+    },
     {
       "profile": "tabular-data-resource",
       "name": "msp-service-desk-diagnostic-handoff-checklist",

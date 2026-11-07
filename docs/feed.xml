@@ -13,6 +13,15 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>RMM remote access not connecting: 24-step troubleshooting checklist</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-not-connecting-troubleshooting-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-not-connecting-troubleshooting-checklist.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-remote-access-not-connecting-troubleshooting-checklist.csv" />
+    <updated>2026-11-07T00:00:00Z</updated>
+    <category term="operations" /><category term="remote access" /><category term="remote support" /><category term="troubleshooting" /><category term="RMM" />
+    <summary>Use 24 vendor-neutral checks to separate authorization, endpoint, service, path, relay, session, display, and security-control failures before weakening safeguards or retrying an RMM remote-support session.</summary>
+  </entry>
+  <entry>
     <title>RMM agent certificate or TLS enrollment failure: 24-step troubleshooting checklist</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-certificate-tls-enrollment-troubleshooting-checklist.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-certificate-tls-enrollment-troubleshooting-checklist.html" />
