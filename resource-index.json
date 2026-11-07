@@ -924,7 +924,7 @@
     },
     {
       "id": "rmm-edr-allowlisting-change-record",
-      "title": "RMM EDR allowlisting checklist and change record",
+      "title": "RMM EDR troubleshooting and allowlisting checklist",
       "category": "security",
       "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-edr-allowlisting-checklist.html",
       "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-edr-allowlisting-change-record.csv",
