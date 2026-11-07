@@ -13,6 +13,15 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>RMM agent upgrade failed or stuck: 24-step troubleshooting checklist</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-upgrade-failed-stuck-troubleshooting-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-upgrade-failed-stuck-troubleshooting-checklist.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-agent-upgrade-failed-stuck-troubleshooting-checklist.csv" />
+    <updated>2026-11-07T00:00:00Z</updated>
+    <category term="operations" /><category term="troubleshooting" /><category term="RMM" /><category term="agent upgrade" /><category term="Windows Installer" />
+    <summary>Use 24 vendor-neutral checks to preserve installer evidence, isolate package, prerequisite, concurrency, lock, path, and security-control failures, repair one pilot safely, and reconcile the complete upgrade cohort.</summary>
+  </entry>
+  <entry>
     <title>RMM remote access not connecting: 24-step troubleshooting checklist</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-not-connecting-troubleshooting-checklist.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-not-connecting-troubleshooting-checklist.html" />

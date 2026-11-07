@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If these MSP operations resources support your work, cite the maintained canonical guide."
 title: "Nizlo MSP Operations Resources"
 type: dataset
-version: "1.79.0"
+version: "1.80.0"
 authors:
   - family-names: "Ecklund"
     given-names: "Kip"
@@ -52,6 +52,9 @@ keywords:
   - "RMM agent high CPU"
   - "RMM agent high memory"
   - "RMM performance troubleshooting"
+  - "RMM agent upgrade failed"
+  - "RMM agent update stuck"
+  - "RMM installer troubleshooting"
   - "MSP service desk escalation"
   - "diagnostic handoff"
   - "endpoint troubleshooting evidence"
