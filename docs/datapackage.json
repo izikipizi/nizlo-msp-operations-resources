@@ -4,9 +4,9 @@
   "name": "nizlo-rmm-operations-resources",
   "id": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
   "title": "Nizlo RMM Operations Resources",
-  "description": "Thirty-two public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
+  "description": "Thirty-three public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
-  "version": "1.68.0",
+  "version": "1.69.0",
   "created": "2026-11-01",
   "contributors": [
     {
@@ -56,6 +56,9 @@
     "RMM agent high CPU",
     "RMM agent high memory",
     "RMM performance troubleshooting",
+    "MSP service desk escalation",
+    "diagnostic handoff",
+    "endpoint troubleshooting evidence",
     "RMM duplicate device",
     "cloned RMM agent identity",
     "duplicate endpoint record",
@@ -87,6 +90,35 @@
     "MSP client reporting"
   ],
   "resources": [
+    {
+      "profile": "tabular-data-resource",
+      "name": "msp-service-desk-diagnostic-handoff-checklist",
+      "title": "MSP service desk diagnostic handoff checklist",
+      "description": "Twenty-four vendor-neutral controls and twelve fields for transferring endpoint context, measurements, work performed, uncertainty, ownership, receipt, retest, and closure between service desk tiers.",
+      "path": "templates/msp-service-desk-diagnostic-handoff-checklist.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 6142,
+      "hash": "sha256:d877606667d112595e24235e50e04f01df026f59804b107f451a37fd47a26e9d",
+      "schema": {
+        "fields": [
+          { "name": "Phase", "type": "string" },
+          { "name": "Control ID", "type": "string" },
+          { "name": "Handoff requirement", "type": "string" },
+          { "name": "Evidence to capture", "type": "string" },
+          { "name": "Source system", "type": "string" },
+          { "name": "Timestamp and time zone", "type": "string" },
+          { "name": "Fact or hypothesis", "type": "string" },
+          { "name": "Owner", "type": "string" },
+          { "name": "Status", "type": "string" },
+          { "name": "Due date", "type": "string" },
+          { "name": "Receiving technician confirmation", "type": "string" },
+          { "name": "Notes", "type": "string" }
+        ],
+        "primaryKey": "Control ID"
+      }
+    },
     {
       "profile": "tabular-data-resource",
       "name": "rmm-agent-high-cpu-memory-troubleshooting-checklist",

@@ -103,6 +103,23 @@
       "access": "public",
       "account_required": false
     },
+    {
+      "id": "msp-service-desk-diagnostic-handoff-checklist",
+      "title": "MSP service desk diagnostic handoff checklist",
+      "category": "operations",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/msp-service-desk-diagnostic-handoff-checklist.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-service-desk-diagnostic-handoff-checklist.csv",
+      "canonical_guide": "https://nizlo.com/monitoring-alerts",
+      "format": "text/csv",
+      "controls": 24,
+      "fields": 12,
+      "audience": [
+        "MSP",
+        "IT service desk"
+      ],
+      "access": "public",
+      "account_required": false
+    },
 
     {
       "id": "rmm-patch-compliance-calculator",

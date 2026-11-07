@@ -13,6 +13,15 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>MSP service desk diagnostic handoff checklist</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/msp-service-desk-diagnostic-handoff-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/msp-service-desk-diagnostic-handoff-checklist.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-service-desk-diagnostic-handoff-checklist.csv" />
+    <updated>2026-11-07T00:00:00Z</updated>
+    <category term="operations" /><category term="service desk" /><category term="escalation" /><category term="troubleshooting" />
+    <summary>Use 24 vendor-neutral checks to transfer endpoint identity, measurements, work performed, uncertainty, ownership, receipt, retest, and closure between service desk tiers.</summary>
+  </entry>
+  <entry>
     <title>RMM agent high CPU or memory troubleshooting checklist</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-high-cpu-memory-troubleshooting-checklist.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-high-cpu-memory-troubleshooting-checklist.html" />
