@@ -1,4 +1,4 @@
-record_id,vendor,quote_date,currency,billing_basis,contract_term_months,minimum_spend_or_seats,base_platform_fee,included_technicians,included_endpoints,additional_technician_fee,additional_endpoint_fee,mandatory_addons_monthly,optional_addons_monthly,implementation_fee,training_fee,estimated_monthly_total,estimated_year_one_total,renewal_uplift_or_cap,early_termination_terms,data_export_or_exit_cost,source_or_quote_reference,assumptions,decision_owner,status,notes
-quote-001,,,,,,,,,,,,,,,,,,,,,,,,,
-quote-002,,,,,,,,,,,,,,,,,,,,,,,,,
-quote-003,,,,,,,,,,,,,,,,,,,,,,,,,
+record_id,vendor,quote_date,currency,billing_basis,contract_term_months,service_start_date,renewal_or_end_date,nonrenewal_notice_days,automatic_renewal_term_months,minimum_spend_or_seats,base_platform_fee,included_technicians,included_endpoints,additional_technician_fee,additional_endpoint_fee,mandatory_addons_monthly,optional_addons_monthly,implementation_fee,training_fee,estimated_monthly_total,estimated_year_one_total,renewal_uplift_or_cap,early_termination_terms,data_export_or_exit_cost,source_or_quote_reference,assumptions,decision_owner,status,notes
+quote-001,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+quote-002,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+quote-003,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

@@ -1718,14 +1718,14 @@
     {
       "profile": "tabular-data-resource",
       "name": "rmm-quote-comparison-worksheet",
-      "title": "RMM quote comparison worksheet",
-      "description": "Twenty-six fields for normalizing dated RMM proposals across pricing units, minimums, fees, add-ons, implementation, year-one totals, renewal changes, contract terms, and exit costs.",
+      "title": "RMM contract and quote comparison worksheet",
+      "description": "Thirty fields for normalizing dated RMM proposals across pricing units, minimums, fees, add-ons, implementation, year-one totals, service dates, renewal notice windows, auto-renewal terms, termination, and exit costs.",
       "path": "templates/rmm-quote-comparison-worksheet.csv",
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "bytes": 575,
-      "hash": "sha256:6ba841345d852426c0e52b343ec1b76e913a66b35dde1754490cbe17bd1311f4",
+      "bytes": 679,
+      "hash": "sha256:1ef4f9044f533111488ef4d7617e83885bd5f80b6f36360af5c838a388de7d5a",
       "schema": {
         "fields": [
           {
@@ -1750,6 +1750,22 @@
           },
           {
             "name": "contract_term_months",
+            "type": "integer"
+          },
+          {
+            "name": "service_start_date",
+            "type": "date"
+          },
+          {
+            "name": "renewal_or_end_date",
+            "type": "date"
+          },
+          {
+            "name": "nonrenewal_notice_days",
+            "type": "integer"
+          },
+          {
+            "name": "automatic_renewal_term_months",
             "type": "integer"
           },
           {
