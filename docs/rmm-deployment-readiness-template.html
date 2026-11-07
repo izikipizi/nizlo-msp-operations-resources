@@ -3,20 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>RMM Implementation Checklist and Rollout Plan Template</title>
-    <meta name="description" content="Download a free 33-control RMM implementation checklist for inventory, agent preparation, pilot testing, deployment waves, rollback, verification, and closeout." />
+    <title>RMM Agent Installation Failure Checklist and Rollout Plan</title>
+    <meta name="description" content="Free 33-control RMM checklist for agent installation failures, enrollment troubleshooting, pilot testing, rollout, rollback, verification, and closeout." />
     <meta name="robots" content="index,follow,max-image-preview:large" />
     <link rel="canonical" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-deployment-readiness-template.html" />
     <link rel="alternate" type="application/atom+xml" title="Nizlo MSP Operations Resources" href="feed.xml" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="RMM Implementation Checklist and Rollout Plan" />
-    <meta property="og:description" content="A free 33-control worksheet for planning, preparing, piloting, rolling out, verifying, and closing an RMM implementation." />
+    <meta property="og:title" content="RMM Agent Installation Failure Checklist and Rollout Plan" />
+    <meta property="og:description" content="A free 33-control worksheet for diagnosing agent installation and enrollment failures, piloting safely, rolling out, verifying, and closing an RMM implementation." />
     <meta property="og:url" content="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-deployment-readiness-template.html" />
     <meta property="og:image" content="https://nizlo.com/opengraph-image" />
     <meta property="og:image:alt" content="Nizlo RMM deployment readiness checklist template" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="RMM Implementation Checklist and Rollout Plan" />
-    <meta name="twitter:description" content="A free 33-control worksheet for planning, preparing, piloting, rolling out, verifying, and closing an RMM implementation." />
+    <meta name="twitter:title" content="RMM Agent Installation Failure Checklist and Rollout Plan" />
+    <meta name="twitter:description" content="A free 33-control worksheet for diagnosing agent installation and enrollment failures, piloting safely, rolling out, verifying, and closing an RMM implementation." />
     <meta name="twitter:image" content="https://nizlo.com/opengraph-image" />
     <meta name="twitter:image:alt" content="Nizlo RMM deployment readiness checklist template" />
     <meta name="theme-color" content="#07171d" />
@@ -28,10 +28,10 @@
         "description": "A vendor-neutral CSV with 33 controls for planning an RMM implementation, inventorying endpoints, preparing agents, piloting, deploying in waves, defining rollback, verifying coverage, and closing the rollout.",
         "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-deployment-readiness-template.html",
         "creator": { "@type": "Organization", "name": "Nizlo", "url": "https://nizlo.com/" },
-        "dateModified": "2026-11-06",
+        "dateModified": "2026-11-07",
         "isAccessibleForFree": true,
         "inLanguage": "en",
-        "keywords": ["RMM implementation checklist", "RMM implementation plan", "RMM deployment checklist", "RMM deployment plan", "RMM agent deployment", "deployment readiness", "MSP rollout plan", "endpoint management", "RMM pilot"],
+        "keywords": ["RMM implementation checklist", "RMM implementation plan", "RMM deployment checklist", "RMM deployment plan", "RMM agent deployment", "RMM agent installation failed", "RMM agent enrollment troubleshooting", "deployment readiness", "MSP rollout plan", "endpoint management", "RMM pilot"],
         "variableMeasured": ["Phase", "Control owner", "Control status", "Evidence", "Exception owner", "Due date", "Rollback trigger"],
         "distribution": {
           "@type": "DataDownload",
@@ -41,6 +41,7 @@
         "isBasedOn": [
           "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-pilot-test-evidence-pack.html",
           "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html",
+          "https://nizlo.com/guides/rmm-agent-installation-troubleshooting",
           "https://nizlo.com/guides/how-to-test-rmm-software"
         ]
       }
@@ -64,6 +65,11 @@
             "@type": "Question",
             "name": "How should an MSP deploy RMM agents?",
             "acceptedAnswer": { "@type": "Answer", "text": "Start with authorized noncritical pilot endpoints, verify identity, telemetry, alerting, patch policy, automation, remote-support authority, and removal, then expand in bounded waves only after success and rollback thresholds are satisfied." }
+          },
+          {
+            "@type": "Question",
+            "name": "What should you do when an RMM agent installation fails?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Preserve the installer version, command line, exit code, and logs before retrying. Identify whether the failure occurred during download, execution, installation, service start, enrollment, first check-in, or policy assignment; verify privileges, operating-system prerequisites, disk space, time and TLS, DNS, proxy, firewall, and security-tool controls; then retest on one representative pilot endpoint with a defined stop and rollback condition." }
           },
           {
             "@type": "Question",
@@ -160,8 +166,22 @@
           <div class="card"><strong>What should an RMM implementation checklist include?</strong><span>Define ownership and scope, reconcile the endpoint inventory, verify prerequisites, test representative pilot devices, set deployment-wave and rollback thresholds, reconcile every outcome, and retain acceptance evidence.</span></div>
           <div class="card"><strong>Is implementation different from deployment?</strong><span>Implementation is the full operating change: goals, inventory, policy design, pilot, technician readiness, deployment, acceptance, and stabilization. Deployment is the narrower act of installing and enrolling agents, so a complete implementation plan must cover both.</span></div>
           <div class="card"><strong>How should an MSP deploy RMM agents?</strong><span>Begin with authorized noncritical pilot endpoints. Verify identity, telemetry, alerting, patch policy, automation, remote-support authority, and removal before expanding in bounded waves.</span></div>
+          <div class="card"><strong>What should you do when an RMM agent installation fails?</strong><span>Preserve the package version, command line, exit code, and logs. Locate the exact failed stage, validate endpoint and network prerequisites, then retest one representative pilot with explicit stop and rollback conditions.</span></div>
           <div class="card"><strong>How do you verify an RMM rollout is complete?</strong><span>Account for successful, failed, excluded, offline, and unknown endpoints; verify check-in and policy state; assign every exception; and record explicit operational acceptance.</span></div>
           <div class="card"><strong>What stops an RMM deployment wave?</strong><span>Pause when install or check-in failures cross the approved threshold, endpoint identity is ambiguous, critical workflows fail, security controls conflict, or rollback cannot be completed safely.</span></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>When an RMM agent installation fails</h2>
+        <p>Do not turn a failed installation into a blind uninstall-and-reinstall loop. Preserve the evidence that separates a packaging problem from an endpoint prerequisite, security-control conflict, enrollment error, or first-check-in failure. The maintained <a href="https://nizlo.com/guides/rmm-agent-installation-troubleshooting?utm_source=github_pages&amp;utm_medium=authority_bridge&amp;utm_campaign=rmm_agent_installation_troubleshooting&amp;utm_content=deployment_failure_workflow">RMM agent installation troubleshooting guide</a> expands this workflow.</p>
+        <div class="grid">
+          <div class="card"><strong>1. Preserve the attempt</strong><span>Record the package version, source, hash or signature result, deployment command, execution context, timestamp, exit code, installer log, and service log before another attempt changes the evidence.</span></div>
+          <div class="card"><strong>2. Locate the failed stage</strong><span>Distinguish download, execution, install, service start, enrollment, first check-in, and policy assignment. Each stage has different evidence and a different safe next test.</span></div>
+          <div class="card"><strong>3. Verify prerequisites</strong><span>Check operating-system version and architecture, privileges, free space, system time and TLS, DNS, proxy, firewall, certificate trust, and endpoint security controls.</span></div>
+          <div class="card"><strong>4. Check identity and conflicts</strong><span>Look for stale or duplicate agent identities, remnants from an earlier provider, conflicting services or drivers, and existing management tools that own the same workflow.</span></div>
+          <div class="card"><strong>5. Retest one pilot</strong><span>Use one authorized representative endpoint, capture before-and-after evidence, and stop when the approved failure threshold, security condition, or rollback trigger is reached.</span></div>
+          <div class="card"><strong>6. Reconcile the wave</strong><span>Classify every endpoint as successful, failed, excluded, offline, or unknown. Assign each exception an owner, next action, due date, and evidence before expanding rollout.</span></div>
         </div>
       </section>
 
@@ -218,6 +238,6 @@
         <p>Nizlo, a Windows-first RMM and IT-management platform, maintains this public template. It is designed for use with any RMM and does not claim that Nizlo or another vendor passes the controls.</p>
       </section>
     </main>
-    <footer><div class="wrap">Maintained by <a href="https://nizlo.com/">Nizlo</a> · Updated November 6, 2026 · <a href="citation.html">Citation and preservation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source repository</a></div></footer>
+    <footer><div class="wrap">Maintained by <a href="https://nizlo.com/">Nizlo</a> · Updated November 7, 2026 · <a href="citation.html">Citation and preservation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source repository</a></div></footer>
   </body>
 </html>
