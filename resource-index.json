@@ -735,6 +735,21 @@
       "account_required": false
     },
     {
+      "id": "n8n-rmm-integration",
+      "title": "n8n RMM integration: read-only MSP workflows",
+      "category": "integration",
+      "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/n8n-rmm-integration.html",
+      "source_repository": "https://github.com/izikipizi/n8n-nodes-nizlo",
+      "canonical_product_evidence": "https://nizlo.com/rmm-api",
+      "audience": [
+        "MSP",
+        "IT team",
+        "integration developer"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
       "id": "windows-patch-failure-triage-checklist",
       "title": "Windows patch failure triage checklist for MSPs",
       "category": "patch-management",
