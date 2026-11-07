@@ -4,9 +4,9 @@
   "name": "nizlo-rmm-operations-resources",
   "id": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
   "title": "Nizlo RMM Operations Resources",
-  "description": "Twenty-nine public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
+  "description": "Thirty public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
-  "version": "1.63.2",
+  "version": "1.65.0",
   "created": "2026-11-01",
   "contributors": [
     {
@@ -81,6 +81,34 @@
     "MSP client reporting"
   ],
   "resources": [
+    {
+      "profile": "tabular-data-resource",
+      "name": "rmm-agent-offline-troubleshooting-checklist",
+      "title": "RMM agent offline or not checking in troubleshooting checklist",
+      "description": "Twenty-four vendor-neutral controls and eleven fields for diagnosing endpoint state, service health, connectivity, enrollment identity, safe repair, functional recovery, and closure before reinstalling.",
+      "path": "templates/rmm-agent-offline-troubleshooting-checklist.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 8520,
+      "hash": "sha256:27e349e319a4ad515b30b59828fa6d9cd3d00d9ec89eb3ca199544e8058bdc63",
+      "schema": {
+        "fields": [
+          { "name": "Phase", "type": "string" },
+          { "name": "Control ID", "type": "string" },
+          { "name": "Check", "type": "string" },
+          { "name": "Evidence to capture", "type": "string" },
+          { "name": "Likely cause", "type": "string" },
+          { "name": "Safe next action", "type": "string" },
+          { "name": "Escalation trigger", "type": "string" },
+          { "name": "Owner", "type": "string" },
+          { "name": "Status", "type": "string" },
+          { "name": "Due date", "type": "string" },
+          { "name": "Notes", "type": "string" }
+        ],
+        "primaryKey": "Control ID"
+      }
+    },
     {
       "profile": "tabular-data-resource",
       "name": "msp-qbr-agenda-client-report-checklist",
