@@ -39,6 +39,7 @@ Test whether an RMM audit trail can support operations and investigation with th
 | Resource | Use it when |
 | --- | --- |
 | [RMM evaluation checklist](https://nizlo.com/guides/rmm-evaluation-checklist) | Comparing products through evidence rather than feature-list claims |
+| [Best RMM for small MSPs buying guide](https://nizlo.com/guides/best-rmm-for-small-msps?utm_source=github&utm_medium=resource&utm_campaign=best_rmm_small_msp) | Matching fleet size, technician count, platform mix, ticketing ownership, complete cost, security controls, and controlled-pilot evidence to the MSP's operating model |
 | [RMM vendor due-diligence checklist](https://nizlo.com/guides/rmm-vendor-due-diligence) | Comparing security, support, pilot evidence, pricing, commercial terms, and exit readiness |
 | [RMM vendor due-diligence evidence register](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vendor-due-diligence-evidence-register.html) | Recording requested evidence, findings, risk, remediation, exceptions, and renewal review across an RMM vendor assessment |
 | [Free RMM API integration checklist and CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-api-integration-preflight-checklist.html) | Proving identity, least privilege, tenant isolation, pagination, rate limits, write safety, webhook validation, audit evidence, rollback, and ownership before production |
