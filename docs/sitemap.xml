@@ -398,4 +398,5 @@
   <url><loc>https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-technician-access-review.csv</loc><lastmod>2026-11-01</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://izikipizi.github.io/nizlo-msp-operations-resources/templates/windows-patch-exception-review.csv</loc><lastmod>2026-11-02</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-monitoring-policy-template.html</loc><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-maintenance-window-alert-suppression-policy.html</loc><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
 </urlset>

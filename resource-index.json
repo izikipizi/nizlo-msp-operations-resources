@@ -304,6 +304,20 @@
       "account_required": false
     },
     {
+      "id": "rmm-maintenance-window-alert-suppression-policy",
+      "title": "RMM maintenance window and alert suppression policy: 28 controls",
+      "category": "operations",
+      "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-maintenance-window-alert-suppression-policy.html",
+      "canonical_guide": "https://nizlo.com/guides/rmm-alert-tuning-checklist",
+      "controls": 28,
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
       "id": "endpoint-exception-management",
       "title": "Endpoint exception-management guide",
       "category": "operations",

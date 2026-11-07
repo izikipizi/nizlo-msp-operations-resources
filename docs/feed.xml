@@ -13,6 +13,14 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>RMM maintenance window and alert suppression policy</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-maintenance-window-alert-suppression-policy.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-maintenance-window-alert-suppression-policy.html" />
+    <updated>2026-11-07T00:00:00Z</updated>
+    <category term="operations" /><category term="monitoring" /><category term="maintenance" /><category term="RMM" />
+    <summary>Use 28 vendor-neutral controls to bound maintenance scope, separate collection from routing, require hard expiry and compensating coverage, and prove post-window recovery.</summary>
+  </entry>
+  <entry>
     <title>RMM monitoring policy template: 32 controls for MSPs</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-monitoring-policy-template.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-monitoring-policy-template.html" />
