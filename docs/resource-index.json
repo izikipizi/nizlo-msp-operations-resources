@@ -5,7 +5,7 @@
     "url": "https://nizlo.com/",
     "resources_url": "https://nizlo.com/tools"
   },
-  "updated": "2026-11-06",
+  "updated": "2026-11-07",
   "resources": [
     {
       "id": "rmm-vendor-exit-plan",
@@ -46,6 +46,22 @@
       "title": "RMM first-endpoint activation troubleshooting checklist",
       "category": "deployment",
       "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html",
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "rmm-agent-offline-troubleshooting-checklist",
+      "title": "RMM agent offline or not checking in troubleshooting checklist",
+      "category": "operations",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-offline-troubleshooting-checklist.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-agent-offline-troubleshooting-checklist.csv",
+      "format": "text/csv",
+      "controls": 24,
+      "fields": 11,
       "audience": [
         "MSP",
         "IT team"
@@ -605,6 +621,22 @@
     }
   ],
   "templates": [
+    {
+      "id": "rmm-agent-offline-troubleshooting-checklist",
+      "title": "RMM agent offline or not checking in troubleshooting checklist",
+      "category": "operations",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-offline-troubleshooting-checklist.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-agent-offline-troubleshooting-checklist.csv",
+      "format": "text/csv",
+      "controls": 24,
+      "fields": 11,
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
     {
       "id": "msp-qbr-agenda-client-report-checklist",
       "title": "MSP QBR agenda and client report checklist",
