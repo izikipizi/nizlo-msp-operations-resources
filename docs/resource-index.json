@@ -70,6 +70,23 @@
       "account_required": false
     },
     {
+      "id": "rmm-duplicate-device-identity-troubleshooting-checklist",
+      "title": "RMM duplicate device or cloned agent identity troubleshooting checklist",
+      "category": "operations",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-duplicate-device-identity-troubleshooting-checklist.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-duplicate-device-identity-troubleshooting-checklist.csv",
+      "canonical_guide": "https://nizlo.com/guides/endpoint-inventory-cmdb-readiness",
+      "format": "text/csv",
+      "controls": 24,
+      "fields": 11,
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
       "id": "rmm-patch-compliance-calculator",
       "title": "RMM patch-compliance calculator",
       "category": "patch-management",

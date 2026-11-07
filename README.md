@@ -1,5 +1,7 @@
 # Nizlo MSP operations resources
 
+Separate a harmless naming collision from a cloned privileged identity with the public [RMM duplicate device or cloned agent identity troubleshooting checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-duplicate-device-identity-troubleshooting-checklist.html) and its [24-control CSV evidence register](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-duplicate-device-identity-troubleshooting-checklist.csv). It covers golden images, reinstalls, shared keys, stale imports, containment, record reconciliation, downstream mappings, and recurrence prevention without vendor-specific deletion commands.
+
 Restore missing check-ins without destroying evidence with the public [RMM agent offline or not checking in troubleshooting checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-offline-troubleshooting-checklist.html) and its [24-control CSV worksheet](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-agent-offline-troubleshooting-checklist.csv). It separates endpoint state, service health, network reachability, enrollment identity, safe repair, functional recovery, and closure before reinstalling an agent.
 
 Build narrow, testable RMM security exceptions with the public [RMM EDR allowlisting checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-edr-allowlisting-checklist.html) and its [CSV change record](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-edr-allowlisting-change-record.csv). It covers source verification, signer and hash evidence, network and endpoint scope, negative tests, telemetry, rollback, approval, expiry, and review.
@@ -62,6 +64,7 @@ Test whether an RMM audit trail can support operations and investigation with th
 | [Six-week MSP onboarding project plan](https://izikipizi.github.io/nizlo-msp-operations-resources/six-week-msp-onboarding-project-plan.html) | Structuring authority, discovery, SOP development, one controlled pilot, NOC training, acceptance, and handoff |
 | [MSP client offboarding checklist](https://nizlo.com/guides/msp-client-offboarding-checklist) | Removing access and agents without losing evidence, ownership, or responsibility |
 | [RMM agent offline troubleshooting checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-offline-troubleshooting-checklist.html) | Diagnosing endpoint state, service health, connectivity, enrollment identity, safe repair, functional recovery, and closure before reinstalling |
+| [RMM duplicate device identity troubleshooting checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-duplicate-device-identity-troubleshooting-checklist.html) | Preserving identity evidence, finding a cloned or stale record's cause, containing automation, reconciling one authoritative identity, and preventing recurrence |
 | [RMM agent uninstall verification checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-uninstall-verification-checklist.html) | Proving the agent, remote-access path, credentials, scheduled work, and management record were removed or reconciled |
 | [MSP backup restore test checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/msp-backup-restore-test-checklist.html) | Proving a recovery point produces usable data with validated integrity, permissions, dependencies, timing, and closure evidence |
 
@@ -90,7 +93,7 @@ Test whether an RMM audit trail can support operations and investigation with th
 
 ## Machine-readable index
 
-[`resource-index.json`](resource-index.json) exposes the same catalogue as structured data for internal portals, documentation tools, and agents. The public [sitemap](https://izikipizi.github.io/nizlo-msp-operations-resources/sitemap.xml) exposes every canonical page and all 30 reusable CSV templates. The [Data Package descriptor](https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json) supplies schemas, byte counts, and SHA-256 hashes for those templates plus the source-dated RMM pricing dataset. The [Atom feed](https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml) makes the catalogue available to feed readers and aggregators, while [`llms.txt`](https://izikipizi.github.io/nizlo-msp-operations-resources/llms.txt) provides a compact answer-engine profile. Each entry points to the maintained canonical guide rather than an unversioned copy.
+[`resource-index.json`](resource-index.json) exposes the same catalogue as structured data for internal portals, documentation tools, and agents. The public [sitemap](https://izikipizi.github.io/nizlo-msp-operations-resources/sitemap.xml) exposes every canonical page and all 31 reusable CSV templates. The [Data Package descriptor](https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json) supplies schemas, byte counts, and SHA-256 hashes for those templates plus the source-dated RMM pricing dataset. The [Atom feed](https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml) makes the catalogue available to feed readers and aggregators, while [`llms.txt`](https://izikipizi.github.io/nizlo-msp-operations-resources/llms.txt) provides a compact answer-engine profile. Each entry points to the maintained canonical guide rather than an unversioned copy.
 
 ## Source-dated pricing dataset
 
@@ -98,7 +101,7 @@ The [RMM pricing transparency dataset](https://izikipizi.github.io/nizlo-msp-ope
 
 ## Citation and preservation
 
-Citation metadata is available in [`CITATION.cff`](CITATION.cff) and on the public [citation and preservation page](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html). The current metadata is released as `v1.65.1`; Software Heritage preserves content release `v1.60.0` and repository history through commit `876e61c` as snapshot [`swh:1:snp:80937f6aa4430e6542f62a9dc494a1c2d9a42822`](https://archive.softwareheritage.org/browse/snapshot/80937f6aa4430e6542f62a9dc494a1c2d9a42822/). The archive is a preservation service, not an endorsement of Nizlo or these resources.
+Citation metadata is available in [`CITATION.cff`](CITATION.cff) and on the public [citation and preservation page](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html). The current metadata is released as `v1.66.0`; Software Heritage preserves content release `v1.60.0` and repository history through commit `876e61c` as snapshot [`swh:1:snp:80937f6aa4430e6542f62a9dc494a1c2d9a42822`](https://archive.softwareheritage.org/browse/snapshot/80937f6aa4430e6542f62a9dc494a1c2d9a42822/). The archive is a preservation service, not an endorsement of Nizlo or these resources.
 
 ## Reusable field templates
 

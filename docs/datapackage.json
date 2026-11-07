@@ -4,9 +4,9 @@
   "name": "nizlo-rmm-operations-resources",
   "id": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
   "title": "Nizlo RMM Operations Resources",
-  "description": "Thirty public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
+  "description": "Thirty-one public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
-  "version": "1.65.1",
+  "version": "1.66.0",
   "created": "2026-11-01",
   "contributors": [
     {
@@ -53,6 +53,9 @@
     "MSP exit checklist",
     "access revocation",
     "RMM agent removal",
+    "RMM duplicate device",
+    "cloned RMM agent identity",
+    "duplicate endpoint record",
     "Windows patch exception",
     "patch deferral",
     "patch exception expiry",
@@ -81,6 +84,34 @@
     "MSP client reporting"
   ],
   "resources": [
+    {
+      "profile": "tabular-data-resource",
+      "name": "rmm-duplicate-device-identity-troubleshooting-checklist",
+      "title": "RMM duplicate device or cloned agent identity troubleshooting checklist",
+      "description": "Twenty-four vendor-neutral controls and eleven fields for confirming duplicate records, preserving identity evidence, finding the cause, containing privileged automation, reconciling records, and preventing recurrence.",
+      "path": "templates/rmm-duplicate-device-identity-troubleshooting-checklist.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 9389,
+      "hash": "sha256:4a666c53c31fd2a28cad0064c45322a958a3b777fe8836618915a559e16766b6",
+      "schema": {
+        "fields": [
+          { "name": "Phase", "type": "string" },
+          { "name": "Control ID", "type": "string" },
+          { "name": "Check", "type": "string" },
+          { "name": "Evidence to capture", "type": "string" },
+          { "name": "Likely cause", "type": "string" },
+          { "name": "Safe next action", "type": "string" },
+          { "name": "Escalation trigger", "type": "string" },
+          { "name": "Owner", "type": "string" },
+          { "name": "Status", "type": "string" },
+          { "name": "Due date", "type": "string" },
+          { "name": "Notes", "type": "string" }
+        ],
+        "primaryKey": "Control ID"
+      }
+    },
     {
       "profile": "tabular-data-resource",
       "name": "rmm-agent-offline-troubleshooting-checklist",
