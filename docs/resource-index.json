@@ -318,6 +318,20 @@
       "account_required": false
     },
     {
+      "id": "rmm-for-azure-virtual-desktop-session-hosts-checklist",
+      "title": "RMM for Azure Virtual Desktop session hosts: 28 evaluation checks",
+      "category": "selection",
+      "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-for-azure-virtual-desktop-session-hosts-checklist.html",
+      "canonical_guide": "https://nizlo.com/guides/rmm-evaluation-checklist",
+      "controls": 28,
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
       "id": "endpoint-exception-management",
       "title": "Endpoint exception-management guide",
       "category": "operations",
