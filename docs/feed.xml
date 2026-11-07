@@ -13,6 +13,14 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>RMM vs PSA software: differences, integration, and buyer checks</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-psa-software.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-psa-software.html" />
+    <updated>2026-11-07T00:00:00Z</updated>
+    <category term="selection" /><category term="PSA" /><category term="RMM" /><category term="integration" />
+    <summary>Use ten evidence checks to separate endpoint operations from tickets, agreements, SLAs, time, billing, and service ownership, then test the RMM-to-PSA handoff.</summary>
+  </entry>
+  <entry>
     <title>MSP service desk diagnostic handoff checklist</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/msp-service-desk-diagnostic-handoff-checklist.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/msp-service-desk-diagnostic-handoff-checklist.html" />

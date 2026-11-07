@@ -670,6 +670,20 @@
       ],
       "access": "public",
       "account_required": false
+    },
+    {
+      "id": "rmm-vs-psa-software",
+      "title": "RMM vs PSA software: 10 buyer checks",
+      "category": "selection",
+      "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-psa-software.html",
+      "canonical_guide": "https://nizlo.com/guides/what-is-rmm?utm_source=resource_index&utm_medium=resource&utm_campaign=rmm_vs_psa",
+      "controls": 10,
+      "audience": [
+        "MSP",
+        "IT service provider"
+      ],
+      "access": "public",
+      "account_required": false
     }
   ],
   "templates": [
