@@ -13,6 +13,15 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>RMM agent high CPU or memory troubleshooting checklist</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-high-cpu-memory-troubleshooting-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-high-cpu-memory-troubleshooting-checklist.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-agent-high-cpu-memory-troubleshooting-checklist.csv" />
+    <updated>2026-11-07T00:00:00Z</updated>
+    <category term="operations" /><category term="troubleshooting" /><category term="RMM" /><category term="performance" />
+    <summary>Use 24 vendor-neutral checks to scope and contain an agent performance incident, prove a baseline, correlate workload, capture deep evidence, remediate safely, and validate recovery.</summary>
+  </entry>
+  <entry>
     <title>RMM duplicate device or cloned agent identity troubleshooting checklist</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-duplicate-device-identity-troubleshooting-checklist.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-duplicate-device-identity-troubleshooting-checklist.html" />

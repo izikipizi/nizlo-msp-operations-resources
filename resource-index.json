@@ -87,6 +87,24 @@
       "account_required": false
     },
     {
+      "id": "rmm-agent-high-cpu-memory-troubleshooting-checklist",
+      "title": "RMM agent high CPU or memory troubleshooting checklist",
+      "category": "operations",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-high-cpu-memory-troubleshooting-checklist.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-agent-high-cpu-memory-troubleshooting-checklist.csv",
+      "canonical_guide": "https://nizlo.com/guides/rmm-agent-installation-troubleshooting",
+      "format": "text/csv",
+      "controls": 24,
+      "fields": 12,
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+
+    {
       "id": "rmm-patch-compliance-calculator",
       "title": "RMM patch-compliance calculator",
       "category": "patch-management",

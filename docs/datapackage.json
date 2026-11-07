@@ -4,9 +4,9 @@
   "name": "nizlo-rmm-operations-resources",
   "id": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
   "title": "Nizlo RMM Operations Resources",
-  "description": "Thirty-one public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
+  "description": "Thirty-two public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
-  "version": "1.66.2",
+  "version": "1.68.0",
   "created": "2026-11-01",
   "contributors": [
     {
@@ -53,6 +53,9 @@
     "MSP exit checklist",
     "access revocation",
     "RMM agent removal",
+    "RMM agent high CPU",
+    "RMM agent high memory",
+    "RMM performance troubleshooting",
     "RMM duplicate device",
     "cloned RMM agent identity",
     "duplicate endpoint record",
@@ -84,6 +87,35 @@
     "MSP client reporting"
   ],
   "resources": [
+    {
+      "profile": "tabular-data-resource",
+      "name": "rmm-agent-high-cpu-memory-troubleshooting-checklist",
+      "title": "RMM agent high CPU or memory troubleshooting checklist",
+      "description": "Twenty-four vendor-neutral controls and twelve fields for baselining agent resource use, correlating workloads, capturing deep evidence, remediating safely, and validating recovery.",
+      "path": "templates/rmm-agent-high-cpu-memory-troubleshooting-checklist.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 8702,
+      "hash": "sha256:0682517c4b3bf20341471c8f112820760c2cf766741bfbe26524308a29c44855",
+      "schema": {
+        "fields": [
+          { "name": "Phase", "type": "string" },
+          { "name": "Control ID", "type": "string" },
+          { "name": "Check", "type": "string" },
+          { "name": "Evidence to capture", "type": "string" },
+          { "name": "Common interpretation", "type": "string" },
+          { "name": "Safe next action", "type": "string" },
+          { "name": "Escalation trigger", "type": "string" },
+          { "name": "Owner", "type": "string" },
+          { "name": "Status", "type": "string" },
+          { "name": "Due date", "type": "string" },
+          { "name": "Retest result", "type": "string" },
+          { "name": "Notes", "type": "string" }
+        ],
+        "primaryKey": "Control ID"
+      }
+    },
     {
       "profile": "tabular-data-resource",
       "name": "rmm-duplicate-device-identity-troubleshooting-checklist",
