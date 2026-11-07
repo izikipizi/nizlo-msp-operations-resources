@@ -84,6 +84,20 @@
       "account_required": false
     },
     {
+      "id": "rmm-script-not-running-job-stuck-troubleshooting-checklist",
+      "title": "RMM script not running or job stuck troubleshooting checklist",
+      "category": "operations",
+      "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-script-not-running-job-stuck-troubleshooting-checklist.html",
+      "canonical_guide": "https://nizlo.com/guides/rmm-automation-safety-checklist",
+      "controls": 24,
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
       "id": "rmm-duplicate-device-identity-troubleshooting-checklist",
       "title": "RMM duplicate device or cloned agent identity troubleshooting checklist",
       "category": "operations",
