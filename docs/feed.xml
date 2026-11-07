@@ -13,6 +13,15 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>RMM network device monitoring checklist: 24 acceptance tests</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-network-device-monitoring-acceptance-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-network-device-monitoring-acceptance-checklist.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-network-device-monitoring-acceptance-checklist.csv" />
+    <updated>2026-11-07T00:00:00Z</updated>
+    <category term="operations" /><category term="network monitoring" /><category term="SNMP" /><category term="RMM" />
+    <summary>Use 24 vendor-neutral tests to validate device scope, discovery, pollers, SNMP security, stable identity, metrics, alert routing, dependency failures, outages, recovery, and acceptance.</summary>
+  </entry>
+  <entry>
     <title>RMM for Azure Virtual Desktop session hosts: 28 evaluation checks</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-for-azure-virtual-desktop-session-hosts-checklist.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-for-azure-virtual-desktop-session-hosts-checklist.html" />

@@ -2210,6 +2210,32 @@
     },
     {
       "profile": "tabular-data-resource",
+      "name": "rmm-network-device-monitoring-acceptance-checklist",
+      "title": "RMM network device monitoring acceptance checklist",
+      "description": "Twenty-four vendor-neutral controls and nine fields for recording network discovery, SNMP, poller, identity, metric, alert, outage, recovery, and acceptance evidence.",
+      "path": "templates/rmm-network-device-monitoring-acceptance-checklist.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 9696,
+      "hash": "sha256:f891baf69b453e73e46ab1eff560545a74565ceeedb2c7c5d396491dde346723",
+      "schema": {
+        "fields": [
+          { "name": "phase", "type": "string" },
+          { "name": "check_id", "type": "string" },
+          { "name": "control", "type": "string" },
+          { "name": "why_it_matters", "type": "string" },
+          { "name": "evidence_to_capture", "type": "string" },
+          { "name": "pilot_test", "type": "string" },
+          { "name": "decision", "type": "string" },
+          { "name": "owner", "type": "string" },
+          { "name": "notes", "type": "string" }
+        ],
+        "primaryKey": "check_id"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
       "name": "rmm-edr-allowlisting-change-record",
       "title": "RMM EDR allowlisting checklist and change record",
       "description": "Twelve vendor-neutral controls and nine fields for scoping, testing, approving, monitoring, and reviewing RMM allowlisting changes in endpoint security tools.",
