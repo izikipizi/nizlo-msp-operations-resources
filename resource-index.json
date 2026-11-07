@@ -290,6 +290,20 @@
       "account_required": false
     },
     {
+      "id": "rmm-monitoring-policy-template",
+      "title": "RMM monitoring policy template: 32 controls for MSPs",
+      "category": "operations",
+      "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-monitoring-policy-template.html",
+      "supporting_template": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-alert-escalation-matrix.csv",
+      "controls": 32,
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
       "id": "endpoint-exception-management",
       "title": "Endpoint exception-management guide",
       "category": "operations",

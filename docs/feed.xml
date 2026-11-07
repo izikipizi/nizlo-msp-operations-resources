@@ -13,6 +13,15 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>RMM monitoring policy template: 32 controls for MSPs</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-monitoring-policy-template.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-monitoring-policy-template.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-alert-escalation-matrix.csv" />
+    <updated>2026-11-07T00:00:00Z</updated>
+    <category term="operations" /><category term="monitoring" /><category term="policy" /><category term="RMM" />
+    <summary>Use 32 vendor-neutral controls to define monitoring scope, baselines, thresholds, severity, routing, maintenance behavior, recovery evidence, testing, exceptions, and review.</summary>
+  </entry>
+  <entry>
     <title>RMM vs PSA software: differences, integration, and buyer checks</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-psa-software.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-psa-software.html" />
