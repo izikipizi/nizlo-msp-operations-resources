@@ -1,6 +1,6 @@
 # Nizlo MSP Operations Resources
 
-> Fifty-eight public, ungated field guides and operational resources, thirty-one reusable CSV templates, and one source-dated RMM pricing dataset for managed service providers and lean IT teams defining requirements, evaluating, pricing, testing, integrating, deploying, inventorying, operating, securing, reporting, recovering, migrating, onboarding, and offboarding remote monitoring and management software.
+> Sixty-one public, ungated field guides and operational resources, thirty-one reusable CSV templates, and one source-dated RMM pricing dataset for managed service providers and lean IT teams defining requirements, evaluating, pricing, testing, integrating, deploying, inventorying, operating, securing, reporting, recovering, migrating, onboarding, and offboarding remote monitoring and management software.
 
 This external library is maintained by the Nizlo team. Nizlo is a Windows-first RMM and IT-management platform. The resources are vendor-neutral, but they are vendor-created and do not represent independent research or an endorsement of Nizlo.
 
