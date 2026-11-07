@@ -4,9 +4,9 @@
   "name": "nizlo-rmm-operations-resources",
   "id": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
   "title": "Nizlo RMM Operations Resources",
-  "description": "Thirty-three public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
+  "description": "Thirty-five public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
-  "version": "1.70.0",
+  "version": "1.76.0",
   "created": "2026-11-01",
   "contributors": [
     {
@@ -2258,6 +2258,38 @@
           { "name": "Notes", "type": "string" }
         ],
         "primaryKey": "Control ID"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "msp-endpoint-exception-register",
+      "title": "MSP endpoint exception register",
+      "description": "A vendor-neutral fifteen-field register for recording endpoint, access, patching, security, monitoring, and service exceptions from request through approval, review, expiry, and closure.",
+      "path": "templates/msp-endpoint-exception-register.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 365,
+      "hash": "sha256:e34acffca1b674227160474d374d4925524c7e6009959d1c0f6d3f9f20757525",
+      "schema": {
+        "fields": [
+          { "name": "exception_id", "type": "string" },
+          { "name": "client", "type": "string" },
+          { "name": "affected_asset_or_scope", "type": "string" },
+          { "name": "policy_or_control", "type": "string" },
+          { "name": "requestor", "type": "string" },
+          { "name": "business_justification", "type": "string" },
+          { "name": "risk_if_approved", "type": "string" },
+          { "name": "risk_if_denied", "type": "string" },
+          { "name": "compensating_controls", "type": "string" },
+          { "name": "approver", "type": "string" },
+          { "name": "decision", "type": "string" },
+          { "name": "start_date", "type": "date" },
+          { "name": "expiry_or_review_date", "type": "date" },
+          { "name": "closure_evidence", "type": "string" },
+          { "name": "status", "type": "string" }
+        ],
+        "primaryKey": "exception_id"
       }
     }
   ]

@@ -724,4 +724,13 @@
     <category term="deployment" />
     <summary>Diagnose common RMM agent installation failures across prerequisites, permissions, networking, services, and cleanup.</summary>
   </entry>
+  <entry>
+    <title>MSP endpoint exception register</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/msp-endpoint-exception-register.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/msp-endpoint-exception-register.html" />
+    <updated>2026-11-07T00:00:00Z</updated>
+    <category term="operations" />
+    <category term="template" />
+    <summary>Download a vendor-neutral fifteen-field CSV for recording endpoint, access, patching, security, monitoring, and service exceptions from request through approval, review, expiry, and closure.</summary>
+  </entry>
 </feed>

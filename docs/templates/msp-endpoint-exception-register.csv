@@ -1,0 +1,7 @@
+exception_id,client,affected_asset_or_scope,policy_or_control,requestor,business_justification,risk_if_approved,risk_if_denied,compensating_controls,approver,decision,start_date,expiry_or_review_date,closure_evidence,status
+EXC-001,,,,,,,,,,,,,,,Draft
+EXC-002,,,,,,,,,,,,,,,Draft
+EXC-003,,,,,,,,,,,,,,,Draft
+EXC-004,,,,,,,,,,,,,,,Draft
+EXC-005,,,,,,,,,,,,,,,Draft
+
