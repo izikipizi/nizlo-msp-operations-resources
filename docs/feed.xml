@@ -13,6 +13,15 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>RMM software deployment or application install failed: 24-step troubleshooting checklist</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-software-deployment-install-failed-troubleshooting-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-software-deployment-install-failed-troubleshooting-checklist.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-software-deployment-install-failed-troubleshooting-checklist.csv" />
+    <updated>2026-11-07T00:00:00Z</updated>
+    <category term="operations" /><category term="software deployment" /><category term="application installation" /><category term="troubleshooting" /><category term="RMM" />
+    <summary>Use 24 vendor-neutral checks to separate package delivery, prerequisite, installer, security-control, detection, partial-state, and reporting failures before safely retrying a remote software deployment.</summary>
+  </entry>
+  <entry>
     <title>RMM agent upgrade failed or stuck: 24-step troubleshooting checklist</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-upgrade-failed-stuck-troubleshooting-checklist.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-upgrade-failed-stuck-troubleshooting-checklist.html" />

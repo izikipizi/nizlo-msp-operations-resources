@@ -22,7 +22,7 @@
   "@context": "https://schema.org",
   "@type": "CollectionPage",
   "name": "Free RMM evaluation and operations templates",
-  "description": "Thirty-nine free, vendor-neutral CSV templates for endpoint exceptions, RMM network monitoring, MSP service desk escalation, script-job evidence, agent troubleshooting, backup restore tests, QBRs, API integrations, demo questions, requirements, security and audit evidence, vendor exits, quote comparison, alert measurement, SLA response, access review, client lifecycle, deployment, migration, controlled change, and incident response.",
+  "description": "Forty free, vendor-neutral CSV templates for endpoint exceptions, RMM network monitoring, MSP service desk escalation, script-job and software-deployment evidence, agent troubleshooting, backup restore tests, QBRs, API integrations, demo questions, requirements, security and audit evidence, vendor exits, quote comparison, alert measurement, SLA response, access review, client lifecycle, deployment, migration, controlled change, and incident response.",
   "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/",
   "dateModified": "2026-11-07",
   "isPartOf": {
@@ -37,7 +37,7 @@
   },
   "mainEntity": {
     "@type": "ItemList",
-    "numberOfItems": 39,
+    "numberOfItems": 40,
     "itemListElement": [
       {
         "@type": "ListItem",
@@ -585,6 +585,22 @@
       },
       {
         "@type": "ListItem",
+        "position": 40,
+        "item": {
+          "@type": "Dataset",
+          "name": "RMM software deployment or application install failed troubleshooting checklist",
+          "description": "Twenty-four vendor-neutral checks and twelve fields for preserving deployment evidence, separating delivery, prerequisite, installer, security-control, detection, and reporting failures, retrying one canary safely, and reconciling the complete cohort.",
+          "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-software-deployment-install-failed-troubleshooting-checklist.csv",
+          "isAccessibleForFree": true,
+          "distribution": {
+            "@type": "DataDownload",
+            "contentUrl": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-software-deployment-install-failed-troubleshooting-checklist.csv",
+            "encodingFormat": "text/csv"
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
         "position": 32,
         "item": {
           "@type": "Dataset",
@@ -737,6 +753,13 @@
           <p>Preserve the original job state, trace queue and endpoint execution, retry one canary safely, and reconcile every target.</p>
           <ul><li>Record target, tenant, job ID, timestamps, queue state, and local evidence</li><li>Separate endpoint, execution-context, interpreter, dependency, and script failures</li><li>Check idempotency and partial effects before any retry</li></ul>
           <div class="actions"><a class="button primary" href="rmm-script-not-running-job-stuck-troubleshooting-checklist.csv" download>Download CSV</a><a class="button" href="../rmm-script-not-running-job-stuck-troubleshooting-checklist.html">Open troubleshooting guide</a></div>
+        </article>
+        <article>
+          <div class="tag">24 controls · 12 fields · CSV</div>
+          <h2>RMM software deployment or application install failed troubleshooting checklist</h2>
+          <p>Preserve the original deployment, prove the failed stage, repair one canary safely, and reconcile every target.</p>
+          <ul><li>Record package identity, target, delivery stages, command, native return code, and installer logs</li><li>Separate prerequisite, context, security-control, partial-state, and detection failures</li><li>Verify installed state independently before completing the rollout</li></ul>
+          <div class="actions"><a class="button primary" href="rmm-software-deployment-install-failed-troubleshooting-checklist.csv" download>Download CSV</a><a class="button" href="../rmm-software-deployment-install-failed-troubleshooting-checklist.html">Open troubleshooting guide</a></div>
         </article>
         <article>
           <div class="tag">24 controls · 12 fields · CSV</div>
@@ -973,6 +996,6 @@
       <aside class="note"><strong>Machine-readable package:</strong> Data tools can consume the CSV resources and their metadata through the standards-based <a href="../datapackage.json">Data Package descriptor</a>.</aside>
       <aside class="note"><strong>Relationship disclosure:</strong> Nizlo, a Windows-first RMM and IT-management platform, maintains these resources. The templates are designed for use with any relevant RMM, inventory, ITAM, service-desk, or CMDB workflow and do not claim that any vendor passes their controls or supports every field.</aside>
     </main>
-    <footer class="wrap"><span>Maintained by Nizlo · Updated November 7, 2026</span><span><a href="../datapackage.json">Data Package</a> · <a href="../feed.xml">Atom feed</a> · <a href="../citation.html">Citation &amp; preservation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources/tree/v1.81.0">Version 1.81.0</a></span></footer>
+    <footer class="wrap"><span>Maintained by Nizlo · Updated November 7, 2026</span><span><a href="../datapackage.json">Data Package</a> · <a href="../feed.xml">Atom feed</a> · <a href="../citation.html">Citation &amp; preservation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources/tree/v1.82.0">Version 1.82.0</a></span></footer>
   </body>
 </html>

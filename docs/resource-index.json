@@ -130,6 +130,23 @@
       "account_required": false
     },
     {
+      "id": "rmm-software-deployment-install-failed-troubleshooting-checklist",
+      "title": "RMM software deployment or application install failed troubleshooting checklist",
+      "category": "operations",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-software-deployment-install-failed-troubleshooting-checklist.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-software-deployment-install-failed-troubleshooting-checklist.csv",
+      "canonical_guide": "https://nizlo.com/guides/rmm-automation-safety-checklist",
+      "format": "text/csv",
+      "controls": 24,
+      "fields": 12,
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
       "id": "rmm-duplicate-device-identity-troubleshooting-checklist",
       "title": "RMM duplicate device or cloned agent identity troubleshooting checklist",
       "category": "operations",
