@@ -43,6 +43,7 @@
     <title>RMM script not running or job stuck: 24-step troubleshooting checklist</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-script-not-running-job-stuck-troubleshooting-checklist.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-script-not-running-job-stuck-troubleshooting-checklist.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-script-not-running-job-stuck-troubleshooting-checklist.csv" />
     <updated>2026-11-07T00:00:00Z</updated>
     <category term="operations" /><category term="automation" /><category term="troubleshooting" /><category term="RMM" />
     <summary>Use 24 vendor-neutral checks to separate targeting, queue, endpoint, execution-context, script, and evidence failures before safely retrying a stuck RMM automation job.</summary>
