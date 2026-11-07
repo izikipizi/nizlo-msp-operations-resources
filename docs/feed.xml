@@ -13,6 +13,15 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>RMM agent certificate or TLS enrollment failure: 24-step troubleshooting checklist</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-certificate-tls-enrollment-troubleshooting-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-certificate-tls-enrollment-troubleshooting-checklist.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-agent-certificate-tls-enrollment-troubleshooting-checklist.csv" />
+    <updated>2026-11-07T00:00:00Z</updated>
+    <category term="operations" /><category term="TLS" /><category term="certificates" /><category term="enrollment" /><category term="RMM" />
+    <summary>Use 24 vendor-neutral checks to separate endpoint time, DNS, proxy, TLS, trust-chain, revocation, inspection, policy, and enrollment-identity failures before weakening controls or reinstalling an RMM agent.</summary>
+  </entry>
+  <entry>
     <title>RMM script not running or job stuck: 24-step troubleshooting checklist</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-script-not-running-job-stuck-troubleshooting-checklist.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-script-not-running-job-stuck-troubleshooting-checklist.html" />

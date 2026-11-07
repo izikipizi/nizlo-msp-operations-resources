@@ -8,6 +8,20 @@
   "updated": "2026-11-07",
   "resources": [
     {
+      "id": "rmm-agent-certificate-tls-enrollment-troubleshooting-checklist",
+      "title": "RMM agent certificate or TLS enrollment failure troubleshooting checklist",
+      "category": "operations",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-certificate-tls-enrollment-troubleshooting-checklist.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-agent-certificate-tls-enrollment-troubleshooting-checklist.csv",
+      "format": "text/csv",
+      "controls": 24,
+      "fields": 11,
+      "audience": ["MSP", "IT team"],
+      "access": "public",
+      "account_required": false,
+      "relationship_disclosure": "Nizlo maintains the checklist; the workflow is vendor-neutral."
+    },
+    {
       "id": "rmm-network-device-monitoring-acceptance-checklist",
       "title": "RMM network device monitoring checklist: 24 acceptance tests",
       "category": "monitoring",
