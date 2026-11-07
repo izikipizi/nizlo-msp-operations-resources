@@ -3,20 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>RMM Agent Installation Failure Checklist and Rollout Plan</title>
-    <meta name="description" content="Free 33-control RMM checklist for agent installation failures, enrollment troubleshooting, pilot testing, rollout, rollback, verification, and closeout." />
+    <title>RMM Agent Deployment &amp; Installation Failure Checklist</title>
+    <meta name="description" content="Free 38-control RMM checklist for GPO, Intune, silent-install and migration deployment, agent failures, pilot rollout, rollback, and verification." />
     <meta name="robots" content="index,follow,max-image-preview:large" />
     <link rel="canonical" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-deployment-readiness-template.html" />
     <link rel="alternate" type="application/atom+xml" title="Nizlo MSP Operations Resources" href="feed.xml" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="RMM Agent Installation Failure Checklist and Rollout Plan" />
-    <meta property="og:description" content="A free 33-control worksheet for diagnosing agent installation and enrollment failures, piloting safely, rolling out, verifying, and closing an RMM implementation." />
+    <meta property="og:title" content="RMM Agent Deployment &amp; Installation Failure Checklist" />
+    <meta property="og:description" content="A free 38-control worksheet for choosing GPO, Intune, silent-install or migration deployment, troubleshooting failures, piloting, rolling back and verifying." />
     <meta property="og:url" content="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-deployment-readiness-template.html" />
     <meta property="og:image" content="https://nizlo.com/opengraph-image" />
     <meta property="og:image:alt" content="Nizlo RMM deployment readiness checklist template" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="RMM Agent Installation Failure Checklist and Rollout Plan" />
-    <meta name="twitter:description" content="A free 33-control worksheet for diagnosing agent installation and enrollment failures, piloting safely, rolling out, verifying, and closing an RMM implementation." />
+    <meta name="twitter:title" content="RMM Agent Deployment &amp; Installation Failure Checklist" />
+    <meta name="twitter:description" content="A free 38-control worksheet for GPO, Intune, silent-install and migration deployment, failure diagnosis, pilot rollout, rollback and verification." />
     <meta name="twitter:image" content="https://nizlo.com/opengraph-image" />
     <meta name="twitter:image:alt" content="Nizlo RMM deployment readiness checklist template" />
     <meta name="theme-color" content="#07171d" />
@@ -25,13 +25,13 @@
         "@context": "https://schema.org",
         "@type": "Dataset",
         "name": "RMM implementation checklist and rollout plan template",
-        "description": "A vendor-neutral CSV with 33 controls for planning an RMM implementation, inventorying endpoints, preparing agents, piloting, deploying in waves, defining rollback, verifying coverage, and closing the rollout.",
+        "description": "A vendor-neutral CSV with 38 controls for planning an RMM implementation, choosing Group Policy, Intune, UEM, existing-RMM or manual deployment, defining silent-install behavior, piloting, rolling back, verifying coverage, and closing the rollout.",
         "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-deployment-readiness-template.html",
         "creator": { "@type": "Organization", "name": "Nizlo", "url": "https://nizlo.com/" },
         "dateModified": "2026-11-07",
         "isAccessibleForFree": true,
         "inLanguage": "en",
-        "keywords": ["RMM implementation checklist", "RMM implementation plan", "RMM deployment checklist", "RMM deployment plan", "RMM agent deployment", "RMM agent installation failed", "RMM agent enrollment troubleshooting", "deployment readiness", "MSP rollout plan", "endpoint management", "RMM pilot"],
+        "keywords": ["RMM implementation checklist", "RMM implementation plan", "RMM deployment checklist", "RMM deployment plan", "RMM deployment methods", "RMM agent deployment", "deploy RMM agent through Group Policy", "Intune RMM agent deployment", "silent RMM install", "RMM agent installation failed", "RMM agent enrollment troubleshooting", "deployment readiness", "MSP rollout plan", "endpoint management", "RMM pilot"],
         "variableMeasured": ["Phase", "Control owner", "Control status", "Evidence", "Exception owner", "Due date", "Rollback trigger"],
         "distribution": {
           "@type": "DataDownload",
@@ -42,6 +42,7 @@
           "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-pilot-test-evidence-pack.html",
           "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html",
           "https://nizlo.com/guides/rmm-agent-installation-troubleshooting",
+          "https://nizlo.com/guides/rmm-deployment-checklist",
           "https://nizlo.com/guides/how-to-test-rmm-software"
         ]
       }
@@ -65,6 +66,11 @@
             "@type": "Question",
             "name": "How should an MSP deploy RMM agents?",
             "acceptedAnswer": { "@type": "Answer", "text": "Start with authorized noncritical pilot endpoints, verify identity, telemetry, alerting, patch policy, automation, remote-support authority, and removal, then expand in bounded waves only after success and rollback thresholds are satisfied." }
+          },
+          {
+            "@type": "Question",
+            "name": "Should an MSP deploy RMM agents with Group Policy, Intune, or an existing RMM?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Choose the delivery channel per endpoint cohort and test the same production path in the pilot. Group Policy requires reliable domain and startup-context access; Intune or another UEM requires correct install context, detection, dependency, retry, and supersedence rules; an existing RMM can bridge a migration but must remain until target enrollment is verified. In every method, record the exact package, command, exit code, logs, retry behavior, tenant placement, and rollback." }
           },
           {
             "@type": "Question",
@@ -108,8 +114,8 @@
   <body>
     <header><nav class="wrap"><a href="./">Nizlo MSP resources</a><a href="templates/">All CSV templates</a></nav></header>
     <main class="wrap">
-      <p class="eyebrow">Free operational template · 33 controls</p>
-      <h1>RMM implementation checklist and rollout plan</h1>
+      <p class="eyebrow">Free operational template · 38 controls</p>
+      <h1>RMM implementation and agent deployment checklist</h1>
       <p class="lede">A vendor-neutral worksheet for making an RMM implementation owned, measurable, and reversible. The CSV covers planning and governance, endpoint inventory, agent preparation, pilot checks, deployment waves, rollback, verification, and closeout—without requiring an account or email address.</p>
       <div class="actions">
         <a class="button" href="templates/rmm-deployment-readiness.csv" download>Download the CSV</a>
@@ -136,11 +142,25 @@
         <div class="grid">
           <div class="card"><strong>Governance · 4 controls</strong><span>Name the decision owner, approved scope, success criteria, stop conditions, and maintenance windows.</span></div>
           <div class="card"><strong>Inventory · 4 controls</strong><span>Reconcile authoritative endpoints, stale records, critical workloads, operating systems, zones, and ownership.</span></div>
-          <div class="card"><strong>Preparation · 6 controls</strong><span>Confirm prerequisites, recovery paths, package integrity, communications, exclusions, and support readiness.</span></div>
+          <div class="card"><strong>Preparation · 11 controls</strong><span>Confirm prerequisites, choose the production deployment channel, define silent-install and retry behavior, protect enrollment identity, and prepare recovery and support.</span></div>
           <div class="card"><strong>Pilot · 7 controls</strong><span>Validate identity, check-in, inventory, alerts, automation, patch policy, remote support, and uninstall behavior.</span></div>
           <div class="card"><strong>Wave rollout · 4 controls</strong><span>Set wave boundaries, reconcile every result, record exceptions, and require explicit go/no-go decisions.</span></div>
           <div class="card"><strong>Verification and closeout · 8 controls</strong><span>Confirm coverage, health, policy state, access, documentation, exception ownership, evidence, and final approval.</span></div>
         </div>
+      </section>
+
+      <section>
+        <h2>Choose the RMM agent deployment method by endpoint cohort</h2>
+        <p>There is no universally best delivery channel. Use the method already authorized and observable for each cohort, then test that exact production path in the pilot. Record the current signed package, command, execution identity, exit-code interpretation, log path, detection rule, retry behavior, tenant placement, rollback, and owner before scaling.</p>
+        <div class="grid">
+          <div class="card"><strong>Group Policy or startup script</strong><span>Fit domain-joined Windows cohorts only after proving computer-context share access, boot and network timing, package retrieval, silent execution, detection, idempotence, restart behavior, and local logging.</span></div>
+          <div class="card"><strong>Intune or another UEM</strong><span>Define system versus user context, requirements, dependencies, detection rules, retry and timeout behavior, supersedence, uninstall command, and the lag between device check-in and reported status.</span></div>
+          <div class="card"><strong>Existing RMM or software deployment</strong><span>Useful during migration when the source tool can deliver the target package and collect results. Do not remove the source channel until target identity, check-in, policy, and one approved action are verified.</span></div>
+          <div class="card"><strong>Manual installation</strong><span>Reasonable for a small pilot or exception device. Capture who elevated, the exact command and package, exit code, logs, enrollment destination, and post-install proof so a manual success does not hide production-channel gaps.</span></div>
+          <div class="card"><strong>Provisioning or reusable images</strong><span>Keep tenant secrets and durable agent identity out of golden images. Enroll after cloning, Sysprep, or first boot, and test that every deployed endpoint receives a unique identity and correct customer, site, and policy assignment.</span></div>
+          <div class="card"><strong>Remote shell or custom automation</strong><span>Retrieve a current authenticated and signed package, avoid secrets in command history or logs, set a bounded timeout, preserve stdout, stderr and exit codes, and make retries safe rather than repeatedly installing.</span></div>
+        </div>
+        <p class="note">A delivery console showing “success” proves only that its command finished. Completion requires the expected service, unique identity, correct tenant and site, fresh check-in, intended policy, and reconciled inventory.</p>
       </section>
 
       <section>
@@ -166,6 +186,7 @@
           <div class="card"><strong>What should an RMM implementation checklist include?</strong><span>Define ownership and scope, reconcile the endpoint inventory, verify prerequisites, test representative pilot devices, set deployment-wave and rollback thresholds, reconcile every outcome, and retain acceptance evidence.</span></div>
           <div class="card"><strong>Is implementation different from deployment?</strong><span>Implementation is the full operating change: goals, inventory, policy design, pilot, technician readiness, deployment, acceptance, and stabilization. Deployment is the narrower act of installing and enrolling agents, so a complete implementation plan must cover both.</span></div>
           <div class="card"><strong>How should an MSP deploy RMM agents?</strong><span>Begin with authorized noncritical pilot endpoints. Verify identity, telemetry, alerting, patch policy, automation, remote-support authority, and removal before expanding in bounded waves.</span></div>
+          <div class="card"><strong>Group Policy, Intune, or an existing RMM?</strong><span>Choose per cohort and pilot the real production path. Test execution context, package access, detection, retries, logs, tenant placement, rollback, and end-to-end enrollment instead of treating command completion as success.</span></div>
           <div class="card"><strong>What should you do when an RMM agent installation fails?</strong><span>Preserve the package version, command line, exit code, and logs. Locate the exact failed stage, validate endpoint and network prerequisites, then retest one representative pilot with explicit stop and rollback conditions.</span></div>
           <div class="card"><strong>How do you verify an RMM rollout is complete?</strong><span>Account for successful, failed, excluded, offline, and unknown endpoints; verify check-in and policy state; assign every exception; and record explicit operational acceptance.</span></div>
           <div class="card"><strong>What stops an RMM deployment wave?</strong><span>Pause when install or check-in failures cross the approved threshold, endpoint identity is ambiguous, critical workflows fail, security controls conflict, or rollback cannot be completed safely.</span></div>

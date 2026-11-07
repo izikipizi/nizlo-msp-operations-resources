@@ -542,7 +542,7 @@
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-deployment-readiness-template.html" />
     <updated>2026-11-07T00:00:00Z</updated>
     <category term="deployment" />
-    <summary>Use 33 vendor-neutral controls to plan, inventory, troubleshoot agent installation and enrollment failures, pilot, deploy in waves, define rollback, verify, and close an RMM implementation.</summary>
+    <summary>Use 38 vendor-neutral controls to choose Group Policy, Intune, existing-RMM, manual or provisioning delivery; define silent-install, retry and identity safeguards; troubleshoot failures; pilot; roll back; verify; and close an RMM implementation.</summary>
   </entry>
   <entry>
     <title>Free RMM operations template library</title>

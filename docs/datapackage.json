@@ -6,7 +6,7 @@
   "title": "Nizlo RMM Operations Resources",
   "description": "Thirty-three public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
-  "version": "1.69.0",
+  "version": "1.70.0",
   "created": "2026-11-01",
   "contributors": [
     {
@@ -527,13 +527,13 @@
       "profile": "tabular-data-resource",
       "name": "rmm-deployment-readiness",
       "title": "RMM deployment-readiness checklist template",
-      "description": "Thirty-three controls for preparation, pilot, wave rollout, verification, and closeout.",
+      "description": "Thirty-eight controls for deployment-channel selection, silent-install and identity safeguards, preparation, pilot, wave rollout, verification, and closeout.",
       "path": "templates/rmm-deployment-readiness.csv",
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "bytes": 3137,
-      "hash": "sha256:e4084d765ae0ddf399e707f81aa2baa1f774be76f6accf5e9653a5ae52011e7d",
+      "bytes": 3754,
+      "hash": "sha256:bfeca96e3da68fa3adf70eda88f97de733bd4e8f2363d6e780153c8437850629",
       "schema": {
         "fields": [
           {
