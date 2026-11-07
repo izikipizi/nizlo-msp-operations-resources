@@ -183,6 +183,10 @@ Use the [MSP client offboarding checklist and evidence register](https://izikipi
 
 Use the [MSP daily, weekly, monthly, and quarterly maintenance checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/msp-daily-weekly-monthly-maintenance-checklist.html) to assign recurring backup, security, monitoring, patching, automation, inventory, recovery, access, coverage, documentation, service-quality, billing, integration, and governance checks. The underlying [28-check CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-daily-weekly-monthly-maintenance-checklist.csv) records healthy signals, exception triggers, evidence, ownership, review, status, and linked work without requiring an account.
 
+## Contributing
+
+Corrections, source updates, accessibility repairs, machine-readable fixes, and vendor-neutral MSP or IT-operations resource proposals are welcome. See [`CONTRIBUTING.md`](CONTRIBUTING.md) for the scope, evidence expectations, affiliation disclosure, and validation checklist. Paid placements, affiliate links, fake reviews, customer data, and unsupported product claims are not accepted.
+
 ## More free tools
 
 The [Nizlo RMM tools hub](https://nizlo.com/tools) also includes cost calculators, due-diligence scorecards, comparison worksheets, and deployment resources.
