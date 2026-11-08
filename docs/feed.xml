@@ -258,7 +258,7 @@
     <category term="patch-management" />
     <category term="calculator" />
     <category term="reporting" />
-    <summary>Download a free 20-field CSV report template and calculate strict verified patch compliance from an explicit endpoint denominator while keeping pending reboots, failures, exclusions, stale devices, and unknown states visible.</summary>
+    <summary>Download a free 20-field CSV report template and calculate strict verified patch compliance from an explicit endpoint denominator, with independent field context for scope, stale evidence, exception ownership, next actions, and verification.</summary>
   </entry>
   <entry>
     <title>RMM vs Intune vs MDM vs endpoint management</title>
