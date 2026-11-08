@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Free RMM Contract Renewal Deadline Calculator | Nizlo</title>
+<meta name="description" content="Calculate an RMM non-renewal notice deadline, internal decision date, and review timeline from a contract renewal date and notice window. Free and browser-only." />
+<meta name="robots" content="index,follow,max-image-preview:large" />
+<link rel="canonical" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-contract-renewal-deadline-calculator.html" />
+<link rel="alternate" type="application/atom+xml" title="Nizlo MSP Operations Resources" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
+<meta property="og:type" content="website" /><meta property="og:title" content="Free RMM Contract Renewal Deadline Calculator" />
+<meta property="og:description" content="Turn an RMM renewal date and notice period into a reviewable non-renewal timeline without submitting contract data." />
+<meta property="og:url" content="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-contract-renewal-deadline-calculator.html" />
+<meta property="og:image" content="https://izikipizi.github.io/nizlo-msp-operations-resources/assets/rmm-calculators-social-card-v1.png" />
+<meta property="og:image:alt" content="Free RMM contract renewal deadline calculator from Nizlo" />
+<meta name="twitter:card" content="summary_large_image" /><meta name="twitter:image" content="https://izikipizi.github.io/nizlo-msp-operations-resources/assets/rmm-calculators-social-card-v1.png" /><meta name="theme-color" content="#07171d" />
+<script type="application/ld+json">{
+  "@context":"https://schema.org","@type":"WebApplication","name":"RMM Contract Renewal Deadline Calculator",
+  "description":"A browser-only calculator for estimating an RMM non-renewal notice deadline and an earlier internal decision date from a renewal date, contractual notice period, and planning buffer.",
+  "url":"https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-contract-renewal-deadline-calculator.html",
+  "applicationCategory":"BusinessApplication","operatingSystem":"Any","browserRequirements":"JavaScript","isAccessibleForFree":true,"dateModified":"2026-11-08","inLanguage":"en",
+  "creator":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},
+  "featureList":["Non-renewal notice deadline","Internal decision deadline","Days remaining","Calendar file download","Copyable planning summary"]
+}</script>
+<script type="application/ld+json">{
+  "@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"How do I calculate an RMM non-renewal notice deadline?","acceptedAnswer":{"@type":"Answer","text":"Start with the contractual renewal or end date and subtract the required number of calendar days. Then verify the agreement's definitions, delivery method, time zone, holidays, and receipt requirements with qualified counsel."}},
+    {"@type":"Question","name":"Is the calculated date legal advice?","acceptedAnswer":{"@type":"Answer","text":"No. This is planning arithmetic only. The signed agreement controls, and some contracts define notice timing, delivery, receipt, renewal, or business days differently."}},
+    {"@type":"Question","name":"Why add an internal planning buffer?","acceptedAnswer":{"@type":"Answer","text":"An earlier internal deadline leaves time to collect usage and service evidence, compare alternatives, approve the decision, prepare migration or negotiation work, and deliver notice through the required channel."}}
+  ]
+}</script>
+<style>
+:root{color-scheme:dark;--bg:#06141a;--panel:#0b222b;--line:#21424c;--text:#edf8fa;--muted:#abc2c8;--teal:#1dc6c7;--teal2:#8be7e4;--ink:#03282d;--good:#8de3b0;--warn:#ffd080;--bad:#ff9b9b}*{box-sizing:border-box}body{margin:0;color:var(--text);background:radial-gradient(circle at 80% 0,rgba(29,198,199,.17),transparent 32rem),var(--bg);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.55}a{color:inherit}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--teal2);outline-offset:3px}.wrap{width:min(1080px,calc(100% - 2rem));margin:auto}header{padding:1.1rem 0;border-bottom:1px solid rgba(139,231,228,.13)}nav{display:flex;justify-content:space-between;align-items:center;gap:1rem}.brand{display:flex;align-items:center;gap:.7rem;font-weight:850;text-decoration:none}.mark{display:grid;place-items:center;width:2rem;height:2rem;border-radius:.65rem;background:var(--teal);color:var(--ink)}.back{color:var(--muted)}main{padding:4.4rem 0 4rem}.eyebrow{color:var(--teal2);font-weight:800;text-transform:uppercase;letter-spacing:.12em;font-size:.78rem}h1{max-width:940px;margin:.65rem 0 1rem;font-size:clamp(2.5rem,7vw,5rem);line-height:.98;letter-spacing:-.052em}.lede{max-width:820px;margin:0;color:var(--muted);font-size:1.12rem}.privacy{margin:1.4rem 0 2.2rem;color:var(--teal2);font-weight:750}.calculator{display:grid;grid-template-columns:minmax(0,.9fr) minmax(330px,1.1fr);gap:1.25rem;align-items:start}.panel{padding:1.35rem;border:1px solid var(--line);border-radius:1.15rem;background:linear-gradient(145deg,rgba(14,41,50,.97),rgba(8,28,35,.98));box-shadow:0 20px 60px rgba(0,0,0,.16)}.panel h2{margin:.1rem 0 .3rem;font-size:1.45rem}.hint{margin:0 0 1.25rem;color:var(--muted);font-size:.94rem}.fields{display:grid;gap:1rem}.field{display:grid;gap:.38rem}label{font-weight:760}.sub{display:block;color:var(--muted);font-size:.82rem;font-weight:500}input{width:100%;padding:.78rem .82rem;border:1px solid var(--line);border-radius:.7rem;background:#061a21;color:var(--text);font:inherit}input:hover{border-color:#3a6670}.results{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.85rem;margin-top:1.1rem}.result{padding:1rem;border:1px solid var(--line);border-radius:.85rem;background:rgba(5,24,30,.72)}.result-wide{grid-column:1/-1}.result span{display:block;color:var(--muted);font-size:.84rem}.result strong{display:block;margin-top:.1rem;font-size:1.35rem;line-height:1.25}.result small{display:block;margin-top:.28rem;color:var(--muted)}.good strong{color:var(--good)}.warn strong{color:var(--warn)}.bad strong{color:var(--bad)}.actions{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1rem}.button{display:inline-flex;align-items:center;justify-content:center;padding:.76rem .95rem;border-radius:.72rem;border:1px solid var(--line);background:transparent;color:var(--text);font:inherit;font-weight:800;text-decoration:none;cursor:pointer}.primary{background:var(--teal);color:var(--ink);border-color:var(--teal)}.method,.note,.faq{margin-top:1.2rem;padding:1.15rem 1.25rem;border-left:4px solid var(--teal);background:var(--panel);color:var(--muted)}.method ol{margin:.6rem 0 0;padding-left:1.25rem}.faq h2{margin:.1rem 0 .8rem;color:var(--text)}.faq h3{margin:1rem 0 .25rem;color:var(--text);font-size:1rem}.faq p{margin:0}.next{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin-top:1.25rem}.next article{padding:1.25rem;border:1px solid var(--line);border-radius:1rem;background:var(--panel)}.next h2{font-size:1.15rem;margin:0 0 .4rem}.next p{color:var(--muted);margin:0 0 .8rem}footer{display:flex;justify-content:space-between;gap:1rem;padding:2rem 0;border-top:1px solid var(--line);color:var(--muted);font-size:.92rem}@media(max-width:820px){main{padding-top:3rem}.calculator{grid-template-columns:1fr}.next{grid-template-columns:1fr}}@media(max-width:600px){.results{grid-template-columns:1fr}.result-wide{grid-column:auto}nav,footer{align-items:flex-start;flex-direction:column}}
+</style></head><body>
+<header><nav class="wrap"><a class="brand" href="./"><span class="mark">N</span><span>Nizlo MSP Operations Resources</span></a><a class="back" href="rmm-calculators.html">All calculators</a></nav></header>
+<main class="wrap"><div class="eyebrow">Free · Browser only · Vendor neutral</div><h1>Calculate your RMM contract renewal deadline.</h1>
+<p class="lede">Turn a renewal or end date and contractual notice window into a non-renewal deadline, an earlier internal decision date, and a downloadable calendar reminder.</p>
+<p class="privacy">Your dates stay in this browser. Nothing is submitted or stored by this page.</p>
+<section class="calculator" aria-label="RMM contract renewal deadline calculator">
+  <form class="panel" id="calculator-form">
+    <h2>Enter the contract dates</h2><p class="hint">Use the signed agreement, order form, amendments, and current renewal notice—not a sales page or invoice assumption.</p>
+    <div class="fields">
+      <div class="field"><label for="vendor">Vendor or contract name <span class="sub">Optional; used only in copied and calendar summaries</span></label><input id="vendor" type="text" maxlength="100" placeholder="Example RMM contract" /></div>
+      <div class="field"><label for="renewal">Renewal or contract end date</label><input id="renewal" type="date" required /></div>
+      <div class="field"><label for="notice">Required non-renewal notice <span class="sub">Calendar days unless the agreement says otherwise</span></label><input id="notice" type="number" min="0" max="730" step="1" value="90" required inputmode="numeric" /></div>
+      <div class="field"><label for="buffer">Internal planning buffer <span class="sub">Extra days before the contractual deadline</span></label><input id="buffer" type="number" min="0" max="365" step="1" value="30" required inputmode="numeric" /></div>
+    </div>
+    <div class="actions"><button class="button primary" type="submit">Calculate deadlines</button><button class="button" type="button" id="reset">Reset example</button></div>
+  </form>
+  <section class="panel" aria-live="polite" aria-atomic="true">
+    <h2>Planning timeline</h2><p class="hint">Verify every date and notice rule against the signed contract before acting.</p>
+    <div class="results">
+      <div class="result result-wide" id="internal-card"><span>Internal decision deadline</span><strong id="internal-date">Choose a renewal date</strong><small id="internal-note">Renewal date − notice period − planning buffer</small></div>
+      <div class="result" id="notice-card"><span>Contractual notice deadline</span><strong id="notice-date">—</strong><small>Renewal date − notice period</small></div>
+      <div class="result"><span>Renewal or end date</span><strong id="renewal-date">—</strong><small id="renewal-note">From the agreement</small></div>
+      <div class="result"><span>Days until internal decision</span><strong id="days-internal">—</strong><small>Compared with today</small></div>
+      <div class="result"><span>Days until notice deadline</span><strong id="days-notice">—</strong><small>Compared with today</small></div>
+    </div>
+    <div class="actions"><button class="button" type="button" id="copy" disabled>Copy timeline</button><button class="button" type="button" id="calendar" disabled>Download calendar reminders</button></div>
+  </section>
+</section>
+<aside class="method"><strong>Before relying on the date</strong><ol><li>Confirm whether the contract uses calendar or business days and which time zone controls.</li><li>Check whether notice is effective when sent or only when received.</li><li>Verify the permitted delivery channel, recipient, address, and any required wording.</li><li>Review amendments, price-change notices, renewal terms, and termination assistance.</li><li>Retain delivery evidence and written acknowledgement.</li></ol></aside>
+<section class="faq" aria-labelledby="faq-title"><h2 id="faq-title">RMM renewal deadline questions</h2><h3>How is the non-renewal deadline calculated?</h3><p>This tool subtracts the notice period from the renewal or end date using calendar days. The agreement may define timing differently, so verify the result.</p><h3>Why set an earlier internal deadline?</h3><p>The buffer creates time to collect evidence, compare alternatives, approve the decision, plan negotiation or migration, and deliver notice correctly.</p><h3>Is this legal advice?</h3><p>No. It is planning arithmetic. The signed agreement and applicable law control; use qualified counsel for interpretation.</p></section>
+<section class="next" aria-label="Related contract and migration resources"><article><h2>Compare the full contract</h2><p>Normalize pricing, minimums, service dates, renewal windows, auto-renewal, cancellation, and exit costs.</p><a href="rmm-quote-comparison-worksheet.html">Open the 30-field worksheet →</a></article><article><h2>Prepare an exit</h2><p>Coordinate exports, replacement proof, coexistence, cutover, agent removal, billing, and final acceptance.</p><a href="rmm-vendor-exit-plan-checklist.html">Open the exit plan →</a></article><article><h2>Model switching cost</h2><p>Estimate migration labor, overlap, recurring savings, ROI, and payback using your own assumptions.</p><a href="rmm-migration-cost-calculator.html">Open the migration calculator →</a></article></section>
+<aside class="note"><strong>Relationship disclosure:</strong> Nizlo, a Windows-first RMM and IT-management platform, maintains this free calculator. Compare the full operating and contract evidence for every vendor. You can also review <a href="https://nizlo.com/solutions/no-contract-rmm?utm_source=github_pages&amp;utm_medium=resource&amp;utm_campaign=rmm_renewal_deadline_calculator">Nizlo's month-to-month RMM terms</a> and <a href="https://nizlo.com/guides/rmm-pricing-models?utm_source=github_pages&amp;utm_medium=resource&amp;utm_campaign=rmm_renewal_deadline_calculator">RMM pricing models</a>.</aside>
+<aside class="note"><strong>Planning limitation:</strong> this page uses calendar-day subtraction and does not interpret a contract, determine valid service, account for holidays or business-day definitions, or establish a legal deadline.</aside>
+</main>
+<footer class="wrap"><span>Maintained by Nizlo · Updated November 8, 2026</span><span><a href="./">Resource library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source</a></span></footer>
+<script>
+(() => {
+  const dayMs = 86400000;
+  const form = document.getElementById('calculator-form');
+  const renewal = document.getElementById('renewal');
+  const notice = document.getElementById('notice');
+  const buffer = document.getElementById('buffer');
+  const vendor = document.getElementById('vendor');
+  const copy = document.getElementById('copy');
+  const calendar = document.getElementById('calendar');
+  const parseDate = value => value ? new Date(`${value}T12:00:00Z`) : null;
+  const addDays = (date, amount) => new Date(date.getTime() + amount * dayMs);
+  const formatDate = date => new Intl.DateTimeFormat(undefined,{year:'numeric',month:'long',day:'numeric',timeZone:'UTC'}).format(date);
+  const dateValue = date => date.toISOString().slice(0,10);
+  const daysFromToday = date => {
+    const now = new Date();
+    const today = Date.UTC(now.getUTCFullYear(),now.getUTCMonth(),now.getUTCDate());
+    return Math.ceil((Date.UTC(date.getUTCFullYear(),date.getUTCMonth(),date.getUTCDate()) - today) / dayMs);
+  };
+  const dayLabel = days => days < 0 ? `${Math.abs(days)} days past` : days === 0 ? 'Today' : `${days} days remaining`;
+  let result = null;
+  function calculate(event){
+    if(event) event.preventDefault();
+    const renewalDate = parseDate(renewal.value);
+    const noticeDays = Number(notice.value);
+    const bufferDays = Number(buffer.value);
+    if(!renewalDate || !Number.isFinite(noticeDays) || !Number.isFinite(bufferDays) || noticeDays < 0 || bufferDays < 0) return;
+    const noticeDate = addDays(renewalDate,-noticeDays);
+    const internalDate = addDays(noticeDate,-bufferDays);
+    const internalDays = daysFromToday(internalDate);
+    const noticeRemaining = daysFromToday(noticeDate);
+    document.getElementById('internal-date').textContent = formatDate(internalDate);
+    document.getElementById('notice-date').textContent = formatDate(noticeDate);
+    document.getElementById('renewal-date').textContent = formatDate(renewalDate);
+    document.getElementById('days-internal').textContent = dayLabel(internalDays);
+    document.getElementById('days-notice').textContent = dayLabel(noticeRemaining);
+    document.getElementById('internal-note').textContent = `${noticeDays}-day notice window plus ${bufferDays}-day planning buffer`;
+    const card = document.getElementById('internal-card');
+    card.className = `result result-wide ${internalDays < 0 ? 'bad' : internalDays <= 30 ? 'warn' : 'good'}`;
+    document.getElementById('notice-card').className = `result ${noticeRemaining < 0 ? 'bad' : noticeRemaining <= 30 ? 'warn' : 'good'}`;
+    result = {renewalDate,noticeDate,internalDate,noticeDays,bufferDays,internalDays,noticeRemaining};
+    copy.disabled = false; calendar.disabled = false;
+  }
+  function setExample(){
+    const today = new Date();
+    renewal.value = dateValue(addDays(new Date(Date.UTC(today.getUTCFullYear(),today.getUTCMonth(),today.getUTCDate(),12)),180));
+    notice.value = '90'; buffer.value = '30'; vendor.value = ''; calculate();
+  }
+  form.addEventListener('submit',calculate);
+  [renewal,notice,buffer].forEach(input => input.addEventListener('change',calculate));
+  document.getElementById('reset').addEventListener('click',setExample);
+  copy.addEventListener('click',async() => {
+    if(!result) return;
+    const name = vendor.value.trim() || 'RMM contract';
+    const text = `${name} renewal timeline\nInternal decision deadline: ${formatDate(result.internalDate)}\nContractual notice deadline: ${formatDate(result.noticeDate)} (${result.noticeDays} calendar days before renewal)\nRenewal or end date: ${formatDate(result.renewalDate)}\nPlanning buffer: ${result.bufferDays} days\n\nVerify all dates, notice definitions, recipients, delivery methods, and receipt requirements against the signed agreement.`;
+    await navigator.clipboard.writeText(text); copy.textContent = 'Copied'; setTimeout(() => copy.textContent = 'Copy timeline',1600);
+  });
+  calendar.addEventListener('click',() => {
+    if(!result) return;
+    const name = (vendor.value.trim() || 'RMM contract').replace(/[\\,;]/g,' ');
+    const stamp = new Date().toISOString().replace(/[-:]/g,'').replace(/\.\d{3}/,'');
+    const compact = date => dateValue(date).replace(/-/g,'');
+    const nextDay = date => compact(addDays(date,1));
+    const events = [
+      [`${name}: internal renewal decision`,result.internalDate,`Review evidence, alternatives, approvals, negotiation, migration, and notice delivery requirements.`],
+      [`${name}: contractual non-renewal notice deadline`,result.noticeDate,`Verify this calculated date against the signed agreement and retain delivery evidence.`],
+      [`${name}: renewal or end date`,result.renewalDate,`Contract renewal or end date entered in the Nizlo planning calculator.`]
+    ].map(([summary,date,description],index) => `BEGIN:VEVENT\r\nUID:rmm-renewal-${stamp}-${index}@nizlo.com\r\nDTSTAMP:${stamp}\r\nDTSTART;VALUE=DATE:${compact(date)}\r\nDTEND;VALUE=DATE:${nextDay(date)}\r\nSUMMARY:${summary}\r\nDESCRIPTION:${description}\r\nEND:VEVENT`).join('\r\n');
+    const blob = new Blob([`BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nizlo//RMM Renewal Deadline Calculator//EN\r\nCALSCALE:GREGORIAN\r\n${events}\r\nEND:VCALENDAR\r\n`],{type:'text/calendar'});
+    const link = document.createElement('a'); link.href = URL.createObjectURL(blob); link.download = 'rmm-contract-renewal-timeline.ics'; link.click(); setTimeout(() => URL.revokeObjectURL(link.href),1000);
+  });
+  setExample();
+})();
+</script></body></html>

@@ -319,6 +319,18 @@
       "account_required": false
     },
     {
+      "id": "rmm-contract-renewal-deadline-calculator",
+      "title": "RMM contract renewal deadline calculator",
+      "category": "pricing",
+      "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-contract-renewal-deadline-calculator.html",
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
       "id": "rmm-security-checklist",
       "title": "RMM security checklist",
       "category": "security",
