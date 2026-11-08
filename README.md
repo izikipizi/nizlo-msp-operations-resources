@@ -1,5 +1,20 @@
 # Nizlo MSP operations resources
 
+Free, public, vendor-neutral field guides, decision aids, calculators, and reusable CSV templates for managed service providers and lean IT teams evaluating, deploying, operating, troubleshooting, migrating, and offboarding remote monitoring and management software. No account or email gate is required.
+
+**Start here:** [browse the live resource library](https://izikipizi.github.io/nizlo-msp-operations-resources/) · [download CSV templates](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/) · [use the RMM calculators](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-calculators.html) · [compare public RMM pricing](https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html) · [read the LLM discovery profile](https://izikipizi.github.io/nizlo-msp-operations-resources/llms.txt) · [cite or verify a release](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html)
+
+| Current task | Recommended starting point |
+| --- | --- |
+| Recover an offline agent without losing evidence | [Repair-or-reinstall decision guide](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-offline-troubleshooting-checklist.html) |
+| Troubleshoot failed remote access | [Remote-access connection checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-not-connecting-troubleshooting-checklist.html) |
+| Investigate a failed script or software deployment | [Stuck-job checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-script-not-running-job-stuck-troubleshooting-checklist.html) · [Deployment-failure checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-software-deployment-install-failed-troubleshooting-checklist.html) |
+| Evaluate or replace an RMM platform | [Evaluation scorecard](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-evaluation-scorecard-template.html) · [Migration workbook](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-workbook-template.html) |
+| Build evidence for security or vendor review | [Security evidence checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-security-evidence-checklist.html) · [Vendor due-diligence register](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vendor-due-diligence-evidence-register.html) |
+| Plan recurring MSP operations | [Daily, weekly, monthly, and quarterly checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/msp-daily-weekly-monthly-maintenance-checklist.html) |
+
+> **Relationship disclosure:** this library is maintained by the Nizlo team. Nizlo offers Windows-first RMM and IT-management software. The resources are designed to remain usable without Nizlo and do not represent independent research, third-party validation, or an endorsement of the product.
+
 When an approved RMM remote-support session times out, disconnects, or shows a blank screen, use the public [RMM remote access not connecting troubleshooting checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-not-connecting-troubleshooting-checklist.html) and its [24-control CSV worksheet](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-remote-access-not-connecting-troubleshooting-checklist.csv). It separates authority, endpoint and service state, DNS, proxy, TLS, relay, session, display, and security-control failures before weakening safeguards or retrying blindly.
 
 When an endpoint, patching, access, security, monitoring, or service policy needs a temporary deviation, use the public [MSP endpoint exception register](https://izikipizi.github.io/nizlo-msp-operations-resources/msp-endpoint-exception-register.html) and its [15-field CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-endpoint-exception-register.csv). It records scope, business justification, approval and denial risks, compensating controls, authority, expiry, review, closure evidence, and status without placing secrets in the register.
@@ -21,10 +36,6 @@ When an RMM script never starts, remains pending, times out, or reports ambiguou
 When a remote software deployment stays pending, fails to install, returns an ambiguous code, or reports the wrong detected state, use the public [RMM software deployment or application install failed troubleshooting checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-software-deployment-install-failed-troubleshooting-checklist.html) and its [24-control CSV evidence worksheet](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-software-deployment-install-failed-troubleshooting-checklist.csv). It separates package delivery, applicability, prerequisites, execution context, installer evidence, security controls, detection, partial state, safe retry, independent validation, and full-cohort reconciliation.
 
 When an RMM agent is blocked or quarantined by EDR, use the public [RMM EDR troubleshooting and allowlisting checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-edr-allowlisting-checklist.html) and its [CSV change record](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-edr-allowlisting-change-record.csv). It covers alert preservation, authorization, signer and hash evidence, false-positive submission, narrow temporary exceptions, negative tests, telemetry, rollback, approval, expiry, and review.
-
-Free, practical checklists for managed service providers and lean IT teams evaluating, deploying, operating, migrating, and offboarding remote monitoring and management software.
-
-Every resource below is public, ungated, and written to be usable independently of Nizlo's product. The canonical guides include downloadable field templates where available.
 
 Prove that network discovery and monitoring are operationally ready with the public [RMM network device monitoring acceptance checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-network-device-monitoring-acceptance-checklist.html) and its [24-control CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-network-device-monitoring-acceptance-checklist.csv). It tests scope, inventory reconciliation, pollers, SNMP security, stable device identity, supported objects, freshness, alert routing, dependency failures, maintenance, bounded outages, recovery, and acceptance. Nizlo does not currently claim SNMP or network-discovery support; the checklist is designed to reveal when that limitation should disqualify it.
 
@@ -137,7 +148,7 @@ The [RMM pricing transparency dataset](https://izikipizi.github.io/nizlo-msp-ope
 
 ## Citation and preservation
 
-Citation metadata is available in [`CITATION.cff`](CITATION.cff) and on the public [citation and preservation page](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html). The current metadata is released as `v1.84.3`; Software Heritage preserves content release `v1.84.1` and repository history through commit `b2f8a17` as snapshot [`swh:1:snp:d455990c7d4c1151eae2bf55d1690e345a431d5c`](https://archive.softwareheritage.org/browse/snapshot/d455990c7d4c1151eae2bf55d1690e345a431d5c/). The archive is a preservation service, not an endorsement of Nizlo or these resources.
+Citation metadata is available in [`CITATION.cff`](CITATION.cff) and on the public [citation and preservation page](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html). The current metadata is released as `v1.84.4`; Software Heritage preserves content release `v1.84.1` and repository history through commit `b2f8a17` as snapshot [`swh:1:snp:d455990c7d4c1151eae2bf55d1690e345a431d5c`](https://archive.softwareheritage.org/browse/snapshot/d455990c7d4c1151eae2bf55d1690e345a431d5c/). The archive is a preservation service, not an endorsement of Nizlo or these resources.
 
 ## Reusable field templates
 
