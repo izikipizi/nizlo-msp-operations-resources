@@ -28,7 +28,7 @@
         "description": "A vendor-neutral CSV with 30 controls for readiness, detection, containment, investigation, recovery, and post-incident improvement after a suspected RMM security event.",
         "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-incident-response-runbook-template.html",
         "creator": { "@type": "Organization", "name": "Nizlo", "url": "https://nizlo.com/" },
-        "dateModified": "2026-11-06",
+        "dateModified": "2026-11-08",
         "isAccessibleForFree": true,
         "inLanguage": "en",
         "keywords": ["RMM incident response", "RMM security incident", "MSP incident response runbook", "RMM compromise", "endpoint management security"],
@@ -51,6 +51,7 @@
       main { padding:5.5rem 0; }
       .eyebrow { color:#8be7e4; font-size:.8rem; font-weight:900; letter-spacing:.1em; text-transform:uppercase; }
       h1 { max-width:15ch; margin:.8rem 0 1.25rem; font-size:clamp(2.5rem,7vw,5rem); line-height:1; letter-spacing:-.05em; }
+      h1 a { color:inherit; text-decoration:none; }
       .lede { max-width:760px; color:var(--muted); font-size:1.2rem; }
       .actions { display:flex; flex-wrap:wrap; gap:.8rem; margin:2rem 0 4rem; }
       .button { display:inline-flex; padding:.8rem 1.1rem; border-radius:.8rem; background:var(--teal); color:var(--ink); text-decoration:none; font-weight:900; }
@@ -65,10 +66,10 @@
   </head>
   <body>
     <header><nav class="wrap"><a href="./">Nizlo MSP resources</a><a href="templates/">All CSV templates</a></nav></header>
-    <main class="wrap">
+    <main class="wrap h-entry">
       <p class="eyebrow">Free security operations template</p>
-      <h1>RMM incident response runbook</h1>
-      <p class="lede">A vendor-neutral worksheet for coordinating a suspected RMM account, automation, remote-access, or endpoint-management security incident. The CSV provides 30 controls across preparation, evidence preservation, containment, investigation, recovery, communication, and improvement.</p>
+      <h1 class="p-name"><a class="u-url" href="rmm-incident-response-runbook-template.html">RMM incident response runbook</a></h1>
+      <p class="lede p-summary">A vendor-neutral worksheet for coordinating a suspected RMM account, automation, remote-access, or endpoint-management security incident. The CSV provides 30 controls across preparation, evidence preservation, containment, investigation, recovery, communication, and improvement.</p>
       <div class="actions">
         <a class="button" href="templates/rmm-incident-response-runbook.csv" download>Download the CSV</a>
         <a class="button secondary" href="msp-backup-restore-test-checklist.html">Validate the recovery path</a>
@@ -104,6 +105,10 @@
         <p class="note">This worksheet is an operational planning aid. It is not legal advice, forensic guidance, or a substitute for your organization’s incident-response, notification, evidence-handling, and insurer requirements.</p>
       </section>
       <section>
+        <h2>Keep the first incident update concise</h2>
+        <p>For a lightweight opening summary, Josh Beckman’s <cite><a href="https://www.joshbeckman.org/blog/practicing/my-foursometimes-five-bullet-incident-snapshot">“Four-(Sometimes Five-) Bullet” incident snapshot</a></cite> is a useful communication pattern: detection, mitigation, remediation, impact, and optional communication speed. It complements—but does not replace—the runbook’s evidence, authority, containment, recovery, notification, and post-incident controls.</p>
+      </section>
+      <section>
         <h2>Field reference</h2>
         <p>The CSV uses consistent fields for <strong>phase</strong>, <strong>control ID</strong>, <strong>activity</strong>, <strong>owner</strong>, <strong>priority</strong>, <strong>status</strong>, <strong>evidence</strong>, <strong>decision</strong>, <strong>communication audience</strong>, <strong>next review time</strong>, and <strong>notes</strong>.</p>
       </section>
@@ -113,9 +118,9 @@
       </section>
       <section>
         <h2>Relationship disclosure</h2>
-        <p>This template is maintained by the Nizlo team. Nizlo is a Windows-first RMM and IT-management platform for MSPs and IT teams. The runbook is deliberately vendor-neutral and does not claim that Nizlo or any other vendor satisfies these controls.</p>
+        <p>This template is maintained by the <a class="p-author h-card" href="https://nizlo.com/">Nizlo team</a>. Nizlo is a Windows-first RMM and IT-management platform for MSPs and IT teams. The runbook is deliberately vendor-neutral and does not claim that Nizlo or any other vendor satisfies these controls.</p>
       </section>
     </main>
-    <footer><div class="wrap">Maintained by <a href="https://nizlo.com/">Nizlo</a> · Updated November 6, 2026 · <a href="citation.html">Citation and preservation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source repository</a></div></footer>
+    <footer><div class="wrap">Maintained by <a href="https://nizlo.com/">Nizlo</a> · Updated November 8, 2026 · <a href="citation.html">Citation and preservation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source repository</a></div></footer>
   </body>
 </html>
