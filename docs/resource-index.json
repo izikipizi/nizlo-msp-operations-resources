@@ -855,7 +855,7 @@
       "id": "rmm-agent-repair-reinstall-decision-matrix",
       "title": "Offline RMM agent repair or reinstall decision matrix",
       "category": "operations",
-      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-offline-troubleshooting-checklist.html",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-repair-vs-reinstall-decision-matrix.html",
       "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-agent-repair-reinstall-decision-matrix.csv",
       "format": "text/csv",
       "controls": 4,
