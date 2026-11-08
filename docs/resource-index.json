@@ -5,7 +5,7 @@
     "url": "https://nizlo.com/",
     "resources_url": "https://nizlo.com/tools"
   },
-  "updated": "2026-11-07",
+  "updated": "2026-11-08",
   "resources": [
     {
       "id": "rmm-remote-access-not-connecting-troubleshooting-checklist",
@@ -851,6 +851,18 @@
     }
   ],
   "templates": [
+    {
+      "id": "rmm-agent-repair-reinstall-decision-matrix",
+      "title": "Offline RMM agent repair or reinstall decision matrix",
+      "category": "operations",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-offline-troubleshooting-checklist.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-agent-repair-reinstall-decision-matrix.csv",
+      "format": "text/csv",
+      "controls": 4,
+      "fields": 10,
+      "access": "public",
+      "account_required": false
+    },
     {
       "id": "rmm-agent-offline-troubleshooting-checklist",
       "title": "Offline RMM agent repair or reinstall troubleshooting checklist",

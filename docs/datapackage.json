@@ -4,9 +4,9 @@
   "name": "nizlo-rmm-operations-resources",
   "id": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
   "title": "Nizlo RMM Operations Resources",
-  "description": "Forty public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
+  "description": "Forty-one public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
-  "version": "1.82.0",
+  "version": "1.84.0",
   "created": "2026-11-01",
   "contributors": [
     {
@@ -2433,6 +2433,33 @@
           { "name": "status", "type": "string" }
         ],
         "primaryKey": "exception_id"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "rmm-agent-repair-reinstall-decision-matrix",
+      "title": "Offline RMM agent repair or reinstall decision matrix",
+      "description": "Four evidence-led decision states and ten fields for choosing no action, supported repair, controlled reinstall, or escalation without destroying troubleshooting evidence.",
+      "path": "templates/rmm-agent-repair-reinstall-decision-matrix.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 3338,
+      "hash": "sha256:b8edf11e94bcd2ff3309cff3136277e50f45167d5c403949c803e43a86416c6e",
+      "schema": {
+        "fields": [
+          { "name": "Decision ID", "type": "string" },
+          { "name": "Observed state", "type": "string" },
+          { "name": "Evidence required", "type": "string" },
+          { "name": "Preferred path", "type": "string" },
+          { "name": "Do not do", "type": "string" },
+          { "name": "Prerequisites", "type": "string" },
+          { "name": "Success proof", "type": "string" },
+          { "name": "Stop or escalate when", "type": "string" },
+          { "name": "Owner", "type": "string" },
+          { "name": "Decision", "type": "string" }
+        ],
+        "primaryKey": "Decision ID"
       }
     }
   ]

@@ -131,9 +131,10 @@
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-offline-troubleshooting-checklist.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-offline-troubleshooting-checklist.html" />
     <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-agent-offline-troubleshooting-checklist.csv" />
+    <link rel="related" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-agent-repair-reinstall-decision-matrix.csv" title="Offline RMM agent repair or reinstall decision matrix" />
     <updated>2026-11-08T00:00:00Z</updated>
     <category term="operations" /><category term="troubleshooting" /><category term="RMM" />
-    <summary>Use 24 vendor-neutral checks and a repair-versus-reinstall decision table to prove endpoint state, service health, connectivity, enrollment identity, supported repair, controlled reinstall, functional recovery, and record reconciliation.</summary>
+    <summary>Use 24 vendor-neutral checks and a downloadable four-state, ten-field repair-versus-reinstall decision matrix to prove endpoint state, service health, connectivity, enrollment identity, supported repair, controlled reinstall, functional recovery, and record reconciliation.</summary>
   </entry>
   <entry>
     <title>MSP QBR agenda and client report checklist</title>
@@ -638,7 +639,7 @@
     <updated>2026-11-06T00:00:00Z</updated>
     <category term="deployment" />
     <category term="change-management" />
-    <summary>Download thirty vendor-neutral CSV templates for RMM agent troubleshooting, allowlisting, backup restore testing, QBRs, API integrations, requirements, security and audit evidence, vendor exits, quote comparison, alert measurement, SLA response, pilots, access review, client onboarding and offboarding, recurring maintenance, endpoint inventory, deployment, migration, controlled change, and incident response.</summary>
+    <summary>Download forty-one vendor-neutral CSV templates for RMM agent troubleshooting and repair decisions, allowlisting, backup restore testing, QBRs, API integrations, requirements, security and audit evidence, vendor exits, quote comparison, alert measurement, SLA response, pilots, access review, client onboarding and offboarding, recurring maintenance, endpoint inventory, deployment, migration, controlled change, and incident response.</summary>
   </entry>
   <entry>
     <title>RMM change-window and rollback-plan template</title>
