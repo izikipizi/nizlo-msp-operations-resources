@@ -13,6 +13,18 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>RMM agent blocked by EDR: troubleshooting and allowlisting checklist</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-edr-allowlisting-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-edr-allowlisting-checklist.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-edr-allowlisting-change-record.csv" />
+    <updated>2026-11-08T00:00:00Z</updated>
+    <category term="detection engineering" />
+    <category term="EDR" />
+    <category term="allowlisting" />
+    <category term="RMM" />
+    <summary>Preserve the alert, prove the RMM binary and tenant are authorized, reproduce the block safely, test the narrowest temporary exception, retain telemetry, and verify that altered or unapproved activity remains detected.</summary>
+  </entry>
+  <entry>
     <title>RMM alert not creating a ticket: 24-step troubleshooting checklist</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-not-creating-ticket-troubleshooting-checklist.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-not-creating-ticket-troubleshooting-checklist.html" />
