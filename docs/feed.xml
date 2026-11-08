@@ -6,7 +6,7 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-07T00:00:00Z</updated>
+  <updated>2026-11-08T00:00:00Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
@@ -127,13 +127,13 @@
     <summary>Use 24 vendor-neutral checks to preserve identity evidence, find golden-image, reinstall, shared-key, or stale-import causes, contain privileged automation, reconcile records, and prevent duplicate endpoint identities from returning.</summary>
   </entry>
   <entry>
-    <title>RMM agent offline or not checking in troubleshooting checklist</title>
+    <title>Offline RMM agent repair or reinstall troubleshooting checklist</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-offline-troubleshooting-checklist.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-offline-troubleshooting-checklist.html" />
     <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-agent-offline-troubleshooting-checklist.csv" />
-    <updated>2026-11-07T00:00:00Z</updated>
+    <updated>2026-11-08T00:00:00Z</updated>
     <category term="operations" /><category term="troubleshooting" /><category term="RMM" />
-    <summary>Use 24 vendor-neutral checks to prove endpoint state, service health, connectivity, enrollment identity, safe repair, functional recovery, cohort reconciliation, and closure before reinstalling an offline RMM agent.</summary>
+    <summary>Use 24 vendor-neutral checks and a repair-versus-reinstall decision table to prove endpoint state, service health, connectivity, enrollment identity, supported repair, controlled reinstall, functional recovery, and record reconciliation.</summary>
   </entry>
   <entry>
     <title>MSP QBR agenda and client report checklist</title>

@@ -111,7 +111,7 @@
     },
     {
       "id": "rmm-agent-offline-troubleshooting-checklist",
-      "title": "RMM agent offline or not checking in troubleshooting checklist",
+      "title": "Offline RMM agent repair or reinstall troubleshooting checklist",
       "category": "operations",
       "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-offline-troubleshooting-checklist.html",
       "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-agent-offline-troubleshooting-checklist.csv",
@@ -853,7 +853,7 @@
   "templates": [
     {
       "id": "rmm-agent-offline-troubleshooting-checklist",
-      "title": "RMM agent offline or not checking in troubleshooting checklist",
+      "title": "Offline RMM agent repair or reinstall troubleshooting checklist",
       "category": "operations",
       "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-offline-troubleshooting-checklist.html",
       "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-agent-offline-troubleshooting-checklist.csv",
