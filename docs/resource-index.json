@@ -318,6 +318,18 @@
       "account_required": false
     },
     {
+      "id": "rmm-contract-renewal-checklist-nonrenewal-notice-template",
+      "title": "RMM contract renewal checklist and non-renewal notice template",
+      "category": "vendor-management",
+      "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-contract-renewal-checklist-nonrenewal-notice-template.html",
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false
+    },
+    {
       "id": "rmm-security-checklist",
       "title": "RMM security checklist",
       "category": "security",

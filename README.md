@@ -7,6 +7,7 @@ Free, public, vendor-neutral field guides, decision aids, calculators, and reusa
 | Current task | Recommended starting point |
 | --- | --- |
 | Calculate a contract non-renewal notice deadline | [RMM contract renewal deadline calculator](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-contract-renewal-deadline-calculator.html) |
+| Review an RMM renewal and prepare notice evidence | [RMM contract renewal checklist and non-renewal notice template](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-contract-renewal-checklist-nonrenewal-notice-template.html) |
 | Recover an offline agent without losing evidence | [Repair-or-reinstall decision guide](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-offline-troubleshooting-checklist.html) |
 | Troubleshoot failed remote access | [Remote-access connection checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-not-connecting-troubleshooting-checklist.html) |
 | Recover an alert that did not create a ticket | [Alert-to-ticket routing checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-not-creating-ticket-troubleshooting-checklist.html) |
@@ -76,6 +77,7 @@ Test whether an RMM audit trail can support operations and investigation with th
 | [RMM pricing and contract comparison worksheet](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html) | Normalizing actual vendor proposals across pricing units, endpoint minimums, included technicians and endpoints, add-ons, contract length, renewals, cancellation, and exit costs |
 | [RMM ROI, migration cost, and payback calculator](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-cost-calculator.html) | Estimating migration labor, implementation fees, platform overlap, recurring savings, 12-month ROI, 36-month value, and payback with your own assumptions |
 | [RMM contract renewal deadline calculator](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-contract-renewal-deadline-calculator.html) | Calculating a non-renewal notice deadline, earlier internal decision date, days remaining, and downloadable calendar reminders from your own contract dates |
+| [RMM contract renewal checklist and non-renewal notice template](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-contract-renewal-checklist-nonrenewal-notice-template.html) | Reviewing controlling documents, notice rules, delivery, pricing, operating evidence, exports, transition obligations, approvals, and proof before renewal |
 | [RMM security checklist](https://nizlo.com/guides/rmm-security-checklist) | Reviewing device identity, tenant isolation, MFA, permissions, signed actions, audit logs, recovery, and removal |
 | [RMM security checklist and evidence register](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-security-evidence-checklist.html) | Turning 30 security claims into requested evidence, controlled validation, named risk ownership, exceptions, and retest dates |
 | [RMM monitoring policy template](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-monitoring-policy-template.html) | Defining scope, baselines, thresholds, severity, routing, maintenance behavior, recovery evidence, testing, exceptions, and review across 32 vendor-neutral controls |
@@ -155,7 +157,7 @@ The [RMM pricing transparency dataset](https://izikipizi.github.io/nizlo-msp-ope
 
 ## Citation and preservation
 
-Citation metadata is available in [`CITATION.cff`](CITATION.cff) and on the public [citation and preservation page](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html). The current metadata is released as `v1.88.0`; Software Heritage preserves content release `v1.87.1` and repository history through commit `aa0c3e1` as snapshot [`swh:1:snp:fb9e451e84ae8b3ce7d694403d9957510341a890`](https://archive.softwareheritage.org/browse/snapshot/fb9e451e84ae8b3ce7d694403d9957510341a890/). The archive is a preservation service, not an endorsement of Nizlo or these resources.
+Citation metadata is available in [`CITATION.cff`](CITATION.cff) and on the public [citation and preservation page](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html). The current metadata is released as `v1.89.0`; Software Heritage preserves content release `v1.87.1` and repository history through commit `aa0c3e1` as snapshot [`swh:1:snp:fb9e451e84ae8b3ce7d694403d9957510341a890`](https://archive.softwareheritage.org/browse/snapshot/fb9e451e84ae8b3ce7d694403d9957510341a890/). The archive is a preservation service, not an endorsement of Nizlo or these resources.
 
 ## Reusable field templates
 
@@ -190,6 +192,8 @@ Use the [RMM vendor exit plan checklist and evidence register](https://izikipizi
 Use the [RMM ROI, migration cost, and payback calculator](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-cost-calculator.html) to model internal labor, implementation fees, parallel subscriptions, retained tools, recurring cost change, 12-month ROI, 36-month value, and payback time. The formulas are published on the page, the example does not prefill Nizlo pricing, and all figures stay in the browser.
 
 Use the [RMM contract renewal deadline calculator](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-contract-renewal-deadline-calculator.html) to subtract a contractual notice window from a renewal date, add an earlier internal planning deadline, copy the timeline, and download calendar reminders. The page keeps dates in the browser and clearly separates planning arithmetic from contract or legal interpretation.
+
+Use the [RMM contract renewal checklist and non-renewal notice template](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-contract-renewal-checklist-nonrenewal-notice-template.html) to assemble controlling documents, verify dates and delivery requirements, review complete cost and operating evidence, inventory exports and transition obligations, obtain qualified review, preserve proof, and adapt a copyable notice starting point. It is operational guidance, not legal advice.
 
 Use the [RMM evaluation scorecard and comparison template](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-evaluation-scorecard-template.html) to compare observed pilot evidence across inventory, monitoring, patching, automation, remote support, permissions, audit evidence, recovery, removal, and technician usability. The underlying [10-area CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-evaluation-scorecard.csv) is public and ungated.
 
