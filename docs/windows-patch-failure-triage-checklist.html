@@ -55,7 +55,7 @@
         "headline":"Windows Patch Failure Triage Checklist for MSPs",
         "description":"A vendor-neutral 24-control checklist for scoping, diagnosing, remediating, validating, and closing failed Windows update work.",
         "datePublished":"2026-11-03",
-        "dateModified":"2026-11-07",
+        "dateModified":"2026-11-08",
         "author":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},
         "publisher":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},
         "mainEntityOfPage":"https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-failure-triage-checklist.html",
@@ -98,13 +98,13 @@
         <h1>A Windows update failed. Diagnose before retrying.</h1>
         <p class="lede">A retry is not a diagnosis. Use these 24 checks to identify the affected scope, preserve the original failure evidence, classify the cause, restore servicing health safely, validate the final state, and keep every unresolved endpoint visible until closure.</p>
         <div class="actions">
-          <a class="button button-primary" href="https://nizlo.com/patch-management">Review Nizlo patch management</a>
+          <a class="button button-primary" href="https://nizlo.com/patch-management?utm_source=github_pages&amp;utm_medium=referral&amp;utm_campaign=windows_patch_failure_triage&amp;utm_content=primary_cta">Review Nizlo patch management</a>
           <a class="button" href="https://nizlo.com/guides/rmm-vs-patch-management?utm_source=github_pages&amp;utm_medium=authority_bridge&amp;utm_campaign=rmm_vs_patch_management&amp;utm_content=patch_failure_triage">Compare RMM with patch management</a>
-          <a class="button" href="https://nizlo.com/guides/windows-patch-management-checklist">Plan the patch cycle</a>
+          <a class="button" href="https://nizlo.com/guides/windows-patch-management-checklist?utm_source=github_pages&amp;utm_medium=referral&amp;utm_campaign=windows_patch_failure_triage&amp;utm_content=patch_cycle_guide">Plan the patch cycle</a>
           <a class="button" href="windows-patch-policy-review-checklist.html">Review the patch policy</a>
           <a class="button" href="windows-patch-exception-review-template.html">Record a time-bounded exception</a>
           <a class="button" href="rmm-patch-compliance-calculator.html">Recalculate compliance after triage</a>
-          <a class="button" href="https://nizlo.com/guides/endpoint-exception-management">Manage unresolved exceptions</a>
+          <a class="button" href="https://nizlo.com/guides/endpoint-exception-management?utm_source=github_pages&amp;utm_medium=referral&amp;utm_campaign=windows_patch_failure_triage&amp;utm_content=exception_guide">Manage unresolved exceptions</a>
           <a class="button" href="javascript:window.print()">Print this checklist</a>
         </div>
       </section>
@@ -149,9 +149,9 @@
       <section class="use"><h2>Definition of a resolved patch failure</h2><p>A failed patch is resolved when current endpoint evidence shows the update installed, no longer applies, was superseded, or is governed by an approved time-bounded exception; the endpoint and required services remain healthy; the affected fleet is reconciled; and the evidence, owner, next action, and closure decision are recorded. Repeated retries or a cleared error message alone do not establish resolution.</p></section>
       <section class="sources"><h2>Primary Windows Update troubleshooting references</h2><p>The checklist adds operational ownership and fleet reconciliation around Microsoft’s product guidance; it does not replace the diagnostic path for the recorded error and operating-system version.</p><ul><li><a href="https://learn.microsoft.com/en-us/troubleshoot/windows-server/installing-updates-features-roles/troubleshoot-windows-server-update-guidance">Microsoft Learn: Guidance for troubleshooting Windows Server update</a> — identify the failing update and error, check servicing health, and use supported diagnostics.</li><li><a href="https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/troubleshoot-problems-updating-windows">Microsoft Support: Troubleshoot problems updating Windows</a> — current end-user and Windows client troubleshooting routes.</li></ul></section>
       <section class="faq"><h2>Failed Windows update questions</h2><details open><summary>What evidence should I capture before retrying a failed Windows update?</summary><p>Capture the endpoint and operating-system build, update identifier, original error code and message, timestamps and time zone, deployment job state, reboot state, scan age, update history, and the number and pattern of affected endpoints. Preserve that evidence before restarting services, clearing caches, or retrying.</p></details><details><summary>When should an MSP pause a Windows patch rollout?</summary><p>Pause the broader ring when failures cluster around the same update, build, application, device model, or deployment window—or when the pattern suggests boot failure, data loss, incompatible software, unreliable rollback, or an update that may have been withdrawn.</p></details><details><summary>Does a successful retry prove the patch failure is resolved?</summary><p>No. Run a fresh scan, verify the installed build or a documented not-applicable or superseded state, validate required services and business functions, reconcile the full affected fleet, and assign an owner, expiry, and next action to every unresolved exception.</p></details></section>
-      <aside class="disclosure"><strong>Windows RMM patch-failure example:</strong> use the <a href="https://nizlo.com/solutions/windows-rmm?utm_source=github_pages&amp;utm_medium=authority_bridge&amp;utm_campaign=windows_rmm&amp;utm_content=patch_failure_triage">Windows RMM guide</a> to define the expected patching and reporting workflow, then verify current scan state, failure cause, affected scope, safe remediation, reboot and service health, post-action reconciliation, evidence, and any time-bounded exception.</aside>
+      <aside class="disclosure"><strong>Windows RMM patch-failure example:</strong> use the <a href="https://nizlo.com/solutions/windows-rmm?utm_source=github_pages&amp;utm_medium=referral&amp;utm_campaign=windows_patch_failure_triage&amp;utm_content=windows_rmm_guide">Windows RMM guide</a> to define the expected patching and reporting workflow, then verify current scan state, failure cause, affected scope, safe remediation, reboot and service health, post-action reconciliation, evidence, and any time-bounded exception.</aside>
       <aside class="disclosure"><strong>Relationship disclosure:</strong> this checklist is maintained by the Nizlo team. Nizlo offers Windows-first RMM and patch-management capabilities. The checklist is vendor-neutral and does not claim that Nizlo—or any other product—automatically diagnoses or resolves every Windows update failure.</aside>
     </main>
-    <footer><div class="wrap">Maintained by Nizlo · Updated November 7, 2026 · <a href="./">Browse all MSP operations resources</a></div></footer>
+    <footer><div class="wrap">Maintained by Nizlo · Updated November 8, 2026 · <a href="./">Browse all MSP operations resources</a></div></footer>
   </body>
 </html>
