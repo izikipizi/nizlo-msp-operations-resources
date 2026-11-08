@@ -148,7 +148,7 @@ The [RMM pricing transparency dataset](https://izikipizi.github.io/nizlo-msp-ope
 
 ## Citation and preservation
 
-Citation metadata is available in [`CITATION.cff`](CITATION.cff) and on the public [citation and preservation page](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html). The current metadata is released as `v1.84.4`; Software Heritage preserves content release `v1.84.1` and repository history through commit `b2f8a17` as snapshot [`swh:1:snp:d455990c7d4c1151eae2bf55d1690e345a431d5c`](https://archive.softwareheritage.org/browse/snapshot/d455990c7d4c1151eae2bf55d1690e345a431d5c/). The archive is a preservation service, not an endorsement of Nizlo or these resources.
+Citation metadata is available in [`CITATION.cff`](CITATION.cff) and on the public [citation and preservation page](https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html). The current metadata is released as `v1.84.5`; Software Heritage preserves content release `v1.84.1` and repository history through commit `b2f8a17` as snapshot [`swh:1:snp:d455990c7d4c1151eae2bf55d1690e345a431d5c`](https://archive.softwareheritage.org/browse/snapshot/d455990c7d4c1151eae2bf55d1690e345a431d5c/). The archive is a preservation service, not an endorsement of Nizlo or these resources.
 
 ## Reusable field templates
 
