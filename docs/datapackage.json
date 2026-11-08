@@ -4,9 +4,9 @@
   "name": "nizlo-rmm-operations-resources",
   "id": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
   "title": "Nizlo RMM Operations Resources",
-  "description": "Forty-one public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
+  "description": "Forty-four public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
-  "version": "1.84.6",
+  "version": "1.87.1",
   "created": "2026-11-01",
   "contributors": [
     {
@@ -90,6 +90,100 @@
     "MSP client reporting"
   ],
   "resources": [
+    {
+      "profile": "tabular-data-resource",
+      "name": "rmm-alert-not-creating-ticket-troubleshooting-checklist",
+      "title": "RMM alert not creating ticket troubleshooting checklist",
+      "description": "A vendor-neutral twelve-field checklist for tracing an alert from policy evaluation through event creation, integration delivery, ticketing rules, ownership, retest evidence, and closure.",
+      "path": "templates/rmm-alert-not-creating-ticket-troubleshooting-checklist.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 9933,
+      "hash": "sha256:50e2c481e3adc42b2e86f10fcbf8a44d3923b30881853aa133195ed88896d057",
+      "schema": {
+        "fields": [
+          { "name": "Phase", "type": "string" },
+          { "name": "Control ID", "type": "string" },
+          { "name": "Check", "type": "string" },
+          { "name": "Evidence to capture", "type": "string" },
+          { "name": "Common interpretation", "type": "string" },
+          { "name": "Safe next action", "type": "string" },
+          { "name": "Escalation trigger", "type": "string" },
+          { "name": "Owner", "type": "string" },
+          { "name": "Status", "type": "string" },
+          { "name": "Due date", "type": "string" },
+          { "name": "Retest result", "type": "string" },
+          { "name": "Notes", "type": "string" }
+        ],
+        "primaryKey": "Control ID"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "rmm-patch-compliance-report-template",
+      "title": "RMM patch compliance report template",
+      "description": "A reusable twenty-field report for documenting the endpoint denominator, verified patch outcomes, exclusions, stale evidence, exceptions, ownership, and next action.",
+      "path": "templates/rmm-patch-compliance-report-template.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 1696,
+      "hash": "sha256:6fdb5224d858a0ca23f5989a2da22533e1c6d4d9dca7fa85d7da5c81f1f6eae8",
+      "schema": {
+        "fields": [
+          { "name": "Report period", "type": "string" },
+          { "name": "Customer or business unit", "type": "string" },
+          { "name": "Site or endpoint group", "type": "string" },
+          { "name": "Required baseline", "type": "string" },
+          { "name": "Reporting timestamp UTC", "type": "string" },
+          { "name": "Source system or export", "type": "string" },
+          { "name": "Managed endpoints", "type": "integer" },
+          { "name": "Approved exclusions", "type": "integer" },
+          { "name": "In-scope denominator", "type": "integer" },
+          { "name": "Verified installed", "type": "integer" },
+          { "name": "Pending reboot", "type": "integer" },
+          { "name": "Failed", "type": "integer" },
+          { "name": "Applicable not installed", "type": "integer" },
+          { "name": "Unknown or stale", "type": "integer" },
+          { "name": "Strict compliance percent", "type": "number" },
+          { "name": "Open exception count", "type": "integer" },
+          { "name": "Oldest trusted evidence UTC", "type": "string" },
+          { "name": "Report owner", "type": "string" },
+          { "name": "Next action and due date", "type": "string" },
+          { "name": "Notes", "type": "string" }
+        ]
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "windows-update-log-evidence-worksheet",
+      "title": "Windows Update log evidence worksheet",
+      "description": "A vendor-neutral twelve-field worksheet for recording Windows Update evidence, timestamps, endpoint scope, observed and expected results, decisions, owners, and notes.",
+      "path": "templates/windows-update-log-evidence-worksheet.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 6102,
+      "hash": "sha256:6022d08106d06dbc05a5728201bc3654b975bf2ec7641ab220746d33ad2b29d0",
+      "schema": {
+        "fields": [
+          { "name": "Control ID", "type": "string" },
+          { "name": "Phase", "type": "string" },
+          { "name": "Evidence to capture", "type": "string" },
+          { "name": "Why it matters", "type": "string" },
+          { "name": "Source or command", "type": "string" },
+          { "name": "Timestamp and timezone", "type": "string" },
+          { "name": "Endpoint or scope", "type": "string" },
+          { "name": "Observed result", "type": "string" },
+          { "name": "Expected result", "type": "string" },
+          { "name": "Decision", "type": "string" },
+          { "name": "Owner", "type": "string" },
+          { "name": "Notes", "type": "string" }
+        ],
+        "primaryKey": "Control ID"
+      }
+    },
     {
       "profile": "tabular-data-resource",
       "name": "rmm-remote-access-not-connecting-troubleshooting-checklist",

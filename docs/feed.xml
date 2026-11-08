@@ -251,14 +251,14 @@
     <summary>Trace an RMM agent from installer execution through service state, tenant enrollment, outbound connectivity, and verified dashboard telemetry without disabling security controls.</summary>
   </entry>
   <entry>
-    <title>RMM patch-compliance calculator: show the denominator</title>
+    <title>RMM patch-compliance report template and calculator</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-patch-compliance-calculator.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-patch-compliance-calculator.html" />
-    <updated>2026-11-06T00:00:00Z</updated>
+    <updated>2026-11-08T00:00:00Z</updated>
     <category term="patch-management" />
     <category term="calculator" />
     <category term="reporting" />
-    <summary>Calculate strict verified patch compliance from an explicit endpoint denominator while keeping pending reboots, failures, exclusions, stale devices, and unknown states visible.</summary>
+    <summary>Download a free 20-field CSV report template and calculate strict verified patch compliance from an explicit endpoint denominator while keeping pending reboots, failures, exclusions, stale devices, and unknown states visible.</summary>
   </entry>
   <entry>
     <title>RMM vs Intune vs MDM vs endpoint management</title>

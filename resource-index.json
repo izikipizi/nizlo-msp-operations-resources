@@ -245,9 +245,12 @@
 
     {
       "id": "rmm-patch-compliance-calculator",
-      "title": "RMM patch-compliance calculator",
+      "title": "RMM patch-compliance report template and calculator",
       "category": "patch-management",
-      "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-patch-compliance-calculator.html",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-patch-compliance-calculator.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-patch-compliance-report-template.csv",
+      "format": "text/csv",
+      "fields": 20,
       "audience": [
         "MSP",
         "IT team"

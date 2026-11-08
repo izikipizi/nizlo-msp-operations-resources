@@ -442,10 +442,11 @@
   </url>
   <url>
     <loc>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-patch-compliance-calculator.html</loc>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+  <url><loc>https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-patch-compliance-report-template.csv</loc><lastmod>2026-11-08</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vendor-demo-questions-checklist.html</loc><lastmod>2026-11-07</lastmod><changefreq>yearly</changefreq><priority>0.9</priority></url>
   <url><loc>https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-vendor-demo-questions-checklist.csv</loc><lastmod>2026-11-05</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://izikipizi.github.io/nizlo-msp-operations-resources/msp-qbr-agenda-client-report-checklist.html</loc><lastmod>2026-11-06</lastmod><changefreq>yearly</changefreq><priority>0.9</priority></url>
