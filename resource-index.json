@@ -1009,6 +1009,17 @@
       "account_required": false
     },
     {
+      "id": "rmm-incident-response-tabletop-exercise",
+      "title": "RMM incident response tabletop exercise template",
+      "category": "security",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-incident-response-tabletop-exercise.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-incident-response-tabletop-exercise.csv",
+      "format": "text/csv",
+      "controls": 24,
+      "access": "public",
+      "account_required": false
+    },
+    {
       "id": "rmm-migration-workbook",
       "title": "RMM migration plan template and checklist workbook",
       "category": "migration",

@@ -4,9 +4,9 @@
   "name": "nizlo-rmm-operations-resources",
   "id": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
   "title": "Nizlo RMM Operations Resources",
-  "description": "Forty-four public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
+  "description": "Forty-five public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
-  "version": "1.89.0",
+  "version": "1.90.0",
   "created": "2026-11-01",
   "contributors": [
     {
@@ -949,6 +949,38 @@
           }
         ],
         "primaryKey": "control_id"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "rmm-incident-response-tabletop-exercise",
+      "title": "RMM incident response tabletop exercise template",
+      "description": "Twenty-four scenario injects for testing RMM incident detection, scope, containment, evidence, communications, recovery, closure, and corrective-action retesting.",
+      "path": "templates/rmm-incident-response-tabletop-exercise.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 9559,
+      "hash": "sha256:445a56541c705639502eed1e99fe3c6205001c75f6546742ad2a2da7be1bee00",
+      "schema": {
+        "fields": [
+          { "name": "phase", "type": "string" },
+          { "name": "inject_id", "type": "string" },
+          { "name": "inject_or_decision", "type": "string" },
+          { "name": "expected_action", "type": "string" },
+          { "name": "decision_owner", "type": "string" },
+          { "name": "timebox_minutes", "type": "integer" },
+          { "name": "evidence_to_capture", "type": "string" },
+          { "name": "communication_audience", "type": "string" },
+          { "name": "pass_criteria", "type": "string" },
+          { "name": "status", "type": "string" },
+          { "name": "findings", "type": "string" },
+          { "name": "action_owner", "type": "string" },
+          { "name": "due_date", "type": "date" },
+          { "name": "retest_date", "type": "date" },
+          { "name": "notes", "type": "string" }
+        ],
+        "primaryKey": "inject_id"
       }
     },
     {

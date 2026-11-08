@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Free RMM Incident Response Tabletop Exercise Template</title>
+    <meta name="description" content="Run an RMM incident response tabletop exercise with 24 vendor-neutral scenario injects covering detection, scope, containment, evidence, communications, recovery, and retesting." />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <link rel="canonical" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-incident-response-tabletop-exercise.html" />
+    <link rel="alternate" type="application/atom+xml" title="Nizlo MSP Operations Resources" href="feed.xml" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="RMM Incident Response Tabletop Exercise Template" />
+    <meta property="og:description" content="A free 24-inject exercise planner for testing RMM incident decisions without touching production systems." />
+    <meta property="og:url" content="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-incident-response-tabletop-exercise.html" />
+    <meta property="og:image" content="https://nizlo.com/opengraph-image" />
+    <meta property="og:image:alt" content="Nizlo RMM incident response tabletop exercise template" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="RMM Incident Response Tabletop Exercise Template" />
+    <meta name="twitter:description" content="Test RMM incident command, evidence, containment, customer communications, and recovery with a free CSV exercise planner." />
+    <meta name="twitter:image" content="https://nizlo.com/opengraph-image" />
+    <meta name="twitter:image:alt" content="Nizlo RMM incident response tabletop exercise template" />
+    <meta name="theme-color" content="#07171d" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Dataset",
+            "name": "RMM incident response tabletop exercise template",
+            "description": "A vendor-neutral CSV with 24 scenario injects for testing RMM incident detection, scope, containment, evidence, communications, recovery, closure, and corrective-action retesting.",
+            "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-incident-response-tabletop-exercise.html",
+            "creator": { "@type": "Organization", "name": "Nizlo", "url": "https://nizlo.com/" },
+            "dateModified": "2026-11-08",
+            "isAccessibleForFree": true,
+            "inLanguage": "en",
+            "keywords": ["RMM incident response tabletop exercise", "MSP security tabletop", "RMM compromise exercise", "incident response exercise template", "remote monitoring and management security drill"],
+            "variableMeasured": ["Phase", "Inject ID", "Decision", "Expected action", "Decision owner", "Timebox", "Evidence", "Pass criteria", "Findings", "Retest date"],
+            "distribution": {
+              "@type": "DataDownload",
+              "contentUrl": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-incident-response-tabletop-exercise.csv",
+              "encodingFormat": "text/csv"
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {"@type":"Question","name":"What should an RMM incident response tabletop exercise test?","acceptedAnswer":{"@type":"Answer","text":"Test independent command channels, privileged identity decisions, tenant and endpoint scope, automation containment, evidence preservation, customer communications, staged recovery, inventory reconciliation, corrective-action ownership, and retesting."}},
+              {"@type":"Question","name":"Should a tabletop exercise make production changes?","acceptedAnswer":{"@type":"Answer","text":"No. Keep the exercise simulated unless a separately approved and bounded technical test exists. Define stop conditions before the exercise and prevent participants from improvising production actions."}},
+              {"@type":"Question","name":"How is an RMM tabletop exercise scored?","acceptedAnswer":{"@type":"Answer","text":"Score each objective against observable evidence and explicit pass criteria. Record gaps, owners, due dates, and retest requirements instead of passing the exercise by consensus alone."}}
+            ]
+          }
+        ]
+      }
+    </script>
+    <style>
+      :root { color-scheme:dark; --bg:#06141a; --panel:#0a2028; --line:#21424c; --text:#edf8fa; --muted:#a9c0c7; --teal:#1dc6c7; --ink:#03282d; }
+      * { box-sizing:border-box; }
+      body { margin:0; background:radial-gradient(circle at 82% -10%,rgba(29,198,199,.17),transparent 36rem),linear-gradient(180deg,#07171d,var(--bg)); color:var(--text); font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif; line-height:1.65; }
+      a { color:#8be7e4; } a:focus-visible { outline:3px solid #8be7e4; outline-offset:4px; }
+      .wrap { width:min(980px,calc(100% - 2rem)); margin:0 auto; }
+      header { padding:1.2rem 0; border-bottom:1px solid rgba(139,231,228,.14); }
+      nav { display:flex; justify-content:space-between; gap:1rem; } nav a { text-decoration:none; font-weight:800; }
+      main { padding:5.5rem 0; }
+      .eyebrow { color:#8be7e4; font-size:.8rem; font-weight:900; letter-spacing:.1em; text-transform:uppercase; }
+      h1 { max-width:16ch; margin:.8rem 0 1.25rem; font-size:clamp(2.5rem,7vw,5rem); line-height:1; letter-spacing:-.05em; }
+      h1 a { color:inherit; text-decoration:none; }
+      .lede { max-width:780px; color:var(--muted); font-size:1.2rem; }
+      .actions { display:flex; flex-wrap:wrap; gap:.8rem; margin:2rem 0 4rem; }
+      .button { display:inline-flex; padding:.8rem 1.1rem; border-radius:.8rem; background:var(--teal); color:var(--ink); text-decoration:none; font-weight:900; }
+      .secondary { background:transparent; color:var(--text); border:1px solid var(--line); }
+      section { margin:3rem 0; padding:2rem; border:1px solid var(--line); border-radius:1.1rem; background:rgba(10,32,40,.9); }
+      h2 { margin-top:0; font-size:clamp(1.6rem,4vw,2.4rem); letter-spacing:-.03em; }
+      h3 { margin-bottom:.35rem; }
+      .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; }
+      .card { padding:1rem; background:#0e2932; border-radius:.8rem; } .card p,.note { color:var(--muted); }
+      details { padding:1rem 0; border-bottom:1px solid var(--line); } summary { cursor:pointer; font-weight:850; }
+      footer { padding:2rem 0 3rem; border-top:1px solid var(--line); color:var(--muted); }
+      @media(max-width:650px){ main{padding-top:3.5rem}.grid{grid-template-columns:1fr}section{padding:1.25rem} }
+    </style>
+  </head>
+  <body>
+    <header><nav class="wrap"><a href="./">Nizlo MSP resources</a><a href="templates/">All CSV templates</a></nav></header>
+    <main class="wrap h-entry">
+      <p class="eyebrow">Free security exercise template</p>
+      <h1 class="p-name"><a class="u-url" href="rmm-incident-response-tabletop-exercise.html">RMM incident response tabletop exercise</a></h1>
+      <p class="lede p-summary">A vendor-neutral exercise planner for testing the decisions an MSP or IT team may face during suspected RMM account, automation, remote-access, integration, or endpoint compromise—without turning the tabletop into an unapproved production test.</p>
+      <div class="actions">
+        <a class="button" href="templates/rmm-incident-response-tabletop-exercise.csv" download>Download the 24-inject CSV</a>
+        <a class="button secondary" href="rmm-incident-response-runbook-template.html">Open the incident runbook</a>
+        <a class="button secondary" href="rmm-audit-log-review-checklist.html">Review investigation evidence</a>
+        <a class="button secondary" href="msp-backup-restore-test-checklist.html">Validate recovery evidence</a>
+        <a class="button secondary" href="rmm-remote-access-session-authorization-checklist.html">Test remote-access authority</a>
+        <a class="button secondary" href="https://nizlo.com/guides/rmm-incident-response-checklist">Read the full incident-response guide</a>
+      </div>
+      <section>
+        <h2>What the exercise tests</h2>
+        <div class="grid">
+          <div class="card"><h3>Independent command</h3><p>Coordinate when the RMM console or normal collaboration channel is assumed unavailable or untrusted.</p></div>
+          <div class="card"><h3>Scope and evidence</h3><p>Reconcile tenants, endpoints, identities, integrations, automations, timestamps, missing logs, and explicitly tracked unknowns.</p></div>
+          <div class="card"><h3>Containment decisions</h3><p>Balance immediate risk, critical service dependencies, reversible actions, authorization, and preserved evidence.</p></div>
+          <div class="card"><h3>Recovery and closure</h3><p>Restore in bounded waves, reconcile inventory, keep corrective actions visible, and schedule evidence-backed retesting.</p></div>
+        </div>
+      </section>
+      <section>
+        <h2>How to run it safely</h2>
+        <ol>
+          <li>Name the exercise sponsor, facilitator, observers, technical leads, business owners, and stop authority.</li>
+          <li>Define participating tenants and systems, out-of-scope boundaries, assumptions, and production-safety stop conditions.</li>
+          <li>Use the injects in sequence or select only those that match the exercise objectives. Keep all production actions simulated unless separately approved.</li>
+          <li>Timebox each decision and require participants to name authority, evidence, customer impact, rollback, and the next update.</li>
+          <li>Score observable outcomes against the CSV pass criteria. Assign every gap an owner, due date, closure evidence, and retest date.</li>
+        </ol>
+        <p class="note">This template is an operational exercise aid. It is not legal advice, forensic guidance, a compliance certification, or authorization to access or change production systems.</p>
+      </section>
+      <section>
+        <h2>Minimum exercise record</h2>
+        <p>Preserve the approved scope, participant roster, assumptions, injects used, decisions, decision authority, timestamps, evidence references, communication outputs, pass or fail rationale, unresolved gaps, owners, due dates, and retest results. Keep secrets, customer data, restricted reports, and sensitive exports in approved evidence storage; record only authorized references in the worksheet.</p>
+      </section>
+      <section>
+        <h2>Tabletop exercise FAQ</h2>
+        <details><summary>What should the exercise test?</summary><p>Test independent command channels, privileged identity decisions, tenant and endpoint scope, automation containment, evidence preservation, customer communications, staged recovery, inventory reconciliation, corrective-action ownership, and retesting.</p></details>
+        <details><summary>Should participants make production changes?</summary><p>No. Keep the exercise simulated unless a separately approved and bounded technical test exists. Define stop conditions before the exercise and prevent participants from improvising production actions.</p></details>
+        <details><summary>How should the exercise be scored?</summary><p>Score each objective against observable evidence and explicit pass criteria. Record gaps, owners, due dates, and retest requirements instead of passing the exercise by consensus alone.</p></details>
+      </section>
+      <section>
+        <h2>Relationship disclosure</h2>
+        <p>This template is maintained by the <a class="p-author h-card" href="https://nizlo.com/">Nizlo team</a>. Nizlo is a Windows-first RMM and IT-management platform for MSPs and IT teams. The exercise is deliberately vendor-neutral and does not claim that Nizlo or any other vendor satisfies these controls.</p>
+      </section>
+    </main>
+    <footer><div class="wrap">Maintained by <a href="https://nizlo.com/">Nizlo</a> · Updated November 8, 2026 · <a href="citation.html">Citation and preservation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source repository</a></div></footer>
+  </body>
+</html>
