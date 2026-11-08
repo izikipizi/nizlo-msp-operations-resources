@@ -398,10 +398,12 @@
     <title>RMM alert-noise baseline worksheet</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-noise-baseline-worksheet.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-noise-baseline-worksheet.html" />
-    <updated>2026-11-06T00:00:00Z</updated>
+    <link rel="enclosure" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-alert-noise-baseline.csv" type="text/csv" />
+    <updated>2026-11-08T00:00:00Z</updated>
     <category term="monitoring" />
     <category term="alert-tuning" />
-    <summary>Measure raw RMM events, unique incidents, duplicates, false positives, actionable yield, after-hours burden, acknowledgement, and resolution with a public 23-field CSV and repeatable 14-day method.</summary>
+    <category term="alert-fatigue" />
+    <summary>Measure raw RMM events, unique incidents, duplicates, false positives, actionable yield, after-hours burden, acknowledgement, and resolution with a CC BY 4.0 23-field CSV and repeatable 14-day method grounded in Google SRE and Prometheus guidance.</summary>
   </entry>
   <entry>
     <title>RMM pricing calculator and free cost tools</title>
