@@ -395,7 +395,7 @@
     <summary>Review an RMM patch management policy against 24 vendor-neutral Windows controls for scope, rings, deadlines, restarts, exceptions, rollback, evidence, ownership, and approval.</summary>
   </entry>
   <entry>
-    <title>RMM alert-noise baseline worksheet</title>
+    <title>Alert-noise baseline worksheet for IT operations</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-noise-baseline-worksheet.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-noise-baseline-worksheet.html" />
     <link rel="enclosure" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-alert-noise-baseline.csv" type="text/csv" />
@@ -403,7 +403,7 @@
     <category term="monitoring" />
     <category term="alert-tuning" />
     <category term="alert-fatigue" />
-    <summary>Measure raw RMM events, unique incidents, duplicates, false positives, actionable yield, after-hours burden, acknowledgement, and resolution with a CC BY 4.0 23-field CSV and repeatable 14-day method grounded in Google SRE and Prometheus guidance.</summary>
+    <summary>Measure raw monitoring events, unique incidents, duplicates, false positives, actionable yield, after-hours burden, acknowledgement, and resolution with a CC BY 4.0 23-field CSV and repeatable 14-day method grounded in Google SRE and Prometheus guidance.</summary>
   </entry>
   <entry>
     <title>RMM pricing calculator and free cost tools</title>
