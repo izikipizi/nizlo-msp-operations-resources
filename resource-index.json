@@ -8,6 +8,21 @@
   "updated": "2026-11-08",
   "resources": [
     {
+      "id": "rmm-alert-not-creating-ticket-troubleshooting-checklist",
+      "title": "RMM alert not creating a ticket troubleshooting checklist",
+      "category": "operations",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-not-creating-ticket-troubleshooting-checklist.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-alert-not-creating-ticket-troubleshooting-checklist.csv",
+      "canonical_guide": "https://nizlo.com/monitoring-alerts",
+      "format": "text/csv",
+      "controls": 24,
+      "fields": 12,
+      "audience": ["MSP", "IT team"],
+      "access": "public",
+      "account_required": false,
+      "relationship_disclosure": "Nizlo maintains the checklist; the workflow is vendor-neutral."
+    },
+    {
       "id": "rmm-remote-access-not-connecting-troubleshooting-checklist",
       "title": "RMM remote access not connecting troubleshooting checklist",
       "category": "operations",

@@ -13,6 +13,17 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>RMM alert not creating a ticket: 24-step troubleshooting checklist</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-not-creating-ticket-troubleshooting-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-not-creating-ticket-troubleshooting-checklist.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-alert-not-creating-ticket-troubleshooting-checklist.csv" />
+    <updated>2026-11-08T00:00:00Z</updated>
+    <category term="operations" />
+    <category term="alert-routing" />
+    <category term="ticketing" />
+    <summary>Trace an alert from monitor eligibility and suppression through route selection, mapping, API delivery, retry and deduplication safety, ticket ownership, recovery, and closure.</summary>
+  </entry>
+  <entry>
     <title>RMM agent repair vs reinstall decision matrix</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-repair-vs-reinstall-decision-matrix.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-repair-vs-reinstall-decision-matrix.html" />
@@ -648,7 +659,7 @@
     <updated>2026-11-06T00:00:00Z</updated>
     <category term="deployment" />
     <category term="change-management" />
-    <summary>Download forty-one vendor-neutral CSV templates for RMM agent troubleshooting and repair decisions, allowlisting, backup restore testing, QBRs, API integrations, requirements, security and audit evidence, vendor exits, quote comparison, alert measurement, SLA response, pilots, access review, client onboarding and offboarding, recurring maintenance, endpoint inventory, deployment, migration, controlled change, and incident response.</summary>
+    <summary>Download forty-two vendor-neutral CSV templates for RMM agent troubleshooting and repair decisions, alert-to-ticket routing, allowlisting, backup restore testing, QBRs, API integrations, requirements, security and audit evidence, vendor exits, quote comparison, alert measurement, SLA response, pilots, access review, client onboarding and offboarding, recurring maintenance, endpoint inventory, deployment, migration, controlled change, and incident response.</summary>
   </entry>
   <entry>
     <title>RMM change-window and rollback-plan template</title>
