@@ -769,8 +769,10 @@
       "title": "Windows patch failure triage checklist for MSPs",
       "category": "patch-management",
       "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-failure-triage-checklist.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/windows-update-log-evidence-worksheet.csv",
       "canonical_guide": "https://nizlo.com/guides/windows-patch-management-checklist",
       "controls": 24,
+      "fields": 12,
       "audience": [
         "MSP",
         "IT team"

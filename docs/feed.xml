@@ -334,11 +334,12 @@
     <title>Windows patch failure triage checklist for MSPs</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-failure-triage-checklist.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-failure-triage-checklist.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/windows-update-log-evidence-worksheet.csv" />
     <updated>2026-11-08T00:00:00Z</updated>
     <category term="patch-management" />
     <category term="troubleshooting" />
     <category term="checklist" />
-    <summary>Run 24 vendor-neutral checks for failure evidence, fleet scope, prerequisites, servicing health, safe retry, post-change validation, exception ownership, and closure, with primary Microsoft troubleshooting references and three concise answers.</summary>
+    <summary>Run 24 vendor-neutral checks for failure and Windows Update log evidence, fleet scope, prerequisites, servicing health, safe retry, post-change validation, exception ownership, and closure, with a 12-field CSV worksheet and primary Microsoft references.</summary>
   </entry>
   <entry>
     <title>MSP backup restore test checklist</title>
@@ -656,10 +657,10 @@
     <title>Free RMM operations template library</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/templates/</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/" />
-    <updated>2026-11-06T00:00:00Z</updated>
+    <updated>2026-11-08T00:00:00Z</updated>
     <category term="deployment" />
     <category term="change-management" />
-    <summary>Download forty-two vendor-neutral CSV templates for RMM agent troubleshooting and repair decisions, alert-to-ticket routing, allowlisting, backup restore testing, QBRs, API integrations, requirements, security and audit evidence, vendor exits, quote comparison, alert measurement, SLA response, pilots, access review, client onboarding and offboarding, recurring maintenance, endpoint inventory, deployment, migration, controlled change, and incident response.</summary>
+    <summary>Download forty-three vendor-neutral CSV templates for Windows Update log evidence, RMM agent troubleshooting and repair decisions, alert-to-ticket routing, allowlisting, backup restore testing, QBRs, API integrations, requirements, security and audit evidence, vendor exits, quote comparison, alert measurement, SLA response, pilots, access review, client onboarding and offboarding, recurring maintenance, endpoint inventory, deployment, migration, controlled change, and incident response.</summary>
   </entry>
   <entry>
     <title>RMM change-window and rollback-plan template</title>
