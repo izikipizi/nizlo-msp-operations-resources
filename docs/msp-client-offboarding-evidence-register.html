@@ -26,12 +26,12 @@
   "publisher": { "@type": "Organization", "name": "Nizlo", "url": "https://nizlo.com/" },
   "datePublished": "2026-11-01",
   "dateModified": "2026-11-08",
-  "version": "1.87.3",
+  "version": "1.87.4",
   "isAccessibleForFree": true,
   "conditionsOfAccess": "Public and ungated; no account or email address is required.",
   "inLanguage": "en",
   "includedInDataCatalog": { "@type": "DataCatalog", "name": "Nizlo MSP Operations Resources", "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/" },
-  "sameAs": "https://github.com/izikipizi/nizlo-msp-operations-resources/tree/v1.87.3",
+  "sameAs": "https://github.com/izikipizi/nizlo-msp-operations-resources/tree/v1.87.4",
   "measurementTechnique": "Operator-entered offboarding control review with named ownership, evidence, customer acceptance, exceptions, data disposition, and follow-up fields.",
   "keywords": ["MSP client offboarding checklist", "managed service provider exit plan", "RMM agent removal", "MSP access revocation", "IT service transition checklist"],
   "variableMeasured": ["Offboarding phase", "Control owner", "Customer owner", "Due time", "Status", "Evidence", "Access or asset", "Data disposition", "Successor recipient", "Acceptance owner", "Exception", "Follow-up"],
@@ -45,6 +45,7 @@
     "https://www.mydatapath.com/blog/switching-msps-checklist-avoid-downtime-surprises/",
     "https://blog.ctoinput.com/switching-msps-without-downtime/",
     "https://stedra.io/blog/outgoing-msp-clean-handoff",
+    "https://www.stratifyit.tech/blogs/switching-msps-a-guide-to-a-seamless-and-successful-transition",
     "https://nizlo.com/guides/msp-client-offboarding-checklist"
   ]
 }</script>
@@ -67,6 +68,7 @@
 <section aria-labelledby="faq-heading" style="margin-top:2.5rem"><h2 id="faq-heading">MSP client offboarding FAQ</h2><div class="grid"><article><h2>What belongs in the checklist?</h2><p>Cover authority and dates, inventories, service and documentation handoff, every access path, RMM and remote-support removal, vendor transfers, data disposition, acceptance, exceptions, and post-exit monitoring.</p></article><article><h2>How is access revocation proved?</h2><p>Inventory interactive, service, API, delegated, VPN, vault, cloud, and vendor-portal access; revoke credentials, tokens, sessions, and trust; then capture independent evidence that access no longer works.</p></article><article><h2>How should RMM agents be removed?</h2><p>Freeze the starting inventory, remove in controlled waves, verify services and processes are gone, reconcile multiple inventory sources, and track failures through closure. Use the <a href="rmm-agent-uninstall-verification-checklist.html">agent uninstall verification checklist</a> for the detailed proof steps.</p></article><article><h2>When is offboarding complete?</h2><p>Only after handoff, access removal, agent removal, data disposition, exceptions, customer acceptance, and post-cutoff monitoring are all evidenced—not merely when a contract ends.</p></article></div></section>
 <aside class="note"><strong>Control basis:</strong> CISA’s MSP guidance tells customers to disable MSP accounts after the provider no longer manages infrastructure and recommends least privilege, account and infrastructure hygiene, logging, backup protection, and clear responsibility. NIST CSF 2.0 supports managed identities, revoked credentials, asset lifecycle control, and documented risk treatment. Adapt the register to contracts, law, insurance, and product-specific removal behavior.</aside>
 <aside class="note"><strong>Field perspectives:</strong> Current MSP transition playbooks from <a href="https://www.slyderconsultinggroup.com/resources/switching-msps-without-downtime">Slyder Consulting Group</a>, <a href="https://robb.tech/blog/switching-msps-without-downtime/">Robb Technology Group</a>, <a href="https://www.mydatapath.com/blog/switching-msps-checklist-avoid-downtime-surprises/">Datapath</a>, <a href="https://blog.ctoinput.com/switching-msps-without-downtime/">CTO Input</a>, and Stedra's guide to a <a href="https://stedra.io/blog/outgoing-msp-clean-handoff">clean outgoing-MSP handoff</a> independently emphasize staged transitions, explicit ownership, usable documentation exports, verified backup access, temporary overlap, documented access transfer, controlled agent removal, and post-cutover verification. This register turns those recurring operational themes into assignable controls and evidence fields. Stedra did not create, review, or endorse this register.</aside>
+<aside class="note"><strong>Transition safeguards:</strong> Nibelka Ventura's current <a href="https://www.stratifyit.tech/blogs/switching-msps-a-guide-to-a-seamless-and-successful-transition">Stratify IT guide to switching MSPs</a> adds practical safeguards: audit the full environment before cutover, run parallel monitoring until the destination is stable, define rollback criteria before migration, assign an internal decision owner, and record insurance and contract constraints. The register maps those themes to scope, schedule, coverage-validation, owner, constraint, evidence, and exception fields. Stratify IT did not create, review, or endorse this register.</aside>
 <aside class="note"><strong>Relationship disclosure:</strong> Nizlo, a Windows-first RMM and IT-management platform, maintains this template. It is designed for use with any MSP, RMM, remote-support, monitoring, backup, or security stack. It is an operating aid, not legal advice, an audit opinion, or proof that an offboarding is complete.</aside></main>
-<footer class="wrap"><span>Maintained by Nizlo · Updated November 8, 2026</span><span><a href="templates/">Template library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources/tree/v1.87.3">Version 1.87.3</a></span></footer>
+<footer class="wrap"><span>Maintained by Nizlo · Updated November 8, 2026</span><span><a href="templates/">Template library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources/tree/v1.87.4">Version 1.87.4</a></span></footer>
 </body></html>

@@ -521,7 +521,7 @@
     <updated>2026-11-08T00:00:00Z</updated>
     <category term="client-lifecycle" />
     <category term="offboarding" />
-    <summary>Use a free 32-control MSP client offboarding checklist to coordinate transition authority, inventory, documentation and backup handoff, access revocation, controlled RMM agent removal, acceptance, and post-exit verification.</summary>
+    <summary>Use a free 32-control MSP client offboarding checklist to coordinate transition authority, environment inventory, documentation and backup handoff, monitored overlap, access revocation, controlled RMM agent removal, acceptance, and post-exit verification.</summary>
   </entry>
   <entry>
     <title>RMM permissions matrix and technician access review</title>
