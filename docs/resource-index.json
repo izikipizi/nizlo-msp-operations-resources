@@ -5,7 +5,7 @@
     "url": "https://nizlo.com/",
     "resources_url": "https://nizlo.com/tools"
   },
-  "updated": "2026-11-08",
+  "updated": "2026-11-09",
   "resources": [
     {
       "id": "rmm-alert-not-creating-ticket-troubleshooting-checklist",
@@ -113,7 +113,7 @@
     },
     {
       "id": "rmm-agent-offline-troubleshooting-checklist",
-      "title": "Offline RMM agent repair or reinstall troubleshooting checklist",
+      "title": "RMM endpoint disappeared first-15-minutes and repair-or-reinstall checklist",
       "category": "operations",
       "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-offline-troubleshooting-checklist.html",
       "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-agent-offline-troubleshooting-checklist.csv",
@@ -909,7 +909,7 @@
     },
     {
       "id": "rmm-agent-offline-troubleshooting-checklist",
-      "title": "Offline RMM agent repair or reinstall troubleshooting checklist",
+      "title": "RMM endpoint disappeared first-15-minutes and repair-or-reinstall checklist",
       "category": "operations",
       "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-offline-troubleshooting-checklist.html",
       "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-agent-offline-troubleshooting-checklist.csv",
