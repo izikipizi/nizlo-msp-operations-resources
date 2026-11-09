@@ -993,7 +993,7 @@
       "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-change-window-rollback-plan.html",
       "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-change-window-rollback-plan.csv",
       "format": "text/csv",
-      "controls": 26,
+      "controls": 30,
       "access": "public",
       "account_required": false
     },

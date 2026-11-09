@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Free RMM Change Management Template &amp; Rollback Plan (CSV)</title>
-    <meta name="description" content="Download a free RMM change management template and rollback plan CSV for maintenance windows, approvals, pilot gates, rollback triggers, communications, and evidence." />
+    <meta name="description" content="Download a free 30-control RMM staged rollout and rollback plan CSV for signed-package checks, canary stop gates, rollback authorization, recovery proof, and audit evidence." />
     <meta name="robots" content="index,follow,max-image-preview:large" />
     <link rel="canonical" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-change-window-rollback-plan.html" />
     <link rel="alternate" type="application/atom+xml" title="Nizlo MSP Operations Resources" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
@@ -25,15 +25,15 @@
         "@context": "https://schema.org",
         "@type": "Dataset",
         "name": "RMM change-window and rollback-plan template",
-        "description": "A vendor-neutral CSV with 26 operational controls for approving, piloting, rolling out, validating, rolling back, communicating, and closing an RMM change.",
+        "description": "A vendor-neutral CSV with 30 operational controls for signed-package verification, canary rollout, stop conditions, rollback authorization, post-rollback proof, communication, and closure.",
         "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-change-window-rollback-plan.html",
         "creator": { "@type": "Organization", "name": "Nizlo", "url": "https://nizlo.com/" },
-        "dateModified": "2026-11-06",
+        "dateModified": "2026-11-09",
         "isAccessibleForFree": true,
         "inLanguage": "en",
         "isBasedOn": "https://nizlo.com/guides/rmm-maintenance-window-template",
         "keywords": ["RMM change window", "RMM maintenance window", "rollback plan", "MSP change management", "RMM deployment", "endpoint management"],
-        "variableMeasured": ["Owner", "Planned start and end", "Success criteria", "Evidence", "Rollback trigger", "Rollback action", "Decision owner", "Status"],
+        "variableMeasured": ["Owner", "Planned start and end", "Success criteria", "Evidence", "Rollback trigger", "Rollback action", "Decision owner", "Approved version", "Installed hash", "Final endpoint state", "Status"],
         "distribution": {
           "@type": "DataDownload",
           "contentUrl": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-change-window-rollback-plan.csv",
@@ -100,7 +100,7 @@
     <main class="wrap">
       <p class="eyebrow">Free operational template</p>
       <h1>RMM change management template &amp; rollback plan</h1>
-      <p class="lede">A vendor-neutral worksheet for turning an RMM deployment, migration, policy change, or automation rollout into an approved and reversible change. The CSV includes 26 controls with owners, evidence, success criteria, rollback triggers, communications, and closure checks.</p>
+      <p class="lede">A vendor-neutral worksheet for turning an RMM deployment, migration, policy change, or automation rollout into an approved and reversible change. The CSV includes 30 controls for signed-package checks, canary stop gates, rollback authorization, recovery proof, owners, evidence, communications, and closure.</p>
       <div class="actions">
         <a class="button" href="templates/rmm-change-window-rollback-plan.csv" download>Download the CSV</a>
         <a class="button secondary" href="https://nizlo.com/rmm-automation?utm_source=github_pages&amp;utm_medium=authority_bridge&amp;utm_campaign=rmm_automation&amp;utm_content=change_window_rollback">Control automated script changes</a>
@@ -120,8 +120,20 @@
           <div class="card"><strong>Approval</strong><span>Scope, time zone, decision authority, and stakeholder sign-off.</span></div>
           <div class="card"><strong>Pre-change evidence</strong><span>Inventory, recovery path, package integrity, connectivity, alert routing, and notices.</span></div>
           <div class="card"><strong>Pilot and rollout gates</strong><span>Check-in, identity, telemetry, automation, wave reconciliation, and go/no-go decisions.</span></div>
-          <div class="card"><strong>Rollback and closure</strong><span>Stop conditions, reversion actions, communications, exception ownership, and final evidence.</span></div>
+          <div class="card"><strong>Rollback and closure</strong><span>Signed rollback authority, approved-version proof, endpoint reconciliation, rollout-boundary evidence, communications, and exception ownership.</span></div>
         </div>
+      </section>
+
+      <section>
+        <h2>Prove the rollback, not just the command</h2>
+        <p>A rollback record should identify the failed release and affected cohort, name the person or role allowed to authorize the downgrade, and state the exact approved target version. After execution, recalculate the installed binary hash, verify its signer, confirm the service and management channel are healthy, and reconcile every targeted endpoint. A device is not recovered merely because the rollback command returned success.</p>
+        <div class="grid">
+          <div class="card"><strong>Authorization</strong><span>Bind the approval to a release, cohort, reason, target version, security floor, and decision owner.</span></div>
+          <div class="card"><strong>Endpoint proof</strong><span>Record the installed hash, signer, version, service state, heartbeat, and a health test that exercises the failed channel.</span></div>
+          <div class="card"><strong>Complete denominator</strong><span>Classify every target as approved-new, approved-prior, isolated/manual-recovery, or still unknown.</span></div>
+          <div class="card"><strong>Rollout boundary</strong><span>Show that the queue stopped at the canary or affected wave and that no later cohort received the failed release.</span></div>
+        </div>
+        <p class="note">Primary-source context: <a href="https://csrc.nist.gov/pubs/sp/800/218/final">NIST SP 800-218, Secure Software Development Framework</a> and <a href="https://learn.microsoft.com/en-us/windows-hardware/drivers/install/authenticode">Microsoft Authenticode guidance</a>.</p>
       </section>
 
       <section>
@@ -158,6 +170,6 @@
         <p>This template is maintained by the Nizlo team. Nizlo is a Windows-first RMM and IT-management platform for MSPs and IT teams. The worksheet is deliberately vendor-neutral and does not claim that Nizlo or any other vendor passes its controls.</p>
       </section>
     </main>
-    <footer><div class="wrap">Maintained by <a href="https://nizlo.com/?utm_source=github_pages&amp;utm_medium=resource_hub&amp;utm_campaign=rmm_change_management_template">Nizlo</a> · Updated November 6, 2026 · <a href="citation.html">Citation and preservation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source repository</a></div></footer>
+    <footer><div class="wrap">Maintained by <a href="https://nizlo.com/?utm_source=github_pages&amp;utm_medium=resource_hub&amp;utm_campaign=rmm_change_management_template">Nizlo</a> · Updated November 9, 2026 · <a href="citation.html">Citation and preservation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source repository</a></div></footer>
   </body>
 </html>

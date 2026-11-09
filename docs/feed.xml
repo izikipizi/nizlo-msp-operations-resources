@@ -718,9 +718,9 @@
     <title>RMM change-window and rollback-plan template</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-change-window-rollback-plan.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-change-window-rollback-plan.html" />
-    <updated>2026-11-06T00:00:00Z</updated>
+    <updated>2026-11-09T00:00:00Z</updated>
     <category term="change-management" />
-    <summary>Plan RMM changes with named owners, success criteria, evidence, rollout gates, rollback triggers, communications, and closure checks.</summary>
+    <summary>Plan staged RMM changes with signed-package checks, canary stop gates, rollback authorization, post-rollback binary proof, endpoint reconciliation, and rollout-boundary evidence.</summary>
   </entry>
   <entry>
     <title>RMM evaluation checklist</title>
