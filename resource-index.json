@@ -1020,6 +1020,17 @@
       "account_required": false
     },
     {
+      "id": "rmm-incident-postmortem-template",
+      "title": "RMM incident postmortem template and corrective action register",
+      "category": "security",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-incident-postmortem-template.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-incident-postmortem-template.csv",
+      "format": "text/csv",
+      "controls": 24,
+      "access": "public",
+      "account_required": false
+    },
+    {
       "id": "rmm-migration-workbook",
       "title": "RMM migration plan template and checklist workbook",
       "category": "migration",

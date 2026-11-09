@@ -985,6 +985,39 @@
     },
     {
       "profile": "tabular-data-resource",
+      "name": "rmm-incident-postmortem-template",
+      "title": "RMM incident postmortem template and corrective action register",
+      "description": "Twenty-four evidence questions for reviewing RMM incident scope, impact, timeline, response decisions, evidence, causes, controls, corrective actions, retesting, accepted risk, and closure.",
+      "path": "templates/rmm-incident-postmortem-template.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 4704,
+      "hash": "sha256:a06742f79ad894a8130d932eeac28c0cbd2862fa4bcaf3f4a74e2ae78d30edb6",
+      "schema": {
+        "fields": [
+          { "name": "record_id", "type": "string" },
+          { "name": "section", "type": "string" },
+          { "name": "question_or_evidence", "type": "string" },
+          { "name": "required_output", "type": "string" },
+          { "name": "owner", "type": "string" },
+          { "name": "evidence_reference", "type": "string" },
+          { "name": "finding", "type": "string" },
+          { "name": "severity", "type": "string" },
+          { "name": "corrective_action", "type": "string" },
+          { "name": "action_owner", "type": "string" },
+          { "name": "due_date", "type": "date" },
+          { "name": "status", "type": "string" },
+          { "name": "validation_method", "type": "string" },
+          { "name": "retest_date", "type": "date" },
+          { "name": "closure_approver", "type": "string" },
+          { "name": "notes", "type": "string" }
+        ],
+        "primaryKey": "record_id"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
       "name": "rmm-migration-workbook",
       "title": "RMM migration checklist workbook",
       "description": "Thirty controls for discovery, target mapping, pilot, coexistence, cutover, validation, source retirement, and closeout.",

@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Free RMM Incident Postmortem Template &amp; Action Register</title>
+    <meta name="description" content="Download a free vendor-neutral RMM incident postmortem template with 24 evidence questions for scope, impact, timeline, cause, controls, corrective actions, retesting, and closure." />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <link rel="canonical" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-incident-postmortem-template.html" />
+    <link rel="alternate" type="application/atom+xml" title="Nizlo MSP Operations Resources" href="feed.xml" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="RMM Incident Postmortem Template &amp; Corrective Action Register" />
+    <meta property="og:description" content="A free 24-question evidence register for reviewing RMM incidents and closing corrective actions." />
+    <meta property="og:url" content="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-incident-postmortem-template.html" />
+    <meta property="og:image" content="https://nizlo.com/opengraph-image" />
+    <meta property="og:image:alt" content="Nizlo RMM incident postmortem template" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="RMM Incident Postmortem Template" />
+    <meta name="twitter:description" content="Turn RMM incident facts into evidence-backed corrective actions, validation, retesting, and closure." />
+    <meta name="twitter:image" content="https://nizlo.com/opengraph-image" />
+    <meta name="twitter:image:alt" content="Nizlo RMM incident postmortem template" />
+    <meta name="theme-color" content="#07171d" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Dataset",
+            "name": "RMM incident postmortem template and corrective action register",
+            "description": "A vendor-neutral CSV with 24 evidence questions for reviewing RMM incident scope, timeline, impact, response, cause, controls, corrective actions, retesting, risk acceptance, and closure.",
+            "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-incident-postmortem-template.html",
+            "creator": { "@type": "Organization", "name": "Nizlo", "url": "https://nizlo.com/" },
+            "dateModified": "2026-11-09",
+            "isAccessibleForFree": true,
+            "inLanguage": "en",
+            "keywords": ["RMM incident postmortem template", "MSP incident report template", "RMM lessons learned", "incident corrective action register", "RMM after action review"],
+            "variableMeasured": ["Section", "Question or evidence", "Required output", "Owner", "Evidence reference", "Finding", "Severity", "Corrective action", "Due date", "Validation method", "Retest date", "Closure approver"],
+            "distribution": {
+              "@type": "DataDownload",
+              "contentUrl": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-incident-postmortem-template.csv",
+              "encodingFormat": "text/csv"
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {"@type":"Question","name":"What should an RMM incident postmortem include?","acceptedAnswer":{"@type":"Answer","text":"Include a reconciled scope, UTC timeline, confirmed impact, response decisions, evidence index, direct and contributing causes, controls that worked or failed, corrective actions, validation methods, retest dates, accepted risks, and closure evidence."}},
+              {"@type":"Question","name":"When should an incident postmortem be completed?","acceptedAnswer":{"@type":"Answer","text":"Begin evidence collection during the incident, then hold the review after immediate recovery while facts and decisions remain available. Do not wait for every corrective action to finish; track those actions separately through validation and closure."}},
+              {"@type":"Question","name":"How do you prevent an incident postmortem from becoming a blame exercise?","acceptedAnswer":{"@type":"Answer","text":"Anchor each conclusion to evidence, distinguish direct causes from contributing conditions, record successful controls as well as gaps, and assign corrective actions to accountable owners rather than attributing failure to individual intent."}}
+            ]
+          }
+        ]
+      }
+    </script>
+    <style>
+      :root { color-scheme:dark; --bg:#06141a; --panel:#0a2028; --line:#21424c; --text:#edf8fa; --muted:#a9c0c7; --teal:#1dc6c7; --ink:#03282d; }
+      * { box-sizing:border-box; }
+      body { margin:0; background:radial-gradient(circle at 82% -10%,rgba(29,198,199,.17),transparent 36rem),linear-gradient(180deg,#07171d,var(--bg)); color:var(--text); font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif; line-height:1.65; }
+      a { color:#8be7e4; } a:focus-visible { outline:3px solid #8be7e4; outline-offset:4px; }
+      .wrap { width:min(980px,calc(100% - 2rem)); margin:0 auto; }
+      header { padding:1.2rem 0; border-bottom:1px solid rgba(139,231,228,.14); }
+      nav { display:flex; justify-content:space-between; gap:1rem; } nav a { text-decoration:none; font-weight:800; }
+      main { padding:5.5rem 0; }
+      .eyebrow { color:#8be7e4; font-size:.8rem; font-weight:900; letter-spacing:.1em; text-transform:uppercase; }
+      h1 { max-width:17ch; margin:.8rem 0 1.25rem; font-size:clamp(2.5rem,7vw,5rem); line-height:1; letter-spacing:-.05em; }
+      h1 a { color:inherit; text-decoration:none; }
+      .lede { max-width:800px; color:var(--muted); font-size:1.2rem; }
+      .actions { display:flex; flex-wrap:wrap; gap:.8rem; margin:2rem 0 4rem; }
+      .button { display:inline-flex; padding:.8rem 1.1rem; border-radius:.8rem; background:var(--teal); color:var(--ink); text-decoration:none; font-weight:900; }
+      .secondary { background:transparent; color:var(--text); border:1px solid var(--line); }
+      section { margin:3rem 0; padding:2rem; border:1px solid var(--line); border-radius:1.1rem; background:rgba(10,32,40,.9); }
+      h2 { margin-top:0; font-size:clamp(1.6rem,4vw,2.4rem); letter-spacing:-.03em; }
+      h3 { margin-bottom:.35rem; }
+      .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; }
+      .card { padding:1rem; background:#0e2932; border-radius:.8rem; } .card p,.note { color:var(--muted); }
+      details { padding:1rem 0; border-bottom:1px solid var(--line); } summary { cursor:pointer; font-weight:850; }
+      footer { padding:2rem 0 3rem; border-top:1px solid var(--line); color:var(--muted); }
+      @media(max-width:650px){ main{padding-top:3.5rem}.grid{grid-template-columns:1fr}section{padding:1.25rem} }
+    </style>
+  </head>
+  <body>
+    <header><nav class="wrap"><a href="./">Nizlo MSP resources</a><a href="templates/">All CSV templates</a></nav></header>
+    <main class="wrap h-entry">
+      <p class="eyebrow">Free incident-review template</p>
+      <h1 class="p-name"><a class="u-url" href="rmm-incident-postmortem-template.html">RMM incident postmortem and action register</a></h1>
+      <p class="lede p-summary">A vendor-neutral evidence register for turning an RMM incident into a reconciled timeline, defensible findings, owned corrective actions, measurable validation, scheduled retesting, and explicit closure.</p>
+      <div class="actions">
+        <a class="button" href="templates/rmm-incident-postmortem-template.csv" download>Download the 24-question CSV</a>
+        <a class="button secondary" href="rmm-incident-response-runbook-template.html">Open the incident runbook</a>
+        <a class="button secondary" href="rmm-incident-response-tabletop-exercise.html">Run a tabletop exercise</a>
+        <a class="button secondary" href="rmm-audit-log-review-checklist.html">Review investigation evidence</a>
+        <a class="button secondary" href="https://nizlo.com/guides/rmm-incident-response-checklist?utm_source=github_pages&amp;utm_medium=resource&amp;utm_campaign=rmm_incident_postmortem">Read the full incident-response guide</a>
+      </div>
+      <section>
+        <h2>What the postmortem must prove</h2>
+        <div class="grid">
+          <div class="card"><h3>Scope and impact</h3><p>Reconcile affected, unaffected, and unknown tenants, endpoints, identities, integrations, data, and business impact.</p></div>
+          <div class="card"><h3>Timeline and decisions</h3><p>Separate observed facts from inference, normalize timestamps to UTC, and preserve authority, options, and outcomes.</p></div>
+          <div class="card"><h3>Cause and controls</h3><p>Document direct and contributing conditions while retaining evidence of controls that worked—not only those that failed.</p></div>
+          <div class="card"><h3>Action and closure</h3><p>Give each corrective action an owner, due date, validation method, retest, closure approver, and remaining exception.</p></div>
+        </div>
+      </section>
+      <section>
+        <h2>How to run the review</h2>
+        <ol>
+          <li>Appoint a facilitator who was not the sole owner of the response decisions being reviewed.</li>
+          <li>Freeze the working evidence index and timeline before the meeting; label facts, inferences, clock offsets, and unresolved gaps.</li>
+          <li>Walk the incident from detection through recovery, recording why decisions were made with the evidence available at that time.</li>
+          <li>Separate direct technical causes, contributing conditions, control performance, and accepted constraints.</li>
+          <li>Close actions only after the named validation method and retest produce the required evidence.</li>
+        </ol>
+        <p class="note">This template is an operational review aid. It is not legal advice, forensic guidance, breach-notification advice, or a substitute for counsel, insurers, regulators, or qualified incident-response professionals.</p>
+      </section>
+      <section>
+        <h2>Minimum closure rule</h2>
+        <p>Service restoration does not close the review. The original scope must reconcile, material evidence gaps must remain visible, each corrective action must have an accountable owner, and every closed action must show independent validation or an explicitly approved exception.</p>
+      </section>
+      <section>
+        <h2>RMM incident postmortem FAQ</h2>
+        <details><summary>What should an RMM incident postmortem include?</summary><p>Include a reconciled scope, UTC timeline, confirmed impact, response decisions, evidence index, direct and contributing causes, controls that worked or failed, corrective actions, validation methods, retest dates, accepted risks, and closure evidence.</p></details>
+        <details><summary>When should the postmortem be completed?</summary><p>Begin evidence collection during the incident, then hold the review after immediate recovery while facts and decisions remain available. Track unfinished corrective actions separately through validation and closure.</p></details>
+        <details><summary>How do you keep the review blameless but accountable?</summary><p>Anchor conclusions to evidence, distinguish direct causes from contributing conditions, record successful controls as well as gaps, and assign corrective actions to accountable owners rather than attributing failure to individual intent.</p></details>
+      </section>
+      <section>
+        <h2>Relationship disclosure</h2>
+        <p>This template is maintained by the <a class="p-author h-card" href="https://nizlo.com/">Nizlo team</a>. Nizlo is a Windows-first RMM and IT-management platform for MSPs and IT teams. The template is deliberately vendor-neutral and does not claim that Nizlo or any other vendor satisfies these controls.</p>
+      </section>
+    </main>
+    <footer><div class="wrap">Maintained by <a href="https://nizlo.com/">Nizlo</a> · Updated November 9, 2026 · <a href="citation.html">Citation and preservation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source repository</a></div></footer>
+  </body>
+</html>

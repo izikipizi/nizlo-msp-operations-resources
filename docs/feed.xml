@@ -690,6 +690,14 @@
     <summary>Run a vendor-neutral RMM incident-response exercise with 24 decision injects for scope, containment, evidence, communication, recovery, closure, and retesting.</summary>
   </entry>
   <entry>
+    <title>RMM incident postmortem template and corrective action register</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-incident-postmortem-template.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-incident-postmortem-template.html" />
+    <updated>2026-11-09T00:00:00Z</updated>
+    <category term="security" />
+    <summary>Twenty-four vendor-neutral evidence questions for reconciling RMM incident scope, impact, timeline, response, cause, controls, corrective actions, retesting, accepted risk, and closure.</summary>
+  </entry>
+  <entry>
     <title>RMM implementation checklist and rollout plan template</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-deployment-readiness-template.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-deployment-readiness-template.html" />
