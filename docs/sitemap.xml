@@ -345,6 +345,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-client-onboarding-go-live-acceptance.csv</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://izikipizi.github.io/nizlo-msp-operations-resources/six-week-msp-onboarding-project-plan.html</loc>
     <lastmod>2026-11-06</lastmod>
     <changefreq>yearly</changefreq>
