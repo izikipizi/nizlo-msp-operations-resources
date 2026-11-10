@@ -456,15 +456,16 @@
     <summary>Collect and review evidence across thirty RMM vendor controls, with explicit findings, risk ratings, remediation, exceptions, and renewal dates.</summary>
   </entry>
   <entry>
-    <title>RMM alert escalation matrix template</title>
+    <title>RMM alert ownership and escalation matrix template</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-escalation-matrix-template.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-escalation-matrix-template.html" />
-    <updated>2026-11-02T00:00:00Z</updated>
+    <updated>2026-11-10T00:00:00Z</updated>
     <category term="monitoring" />
     <category term="alerting" />
     <category term="escalation" />
+    <category term="ownership" />
     <category term="template" />
-    <summary>Use 27 example alert rules with severity, confirmation, ownership, response, acknowledgement, escalation, notification, suppression, evidence, closure, and tuning fields.</summary>
+    <summary>Use 27 example alert rules to assign signal, response, service and escalation owners with severity, confirmation, acknowledgement, notification, evidence, closure, and tuning fields.</summary>
   </entry>
   <entry>
     <title>MSP daily, weekly, monthly, and quarterly maintenance checklist</title>

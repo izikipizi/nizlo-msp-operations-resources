@@ -1165,11 +1165,11 @@
     },
     {
       "id": "rmm-alert-escalation-matrix",
-      "title": "RMM alert escalation matrix template",
+      "title": "RMM alert ownership and escalation matrix template",
       "category": "monitoring",
       "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-escalation-matrix-template.html",
       "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-alert-escalation-matrix.csv",
-      "canonical_guide": "https://nizlo.com/guides/rmm-alert-escalation-policy-template",
+      "canonical_guide": "https://nizlo.com/guides/rmm-alert-escalation-policy-template?utm_source=resource_index&utm_medium=owned_resource&utm_campaign=alert_ownership_matrix",
       "format": "text/csv",
       "controls": 27,
       "fields": 25,
