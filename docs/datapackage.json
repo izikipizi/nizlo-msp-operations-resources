@@ -4,9 +4,9 @@
   "name": "nizlo-rmm-operations-resources",
   "id": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
   "title": "Nizlo RMM Operations Resources",
-  "description": "Forty-seven public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
+  "description": "Forty-eight public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
-  "version": "1.97.0",
+  "version": "1.98.0",
   "created": "2026-11-01",
   "contributors": [
     {
@@ -36,6 +36,8 @@
     "RMM migration",
     "Atera to Syncro migration",
     "RMM evaluation scorecard",
+    "beste RMM voor MSP",
+    "RMM evaluatiematrix",
     "RMM pilot test plan",
     "RMM proof of concept checklist",
     "RMM testing evidence",
@@ -2681,6 +2683,35 @@
           { "name": "evidence_link", "type": "string" }
         ],
         "primaryKey": "control_id"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "beste-rmm-voor-msp-evaluatiematrix",
+      "title": "Beste RMM voor een MSP: Nederlandse evaluatiematrix",
+      "description": "Twintig leveranciersneutrale criteria en twaalf velden voor bewijs, pilottests, slaagcriteria, stopvoorwaarden, gewichten, scores, eigenaars en herkansingen.",
+      "path": "templates/beste-rmm-voor-msp-evaluatiematrix.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 9020,
+      "hash": "sha256:ec975efbf86a7a08d885bd1fc946eab069561671f5fbb221ef714b8710a484e7",
+      "schema": {
+        "fields": [
+          { "name": "criterium_id", "type": "string" },
+          { "name": "categorie", "type": "string" },
+          { "name": "vraag", "type": "string" },
+          { "name": "vereist_bewijs", "type": "string" },
+          { "name": "pilottest", "type": "string" },
+          { "name": "slaagcriterium", "type": "string" },
+          { "name": "stopvoorwaarde", "type": "string" },
+          { "name": "gewicht_1_5", "type": "integer" },
+          { "name": "score_0_2", "type": "integer" },
+          { "name": "eigenaar", "type": "string" },
+          { "name": "bevinding", "type": "string" },
+          { "name": "herkansing_datum", "type": "date" }
+        ],
+        "primaryKey": "criterium_id"
       }
     }
   ]

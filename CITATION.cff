@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If these MSP operations resources support your work, cite the maintained canonical guide."
 title: "Nizlo MSP Operations Resources"
 type: dataset
-version: "1.97.0"
+version: "1.98.0"
 authors:
   - family-names: "Ecklund"
     given-names: "Kip"
@@ -21,6 +21,8 @@ keywords:
   - "remote monitoring and management"
   - "RMM"
   - "Atera to Syncro migration"
+  - "beste RMM voor MSP"
+  - "RMM evaluatiematrix"
   - "RMM network monitoring"
   - "SNMP monitoring checklist"
   - "computer repair managed services"
