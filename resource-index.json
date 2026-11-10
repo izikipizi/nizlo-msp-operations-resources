@@ -918,6 +918,22 @@
       "fields": 14,
       "access": "public",
       "account_required": false
+    },
+    {
+      "id": "atera-to-syncro-export-validation-worksheet",
+      "title": "Atera-to-Syncro export and migration validation worksheet",
+      "category": "migration",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/atera-to-syncro-export-validation-worksheet.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/atera-to-syncro-export-validation-worksheet.csv",
+      "canonical_guide": "https://nizlo.com/guides/rmm-migration-checklist",
+      "format": "text/csv",
+      "controls": 24,
+      "fields": 13,
+      "audience": ["MSP", "IT team"],
+      "source_checked": "2026-11-10",
+      "access": "public",
+      "account_required": false,
+      "relationship_disclosure": "Nizlo maintains the vendor-neutral worksheet and is not affiliated with Atera or Syncro."
     }
   ],
   "templates": [

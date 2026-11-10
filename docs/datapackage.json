@@ -4,9 +4,9 @@
   "name": "nizlo-rmm-operations-resources",
   "id": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
   "title": "Nizlo RMM Operations Resources",
-  "description": "Forty-five public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
+  "description": "Forty-seven public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
-  "version": "1.90.0",
+  "version": "1.97.0",
   "created": "2026-11-01",
   "contributors": [
     {
@@ -34,6 +34,7 @@
     "RMM exit checklist",
     "RMM replacement checklist",
     "RMM migration",
+    "Atera to Syncro migration",
     "RMM evaluation scorecard",
     "RMM pilot test plan",
     "RMM proof of concept checklist",
@@ -2648,6 +2649,36 @@
           { "name": "finding", "type": "string" },
           { "name": "exception_owner", "type": "string" },
           { "name": "retest_date", "type": "date" }
+        ],
+        "primaryKey": "control_id"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "atera-to-syncro-export-validation-worksheet",
+      "title": "Atera-to-Syncro export and migration validation worksheet",
+      "description": "Twenty-four vendor-neutral controls and thirteen fields for preserving Atera source records, validating Syncro's documented importer, piloting destination agents, rebuilding non-transferred controls, reconciling endpoints, and recording acceptance.",
+      "path": "templates/atera-to-syncro-export-validation-worksheet.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 13829,
+      "hash": "sha256:aca8522d5fdaa01f799c7f03d10aad59bdd997809393624aed043821c8ab0727",
+      "schema": {
+        "fields": [
+          { "name": "control_id", "type": "string" },
+          { "name": "phase", "type": "string" },
+          { "name": "record_or_workflow", "type": "string" },
+          { "name": "source_method", "type": "string" },
+          { "name": "destination_method", "type": "string" },
+          { "name": "transfer_scope", "type": "string" },
+          { "name": "required_source_evidence", "type": "string" },
+          { "name": "validation_test", "type": "string" },
+          { "name": "pass_criteria", "type": "string" },
+          { "name": "known_gap_or_risk", "type": "string" },
+          { "name": "owner", "type": "string" },
+          { "name": "status", "type": "string" },
+          { "name": "evidence_link", "type": "string" }
         ],
         "primaryKey": "control_id"
       }

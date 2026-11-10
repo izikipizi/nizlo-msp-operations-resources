@@ -13,6 +13,18 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>Atera-to-Syncro export and migration validation worksheet</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/atera-to-syncro-export-validation-worksheet.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/atera-to-syncro-export-validation-worksheet.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/atera-to-syncro-export-validation-worksheet.csv" />
+    <updated>2026-11-10T00:00:00Z</updated>
+    <category term="Atera" />
+    <category term="Syncro" />
+    <category term="RMM migration" />
+    <category term="data export" />
+    <summary>Preserve Atera source records, validate Syncro's documented importer, pilot destination-agent deployment, rebuild non-transferred controls, reconcile every endpoint, and retain final acceptance evidence.</summary>
+  </entry>
+  <entry>
     <title>macOS RMM pilot evaluation matrix</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/macos-rmm-pilot-evaluation-matrix.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/macos-rmm-pilot-evaluation-matrix.html" />
@@ -748,7 +760,7 @@
     <updated>2026-11-08T00:00:00Z</updated>
     <category term="deployment" />
     <category term="change-management" />
-    <summary>Download forty-six vendor-neutral CSV templates for Windows Update log evidence, RMM agent troubleshooting and repair decisions, alert-to-ticket routing, allowlisting, macOS RMM evaluation, backup restore testing, QBRs, API integrations, requirements, security and audit evidence, vendor exits, quote comparison, alert measurement, SLA response, pilots, access review, client onboarding and offboarding, recurring maintenance, endpoint inventory, deployment, migration, controlled change, and incident response.</summary>
+    <summary>Download forty-seven vendor-neutral CSV templates for Windows Update log evidence, RMM agent troubleshooting and repair decisions, alert-to-ticket routing, allowlisting, macOS RMM evaluation, Atera-to-Syncro migration, backup restore testing, QBRs, API integrations, requirements, security and audit evidence, vendor exits, quote comparison, alert measurement, SLA response, pilots, access review, client onboarding and offboarding, recurring maintenance, endpoint inventory, deployment, controlled change, and incident response.</summary>
   </entry>
   <entry>
     <title>RMM change-window and rollback-plan template</title>
