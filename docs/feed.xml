@@ -13,6 +13,17 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>macOS RMM pilot evaluation matrix</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/macos-rmm-pilot-evaluation-matrix.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/macos-rmm-pilot-evaluation-matrix.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/macos-rmm-pilot-evaluation-matrix.csv" />
+    <updated>2026-11-10T00:00:00Z</updated>
+    <category term="macOS RMM" />
+    <category term="RMM evaluation" />
+    <category term="MDM" />
+    <summary>Evaluate RMM on representative Apple-silicon and Intel Macs across enrollment, identity, privacy permissions, MDM boundaries, monitoring, updates, remote support, security coexistence, audit, removal, and rollout acceptance.</summary>
+  </entry>
+  <entry>
     <title>RMM vs MDM responsibility matrix</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-vs-mdm-responsibility-matrix.csv</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-remote-support-vs-mdm-vs-endpoint-management.html" />
@@ -737,7 +748,7 @@
     <updated>2026-11-08T00:00:00Z</updated>
     <category term="deployment" />
     <category term="change-management" />
-    <summary>Download forty-three vendor-neutral CSV templates for Windows Update log evidence, RMM agent troubleshooting and repair decisions, alert-to-ticket routing, allowlisting, backup restore testing, QBRs, API integrations, requirements, security and audit evidence, vendor exits, quote comparison, alert measurement, SLA response, pilots, access review, client onboarding and offboarding, recurring maintenance, endpoint inventory, deployment, migration, controlled change, and incident response.</summary>
+    <summary>Download forty-six vendor-neutral CSV templates for Windows Update log evidence, RMM agent troubleshooting and repair decisions, alert-to-ticket routing, allowlisting, macOS RMM evaluation, backup restore testing, QBRs, API integrations, requirements, security and audit evidence, vendor exits, quote comparison, alert measurement, SLA response, pilots, access review, client onboarding and offboarding, recurring maintenance, endpoint inventory, deployment, migration, controlled change, and incident response.</summary>
   </entry>
   <entry>
     <title>RMM change-window and rollback-plan template</title>

@@ -892,6 +892,32 @@
       ],
       "access": "public",
       "account_required": false
+    },
+    {
+      "id": "rmm-vs-mdm-responsibility-matrix",
+      "title": "RMM vs MDM responsibility matrix",
+      "category": "selection",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-remote-support-vs-mdm-vs-endpoint-management.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-vs-mdm-responsibility-matrix.csv",
+      "canonical_guide": "https://nizlo.com/guides/rmm-vs-mdm",
+      "format": "text/csv",
+      "controls": 18,
+      "fields": 12,
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "macos-rmm-pilot-evaluation-matrix",
+      "title": "macOS RMM pilot evaluation matrix",
+      "category": "evaluation",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/macos-rmm-pilot-evaluation-matrix.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/macos-rmm-pilot-evaluation-matrix.csv",
+      "canonical_guide": "https://nizlo.com/guides/rmm-for-mac-and-windows",
+      "format": "text/csv",
+      "controls": 24,
+      "fields": 14,
+      "access": "public",
+      "account_required": false
     }
   ],
   "templates": [

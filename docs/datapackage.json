@@ -2620,6 +2620,37 @@
         ],
         "primaryKey": "Decision ID"
       }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "macos-rmm-pilot-evaluation-matrix",
+      "title": "macOS RMM pilot evaluation matrix",
+      "description": "Twenty-four vendor-neutral controls and fourteen fields for evaluating Apple-silicon and Intel enrollment, RMM and MDM authority, monitoring, updates, remote support, security coexistence, audit, removal, and rollout acceptance.",
+      "path": "templates/macos-rmm-pilot-evaluation-matrix.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 10266,
+      "hash": "sha256:7125b5da11bfcafff3c2eaf5ab1f632455ee44ed2e97a48d9cc0dbfeaad8ae92",
+      "schema": {
+        "fields": [
+          { "name": "control_id", "type": "string" },
+          { "name": "area", "type": "string" },
+          { "name": "evaluation_control", "type": "string" },
+          { "name": "required_evidence", "type": "string" },
+          { "name": "pilot_test", "type": "string" },
+          { "name": "pass_criteria", "type": "string" },
+          { "name": "stop_condition", "type": "string" },
+          { "name": "platform_scope", "type": "string" },
+          { "name": "rmm_owner", "type": "string" },
+          { "name": "mdm_or_security_owner", "type": "string" },
+          { "name": "status", "type": "string" },
+          { "name": "finding", "type": "string" },
+          { "name": "exception_owner", "type": "string" },
+          { "name": "retest_date", "type": "date" }
+        ],
+        "primaryKey": "control_id"
+      }
     }
   ]
 }
