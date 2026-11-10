@@ -5,7 +5,7 @@
     "url": "https://nizlo.com/",
     "resources_url": "https://nizlo.com/tools"
   },
-  "updated": "2026-11-09",
+  "updated": "2026-11-10",
   "resources": [
     {
       "id": "rmm-alert-not-creating-ticket-troubleshooting-checklist",
@@ -64,6 +64,19 @@
       "access": "public",
       "account_required": false,
       "relationship_disclosure": "Nizlo maintains the checklist and does not currently claim SNMP or network-discovery support."
+    },
+    {
+      "id": "rmm-vs-mdm-responsibility-matrix",
+      "title": "RMM vs MDM responsibility matrix",
+      "category": "selection",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-remote-support-vs-mdm-vs-endpoint-management.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-vs-mdm-responsibility-matrix.csv",
+      "canonical_guide": "https://nizlo.com/guides/rmm-vs-mdm",
+      "format": "text/csv",
+      "controls": 18,
+      "fields": 12,
+      "access": "public",
+      "account_required": false
     },
     {
       "id": "rmm-vendor-exit-plan",

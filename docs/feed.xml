@@ -13,6 +13,18 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>RMM vs MDM responsibility matrix</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-vs-mdm-responsibility-matrix.csv</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-remote-support-vs-mdm-vs-endpoint-management.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-vs-mdm-responsibility-matrix.csv" />
+    <updated>2026-11-10T00:00:00Z</updated>
+    <category term="RMM" />
+    <category term="MDM" />
+    <category term="responsibility matrix" />
+    <category term="template" />
+    <summary>Assign one system of authority, supporting tool, named owner, evidence source, conflict risk, pilot test, exception owner, and review date across eighteen overlapping RMM and MDM control domains.</summary>
+  </entry>
+  <entry>
     <title>MSP client onboarding go-live acceptance record</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-client-onboarding-go-live-acceptance.csv</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-onboarding-evidence-register.html" />
