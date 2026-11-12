@@ -319,6 +319,19 @@
       "account_required": false
     },
     {
+      "id": "rmm-quote-normalization-calculator",
+      "title": "RMM quote normalization calculator",
+      "category": "pricing",
+      "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html",
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false,
+      "relationship_disclosure": "Nizlo maintains the vendor-neutral calculator and sells RMM software."
+    },
+    {
       "id": "rmm-contract-renewal-deadline-calculator",
       "title": "RMM contract renewal deadline calculator",
       "category": "pricing",

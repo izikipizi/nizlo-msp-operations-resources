@@ -465,11 +465,21 @@
     <title>RMM pricing calculator and free cost tools</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-calculators.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-calculators.html" />
-    <updated>2026-11-06T00:00:00Z</updated>
+    <updated>2026-11-12T00:00:00Z</updated>
     <category term="calculator" />
     <category term="pricing" />
     <category term="roi" />
-    <summary>Use five free, no-signup tools to compare RMM pricing, model common pricing structures, estimate migration cost and break-even, calculate contract renewal deadlines, and build an ROI case.</summary>
+    <summary>Use six free, no-signup tools to normalize RMM quotes, compare public pricing, model common pricing structures, estimate migration cost and break-even, calculate renewal deadlines, and build an ROI case.</summary>
+  </entry>
+  <entry>
+    <title>RMM quote normalization calculator</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html" />
+    <updated>2026-11-12T00:00:00Z</updated>
+    <category term="pricing" />
+    <category term="quote" />
+    <category term="calculator" />
+    <summary>Normalize base fees, endpoint and technician overages, add-ons, minimums, discounts, one-time fees, and contract terms into comparable recurring, first-year, contract, and per-endpoint costs.</summary>
   </entry>
   <entry>
     <title>RMM contract renewal deadline calculator</title>
