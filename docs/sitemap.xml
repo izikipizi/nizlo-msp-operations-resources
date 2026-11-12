@@ -441,6 +441,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-api-capability-comparison-matrix.csv</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-session-authorization-checklist.html</loc>
     <lastmod>2026-11-07</lastmod>
     <changefreq>yearly</changefreq>
