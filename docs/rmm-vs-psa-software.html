@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>RMM vs PSA Software: Differences, Integration, and Buyer Checks</title>
-    <meta name="description" content="Compare RMM and PSA software across endpoint operations, tickets, contracts, time, billing, SLAs, data ownership, integration, and the evidence to test before buying." />
+    <meta name="description" content="Compare RMM, PSA, all-in-one, and separate-stack options across operations, cost, security, reliability, integration, reporting, support, and exit evidence." />
     <link rel="canonical" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-psa-software.html" />
     <link rel="alternate" type="application/atom+xml" title="Nizlo MSP Operations Resources" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
     <meta name="robots" content="index,follow,max-image-preview:large" />
@@ -27,7 +27,7 @@
             "headline": "RMM vs PSA Software: Differences, Integration, and Buyer Checks",
             "description": "A vendor-neutral guide to the different operating centers of RMM and PSA software and the integration evidence MSPs should test before buying.",
             "datePublished": "2026-11-07",
-            "dateModified": "2026-11-07",
+            "dateModified": "2026-11-12",
             "author": { "@type": "Person", "name": "Kip Ecklund" },
             "publisher": { "@type": "Organization", "name": "Nizlo", "url": "https://nizlo.com/" },
             "mainEntityOfPage": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-psa-software.html",
@@ -66,7 +66,7 @@
       <p class="eyebrow">Vendor-neutral buying guide</p>
       <h1>RMM vs PSA software: endpoint operations or service-business operations?</h1>
       <p class="lede"><strong>Short answer:</strong> RMM centers on the device and the work performed on it. PSA centers on the customer request, agreement, technician effort, service obligation, and commercial result. MSPs often use both, but a bundle does not remove the need to define which system owns each record and what happens when synchronization fails.</p>
-      <div class="actions"><a class="button primary" href="#checks">Use the 10 buyer checks</a><a class="button" href="rmm-api-integration-preflight-checklist.html">Test the integration</a><a class="button" href="https://nizlo.com/guides/what-is-rmm?utm_source=github_pages&amp;utm_medium=authority_bridge&amp;utm_campaign=rmm_vs_psa&amp;utm_content=what_is_rmm">Learn what RMM does</a></div>
+      <div class="actions"><a class="button primary" href="templates/rmm-psa-all-in-one-decision-matrix.csv" download>Download the all-in-one decision matrix</a><a class="button" href="#checks">Use the 10 buyer checks</a><a class="button" href="rmm-api-integration-preflight-checklist.html">Test the integration</a><a class="button" href="https://nizlo.com/guides/what-is-rmm?utm_source=github_pages&amp;utm_medium=authority_bridge&amp;utm_campaign=rmm_vs_psa&amp;utm_content=what_is_rmm">Learn what RMM does</a></div>
 
       <section aria-labelledby="center-title">
         <h2 id="center-title">The operating center is different</h2>
@@ -107,6 +107,18 @@
         <p class="note"><strong>Built-in ticketing is not automatically a full PSA.</strong> An RMM may create, assign, update, and close operational tickets without owning contracts, project accounting, technician utilization, procurement, invoicing, or profitability. Use the <a href="https://nizlo.com/solutions/rmm-with-ticketing?utm_source=github_pages&amp;utm_medium=authority_bridge&amp;utm_campaign=rmm_with_ticketing&amp;utm_content=rmm_psa_boundary">RMM-with-ticketing workflow guide</a> to define the alert-to-ticket boundary, then verify separately which commercial and service-delivery records still need a PSA.</p>
       </section>
 
+      <section aria-labelledby="model-title">
+        <h2 id="model-title">All-in-one suite or separate RMM and PSA?</h2>
+        <p class="lede">Do not score the number of logos in the stack. Score the operating result. The downloadable matrix applies the same 18 weighted checks to both models so a convenient bundle does not receive automatic credit and a flexible separate stack does not hide integration labor.</p>
+        <div class="grid">
+          <article class="card"><h3>When an all-in-one can win</h3><p>One identity, shared customer and device context, native alert-to-ticket behavior, fewer contracts, coordinated support, and consolidated reporting remove measured work without weakening a critical workflow.</p></article>
+          <article class="card"><h3>When a separate stack can win</h3><p>Best-fit depth, independent replacement, clearer system ownership, stronger failure isolation, or better commercial terms outweigh the tested cost of integration and reconciliation.</p></article>
+          <article class="card"><h3>What does not prove either case</h3><p>A lower headline price, a longer feature list, an available connector, an AI label, or a successful demo. Use current quotes, representative records, controlled failures, exports, technician timing, and named acceptance owners.</p></article>
+        </div>
+        <p class="note"><strong>Use the same denominator.</strong> Compare complete cost for the same endpoints, technicians, required modules, retention, implementation, support, contract term, administration, exception handling, integration monitoring, and exit work. Then model growth and contraction instead of freezing the decision at today's fleet.</p>
+        <div class="actions"><a class="button primary" href="templates/rmm-psa-all-in-one-decision-matrix.csv" download>Open the 18-check CSV</a><a class="button" href="rmm-quote-normalization-calculator.html">Normalize vendor quotes</a><a class="button" href="rmm-trial-go-no-go-decision-checklist.html">Close the pilot</a></div>
+      </section>
+
       <section aria-labelledby="pilot-title">
         <h2 id="pilot-title">A bounded integration pilot</h2>
         <div class="grid">
@@ -129,6 +141,6 @@
       <aside class="note"><strong>Repair-shop workflow boundary:</strong> use the <a href="https://nizlo.com/guides/repair-shop-software-vs-rmm?utm_source=github_pages&amp;utm_medium=authority_bridge&amp;utm_campaign=repair_shop_software_vs_rmm&amp;utm_content=rmm_psa_comparison">repair-shop software vs RMM guide</a> to identify which intake, estimate, parts, invoice, ticket, asset, monitoring, patching, automation, and remote-support records need a repair platform, PSA, RMM, or an explicit integration.</aside>
       <aside class="note"><strong>Relationship disclosure:</strong> this vendor-neutral guide is maintained by the Nizlo team. Nizlo develops RMM and IT-management software; it does not claim to replace every PSA workflow or pass every control above. Product scope changes, so verify current capabilities directly and test with authorized non-critical records.</aside>
     </main>
-    <footer class="wrap"><span>Maintained by Nizlo · Published November 7, 2026</span><span><a href="rmm-api-integration-preflight-checklist.html">Integration checklist</a> · <a href="rmm-evaluation-scorecard-template.html">RMM scorecard</a> · <a href="./">Resource library</a></span></footer>
+    <footer class="wrap"><span>Maintained by Nizlo · Updated November 12, 2026</span><span><a href="templates/rmm-psa-all-in-one-decision-matrix.csv">All-in-one matrix</a> · <a href="rmm-api-integration-preflight-checklist.html">Integration checklist</a> · <a href="rmm-evaluation-scorecard-template.html">RMM scorecard</a> · <a href="./">Resource library</a></span></footer>
   </body>
 </html>

@@ -62,9 +62,15 @@
   </url>
   <url>
     <loc>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-psa-software.html</loc>
-    <lastmod>2026-11-07</lastmod>
-    <changefreq>yearly</changefreq>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-psa-all-in-one-decision-matrix.csv</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://izikipizi.github.io/nizlo-msp-operations-resources/msp-service-desk-diagnostic-handoff-checklist.html</loc>

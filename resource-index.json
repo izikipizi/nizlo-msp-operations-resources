@@ -894,17 +894,21 @@
     },
     {
       "id": "rmm-vs-psa-software",
-      "title": "RMM vs PSA software: 10 buyer checks",
+      "title": "RMM vs PSA software and all-in-one decision matrix",
       "category": "selection",
-      "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-psa-software.html",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-psa-software.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-psa-all-in-one-decision-matrix.csv",
       "canonical_guide": "https://nizlo.com/guides/what-is-rmm?utm_source=resource_index&utm_medium=resource&utm_campaign=rmm_vs_psa",
-      "controls": 10,
+      "format": "text/csv",
+      "controls": 18,
+      "fields": 12,
       "audience": [
         "MSP",
         "IT service provider"
       ],
       "access": "public",
-      "account_required": false
+      "account_required": false,
+      "relationship_disclosure": "Nizlo maintains the matrix; it is designed to compare either stack model without assuming a preferred result."
     },
     {
       "id": "rmm-vs-mdm-responsibility-matrix",
