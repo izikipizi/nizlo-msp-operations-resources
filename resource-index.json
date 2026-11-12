@@ -966,6 +966,21 @@
       "access": "public",
       "account_required": false,
       "relationship_disclosure": "Nizlo maintains the vendor-neutral worksheet and is not affiliated with Atera or Syncro."
+    },
+    {
+      "id": "rmm-continuity-drill-checklist",
+      "title": "RMM continuity drill checklist",
+      "category": "operations",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-continuity-drill-checklist.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-continuity-drill-checklist.csv",
+      "canonical_guide": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-continuity-drill-checklist.html",
+      "format": "text/csv",
+      "controls": 18,
+      "fields": 13,
+      "audience": ["MSP", "IT operations", "service desk", "security"],
+      "relationship_disclosure": "Nizlo maintains this vendor-neutral continuity exercise template.",
+      "access": "public",
+      "account_required": false
     }
   ],
   "templates": [

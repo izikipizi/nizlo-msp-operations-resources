@@ -948,4 +948,13 @@
     <category term="operations" /><category term="template" /><category term="planning" />
     <summary>Download a vendor-neutral 24-item register for turning business goals, evidence, lifecycle dates, risk, projects, dependencies, budgets, and ownership into a measurable MSP technology roadmap.</summary>
   </entry>
+  <entry>
+    <title>RMM continuity drill checklist</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-continuity-drill-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-continuity-drill-checklist.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-continuity-drill-checklist.csv" />
+    <updated>2026-11-12T00:00:00Z</updated>
+    <category term="continuity" /><category term="operations" /><category term="template" />
+    <summary>Run a bounded 18-control exercise for independent RMM outage detection, alternate operations, recovery, reconciliation, and corrective-action retesting.</summary>
+  </entry>
 </feed>

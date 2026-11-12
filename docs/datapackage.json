@@ -6,7 +6,7 @@
   "title": "Nizlo RMM Operations Resources",
   "description": "Fifty catalogued, vendor-neutral CSV template datasets, one supporting incident-postmortem CSV, and one source-dated public RMM pricing comparison dataset.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
-  "version": "1.103.0",
+  "version": "1.104.0",
   "created": "2026-11-01",
   "contributors": [
     {
@@ -536,6 +536,24 @@
           { "name": "Notes", "type": "string" }
         ],
         "primaryKey": "Item ID"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "rmm-continuity-drill-checklist",
+      "title": "RMM continuity drill checklist",
+      "description": "Eighteen controls for testing independent RMM outage detection, alternate operations, recovery, reconciliation, and corrective-action retesting.",
+      "path": "templates/rmm-continuity-drill-checklist.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 4405,
+      "hash": "sha256:c42070540591bd62faea50c4e6180a0f1b71d35b6cc18d92f25a5128e88b3f79",
+      "schema": {
+        "fields": [
+          {"name":"Phase","type":"string"},{"name":"Control ID","type":"string"},{"name":"Drill question","type":"string"},{"name":"Required evidence","type":"string"},{"name":"Pass criteria","type":"string"},{"name":"Stop condition","type":"string"},{"name":"Owner","type":"string"},{"name":"Status","type":"string"},{"name":"Evidence link","type":"string"},{"name":"Corrective action","type":"string"},{"name":"Due date","type":"date"},{"name":"Retest date","type":"date"},{"name":"Notes","type":"string"}
+        ],
+        "primaryKey": "Control ID"
       }
     },
     {
