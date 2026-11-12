@@ -267,6 +267,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-go-no-go-decision-checklist.html</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-trial-go-no-go-decision-checklist.csv</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-deployment-readiness-template.html</loc>
     <lastmod>2026-11-07</lastmod>
     <changefreq>yearly</changefreq>

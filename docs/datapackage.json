@@ -4,9 +4,9 @@
   "name": "nizlo-rmm-operations-resources",
   "id": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
   "title": "Nizlo RMM Operations Resources",
-  "description": "Forty-nine catalogued, vendor-neutral CSV template datasets, one supporting incident-postmortem CSV, and one source-dated public RMM pricing comparison dataset.",
+  "description": "Fifty catalogued, vendor-neutral CSV template datasets, one supporting incident-postmortem CSV, and one source-dated public RMM pricing comparison dataset.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
-  "version": "1.98.2",
+  "version": "1.99.0",
   "created": "2026-11-01",
   "contributors": [
     {
@@ -2743,6 +2743,38 @@
           { "name": "herkansing_datum", "type": "date" }
         ],
         "primaryKey": "criterium_id"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "rmm-trial-go-no-go-decision-checklist",
+      "title": "RMM trial go/no-go decision checklist",
+      "description": "Fifteen vendor-neutral gates for converting RMM pilot evidence into a go, limited-go, remediate-and-retest, or no-go decision.",
+      "path": "templates/rmm-trial-go-no-go-decision-checklist.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 5031,
+      "hash": "sha256:9904e30290d5af63d9c952750ae1c0fdf9532d489c3edc19dadbdfbae2040111",
+      "schema": {
+        "fields": [
+          { "name": "gate_id", "type": "string" },
+          { "name": "category", "type": "string" },
+          { "name": "decision_question", "type": "string" },
+          { "name": "required_evidence", "type": "string" },
+          { "name": "pass_condition", "type": "string" },
+          { "name": "stop_condition", "type": "string" },
+          { "name": "owner", "type": "string" },
+          { "name": "approver", "type": "string" },
+          { "name": "result", "type": "string" },
+          { "name": "evidence_link", "type": "string" },
+          { "name": "exception_or_risk", "type": "string" },
+          { "name": "remediation_owner", "type": "string" },
+          { "name": "due_date_utc", "type": "datetime" },
+          { "name": "decision", "type": "string" },
+          { "name": "notes", "type": "string" }
+        ],
+        "primaryKey": "gate_id"
       }
     }
   ]

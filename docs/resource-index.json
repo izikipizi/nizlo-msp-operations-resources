@@ -5,7 +5,7 @@
     "url": "https://nizlo.com/",
     "resources_url": "https://nizlo.com/tools"
   },
-  "updated": "2026-11-11",
+  "updated": "2026-11-12",
   "resources": [
     {
       "id": "rmm-alert-not-creating-ticket-troubleshooting-checklist",
@@ -1157,6 +1157,19 @@
       "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-pilot-test-evidence-pack.csv",
       "format": "text/csv",
       "controls": 25,
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "rmm-trial-go-no-go-decision-checklist",
+      "title": "RMM trial go/no-go decision checklist",
+      "category": "evaluation",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-go-no-go-decision-checklist.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-trial-go-no-go-decision-checklist.csv",
+      "canonical_guide": "https://nizlo.com/solutions/rmm-free-trial",
+      "format": "text/csv",
+      "controls": 15,
+      "fields": 15,
       "access": "public",
       "account_required": false
     },
