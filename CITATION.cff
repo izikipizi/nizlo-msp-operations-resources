@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If these MSP operations resources support your work, cite the maintained canonical guide."
 title: "Nizlo MSP Operations Resources"
 type: dataset
-version: "1.99.0"
+version: "1.99.1"
 authors:
   - family-names: "Ecklund"
     given-names: "Kip"
@@ -13,8 +13,8 @@ url: "https://nizlo.com/tools"
 repository-code: "https://github.com/izikipizi/nizlo-msp-operations-resources"
 identifiers:
   - type: swh
-    value: "swh:1:snp:2c19290a7cf22c46c8156805857030fbd0e17a2f"
-    description: "Software Heritage snapshot containing release v1.89.0 and repository history through commit ac393d9"
+    value: "swh:1:snp:d417367333aa09a6ab20a8078a3831c39652ed44"
+    description: "Software Heritage snapshot containing release v1.99.0 and repository history through commit fe2c7bb"
 keywords:
   - "managed service provider"
   - "MSP"
