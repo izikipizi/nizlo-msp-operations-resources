@@ -6,7 +6,7 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-10T00:00:00Z</updated>
+  <updated>2026-11-11T00:00:00Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
@@ -317,10 +317,10 @@
     <summary>Download a free 20-field CSV report template and calculate strict verified patch compliance from an explicit endpoint denominator, with independent field context for scope, stale evidence, exception ownership, next actions, and verification.</summary>
   </entry>
   <entry>
-    <title>RMM vs Intune vs MDM vs endpoint management</title>
+    <title>RMM vs MDM: differences, ownership, and buyer map</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-remote-support-vs-mdm-vs-endpoint-management.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-remote-support-vs-mdm-vs-endpoint-management.html" />
-    <updated>2026-11-07T00:00:00Z</updated>
+    <updated>2026-11-11T00:00:00Z</updated>
     <category term="selection" />
     <category term="endpoint-management" />
     <category term="comparison" />

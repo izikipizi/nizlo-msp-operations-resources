@@ -5,7 +5,7 @@
     "url": "https://nizlo.com/",
     "resources_url": "https://nizlo.com/tools"
   },
-  "updated": "2026-11-10",
+  "updated": "2026-11-11",
   "resources": [
     {
       "id": "rmm-alert-not-creating-ticket-troubleshooting-checklist",
@@ -867,7 +867,7 @@
     },
     {
       "id": "rmm-vs-remote-support-vs-mdm-vs-endpoint-management",
-      "title": "RMM vs Intune vs MDM vs endpoint management",
+      "title": "RMM vs MDM: differences, ownership, and buyer map",
       "category": "selection",
       "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-remote-support-vs-mdm-vs-endpoint-management.html",
       "canonical_guide": "https://nizlo.com/guides/rmm-vs-intune?utm_source=resource_index&utm_medium=resource&utm_campaign=rmm_vs_intune_buyer_map",
