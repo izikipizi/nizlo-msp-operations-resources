@@ -939,4 +939,13 @@
     <category term="template" />
     <summary>Download a vendor-neutral fifteen-field CSV for recording endpoint, access, patching, security, monitoring, and service exceptions from request through approval, review, expiry, and closure.</summary>
   </entry>
+  <entry>
+    <title>MSP technology roadmap and vCIO template</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/msp-technology-roadmap-vcio-template.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/msp-technology-roadmap-vcio-template.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-technology-roadmap-register.csv" />
+    <updated>2026-11-12T00:00:00Z</updated>
+    <category term="operations" /><category term="template" /><category term="planning" />
+    <summary>Download a vendor-neutral 24-item register for turning business goals, evidence, lifecycle dates, risk, projects, dependencies, budgets, and ownership into a measurable MSP technology roadmap.</summary>
+  </entry>
 </feed>

@@ -6,7 +6,7 @@
   "title": "Nizlo RMM Operations Resources",
   "description": "Fifty catalogued, vendor-neutral CSV template datasets, one supporting incident-postmortem CSV, and one source-dated public RMM pricing comparison dataset.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
-  "version": "1.100.0",
+  "version": "1.103.0",
   "created": "2026-11-01",
   "contributors": [
     {
@@ -498,6 +498,44 @@
           { "name": "decision_notes", "type": "string" }
         ],
         "primaryKey": "question_id"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "msp-technology-roadmap-register",
+      "title": "MSP technology roadmap and vCIO register",
+      "description": "Twenty-four planning items and twenty-one fields for connecting business goals, current-state evidence, lifecycle dates, risk, target states, initiatives, dependencies, cost, owners, decisions, success measures, and review dates.",
+      "path": "templates/msp-technology-roadmap-register.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 4142,
+      "hash": "sha256:6f5be7b11603fd2ddd01eec00b47b9277ed276cf4acb7bedbced0c2c597fbc2a",
+      "schema": {
+        "fields": [
+          { "name": "Area", "type": "string" },
+          { "name": "Item ID", "type": "string" },
+          { "name": "Review question", "type": "string" },
+          { "name": "Current-state evidence", "type": "string" },
+          { "name": "Current state", "type": "string" },
+          { "name": "Risk or opportunity", "type": "string" },
+          { "name": "Priority", "type": "string" },
+          { "name": "Target state", "type": "string" },
+          { "name": "Initiative", "type": "string" },
+          { "name": "Provider owner", "type": "string" },
+          { "name": "Customer owner", "type": "string" },
+          { "name": "Dependency", "type": "string" },
+          { "name": "Estimated cost", "type": "string" },
+          { "name": "Target quarter", "type": "string" },
+          { "name": "Decision needed", "type": "string" },
+          { "name": "Decision owner", "type": "string" },
+          { "name": "Status", "type": "string" },
+          { "name": "Success measure", "type": "string" },
+          { "name": "Evidence link", "type": "string" },
+          { "name": "Next review date", "type": "date" },
+          { "name": "Notes", "type": "string" }
+        ],
+        "primaryKey": "Item ID"
       }
     },
     {

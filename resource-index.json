@@ -1341,6 +1341,21 @@
       "relationship_disclosure": "Nizlo onderhoudt deze leveranciersneutrale matrix en kan zelf als kandidaat worden beoordeeld.",
       "access": "public",
       "account_required": false
+    },
+    {
+      "id": "msp-technology-roadmap-vcio-template",
+      "title": "MSP technology roadmap and vCIO register",
+      "category": "operations",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/msp-technology-roadmap-vcio-template.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-technology-roadmap-register.csv",
+      "canonical_guide": "https://nizlo.com/guides/msp-client-onboarding-checklist",
+      "format": "text/csv",
+      "controls": 24,
+      "fields": 21,
+      "audience": ["MSP", "vCIO", "IT consultant", "internal IT"],
+      "relationship_disclosure": "Nizlo maintains this vendor-neutral technology planning template.",
+      "access": "public",
+      "account_required": false
     }
   ],
   "datasets": [
