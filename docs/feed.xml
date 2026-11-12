@@ -13,6 +13,15 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>MSP CVE remediation evidence register</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/msp-cve-remediation-evidence-register.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/msp-cve-remediation-evidence-register.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-cve-remediation-evidence-register.csv" />
+    <updated>2026-11-12T00:00:00Z</updated>
+    <category term="CVE remediation" /><category term="vulnerability management" /><category term="MSP security" />
+    <summary>Track vulnerability intake, exposed-device scope, risk priority, security-to-IT ownership, canary deployment, rollout failures, compensating controls, independent validation, residual risk, and closure across 24 controls.</summary>
+  </entry>
+  <entry>
     <title>Beste RMM voor een MSP: Nederlandse evaluatiematrix</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/beste-rmm-voor-msp-evaluatiematrix.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/beste-rmm-voor-msp-evaluatiematrix.html" />

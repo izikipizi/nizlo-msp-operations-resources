@@ -8,6 +8,21 @@
   "updated": "2026-11-12",
   "resources": [
     {
+      "id": "msp-cve-remediation-evidence-register",
+      "title": "MSP CVE remediation evidence register",
+      "category": "security",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/msp-cve-remediation-evidence-register.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-cve-remediation-evidence-register.csv",
+      "canonical_guide": "https://nizlo.com/guides/windows-patch-management-checklist?utm_source=resource_index&utm_medium=resource&utm_campaign=cve_remediation_register",
+      "format": "text/csv",
+      "controls": 24,
+      "fields": 13,
+      "audience": ["MSP", "IT team", "security team"],
+      "access": "public",
+      "account_required": false,
+      "relationship_disclosure": "Nizlo maintains the register; the workflow is vendor-neutral."
+    },
+    {
       "id": "rmm-alert-not-creating-ticket-troubleshooting-checklist",
       "title": "RMM alert not creating a ticket troubleshooting checklist",
       "category": "operations",
