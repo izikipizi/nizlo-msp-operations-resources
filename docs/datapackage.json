@@ -4,7 +4,7 @@
   "name": "nizlo-rmm-operations-resources",
   "id": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
   "title": "Nizlo RMM Operations Resources",
-  "description": "Forty-nine public, vendor-neutral CSV templates plus one source-dated public RMM pricing comparison dataset.",
+  "description": "Forty-nine catalogued, vendor-neutral CSV template datasets, one supporting incident-postmortem CSV, and one source-dated public RMM pricing comparison dataset.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
   "version": "1.98.2",
   "created": "2026-11-01",
@@ -2433,6 +2433,37 @@
           { "name": "notes", "type": "string" }
         ],
         "primaryKey": "control_id"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "rmm-api-capability-comparison-matrix",
+      "title": "RMM API capability comparison matrix",
+      "description": "Eighteen vendor-neutral API capability rows and fourteen fields for comparing dated vendor evidence and controlled test results without pre-filling product claims.",
+      "path": "templates/rmm-api-capability-comparison-matrix.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 4406,
+      "hash": "sha256:318dd7c78762073f827ced73391d79431a29880484d8929509e7bbabeef3af36",
+      "schema": {
+        "fields": [
+          { "name": "category", "type": "string" },
+          { "name": "capability", "type": "string" },
+          { "name": "minimum_evidence", "type": "string" },
+          { "name": "live_test", "type": "string" },
+          { "name": "vendor_a", "type": "string" },
+          { "name": "vendor_a_source", "type": "string" },
+          { "name": "vendor_a_evidence_date", "type": "date" },
+          { "name": "vendor_a_test_result", "type": "string" },
+          { "name": "vendor_b", "type": "string" },
+          { "name": "vendor_b_source", "type": "string" },
+          { "name": "vendor_b_evidence_date", "type": "date" },
+          { "name": "vendor_b_test_result", "type": "string" },
+          { "name": "gap_owner", "type": "string" },
+          { "name": "decision_notes", "type": "string" }
+        ],
+        "primaryKey": ["category", "capability"]
       }
     },
     {
