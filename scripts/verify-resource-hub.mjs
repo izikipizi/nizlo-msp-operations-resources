@@ -40,6 +40,25 @@ const sitemapUrls = new Set(
 );
 
 const errors = [];
+
+const intuneMatrixCanonical = await readFile(
+  join(docsRoot, "templates", "rmm-vs-mdm-responsibility-matrix.csv"),
+  "utf8",
+);
+const intuneMatrixSubmissionAlias = await readFile(
+  join(
+    docsRoot,
+    "downloads",
+    "rmm-vs-remote-support-vs-mdm-vs-endpoint-management.csv",
+  ),
+  "utf8",
+);
+if (intuneMatrixSubmissionAlias !== intuneMatrixCanonical) {
+  errors.push(
+    "Awesome Intune download alias must match templates/rmm-vs-mdm-responsibility-matrix.csv",
+  );
+}
+
 for (const path of htmlFiles) {
   const relativePath = relative(repositoryRoot, path).replaceAll("\\", "/");
   const source = await readFile(path, "utf8");
