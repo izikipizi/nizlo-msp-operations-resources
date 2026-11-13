@@ -13,6 +13,15 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>RMM checkout and billing readiness checklist</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-checkout-billing-readiness-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-checkout-billing-readiness-checklist.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-checkout-billing-readiness-checklist.csv" />
+    <updated>2026-11-13T00:00:00Z</updated>
+    <category term="RMM checkout" /><category term="RMM billing" /><category term="trial conversion" />
+    <summary>Verify price, trial timing, first-charge exposure, add-ons, payment authority, renewal, cancellation, invoices, and operational approval across sixteen evidence gates.</summary>
+  </entry>
+  <entry>
     <title>MSP client onboarding RACI matrix</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-onboarding-raci-matrix.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-onboarding-raci-matrix.html" />

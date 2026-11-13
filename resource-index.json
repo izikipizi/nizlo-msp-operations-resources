@@ -1221,6 +1221,21 @@
       "account_required": false
     },
     {
+      "id": "rmm-checkout-billing-readiness-checklist",
+      "title": "RMM checkout and billing readiness checklist",
+      "category": "evaluation",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-checkout-billing-readiness-checklist.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-checkout-billing-readiness-checklist.csv",
+      "canonical_guide": "https://nizlo.com/guides/rmm-pricing-models",
+      "format": "text/csv",
+      "controls": 16,
+      "fields": 12,
+      "audience": ["MSP", "IT team", "purchasing owner"],
+      "relationship_disclosure": "Nizlo maintains this vendor-neutral checkout and billing evidence checklist.",
+      "access": "public",
+      "account_required": false
+    },
+    {
       "id": "msp-client-onboarding-evidence-register",
       "title": "Free MSP onboarding checklist: discovery, evidence, and go-live",
       "category": "client-lifecycle",
