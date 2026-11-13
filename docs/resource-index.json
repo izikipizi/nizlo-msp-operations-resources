@@ -1145,6 +1145,18 @@
       "account_required": false
     },
     {
+      "id": "rmm-technician-onboarding-training-plan",
+      "title": "RMM technician onboarding and training plan",
+      "category": "operations",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-technician-onboarding-training-plan.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-technician-onboarding-training-plan.csv",
+      "format": "text/csv",
+      "controls": 10,
+      "fields": 12,
+      "access": "public",
+      "account_required": false
+    },
+    {
       "id": "windows-patch-exception-review",
       "title": "Windows patch exception review and closure template",
       "category": "patch-management",

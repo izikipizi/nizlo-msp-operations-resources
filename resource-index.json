@@ -5,7 +5,7 @@
     "url": "https://nizlo.com/",
     "resources_url": "https://nizlo.com/tools"
   },
-  "updated": "2026-11-12",
+  "updated": "2026-11-13",
   "resources": [
     {
       "id": "msp-cve-remediation-evidence-register",
@@ -1160,6 +1160,18 @@
       "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-first-endpoint-acceptance.csv",
       "format": "text/csv",
       "controls": 5,
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "rmm-technician-onboarding-training-plan",
+      "title": "RMM technician onboarding and training plan",
+      "category": "operations",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-technician-onboarding-training-plan.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-technician-onboarding-training-plan.csv",
+      "format": "text/csv",
+      "controls": 10,
+      "fields": 12,
       "access": "public",
       "account_required": false
     },

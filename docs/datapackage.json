@@ -4,7 +4,7 @@
   "name": "nizlo-rmm-operations-resources",
   "id": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
   "title": "Nizlo RMM Operations Resources",
-  "description": "Fifty-one catalogued, vendor-neutral CSV template datasets, one supporting incident-postmortem CSV, and one source-dated public RMM pricing comparison dataset.",
+  "description": "Fifty-six catalogued, vendor-neutral CSV template datasets and one source-dated public RMM pricing comparison dataset.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
   "version": "1.105.0",
   "created": "2026-11-01",
@@ -2897,6 +2897,35 @@
           { "name": "notes", "type": "string" }
         ],
         "primaryKey": "gate_id"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "rmm-technician-onboarding-training-plan",
+      "title": "RMM technician onboarding and training plan",
+      "description": "Ten practical RMM technician exercises with expected outcomes, evidence requirements, pass criteria, stop conditions, owners, due dates, status, and remediation.",
+      "path": "templates/rmm-technician-onboarding-training-plan.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 5154,
+      "hash": "sha256:62fa6c4e4c59beeaea04156050d3acf49c834d1d261a69273aa71d3d98381002",
+      "schema": {
+        "fields": [
+          { "name": "exercise_id", "type": "string" },
+          { "name": "training_area", "type": "string" },
+          { "name": "exercise", "type": "string" },
+          { "name": "expected_outcome", "type": "string" },
+          { "name": "evidence_to_capture", "type": "string" },
+          { "name": "pass_criterion", "type": "string" },
+          { "name": "stop_condition", "type": "string" },
+          { "name": "trainer", "type": "string" },
+          { "name": "technician", "type": "string" },
+          { "name": "due_date", "type": "date" },
+          { "name": "status", "type": "string" },
+          { "name": "remediation_or_notes", "type": "string" }
+        ],
+        "primaryKey": "exercise_id"
       }
     }
   ]
