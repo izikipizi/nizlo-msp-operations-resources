@@ -342,6 +342,7 @@
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-security-evidence-checklist.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-security-evidence-checklist.html" />
     <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-security-evidence-checklist.csv" />
+    <link rel="related" type="text/html" href="https://nizlo.com/guides/rmm-mfa-recovery-code-security-checklist?utm_source=atom&amp;utm_medium=external_resource&amp;utm_campaign=rmm_mfa_recovery_code_security" />
     <updated>2026-11-13T00:00:00Z</updated>
     <category term="security" />
     <category term="RMM" />
