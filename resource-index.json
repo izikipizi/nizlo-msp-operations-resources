@@ -359,6 +359,19 @@
       "account_required": false
     },
     {
+      "id": "msp-client-onboarding-timeline-calculator",
+      "title": "MSP client onboarding timeline calculator",
+      "category": "client-lifecycle",
+      "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-onboarding-timeline-calculator.html",
+      "audience": [
+        "MSP",
+        "IT service provider"
+      ],
+      "access": "public",
+      "account_required": false,
+      "relationship_disclosure": "Nizlo maintains the vendor-neutral calculator and sells RMM software."
+    },
+    {
       "id": "rmm-contract-renewal-checklist-nonrenewal-notice-template",
       "title": "RMM contract renewal checklist and non-renewal notice template",
       "category": "vendor-management",

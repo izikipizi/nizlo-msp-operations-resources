@@ -13,6 +13,14 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>MSP client onboarding timeline calculator</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-onboarding-timeline-calculator.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-onboarding-timeline-calculator.html" />
+    <updated>2026-11-13T00:00:00Z</updated>
+    <category term="MSP onboarding" /><category term="calculator" /><category term="project planning" />
+    <summary>Build an adjustable six-phase MSP client onboarding timeline with business-day scheduling, CSV export, calendar events, and explicit evidence-based go-live gates.</summary>
+  </entry>
+  <entry>
     <title>RMM technician onboarding and training plan</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-technician-onboarding-training-plan.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-technician-onboarding-training-plan.html" />

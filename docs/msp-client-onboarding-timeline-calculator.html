@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Free MSP Client Onboarding Timeline Calculator | Nizlo</title>
+<meta name="description" content="Build a six-phase MSP client onboarding timeline from a start date and phase length. Download the schedule as CSV or calendar events. Free and browser-only." />
+<meta name="robots" content="index,follow,max-image-preview:large" />
+<link rel="canonical" href="https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-onboarding-timeline-calculator.html" />
+<link rel="alternate" type="application/atom+xml" title="Nizlo MSP Operations Resources" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
+<meta property="og:type" content="website" /><meta property="og:title" content="Free MSP Client Onboarding Timeline Calculator" />
+<meta property="og:description" content="Turn an onboarding start date into six evidence-led phases with owners, milestone dates, CSV export, and calendar reminders." />
+<meta property="og:url" content="https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-onboarding-timeline-calculator.html" />
+<meta property="og:image" content="https://nizlo.com/opengraph-image" /><meta name="twitter:card" content="summary_large_image" /><meta name="theme-color" content="#07171d" />
+<script type="application/ld+json">{
+  "@context":"https://schema.org","@type":"WebApplication","name":"MSP Client Onboarding Timeline Calculator",
+  "description":"A browser-only calculator for building an adjustable six-phase MSP client onboarding schedule with CSV and calendar exports.",
+  "url":"https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-onboarding-timeline-calculator.html",
+  "applicationCategory":"BusinessApplication","operatingSystem":"Any","browserRequirements":"JavaScript","isAccessibleForFree":true,"dateModified":"2026-11-13","inLanguage":"en",
+  "creator":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},
+  "featureList":["Six onboarding phases","Adjustable phase length","Business-day scheduling","CSV export","Calendar event export"]
+}</script>
+<script type="application/ld+json">{
+  "@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"How long does MSP client onboarding take?","acceptedAnswer":{"@type":"Answer","text":"There is no universal duration. Scope, access, endpoint count, customer responsiveness, documentation quality, migration work, and acceptance evidence all affect the schedule. This calculator creates an adjustable plan rather than promising a fixed completion time."}},
+    {"@type":"Question","name":"What should happen before an MSP client goes live?","acceptedAnswer":{"@type":"Answer","text":"The provider and customer should reconcile authority, scope, inventory, access, security, monitoring, patching, backup, service desk, documentation, communications, pilot results, exceptions, ownership, and explicit acceptance."}},
+    {"@type":"Question","name":"Does the calculator upload customer information?","acceptedAnswer":{"@type":"Answer","text":"No. The calculation and exports are created in the browser. The page does not submit or store the entered project name or dates."}}
+  ]
+}</script>
+<style>
+:root{color-scheme:dark;--bg:#06141a;--panel:#0b222b;--line:#21424c;--text:#edf8fa;--muted:#abc2c8;--teal:#1dc6c7;--teal2:#8be7e4;--ink:#03282d}*{box-sizing:border-box}body{margin:0;color:var(--text);background:radial-gradient(circle at 80% 0,rgba(29,198,199,.17),transparent 32rem),var(--bg);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.55}a{color:inherit}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--teal2);outline-offset:3px}.wrap{width:min(1100px,calc(100% - 2rem));margin:auto}header{padding:1.1rem 0;border-bottom:1px solid rgba(139,231,228,.13)}nav{display:flex;justify-content:space-between;align-items:center;gap:1rem}.brand{display:flex;align-items:center;gap:.7rem;font-weight:850;text-decoration:none}.mark{display:grid;place-items:center;width:2rem;height:2rem;border-radius:.65rem;background:var(--teal);color:var(--ink)}.back{color:var(--muted)}main{padding:4.4rem 0 4rem}.eyebrow{color:var(--teal2);font-weight:800;text-transform:uppercase;letter-spacing:.12em;font-size:.78rem}h1{max-width:960px;margin:.65rem 0 1rem;font-size:clamp(2.5rem,7vw,5rem);line-height:.98;letter-spacing:-.052em}.lede{max-width:850px;margin:0;color:var(--muted);font-size:1.12rem}.privacy{margin:1.4rem 0 2.2rem;color:var(--teal2);font-weight:750}.calculator{display:grid;grid-template-columns:minmax(300px,.75fr) minmax(0,1.25fr);gap:1.25rem;align-items:start}.panel{padding:1.35rem;border:1px solid var(--line);border-radius:1.15rem;background:linear-gradient(145deg,rgba(14,41,50,.97),rgba(8,28,35,.98));box-shadow:0 20px 60px rgba(0,0,0,.16)}.panel h2{margin:.1rem 0 .3rem;font-size:1.45rem}.hint{margin:0 0 1.25rem;color:var(--muted);font-size:.94rem}.fields{display:grid;gap:1rem}.field{display:grid;gap:.38rem}label{font-weight:760}.sub{display:block;color:var(--muted);font-size:.82rem;font-weight:500}input{width:100%;padding:.78rem .82rem;border:1px solid var(--line);border-radius:.7rem;background:#061a21;color:var(--text);font:inherit}.actions{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1rem}.button{display:inline-flex;align-items:center;justify-content:center;padding:.76rem .95rem;border-radius:.72rem;border:1px solid var(--line);background:transparent;color:var(--text);font:inherit;font-weight:800;text-decoration:none;cursor:pointer}.primary{background:var(--teal);color:var(--ink);border-color:var(--teal)}.timeline{display:grid;gap:.75rem;margin-top:1rem}.phase{display:grid;grid-template-columns:2.1rem minmax(0,1fr) auto;gap:.8rem;align-items:start;padding:.9rem;border:1px solid var(--line);border-radius:.85rem;background:rgba(5,24,30,.72)}.num{display:grid;place-items:center;width:2.1rem;height:2.1rem;border-radius:50%;background:var(--teal);color:var(--ink);font-weight:900}.phase h3{margin:0;font-size:1rem}.phase p{margin:.15rem 0 0;color:var(--muted);font-size:.9rem}.dates{text-align:right;white-space:nowrap}.dates strong,.dates span{display:block}.dates span{color:var(--muted);font-size:.82rem}.method,.note,.faq{margin-top:1.2rem;padding:1.15rem 1.25rem;border-left:4px solid var(--teal);background:var(--panel);color:var(--muted)}.method ol{margin:.6rem 0 0;padding-left:1.25rem}.faq h2{margin:.1rem 0 .8rem;color:var(--text)}.faq h3{margin:1rem 0 .25rem;color:var(--text);font-size:1rem}.faq p{margin:0}.next{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin-top:1.25rem}.next article{padding:1.25rem;border:1px solid var(--line);border-radius:1rem;background:var(--panel)}.next h2{font-size:1.15rem;margin:0 0 .4rem}.next p{color:var(--muted);margin:0 0 .8rem}footer{display:flex;justify-content:space-between;gap:1rem;padding:2rem 0;border-top:1px solid var(--line);color:var(--muted);font-size:.92rem}@media(max-width:850px){main{padding-top:3rem}.calculator,.next{grid-template-columns:1fr}}@media(max-width:600px){.phase{grid-template-columns:2.1rem 1fr}.dates{grid-column:2;text-align:left}nav,footer{align-items:flex-start;flex-direction:column}}
+</style></head><body>
+<header><nav class="wrap"><a class="brand" href="./"><span class="mark">N</span><span>Nizlo MSP Operations Resources</span></a><a class="back" href="msp-client-onboarding-evidence-register.html">Onboarding checklist</a></nav></header>
+<main class="wrap"><div class="eyebrow">Free · Browser only · Vendor neutral</div><h1>Build an MSP client onboarding timeline.</h1>
+<p class="lede">Choose a start date and phase length to schedule six evidence-led onboarding phases. Export the plan as CSV or calendar events, then assign real customer and provider owners in the onboarding register.</p>
+<p class="privacy">Your project name and dates stay in this browser. Nothing is submitted or stored by this page.</p>
+<section class="calculator" aria-label="MSP client onboarding timeline calculator">
+  <form class="panel" id="calculator-form">
+    <h2>Set the schedule</h2><p class="hint">The default is six five-business-day phases. Adjust it to the contracted scope, customer availability, and observed readiness.</p>
+    <div class="fields">
+      <div class="field"><label for="project">Customer or project name <span class="sub">Optional; used only in downloaded files</span></label><input id="project" type="text" maxlength="100" placeholder="New client onboarding" /></div>
+      <div class="field"><label for="start">Project start date</label><input id="start" type="date" required /></div>
+      <div class="field"><label for="length">Business days per phase</label><input id="length" type="number" min="1" max="30" step="1" value="5" required inputmode="numeric" /></div>
+    </div>
+    <div class="actions"><button class="button primary" type="submit">Build timeline</button><button class="button" type="button" id="reset">Reset example</button></div>
+  </form>
+  <section class="panel" aria-live="polite" aria-atomic="true">
+    <h2>Six-phase onboarding plan</h2><p class="hint" id="summary">Choose a start date to create the schedule.</p>
+    <div class="timeline" id="timeline"></div>
+    <div class="actions"><button class="button" type="button" id="copy" disabled>Copy timeline</button><button class="button" type="button" id="csv" disabled>Download CSV</button><button class="button" type="button" id="calendar" disabled>Download calendar</button></div>
+  </section>
+</section>
+<aside class="method"><strong>Do not treat dates as acceptance evidence.</strong><ol><li>Confirm written authority, scope, exclusions, customer contacts, provider ownership, and change approval before access work.</li><li>Reconcile the customer inventory, identities, documentation, dependencies, security controls, and service expectations from observed evidence.</li><li>Pilot representative endpoints and workflows before broad deployment.</li><li>Record exceptions, remediation owners, due dates, and retest evidence.</li><li>Require explicit customer and provider acceptance before steady-state support begins.</li></ol></aside>
+<section class="faq" aria-labelledby="faq-title"><h2 id="faq-title">MSP onboarding timeline questions</h2><h3>How long should MSP client onboarding take?</h3><p>There is no universal duration. Use the contracted scope, endpoint count, access readiness, customer response time, migration work, and acceptance requirements to set realistic phase lengths.</p><h3>Why use business days?</h3><p>The calculator skips Saturdays and Sundays so the milestones align with a typical working schedule. It does not know local holidays, blackout dates, or customer-specific calendars.</p><h3>Does reaching the last date mean the customer is live?</h3><p>No. A date is a planning checkpoint. Go-live requires the named evidence, resolved or accepted exceptions, operational ownership, and explicit acceptance.</p></section>
+<section class="next" aria-label="Related MSP onboarding resources"><article><h2>Collect the evidence</h2><p>Coordinate authority, discovery, access, security, service desk, documentation, readiness, and acceptance.</p><a href="msp-client-onboarding-evidence-register.html">Open the onboarding register →</a></article><article><h2>Assign accountability</h2><p>Map customer and MSP responsibility, accountability, consultation, and notification before work begins.</p><a href="msp-client-onboarding-raci-matrix.html">Open the RACI matrix →</a></article><article><h2>Use the detailed plan</h2><p>Adapt thirty evidence-based milestones across a six-week onboarding project.</p><a href="six-week-msp-onboarding-project-plan.html">Open the project plan →</a></article></section>
+<aside class="note"><strong>Relationship disclosure:</strong> Nizlo, a Windows-first RMM and IT-management platform, maintains this vendor-neutral planning tool. It can be used with any MSP toolset and does not claim that Nizlo or another vendor guarantees an onboarding duration. Use Nizlo's <a href="https://nizlo.com/guides/msp-client-onboarding-checklist?utm_source=github_pages&amp;utm_medium=onboarding_calculator&amp;utm_campaign=msp_client_onboarding_timeline">complete MSP client onboarding guide</a> for the evidence-led workflow behind these phases.</aside>
+<aside class="note"><strong>Scheduling limitation:</strong> this page skips weekends only. It does not account for holidays, customer blackout dates, resource capacity, contract dependencies, or the evidence required to pass a phase.</aside>
+</main>
+<footer class="wrap"><span>Maintained by Nizlo · Updated November 13, 2026</span><span><a href="./">Resource library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source</a></span></footer>
+<script>
+(() => {
+  const phases = [
+    ['Authority and scope','Confirm contract, authority, contacts, scope, exclusions, owners, change control, and communication paths.'],
+    ['Discovery and inventory','Observe users, endpoints, sites, networks, identities, applications, vendors, documentation, and dependencies.'],
+    ['Access and service setup','Provision least-privilege access, monitoring, patching, backup, service desk, escalation, and documentation workflows.'],
+    ['Pilot and remediation','Test representative endpoints and support paths, preserve evidence, resolve failures, and record owned exceptions.'],
+    ['Rollout and handoff','Deploy in controlled waves, reconcile coverage, train operators, and hand off runbooks, contacts, and open risks.'],
+    ['Go-live acceptance','Verify operational readiness, customer responsibilities, provider ownership, exception approval, and explicit acceptance.']
+  ];
+  const form = document.getElementById('calculator-form');
+  const start = document.getElementById('start');
+  const length = document.getElementById('length');
+  const project = document.getElementById('project');
+  const timeline = document.getElementById('timeline');
+  const controls = ['copy','csv','calendar'].map(id => document.getElementById(id));
+  const parseDate = value => value ? new Date(`${value}T12:00:00Z`) : null;
+  const formatDate = date => new Intl.DateTimeFormat(undefined,{year:'numeric',month:'short',day:'numeric',timeZone:'UTC'}).format(date);
+  const isoDate = date => date.toISOString().slice(0,10);
+  const addCalendarDays = (date,days) => new Date(date.getTime()+days*86400000);
+  const addBusinessDays = (date,days) => { let result=new Date(date); let added=0; while(added<days){result=addCalendarDays(result,1); if(result.getUTCDay()!==0&&result.getUTCDay()!==6) added++;} return result; };
+  const nextBusinessDay = date => { let result=addCalendarDays(date,1); while(result.getUTCDay()===0||result.getUTCDay()===6) result=addCalendarDays(result,1); return result; };
+  let schedule = [];
+  function calculate(event){
+    if(event) event.preventDefault();
+    const startDate=parseDate(start.value); const days=Number(length.value);
+    if(!startDate||!Number.isInteger(days)||days<1||days>30) return;
+    schedule=[]; let cursor=new Date(startDate); while(cursor.getUTCDay()===0||cursor.getUTCDay()===6) cursor=addCalendarDays(cursor,1);
+    phases.forEach(([name,outcome],index)=>{ const end=addBusinessDays(cursor,days-1); schedule.push({index:index+1,name,outcome,start:new Date(cursor),end}); cursor=nextBusinessDay(end); });
+    timeline.replaceChildren(...schedule.map(item=>{ const article=document.createElement('article'); article.className='phase'; const num=document.createElement('span'); num.className='num'; num.textContent=item.index; const body=document.createElement('div'); const h=document.createElement('h3'); h.textContent=item.name; const p=document.createElement('p'); p.textContent=item.outcome; body.append(h,p); const dates=document.createElement('div'); dates.className='dates'; const strong=document.createElement('strong'); strong.textContent=formatDate(item.start); const span=document.createElement('span'); span.textContent=`through ${formatDate(item.end)}`; dates.append(strong,span); article.append(num,body,dates); return article; }));
+    document.getElementById('summary').textContent=`${days} business day${days===1?'':'s'} per phase · ${formatDate(schedule[0].start)} through ${formatDate(schedule[5].end)} · weekends skipped`;
+    controls.forEach(button=>button.disabled=false);
+  }
+  function setExample(){ const today=new Date(); const date=new Date(Date.UTC(today.getUTCFullYear(),today.getUTCMonth(),today.getUTCDate(),12)); while(date.getUTCDay()===0||date.getUTCDay()===6) date.setUTCDate(date.getUTCDate()+1); start.value=isoDate(date); length.value='5'; project.value=''; calculate(); }
+  function download(contents,type,name){ const blob=new Blob([contents],{type}); const link=document.createElement('a'); link.href=URL.createObjectURL(blob); link.download=name; link.click(); setTimeout(()=>URL.revokeObjectURL(link.href),1000); }
+  form.addEventListener('submit',calculate); [start,length].forEach(input=>input.addEventListener('change',calculate)); document.getElementById('reset').addEventListener('click',setExample);
+  document.getElementById('copy').addEventListener('click',async()=>{ if(!schedule.length)return; const name=project.value.trim()||'MSP client onboarding'; const text=[`${name} timeline`,...schedule.map(item=>`${item.index}. ${item.name}: ${isoDate(item.start)} to ${isoDate(item.end)} — ${item.outcome}`),'','Planning dates do not replace evidence, exception ownership, or explicit go-live acceptance.'].join('\n'); await navigator.clipboard.writeText(text); const button=document.getElementById('copy'); button.textContent='Copied'; setTimeout(()=>button.textContent='Copy timeline',1600); });
+  document.getElementById('csv').addEventListener('click',()=>{ if(!schedule.length)return; const escape=value=>`"${String(value).replace(/"/g,'""')}"`; const rows=[['phase','phase_name','start_date','end_date','required_outcome','customer_owner','msp_owner','status','evidence_link'],...schedule.map(item=>[item.index,item.name,isoDate(item.start),isoDate(item.end),item.outcome,'','','Not started',''])]; download(rows.map(row=>row.map(escape).join(',')).join('\r\n'),'text/csv','msp-client-onboarding-timeline.csv'); });
+  document.getElementById('calendar').addEventListener('click',()=>{ if(!schedule.length)return; const name=(project.value.trim()||'MSP client onboarding').replace(/[\\,;]/g,' '); const stamp=new Date().toISOString().replace(/[-:]/g,'').replace(/\.\d{3}/,''); const compact=date=>isoDate(date).replace(/-/g,''); const events=schedule.map(item=>`BEGIN:VEVENT\r\nUID:msp-onboarding-${stamp}-${item.index}@nizlo.com\r\nDTSTAMP:${stamp}\r\nDTSTART;VALUE=DATE:${compact(item.start)}\r\nDTEND;VALUE=DATE:${compact(addCalendarDays(item.end,1))}\r\nSUMMARY:${name}: ${item.index}. ${item.name}\r\nDESCRIPTION:${item.outcome}\r\nEND:VEVENT`).join('\r\n'); download(`BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nizlo//MSP Onboarding Timeline Calculator//EN\r\nCALSCALE:GREGORIAN\r\n${events}\r\nEND:VCALENDAR\r\n`,'text/calendar','msp-client-onboarding-timeline.ics'); });
+  setExample();
+})();
+</script></body></html>
