@@ -13,6 +13,15 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>MSP client onboarding RACI matrix</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-onboarding-raci-matrix.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-onboarding-raci-matrix.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-client-onboarding-raci-matrix.csv" />
+    <updated>2026-11-13T00:00:00Z</updated>
+    <category term="MSP onboarding" /><category term="RACI matrix" /><category term="client lifecycle" />
+    <summary>Assign customer and MSP accountability, responsibility, consultation, communication, evidence, acceptance, exceptions, and due dates across twenty onboarding workstreams.</summary>
+  </entry>
+  <entry>
     <title>MSP CVE remediation evidence register</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/msp-cve-remediation-evidence-register.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/msp-cve-remediation-evidence-register.html" />
@@ -800,7 +809,7 @@
     <updated>2026-11-08T00:00:00Z</updated>
     <category term="deployment" />
     <category term="change-management" />
-    <summary>Download forty-nine vendor-neutral CSV templates for Windows Update log evidence, RMM evaluation, RMM agent troubleshooting and repair decisions, alert-to-ticket routing, allowlisting, macOS RMM evaluation, Atera-to-Syncro migration, backup restore testing, QBRs, API integrations, requirements, security and audit evidence, vendor exits, quote comparison, alert measurement, SLA response, pilots, access review, client onboarding and offboarding, recurring maintenance, endpoint inventory, deployment, controlled change, and incident response.</summary>
+    <summary>Download vendor-neutral CSV templates for Windows Update log evidence, RMM evaluation, RMM agent troubleshooting and repair decisions, alert-to-ticket routing, allowlisting, macOS RMM evaluation, Atera-to-Syncro migration, backup restore testing, QBRs, API integrations, requirements, security and audit evidence, vendor exits, quote comparison, alert measurement, SLA response, pilots, access review, client onboarding and offboarding, recurring maintenance, endpoint inventory, deployment, controlled change, and incident response.</summary>
   </entry>
   <entry>
     <title>RMM change-window and rollback-plan template</title>

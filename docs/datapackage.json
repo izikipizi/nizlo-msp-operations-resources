@@ -1616,6 +1616,39 @@
     },
     {
       "profile": "tabular-data-resource",
+      "name": "msp-client-onboarding-raci-matrix",
+      "title": "MSP client onboarding RACI matrix",
+      "description": "Twenty vendor-neutral workstreams for assigning customer and MSP accountability, responsibility, consultation, communication, evidence, acceptance, exceptions, and due dates.",
+      "path": "templates/msp-client-onboarding-raci-matrix.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 6126,
+      "hash": "sha256:dc10a0bc845f4c33fb035e4e52456401c60bfe8a1e6f274de5a94d7a0b0626fd",
+      "schema": {
+        "fields": [
+          { "name": "workstream_id", "type": "string" },
+          { "name": "phase", "type": "string" },
+          { "name": "workstream", "type": "string" },
+          { "name": "accountable_party", "type": "string" },
+          { "name": "responsible_party", "type": "string" },
+          { "name": "customer_owner", "type": "string" },
+          { "name": "msp_owner", "type": "string" },
+          { "name": "consulted", "type": "string" },
+          { "name": "informed", "type": "string" },
+          { "name": "required_evidence", "type": "string" },
+          { "name": "acceptance_criterion", "type": "string" },
+          { "name": "status", "type": "string" },
+          { "name": "exception_owner", "type": "string" },
+          { "name": "due_utc", "type": "datetime" },
+          { "name": "evidence_link", "type": "string" },
+          { "name": "notes", "type": "string" }
+        ],
+        "primaryKey": "workstream_id"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
       "name": "six-week-msp-onboarding-project-plan",
       "title": "Six-week MSP onboarding project plan",
       "description": "Thirty milestones for authority, discovery, access, SOP development, lab validation, one controlled pilot, reconciliation, NOC training, acceptance, and handoff.",
