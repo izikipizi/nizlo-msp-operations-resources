@@ -6,7 +6,7 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-12T00:00:00Z</updated>
+  <updated>2026-11-13T00:00:00Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
@@ -289,7 +289,7 @@
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-security-evidence-checklist.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-security-evidence-checklist.html" />
     <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-security-evidence-checklist.csv" />
-    <updated>2026-11-06T00:00:00Z</updated>
+    <updated>2026-11-13T00:00:00Z</updated>
     <category term="security" />
     <category term="RMM" />
     <category term="template" />
@@ -310,7 +310,7 @@
     <title>RMM first endpoint not connecting? Activation troubleshooting checklist</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html" />
-    <updated>2026-11-07T00:00:00Z</updated>
+    <updated>2026-11-13T00:00:00Z</updated>
     <category term="deployment" />
     <category term="troubleshooting" />
     <category term="activation" />
@@ -556,7 +556,7 @@
     <title>RMM pilot test plan and evidence pack</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-pilot-test-evidence-pack.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-pilot-test-evidence-pack.html" />
-    <updated>2026-11-06T00:00:00Z</updated>
+    <updated>2026-11-13T00:00:00Z</updated>
     <category term="evaluation" />
     <category term="pilot" />
     <category term="template" />
@@ -606,7 +606,7 @@
     <title>RMM first-endpoint pilot acceptance checklist</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-acceptance-checklist.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-acceptance-checklist.html" />
-    <updated>2026-11-05T00:00:00Z</updated>
+    <updated>2026-11-13T00:00:00Z</updated>
     <category term="selection" />
     <category term="template" />
     <category term="rmm-pilot" />
@@ -788,7 +788,7 @@
     <title>RMM implementation checklist and rollout plan template</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-deployment-readiness-template.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-deployment-readiness-template.html" />
-    <updated>2026-11-07T00:00:00Z</updated>
+    <updated>2026-11-13T00:00:00Z</updated>
     <category term="deployment" />
     <summary>Use 38 vendor-neutral controls to choose Group Policy, Intune, existing-RMM, manual or provisioning delivery; define silent-install, retry and identity safeguards; troubleshoot failures; pilot; roll back; verify; and close an RMM implementation.</summary>
   </entry>
