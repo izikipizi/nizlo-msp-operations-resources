@@ -1210,6 +1210,21 @@
       "account_required": false
     },
     {
+      "id": "msp-client-onboarding-raci-matrix",
+      "title": "MSP client onboarding RACI matrix",
+      "category": "client-lifecycle",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-onboarding-raci-matrix.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-client-onboarding-raci-matrix.csv",
+      "canonical_guide": "https://nizlo.com/guides/msp-client-onboarding-checklist",
+      "format": "text/csv",
+      "controls": 20,
+      "fields": 16,
+      "audience": ["MSP", "IT consultant", "customer service owner"],
+      "relationship_disclosure": "Nizlo maintains this vendor-neutral onboarding responsibility matrix.",
+      "access": "public",
+      "account_required": false
+    },
+    {
       "id": "msp-client-onboarding-go-live-acceptance",
       "title": "MSP client onboarding go-live acceptance record",
       "category": "client-lifecycle",
