@@ -334,6 +334,19 @@
       "account_required": false
     },
     {
+      "id": "rmm-ticketing-stack-cost-calculator",
+      "title": "RMM and ticketing stack cost calculator",
+      "category": "pricing",
+      "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-ticketing-stack-cost-calculator.html",
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false,
+      "relationship_disclosure": "Nizlo maintains the vendor-neutral calculator and sells RMM software."
+    },
+    {
       "id": "rmm-quote-normalization-calculator",
       "title": "RMM quote normalization calculator",
       "category": "pricing",

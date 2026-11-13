@@ -13,6 +13,14 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>RMM and ticketing stack cost calculator</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-ticketing-stack-cost-calculator.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-ticketing-stack-cost-calculator.html" />
+    <updated>2026-11-13T00:00:00Z</updated>
+    <category term="RMM pricing" /><category term="ticketing" /><category term="PSA" /><category term="calculator" />
+    <summary>Compare two complete RMM and ticketing or PSA stacks across endpoint, technician, platform, add-on, operating labor, implementation, first-year, and 36-month costs.</summary>
+  </entry>
+  <entry>
     <title>MSP client onboarding timeline calculator</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-onboarding-timeline-calculator.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-onboarding-timeline-calculator.html" />
