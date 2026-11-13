@@ -5,8 +5,23 @@
     "url": "https://nizlo.com/",
     "resources_url": "https://nizlo.com/tools"
   },
-  "updated": "2026-11-12",
+  "updated": "2026-11-13",
   "resources": [
+    {
+      "id": "msp-professional-standards-evidence-readiness-checklist",
+      "title": "MSP professional standards evidence readiness checklist",
+      "category": "governance",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/msp-professional-standards-evidence-readiness-checklist.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-professional-standards-evidence-readiness-checklist.csv",
+      "canonical_guide": "https://nizlo.com/guides/msp-client-onboarding-checklist",
+      "format": "text/csv",
+      "controls": 24,
+      "fields": 13,
+      "audience": ["MSP", "IT service provider"],
+      "access": "public",
+      "account_required": false,
+      "relationship_disclosure": "Nizlo maintains this independent, vendor-neutral operating aid; it is not an official standard, certification, audit, or compliance opinion."
+    },
     {
       "id": "rmm-alert-not-creating-ticket-troubleshooting-checklist",
       "title": "RMM alert not creating a ticket troubleshooting checklist",

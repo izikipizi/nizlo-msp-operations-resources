@@ -13,6 +13,15 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>MSP professional standards evidence readiness checklist</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/msp-professional-standards-evidence-readiness-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/msp-professional-standards-evidence-readiness-checklist.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-professional-standards-evidence-readiness-checklist.csv" />
+    <updated>2026-11-13T00:00:00Z</updated>
+    <category term="MSP standards" /><category term="IT service provider governance" /><category term="evidence readiness" />
+    <summary>Organize governance, workforce, service, security, continuity, supplier, customer, exit, and improvement evidence across twenty-four vendor-neutral controls without claiming an unofficial certification.</summary>
+  </entry>
+  <entry>
     <title>RMM checkout and billing readiness checklist</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-checkout-billing-readiness-checklist.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-checkout-billing-readiness-checklist.html" />

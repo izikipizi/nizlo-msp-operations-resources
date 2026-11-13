@@ -6,6 +6,7 @@ Free, public, vendor-neutral field guides, decision aids, calculators, and reusa
 
 | Current task | Recommended starting point |
 | --- | --- |
+| Prepare evidence for developing MSP professional standards | [24-control MSP professional standards evidence-readiness checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/msp-professional-standards-evidence-readiness-checklist.html) |
 | Calculate a contract non-renewal notice deadline | [RMM contract renewal deadline calculator](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-contract-renewal-deadline-calculator.html) |
 | Review an RMM renewal and prepare notice evidence | [RMM contract renewal checklist and non-renewal notice template](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-contract-renewal-checklist-nonrenewal-notice-template.html) |
 | Recover an offline agent without losing evidence | [Repair-or-reinstall decision guide](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-agent-offline-troubleshooting-checklist.html) |
@@ -20,6 +21,8 @@ Free, public, vendor-neutral field guides, decision aids, calculators, and reusa
 | Plan recurring MSP operations | [Daily, weekly, monthly, and quarterly checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/msp-daily-weekly-monthly-maintenance-checklist.html) |
 
 > **Relationship disclosure:** this library is maintained by the Nizlo team. Nizlo offers Windows-first RMM and IT-management software. The resources are designed to remain usable without Nizlo and do not represent independent research, third-party validation, or an endorsement of the product.
+
+Prepare for developing IT-service-provider standards without claiming an unofficial certification with the public [24-control MSP professional standards evidence-readiness checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/msp-professional-standards-evidence-readiness-checklist.html) and its [ungated CSV register](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-professional-standards-evidence-readiness-checklist.csv). It organizes governance, workforce, customer scope, assets, privileged access, service delivery, monitoring, patching, remote operations, logging, recovery, continuity, privacy, suppliers, commercial terms, customer assurance, exit readiness, and corrective-action evidence. It is explicitly independent and is not a GTIA, Texas A&amp;M, CRITS, regulatory, audit, or certification instrument.
 
 When the RMM console, API, agent channel, alerting, automation, or remote access may be unavailable, use the public [RMM continuity drill checklist](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-continuity-drill-checklist.html) and its [18-control CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-continuity-drill-checklist.csv). It tests independent detection, contacts, inventory, identities, alternate operations, recovery, backlog reconciliation, closure, and corrective-action retesting without requiring unsafe production changes.
 

@@ -4,9 +4,9 @@
   "name": "nizlo-rmm-operations-resources",
   "id": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
   "title": "Nizlo RMM Operations Resources",
-  "description": "Fifty catalogued, vendor-neutral CSV template datasets, one supporting incident-postmortem CSV, and one source-dated public RMM pricing comparison dataset.",
+  "description": "Fifty-one catalogued, vendor-neutral CSV template datasets, one supporting incident-postmortem CSV, and one source-dated public RMM pricing comparison dataset.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
-  "version": "1.104.0",
+  "version": "1.105.0",
   "created": "2026-11-01",
   "contributors": [
     {
@@ -91,8 +91,41 @@
     "MSP QBR template",
     "MSP quarterly business review",
     "MSP client reporting"
+    ,"MSP professional standards"
+    ,"IT service provider governance"
+    ,"MSP evidence readiness"
   ],
   "resources": [
+    {
+      "profile": "tabular-data-resource",
+      "name": "msp-professional-standards-evidence-readiness-checklist",
+      "title": "MSP professional standards evidence readiness checklist",
+      "description": "Twenty-four controls and thirteen fields for organizing governance, workforce, customer scope, service, security, continuity, supplier, commercial, assurance, exit, and improvement evidence without claiming an unofficial certification.",
+      "path": "templates/msp-professional-standards-evidence-readiness-checklist.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 7061,
+      "hash": "sha256:33d833d94a360637615594fd6553cddffa5c5db02bffa48a37deea26db7c9fe6",
+      "schema": {
+        "fields": [
+          { "name": "domain", "type": "string" },
+          { "name": "control_id", "type": "string" },
+          { "name": "readiness_check", "type": "string" },
+          { "name": "evidence_to_retain", "type": "string" },
+          { "name": "accountable_owner", "type": "string" },
+          { "name": "review_frequency", "type": "string" },
+          { "name": "status", "type": "string" },
+          { "name": "evidence_location", "type": "string" },
+          { "name": "gap_or_exception", "type": "string" },
+          { "name": "remediation_owner", "type": "string" },
+          { "name": "due_utc", "type": "datetime" },
+          { "name": "last_reviewed_utc", "type": "datetime" },
+          { "name": "notes", "type": "string" }
+        ],
+        "primaryKey": "control_id"
+      }
+    },
     {
       "profile": "tabular-data-resource",
       "name": "rmm-alert-not-creating-ticket-troubleshooting-checklist",
