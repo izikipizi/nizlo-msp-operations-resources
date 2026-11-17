@@ -4,7 +4,7 @@
   "name": "nizlo-rmm-operations-resources",
   "id": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
   "title": "Nizlo RMM Operations Resources",
-  "description": "Fifty-six catalogued, vendor-neutral CSV template datasets and one source-dated public RMM pricing comparison dataset.",
+  "description": "Fifty-seven catalogued, vendor-neutral CSV template datasets and one source-dated public RMM pricing comparison dataset.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
   "version": "1.105.0",
   "created": "2026-11-01",
@@ -1433,6 +1433,40 @@
             "name": "notes",
             "type": "string"
           }
+        ],
+        "primaryKey": "record_id"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "endpoint-stack-alignment-register",
+      "title": "Endpoint tool-stack alignment register",
+      "description": "Seventeen fields for reconciling expected and observed endpoint coverage across RMM, EDR, backup, MDM or UEM, identity, SIEM, vulnerability, and lifecycle systems.",
+      "path": "templates/endpoint-stack-alignment-register.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 3015,
+      "hash": "sha256:cb63e44fdf48bb647ef060c47aa4f70613d2ca6deb1e8602ec453207060ecb8d",
+      "schema": {
+        "fields": [
+          { "name": "record_id", "type": "string" },
+          { "name": "customer_or_department", "type": "string" },
+          { "name": "device_name", "type": "string" },
+          { "name": "durable_device_id", "type": "string" },
+          { "name": "control_plane", "type": "string" },
+          { "name": "expected_state", "type": "string" },
+          { "name": "observed_state", "type": "string" },
+          { "name": "source_record_id", "type": "string" },
+          { "name": "last_observed_at_utc", "type": "datetime" },
+          { "name": "freshness_slo_hours", "type": "integer" },
+          { "name": "alignment_status", "type": "string" },
+          { "name": "exception_reason", "type": "string" },
+          { "name": "exception_owner", "type": "string" },
+          { "name": "work_item", "type": "string" },
+          { "name": "next_review_at_utc", "type": "datetime" },
+          { "name": "evidence_link", "type": "string" },
+          { "name": "notes", "type": "string" }
         ],
         "primaryKey": "record_id"
       }

@@ -305,19 +305,26 @@
       {
         "@context": "https://schema.org",
         "@type": "Dataset",
-        "name": "Endpoint inventory template and CMDB spreadsheet",
-        "description": "A vendor-neutral CSV with 23 fields for durable endpoint identity, ownership, lifecycle, management state, source provenance, freshness, and exception handling.",
+        "name": "Endpoint inventory, CMDB, and tool-stack alignment templates",
+        "description": "Vendor-neutral CSV templates for durable endpoint inventory and for reconciling expected versus observed coverage across RMM, EDR, backup, MDM or UEM, identity, SIEM, vulnerability, and lifecycle systems.",
         "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/endpoint-inventory-cmdb-template.html",
         "creator": { "@type": "Organization", "name": "Nizlo", "url": "https://nizlo.com/" },
-        "dateModified": "2026-11-05",
+        "dateModified": "2026-11-17",
         "isAccessibleForFree": true,
         "inLanguage": "en",
-        "keywords": ["endpoint inventory template", "CMDB template", "IT asset inventory CSV", "device inventory spreadsheet"],
-        "distribution": {
-          "@type": "DataDownload",
-          "contentUrl": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/endpoint-inventory-cmdb-readiness.csv",
-          "encodingFormat": "text/csv"
-        }
+        "keywords": ["endpoint inventory template", "CMDB template", "IT asset inventory CSV", "device inventory spreadsheet", "endpoint stack alignment", "RMM EDR backup reconciliation"],
+        "distribution": [
+          {
+            "@type": "DataDownload",
+            "contentUrl": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/endpoint-inventory-cmdb-readiness.csv",
+            "encodingFormat": "text/csv"
+          },
+          {
+            "@type": "DataDownload",
+            "contentUrl": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/endpoint-stack-alignment-register.csv",
+            "encodingFormat": "text/csv"
+          }
+        ]
       }
     </script>
     <script type="application/ld+json">
@@ -522,7 +529,7 @@
           <article class="card"><p class="kicker">Run the cadence</p><h3>Daily, weekly &amp; monthly maintenance</h3><p>Assign 28 recurring checks across backups, security, monitoring, patching, inventory, recovery, access, coverage, documentation, billing, and governance.</p><a href="msp-daily-weekly-monthly-maintenance-checklist.html">Open maintenance checklist →</a></article>
           <article class="card"><p class="kicker">Reconcile</p><h3>Endpoint exceptions</h3><p>Turn failed patches, offline devices, pending reboots, and unknown states into owned work with closure evidence.</p><a href="https://nizlo.com/guides/endpoint-exception-management">Open guide →</a></article>
           <article class="card"><p class="kicker">Govern deviations</p><h3>MSP endpoint exception register</h3><p>Record scope, business need, approval and denial risks, compensating controls, authority, expiry, review, and closure evidence in a reusable CSV.</p><a href="msp-endpoint-exception-register.html">Open the register →</a></article>
-          <article class="card"><p class="kicker">Inventory</p><h3>CMDB readiness</h3><p>Establish durable endpoint identities, source provenance, lifecycle states, and exception handling before a CMDB project.</p><a href="https://nizlo.com/guides/endpoint-inventory-cmdb-readiness">Open checklist →</a></article>
+          <article class="card"><p class="kicker">Reconcile coverage</p><h3>Endpoint inventory &amp; stack alignment</h3><p>Establish durable endpoint identities, then compare expected and observed coverage across RMM, EDR, backup, MDM or UEM, identity, SIEM, vulnerability, and lifecycle systems.</p><a href="endpoint-inventory-cmdb-template.html">Download both CSV templates →</a></article>
           <article class="card"><p class="kicker">Control access</p><h3>RMM technician access review</h3><p>Map technician and role scope to privileged capabilities, business justification, authentication controls, review dates, decisions, and remediation.</p><a href="rmm-technician-access-review-matrix.html">Open matrix →</a></article>
           <article class="card"><p class="kicker">Authorize support</p><h3>RMM remote access sessions</h3><p>Prove who may connect, why, to which endpoint, under what attended or unattended scope, and with what audit and closure evidence.</p><a href="rmm-remote-access-session-authorization-checklist.html">Open the 24-control checklist →</a></article>
           <article class="card"><p class="kicker">Restore access</p><h3>RMM remote access not connecting</h3><p>Separate authorization, endpoint, service, DNS, proxy, TLS, relay, session, display, and security-control failures before weakening safeguards or retrying blindly.</p><a href="rmm-remote-access-not-connecting-troubleshooting-checklist.html">Use the 24-step checklist →</a></article>
@@ -556,7 +563,7 @@
 
       <section class="method" aria-labelledby="template-title">
         <h2 id="template-title">Take the change record into your own workflow.</h2>
-        <p>Use the 30-field contract and quote worksheet to normalize proposals and calendar renewal notice windows, the 30-control security register and 24-control audit-log review to link privileged activity to proof, the 18-control API-integration preflight, the 24-control backup restore test, the vendor due-diligence register, the 28-check maintenance cadence, the 27-rule alert-escalation matrix, the 25-test pilot pack, the five-gate first-endpoint checklist, the 10-area evaluation scorecard, the 18-control patch-exception review, the 29-field access-review matrix, the 30-control onboarding register, the 30-milestone project plan, the 32-control offboarding register, the 23-field endpoint inventory CSV, the 38-control deployment-readiness CSV, the 30-control change-window template, the 30-control incident-response runbook, the 30-control migration workbook, or the 24-control Atera-to-Syncro worksheet.</p>
+        <p>Use the 30-field contract and quote worksheet to normalize proposals and calendar renewal notice windows, the 30-control security register and 24-control audit-log review to link privileged activity to proof, the 18-control API-integration preflight, the 24-control backup restore test, the vendor due-diligence register, the 28-check maintenance cadence, the 27-rule alert-escalation matrix, the 25-test pilot pack, the five-gate first-endpoint checklist, the 10-area evaluation scorecard, the 18-control patch-exception review, the 29-field access-review matrix, the 30-control onboarding register, the 30-milestone project plan, the 32-control offboarding register, the 23-field endpoint inventory CSV and 17-field stack-alignment register, the 38-control deployment-readiness CSV, the 30-control change-window template, the 30-control incident-response runbook, the 30-control migration workbook, or the 24-control Atera-to-Syncro worksheet.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="templates/">Browse 51+ CSV templates</a>
           <a class="button button-secondary" href="msp-qbr-agenda-client-report-checklist.html">Open MSP QBR agenda</a>
@@ -583,7 +590,7 @@
           <a class="button button-secondary" href="rmm-migration-workbook-template.html">Open migration workbook</a>
           <a class="button button-secondary" href="atera-to-syncro-export-validation-worksheet.html">Open Atera-to-Syncro worksheet</a>
           <a class="button button-secondary" href="rmm-migration-cost-calculator.html">Open migration cost calculator</a>
-          <a class="button button-secondary" href="endpoint-inventory-cmdb-template.html">Open endpoint inventory and CMDB template</a>
+          <a class="button button-secondary" href="endpoint-inventory-cmdb-template.html">Open endpoint inventory and stack-alignment templates</a>
           <a class="button button-secondary" href="datapackage.json">Use the Data Package</a>
           <a class="button button-secondary" href="public-rmm-pricing-dataset.html">Open pricing dataset</a>
           <a class="button button-secondary" href="rmm-quote-comparison-worksheet.html">Open quote worksheet</a>
