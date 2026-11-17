@@ -13,6 +13,15 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>n8n RMM integration: read-only MSP workflows</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/n8n-rmm-integration.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/n8n-rmm-integration.html" />
+    <link rel="related" type="text/html" href="https://nizlo.com/guides/n8n-rmm-automation?utm_source=atom&amp;utm_medium=external_resource&amp;utm_campaign=n8n_rmm_automation" />
+    <updated>2026-11-17T00:00:00Z</updated>
+    <category term="n8n" /><category term="RMM API" /><category term="MSP automation" />
+    <summary>Review a disclosed, read-only n8n community node for tenant-scoped customers, sites, endpoints, and alerts, with two inactive workflows, exact permission boundaries, and a controlled evaluation sequence.</summary>
+  </entry>
+  <entry>
     <title>Endpoint stack alignment register</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/templates/endpoint-stack-alignment-register.csv</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/endpoint-inventory-cmdb-template.html" />

@@ -837,6 +837,7 @@
       "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/n8n-rmm-integration.html",
       "source_repository": "https://github.com/izikipizi/n8n-nodes-nizlo",
       "canonical_product_evidence": "https://nizlo.com/rmm-api",
+      "canonical_guide": "https://nizlo.com/guides/n8n-rmm-automation",
       "audience": [
         "MSP",
         "IT team",
