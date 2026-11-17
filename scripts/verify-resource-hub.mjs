@@ -41,6 +41,42 @@ const sitemapUrls = new Set(
 
 const errors = [];
 
+const feed = await readFile(join(docsRoot, "feed.xml"), "utf8");
+const feedUpdated = matchOne(
+  feed,
+  /<feed[^>]*>[\s\S]*?<updated>([^<]+)<\/updated>/,
+  "feed updated timestamp",
+  "docs/feed.xml",
+);
+const feedEntries = [...feed.matchAll(/<entry>([\s\S]*?)<\/entry>/g)].map(
+  ([, entry]) => ({
+    id: matchOne(entry, /<id>([^<]+)<\/id>/, "entry id", "docs/feed.xml"),
+    updated: matchOne(
+      entry,
+      /<updated>([^<]+)<\/updated>/,
+      "entry updated timestamp",
+      "docs/feed.xml",
+    ),
+  }),
+);
+const latestFeedEntry = [...feedEntries].sort((left, right) =>
+  right.updated.localeCompare(left.updated),
+)[0];
+if (!latestFeedEntry) errors.push("docs/feed.xml: feed must contain at least one entry");
+else {
+  if (feedUpdated !== latestFeedEntry.updated) {
+    errors.push(
+      `docs/feed.xml: feed updated ${feedUpdated} does not match latest entry ${latestFeedEntry.updated}`,
+    );
+  }
+  if (feedEntries[0].updated !== latestFeedEntry.updated) {
+    errors.push("docs/feed.xml: an entry with the latest update must appear first");
+  }
+}
+if (new Set(feedEntries.map((entry) => entry.id)).size !== feedEntries.length) {
+  errors.push("docs/feed.xml: entry IDs must be unique");
+}
+
 const intuneMatrixCanonical = await readFile(
   join(docsRoot, "templates", "rmm-vs-mdm-responsibility-matrix.csv"),
   "utf8",
