@@ -4,9 +4,9 @@
   "name": "nizlo-rmm-operations-resources",
   "id": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
   "title": "Nizlo RMM Operations Resources",
-  "description": "Fifty-seven catalogued, vendor-neutral CSV template datasets and one source-dated public RMM pricing comparison dataset.",
+  "description": "Sixty-two catalogued, vendor-neutral CSV template datasets and one source-dated public RMM pricing comparison dataset.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
-  "version": "1.105.0",
+  "version": "1.106.0",
   "created": "2026-11-01",
   "contributors": [
     {
@@ -90,10 +90,10 @@
     "service restoration",
     "MSP QBR template",
     "MSP quarterly business review",
-    "MSP client reporting"
-    ,"MSP professional standards"
-    ,"IT service provider governance"
-    ,"MSP evidence readiness"
+    "MSP client reporting",
+    "MSP professional standards",
+    "IT service provider governance",
+    "MSP evidence readiness"
   ],
   "resources": [
     {
@@ -584,7 +584,19 @@
       "hash": "sha256:c42070540591bd62faea50c4e6180a0f1b71d35b6cc18d92f25a5128e88b3f79",
       "schema": {
         "fields": [
-          {"name":"Phase","type":"string"},{"name":"Control ID","type":"string"},{"name":"Drill question","type":"string"},{"name":"Required evidence","type":"string"},{"name":"Pass criteria","type":"string"},{"name":"Stop condition","type":"string"},{"name":"Owner","type":"string"},{"name":"Status","type":"string"},{"name":"Evidence link","type":"string"},{"name":"Corrective action","type":"string"},{"name":"Due date","type":"date"},{"name":"Retest date","type":"date"},{"name":"Notes","type":"string"}
+          { "name": "Phase", "type": "string" },
+          { "name": "Control ID", "type": "string" },
+          { "name": "Drill question", "type": "string" },
+          { "name": "Required evidence", "type": "string" },
+          { "name": "Pass criteria", "type": "string" },
+          { "name": "Stop condition", "type": "string" },
+          { "name": "Owner", "type": "string" },
+          { "name": "Status", "type": "string" },
+          { "name": "Evidence link", "type": "string" },
+          { "name": "Corrective action", "type": "string" },
+          { "name": "Due date", "type": "date" },
+          { "name": "Retest date", "type": "date" },
+          { "name": "Notes", "type": "string" }
         ],
         "primaryKey": "Control ID"
       }
@@ -918,8 +930,8 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "bytes": 6525,
-      "hash": "sha256:2da759e66d4c4dfcbde5f531e1c246c699be28c6fed2a662007ccd6a7960e840",
+      "bytes": 7921,
+      "hash": "sha256:6875a46ba0a8666e26935c22d6dcaa2136d709bde000811695d587a2448f5fc8",
       "schema": {
         "fields": [
           {
@@ -2960,6 +2972,154 @@
           { "name": "remediation_or_notes", "type": "string" }
         ],
         "primaryKey": "exercise_id"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "msp-client-onboarding-go-live-acceptance",
+      "title": "MSP client onboarding go-live acceptance record",
+      "description": "Six go-live gates and fifteen fields for recording MSP and customer authority, inventory, access, workflow, continuity, acceptance evidence, exceptions, and sign-off.",
+      "path": "templates/msp-client-onboarding-go-live-acceptance.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 1845,
+      "hash": "sha256:328e45b3b50b0f501b93a74457673c01d05d81425466867bc3c8fe1563fc5028",
+      "schema": {
+        "fields": [
+          { "name": "gate_id", "type": "string" },
+          { "name": "go_live_gate", "type": "string" },
+          { "name": "ready_when", "type": "string" },
+          { "name": "stop_condition", "type": "string" },
+          { "name": "msp_owner", "type": "string" },
+          { "name": "customer_owner", "type": "string" },
+          { "name": "evidence_links", "type": "string" },
+          { "name": "status", "type": "string" },
+          { "name": "exception_owner", "type": "string" },
+          { "name": "exception_due_utc", "type": "datetime" },
+          { "name": "msp_acceptance_name", "type": "string" },
+          { "name": "msp_acceptance_utc", "type": "datetime" },
+          { "name": "customer_acceptance_name", "type": "string" },
+          { "name": "customer_acceptance_utc", "type": "datetime" },
+          { "name": "notes", "type": "string" }
+        ],
+        "primaryKey": "gate_id"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "msp-cve-remediation-evidence-register",
+      "title": "MSP CVE remediation evidence register",
+      "description": "Twenty-four controls and thirteen fields for scoping exposed devices, prioritizing risk, piloting changes, reconciling failures, validating closure, and governing exceptions.",
+      "path": "templates/msp-cve-remediation-evidence-register.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 4103,
+      "hash": "sha256:1a1570bdd9e974a7873ef06e66d8fba689be4f34a882c477fcf98816e3c75859",
+      "schema": {
+        "fields": [
+          { "name": "phase", "type": "string" },
+          { "name": "control_id", "type": "string" },
+          { "name": "control", "type": "string" },
+          { "name": "security_owner", "type": "string" },
+          { "name": "it_owner", "type": "string" },
+          { "name": "priority", "type": "string" },
+          { "name": "due_date", "type": "date" },
+          { "name": "affected_asset_count", "type": "integer" },
+          { "name": "status", "type": "string" },
+          { "name": "evidence_source", "type": "string" },
+          { "name": "exception_owner", "type": "string" },
+          { "name": "retest_date", "type": "date" },
+          { "name": "notes", "type": "string" }
+        ],
+        "primaryKey": "control_id"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "rmm-checkout-billing-readiness-checklist",
+      "title": "RMM checkout and billing readiness checklist",
+      "description": "Sixteen vendor-neutral gates and twelve fields for verifying RMM pricing, trial timing, add-ons, payment authority, renewal, cancellation, invoices, and operational acceptance before checkout.",
+      "path": "templates/rmm-checkout-billing-readiness-checklist.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 4333,
+      "hash": "sha256:8342a0c332e4da24385788e533928a156b321457edffd338f6126a627e248dee",
+      "schema": {
+        "fields": [
+          { "name": "gate_id", "type": "string" },
+          { "name": "category", "type": "string" },
+          { "name": "decision_question", "type": "string" },
+          { "name": "required_evidence", "type": "string" },
+          { "name": "pass_condition", "type": "string" },
+          { "name": "stop_condition", "type": "string" },
+          { "name": "owner", "type": "string" },
+          { "name": "due_date_utc", "type": "datetime" },
+          { "name": "status", "type": "string" },
+          { "name": "evidence_link", "type": "string" },
+          { "name": "exception_or_risk", "type": "string" },
+          { "name": "notes", "type": "string" }
+        ],
+        "primaryKey": "gate_id"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "rmm-psa-all-in-one-decision-matrix",
+      "title": "RMM and PSA all-in-one versus separate-stack decision matrix",
+      "description": "A weighted decision matrix for comparing all-in-one and separate RMM and PSA stacks across scope, ownership, workflow, cost, security, reliability, reporting, support, and exit evidence.",
+      "path": "templates/rmm-psa-all-in-one-decision-matrix.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 7000,
+      "hash": "sha256:1ea8da872441e6363aeb8981bce05f2b6a73cc79ef33ea080e9c6d1eb5a691f7",
+      "schema": {
+        "fields": [
+          { "name": "category", "type": "string" },
+          { "name": "decision_check", "type": "string" },
+          { "name": "all_in_one_evidence", "type": "string" },
+          { "name": "separate_stack_evidence", "type": "string" },
+          { "name": "live_test", "type": "string" },
+          { "name": "weight_percent", "type": "integer" },
+          { "name": "all_in_one_score_1_to_5", "type": "integer" },
+          { "name": "separate_stack_score_1_to_5", "type": "integer" },
+          { "name": "weighted_all_in_one", "type": "number" },
+          { "name": "weighted_separate", "type": "number" },
+          { "name": "gap_owner", "type": "string" },
+          { "name": "decision_notes", "type": "string" }
+        ]
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "rmm-vs-mdm-responsibility-matrix",
+      "title": "RMM vs MDM responsibility matrix",
+      "description": "Eighteen control domains and twelve fields for assigning authority, support, ownership, evidence, pilot tests, overlap risks, decisions, exceptions, and review dates across RMM and MDM.",
+      "path": "templates/rmm-vs-mdm-responsibility-matrix.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 5467,
+      "hash": "sha256:4c8b393bc95acc8afacf7c957dfda46f8c1eb0ce6156af866eb62f870ce94d63",
+      "schema": {
+        "fields": [
+          { "name": "Control domain", "type": "string" },
+          { "name": "Required outcome", "type": "string" },
+          { "name": "Primary system of authority", "type": "string" },
+          { "name": "Supporting system", "type": "string" },
+          { "name": "Platform or scope", "type": "string" },
+          { "name": "Named owner", "type": "string" },
+          { "name": "Evidence source", "type": "string" },
+          { "name": "Overlap or conflict risk", "type": "string" },
+          { "name": "Pilot test", "type": "string" },
+          { "name": "Decision", "type": "string" },
+          { "name": "Exception owner", "type": "string" },
+          { "name": "Review date", "type": "date" }
+        ],
+        "primaryKey": "Control domain"
       }
     }
   ]

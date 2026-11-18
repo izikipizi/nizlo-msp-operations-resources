@@ -1,10 +1,12 @@
 import { readFile, readdir, stat } from "node:fs/promises";
+import { createHash } from "node:crypto";
 import { dirname, join, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const docsRoot = join(repositoryRoot, "docs");
-const siteOrigin = "https://izikipizi.github.io/nizlo-msp-operations-resources/";
+const siteOrigin =
+  "https://izikipizi.github.io/nizlo-msp-operations-resources/";
 
 async function listFiles(directory) {
   const entries = await readdir(directory, { withFileTypes: true });
@@ -32,6 +34,33 @@ function localUrlFor(path) {
   return `${siteOrigin}${relativePath}`;
 }
 
+function parseCsvHeader(source) {
+  const fields = [];
+  let field = "";
+  let quoted = false;
+  for (let index = 0; index < source.length; index += 1) {
+    const character = source[index];
+    if (character === '"') {
+      if (quoted && source[index + 1] === '"') {
+        field += '"';
+        index += 1;
+      } else {
+        quoted = !quoted;
+      }
+    } else if (character === "," && !quoted) {
+      fields.push(field);
+      field = "";
+    } else if ((character === "\n" || character === "\r") && !quoted) {
+      fields.push(field);
+      return fields;
+    } else {
+      field += character;
+    }
+  }
+  fields.push(field);
+  return fields;
+}
+
 const allFiles = await listFiles(docsRoot);
 const htmlFiles = allFiles.filter((path) => path.endsWith(".html"));
 const sitemap = await readFile(join(docsRoot, "sitemap.xml"), "utf8");
@@ -40,6 +69,83 @@ const sitemapUrls = new Set(
 );
 
 const errors = [];
+
+const dataPackagePath = join(docsRoot, "datapackage.json");
+const dataPackage = JSON.parse(await readFile(dataPackagePath, "utf8"));
+const packagePaths = new Set(
+  dataPackage.resources.map((resource) => resource.path),
+);
+const expectedPackagePaths = new Set(
+  allFiles
+    .filter(
+      (path) =>
+        path.endsWith(".csv") &&
+        relative(docsRoot, path).replaceAll("\\", "/").startsWith("templates/"),
+    )
+    .map((path) => relative(docsRoot, path).replaceAll("\\", "/")),
+);
+expectedPackagePaths.add("data/public-rmm-pricing-comparison-2026-11-02.csv");
+for (const path of expectedPackagePaths) {
+  if (!packagePaths.has(path))
+    errors.push(`docs/datapackage.json: missing ${path}`);
+}
+for (const path of packagePaths) {
+  if (!expectedPackagePaths.has(path))
+    errors.push(`docs/datapackage.json: unexpected ${path}`);
+}
+for (const resource of dataPackage.resources) {
+  const path = join(docsRoot, resource.path);
+  try {
+    const content = await readFile(path);
+    const hash = `sha256:${createHash("sha256").update(content).digest("hex")}`;
+    if (resource.bytes !== content.byteLength) {
+      errors.push(
+        `docs/datapackage.json: ${resource.path} byte count ${resource.bytes} does not match ${content.byteLength}`,
+      );
+    }
+    if (resource.hash !== hash) {
+      errors.push(
+        `docs/datapackage.json: ${resource.path} hash does not match`,
+      );
+    }
+    const header = parseCsvHeader(content.toString("utf8"));
+    const fields = resource.schema?.fields?.map((field) => field.name) ?? [];
+    if (JSON.stringify(header) !== JSON.stringify(fields)) {
+      errors.push(
+        `docs/datapackage.json: ${resource.path} schema fields do not match its CSV header`,
+      );
+    }
+  } catch (error) {
+    errors.push(
+      `docs/datapackage.json: cannot verify ${resource.path}: ${error.message}`,
+    );
+  }
+}
+
+const citation = await readFile(join(repositoryRoot, "CITATION.cff"), "utf8");
+const citationVersion = matchOne(
+  citation,
+  /^version:\s*"([^"]+)"/m,
+  "version",
+  "CITATION.cff",
+);
+if (citationVersion !== dataPackage.version) {
+  errors.push(
+    `CITATION.cff: version ${citationVersion} does not match Data Package ${dataPackage.version}`,
+  );
+}
+for (const relativePath of [
+  "README.md",
+  "docs/citation.html",
+  "docs/index.html",
+]) {
+  const source = await readFile(join(repositoryRoot, relativePath), "utf8");
+  if (!source.includes(`v${dataPackage.version}`)) {
+    errors.push(
+      `${relativePath}: missing current version v${dataPackage.version}`,
+    );
+  }
+}
 
 const feed = await readFile(join(docsRoot, "feed.xml"), "utf8");
 const feedUpdated = matchOne(
@@ -62,7 +168,8 @@ const feedEntries = [...feed.matchAll(/<entry>([\s\S]*?)<\/entry>/g)].map(
 const latestFeedEntry = [...feedEntries].sort((left, right) =>
   right.updated.localeCompare(left.updated),
 )[0];
-if (!latestFeedEntry) errors.push("docs/feed.xml: feed must contain at least one entry");
+if (!latestFeedEntry)
+  errors.push("docs/feed.xml: feed must contain at least one entry");
 else {
   if (feedUpdated !== latestFeedEntry.updated) {
     errors.push(
@@ -70,7 +177,9 @@ else {
     );
   }
   if (feedEntries[0].updated !== latestFeedEntry.updated) {
-    errors.push("docs/feed.xml: an entry with the latest update must appear first");
+    errors.push(
+      "docs/feed.xml: an entry with the latest update must appear first",
+    );
   }
 }
 if (new Set(feedEntries.map((entry) => entry.id)).size !== feedEntries.length) {
@@ -106,7 +215,9 @@ for (const path of htmlFiles) {
       relativePath,
     );
     if (description.length < 50 || description.length > 400) {
-      throw new Error(`${relativePath}: meta description length is ${description.length}`);
+      throw new Error(
+        `${relativePath}: meta description length is ${description.length}`,
+      );
     }
 
     const canonical = matchOne(
@@ -126,12 +237,16 @@ for (const path of htmlFiles) {
     }
 
     const h1Count = (source.match(/<h1(?:\s|>)/g) ?? []).length;
-    if (h1Count !== 1) throw new Error(`${relativePath}: expected one h1, found ${h1Count}`);
+    if (h1Count !== 1)
+      throw new Error(`${relativePath}: expected one h1, found ${h1Count}`);
 
     const jsonLdBlocks = [
-      ...source.matchAll(/<script\s+type="application\/ld\+json">([\s\S]*?)<\/script>/g),
+      ...source.matchAll(
+        /<script\s+type="application\/ld\+json">([\s\S]*?)<\/script>/g,
+      ),
     ];
-    if (jsonLdBlocks.length === 0) throw new Error(`${relativePath}: missing JSON-LD`);
+    if (jsonLdBlocks.length === 0)
+      throw new Error(`${relativePath}: missing JSON-LD`);
     for (const [, json] of jsonLdBlocks) JSON.parse(json);
 
     for (const match of source.matchAll(/href="([^"]+)"/g)) {
@@ -154,22 +269,35 @@ for (const path of htmlFiles) {
 
 const homepage = await readFile(join(docsRoot, "index.html"), "utf8");
 const homepageJsonLd = [
-  ...homepage.matchAll(/<script\s+type="application\/ld\+json">([\s\S]*?)<\/script>/g),
+  ...homepage.matchAll(
+    /<script\s+type="application\/ld\+json">([\s\S]*?)<\/script>/g,
+  ),
 ].map((match) => JSON.parse(match[1]));
-const collectionPage = homepageJsonLd.find((entry) => entry["@type"] === "CollectionPage");
-if (!collectionPage) errors.push("docs/index.html: missing CollectionPage JSON-LD");
+const collectionPage = homepageJsonLd.find(
+  (entry) => entry["@type"] === "CollectionPage",
+);
+if (!collectionPage)
+  errors.push("docs/index.html: missing CollectionPage JSON-LD");
 else {
   const itemList = collectionPage.mainEntity;
   const items = itemList?.itemListElement ?? [];
   const positions = items.map((item) => Number(item.position));
-  const expectedPositions = Array.from({ length: items.length }, (_, index) => index + 1);
+  const expectedPositions = Array.from(
+    { length: items.length },
+    (_, index) => index + 1,
+  );
   if (itemList.numberOfItems !== items.length) {
     errors.push(
       `docs/index.html: numberOfItems is ${itemList.numberOfItems}, but ${items.length} items exist`,
     );
   }
-  if (JSON.stringify([...positions].sort((a, b) => a - b)) !== JSON.stringify(expectedPositions)) {
-    errors.push("docs/index.html: ItemList positions must be unique and contiguous");
+  if (
+    JSON.stringify([...positions].sort((a, b) => a - b)) !==
+    JSON.stringify(expectedPositions)
+  ) {
+    errors.push(
+      "docs/index.html: ItemList positions must be unique and contiguous",
+    );
   }
 }
 

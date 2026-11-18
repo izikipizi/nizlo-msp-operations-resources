@@ -4,14 +4,31 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Cite Nizlo MSP Operations Resources</title>
-    <meta name="description" content="Citation metadata, version history, and persistent Software Heritage identifiers for the public Nizlo MSP operations resource library." />
+    <meta
+      name="description"
+      content="Citation metadata, version history, and persistent Software Heritage identifiers for the public Nizlo MSP operations resource library."
+    />
     <meta name="robots" content="index,follow" />
-    <link rel="canonical" href="https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html" />
-    <link rel="alternate" type="application/atom+xml" title="Nizlo MSP Operations Resources" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
+    <link
+      rel="canonical"
+      href="https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html"
+    />
+    <link
+      rel="alternate"
+      type="application/atom+xml"
+      title="Nizlo MSP Operations Resources"
+      href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml"
+    />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Cite Nizlo MSP Operations Resources" />
-    <meta property="og:description" content="Authorship, releases, CFF metadata, and persistent archive identifiers for public MSP operations resources, fifty templates, and a pricing dataset." />
-    <meta property="og:url" content="https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html" />
+    <meta
+      property="og:description"
+      content="Authorship, releases, CFF metadata, and persistent archive identifiers for public MSP operations resources, 62 CSV templates, and a pricing dataset."
+    />
+    <meta
+      property="og:url"
+      content="https://izikipizi.github.io/nizlo-msp-operations-resources/citation.html"
+    />
     <meta property="og:image" content="https://nizlo.com/opengraph-image" />
     <meta property="og:image:alt" content="Nizlo MSP Operations Resources" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -21,7 +38,7 @@
         "@context": "https://schema.org",
         "@type": "Dataset",
         "name": "Nizlo MSP Operations Resources",
-        "description": "Public MSP and RMM operations resources, fifty reusable CSV templates, and one source-dated public pricing dataset.",
+        "description": "Public MSP and RMM operations resources, 62 reusable CSV templates, and one source-dated public pricing dataset.",
         "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
         "creator": { "@type": "Person", "name": "Kip Ecklund" },
         "publisher": {
@@ -38,8 +55,8 @@
           ]
         },
         "datePublished": "2026-11-01",
-        "dateModified": "2026-11-13",
-        "version": "1.103.0",
+        "dateModified": "2026-11-17",
+        "version": "1.106.0",
         "isAccessibleForFree": true,
         "inLanguage": "en",
         "sameAs": [
@@ -49,140 +66,616 @@
       }
     </script>
     <style>
-      :root { color-scheme: dark; --bg:#07171d; --panel:#0d242c; --text:#eefbff; --muted:#a9c2ca; --accent:#21c4c9; --line:#24424b; }
-      * { box-sizing:border-box; }
-      body { margin:0; font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; background:linear-gradient(145deg,#07171d,#0a2028); color:var(--text); line-height:1.65; }
-      main { width:min(900px,calc(100% - 2rem)); margin:0 auto; padding:4rem 0; }
-      a { color:#70e2e6; }
-      h1,h2 { line-height:1.15; }
-      h1 { font-size:clamp(2.2rem,6vw,4.4rem); letter-spacing:-.04em; margin:.3rem 0 1rem; }
-      h2 { margin-top:2.5rem; }
-      .eyebrow { color:var(--accent); text-transform:uppercase; letter-spacing:.14em; font-weight:800; font-size:.78rem; }
-      .lede { color:var(--muted); font-size:1.16rem; max-width:48rem; }
-      .panel { margin-top:2rem; padding:1.4rem; background:var(--panel); border:1px solid var(--line); border-radius:18px; }
-      code { overflow-wrap:anywhere; color:#c7f7f9; }
-      dl { display:grid; grid-template-columns:minmax(8rem,12rem) 1fr; gap:.7rem 1rem; }
-      dt { color:var(--muted); font-weight:700; }
-      dd { margin:0; }
-      .disclosure { border-left:4px solid var(--accent); padding-left:1rem; color:var(--muted); }
-      @media (max-width:600px) { dl { grid-template-columns:1fr; } dd { margin-bottom:.5rem; } }
+      :root {
+        color-scheme: dark;
+        --bg: #07171d;
+        --panel: #0d242c;
+        --text: #eefbff;
+        --muted: #a9c2ca;
+        --accent: #21c4c9;
+        --line: #24424b;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family:
+          Inter,
+          ui-sans-serif,
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+        background: linear-gradient(145deg, #07171d, #0a2028);
+        color: var(--text);
+        line-height: 1.65;
+      }
+      main {
+        width: min(900px, calc(100% - 2rem));
+        margin: 0 auto;
+        padding: 4rem 0;
+      }
+      a {
+        color: #70e2e6;
+      }
+      h1,
+      h2 {
+        line-height: 1.15;
+      }
+      h1 {
+        font-size: clamp(2.2rem, 6vw, 4.4rem);
+        letter-spacing: -0.04em;
+        margin: 0.3rem 0 1rem;
+      }
+      h2 {
+        margin-top: 2.5rem;
+      }
+      .eyebrow {
+        color: var(--accent);
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        font-weight: 800;
+        font-size: 0.78rem;
+      }
+      .lede {
+        color: var(--muted);
+        font-size: 1.16rem;
+        max-width: 48rem;
+      }
+      .panel {
+        margin-top: 2rem;
+        padding: 1.4rem;
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+      }
+      code {
+        overflow-wrap: anywhere;
+        color: #c7f7f9;
+      }
+      dl {
+        display: grid;
+        grid-template-columns: minmax(8rem, 12rem) 1fr;
+        gap: 0.7rem 1rem;
+      }
+      dt {
+        color: var(--muted);
+        font-weight: 700;
+      }
+      dd {
+        margin: 0;
+      }
+      .disclosure {
+        border-left: 4px solid var(--accent);
+        padding-left: 1rem;
+        color: var(--muted);
+      }
+      @media (max-width: 600px) {
+        dl {
+          grid-template-columns: 1fr;
+        }
+        dd {
+          margin-bottom: 0.5rem;
+        }
+      }
     </style>
   </head>
   <body>
     <main>
       <span class="eyebrow">Citation and preservation</span>
       <h1>Nizlo MSP Operations Resources</h1>
-      <p class="lede">Use this page to identify, cite, and verify the public MSP and RMM operations library and its reusable CSV templates.</p>
+      <p class="lede">
+        Use this page to identify, cite, and verify the public MSP and RMM
+        operations library and its reusable CSV templates.
+      </p>
 
       <section class="panel" aria-labelledby="metadata-title">
         <h2 id="metadata-title">Citation metadata</h2>
         <dl>
-          <dt>Title</dt><dd>Nizlo MSP Operations Resources</dd>
-          <dt>Author</dt><dd>Kip Ecklund</dd>
-          <dt>Publisher</dt><dd>Nizlo</dd>
-          <dt>Current version</dt><dd>1.103.0</dd>
-          <dt>Released</dt><dd>November 12, 2026</dd>
-          <dt>Type</dt><dd>Public dataset and operational resource collection</dd>
-          <dt>Repository</dt><dd><a href="https://github.com/izikipizi/nizlo-msp-operations-resources">github.com/izikipizi/nizlo-msp-operations-resources</a></dd>
-          <dt>CFF metadata</dt><dd><a href="https://github.com/izikipizi/nizlo-msp-operations-resources/blob/v1.103.0/CITATION.cff">CITATION.cff at v1.103.0</a></dd>
-          <dt>Data Package</dt><dd><a href="datapackage.json">datapackage.json with CSV schemas, byte counts, and SHA-256 hashes</a></dd>
+          <dt>Title</dt>
+          <dd>Nizlo MSP Operations Resources</dd>
+          <dt>Author</dt>
+          <dd>Kip Ecklund</dd>
+          <dt>Publisher</dt>
+          <dd>Nizlo</dd>
+          <dt>Current version</dt>
+          <dd>1.106.0</dd>
+          <dt>Released</dt>
+          <dd>November 17, 2026</dd>
+          <dt>Type</dt>
+          <dd>Public dataset and operational resource collection</dd>
+          <dt>Repository</dt>
+          <dd>
+            <a
+              href="https://github.com/izikipizi/nizlo-msp-operations-resources"
+              >github.com/izikipizi/nizlo-msp-operations-resources</a
+            >
+          </dd>
+          <dt>CFF metadata</dt>
+          <dd>
+            <a
+              href="https://github.com/izikipizi/nizlo-msp-operations-resources/blob/v1.106.0/CITATION.cff"
+              >CITATION.cff at v1.106.0</a
+            >
+          </dd>
+          <dt>Data Package</dt>
+          <dd>
+            <a href="datapackage.json"
+              >datapackage.json with CSV schemas, byte counts, and SHA-256
+              hashes</a
+            >
+          </dd>
         </dl>
       </section>
 
       <section aria-labelledby="archive-title">
         <h2 id="archive-title">Persistent archive identifiers</h2>
-        <p>The current metadata, complete CSV sitemap coverage, 51 reusable templates, source-dated pricing dataset, browser-only quote normalization calculator, maintained links into the corresponding Nizlo evaluation guides, and independently curated Awesome Observability and Awesome SRE placements are available in the maintained repository. The linked <a href="https://github.com/izikipizi/nizlo-msp-operations-resources/tree/v1.103.0"><code>v1.103.0</code> release</a> records the current citation metadata.</p>
-        <p>Software Heritage preserves content release <code>v1.99.0</code> and repository history through commit <code>fe2c7bb</code> in snapshot <a href="https://archive.softwareheritage.org/swh:1:snp:d417367333aa09a6ab20a8078a3831c39652ed44/"><code>swh:1:snp:d417367333aa09a6ab20a8078a3831c39652ed44</code></a>, verified from successful full save request <a href="https://archive.softwareheritage.org/api/1/origin/save/2641790/"><code>2641790</code></a> on November 12, 2026.</p>
-        <p>Software Heritage provides preservation infrastructure. Its archival record is not an endorsement of Nizlo or a claim of independent adoption.</p>
+        <p>
+          The current metadata, complete CSV sitemap coverage, 62 reusable
+          templates, source-dated pricing dataset, browser-only quote
+          normalization calculator, maintained links into the corresponding
+          Nizlo evaluation guides, and independently curated Awesome
+          Observability and Awesome SRE placements are available in the
+          maintained repository. The linked
+          <a
+            href="https://github.com/izikipizi/nizlo-msp-operations-resources/tree/v1.106.0"
+            ><code>v1.106.0</code> release</a
+          >
+          records the current citation metadata.
+        </p>
+        <p>
+          Software Heritage preserves content release <code>v1.99.0</code> and
+          repository history through commit <code>fe2c7bb</code> in snapshot
+          <a
+            href="https://archive.softwareheritage.org/swh:1:snp:d417367333aa09a6ab20a8078a3831c39652ed44/"
+            ><code>swh:1:snp:d417367333aa09a6ab20a8078a3831c39652ed44</code></a
+          >, verified from successful full save request
+          <a
+            href="https://archive.softwareheritage.org/api/1/origin/save/2641790/"
+            ><code>2641790</code></a
+          >
+          on November 12, 2026.
+        </p>
+        <p>
+          Software Heritage provides preservation infrastructure. Its archival
+          record is not an endorsement of Nizlo or a claim of independent
+          adoption.
+        </p>
       </section>
 
       <section aria-labelledby="access-title">
         <h2 id="access-title">Access the collection</h2>
         <ul>
           <li><a href="./">Browse the resource library</a></li>
-          <li><a href="resource-index.json">Use the machine-readable JSON index</a></li>
-          <li><a href="rmm-ticketing-stack-cost-calculator.html">Compare two RMM and ticketing stack cost models</a></li>
+          <li>
+            <a href="resource-index.json"
+              >Use the machine-readable JSON index</a
+            >
+          </li>
+          <li>
+            <a href="rmm-ticketing-stack-cost-calculator.html"
+              >Compare two RMM and ticketing stack cost models</a
+            >
+          </li>
           <li><a href="feed.xml">Subscribe to the Atom feed</a></li>
           <li><a href="llms.txt">Read the answer-engine profile</a></li>
-          <li><a href="msp-service-desk-diagnostic-handoff-checklist.html">Open the 24-control MSP service desk diagnostic handoff checklist</a></li>
-          <li><a href="templates/msp-service-desk-diagnostic-handoff-checklist.csv">Download the twelve-field diagnostic handoff CSV</a></li>
-          <li><a href="msp-qbr-agenda-client-report-checklist.html">Open the 24-item MSP QBR agenda and client report checklist</a></li>
-          <li><a href="templates/msp-qbr-agenda-client-report-checklist.csv">Download the MSP QBR evidence CSV</a></li>
-          <li><a href="msp-technology-roadmap-vcio-template.html">Open the 24-item MSP technology roadmap and vCIO template</a></li>
-          <li><a href="templates/msp-technology-roadmap-register.csv">Download the MSP technology roadmap CSV</a></li>
-          <li><a href="msp-daily-weekly-monthly-maintenance-checklist.html">Open the 28-check MSP recurring maintenance checklist</a></li>
-          <li><a href="msp-client-onboarding-timeline-calculator.html">Build a six-phase MSP client onboarding schedule</a></li>
-          <li><a href="rmm-vendor-due-diligence-evidence-register.html">Open the RMM vendor due-diligence evidence register</a></li>
-          <li><a href="rmm-alert-escalation-matrix-template.html">Open the 27-rule RMM alert escalation matrix</a></li>
-          <li><a href="rmm-monitoring-policy-template.html">Open the 32-control RMM monitoring policy template</a></li>
-          <li><a href="rmm-network-device-monitoring-acceptance-checklist.html">Open the 24-test RMM network device monitoring acceptance checklist</a></li>
-          <li><a href="templates/rmm-network-device-monitoring-acceptance-checklist.csv">Download the nine-field network-monitoring acceptance CSV</a></li>
-          <li><a href="rmm-maintenance-window-alert-suppression-policy.html">Open the 28-control RMM maintenance window and alert suppression policy</a></li>
-          <li><a href="rmm-for-azure-virtual-desktop-session-hosts-checklist.html">Open the 28-check RMM for Azure Virtual Desktop session hosts checklist</a></li>
-          <li><a href="rmm-deployment-readiness-template.html">Open the 38-control deployment-readiness template guide</a></li>
-          <li><a href="rmm-first-endpoint-acceptance-checklist.html">Open the five-gate RMM first-endpoint pilot acceptance checklist</a></li>
-          <li><a href="rmm-technician-onboarding-training-plan.html">Open the ten-exercise RMM technician onboarding and training plan</a></li>
-          <li><a href="templates/rmm-technician-onboarding-training-plan.csv">Download the twelve-field technician training CSV</a></li>
-          <li><a href="windows-patch-exception-review-template.html">Open the 18-control Windows patch exception review and closure template</a></li>
-          <li><a href="templates/rmm-change-window-rollback-plan.csv">Download the 26-control change-window and rollback-plan CSV</a></li>
-          <li><a href="rmm-incident-response-runbook-template.html">Open the 30-control RMM incident response runbook guide</a></li>
-          <li><a href="rmm-incident-response-tabletop-exercise.html">Open the 24-inject RMM incident response tabletop exercise</a></li>
-          <li><a href="templates/rmm-incident-response-tabletop-exercise.csv">Download the tabletop exercise CSV</a></li>
-          <li><a href="rmm-incident-postmortem-template.html">Open the 24-question RMM incident postmortem and corrective action register</a></li>
-          <li><a href="templates/rmm-incident-postmortem-template.csv">Download the incident postmortem CSV</a></li>
-          <li><a href="https://nizlo.com/guides/rmm-incident-response-checklist">Read the eight-stage RMM incident response checklist</a></li>
-          <li><a href="https://nizlo.com/guides/how-to-test-rmm-software">Run a staged pre-production RMM pilot</a></li>
-          <li><a href="https://nizlo.com/guides/how-to-test-rmm-software/checklist.md">Download the 12-step RMM trial pilot worksheet</a></li>
-          <li><a href="https://nizlo.com/guides/rmm-for-mac-and-windows">Evaluate RMM for a mixed Mac and Windows fleet</a></li>
-          <li><a href="https://nizlo.com/guides/rmm-for-new-msps">Choose RMM for a new MSP's first customers</a></li>
-          <li><a href="https://nizlo.com/guides/rmm-for-small-it-teams">Evaluate RMM for a small internal IT team</a></li>
-          <li><a href="https://nizlo.com/guides/rmm-pricing-models">Compare RMM pricing models and costs</a></li>
-          <li><a href="https://nizlo.com/guides/rmm-vs-intune">Compare RMM with Microsoft Intune</a></li>
-          <li><a href="rmm-migration-workbook-template.html">Open the 30-control RMM migration workbook guide</a></li>
-          <li><a href="rmm-evaluation-scorecard-template.html">Open the 10-area RMM evaluation scorecard guide</a></li>
-          <li><a href="rmm-quote-comparison-worksheet.html">Open the 30-field RMM contract and quote comparison worksheet</a></li>
-          <li><a href="rmm-requirements-matrix-template.html">Open the 32-requirement RMM requirements matrix and RFP worksheet</a></li>
-          <li><a href="endpoint-inventory-cmdb-template.html">Open the 23-field endpoint inventory and CMDB readiness template</a></li>
-          <li><a href="rmm-pilot-test-evidence-pack.html">Open the 25-test RMM pilot plan and evidence pack</a></li>
-          <li><a href="rmm-technician-access-review-matrix.html">Open the 29-field RMM permissions matrix and technician access review</a></li>
-          <li><a href="rmm-remote-access-session-authorization-checklist.html">Open the 24-control RMM remote access session authorization checklist</a></li>
-          <li><a href="rmm-vs-remote-desktop-software.html">Open the RMM vs remote desktop software buyer guide</a></li>
-          <li><a href="rmm-vs-remote-support-vs-mdm-vs-endpoint-management.html">Open the four-way endpoint software buyer map</a></li>
-          <li><a href="templates/rmm-vs-mdm-responsibility-matrix.csv">Download the RMM vs MDM responsibility matrix CSV</a></li>
-          <li><a href="rmm-patch-compliance-calculator.html">Download the report template and calculate strict RMM patch compliance from an explicit endpoint denominator</a></li>
-          <li><a href="templates/rmm-patch-compliance-report-template.csv">Download the 20-field RMM patch-compliance report CSV</a></li>
-          <li><a href="msp-client-onboarding-evidence-register.html">Open the 30-control MSP client onboarding evidence register</a></li>
-          <li><a href="six-week-msp-onboarding-project-plan.html">Open the 30-milestone six-week MSP onboarding project plan</a></li>
-          <li><a href="msp-client-offboarding-evidence-register.html">Open the 32-control MSP client offboarding evidence register</a></li>
-          <li><a href="public-rmm-pricing-dataset.html">Open the public RMM pricing dataset</a></li>
-          <li><a href="data/public-rmm-pricing-comparison-2026-11-02.csv">Download the source-dated pricing CSV</a></li>
-          <li><a href="rmm-security-evidence-checklist.html">Open the 30-control RMM security checklist and evidence register</a></li>
-          <li><a href="templates/rmm-security-evidence-checklist.csv">Download the RMM security evidence CSV</a></li>
-          <li><a href="rmm-audit-log-review-checklist.html">Open the 24-control RMM audit log review checklist</a></li>
-          <li><a href="templates/rmm-audit-log-review-checklist.csv">Download the RMM audit log review CSV</a></li>
-          <li><a href="rmm-vendor-exit-plan-checklist.html">Open the 32-control RMM vendor exit plan</a></li>
-          <li><a href="templates/rmm-vendor-exit-plan.csv">Download the RMM vendor exit plan CSV</a></li>
-          <li><a href="rmm-api-integration-preflight-checklist.html">Open the 18-control RMM API integration preflight</a></li>
-          <li><a href="templates/rmm-api-integration-preflight-checklist.csv">Download the nine-field RMM API integration CSV</a></li>
-          <li><a href="msp-backup-restore-test-checklist.html">Open the 24-control MSP backup restore test checklist</a></li>
-          <li><a href="templates/msp-backup-restore-test-checklist.csv">Download the nine-field backup restore test CSV</a></li>
-          <li><a href="rmm-agent-offline-troubleshooting-checklist.html">Open the 24-control RMM agent offline troubleshooting checklist</a></li>
-          <li><a href="templates/rmm-agent-offline-troubleshooting-checklist.csv">Download the eleven-field offline-agent troubleshooting CSV</a></li>
-          <li><a href="templates/rmm-agent-repair-reinstall-decision-matrix.csv">Download the four-state, ten-field repair-or-reinstall decision matrix</a></li>
-          <li><a href="rmm-agent-high-cpu-memory-troubleshooting-checklist.html">Open the 24-control RMM agent high CPU or memory troubleshooting checklist</a></li>
-          <li><a href="templates/rmm-agent-high-cpu-memory-troubleshooting-checklist.csv">Download the twelve-field agent performance evidence CSV</a></li>
-          <li><a href="rmm-script-not-running-job-stuck-troubleshooting-checklist.html">Open the 24-control RMM script and stuck-job troubleshooting checklist</a></li>
-          <li><a href="templates/rmm-script-not-running-job-stuck-troubleshooting-checklist.csv">Download the twelve-field script-job evidence CSV</a></li>
-          <li><a href="rmm-agent-upgrade-failed-stuck-troubleshooting-checklist.html">Open the 24-control RMM agent upgrade failure troubleshooting checklist</a></li>
-          <li><a href="templates/rmm-agent-upgrade-failed-stuck-troubleshooting-checklist.csv">Download the twelve-field agent upgrade evidence CSV</a></li>
-          <li><a href="rmm-duplicate-device-identity-troubleshooting-checklist.html">Open the 24-control RMM duplicate-device identity troubleshooting checklist</a></li>
-          <li><a href="templates/rmm-duplicate-device-identity-troubleshooting-checklist.csv">Download the eleven-field duplicate-identity evidence CSV</a></li>
-          <li><a href="templates/msp-endpoint-exception-register.csv">Download the fifteen-field MSP endpoint exception register</a></li>
-          <li><a href="datapackage.json">Validate the packaged templates and pricing dataset with the Data Package descriptor</a></li>
+          <li>
+            <a href="msp-service-desk-diagnostic-handoff-checklist.html"
+              >Open the 24-control MSP service desk diagnostic handoff
+              checklist</a
+            >
+          </li>
+          <li>
+            <a
+              href="templates/msp-service-desk-diagnostic-handoff-checklist.csv"
+              >Download the twelve-field diagnostic handoff CSV</a
+            >
+          </li>
+          <li>
+            <a href="msp-qbr-agenda-client-report-checklist.html"
+              >Open the 24-item MSP QBR agenda and client report checklist</a
+            >
+          </li>
+          <li>
+            <a href="templates/msp-qbr-agenda-client-report-checklist.csv"
+              >Download the MSP QBR evidence CSV</a
+            >
+          </li>
+          <li>
+            <a href="msp-technology-roadmap-vcio-template.html"
+              >Open the 24-item MSP technology roadmap and vCIO template</a
+            >
+          </li>
+          <li>
+            <a href="templates/msp-technology-roadmap-register.csv"
+              >Download the MSP technology roadmap CSV</a
+            >
+          </li>
+          <li>
+            <a href="msp-daily-weekly-monthly-maintenance-checklist.html"
+              >Open the 28-check MSP recurring maintenance checklist</a
+            >
+          </li>
+          <li>
+            <a href="msp-client-onboarding-timeline-calculator.html"
+              >Build a six-phase MSP client onboarding schedule</a
+            >
+          </li>
+          <li>
+            <a href="rmm-vendor-due-diligence-evidence-register.html"
+              >Open the RMM vendor due-diligence evidence register</a
+            >
+          </li>
+          <li>
+            <a href="rmm-alert-escalation-matrix-template.html"
+              >Open the 27-rule RMM alert escalation matrix</a
+            >
+          </li>
+          <li>
+            <a href="rmm-monitoring-policy-template.html"
+              >Open the 32-control RMM monitoring policy template</a
+            >
+          </li>
+          <li>
+            <a href="rmm-network-device-monitoring-acceptance-checklist.html"
+              >Open the 24-test RMM network device monitoring acceptance
+              checklist</a
+            >
+          </li>
+          <li>
+            <a
+              href="templates/rmm-network-device-monitoring-acceptance-checklist.csv"
+              >Download the nine-field network-monitoring acceptance CSV</a
+            >
+          </li>
+          <li>
+            <a href="rmm-maintenance-window-alert-suppression-policy.html"
+              >Open the 28-control RMM maintenance window and alert suppression
+              policy</a
+            >
+          </li>
+          <li>
+            <a href="rmm-for-azure-virtual-desktop-session-hosts-checklist.html"
+              >Open the 28-check RMM for Azure Virtual Desktop session hosts
+              checklist</a
+            >
+          </li>
+          <li>
+            <a href="rmm-deployment-readiness-template.html"
+              >Open the 38-control deployment-readiness template guide</a
+            >
+          </li>
+          <li>
+            <a href="rmm-first-endpoint-acceptance-checklist.html"
+              >Open the five-gate RMM first-endpoint pilot acceptance
+              checklist</a
+            >
+          </li>
+          <li>
+            <a href="rmm-technician-onboarding-training-plan.html"
+              >Open the ten-exercise RMM technician onboarding and training
+              plan</a
+            >
+          </li>
+          <li>
+            <a href="templates/rmm-technician-onboarding-training-plan.csv"
+              >Download the twelve-field technician training CSV</a
+            >
+          </li>
+          <li>
+            <a href="windows-patch-exception-review-template.html"
+              >Open the 18-control Windows patch exception review and closure
+              template</a
+            >
+          </li>
+          <li>
+            <a href="templates/rmm-change-window-rollback-plan.csv"
+              >Download the 26-control change-window and rollback-plan CSV</a
+            >
+          </li>
+          <li>
+            <a href="rmm-incident-response-runbook-template.html"
+              >Open the 30-control RMM incident response runbook guide</a
+            >
+          </li>
+          <li>
+            <a href="rmm-incident-response-tabletop-exercise.html"
+              >Open the 24-inject RMM incident response tabletop exercise</a
+            >
+          </li>
+          <li>
+            <a href="templates/rmm-incident-response-tabletop-exercise.csv"
+              >Download the tabletop exercise CSV</a
+            >
+          </li>
+          <li>
+            <a href="rmm-incident-postmortem-template.html"
+              >Open the 24-question RMM incident postmortem and corrective
+              action register</a
+            >
+          </li>
+          <li>
+            <a href="templates/rmm-incident-postmortem-template.csv"
+              >Download the incident postmortem CSV</a
+            >
+          </li>
+          <li>
+            <a href="https://nizlo.com/guides/rmm-incident-response-checklist"
+              >Read the eight-stage RMM incident response checklist</a
+            >
+          </li>
+          <li>
+            <a href="https://nizlo.com/guides/how-to-test-rmm-software"
+              >Run a staged pre-production RMM pilot</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://nizlo.com/guides/how-to-test-rmm-software/checklist.md"
+              >Download the 12-step RMM trial pilot worksheet</a
+            >
+          </li>
+          <li>
+            <a href="https://nizlo.com/guides/rmm-for-mac-and-windows"
+              >Evaluate RMM for a mixed Mac and Windows fleet</a
+            >
+          </li>
+          <li>
+            <a href="https://nizlo.com/guides/rmm-for-new-msps"
+              >Choose RMM for a new MSP's first customers</a
+            >
+          </li>
+          <li>
+            <a href="https://nizlo.com/guides/rmm-for-small-it-teams"
+              >Evaluate RMM for a small internal IT team</a
+            >
+          </li>
+          <li>
+            <a href="https://nizlo.com/guides/rmm-pricing-models"
+              >Compare RMM pricing models and costs</a
+            >
+          </li>
+          <li>
+            <a href="https://nizlo.com/guides/rmm-vs-intune"
+              >Compare RMM with Microsoft Intune</a
+            >
+          </li>
+          <li>
+            <a href="rmm-migration-workbook-template.html"
+              >Open the 30-control RMM migration workbook guide</a
+            >
+          </li>
+          <li>
+            <a href="rmm-evaluation-scorecard-template.html"
+              >Open the 10-area RMM evaluation scorecard guide</a
+            >
+          </li>
+          <li>
+            <a href="rmm-quote-comparison-worksheet.html"
+              >Open the 30-field RMM contract and quote comparison worksheet</a
+            >
+          </li>
+          <li>
+            <a href="rmm-requirements-matrix-template.html"
+              >Open the 32-requirement RMM requirements matrix and RFP
+              worksheet</a
+            >
+          </li>
+          <li>
+            <a href="endpoint-inventory-cmdb-template.html"
+              >Open the 23-field endpoint inventory and CMDB readiness
+              template</a
+            >
+          </li>
+          <li>
+            <a href="rmm-pilot-test-evidence-pack.html"
+              >Open the 25-test RMM pilot plan and evidence pack</a
+            >
+          </li>
+          <li>
+            <a href="rmm-technician-access-review-matrix.html"
+              >Open the 29-field RMM permissions matrix and technician access
+              review</a
+            >
+          </li>
+          <li>
+            <a href="rmm-remote-access-session-authorization-checklist.html"
+              >Open the 24-control RMM remote access session authorization
+              checklist</a
+            >
+          </li>
+          <li>
+            <a href="rmm-vs-remote-desktop-software.html"
+              >Open the RMM vs remote desktop software buyer guide</a
+            >
+          </li>
+          <li>
+            <a href="rmm-vs-remote-support-vs-mdm-vs-endpoint-management.html"
+              >Open the four-way endpoint software buyer map</a
+            >
+          </li>
+          <li>
+            <a href="templates/rmm-vs-mdm-responsibility-matrix.csv"
+              >Download the RMM vs MDM responsibility matrix CSV</a
+            >
+          </li>
+          <li>
+            <a href="rmm-patch-compliance-calculator.html"
+              >Download the report template and calculate strict RMM patch
+              compliance from an explicit endpoint denominator</a
+            >
+          </li>
+          <li>
+            <a href="templates/rmm-patch-compliance-report-template.csv"
+              >Download the 20-field RMM patch-compliance report CSV</a
+            >
+          </li>
+          <li>
+            <a href="msp-client-onboarding-evidence-register.html"
+              >Open the 30-control MSP client onboarding evidence register</a
+            >
+          </li>
+          <li>
+            <a href="six-week-msp-onboarding-project-plan.html"
+              >Open the 30-milestone six-week MSP onboarding project plan</a
+            >
+          </li>
+          <li>
+            <a href="msp-client-offboarding-evidence-register.html"
+              >Open the 32-control MSP client offboarding evidence register</a
+            >
+          </li>
+          <li>
+            <a href="public-rmm-pricing-dataset.html"
+              >Open the public RMM pricing dataset</a
+            >
+          </li>
+          <li>
+            <a href="data/public-rmm-pricing-comparison-2026-11-02.csv"
+              >Download the source-dated pricing CSV</a
+            >
+          </li>
+          <li>
+            <a href="rmm-security-evidence-checklist.html"
+              >Open the 30-control RMM security checklist and evidence
+              register</a
+            >
+          </li>
+          <li>
+            <a href="templates/rmm-security-evidence-checklist.csv"
+              >Download the RMM security evidence CSV</a
+            >
+          </li>
+          <li>
+            <a href="rmm-audit-log-review-checklist.html"
+              >Open the 24-control RMM audit log review checklist</a
+            >
+          </li>
+          <li>
+            <a href="templates/rmm-audit-log-review-checklist.csv"
+              >Download the RMM audit log review CSV</a
+            >
+          </li>
+          <li>
+            <a href="rmm-vendor-exit-plan-checklist.html"
+              >Open the 32-control RMM vendor exit plan</a
+            >
+          </li>
+          <li>
+            <a href="templates/rmm-vendor-exit-plan.csv"
+              >Download the RMM vendor exit plan CSV</a
+            >
+          </li>
+          <li>
+            <a href="rmm-api-integration-preflight-checklist.html"
+              >Open the 18-control RMM API integration preflight</a
+            >
+          </li>
+          <li>
+            <a href="templates/rmm-api-integration-preflight-checklist.csv"
+              >Download the nine-field RMM API integration CSV</a
+            >
+          </li>
+          <li>
+            <a href="msp-backup-restore-test-checklist.html"
+              >Open the 24-control MSP backup restore test checklist</a
+            >
+          </li>
+          <li>
+            <a href="templates/msp-backup-restore-test-checklist.csv"
+              >Download the nine-field backup restore test CSV</a
+            >
+          </li>
+          <li>
+            <a href="rmm-agent-offline-troubleshooting-checklist.html"
+              >Open the 24-control RMM agent offline troubleshooting
+              checklist</a
+            >
+          </li>
+          <li>
+            <a href="templates/rmm-agent-offline-troubleshooting-checklist.csv"
+              >Download the eleven-field offline-agent troubleshooting CSV</a
+            >
+          </li>
+          <li>
+            <a href="templates/rmm-agent-repair-reinstall-decision-matrix.csv"
+              >Download the four-state, ten-field repair-or-reinstall decision
+              matrix</a
+            >
+          </li>
+          <li>
+            <a href="rmm-agent-high-cpu-memory-troubleshooting-checklist.html"
+              >Open the 24-control RMM agent high CPU or memory troubleshooting
+              checklist</a
+            >
+          </li>
+          <li>
+            <a
+              href="templates/rmm-agent-high-cpu-memory-troubleshooting-checklist.csv"
+              >Download the twelve-field agent performance evidence CSV</a
+            >
+          </li>
+          <li>
+            <a
+              href="rmm-script-not-running-job-stuck-troubleshooting-checklist.html"
+              >Open the 24-control RMM script and stuck-job troubleshooting
+              checklist</a
+            >
+          </li>
+          <li>
+            <a
+              href="templates/rmm-script-not-running-job-stuck-troubleshooting-checklist.csv"
+              >Download the twelve-field script-job evidence CSV</a
+            >
+          </li>
+          <li>
+            <a
+              href="rmm-agent-upgrade-failed-stuck-troubleshooting-checklist.html"
+              >Open the 24-control RMM agent upgrade failure troubleshooting
+              checklist</a
+            >
+          </li>
+          <li>
+            <a
+              href="templates/rmm-agent-upgrade-failed-stuck-troubleshooting-checklist.csv"
+              >Download the twelve-field agent upgrade evidence CSV</a
+            >
+          </li>
+          <li>
+            <a
+              href="rmm-duplicate-device-identity-troubleshooting-checklist.html"
+              >Open the 24-control RMM duplicate-device identity troubleshooting
+              checklist</a
+            >
+          </li>
+          <li>
+            <a
+              href="templates/rmm-duplicate-device-identity-troubleshooting-checklist.csv"
+              >Download the eleven-field duplicate-identity evidence CSV</a
+            >
+          </li>
+          <li>
+            <a href="templates/msp-endpoint-exception-register.csv"
+              >Download the fifteen-field MSP endpoint exception register</a
+            >
+          </li>
+          <li>
+            <a href="datapackage.json"
+              >Validate the packaged templates and pricing dataset with the Data
+              Package descriptor</a
+            >
+          </li>
         </ul>
       </section>
 
-      <p class="disclosure"><strong>Relationship disclosure:</strong> this library is created and maintained by the Nizlo team. Nizlo is an RMM and IT-management company. The resources are intended to be vendor-neutral, but they are vendor-created rather than independent research.</p>
+      <p class="disclosure">
+        <strong>Relationship disclosure:</strong> this library is created and
+        maintained by the Nizlo team. Nizlo is an RMM and IT-management company.
+        The resources are intended to be vendor-neutral, but they are
+        vendor-created rather than independent research.
+      </p>
     </main>
   </body>
 </html>
