@@ -13,6 +13,15 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>Minimum cybersecurity stack for small MSP clients</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/minimum-cybersecurity-stack-small-msp.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/minimum-cybersecurity-stack-small-msp.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/endpoint-stack-alignment-register.csv" />
+    <updated>2026-11-18T00:00:00Z</updated>
+    <category term="MSP cybersecurity stack" /><category term="small business security" /><category term="MSP operations" />
+    <summary>Define a defensible minimum stack across identity, endpoint operations and detection, email, recovery, network, exposure, access lifecycle, incident response, evidence, and ownership.</summary>
+  </entry>
+  <entry>
     <title>Easy RMM setup and technician training plan</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-technician-onboarding-training-plan.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-technician-onboarding-training-plan.html" />

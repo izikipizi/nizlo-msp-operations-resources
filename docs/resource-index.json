@@ -1184,6 +1184,17 @@
       "account_required": false
     },
     {
+      "id": "minimum-cybersecurity-stack-small-msp",
+      "title": "Minimum cybersecurity stack for small MSP clients",
+      "category": "security",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/minimum-cybersecurity-stack-small-msp.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/endpoint-stack-alignment-register.csv",
+      "format": "text/csv",
+      "controls": 8,
+      "access": "public",
+      "account_required": false
+    },
+    {
       "id": "windows-patch-exception-review",
       "title": "Windows patch exception review and closure template",
       "category": "patch-management",
