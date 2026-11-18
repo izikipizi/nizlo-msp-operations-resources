@@ -13,6 +13,15 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>RMM extension and integration security review</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-extension-integration-security-review.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-extension-integration-security-review.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-security-evidence-checklist.csv" />
+    <updated>2026-11-18T00:00:00Z</updated>
+    <category term="RMM security" /><category term="integration security" /><category term="MSP operations" />
+    <summary>Inventory RMM extensions and integration paths, map effective authority, and prove secret safety, tenant isolation, attributable audit evidence, containment, and revocation.</summary>
+  </entry>
+  <entry>
     <title>Minimum cybersecurity stack for small MSP clients</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/minimum-cybersecurity-stack-small-msp.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/minimum-cybersecurity-stack-small-msp.html" />

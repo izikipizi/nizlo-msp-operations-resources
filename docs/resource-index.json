@@ -5,7 +5,7 @@
     "url": "https://nizlo.com/",
     "resources_url": "https://nizlo.com/tools"
   },
-  "updated": "2026-11-13",
+  "updated": "2026-11-18",
   "resources": [
     {
       "id": "msp-professional-standards-evidence-readiness-checklist",
@@ -1180,6 +1180,17 @@
       "format": "text/csv",
       "controls": 10,
       "fields": 12,
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "rmm-extension-integration-security-review",
+      "title": "RMM extension and integration security review",
+      "category": "security",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-extension-integration-security-review.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-security-evidence-checklist.csv",
+      "format": "text/csv",
+      "controls": 8,
       "access": "public",
       "account_required": false
     },
