@@ -3,40 +3,40 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>RMM Pricing Transparency Dataset: 14 Products | Nizlo</title>
-    <meta name="description" content="Compare per-endpoint, per-technician, flat, free-tier, source-available, and quote-only RMM pricing across 14 source-dated product disclosures." />
+    <title>RMM Pricing: Per Endpoint vs Technician (14 Products)</title>
+    <meta name="description" content="Compare per-endpoint vs per-technician RMM pricing, use an 800-endpoint worked example and break-even formula, and inspect 14 source-dated disclosures." />
     <meta name="robots" content="index,follow" />
     <link rel="canonical" href="https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html" />
     <link rel="alternate" type="application/atom+xml" title="Nizlo MSP Operations Resources" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
     <link rel="alternate" type="application/ld+json" href="data/public-rmm-pricing-comparison-2026-11-02.jsonld" title="Dataset metadata" />
     <link rel="alternate" type="application/ld+json" href="data/public-rmm-pricing-comparison-2026-11-02-croissant.json" title="MLCommons Croissant metadata" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="RMM Pricing Transparency Dataset: 14 Products" />
-    <meta property="og:description" content="Six products publish fully computable numeric pricing across the four scenarios; four are quote-only. Download the source-dated CSV." />
+    <meta property="og:title" content="RMM Pricing: Per Endpoint vs Technician" />
+    <meta property="og:description" content="Compare billing models with an 800-endpoint worked example, a break-even formula, and fourteen source-dated product disclosures." />
     <meta property="og:url" content="https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html" />
     <meta property="og:image" content="https://izikipizi.github.io/nizlo-msp-operations-resources/assets/rmm-pricing-transparency-2026.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="RMM pricing transparency findings across 14 products" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="RMM Pricing Transparency Dataset: 14 Products" />
-    <meta name="twitter:description" content="Source-dated RMM pricing records with reproducible links and no invented estimates." />
+    <meta name="twitter:title" content="RMM Pricing: Per Endpoint vs Technician" />
+    <meta name="twitter:description" content="An 800-endpoint worked example, break-even formula, and source-dated RMM pricing records with no invented vendor estimates." />
     <meta name="twitter:image" content="https://izikipizi.github.io/nizlo-msp-operations-resources/assets/rmm-pricing-transparency-2026.png" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Dataset",
-        "name": "RMM pricing transparency dataset for one-technician MSPs",
-        "description": "Fourteen source-dated RMM pricing records: six with fully computable numeric pricing across four endpoint scenarios, four quote-only records, two free-tier-only records, one published range with quote, and one source-available product.",
+        "name": "RMM pricing: per-endpoint vs per-technician comparison dataset",
+        "description": "Fourteen source-dated RMM pricing records plus an 800-endpoint worked example and break-even formula for comparing per-endpoint and per-technician billing.",
         "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html",
         "sameAs": "https://nizlo.com/guides/cheapest-rmm-for-small-msps",
         "image": "https://izikipizi.github.io/nizlo-msp-operations-resources/assets/rmm-pricing-transparency-2026.png",
         "creator": { "@type": "Organization", "name": "Nizlo", "url": "https://nizlo.com/" },
-        "dateModified": "2026-11-17",
+        "dateModified": "2026-11-18",
         "isAccessibleForFree": true,
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "inLanguage": "en",
-        "keywords": ["RMM pricing", "RMM pricing per endpoint", "RMM pricing per technician", "MSP software cost", "pricing transparency", "remote monitoring and management", "RMM cost comparison"],
+        "keywords": ["RMM pricing", "RMM pricing per endpoint", "RMM pricing per technician", "RMM pricing for 800 endpoints", "MSP software cost", "pricing transparency", "remote monitoring and management", "RMM cost comparison"],
         "variableMeasured": ["Product", "Pricing model", "Billing term", "Public price visibility", "Monthly cost at 10 endpoints", "Monthly cost at 50 endpoints", "Monthly cost at 100 endpoints", "Monthly cost at 500 endpoints", "Source URL", "Fact-checked date"],
         "distribution": {
           "@type": "DataDownload",
@@ -64,6 +64,14 @@
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "There is no universally cheapest model. Per-technician or flat pricing can become less expensive as endpoints per technician increase, while per-endpoint pricing can remain attractive for small fleets. Free tiers, minimum commitments, included features, add-ons, and migration costs can change the result."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is per-endpoint or per-technician RMM pricing cheaper for 800 endpoints?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It depends on the quoted rates, technician count, minimums, and required add-ons. For illustration only, 800 endpoints at $2.50 each cost $2,000 per month, while four technicians at $129 each cost $516 per month. The per-technician example is $1,484 lower before add-ons, but the products may not include equivalent capabilities."
             }
           },
           {
@@ -163,9 +171,9 @@
   <body>
     <header><a class="brand" href="./">NIZLO · MSP OPERATIONS RESOURCES</a></header>
     <main>
-      <p class="eyebrow">Public dataset · updated November 6, 2026</p>
-      <h1>RMM pricing transparency across 14 products</h1>
-      <p class="lede">Six of the fourteen source-dated records publish enough numeric pricing to calculate all four one-technician scenarios in this dataset. Four are quote-only, while the remaining four expose a free tier, source-available license, or limited published range. The comparison leaves unsupported cells blank instead of turning them into estimates.</p>
+      <p class="eyebrow">Public dataset · updated November 18, 2026</p>
+      <h1>RMM pricing: per endpoint vs per technician</h1>
+      <p class="lede">Compare the two billing models with an explicit 800-endpoint worked example and break-even formula, then inspect fourteen source-dated product disclosures. Six records publish enough numeric pricing to calculate all four one-technician scenarios; unsupported cells remain blank instead of becoming invented estimates.</p>
       <div class="actions">
         <a class="button primary" href="data/public-rmm-pricing-comparison-2026-11-02.csv" download>Download the CSV</a>
         <a class="button" href="https://nizlo.com/guides/rmm-pricing-models?utm_source=github_pages&amp;utm_medium=authority_bridge&amp;utm_campaign=rmm_pricing_models&amp;utm_content=public_pricing_dataset">Compare RMM pricing models</a>
@@ -215,6 +223,21 @@
           </table>
         </div>
         <p>Use the <a href="https://nizlo.com/guides/rmm-pricing-models?utm_source=github_pages&amp;utm_medium=authority_bridge&amp;utm_campaign=rmm_pricing_per_endpoint_vs_technician&amp;utm_content=model_comparison">RMM pricing-model calculator</a> to test endpoint and technician counts, then record non-subscription assumptions in the <a href="rmm-quote-comparison-worksheet.html">quote-comparison worksheet</a>. The table above describes billing mechanics; it does not establish feature equivalence or total cost of ownership.</p>
+      </section>
+
+      <section aria-labelledby="eight-hundred-endpoint-example">
+        <h2 id="eight-hundred-endpoint-example">Worked example: 800 endpoints and four technicians</h2>
+        <p class="lede">This is billing-model arithmetic, not a vendor quote or feature comparison. At $2.50 per endpoint, 800 endpoints cost <strong>$2,000 per month</strong>. At $129 per technician, four technicians cost <strong>$516 per month</strong>. In that bounded example, per-technician billing is $1,484 lower before implementation, support, security, backup, remote-access, PSA, minimum-commitment, and retained-tool costs.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Model</th><th>Calculation</th><th>Illustrative monthly total</th><th>Inputs to verify</th></tr></thead>
+            <tbody>
+              <tr><td>Per endpoint</td><td>800 × $2.50</td><td>$2,000</td><td>Volume tiers, device classes, minimums, required modules</td></tr>
+              <tr><td>Per technician</td><td>4 × $129</td><td>$516</td><td>Included endpoint scope, technician roles, PSA, support, annual term</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p><strong>Break-even formula:</strong> technician count × monthly technician price ÷ monthly endpoint price. With four technicians at $129 and a $2.50 endpoint rate, the subscription-only break-even point is 206.4 endpoints; round up to 207 before the per-technician example becomes lower. Recalculate with the actual quote and mandatory costs, and reject the comparison if the products do not cover the same required jobs.</p>
       </section>
 
       <h2>Normalized monthly subscription estimates</h2>

@@ -688,10 +688,10 @@
     <title>RMM pricing transparency dataset: 14 products</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html" />
-    <updated>2026-11-06T00:00:00Z</updated>
+    <updated>2026-11-18T00:00:00Z</updated>
     <category term="pricing" />
     <category term="dataset" />
-    <summary>Compare per-endpoint, per-technician, flat, free-tier, source-available, and quote-only RMM pricing across fourteen source-dated product disclosures.</summary>
+    <summary>Compare per-endpoint and per-technician RMM pricing with an 800-endpoint worked example, a break-even formula, and fourteen source-dated product disclosures.</summary>
   </entry>
   <entry>
     <title>MSP client offboarding checklist and evidence register</title>
