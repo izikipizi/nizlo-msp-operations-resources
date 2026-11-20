@@ -1259,6 +1259,8 @@
       "format": "text/csv",
       "controls": 15,
       "fields": 15,
+      "activation_proofs": 6,
+      "last_modified": "2026-11-20",
       "access": "public",
       "account_required": false
     },

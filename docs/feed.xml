@@ -6,12 +6,32 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-18T00:00:00Z</updated>
+  <updated>2026-11-20T00:00:00Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>RMM trial go/no-go decision checklist</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-go-no-go-decision-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-go-no-go-decision-checklist.html" />
+    <updated>2026-11-20T00:00:00Z</updated>
+    <category term="evaluation" />
+    <category term="pilot" />
+    <category term="decision" />
+    <category term="activation" />
+    <summary>Require six minimum activation proofs, then use 15 evidence gates to close an RMM trial with an accountable go, limited-go, remediate-and-retest, or no-go decision.</summary>
+  </entry>
+  <entry>
+    <title>Minimum cybersecurity stack for small MSP clients</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/minimum-cybersecurity-stack-small-msp.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/minimum-cybersecurity-stack-small-msp.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/endpoint-stack-alignment-register.csv" />
+    <updated>2026-11-20T00:00:00Z</updated>
+    <category term="MSP cybersecurity stack" /><category term="small business security" /><category term="MSP operations" />
+    <summary>Define a defensible minimum stack across identity, endpoint operations and detection, email, recovery, network, exposure, access lifecycle, incident response, evidence, and ownership.</summary>
+  </entry>
   <entry>
     <title>RMM extension and integration security review</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-extension-integration-security-review.html</id>
@@ -20,15 +40,6 @@
     <updated>2026-11-18T00:00:00Z</updated>
     <category term="RMM security" /><category term="integration security" /><category term="MSP operations" />
     <summary>Inventory RMM extensions and integration paths, map effective authority, and prove secret safety, tenant isolation, attributable audit evidence, containment, and revocation.</summary>
-  </entry>
-  <entry>
-    <title>Minimum cybersecurity stack for small MSP clients</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/minimum-cybersecurity-stack-small-msp.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/minimum-cybersecurity-stack-small-msp.html" />
-    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/endpoint-stack-alignment-register.csv" />
-    <updated>2026-11-18T00:00:00Z</updated>
-    <category term="MSP cybersecurity stack" /><category term="small business security" /><category term="MSP operations" />
-    <summary>Define a defensible minimum stack across identity, endpoint operations and detection, email, recovery, network, exposure, access lifecycle, incident response, evidence, and ownership.</summary>
   </entry>
   <entry>
     <title>Easy RMM setup and technician training plan</title>
@@ -651,16 +662,6 @@
     <category term="pilot" />
     <category term="template" />
     <summary>Use a free 25-test RMM proof of concept checklist with pass criteria, evidence fields, stop conditions, defects, remediation, retesting, and an explicit go, limited-go, retest, or no-go decision.</summary>
-  </entry>
-  <entry>
-    <title>RMM trial go/no-go decision checklist</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-go-no-go-decision-checklist.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-go-no-go-decision-checklist.html" />
-    <updated>2026-11-12T00:00:00Z</updated>
-    <category term="evaluation" />
-    <category term="pilot" />
-    <category term="decision" />
-    <summary>Use 15 evidence gates to close an RMM trial with an accountable go, limited-go, remediate-and-retest, or no-go decision.</summary>
   </entry>
   <entry>
     <title>Six-week MSP onboarding project plan</title>
