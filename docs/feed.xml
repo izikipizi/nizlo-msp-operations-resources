@@ -13,6 +13,16 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>RMM trial first 24 hours plan</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-first-24-hours-plan.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-first-24-hours-plan.html" />
+    <updated>2026-11-21T00:00:00Z</updated>
+    <category term="evaluation" />
+    <category term="activation" />
+    <category term="first endpoint" />
+    <summary>Move an RMM trial from account creation to one authorized, healthy endpoint within 24 hours using measurable identity, telemetry, operation, security, rollback, and ownership gates.</summary>
+  </entry>
+  <entry>
     <title>RMM remote access session authorization checklist</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-session-authorization-checklist.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-session-authorization-checklist.html" />

@@ -5,8 +5,23 @@
     "url": "https://nizlo.com/",
     "resources_url": "https://nizlo.com/tools"
   },
-  "updated": "2026-11-18",
+  "updated": "2026-11-21",
   "resources": [
+    {
+      "id": "rmm-trial-first-24-hours-plan",
+      "title": "RMM trial first 24 hours plan",
+      "category": "evaluation",
+      "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-first-24-hours-plan.html",
+      "activation_gates": 6,
+      "last_modified": "2026-11-21",
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false,
+      "relationship_disclosure": "Nizlo maintains this vendor-neutral activation plan; tracked trial links point to Nizlo."
+    },
     {
       "id": "msp-professional-standards-evidence-readiness-checklist",
       "title": "MSP professional standards evidence readiness checklist",
