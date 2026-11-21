@@ -6,12 +6,22 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-20T00:00:00Z</updated>
+  <updated>2026-11-21T00:00:00Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>RMM remote access session authorization checklist</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-session-authorization-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-session-authorization-checklist.html" />
+    <updated>2026-11-21T00:00:00Z</updated>
+    <category term="remote-access" />
+    <category term="security" />
+    <category term="checklist" />
+    <summary>Use 24 controls to define authority, technician identity, attended and unattended session approval, scoped work, audit evidence, revocation, and review, with an independently published technical rationale for treating remote support as temporary privileged access.</summary>
+  </entry>
   <entry>
     <title>14-day RMM trial plan and go/no-go decision checklist</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-go-no-go-decision-checklist.html</id>
@@ -401,7 +411,7 @@
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/msp-sla-response-time-template.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/msp-sla-response-time-template.html" />
     <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-sla-response-time-template.csv" />
-    <updated>2026-11-06T00:00:00Z</updated>
+    <updated>2026-11-21T00:00:00Z</updated>
     <category term="service-delivery" />
     <category term="SLA" />
     <category term="template" />
@@ -446,16 +456,6 @@
     <category term="remote-desktop" />
     <category term="comparison" />
     <summary>Use eight evidence checks to separate remote desktop connection management, technician support sessions, and continuous RMM fleet operations.</summary>
-  </entry>
-  <entry>
-    <title>RMM remote access session authorization checklist</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-session-authorization-checklist.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-session-authorization-checklist.html" />
-    <updated>2026-11-06T00:00:00Z</updated>
-    <category term="remote-access" />
-    <category term="security" />
-    <category term="checklist" />
-    <summary>Use 24 controls to define authority, technician identity, attended and unattended session approval, scoped work, audit evidence, revocation, and review.</summary>
   </entry>
   <entry>
     <title>Free RMM API integration checklist: 18 preflight checks</title>

@@ -898,6 +898,7 @@
       "category": "security",
       "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-session-authorization-checklist.html",
       "canonical_guide": "https://nizlo.com/remote-management?utm_source=resource_index&utm_medium=resource&utm_campaign=remote_access_authorization",
+      "independent_reading": "https://blueradius.io/remote-support-temporary-privileged-access",
       "controls": 24,
       "audience": [
         "MSP",
