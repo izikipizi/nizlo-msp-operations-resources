@@ -8,6 +8,18 @@
   "updated": "2026-11-21",
   "resources": [
     {
+      "id": "msp-managed-service-margin-calculator",
+      "title": "MSP managed service margin calculator",
+      "category": "pricing",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/msp-managed-service-margin-calculator.html",
+      "canonical_guide": "https://nizlo.com/guides/rmm-pricing-models?utm_source=resource_index&utm_medium=resource&utm_campaign=msp_service_margin_calculator",
+      "format": "text/html",
+      "audience": ["MSP", "computer repair shop", "IT service provider"],
+      "access": "public",
+      "account_required": false,
+      "relationship_disclosure": "Nizlo maintains the calculator; the arithmetic is vendor-neutral and uses only visitor-entered assumptions."
+    },
+    {
       "id": "rmm-trial-first-24-hours-plan",
       "title": "RMM trial first 24 hours plan",
       "category": "evaluation",
