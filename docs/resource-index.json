@@ -1251,7 +1251,7 @@
     },
     {
       "id": "rmm-trial-go-no-go-decision-checklist",
-      "title": "RMM trial go/no-go decision checklist",
+      "title": "14-day RMM trial plan and go/no-go decision checklist",
       "category": "evaluation",
       "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-go-no-go-decision-checklist.html",
       "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-trial-go-no-go-decision-checklist.csv",
@@ -1260,6 +1260,7 @@
       "controls": 15,
       "fields": 15,
       "activation_proofs": 6,
+      "scheduled_days": 14,
       "last_modified": "2026-11-20",
       "access": "public",
       "account_required": false

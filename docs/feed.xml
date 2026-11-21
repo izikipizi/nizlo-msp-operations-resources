@@ -13,7 +13,7 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
-    <title>RMM trial go/no-go decision checklist</title>
+    <title>14-day RMM trial plan and go/no-go decision checklist</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-go-no-go-decision-checklist.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-go-no-go-decision-checklist.html" />
     <updated>2026-11-20T00:00:00Z</updated>
@@ -21,7 +21,7 @@
     <category term="pilot" />
     <category term="decision" />
     <category term="activation" />
-    <summary>Require six minimum activation proofs, then use 15 evidence gates to close an RMM trial with an accountable go, limited-go, remediate-and-retest, or no-go decision.</summary>
+    <summary>Schedule a two-week RMM evaluation from authority and first-endpoint activation through controlled work, failure testing, cost review, removal, and a final decision; then close it with six activation proofs and 15 evidence gates.</summary>
   </entry>
   <entry>
     <title>Minimum cybersecurity stack for small MSP clients</title>
