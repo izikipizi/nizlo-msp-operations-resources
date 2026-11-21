@@ -23,15 +23,15 @@
     <summary>Use 24 controls to define authority, technician identity, attended and unattended session approval, scoped work, audit evidence, revocation, and review, with an independently published technical rationale for treating remote support as temporary privileged access.</summary>
   </entry>
   <entry>
-    <title>14-day RMM trial plan and go/no-go decision checklist</title>
+    <title>RMM trial-to-paid rollout decision checklist</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-go-no-go-decision-checklist.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-go-no-go-decision-checklist.html" />
-    <updated>2026-11-20T00:00:00Z</updated>
+    <updated>2026-11-21T00:00:00Z</updated>
     <category term="evaluation" />
     <category term="pilot" />
     <category term="decision" />
     <category term="activation" />
-    <summary>Schedule a two-week RMM evaluation from authority and first-endpoint activation through controlled work, failure testing, cost review, removal, and a final decision; then close it with six activation proofs and 15 evidence gates.</summary>
+    <summary>Schedule a two-week RMM evaluation from first-endpoint activation through operational, security, commercial, removal, and approval evidence; then record whether paid rollout is approved, limited, deferred for retest, or rejected.</summary>
   </entry>
   <entry>
     <title>Minimum cybersecurity stack for small MSP clients</title>
