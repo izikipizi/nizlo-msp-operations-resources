@@ -132,6 +132,8 @@
       "title": "RMM first-endpoint activation troubleshooting checklist",
       "category": "deployment",
       "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html",
+      "diagnostic_commands": 5,
+      "last_modified": "2026-11-20",
       "audience": [
         "MSP",
         "IT team"
