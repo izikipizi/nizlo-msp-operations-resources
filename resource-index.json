@@ -359,6 +359,19 @@
       "relationship_disclosure": "Nizlo maintains the vendor-neutral calculator and sells RMM software."
     },
     {
+      "id": "msp-tool-consolidation-savings-calculator",
+      "title": "MSP tool consolidation savings calculator",
+      "category": "pricing",
+      "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/msp-tool-consolidation-savings-calculator.html",
+      "audience": [
+        "MSP",
+        "IT team"
+      ],
+      "access": "public",
+      "account_required": false,
+      "relationship_disclosure": "Nizlo maintains the vendor-neutral calculator and sells RMM software."
+    },
+    {
       "id": "rmm-quote-normalization-calculator",
       "title": "RMM quote normalization calculator",
       "category": "pricing",
