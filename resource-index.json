@@ -5,8 +5,20 @@
     "url": "https://nizlo.com/",
     "resources_url": "https://nizlo.com/tools"
   },
-  "updated": "2026-11-21",
+  "updated": "2026-11-22",
   "resources": [
+    {
+      "id": "rmm-alert-fatigue-cost-calculator",
+      "title": "RMM alert fatigue cost calculator",
+      "category": "monitoring",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-fatigue-cost-calculator.html",
+      "canonical_guide": "https://nizlo.com/monitoring-alerts?utm_source=resource_index&utm_medium=resource&utm_campaign=alert_fatigue_cost_calculator",
+      "format": "text/html",
+      "audience": ["MSP", "IT team", "service desk"],
+      "access": "public",
+      "account_required": false,
+      "relationship_disclosure": "Nizlo maintains the calculator; the arithmetic is vendor-neutral and uses only visitor-entered assumptions."
+    },
     {
       "id": "msp-managed-service-margin-calculator",
       "title": "MSP managed service margin calculator",
