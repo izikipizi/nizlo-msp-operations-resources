@@ -13,6 +13,16 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>MSP technician capacity calculator</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/msp-technician-capacity-calculator.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/msp-technician-capacity-calculator.html" />
+    <updated>2026-11-22T00:00:00Z</updated>
+    <category term="operations" />
+    <category term="staffing" />
+    <category term="calculator" />
+    <summary>Model monthly MSP support demand, required technician FTE, capacity surplus or deficit, endpoints per technician, and an estimated next-hire threshold using local workload assumptions.</summary>
+  </entry>
+  <entry>
     <title>RMM alert fatigue cost calculator</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-fatigue-cost-calculator.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-fatigue-cost-calculator.html" />

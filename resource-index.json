@@ -8,6 +8,18 @@
   "updated": "2026-11-22",
   "resources": [
     {
+      "id": "msp-technician-capacity-calculator",
+      "title": "MSP technician capacity calculator",
+      "category": "operations",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/msp-technician-capacity-calculator.html",
+      "canonical_guide": "https://nizlo.com/guides/rmm-kpi-dashboard?utm_source=resource_index&utm_medium=resource&utm_campaign=msp_technician_capacity_calculator",
+      "format": "text/html",
+      "audience": ["MSP", "computer repair shop", "IT service provider"],
+      "access": "public",
+      "account_required": false,
+      "relationship_disclosure": "Nizlo maintains the calculator; the arithmetic is vendor-neutral and uses only visitor-entered assumptions."
+    },
+    {
       "id": "rmm-alert-fatigue-cost-calculator",
       "title": "RMM alert fatigue cost calculator",
       "category": "monitoring",
