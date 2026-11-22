@@ -8,6 +8,18 @@
   "updated": "2026-11-22",
   "resources": [
     {
+      "id": "windows-patch-maintenance-window-calculator",
+      "title": "Windows patch maintenance window calculator",
+      "category": "patching",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-maintenance-window-calculator.html",
+      "canonical_guide": "https://nizlo.com/guides/windows-patch-management-checklist?utm_source=resource_index&utm_medium=resource&utm_campaign=patch_maintenance_window_calculator",
+      "format": "text/html",
+      "audience": ["MSP", "IT team", "patch administrator"],
+      "access": "public",
+      "account_required": false,
+      "relationship_disclosure": "Nizlo maintains the calculator; the arithmetic is vendor-neutral and uses only visitor-entered assumptions."
+    },
+    {
       "id": "msp-technician-capacity-calculator",
       "title": "MSP technician capacity calculator",
       "category": "operations",

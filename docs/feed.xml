@@ -13,6 +13,14 @@
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
   <entry>
+    <title>Windows patch maintenance window calculator</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-maintenance-window-calculator.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-maintenance-window-calculator.html" />
+    <updated>2026-11-22T00:00:00Z</updated>
+    <category term="patching" /><category term="maintenance-window" /><category term="calculator" />
+    <summary>Estimate staged Windows patch deployment duration, retry load, safety reserve, maintenance-window fit, and modeled endpoint capacity using local timing assumptions.</summary>
+  </entry>
+  <entry>
     <title>MSP technician capacity calculator</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/msp-technician-capacity-calculator.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/msp-technician-capacity-calculator.html" />
