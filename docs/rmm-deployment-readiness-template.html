@@ -204,6 +204,8 @@
           <div class="card"><strong>5. Retest one pilot</strong><span>Use one authorized representative endpoint, capture before-and-after evidence, and stop when the approved failure threshold, security condition, or rollback trigger is reached.</span></div>
           <div class="card"><strong>6. Reconcile the wave</strong><span>Classify every endpoint as successful, failed, excluded, offline, or unknown. Assign each exception an owner, next action, due date, and evidence before expanding rollout.</span></div>
         </div>
+        <h3>Worked example: the download started, but no device appeared</h3>
+        <p>Record the download start time and mark installer execution as unverified. Ask the pilot owner to confirm whether the download finished and whether the installer ran on the authorized device. If it ran, capture its exit code and check whether the agent service started. If the service started, use the <a href="rmm-first-endpoint-activation-troubleshooting-checklist.html">first check-in checklist</a> to find the next failing step. Keep the pilot to one device until it checks in under the intended customer and site.</p>
       </section>
 
       <section>
