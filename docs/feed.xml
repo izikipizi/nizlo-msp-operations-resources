@@ -6,12 +6,70 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-22T00:00:00Z</updated>
+  <updated>2026-11-25T00:00:00Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>RMM trial first 24 hours plan</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-first-24-hours-plan.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-first-24-hours-plan.html" />
+    <updated>2026-11-25T00:00:00Z</updated>
+    <category term="evaluation" />
+    <category term="activation" />
+    <category term="first endpoint" />
+    <summary>Plan the first day of an RMM trial, from one approved endpoint to usable inventory. Includes what to capture when an enrolled agent stops checking in.</summary>
+  </entry>
+  <entry>
+    <title>RMM trial-to-paid rollout decision checklist</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-go-no-go-decision-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-go-no-go-decision-checklist.html" />
+    <updated>2026-11-25T00:00:00Z</updated>
+    <category term="evaluation" />
+    <category term="pilot" />
+    <category term="decision" />
+    <category term="activation" />
+    <summary>Decide whether to proceed, limit the rollout, retest or stop. A worked example shows how to handle a mandatory patch and restart test that is still open.</summary>
+  </entry>
+  <entry>
+    <title>RMM remote access not connecting: 24-step troubleshooting checklist</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-not-connecting-troubleshooting-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-not-connecting-troubleshooting-checklist.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-remote-access-not-connecting-troubleshooting-checklist.csv" />
+    <updated>2026-11-25T00:00:00Z</updated>
+    <category term="operations" /><category term="remote access" /><category term="remote support" /><category term="troubleshooting" /><category term="RMM" />
+    <summary>Use 24 checks to isolate an authorized remote-support failure. The Android section explains the handoff between the Nizlo technician app and its remote desktop companion.</summary>
+  </entry>
+  <entry>
+    <title>Free RMM pricing comparison worksheet</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html" />
+    <updated>2026-11-25T00:00:00Z</updated>
+    <category term="pricing" />
+    <category term="selection" />
+    <category term="template" />
+    <summary>Normalize RMM pricing, renewal terms and exit costs. A worked example distinguishes the base rate from the two-technician total and links to the annual quote calculator.</summary>
+  </entry>
+  <entry>
+    <title>RMM quote normalization calculator</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html" />
+    <updated>2026-11-25T00:00:00Z</updated>
+    <category term="pricing" />
+    <category term="quote" />
+    <category term="calculator" />
+    <summary>Compare upfront, recurring and first-year costs across RMM proposals. A worked example separates months covered by a short initial quote from renewal costs you still need to verify.</summary>
+  </entry>
+  <entry>
+    <title>RMM implementation checklist and rollout plan template</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-deployment-readiness-template.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-deployment-readiness-template.html" />
+    <updated>2026-11-25T00:00:00Z</updated>
+    <category term="deployment" />
+    <summary>Use 38 controls to plan, verify and close an RMM rollout. A branch-pilot example covers the local maintenance window, endpoint location and after-hours alert ownership.</summary>
+  </entry>
   <entry>
     <title>Windows patch maintenance window calculator</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-maintenance-window-calculator.html</id>
@@ -51,16 +109,6 @@
     <summary>Model recurring managed-service revenue against RMM, security, delivery labor, client overhead, and fixed costs to calculate contribution margin, break-even price, and target-margin endpoint pricing.</summary>
   </entry>
   <entry>
-    <title>RMM trial first 24 hours plan</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-first-24-hours-plan.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-first-24-hours-plan.html" />
-    <updated>2026-11-21T00:00:00Z</updated>
-    <category term="evaluation" />
-    <category term="activation" />
-    <category term="first endpoint" />
-    <summary>Move an RMM trial from account creation to one authorized, healthy endpoint within 24 hours using measurable identity, telemetry, operation, security, rollback, and ownership gates.</summary>
-  </entry>
-  <entry>
     <title>MSP tool consolidation savings calculator</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/msp-tool-consolidation-savings-calculator.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/msp-tool-consolidation-savings-calculator.html" />
@@ -79,17 +127,6 @@
     <category term="security" />
     <category term="checklist" />
     <summary>Use 24 controls to define authority, technician identity, attended and unattended session approval, scoped work, audit evidence, revocation, and review, with an independently published technical rationale for treating remote support as temporary privileged access.</summary>
-  </entry>
-  <entry>
-    <title>RMM trial-to-paid rollout decision checklist</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-go-no-go-decision-checklist.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-go-no-go-decision-checklist.html" />
-    <updated>2026-11-21T00:00:00Z</updated>
-    <category term="evaluation" />
-    <category term="pilot" />
-    <category term="decision" />
-    <category term="activation" />
-    <summary>Schedule a two-week RMM evaluation from first-endpoint activation through operational, security, commercial, removal, and approval evidence; then record whether paid rollout is approved, limited, deferred for retest, or rejected.</summary>
   </entry>
   <entry>
     <title>Minimum cybersecurity stack for small MSP clients</title>
@@ -294,15 +331,6 @@
     <updated>2026-11-07T00:00:00Z</updated>
     <category term="operations" /><category term="troubleshooting" /><category term="RMM" /><category term="agent upgrade" /><category term="Windows Installer" />
     <summary>Use 24 vendor-neutral checks to preserve installer evidence, isolate package, prerequisite, concurrency, lock, path, and security-control failures, repair one pilot safely, and reconcile the complete upgrade cohort.</summary>
-  </entry>
-  <entry>
-    <title>RMM remote access not connecting: 24-step troubleshooting checklist</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-not-connecting-troubleshooting-checklist.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-not-connecting-troubleshooting-checklist.html" />
-    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-remote-access-not-connecting-troubleshooting-checklist.csv" />
-    <updated>2026-11-07T00:00:00Z</updated>
-    <category term="operations" /><category term="remote access" /><category term="remote support" /><category term="troubleshooting" /><category term="RMM" />
-    <summary>Use 24 vendor-neutral checks to separate authorization, endpoint, service, path, relay, session, display, and security-control failures before weakening safeguards or retrying an RMM remote-support session.</summary>
   </entry>
   <entry>
     <title>RMM agent certificate or TLS enrollment failure: 24-step troubleshooting checklist</title>
@@ -558,16 +586,6 @@
     <summary>Use 32 example RMM requirements and 18 decision fields to collect comparable vendor responses, evidence, pilot tests, acceptance criteria, owned gaps, remediation commitments, and defensible RFP decisions.</summary>
   </entry>
   <entry>
-    <title>Free RMM pricing comparison worksheet</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html" />
-    <updated>2026-11-11T00:00:00Z</updated>
-    <category term="pricing" />
-    <category term="selection" />
-    <category term="template" />
-    <summary>Normalize RMM pricing units, minimums, service dates, renewal notice windows, auto-renewal terms, included technicians and endpoints, add-ons, cancellation, implementation, and exit costs.</summary>
-  </entry>
-  <entry>
     <title>Windows patch failure triage checklist for MSPs</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-failure-triage-checklist.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-failure-triage-checklist.html" />
@@ -639,16 +657,6 @@
     <category term="pricing" />
     <category term="roi" />
     <summary>Use six free, no-signup tools to normalize RMM quotes, compare public pricing, model common pricing structures, estimate migration cost and break-even, calculate renewal deadlines, and build an ROI case.</summary>
-  </entry>
-  <entry>
-    <title>RMM quote normalization calculator</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html" />
-    <updated>2026-11-12T00:00:00Z</updated>
-    <category term="pricing" />
-    <category term="quote" />
-    <category term="calculator" />
-    <summary>Normalize base fees, endpoint and technician overages, add-ons, minimums, discounts, one-time fees, and contract terms into comparable recurring, first-year, contract, and per-endpoint costs.</summary>
   </entry>
   <entry>
     <title>RMM contract renewal deadline calculator</title>
@@ -932,14 +940,6 @@
     <updated>2026-11-09T00:00:00Z</updated>
     <category term="security" />
     <summary>Twenty-four vendor-neutral evidence questions for reconciling RMM incident scope, impact, timeline, response, cause, controls, corrective actions, retesting, accepted risk, and closure.</summary>
-  </entry>
-  <entry>
-    <title>RMM implementation checklist and rollout plan template</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-deployment-readiness-template.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-deployment-readiness-template.html" />
-    <updated>2026-11-13T00:00:00Z</updated>
-    <category term="deployment" />
-    <summary>Use 38 vendor-neutral controls to choose Group Policy, Intune, existing-RMM, manual or provisioning delivery; define silent-install, retry and identity safeguards; troubleshoot failures; pilot; roll back; verify; and close an RMM implementation.</summary>
   </entry>
   <entry>
     <title>Free RMM operations template library</title>
