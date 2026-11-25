@@ -27,7 +27,7 @@
   "identifier":"https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-client-onboarding-evidence-register.csv",
   "creator":{"@type":"Person","name":"Kip Ecklund"},
   "publisher":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},
-  "datePublished":"2026-11-02","dateModified":"2026-11-11","version":"2026-11-11",
+  "datePublished":"2026-11-02","dateModified":"2026-11-25","version":"2026-11-25",
   "license":"https://creativecommons.org/licenses/by/4.0/","isAccessibleForFree":true,
   "measurementTechnique":"Operator-entered MSP onboarding control review with named ownership, evidence, acceptance criteria, exceptions, and follow-up fields.",
   "keywords":["MSP onboarding checklist","MSP client onboarding checklist","MSP client go-live checklist","MSP service readiness checklist","MSP onboarding checklist template","MSP onboarding questionnaire","MSP onboarding process UK","managed services onboarding template","new client onboarding process","RMM deployment checklist","MSP onboarding evidence"],
@@ -94,6 +94,16 @@
 </table>
 </div>
 </section>
+<section class="register" aria-labelledby="worked-example-heading">
+<h2 id="worked-example-heading">Worked example: record an alert-routing failure before go-live</h2>
+<p>In this fictional pilot, a test alert from a spare workstation creates a ticket in the daytime queue during an after-hours test. The customer has contracted for after-hours response. Fill in the monitoring and service desk row of the <a href="templates/msp-client-onboarding-go-live-acceptance.csv" download>go-live acceptance CSV</a> like this:</p>
+<ul>
+<li><strong>Status and evidence.</strong> Blocked. Reference the test ticket, the expected on-call queue, the observed queue, and the UTC test time.</li>
+<li><strong>Owners and deadline.</strong> The MSP service desk lead owns the routing correction. The customer's IT lead confirms the after-hours escalation contact. Set and record a UTC retest deadline before the planned handoff.</li>
+<li><strong>Release decision.</strong> Hold the handoff and keep the existing response arrangement in effect. Repeat the test after the correction, capture acknowledgement in the expected queue, and record both parties' acceptance once the gate passes.</li>
+</ul>
+<p>Use the <a href="https://nizlo.com/guides/msp-client-onboarding-checklist?utm_source=github_pages&amp;utm_medium=resource&amp;utm_campaign=msp_client_onboarding&amp;utm_content=go_live_example">full client onboarding checklist</a> to decide which alerts and escalation paths to test during discovery and the pilot.</p>
+</section>
 <aside class="note"><strong>Bundle-scope example:</strong> review <a href="https://nizlo.com/suite?utm_source=github_pages&amp;utm_medium=authority_bridge&amp;utm_campaign=nizlo_suite&amp;utm_content=client_onboarding">Nizlo's published RMM and cloud-backup suite</a>, then record which client endpoints receive RMM, which receive backup, the storage allocation, recovery owner, exclusions, and acceptance evidence.</aside>
 <aside class="note"><strong>IT-consultant onboarding:</strong> use the <a href="https://nizlo.com/solutions/rmm-for-it-consultants?utm_source=github_pages&amp;utm_medium=authority_bridge&amp;utm_campaign=rmm_for_it_consultants&amp;utm_content=client_onboarding">RMM for IT consultants guide</a> to define each customer's authorized scope, site and endpoint baseline, monitoring ownership, patch window, escalation contacts, remote-support approval, reporting expectations, and first-device acceptance evidence.</aside>
 <aside class="note"><strong>Break/fix to managed-service onboarding:</strong> before treating a repair-shop customer as a managed-service customer, record the recurring-service scope, customer and site boundaries, included endpoints, alert and patch ownership, remote-support authorization, escalation contacts, billing boundary, and exit procedure. The <a href="https://nizlo.com/solutions/rmm-for-computer-repair-shops?utm_source=github_pages&amp;utm_medium=authority_bridge&amp;utm_campaign=rmm_for_computer_repair_shops&amp;utm_content=client_onboarding">RMM for computer repair shops guide</a> maps those controls to a Windows-first operating model.</aside>
@@ -101,5 +111,5 @@
 <aside class="note"><strong>Keep secrets out of the register:</strong> link to the approved vault or system of record. Do not place passwords, recovery codes, private keys, tokens, backup contents, or regulated customer data in this CSV.</aside>
 <aside class="note"><strong>Relationship disclosure:</strong> Nizlo, a Windows-first RMM and IT-management platform, maintains this template. It is designed for use with any MSP, RMM, service desk, backup, security, identity, or documentation stack. It is an operating aid, not legal advice, an audit opinion, or proof that an onboarding is complete.</aside>
 </main>
-<footer class="wrap"><span>Maintained by Nizlo · Updated November 11, 2026</span><span><a href="datapackage.json">Data Package</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Current source</a></span></footer>
+<footer class="wrap"><span>Maintained by Nizlo · Updated November 25, 2026</span><span><a href="datapackage.json">Data Package</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Current source</a></span></footer>
 </body></html>
