@@ -2393,13 +2393,13 @@
       "profile": "tabular-data-resource",
       "name": "rmm-quote-comparison-worked-example",
       "title": "Worked RMM quote comparison example",
-      "description": "Two completed example rows that show first-year totals for a published RMM price and a fictional proposal with setup and mandatory add-on costs.",
+      "description": "Three completed rows showing first-year totals for a published RMM price, a fictional proposal with setup and add-on costs, and a fictional per-endpoint quote with a billing minimum.",
       "path": "templates/rmm-quote-comparison-worked-example.csv",
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "bytes": 1296,
-      "hash": "sha256:e6723eb0d2df237221fdc9abf6a3be89eec4ae000c4e5698c98add6dc127ba79",
+      "bytes": 1651,
+      "hash": "sha256:41a510df05b490415b1363610f01e262ba855ca40005c730fc6ca603b426c434",
       "schema": {
         "fields": [
           {
