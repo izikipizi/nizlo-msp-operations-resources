@@ -6,12 +6,35 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-25T22:13:54Z</updated>
+  <updated>2026-11-25T22:35:45Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>Free RMM pricing comparison worksheet</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-quote-comparison-worked-example.csv" />
+    <updated>2026-11-25T22:35:45Z</updated>
+    <category term="pricing" />
+    <category term="selection" />
+    <category term="template" />
+    <summary>Use three completed quote rows to compare technician fees, setup costs, and minimum charges. One example shows why a 60-device fleet pays for 100 devices under a hypothetical endpoint minimum.</summary>
+  </entry>
+  <entry>
+    <title>Atera-to-Syncro export and migration validation worksheet</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/atera-to-syncro-export-validation-worksheet.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/atera-to-syncro-export-validation-worksheet.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/atera-to-syncro-export-validation-worksheet.csv" />
+    <updated>2026-11-25T22:35:45Z</updated>
+    <category term="Atera" />
+    <category term="Syncro" />
+    <category term="RMM migration" />
+    <category term="data export" />
+    <summary>Use the export and migration worksheet to verify the destination record IDs. A worked Atera-to-Syncro example shows how one duplicate can hide one missing open ticket even when the counts match.</summary>
+  </entry>
   <entry>
     <title>30 RMM vendor demo questions checklist</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vendor-demo-questions-checklist.html</id>
@@ -29,17 +52,6 @@
     <category term="pricing" />
     <category term="dataset" />
     <summary>Compare three RMM billing models. The new two-technician example shows where workspace pricing crosses a hypothetical per-endpoint quote. The downloadable CSV preserves fourteen source-dated vendor disclosures.</summary>
-  </entry>
-  <entry>
-    <title>Free RMM pricing comparison worksheet</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html" />
-    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-quote-comparison-worked-example.csv" />
-    <updated>2026-11-25T21:06:00Z</updated>
-    <category term="pricing" />
-    <category term="selection" />
-    <category term="template" />
-    <summary>Download two completed quote rows to see how technician fees, required add-ons, and one-time setup costs affect first-year and renewal totals.</summary>
   </entry>
   <entry>
     <title>Free MSP onboarding checklist: discovery, evidence, and go-live</title>
@@ -263,18 +275,6 @@
     <link rel="related" type="text/html" hreflang="nl" href="https://nizlo.com/nl/gidsen/beste-rmm-voor-msps?utm_source=atom&amp;utm_medium=external_resource&amp;utm_campaign=nl_rmm_keuzehulp" />
     <category term="beste RMM voor MSP" /><category term="RMM evaluatiematrix" /><category term="Nederlands" />
     <summary>Vergelijk RMM-platformen met twintig leveranciersneutrale criteria, vereiste bewijzen, pilottests, slaagcriteria, stopvoorwaarden en gewogen scores.</summary>
-  </entry>
-  <entry>
-    <title>Atera-to-Syncro export and migration validation worksheet</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/atera-to-syncro-export-validation-worksheet.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/atera-to-syncro-export-validation-worksheet.html" />
-    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/atera-to-syncro-export-validation-worksheet.csv" />
-    <updated>2026-11-10T00:00:00Z</updated>
-    <category term="Atera" />
-    <category term="Syncro" />
-    <category term="RMM migration" />
-    <category term="data export" />
-    <summary>Preserve Atera source records, validate Syncro's documented importer, pilot destination-agent deployment, rebuild non-transferred controls, reconcile every endpoint, and retain final acceptance evidence.</summary>
   </entry>
   <entry>
     <title>macOS RMM pilot evaluation matrix</title>
