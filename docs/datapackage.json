@@ -2391,6 +2391,143 @@
     },
     {
       "profile": "tabular-data-resource",
+      "name": "rmm-quote-comparison-worked-example",
+      "title": "Worked RMM quote comparison example",
+      "description": "Two completed example rows that show first-year totals for a published RMM price and a fictional proposal with setup and mandatory add-on costs.",
+      "path": "templates/rmm-quote-comparison-worked-example.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 1296,
+      "hash": "sha256:e6723eb0d2df237221fdc9abf6a3be89eec4ae000c4e5698c98add6dc127ba79",
+      "schema": {
+        "fields": [
+          {
+            "name": "record_id",
+            "type": "string"
+          },
+          {
+            "name": "vendor",
+            "type": "string"
+          },
+          {
+            "name": "quote_date",
+            "type": "date"
+          },
+          {
+            "name": "currency",
+            "type": "string"
+          },
+          {
+            "name": "billing_basis",
+            "type": "string"
+          },
+          {
+            "name": "contract_term_months",
+            "type": "integer"
+          },
+          {
+            "name": "service_start_date",
+            "type": "date"
+          },
+          {
+            "name": "renewal_or_end_date",
+            "type": "date"
+          },
+          {
+            "name": "nonrenewal_notice_days",
+            "type": "integer"
+          },
+          {
+            "name": "automatic_renewal_term_months",
+            "type": "integer"
+          },
+          {
+            "name": "minimum_spend_or_seats",
+            "type": "string"
+          },
+          {
+            "name": "base_platform_fee",
+            "type": "number"
+          },
+          {
+            "name": "included_technicians",
+            "type": "integer"
+          },
+          {
+            "name": "included_endpoints",
+            "type": "integer"
+          },
+          {
+            "name": "additional_technician_fee",
+            "type": "number"
+          },
+          {
+            "name": "additional_endpoint_fee",
+            "type": "number"
+          },
+          {
+            "name": "mandatory_addons_monthly",
+            "type": "number"
+          },
+          {
+            "name": "optional_addons_monthly",
+            "type": "number"
+          },
+          {
+            "name": "implementation_fee",
+            "type": "number"
+          },
+          {
+            "name": "training_fee",
+            "type": "number"
+          },
+          {
+            "name": "estimated_monthly_total",
+            "type": "number"
+          },
+          {
+            "name": "estimated_year_one_total",
+            "type": "number"
+          },
+          {
+            "name": "renewal_uplift_or_cap",
+            "type": "string"
+          },
+          {
+            "name": "early_termination_terms",
+            "type": "string"
+          },
+          {
+            "name": "data_export_or_exit_cost",
+            "type": "string"
+          },
+          {
+            "name": "source_or_quote_reference",
+            "type": "string"
+          },
+          {
+            "name": "assumptions",
+            "type": "string"
+          },
+          {
+            "name": "decision_owner",
+            "type": "string"
+          },
+          {
+            "name": "status",
+            "type": "string"
+          },
+          {
+            "name": "notes",
+            "type": "string"
+          }
+        ],
+        "primaryKey": "record_id"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
       "name": "rmm-vendor-due-diligence-evidence-register",
       "title": "RMM vendor due-diligence evidence register",
       "description": "Thirty review controls for collecting vendor evidence, recording findings and risk, assigning remediation, approving exceptions, and scheduling renewal review.",
