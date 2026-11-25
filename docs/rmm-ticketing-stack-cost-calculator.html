@@ -98,6 +98,13 @@
     <p><code>36-month total = (complete monthly operating cost × 36) + one-time implementation/migration</code></p>
   </section>
 
+  <section class="formula" aria-labelledby="included-seats-heading">
+    <h2 id="included-seats-heading">How to enter a quote with an included technician</h2>
+    <p>The per-technician field multiplies by every technician in the shared assumptions. If a quote includes seats in its base plan, add only the charge for extra seats to the base fee and leave the per-technician field at $0. Recalculate the base fee if you change the team size.</p>
+    <p>For example, a three-technician team comparing <a href="https://nizlo.com/pricing?utm_source=github_pages&amp;utm_medium=external_resource&amp;utm_campaign=rmm_ticketing_stack_cost&amp;utm_content=included_seats_example">Nizlo's published rates</a> would enter $79 as the adjusted base fee for Core ($59 plus two $10 seats) or $99 for Scale ($79 plus two $10 seats). These are monthly RMM subscription totals before tax. Enter any standalone ticketing or PSA tool the team still needs on its own line, then add labor and migration costs separately. Pricing checked November 25, 2026.</p>
+    <p>Use the <a href="rmm-quote-comparison-worksheet.html">RMM quote comparison worksheet</a> to record the base price, included seats, and renewal terms before comparing the totals.</p>
+  </section>
+
   <aside class="notice"><h2>Cost is not feature or operating equivalence.</h2>
     <p>This calculator performs arithmetic only. An included ticketing module is not automatically equivalent to a complete PSA. Confirm customer separation, supported operating systems, monitoring, patching, automation, remote access, service desk workflow, billing, reporting, security controls, integrations, support, implementation, export, and exit requirements in writing and in a representative pilot.</p>
     <p><strong>Relationship disclosure:</strong> Nizlo maintains this vendor-neutral tool. It does not prefill Nizlo pricing or claim that Nizlo—or any other vendor—will save the amount shown.</p>
@@ -112,7 +119,7 @@
     <p><a href="rmm-vs-psa-software.html">Separate RMM and PSA responsibilities</a><br />Map functional ownership before treating two products as substitutes.</p>
   </div></section>
 </main>
-<footer class="wrap"><span>Maintained by Nizlo · Updated November 13, 2026</span><span><a href="./">Resource library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source</a></span></footer>
+<footer class="wrap"><span>Maintained by Nizlo · Updated November 25, 2026</span><span><a href="./">Resource library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source</a></span></footer>
 <script>
 const ids=["endpoints","technicians","laborRate","aName","aBase","aEndpoint","aTechnician","aTicketing","aAddons","aHours","aOneTime","bName","bBase","bEndpoint","bTechnician","bTicketing","bAddons","bHours","bOneTime"];
 const el=Object.fromEntries(ids.map(id=>[id,document.getElementById(id)]));
