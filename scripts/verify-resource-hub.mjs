@@ -1,4 +1,4 @@
-import { readFile, readdir, stat } from "node:fs/promises";
+import { readFile, readdir, stat, writeFile } from "node:fs/promises";
 import { createHash } from "node:crypto";
 import { dirname, join, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -69,6 +69,18 @@ const sitemapUrls = new Set(
 );
 
 const errors = [];
+
+const htmlSitemapPath = join(docsRoot, "sitemap-pages.txt");
+const expectedHtmlSitemap = `${htmlFiles.map(localUrlFor).sort().join("\n")}\n`;
+if (process.argv.includes("--write-html-sitemap")) {
+  await writeFile(htmlSitemapPath, expectedHtmlSitemap, "utf8");
+}
+const htmlSitemap = await readFile(htmlSitemapPath, "utf8");
+if (htmlSitemap.replaceAll("\r\n", "\n") !== expectedHtmlSitemap) {
+  errors.push(
+    "docs/sitemap-pages.txt is stale. Run node scripts/verify-resource-hub.mjs --write-html-sitemap.",
+  );
+}
 
 const dataPackagePath = join(docsRoot, "datapackage.json");
 const dataPackage = JSON.parse(await readFile(dataPackagePath, "utf8"));
