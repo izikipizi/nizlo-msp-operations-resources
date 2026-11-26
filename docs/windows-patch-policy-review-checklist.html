@@ -50,7 +50,7 @@
         "headline":"RMM Patch Management Policy Checklist for Windows",
         "description":"A vendor-neutral 24-control checklist for reviewing an RMM patch management policy across Windows scope, rings, deadlines, reboots, exceptions, rollback, evidence, ownership, and approval.",
         "datePublished":"2026-11-03",
-        "dateModified":"2026-11-25",
+        "dateModified":"2026-11-26",
         "author":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},
         "publisher":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},
         "mainEntityOfPage":"https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-policy-review-checklist.html",
@@ -122,6 +122,12 @@
         </ol></section>
       </div>
 
+      <section class="use" id="offline-patch-pilot" aria-labelledby="offline-patch-pilot-title">
+        <h2 id="offline-patch-pilot-title">Test what happens after a Windows device misses its patch window</h2>
+        <p>On an authorized pilot laptop, record the intended install and restart behavior before testing. Keep it offline through the scheduled window, then reconnect it outside that window. Record when it checks in, whether it queues or installs the update, and whether it restarts, prompts, or waits. Check the endpoint state after the next allowed window and compare it with the dashboard and exported report.</p>
+        <p>For example, suppose a pilot targets eight devices. Five have verified installation, one is awaiting restart, one is deferred, and one is still offline. Record five of eight as verified complete and keep the other three outcomes visible. Assign an owner and a next check time for each open outcome. If it is unclear whether the missed device can install or restart during business hours, repeat the test before expanding the rollout.</p>
+        <p>Use the <a href="windows-patch-failure-triage-checklist.html">patch failure triage checklist</a> when an endpoint comes back online but the installation still cannot be verified.</p>
+      </section>
       <section class="use"><h2>Definition of review-ready</h2><p>A patch policy is review-ready when another authorized operator can identify its scope, make the same promotion and exception decisions, stop an unsafe deployment, locate the required evidence, and prove that every endpoint has a known disposition. A green dashboard alone is not closure if failed, offline, excluded, or unknown devices are not reconciled.</p></section>
       <section class="use" aria-labelledby="app-pilot">
         <h2 id="app-pilot">Prove an update for one third-party app</h2>
@@ -138,6 +144,6 @@
       <aside class="disclosure"><strong>Restaurant patching example:</strong> use the <a href="https://nizlo.com/solutions/rmm-for-restaurants?utm_source=github_pages&amp;utm_medium=authority_bridge&amp;utm_campaign=rmm_for_restaurants&amp;utm_content=patch_policy">RMM for restaurants guide</a> to separate point-of-sale, kitchen, office, manager, and shared Windows systems, then verify pilot rings, meal-service and event blackouts, restart notices, offline-device handling, vendor dependencies, exceptions, rollback, and per-device evidence before broader deployment.</aside>
       <aside class="disclosure"><strong>Relationship disclosure:</strong> this checklist is maintained by the Nizlo team. Nizlo is a Windows-first RMM and IT-management platform. The checklist is vendor-neutral and does not claim that Nizlo—or any other product—passes every control.</aside>
     </main>
-    <footer><div class="wrap">Maintained by Nizlo · Updated November 25, 2026 · <a href="./">Browse all MSP operations resources</a></div></footer>
+    <footer><div class="wrap">Maintained by Nizlo · Updated November 26, 2026 · <a href="./">Browse all MSP operations resources</a></div></footer>
   </body>
 </html>

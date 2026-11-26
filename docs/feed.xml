@@ -6,12 +6,22 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-26T11:06:21Z</updated>
+  <updated>2026-11-26T11:14:59Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>RMM patch management policy checklist for Windows</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-policy-review-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-policy-review-checklist.html" />
+    <updated>2026-11-26T11:14:59Z</updated>
+    <category term="patch-management" />
+    <category term="policy" />
+    <category term="checklist" />
+    <summary>Review a Windows patch policy and verify third-party app coverage in a pilot. Separate detecting an outdated app from applying an approved update and checking the running version. Includes an offline-device pilot and a sample eight-device reporting breakdown.</summary>
+  </entry>
   <entry>
     <title>RMM audit log review checklist: 24-control evidence register</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-audit-log-review-checklist.html</id>
@@ -155,16 +165,6 @@
     <updated>2026-11-26T02:06:57Z</updated>
     <category term="RMM checkout" /><category term="RMM billing" /><category term="trial conversion" />
     <summary>Verify price, trial timing, first-charge exposure, add-ons, payment authority, renewal, cancellation, invoices, and operational approval across sixteen evidence gates. A worked first invoice example shows how to reconcile plan price and extra technicians.</summary>
-  </entry>
-  <entry>
-    <title>RMM patch management policy checklist for Windows</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-policy-review-checklist.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-policy-review-checklist.html" />
-    <updated>2026-11-26T00:56:46Z</updated>
-    <category term="patch-management" />
-    <category term="policy" />
-    <category term="checklist" />
-    <summary>Review a Windows patch policy and verify third-party app coverage in a pilot. Separate detecting an outdated app from applying an approved update and checking the running version.</summary>
   </entry>
   <entry>
     <title>Atera-to-Syncro export and migration validation worksheet</title>
