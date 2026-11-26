@@ -25,7 +25,7 @@
   "creator": { "@type": "Person", "name": "Kip Ecklund" },
   "publisher": { "@type": "Organization", "name": "Nizlo", "url": "https://nizlo.com/" },
   "datePublished": "2026-11-02",
-  "dateModified": "2026-11-10",
+  "dateModified": "2026-11-26",
   "version": "1.93.0",
   "isAccessibleForFree": true,
   "conditionsOfAccess": "Public and ungated; no account or email address is required.",
@@ -48,6 +48,7 @@
 <aside class="note"><strong>Distributed-retail alerting example:</strong> use the <a href="https://nizlo.com/solutions/rmm-for-retail?utm_source=github_pages&amp;utm_medium=authority_bridge&amp;utm_campaign=rmm_for_retail&amp;utm_content=alert_escalation">RMM for retail IT guide</a> to define store, endpoint-role, business-hours, offline-device, patch, service, and remote-support scenarios, then map each alert to an owner, escalation path, evidence requirement, and closure test.</aside>
 <aside class="note"><strong>Safe use:</strong> the CSV contains example rules, not production defaults. Delete or rewrite them before use. Test each rule with controlled events and do not store passwords, tokens, recovery codes, or sensitive payload contents in the matrix.</aside>
 <aside class="note"><strong>How to apply it:</strong> begin with alerts that indicate loss of control, security protection, backup recoverability, service availability, and broken ticket routing. Map each rule to a documented owner, response path, customer communication policy, evidence requirement, and closure test. Review false positives and missed events together so tuning does not remove needed coverage.</aside>
+<aside class="note"><strong>When the alert fires without a ticket.</strong> Record the alert ID and timestamp, then check the routing decision and destination ticket before paging another technician. Use the <a href="rmm-alert-not-creating-ticket-troubleshooting-checklist.html">missing-ticket troubleshooting checklist</a> to confirm whether the integration suppressed, merged, or failed to deliver the alert.</aside>
 <aside class="note"><strong>Relationship disclosure:</strong> Nizlo, a Windows-first RMM and IT-management platform, maintains this template. It is designed for use with any RMM, PSA, service desk, monitoring platform, or incident workflow and does not claim that every product exposes every listed field.</aside></main>
 <footer class="wrap"><span>Maintained by Nizlo · Updated November 10, 2026</span><span><a href="templates/">Template library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources/tree/v1.93.0">Version 1.93.0</a></span></footer>
 </body></html>
