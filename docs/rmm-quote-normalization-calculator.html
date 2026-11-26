@@ -96,7 +96,28 @@
 </main>
 <footer class="wrap"><span>Maintained by Nizlo · Updated November 25, 2026</span><span><a href="./">Resource library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source</a></span></footer>
 <script>
-const defaults={"endpoints":100,"technicians":2,"base":99,"minimum":0,"included-endpoints":0,"endpoint-rate":2.5,"minimum-paid-endpoints":0,"included-techs":1,"tech-rate":25,"addon-endpoint":0,"addon-flat":0,"discount":0,"term":12,"one-time":500};
+const standardExample = {
+  "endpoints": 100, "technicians": 2, "base": 99, "minimum": 0,
+  "included-endpoints": 0, "endpoint-rate": 2.5, "minimum-paid-endpoints": 0,
+  "included-techs": 1, "tech-rate": 25, "addon-endpoint": 0, "addon-flat": 0,
+  "discount": 0, "term": 12, "one-time": 500,
+};
+const useEndpointMinimum =
+  new URLSearchParams(window.location.search).get("example") === "endpoint-minimum";
+const defaults = useEndpointMinimum
+  ? {
+      ...standardExample,
+      "endpoints": 60, "technicians": 0, "base": 0, "minimum-paid-endpoints": 100,
+      "included-techs": 0, "tech-rate": 0, "one-time": 0,
+    }
+  : standardExample;
+
+function resetExample() {
+  for (const [id, amount] of Object.entries(defaults)) {
+    document.getElementById(id).value = amount;
+  }
+  calculate();
+}
 const money=new Intl.NumberFormat("en-US",{style:"currency",currency:"USD",maximumFractionDigits:2});
 const value=id=>Math.max(0,Number(document.getElementById(id).value)||0);
 function calculate(){
@@ -111,7 +132,7 @@ function calculate(){
  document.getElementById("breakdown").innerHTML=`<li>Base: <strong>${money.format(base)}</strong></li><li>${endpointUnits} billable endpoints${minimumPaidEndpoints>endpoints-includedEndpoints && minimumPaidEndpoints>0?" (minimum applied)":""}: <strong>${money.format(endpointCharge)}</strong></li><li>${techUnits} billable technicians: <strong>${money.format(techCharge)}</strong></li><li>Required add-ons: <strong>${money.format(addonCharge)}</strong></li><li>Pre-discount subtotal${minimum>subtotal?" (minimum applied)":""}: <strong>${money.format(preDiscount)}</strong></li><li>Discount: <strong>${discount.toFixed(2)}%</strong></li><li>One-time fees: <strong>${money.format(oneTime)}</strong></li>`;
  window.quoteSummary=`RMM quote normalization (USD)\nManaged endpoints: ${endpoints}\nBillable endpoint units: ${endpointUnits} (minimum ${minimumPaidEndpoints})\nTechnicians: ${techs}\nRecurring monthly: ${money.format(monthly)}\nAnnualized recurring: ${money.format(annual)} (12 months at the quoted rate)\n${cashCostLabel}: ${money.format(firstYear)} (${cashCostNote})\nTotal ${term}-month contract: ${money.format(contract)}\nEffective monthly incl. one-time fees: ${money.format(effective)}\nEffective monthly per endpoint: ${perEndpoint===null?"n/a":money.format(perEndpoint)}\nAssumptions: base ${money.format(base)}, endpoint overage ${money.format(endpointCharge)}, technician overage ${money.format(techCharge)}, required add-ons ${money.format(addonCharge)}, minimum ${money.format(minimum)}, discount ${discount.toFixed(2)}%, one-time fees ${money.format(oneTime)}.`;
 }
-document.getElementById("calculator-form").addEventListener("submit",event=>{event.preventDefault();calculate()});Object.keys(defaults).forEach(id=>document.getElementById(id).addEventListener("input",calculate));document.getElementById("reset").addEventListener("click",()=>{Object.entries(defaults).forEach(([id,val])=>document.getElementById(id).value=val);calculate()});document.getElementById("copy").addEventListener("click", async () => {
+document.getElementById("calculator-form").addEventListener("submit",event=>{event.preventDefault();calculate()});Object.keys(defaults).forEach(id=>document.getElementById(id).addEventListener("input",calculate));document.getElementById("reset").addEventListener("click",resetExample);document.getElementById("copy").addEventListener("click", async () => {
   const status = document.getElementById("copy-status");
   try {
     await navigator.clipboard.writeText(window.quoteSummary);
@@ -120,5 +141,5 @@ document.getElementById("calculator-form").addEventListener("submit",event=>{eve
     status.textContent = "Clipboard unavailable. Select and copy the figures above.";
   }
 });
-calculate();
+resetExample();
 </script></body></html>
