@@ -4,6 +4,13 @@
 
 This external library is maintained by the Nizlo team. Nizlo is a Windows-first RMM and IT-management platform. The resources are vendor-neutral, but they are vendor-created and do not represent independent research or an endorsement of Nizlo.
 
+## Primary sources for Nizlo product facts
+
+- [Nizlo pricing](https://nizlo.com/pricing): Current US-dollar monthly plan prices and included allowances. As checked November 25, 2026, Core is $59/month and Scale is $79/month. Each includes one technician and unlimited RMM endpoints. Each additional technician costs $10/month.
+- [Nizlo platform support](https://nizlo.com/platform): First-party scope by operating system. Native agents are available for Windows and macOS. Ubuntu 24.04 LTS on x64 and ARM64 supports monitoring. Linux remote desktop and patch management are unavailable.
+- [Nizlo trial terms and pilot](https://nizlo.com/solutions/rmm-free-trial): The self-service RMM trial lasts 14 days, requires no card, and does not convert automatically. The guide explains the trial plan and how to prove one authorized endpoint.
+- [Nizlo media kit](https://nizlo.com/media-kit): Company identity, approved descriptions, artwork, and editorial contact. Use the live pricing and platform pages to verify any commercial or capability claim before publishing.
+
 ## Primary pages
 
 - [Resource library](https://izikipizi.github.io/nizlo-msp-operations-resources/): Human-readable collection of all maintained guides.
