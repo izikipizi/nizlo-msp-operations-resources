@@ -130,6 +130,7 @@ const expectedPackagePaths = new Set(
     .map((path) => relative(docsRoot, path).replaceAll("\\", "/")),
 );
 expectedPackagePaths.add("data/public-rmm-pricing-comparison-2026-11-02.csv");
+expectedPackagePaths.add("data/public-rmm-pricing-comparison-2026-11-26.csv");
 for (const path of expectedPackagePaths) {
   if (!packagePaths.has(path))
     errors.push(`docs/datapackage.json: missing ${path}`);

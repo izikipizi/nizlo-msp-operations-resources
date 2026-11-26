@@ -2173,6 +2173,87 @@
     },
     {
       "profile": "tabular-data-resource",
+      "name": "public-rmm-pricing-comparison-2026-11-26",
+      "title": "Public RMM pricing and price-visibility comparison for one-technician MSPs",
+      "description": "Fourteen source-dated RMM pricing records covering published numeric prices, free tiers, source-available software, published ranges, and quote-only vendors, with exact one-technician scenarios at 10, 50, 100, and 500 endpoints where public rates permit calculation. Nizlo maintains the dataset and is one of the compared products. This snapshot updates the Fathom pricing observation. Other records retain their original fact-check dates.",
+      "path": "data/public-rmm-pricing-comparison-2026-11-26.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 4335,
+      "hash": "sha256:c53a2d89976de468e1803528e9f62f66dc9616de05e29d9c6bfb042f42f8a0b8",
+      "licenses": [
+        {
+          "name": "CC-BY-4.0",
+          "path": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "schema": {
+        "fields": [
+          {
+            "name": "product",
+            "type": "string"
+          },
+          {
+            "name": "pricing_model",
+            "type": "string"
+          },
+          {
+            "name": "billing_term_for_estimate",
+            "type": "string"
+          },
+          {
+            "name": "public_price_visibility",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "numeric_public",
+                "free_tier_only",
+                "source_available",
+                "range_and_quote",
+                "quote_only"
+              ]
+            }
+          },
+          {
+            "name": "one_technician_endpoints_10_usd_month",
+            "type": "number"
+          },
+          {
+            "name": "one_technician_endpoints_50_usd_month",
+            "type": "number"
+          },
+          {
+            "name": "one_technician_endpoints_100_usd_month",
+            "type": "number"
+          },
+          {
+            "name": "one_technician_endpoints_500_usd_month",
+            "type": "number"
+          },
+          {
+            "name": "month_to_month_alternative_usd",
+            "type": "number"
+          },
+          {
+            "name": "source_url",
+            "type": "string",
+            "format": "uri"
+          },
+          {
+            "name": "fact_checked",
+            "type": "date"
+          },
+          {
+            "name": "notes",
+            "type": "string"
+          }
+        ],
+        "primaryKey": "product"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
       "name": "public-rmm-pricing-comparison-2026-11-02",
       "title": "Public RMM pricing and price-visibility comparison for one-technician MSPs",
       "description": "Fourteen source-dated RMM pricing records covering published numeric prices, free tiers, source-available software, published ranges, and quote-only vendors, with exact one-technician scenarios at 10, 50, 100, and 500 endpoints where public rates permit calculation. Nizlo maintains the dataset and is one of the compared products.",
