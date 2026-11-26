@@ -6,12 +6,23 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-26T12:40:27Z</updated>
+  <updated>2026-11-26T12:55:43Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>RMM vs remote desktop software: 8 buyer checks</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-remote-desktop-software.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-remote-desktop-software.html" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-remote-desktop-software.html#concurrent-support-licensing" />
+    <updated>2026-11-26T12:55:43Z</updated>
+    <category term="selection" />
+    <category term="remote-desktop" />
+    <category term="comparison" />
+    <summary>Compare remote desktop and RMM with eight buyer checks and an example that separates named technicians, active technicians, simultaneous sessions, and unattended devices.</summary>
+  </entry>
   <entry>
     <title>RMM trial first 24 hours plan</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-first-24-hours-plan.html</id>
@@ -598,16 +609,6 @@
     <category term="calculator" />
     <category term="reporting" />
     <summary>Download a free 20-field CSV report template and calculate strict verified patch compliance from an explicit endpoint denominator, with independent field context for scope, stale evidence, exception ownership, next actions, and verification.</summary>
-  </entry>
-  <entry>
-    <title>RMM vs remote desktop software: 8 buyer checks</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-remote-desktop-software.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-remote-desktop-software.html" />
-    <updated>2026-11-07T00:00:00Z</updated>
-    <category term="selection" />
-    <category term="remote-desktop" />
-    <category term="comparison" />
-    <summary>Use eight evidence checks to separate remote desktop connection management, technician support sessions, and continuous RMM fleet operations.</summary>
   </entry>
   <entry>
     <title>Free RMM API integration checklist: 18 preflight checks</title>
