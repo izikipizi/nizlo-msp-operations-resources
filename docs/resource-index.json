@@ -5,7 +5,7 @@
     "url": "https://nizlo.com/",
     "resources_url": "https://nizlo.com/tools"
   },
-  "updated": "2026-11-22",
+  "updated": "2026-11-25",
   "resources": [
     {
       "id": "windows-patch-maintenance-window-calculator",
@@ -184,7 +184,7 @@
       "category": "deployment",
       "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html",
       "diagnostic_commands": 5,
-      "last_modified": "2026-11-20",
+      "last_modified": "2026-11-21",
       "audience": [
         "MSP",
         "IT team"
@@ -310,7 +310,6 @@
       "access": "public",
       "account_required": false
     },
-
     {
       "id": "rmm-patch-compliance-calculator",
       "title": "RMM patch-compliance report template and calculator",
@@ -964,6 +963,7 @@
       "category": "security",
       "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-session-authorization-checklist.html",
       "canonical_guide": "https://nizlo.com/remote-management?utm_source=resource_index&utm_medium=resource&utm_campaign=remote_access_authorization",
+      "independent_reading": "https://blueradius.io/remote-support-temporary-privileged-access",
       "controls": 24,
       "audience": [
         "MSP",
@@ -1002,17 +1002,21 @@
     },
     {
       "id": "rmm-vs-psa-software",
-      "title": "RMM vs PSA software: 10 buyer checks",
+      "title": "RMM vs PSA software and all-in-one decision matrix",
       "category": "selection",
-      "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-psa-software.html",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-psa-software.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-psa-all-in-one-decision-matrix.csv",
       "canonical_guide": "https://nizlo.com/guides/what-is-rmm?utm_source=resource_index&utm_medium=resource&utm_campaign=rmm_vs_psa",
-      "controls": 10,
+      "format": "text/csv",
+      "controls": 18,
+      "fields": 12,
       "audience": [
         "MSP",
         "IT service provider"
       ],
       "access": "public",
-      "account_required": false
+      "account_required": false,
+      "relationship_disclosure": "Nizlo maintains the matrix; it is designed to compare either stack model without assuming a preferred result."
     },
     {
       "id": "msp-endpoint-exception-register",
@@ -1055,6 +1059,48 @@
       "access": "public",
       "account_required": false,
       "relationship_disclosure": "Nizlo maintains the vendor-neutral worksheet and is not affiliated with Atera or Syncro."
+    },
+    {
+      "id": "rmm-alert-fatigue-cost-calculator",
+      "title": "RMM alert fatigue cost calculator",
+      "category": "monitoring",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-fatigue-cost-calculator.html",
+      "canonical_guide": "https://nizlo.com/monitoring-alerts?utm_source=resource_index&utm_medium=resource&utm_campaign=alert_fatigue_cost_calculator",
+      "format": "text/html",
+      "audience": ["MSP", "IT team", "service desk"],
+      "access": "public",
+      "account_required": false,
+      "relationship_disclosure": "Nizlo maintains the calculator; the arithmetic is vendor-neutral and uses only visitor-entered assumptions."
+    },
+    {
+      "id": "msp-cve-remediation-evidence-register",
+      "title": "MSP CVE remediation evidence register",
+      "category": "security",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/msp-cve-remediation-evidence-register.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-cve-remediation-evidence-register.csv",
+      "canonical_guide": "https://nizlo.com/guides/windows-patch-management-checklist?utm_source=resource_index&utm_medium=resource&utm_campaign=cve_remediation_register",
+      "format": "text/csv",
+      "controls": 24,
+      "fields": 13,
+      "audience": ["MSP", "IT team", "security team"],
+      "access": "public",
+      "account_required": false,
+      "relationship_disclosure": "Nizlo maintains the register; the workflow is vendor-neutral."
+    },
+    {
+      "id": "rmm-continuity-drill-checklist",
+      "title": "RMM continuity drill checklist",
+      "category": "operations",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-continuity-drill-checklist.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-continuity-drill-checklist.csv",
+      "canonical_guide": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-continuity-drill-checklist.html",
+      "format": "text/csv",
+      "controls": 18,
+      "fields": 13,
+      "audience": ["MSP", "IT operations", "service desk", "security"],
+      "relationship_disclosure": "Nizlo maintains this vendor-neutral continuity exercise template.",
+      "access": "public",
+      "account_required": false
     }
   ],
   "templates": [
@@ -1327,7 +1373,7 @@
       "fields": 15,
       "activation_proofs": 6,
       "scheduled_days": 14,
-      "last_modified": "2026-11-20",
+      "last_modified": "2026-11-25",
       "access": "public",
       "account_required": false
     },
@@ -1573,6 +1619,34 @@
       "fields": 17,
       "audience": ["MSP", "IT team", "service desk", "security operations"],
       "relationship_disclosure": "Nizlo maintains this vendor-neutral endpoint coverage reconciliation template.",
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "msp-endpoint-exception-register",
+      "title": "MSP endpoint exception register",
+      "category": "operations",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/msp-endpoint-exception-register.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-endpoint-exception-register.csv",
+      "canonical_guide": "https://nizlo.com/guides/endpoint-exception-management",
+      "format": "text/csv",
+      "controls": 5,
+      "fields": 15,
+      "access": "public",
+      "account_required": false
+    },
+    {
+      "id": "msp-technology-roadmap-vcio-template",
+      "title": "MSP technology roadmap and vCIO register",
+      "category": "operations",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/msp-technology-roadmap-vcio-template.html",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-technology-roadmap-register.csv",
+      "canonical_guide": "https://nizlo.com/guides/msp-client-onboarding-checklist",
+      "format": "text/csv",
+      "controls": 24,
+      "fields": 21,
+      "audience": ["MSP", "vCIO", "IT consultant", "internal IT"],
+      "relationship_disclosure": "Nizlo maintains this vendor-neutral technology planning template.",
       "access": "public",
       "account_required": false
     }

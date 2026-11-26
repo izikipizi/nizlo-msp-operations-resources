@@ -1,5 +1,6 @@
 import { readFile, readdir, stat, writeFile } from "node:fs/promises";
 import { createHash } from "node:crypto";
+import { isDeepStrictEqual } from "node:util";
 import { dirname, join, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -69,6 +70,24 @@ const sitemapUrls = new Set(
 );
 
 const errors = [];
+
+const [repositoryIndex, hostedIndex] = await Promise.all(
+  [repositoryRoot, docsRoot].map(async (directory) =>
+    JSON.parse(await readFile(join(directory, "resource-index.json"), "utf8")),
+  ),
+);
+for (const group of ["resources", "templates", "datasets"]) {
+  for (const index of [repositoryIndex, hostedIndex]) {
+    const entries = index[group];
+    if (new Set(entries.map(({ id }) => id)).size !== entries.length) {
+      errors.push(`resource-index.json: duplicate IDs in ${group}`);
+    }
+    entries.sort((left, right) => left.id.localeCompare(right.id));
+  }
+}
+if (!isDeepStrictEqual(repositoryIndex, hostedIndex)) {
+  errors.push("resource-index.json: the repository and hosted indexes differ");
+}
 
 const htmlSitemapPath = join(docsRoot, "sitemap-pages.txt");
 const expectedHtmlSitemap = `${htmlFiles.map(localUrlFor).sort().join("\n")}\n`;
