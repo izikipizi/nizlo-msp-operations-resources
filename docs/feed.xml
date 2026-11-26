@@ -6,12 +6,25 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-26T14:25:45Z</updated>
+  <updated>2026-11-26T14:36:42Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>RMM first endpoint not connecting? Activation troubleshooting checklist</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html" />
+    <link rel="related" href="https://www.techwrix.com/the-first-15-minutes-after-an-rmm-endpoint-disappears/" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html#installer-warning-evidence" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html#resume-prepared-installer" />
+    <updated>2026-11-26T14:36:42Z</updated>
+    <category term="deployment" />
+    <category term="troubleshooting" />
+    <category term="activation" />
+    <summary>Resume a prepared installer on the intended endpoint and collect evidence if browser protection, installation, or enrollment blocks the first check-in.</summary>
+  </entry>
   <entry>
     <title>Free RMM pricing comparison worksheet</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html</id>
@@ -73,18 +86,6 @@
     <category term="activation" />
     <category term="first endpoint" />
     <summary>Run a first-day RMM pilot on one approved endpoint. Have a second technician verify device identity, inventory results, approvals, and pending work from the workspace records. If a protection blocks the installer, capture the warning before retrying.</summary>
-  </entry>
-  <entry>
-    <title>RMM first endpoint not connecting? Activation troubleshooting checklist</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html" />
-    <link rel="related" href="https://www.techwrix.com/the-first-15-minutes-after-an-rmm-endpoint-disappears/" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html#installer-warning-evidence" />
-    <updated>2026-11-26T13:13:55Z</updated>
-    <category term="deployment" />
-    <category term="troubleshooting" />
-    <category term="activation" />
-    <summary>Isolate first-endpoint activation failures and capture the right evidence when Chrome, Windows SmartScreen, or Microsoft Defender blocks an installer.</summary>
   </entry>
   <entry>
     <title>RMM agent uninstall verification checklist</title>
