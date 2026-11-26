@@ -6,12 +6,23 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-26T04:42:49Z</updated>
+  <updated>2026-11-26T05:04:34Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>RMM quote normalization calculator</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html#endpoint-growth-example" />
+    <updated>2026-11-26T05:04:34Z</updated>
+    <category term="pricing" />
+    <category term="quote" />
+    <category term="calculator" />
+    <summary>Compare upfront, recurring and first-year costs across RMM proposals. The new editable fleet-growth example compares 80 and 125 managed devices on a 100-device billing minimum and shows how to account for the months at each cost.</summary>
+  </entry>
   <entry>
     <title>Easy RMM setup and technician training plan</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-technician-onboarding-training-plan.html</id>
@@ -48,16 +59,6 @@
     <updated>2026-11-26T02:06:57Z</updated>
     <category term="RMM checkout" /><category term="RMM billing" /><category term="trial conversion" />
     <summary>Verify price, trial timing, first-charge exposure, add-ons, payment authority, renewal, cancellation, invoices, and operational approval across sixteen evidence gates. A worked first invoice example shows how to reconcile plan price and extra technicians.</summary>
-  </entry>
-  <entry>
-    <title>RMM quote normalization calculator</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html" />
-    <updated>2026-11-26T01:59:32Z</updated>
-    <category term="pricing" />
-    <category term="quote" />
-    <category term="calculator" />
-    <summary>Compare upfront, recurring and first-year costs across RMM proposals. Load an editable 100-device minimum or a three-month quote to see how device minimums and unpriced renewal months change the comparison.</summary>
   </entry>
   <entry>
     <title>RMM trial-to-paid rollout decision checklist</title>
