@@ -6,12 +6,23 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-26T08:51:23Z</updated>
+  <updated>2026-11-26T11:06:21Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>RMM audit log review checklist: 24-control evidence register</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-audit-log-review-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-audit-log-review-checklist.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-audit-log-review-checklist.csv" />
+    <updated>2026-11-26T11:06:21Z</updated>
+    <category term="security" />
+    <category term="audit-logging" />
+    <category term="template" />
+    <summary>Use a free RMM audit log review checklist to test twenty-four controls for actor and tenant attribution, endpoint identity, privileged workflows, outcomes, retention, export, monitoring, investigation readiness, and exception closure. Includes a worked example for preserving evidence before retiring a device.</summary>
+  </entry>
   <entry>
     <title>MSP managed service margin calculator</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/msp-managed-service-margin-calculator.html</id>
@@ -552,17 +563,6 @@
     <category term="vendor-exit" />
     <category term="template" />
     <summary>Use thirty-two controls to plan contract review, inventory, exports, automation, credentials, replacement readiness, coexistence, cutover, source removal, access revocation, data disposition, commercial closure, acceptance, and stabilization.</summary>
-  </entry>
-  <entry>
-    <title>RMM audit log review checklist: 24-control evidence register</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-audit-log-review-checklist.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-audit-log-review-checklist.html" />
-    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-audit-log-review-checklist.csv" />
-    <updated>2026-11-07T00:00:00Z</updated>
-    <category term="security" />
-    <category term="audit-logging" />
-    <category term="template" />
-    <summary>Use a free RMM audit log review checklist to test twenty-four controls for actor and tenant attribution, endpoint identity, privileged workflows, outcomes, retention, export, monitoring, investigation readiness, and exception closure.</summary>
   </entry>
   <entry>
     <title>RMM security checklist and evidence register</title>
