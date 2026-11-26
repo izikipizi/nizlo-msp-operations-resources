@@ -6,12 +6,23 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-26T17:39:22Z</updated>
+  <updated>2026-11-26T18:45:10Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>RMM remote access session authorization checklist</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-session-authorization-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-session-authorization-checklist.html" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-session-authorization-checklist.html#intune-remote-help-diagnostics" />
+    <updated>2026-11-26T18:45:10Z</updated>
+    <category term="remote-access" />
+    <category term="security" />
+    <category term="checklist" />
+    <summary>Use 24 controls to verify remote-support authorization. The new Intune Remote Help example shows how to test decline, allow and stop sharing in an attended Windows session and how to record consent and retention decisions.</summary>
+  </entry>
   <entry>
     <title>Windows patch exception review and closure template</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-exception-review-template.html</id>
@@ -334,16 +345,6 @@
     <category term="consolidation" />
     <category term="calculator" />
     <summary>Compare a current MSP software stack with a proposed consolidated platform while preserving retained tools, administrative labor, subscription overlap, migration labor, implementation fees, payback, and first-year and 36-month net savings.</summary>
-  </entry>
-  <entry>
-    <title>RMM remote access session authorization checklist</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-session-authorization-checklist.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-session-authorization-checklist.html" />
-    <updated>2026-11-21T00:00:00Z</updated>
-    <category term="remote-access" />
-    <category term="security" />
-    <category term="checklist" />
-    <summary>Use 24 controls to define authority, technician identity, attended and unattended session approval, scoped work, audit evidence, revocation, and review, with an independently published technical rationale for treating remote support as temporary privileged access.</summary>
   </entry>
   <entry>
     <title>Minimum cybersecurity stack for small MSP clients</title>
