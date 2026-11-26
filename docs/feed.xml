@@ -6,12 +6,22 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-26T06:27:20Z</updated>
+  <updated>2026-11-26T06:38:09Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>RMM migration plan template and checklist workbook</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-workbook-template.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-workbook-template.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-migration-workbook.csv" />
+    <updated>2026-11-26T06:38:09Z</updated>
+    <category term="migration" />
+    <category term="change-management" />
+    <summary>Plan an RMM migration with an adjustable six-stage schedule and 30-control CSV. A fictional two-site cutover shows how to record a failed alert test, defer offline devices, and make separate retirement decisions.</summary>
+  </entry>
   <entry>
     <title>Free RMM pricing comparison worksheet</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html</id>
@@ -98,16 +108,6 @@
     <updated>2026-11-26T04:42:49Z</updated>
     <category term="easy RMM setup" /><category term="RMM training" /><category term="technician onboarding" /><category term="MSP operations" />
     <summary>Measure setup and training with ten observable exercises and a downloadable CSV. The new first-week drill gives a trainee two records with the same hostname and checks whether they verify the customer, site, and device before connecting.</summary>
-  </entry>
-  <entry>
-    <title>RMM migration plan template and checklist workbook</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-workbook-template.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-workbook-template.html" />
-    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-migration-workbook.csv" />
-    <updated>2026-11-26T04:23:13Z</updated>
-    <category term="migration" />
-    <category term="change-management" />
-    <summary>Plan an RMM migration with an adjustable six-stage schedule and a 30-control CSV. The outgoing-provider handoff example shows how to separate the export deadline, transfer of monitoring and support, and removal of old agents while assigning owners to offline devices.</summary>
   </entry>
   <entry>
     <title>MSP client onboarding RACI matrix</title>
