@@ -292,7 +292,22 @@ for (const path of htmlFiles) {
     ];
     if (jsonLdBlocks.length === 0)
       throw new Error(`${relativePath}: missing JSON-LD`);
-    for (const [, json] of jsonLdBlocks) JSON.parse(json);
+    const structuredData = jsonLdBlocks.map(([, json]) => JSON.parse(json));
+    if (relativePath === "docs/public-rmm-pricing-dataset.html") {
+      const datasets = structuredData.filter(({ "@type": type }) =>
+        ["Dataset", "sc:Dataset"].includes(type),
+      );
+      if (
+        datasets.length !== 1 ||
+        datasets[0]["@context"] !== "https://schema.org" ||
+        !datasets[0].name ||
+        !datasets[0].description
+      ) {
+        throw new Error(
+          `${relativePath}: expected one Schema.org Dataset with a name and description; keep Croissant metadata in its linked file`,
+        );
+      }
+    }
 
     for (const match of source.matchAll(/href="([^"]+)"/g)) {
       const href = match[1];
