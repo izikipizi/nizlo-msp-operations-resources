@@ -89,6 +89,20 @@ if (!isDeepStrictEqual(repositoryIndex, hostedIndex)) {
   errors.push("resource-index.json: the repository and hosted indexes differ");
 }
 
+const publishedPaths = new Set(
+  allFiles.map((path) => new URL(localUrlFor(path)).pathname),
+);
+for (const group of ["resources", "templates", "datasets"]) {
+  for (const { id, ...fields } of repositoryIndex[group]) {
+    for (const [field, value] of Object.entries(fields)) {
+      if (typeof value !== "string" || !value.startsWith(siteOrigin)) continue;
+      if (!publishedPaths.has(new URL(value).pathname)) {
+        errors.push(`resource-index.json: ${id} has a missing local ${field}: ${value}`);
+      }
+    }
+  }
+}
+
 const htmlSitemapPath = join(docsRoot, "sitemap-pages.txt");
 const expectedHtmlSitemap = `${htmlFiles.map(localUrlFor).sort().join("\n")}\n`;
 if (process.argv.includes("--write-html-sitemap")) {
