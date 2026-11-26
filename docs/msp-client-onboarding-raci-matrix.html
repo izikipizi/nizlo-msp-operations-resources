@@ -26,7 +26,7 @@
   "identifier":"https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-client-onboarding-raci-matrix.csv",
   "creator":{"@type":"Person","name":"Kip Ecklund"},
   "publisher":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},
-  "datePublished":"2026-11-13","dateModified":"2026-11-13","version":"2026-11-13",
+  "datePublished":"2026-11-13","dateModified":"2026-11-25","version":"2026-11-13",
   "license":"https://creativecommons.org/licenses/by/4.0/","isAccessibleForFree":true,
   "measurementTechnique":"Operator-entered responsibility assignment with required evidence, acceptance criteria, status, exception ownership, and due dates.",
   "keywords":["MSP onboarding RACI matrix","MSP client onboarding checklist","managed services responsibility matrix","MSP onboarding roles and responsibilities","MSP onboarding template"],
@@ -60,9 +60,19 @@
 <tr><th>Remote support</th><td>Customer</td><td>MSP</td><td>A test session follows the approved authorization path and records technician identity</td></tr>
 <tr><th>Residual risk</th><td>Customer</td><td>Joint</td><td>Every open gap has a decision owner, due date, compensating controls, and disposition</td></tr>
 </tbody></table></div>
+<section class="card" aria-labelledby="after-hours-access-exercise">
+  <h2 id="after-hours-access-exercise">Exercise an after-hours remote access handoff</h2>
+  <p>In a tabletop before go-live, assume the MSP must suspend its usual remote support connection on a Friday evening. Use the matrix to find the people who make and carry out three decisions.</p>
+  <ol>
+    <li><strong>Reach the decision maker.</strong> In <code>ONB-RACI-03</code>, name the primary and backup customer approvers, the MSP duty lead, and an alternate contact channel. Time a test from first notification to acknowledgment.</li>
+    <li><strong>Prove independent access.</strong> In <code>ONB-RACI-08</code> and <code>ONB-RACI-12</code>, record who can approve a suspension and who can use the customer-controlled recovery path. Ask a named customer operator to demonstrate that path in an approved test environment.</li>
+    <li><strong>Prove one recovery task.</strong> In <code>ONB-RACI-14</code>, record who authorizes a restore and have the designated operator demonstrate access to one approved recovery point without relying on the usual remote support connection. Record the outcome and who will review it.</li>
+  </ol>
+  <p>If authorization, contact, or recovery access fails, log the affected workstream, one owner, a deadline, and a retest in <code>ONB-RACI-19</code> before approving that part of the handoff. Save exercise evidence in the approved system of record and link to it from the matrix. <a href="https://www.ncsc.gov.uk/guidance/choosing-a-managed-service-provider-msp">NCSC guidance on choosing an MSP</a>.</p>
+</section>
 <aside class="note"><strong>RACI boundary:</strong> this template uses accountable, responsible, consulted, and informed fields as an operating aid. It does not replace the contract, professional advice, or customer approval. Confirm current obligations and local requirements before use.</aside>
 <aside class="note"><strong>Keep secrets out:</strong> link to the approved vault or system of record. Do not store passwords, recovery codes, tokens, private keys, regulated data, or backup contents in the CSV.</aside>
 <aside class="note"><strong>Relationship disclosure:</strong> Nizlo, a Windows-first RMM and IT-management platform, maintains this vendor-neutral matrix. It is designed to remain usable with any MSP, RMM, service desk, security, backup, identity, or documentation stack.</aside>
 </main>
-<footer class="wrap"><span>Maintained by Nizlo · Updated November 13, 2026</span><span><a href="datapackage.json">Data Package</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Current source</a></span></footer>
+<footer class="wrap"><span>Maintained by Nizlo · Updated November 25, 2026</span><span><a href="datapackage.json">Data Package</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Current source</a></span></footer>
 </body></html>
