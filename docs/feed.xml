@@ -6,12 +6,36 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-26T11:52:55Z</updated>
+  <updated>2026-11-26T12:16:30Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>Free RMM pricing comparison worksheet</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-quote-comparison-worked-example.csv" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html#renewal-cap-example" />
+    <updated>2026-11-26T12:16:30Z</updated>
+    <category term="pricing" />
+    <category term="selection" />
+    <category term="template" />
+    <summary>Compare technician fees, setup costs, and minimum charges. The renewal-cap example shows how a first-term discount changes two-year cost depending on the rate to which the cap applies.</summary>
+  </entry>
+  <entry>
+    <title>RMM quote normalization calculator</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html#endpoint-growth-example" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html#renewal-cap-example" />
+    <updated>2026-11-26T12:16:30Z</updated>
+    <category term="pricing" />
+    <category term="quote" />
+    <category term="calculator" />
+    <summary>Compare upfront, recurring, and first-year costs across RMM proposals. Use the linked renewal-cap example to budget separately for the introductory rate and the confirmed renewal rate.</summary>
+  </entry>
   <entry>
     <title>Atera-to-Syncro export and migration validation worksheet</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/atera-to-syncro-export-validation-worksheet.html</id>
@@ -71,17 +95,6 @@
     <updated>2026-11-26T08:35:00Z</updated>
     <category term="pricing" />
     <summary>Compare six public RMM pricing options using your endpoint and technician counts.</summary>
-  </entry>
-  <entry>
-    <title>Free RMM pricing comparison worksheet</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html" />
-    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-quote-comparison-worked-example.csv" />
-    <updated>2026-11-26T07:02:45Z</updated>
-    <category term="pricing" />
-    <category term="selection" />
-    <category term="template" />
-    <summary>Compare technician fees, setup costs, and minimum charges. A worked renewal example shows how to compare the time it takes to recover migration costs with the next contract deadline.</summary>
   </entry>
   <entry>
     <title>RMM migration plan template and checklist workbook</title>
@@ -148,17 +161,6 @@
     <category term="troubleshooting" />
     <category term="activation" />
     <summary>Find the first missing proof when an RMM agent has never reported. If it reported before and is now missing or stale, follow the separate Techwrix walkthrough to preserve identity and heartbeat evidence.</summary>
-  </entry>
-  <entry>
-    <title>RMM quote normalization calculator</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html#endpoint-growth-example" />
-    <updated>2026-11-26T05:04:34Z</updated>
-    <category term="pricing" />
-    <category term="quote" />
-    <category term="calculator" />
-    <summary>Compare upfront, recurring and first-year costs across RMM proposals. The new editable fleet-growth example compares 80 and 125 managed devices on a 100-device billing minimum and shows how to account for the months at each cost.</summary>
   </entry>
   <entry>
     <title>Easy RMM setup and technician training plan</title>
