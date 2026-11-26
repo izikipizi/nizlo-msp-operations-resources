@@ -27,7 +27,7 @@
   "identifier":"https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-pilot-test-evidence-pack.csv",
   "creator":{"@type":"Person","name":"Kip Ecklund"},
   "publisher":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},
-  "datePublished":"2026-11-02","dateModified":"2026-11-22","version":"1.57.4",
+  "datePublished":"2026-11-02","dateModified":"2026-11-26","version":"1.57.4",
   "license":"https://creativecommons.org/licenses/by/4.0/","isAccessibleForFree":true,
   "measurementTechnique":"Operator-recorded controlled RMM pilot testing with pass criteria, evidence, stop conditions, defects, remediation, retest dates, and explicit rollout decisions.",
   "keywords":["RMM pilot test plan","RMM proof of concept checklist","RMM evaluation template","RMM testing checklist","remote monitoring and management pilot"],
@@ -81,6 +81,11 @@
 <article><h2>Test failure and recovery</h2><p>Make offline state, stale data, queued work, cancellation, service interruption, bounded retries, and reconciliation visible before production.</p></article>
 <article><h2>Remove and decide</h2><p>Prove clean uninstall and credential revocation, record residual risk, then choose go, limited go, remediate and retest, or no-go.</p></article>
 </section>
+<aside class="note" aria-labelledby="offline-queue-example">
+  <h2 id="offline-queue-example">Check what runs when an offline device reconnects</h2>
+  <p>On one authorized lab endpoint, use a harmless task that only records a test marker. Write down the documented queue expiry and the maintenance-window end time. With the device offline, queue the task and record its ID and status. Reconnect after the applicable expiry or cutoff and check the job history and endpoint for the marker.</p>
+  <p>Record the outcome under <strong>PILOT-022</strong>. If the task runs after an expiry or cutoff that should prevent execution, hold the rollout. If the product offers no way to enforce the cutoff, record that limitation and agree on a cancellation or rescheduling process before approving production use.</p>
+</aside>
 <section class="faq" aria-labelledby="faq-title">
 <h2 id="faq-title">RMM proof of concept questions</h2>
 <article><h3>What should an RMM proof of concept test?</h3><p>Test authority, technician and endpoint identity, enrollment, tenant placement, monitoring freshness, patch-state reconciliation, automation targeting, remote-access controls, audit evidence, failure recovery, clean removal, and the final rollout decision.</p></article>
@@ -107,5 +112,5 @@
 <aside class="note"><strong>Evidence is part of the result:</strong> a pass without a reproducible observation, export, timestamp, or approval record is not decision-quality evidence. Keep secrets and regulated customer data in their approved systems of record.</aside>
 <aside class="note"><strong>Relationship disclosure:</strong> Nizlo, a Windows-first RMM and IT-management platform, maintains this vendor-neutral template. It does not claim that Nizlo or any other product passes every test, and it is not an audit opinion or security certification.</aside>
 </main>
-<footer class="wrap"><span>Maintained by Nizlo · Updated November 22, 2026</span><span><a href="datapackage.json">Data Package</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources/tree/v1.57.4">Version 1.57.4</a></span></footer>
+<footer class="wrap"><span>Maintained by Nizlo · Updated November 26, 2026</span><span><a href="datapackage.json">Data Package</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources/tree/v1.57.4">Version 1.57.4</a></span></footer>
 </body></html>
