@@ -51,7 +51,7 @@
         "headline":"RMM Remote Access Session Authorization Checklist",
         "description":"A vendor-neutral 24-control checklist for authorizing, conducting, auditing, revoking, and reviewing RMM remote-access sessions.",
         "datePublished":"2026-11-04",
-        "dateModified":"2026-11-25",
+        "dateModified":"2026-11-26",
         "author":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},
         "publisher":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},
         "mainEntityOfPage":"https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-session-authorization-checklist.html",
@@ -122,6 +122,17 @@
       </div>
 
       <section class="use"><h2>Minimum session record</h2><p>A defensible record identifies the actor, approver, customer, endpoint, reason, ticket, access mode, start and end time, material actions, file transfers, outcome, evidence reference, and any exception or follow-up owner. A tool showing only “connected” and “disconnected” is not enough to prove authorization or explain what happened.</p></section>
+      <section class="use" aria-labelledby="intune-remote-help-diagnostics">
+        <h2 id="intune-remote-help-diagnostics">Test diagnostics consent in Microsoft Intune Remote Help</h2>
+        <p>Microsoft is rolling out a separate device diagnostics prompt for attended Windows sessions. Use an authorized test device and a sample ticket to verify the workflow in your tenant before updating your helpdesk runbook.</p>
+        <ol>
+          <li><strong>Decline diagnostics.</strong> Confirm remote assistance continues. Record the result in the test ticket.</li>
+          <li><strong>Allow diagnostics.</strong> Confirm the end user can view the same report as the helper. Check which information would be retained under your client’s policy.</li>
+          <li><strong>Stop sharing.</strong> Confirm that the helper is notified and can no longer refresh the report while sharing is off. Handle any data already saved under the client’s retention policy.</li>
+        </ol>
+        <p>Record the consent outcome, test time, technician and approved retention exceptions. Keep the raw report out of the ticket unless the client’s policy calls for it. If the prompt is unavailable, record the tenant and app version and retest after rollout.</p>
+        <p><a href="https://learn.microsoft.com/en-us/intune/remote-help/start-session#attended-support">Microsoft’s diagnostics-sharing instructions</a></p>
+      </section>
       <section class="use" aria-labelledby="integrated-access-pilot">
         <h2 id="integrated-access-pilot">Test integrated RMM remote access with a second technician</h2>
         <p>On an authorized, noncritical endpoint, create a sample ticket and name the customer, site, device, approver, technician, and permitted work. Start the session from that device’s monitored record. Perform one harmless action, close the session, and record the result against the ticket.</p>
@@ -137,6 +148,6 @@
       <aside class="disclosure"><strong>Dental-practice remote-support boundary:</strong> use the <a href="https://nizlo.com/solutions/rmm-for-dental-practices?utm_source=github_pages&amp;utm_medium=authority_bridge&amp;utm_campaign=rmm_for_dental_practices&amp;utm_content=remote_access_authorization">RMM for dental practices guide</a> to identify authorized support paths for ordinary Windows reception, billing, office, and practice-management endpoints, then require the exact practice and device, approved reason, authorized approver, technician or vendor scope, session mode, evidence, and safe closure. Do not infer authorization or product suitability for imaging, diagnostic, treatment, or other clinical equipment; follow the device manufacturer, practice governance, contracts, and applicable requirements.</aside>
       <aside class="disclosure"><strong>Relationship disclosure:</strong> this checklist is maintained by the Nizlo team. Nizlo is a Windows-first RMM and IT-management platform. The checklist is vendor-neutral and does not claim that Nizlo—or any other product—passes every control.</aside>
     </main>
-    <footer><div class="wrap">Maintained by Nizlo · Updated November 25, 2026 · <a href="./">Browse all MSP operations resources</a></div></footer>
+    <footer><div class="wrap">Maintained by Nizlo · Updated November 26, 2026 · <a href="./">Browse all MSP operations resources</a></div></footer>
   </body>
 </html>
