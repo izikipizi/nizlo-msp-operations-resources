@@ -6,12 +6,45 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-25T22:35:45Z</updated>
+  <updated>2026-11-26T01:00:29Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>RMM trial-to-paid rollout decision checklist</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-go-no-go-decision-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-go-no-go-decision-checklist.html" />
+    <updated>2026-11-26T01:00:29Z</updated>
+    <category term="evaluation" />
+    <category term="pilot" />
+    <category term="decision" />
+    <category term="activation" />
+    <summary>Decide whether to proceed, limit the rollout, retest or stop. Compare Core and Scale by verifying one recurring workflow and measuring whether the time saved covers the plan difference.</summary>
+  </entry>
+  <entry>
+    <title>RMM patch management policy checklist for Windows</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-policy-review-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-policy-review-checklist.html" />
+    <updated>2026-11-26T00:56:46Z</updated>
+    <category term="patch-management" />
+    <category term="policy" />
+    <category term="checklist" />
+    <summary>Review a Windows patch policy and verify third-party app coverage in a pilot. Separate detecting an outdated app from applying an approved update and checking the running version.</summary>
+  </entry>
+  <entry>
+    <title>Atera-to-Syncro export and migration validation worksheet</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/atera-to-syncro-export-validation-worksheet.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/atera-to-syncro-export-validation-worksheet.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/atera-to-syncro-export-validation-worksheet.csv" />
+    <updated>2026-11-26T00:28:59Z</updated>
+    <category term="Atera" />
+    <category term="Syncro" />
+    <category term="RMM migration" />
+    <category term="data export" />
+    <summary>Use worked examples and the CSV to reconcile migrated tickets and verify that a device with a duplicate hostname belongs to the correct customer and policy before enabling automation.</summary>
+  </entry>
   <entry>
     <title>Free RMM pricing comparison worksheet</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html</id>
@@ -22,18 +55,6 @@
     <category term="selection" />
     <category term="template" />
     <summary>Use three completed quote rows to compare technician fees, setup costs, and minimum charges. One example shows why a 60-device fleet pays for 100 devices under a hypothetical endpoint minimum.</summary>
-  </entry>
-  <entry>
-    <title>Atera-to-Syncro export and migration validation worksheet</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/atera-to-syncro-export-validation-worksheet.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/atera-to-syncro-export-validation-worksheet.html" />
-    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/atera-to-syncro-export-validation-worksheet.csv" />
-    <updated>2026-11-25T22:35:45Z</updated>
-    <category term="Atera" />
-    <category term="Syncro" />
-    <category term="RMM migration" />
-    <category term="data export" />
-    <summary>Use the export and migration worksheet to verify the destination record IDs. A worked Atera-to-Syncro example shows how one duplicate can hide one missing open ticket even when the counts match.</summary>
   </entry>
   <entry>
     <title>30 RMM vendor demo questions checklist</title>
@@ -72,17 +93,6 @@
     <category term="activation" />
     <category term="first endpoint" />
     <summary>Plan the first day of an RMM trial, from one approved endpoint to usable inventory. Includes what to capture when an enrolled agent stops checking in.</summary>
-  </entry>
-  <entry>
-    <title>RMM trial-to-paid rollout decision checklist</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-go-no-go-decision-checklist.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-go-no-go-decision-checklist.html" />
-    <updated>2026-11-25T00:00:00Z</updated>
-    <category term="evaluation" />
-    <category term="pilot" />
-    <category term="decision" />
-    <category term="activation" />
-    <summary>Decide whether to proceed, limit the rollout, retest or stop. A worked example shows how to handle a mandatory patch and restart test that is still open.</summary>
   </entry>
   <entry>
     <title>RMM remote access not connecting: 24-step troubleshooting checklist</title>
@@ -646,16 +656,6 @@
     <category term="alerting" />
     <category term="checklist" />
     <summary>Reduce RMM alert noise with 24 vendor-neutral checks for baselines, thresholds, confirmation, deduplication, routing, suppression, ownership, evidence, and measured tuning outcomes, linked to the public baseline worksheet.</summary>
-  </entry>
-  <entry>
-    <title>RMM patch management policy checklist for Windows</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-policy-review-checklist.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-policy-review-checklist.html" />
-    <updated>2026-11-06T00:00:00Z</updated>
-    <category term="patch-management" />
-    <category term="policy" />
-    <category term="checklist" />
-    <summary>Review an RMM patch management policy against 24 vendor-neutral Windows controls for scope, rings, deadlines, restarts, exceptions, rollback, evidence, ownership, and approval.</summary>
   </entry>
   <entry>
     <title>Alert-noise baseline worksheet for IT operations</title>
