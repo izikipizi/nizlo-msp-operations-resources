@@ -25,7 +25,7 @@
         "headline": "RMM vs Remote Desktop Software: 8 Buyer Checks",
         "description": "A vendor-neutral decision guide for separating remote desktop connection managers and support sessions from remote monitoring and management requirements.",
         "datePublished": "2026-11-04",
-        "dateModified": "2026-11-07",
+        "dateModified": "2026-11-25",
         "author": { "@type": "Person", "name": "Kip Ecklund" },
         "publisher": { "@type": "Organization", "name": "Nizlo", "url": "https://nizlo.com/" },
         "mainEntityOfPage": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-remote-desktop-software.html"
@@ -116,6 +116,12 @@
 
       <section aria-labelledby="pilot-title"><h2 id="pilot-title">A small, safe evaluation path</h2><div class="decision"><article class="card"><h3>1. One representative endpoint</h3><p>Use an authorized, non-critical device with a named owner, success criteria, stop conditions, and a documented removal path.</p></article><article class="card"><h3>2. Test the difference</h3><p>Run one remote session, one alert, one inventory change, one patch or update check, one scoped automation, and one audit review.</p></article><article class="card"><h3>3. Reconcile before expanding</h3><p>Record gaps, owners, remediation, retests, residual access, data retention, and the explicit stop, extend, or adopt decision.</p></article></div></section>
 
+      <section aria-labelledby="handoff-title">
+        <h2 id="handoff-title">Check who owns the alert after remote support ends</h2>
+        <p>In a pilot, a technician closes an attended support session on a test workstation. Later, the monitoring system raises a test alert for that same device. Check that the alert opens or links to the right ticket, carries the correct customer and device, and reaches a named owner who can acknowledge and close it. Repeat the alert once to see whether the team gets a single updated ticket or two separate tickets.</p>
+        <p>If the session works but alert routing fails, keep the existing monitoring and ticket workflow in place until you can repeat the handoff successfully. If you are evaluating GoTo Resolve or a replacement, use the <a href="https://nizlo.com/compare/goto-resolve-alternative?utm_source=github_pages&amp;utm_medium=resource&amp;utm_campaign=goto_resolve_alternative&amp;utm_content=remote_support_pilot">GoTo Resolve comparison</a> to check which workflows your proposed plan covers and which tools you would keep.</p>
+      </section>
+
       <section aria-labelledby="faq-title">
         <h2 id="faq-title">RMM and remote desktop manager FAQ</h2>
         <div class="decision">
@@ -128,6 +134,6 @@
       <aside class="note"><strong>Repair-shop category decision:</strong> a bench-repair or break/fix workflow may need intake, estimates, parts, point of sale, invoices, and customer pickup records, while an ongoing managed-service workflow needs persistent endpoint operations. Use the <a href="https://nizlo.com/guides/repair-shop-software-vs-rmm?utm_source=github_pages&amp;utm_medium=authority_bridge&amp;utm_campaign=repair_shop_software_vs_rmm&amp;utm_content=remote_desktop_buyer_checks">repair-shop software vs RMM guide</a> to separate those jobs before choosing remote access, RMM, or both.</aside>
       <aside class="note"><strong>Relationship disclosure:</strong> this guide is maintained by the Nizlo team. Nizlo is a Windows-first RMM and IT-management platform. The decision checks are vendor-neutral and do not claim that Nizlo—or any other product—passes every control.</aside>
     </main>
-    <footer class="wrap"><span>Maintained by Nizlo · Updated November 7, 2026</span><span><a href="https://nizlo.com/guides/rmm-evaluation-checklist?utm_source=github_pages&amp;utm_medium=resource&amp;utm_campaign=rmm_vs_remote_desktop">RMM evaluation checklist</a> · <a href="rmm-remote-access-session-authorization-checklist.html">Remote-access authorization</a> · <a href="./">Resource library</a></span></footer>
+    <footer class="wrap"><span>Maintained by Nizlo · Updated November 25, 2026</span><span><a href="https://nizlo.com/guides/rmm-evaluation-checklist?utm_source=github_pages&amp;utm_medium=resource&amp;utm_campaign=rmm_vs_remote_desktop">RMM evaluation checklist</a> · <a href="rmm-remote-access-session-authorization-checklist.html">Remote-access authorization</a> · <a href="./">Resource library</a></span></footer>
   </body>
 </html>
