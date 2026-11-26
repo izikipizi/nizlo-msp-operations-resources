@@ -6,12 +6,21 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-26T18:45:10Z</updated>
+  <updated>2026-11-26T22:48:29Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>RMM evaluation scorecard and comparison template</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-evaluation-scorecard-template.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-evaluation-scorecard-template.html" />
+    <updated>2026-11-26T22:48:29Z</updated>
+    <category term="selection" />
+    <category term="evaluation" />
+    <summary>Use a browser-based weighted calculator and downloadable CSV to compare RMM products across ten evidence-based operational areas, flag critical failures, assign open risks, and record a defensible go/no-go decision.</summary>
+  </entry>
   <entry>
     <title>RMM remote access session authorization checklist</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-session-authorization-checklist.html</id>
@@ -945,15 +954,6 @@
     <category term="security" />
     <category term="incident-response" />
     <summary>Use an eight-stage workflow to prepare independent control paths, declare and scope an RMM incident, contain access, preserve evidence, recover safely, reconcile endpoints, and verify corrective action.</summary>
-  </entry>
-  <entry>
-    <title>RMM evaluation scorecard and comparison template</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-evaluation-scorecard-template.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-evaluation-scorecard-template.html" />
-    <updated>2026-11-13T00:00:00Z</updated>
-    <category term="selection" />
-    <category term="evaluation" />
-    <summary>Use a browser-based weighted calculator and downloadable CSV to compare RMM products across ten evidence-based operational areas, flag critical failures, assign open risks, and record a defensible go/no-go decision.</summary>
   </entry>
   <entry>
     <title>RMM incident response runbook template</title>
