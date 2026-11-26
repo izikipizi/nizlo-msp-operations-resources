@@ -79,9 +79,9 @@
 <aside class="note"><strong>First-day stop rule:</strong> do not widen the rollout when the first endpoint lacks a stable identity, fresh telemetry, a controlled test result, a known removal path, or an accountable owner for each exception.</aside>
 <section class="note" aria-labelledby="nizlo-first-device">
   <h2 id="nizlo-first-device">Use the plan with Nizlo</h2>
-  <p><strong>Before you sign up:</strong> choose one noncritical device you’re authorized to manage. Note its operating system, the customer and site it belongs to, and who can install and remove the agent. <a href="https://app.nizlo.com/signup?plan=core&amp;utm_source=github_pages&amp;utm_medium=activation_plan&amp;utm_campaign=rmm_trial_first_24_hours&amp;utm_content=first_day_core_signup">Start a Core trial</a> for the RMM fundamentals, or <a href="https://app.nizlo.com/signup?plan=scale&amp;utm_source=github_pages&amp;utm_medium=activation_plan&amp;utm_campaign=rmm_trial_first_24_hours&amp;utm_content=first_day_signup">start a Scale trial</a> if your pilot needs advanced automation and expanded reporting. Both trials run for 14 days, require no credit card, and end without an automatic paid conversion.</p>
+  <p><strong>Before you sign up:</strong> choose one noncritical device you’re authorized to manage. Note its operating system, the customer and site it belongs to, and who can install and remove the agent. <a data-trial-campaign href="https://app.nizlo.com/signup?plan=core&amp;utm_source=github_pages&amp;utm_medium=activation_plan&amp;utm_campaign=rmm_trial_first_24_hours&amp;utm_content=first_day_core_signup">Start a Core trial</a> for the RMM fundamentals, or <a data-trial-campaign href="https://app.nizlo.com/signup?plan=scale&amp;utm_source=github_pages&amp;utm_medium=activation_plan&amp;utm_campaign=rmm_trial_first_24_hours&amp;utm_content=first_day_signup">start a Scale trial</a> if your pilot needs advanced automation and expanded reporting. Both trials run for 14 days, require no credit card, and end without an automatic paid conversion.</p>
   <p><strong>Already have a workspace?</strong> <a href="https://app.nizlo.com/login">Log in</a>, open <strong>Admin → Enrollment</strong>, and choose <strong>Install agent</strong>. Select the customer, site and platform for your test device. After installation, confirm that the device appears in the right site and reports a recent check-in. If it doesn’t appear, use the <a href="rmm-first-endpoint-activation-troubleshooting-checklist.html">missing check-in checklist</a> before trying another device.</p>
-  <p>Use the <a href="https://nizlo.com/solutions/rmm-free-trial?utm_source=github_pages&amp;utm_medium=authority_bridge&amp;utm_campaign=rmm_trial_first_24_hours&amp;utm_content=first_day_plan">Nizlo trial guide</a> to plan the rest of your 14 days. Carry the first-day evidence into the <a href="rmm-pilot-test-evidence-pack.html">25-test pilot pack</a> and the <a href="rmm-trial-go-no-go-decision-checklist.html">trial-to-paid decision checklist</a>.</p>
+  <p>Use the <a data-trial-campaign href="https://nizlo.com/solutions/rmm-free-trial?utm_source=github_pages&amp;utm_medium=authority_bridge&amp;utm_campaign=rmm_trial_first_24_hours&amp;utm_content=first_day_plan">Nizlo trial guide</a> to plan the rest of your 14 days. Carry the first-day evidence into the <a href="rmm-pilot-test-evidence-pack.html">25-test pilot pack</a> and the <a href="rmm-trial-go-no-go-decision-checklist.html">trial-to-paid decision checklist</a>.</p>
   <h3 id="mobile-first-device">Started on your phone?</h3>
   <p>If you already prepared an installer and the device list is empty, <a href="rmm-first-endpoint-activation-troubleshooting-checklist.html#resume-prepared-installer">resume on the computer you want to manage</a>.</p>
   <p>The mobile app uses your existing Nizlo workspace. If you have just created a workspace and the device list is empty, open the same workspace in your browser and generate an installer for the authorized computer you want to manage. Run it on that computer. After it checks in, sign in to the <a href="https://nizlo.com/downloads?utm_source=github_pages&amp;utm_medium=activation_plan&amp;utm_campaign=rmm_trial_first_24_hours&amp;utm_content=mobile_app_handoff#mobile-apps">iPhone or Android technician app</a> to review the device under the intended customer and site.</p>
@@ -93,11 +93,11 @@
   const campaignFields = ['utm_source', 'utm_medium', 'utm_campaign'];
   const campaign = campaignFields.map((field) => [field, referral.get(field)?.trim()]);
   if (campaign.every(([, value]) => value)) {
-    // Keep each signup link's plan and placement while carrying the incoming campaign.
-    for (const link of document.querySelectorAll('a[href^="https://app.nizlo.com/signup?"]')) {
-      const signup = new URL(link.href);
-      for (const [field, value] of campaign) signup.searchParams.set(field, value);
-      link.href = signup.href;
+    // Leave the destination's plan and link placement intact.
+    for (const link of document.querySelectorAll('a[data-trial-campaign]')) {
+      const destination = new URL(link.href);
+      for (const [field, value] of campaign) destination.searchParams.set(field, value);
+      link.href = destination.href;
     }
   }
 </script>
