@@ -25,7 +25,7 @@
   "creator": { "@type": "Person", "name": "Kip Ecklund" },
   "publisher": { "@type": "Organization", "name": "Nizlo", "url": "https://nizlo.com/" },
   "datePublished": "2026-11-01",
-  "dateModified": "2026-11-25",
+  "dateModified": "2026-11-26",
   "version": "1.57.9",
   "isAccessibleForFree": true,
   "conditionsOfAccess": "Public and ungated; no account or email address is required.",
@@ -63,6 +63,11 @@
 </section>
 <section aria-labelledby="faq-heading" style="margin-top:2.5rem"><h2 id="faq-heading">RMM permissions matrix FAQ</h2><div class="grid"><article><h2>What belongs in the matrix?</h2><p>Record each technician or role, customer and device scope, privileged capabilities, justification, MFA and admin-device requirements, approval, review dates, expiration, decision, exception, and remediation owner.</p></article><article><h2>Which permissions need separate review?</h2><p>Separate remote control, background tools, commands, scripts, automation, patch approval, alert and policy changes, file transfer, credentials, role administration, APIs, billing, and commercial data.</p></article><article><h2>How often should access be reviewed?</h2><p>Review at joiner, mover, and leaver events; around temporary elevation; after incidents or platform changes; and on a recurring risk-based schedule. Start with broad scope and high-impact permissions.</p></article><article><h2>What decision should be recorded?</h2><p>Choose retain, reduce, revoke, or investigate. Give every open exception an owner, linked work item, target date, compensating control, and follow-up review.</p></article></div></section>
 <aside class="note"><strong>How to apply it:</strong> review high-impact capabilities and broad customer scope first; verify MFA and managed-admin-device requirements; remove access immediately when employment or duties change; and give temporary elevation an explicit expiration. The template is an operating aid, not a certification or substitute for product-specific access testing.</aside>
+<section class="note" aria-labelledby="boundary-register-example">
+  <h2 id="boundary-register-example">Turn an access decision into a test</h2>
+  <p>Pair a permission record with an allowed and an excluded case. For example, confirm that a patch operator can review an approved workstation group and cannot run the same job against its excluded payroll server. Record the test identity, date, and result in the register. Re-run the check when the group or role changes.</p>
+  <p>Kip Ecklund walks through a full example in <a href="https://msp-channel.com/blogs/24996-the-rmm-boundary-register-every-msp-should-keep">The RMM boundary register every MSP should keep</a>, published by MSP Channel Insights.</p>
+</section>
 <aside class="note"><strong>Relationship disclosure:</strong> Nizlo, a Windows-first RMM and IT-management platform, maintains this template. It is designed for use with any RMM or privileged-access workflow and does not claim that every product exposes every listed permission.</aside></main>
-<footer class="wrap"><span>Maintained by Nizlo · Updated November 25, 2026</span><span><a href="templates/">Template library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources/tree/v1.57.9">Version 1.57.9</a></span></footer>
+<footer class="wrap"><span>Maintained by Nizlo · Updated November 26, 2026</span><span><a href="templates/">Template library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources/tree/v1.57.9">Version 1.57.9</a></span></footer>
 </body></html>
