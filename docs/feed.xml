@@ -6,12 +6,25 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-26T15:21:26Z</updated>
+  <updated>2026-11-26T15:29:17Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>Free RMM pricing comparison worksheet</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-quote-comparison-worked-example.csv" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html#renewal-cap-example" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html#workstation-and-server-rates" />
+    <updated>2026-11-26T15:29:17Z</updated>
+    <category term="pricing" />
+    <category term="selection" />
+    <category term="template" />
+    <summary>Compare Core and Scale base rates with two-technician totals. Use the worked examples to account for staffing, one-time costs, and renewal caps.</summary>
+  </entry>
   <entry>
     <title>Free MSP onboarding checklist: discovery, evidence, and go-live</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-onboarding-evidence-register.html</id>
@@ -69,19 +82,6 @@
     <category term="troubleshooting" />
     <category term="activation" />
     <summary>Resume a prepared installer on the intended endpoint and collect evidence if browser protection, installation, or enrollment blocks the first check-in.</summary>
-  </entry>
-  <entry>
-    <title>Free RMM pricing comparison worksheet</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html" />
-    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-quote-comparison-worked-example.csv" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html#renewal-cap-example" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html#workstation-and-server-rates" />
-    <updated>2026-11-26T14:25:45Z</updated>
-    <category term="pricing" />
-    <category term="selection" />
-    <category term="template" />
-    <summary>Compare technician fees, setup costs, and minimum charges. Use worked examples to price workstations and servers separately and check which rate a renewal cap applies to.</summary>
   </entry>
   <entry>
     <title>RMM vs MDM: differences, ownership, and buyer map</title>
