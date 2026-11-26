@@ -56,6 +56,11 @@
   <p>When a technician reviews a Windows endpoint alert from an iPhone, the phone is the console and the Windows device is the managed endpoint. <a href="https://nizlo.com/downloads?utm_source=github_pages&amp;utm_medium=authority_bridge&amp;utm_campaign=rmm_vs_mdm&amp;utm_content=mobile_console#mobile-apps">Nizlo’s iPhone and Android apps</a> serve that technician workflow.</p>
   <p>When the requirement is to enroll a company-owned iPhone and apply a passcode policy to that phone, evaluate the MDM enrollment and policy workflow. For example, <a href="https://learn.microsoft.com/en-us/mem/intune/enrollment/device-enrollment-program-enroll-ios">Microsoft documents automated enrollment and passcode policy for Intune</a>. In the matrix below, give alert handling and phone policy separate owners and record evidence for both on authorized test devices.</p>
 </aside>
+<aside class="note" aria-labelledby="remote-help-consent-example">
+  <h2 id="remote-help-consent-example">Score remote assistance and diagnostics separately</h2>
+  <p>A technician can have permission to help while the user declines a separate request to share device diagnostics. Microsoft documents this choice for attended Windows Remote Help sessions as the feature rolls out. In a buyer pilot, record whether assistance continues after a decline, whether both people can see the report when sharing is allowed, and whether the helper can refresh it after the user stops sharing.</p>
+  <p>Put session access, optional diagnostics, and report retention on separate rows in your evaluation. Use the <a href="rmm-remote-access-session-authorization-checklist.html#intune-remote-help-diagnostics">worked diagnostics consent test</a> to record those outcomes on an approved test device.</p>
+</aside>
 <aside class="note" aria-labelledby="cross-platform-patch-evidence">
   <h2 id="cross-platform-patch-evidence">Compare patch coverage on Windows, Mac, and Linux</h2>
   <p>If a scanner shows missing updates while a management tool installs them, score those jobs separately. Pick one authorized test device per required OS. Record who owns OS updates and who owns third-party apps on each device. Include the required Linux distro and version in the test.</p>
