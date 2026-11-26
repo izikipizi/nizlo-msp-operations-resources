@@ -6,12 +6,22 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-26T01:00:29Z</updated>
+  <updated>2026-11-26T01:59:32Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>RMM quote normalization calculator</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html" />
+    <updated>2026-11-26T01:59:32Z</updated>
+    <category term="pricing" />
+    <category term="quote" />
+    <category term="calculator" />
+    <summary>Compare upfront, recurring and first-year costs across RMM proposals. Load an editable 100-device minimum or a three-month quote to see how device minimums and unpriced renewal months change the comparison.</summary>
+  </entry>
   <entry>
     <title>RMM trial-to-paid rollout decision checklist</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-go-no-go-decision-checklist.html</id>
@@ -102,16 +112,6 @@
     <updated>2026-11-25T00:00:00Z</updated>
     <category term="operations" /><category term="remote access" /><category term="remote support" /><category term="troubleshooting" /><category term="RMM" />
     <summary>Use 24 checks to isolate an authorized remote-support failure. The Android section explains the handoff between the Nizlo technician app and its remote desktop companion.</summary>
-  </entry>
-  <entry>
-    <title>RMM quote normalization calculator</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html" />
-    <updated>2026-11-25T00:00:00Z</updated>
-    <category term="pricing" />
-    <category term="quote" />
-    <category term="calculator" />
-    <summary>Compare upfront, recurring and first-year costs across RMM proposals. A worked example separates months covered by a short initial quote from renewal costs you still need to verify.</summary>
   </entry>
   <entry>
     <title>RMM implementation checklist and rollout plan template</title>
