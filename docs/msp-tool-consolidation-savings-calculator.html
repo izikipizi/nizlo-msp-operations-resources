@@ -58,7 +58,7 @@
     </div></section>
   </div>
 
-  <section class="panel" aria-labelledby="results-heading"><h2 id="results-heading">Consolidation result</h2><p class="hint">Positive savings mean the proposed stack costs less under the assumptions entered.</p><div class="results" id="results"></div><div class="actions"><button class="button" type="button" id="copy">Copy summary</button><button class="button secondary" type="button" id="csv">Download CSV</button></div><p class="hint" id="status" role="status" aria-live="polite"></p></section>
+  <section class="panel" id="consolidation-result" aria-labelledby="results-heading"><h2 id="results-heading">Consolidation result</h2><p class="hint">Positive savings mean the proposed stack costs less under the assumptions entered.</p><div class="results" id="results"></div><div class="actions"><button class="button" type="button" id="copy">Copy summary</button><button class="button secondary" type="button" id="csv">Download CSV</button></div><p class="hint" id="status" role="status" aria-live="polite"></p></section>
 
   <section class="formula"><h2>Published formulas</h2>
     <p><code>Current monthly cost = current licenses + (current admin hours × loaded labor rate)</code></p>
@@ -72,19 +72,19 @@
 
   <aside class="notice" aria-labelledby="retained-tools-example">
     <h2 id="retained-tools-example">Keep unproven tools in the comparison</h2>
-    <p>Suppose your current stack costs $600 per month and the replacement suite costs $430. You can verify its RMM workflow in the pilot, but you still need your $120 backup service and $80 ticketing tool. Enter those under retained tools. The proposed stack costs $630 per month before labor and one-time fees, or $30 more than the current stack.</p>
-    <p>Test an actual file restore and a complete ticket from alert to closure before removing those costs from a second scenario. Record the result in the <a href="rmm-evaluation-scorecard-template.html">RMM evaluation scorecard</a> and keep both totals until the people responsible approve the change.</p>
+    <p>Suppose your current stack costs $600 per month and the replacement suite costs $430. You can verify its RMM workflow in the pilot, but you still need your $120 backup service and $80 ticketing tool. Enter those under retained tools. The proposed stack costs $630 per month before labor and one-time fees, or $30 more than the current stack. <a data-trial-campaign href="?example=retained-tools#consolidation-result">Open the calculator with these example figures</a>.</p>
+    <p>Test an actual file restore and a complete ticket from alert to closure before removing those costs from a second scenario. Record the result in the <a data-trial-campaign href="rmm-evaluation-scorecard-template.html">RMM evaluation scorecard</a> and keep both totals until the people responsible approve the change.</p>
   </aside>
   <section class="related"><h2>Continue the evaluation with evidence</h2><div class="related-grid">
     <p><a href="rmm-ticketing-stack-cost-calculator.html">Compare two complete stacks</a><br />Normalize endpoint, technician, ticketing, add-on, labor, and implementation costs.</p>
     <p><a href="rmm-migration-cost-calculator.html">Model migration ROI</a><br />Expand the switching model with recurring savings and multi-year value.</p>
-    <p><a href="rmm-quote-normalization-calculator.html">Normalize a vendor quote</a><br />Reconcile included quantities, overages, minimums, discounts, and contract terms.</p>
+    <p><a data-trial-campaign href="rmm-quote-normalization-calculator.html">Normalize a vendor quote</a><br />Reconcile included quantities, overages, minimums, discounts, and contract terms.</p>
     <p><a href="https://nizlo.com/guides/rmm-pricing-models?utm_source=github_pages&amp;utm_medium=external_resource&amp;utm_campaign=tool_consolidation_calculator">Compare RMM pricing models</a><br />Understand flat, per-endpoint, and per-technician pricing before entering a quote.</p>
-    <p><a href="https://nizlo.com/solutions/affordable-rmm?utm_source=github_pages&amp;utm_medium=external_resource&amp;utm_campaign=tool_consolidation_calculator">Evaluate affordable RMM by complete cost</a><br />Connect price to required capabilities, retained tools, and a controlled pilot.</p>
+    <p><a data-trial-campaign href="https://nizlo.com/solutions/affordable-rmm?utm_source=github_pages&amp;utm_medium=external_resource&amp;utm_campaign=tool_consolidation_calculator">Evaluate affordable RMM by complete cost</a><br />Connect price to required capabilities, retained tools, and a controlled pilot.</p>
     <p><a href="rmm-vendor-due-diligence-evidence-register.html">Review vendor evidence</a><br />Record claims, source evidence, findings, risks, remediation, and decisions.</p>
   </div></section>
 </main>
-<footer class="wrap"><span>Maintained by Nizlo · Updated November 21, 2026</span><span><a href="./">Resource library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source</a></span></footer>
+<footer class="wrap"><span>Maintained by Nizlo · Updated November 26, 2026</span><span><a href="./">Resource library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source</a></span></footer>
 <script>
 const ids=["currentRmm","currentPsa","currentRemote","currentAutomation","currentOther","currentHours","proposedPlatform","retainedTools","proposedAddons","proposedHours","laborRate","overlapMonths","migrationHours","externalFees"];
 const el=Object.fromEntries(ids.map(id=>[id,document.getElementById(id)]));
@@ -117,5 +117,11 @@ function update(){latest=calculate();const rows=[
 ];document.getElementById("results").innerHTML=rows.map(([label,value,cls])=>`<div class="result"><span>${label}</span><strong class="${cls}">${value}</strong></div>`).join("");}
 function summary(){return `MSP tool-consolidation model\nCurrent monthly operating cost: ${money(latest.currentMonthly)}\nProposed monthly operating cost: ${money(latest.proposedMonthly)}\nMonthly savings: ${money(latest.monthlySavings)}\nTransition cost: ${money(latest.transition)}\nPayback: ${months(latest.payback)}\nFirst-year net savings: ${money(latest.firstYear)}\n36-month net savings: ${money(latest.threeYear)}\n\nArithmetic only; verify retained tools, feature scope, pilot evidence, implementation, and written terms.`;}
 function csv(){const rows=[["Metric","Value"],["Current recurring software monthly",latest.currentSoftware],["Current labor monthly",latest.currentLabor],["Current operating cost monthly",latest.currentMonthly],["Proposed recurring software monthly",latest.proposedSoftware],["Proposed labor monthly",latest.proposedLabor],["Proposed operating cost monthly",latest.proposedMonthly],["Monthly savings",latest.monthlySavings],["Transition cost",latest.transition],["Payback months",Number.isFinite(latest.payback)?latest.payback:"No payback"],["First-year net savings",latest.firstYear],["36-month net savings",latest.threeYear]];const text=rows.map(row=>row.map(value=>`"${String(value).replaceAll('"','""')}"`).join(",")).join("\n");const blob=new Blob([text],{type:"text/csv;charset=utf-8"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download="msp-tool-consolidation-savings.csv";a.click();URL.revokeObjectURL(url);}
+if (new URLSearchParams(window.location.search).get("example") === "retained-tools") {
+  const example = { currentRmm: 600, proposedPlatform: 430, retainedTools: 200 };
+  for (const id of ids) el[id].value = example[id] ?? 0;
+}
 ids.forEach(id=>el[id].addEventListener("input",update));document.getElementById("copy").addEventListener("click",async()=>{try{await navigator.clipboard.writeText(summary());document.getElementById("status").textContent="Summary copied."}catch{document.getElementById("status").textContent="Copy failed; select the visible results instead."}});document.getElementById("csv").addEventListener("click",csv);update();
-</script></body></html>
+</script>
+<script src="assets/trial-campaign.js" defer></script>
+</body></html>
