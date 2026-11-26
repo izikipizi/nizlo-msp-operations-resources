@@ -6,12 +6,23 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-26T12:16:30Z</updated>
+  <updated>2026-11-26T12:40:27Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>RMM trial first 24 hours plan</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-first-24-hours-plan.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-first-24-hours-plan.html" />
+    <updated>2026-11-26T12:40:27Z</updated>
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-first-24-hours-plan.html#second-technician-proof" />
+    <category term="evaluation" />
+    <category term="activation" />
+    <category term="first endpoint" />
+    <summary>Run a first-day RMM pilot on one approved endpoint. Have a second technician verify device identity, inventory results, approvals, and pending work from the workspace records.</summary>
+  </entry>
   <entry>
     <title>Free RMM pricing comparison worksheet</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html</id>
@@ -127,17 +138,6 @@
     <category term="pilot" />
     <category term="template" />
     <summary>Use a 25-test RMM pilot checklist. The worked offline-device check shows how to verify whether queued work obeys a documented expiry or maintenance cutoff.</summary>
-  </entry>
-  <entry>
-    <title>RMM trial first 24 hours plan</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-first-24-hours-plan.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-first-24-hours-plan.html" />
-    <updated>2026-11-26T05:54:08Z</updated>
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-first-24-hours-plan.html#mobile-first-device" />
-    <category term="evaluation" />
-    <category term="activation" />
-    <category term="first endpoint" />
-    <summary>Plan an RMM trial from one approved device to verified inventory. Find the first enrollment step if you signed up on a phone, then review the enrolled computer in the mobile technician app.</summary>
   </entry>
   <entry>
     <title>RMM trial-to-paid rollout decision checklist</title>

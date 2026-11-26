@@ -60,6 +60,16 @@
 </tbody></table></div></article>
 <article><h2>8. End the day with a scheduled next test</h2><p>Choose the next evidence block from what remains uncertain: alert routing, patch reconciliation, automation safety, remote-access authorization, reporting, role separation, API behavior, or clean removal. Give it an owner, endpoint, start time, pass condition, and stop condition. Adding endpoints is not the default next step.</p></article>
 </section>
+<aside class="note" aria-labelledby="second-technician-proof">
+  <h2 id="second-technician-proof">Have a second technician verify the first device</h2>
+  <p>Run this handoff on one approved, noncritical endpoint. The goal is to see whether the next technician can continue from the workspace records alone.</p>
+  <ol>
+    <li>The first technician records the customer and site, device identifier, and last check-in time. They request one approved read-only inventory refresh and record the job reference and result.</li>
+    <li>Give the second technician the workspace, customer, and ticket reference. Using their usual role, ask them to find the endpoint, the latest inventory result, and the approval record. Record how long it takes and any evidence they have to ask the first technician for.</li>
+    <li>On the approved test device, take it offline during the pilot window. Ask the second technician to distinguish the last successful inventory from current device status and identify any pending work. Bring the device back online and verify that check-in resumes before closing the ticket.</li>
+  </ol>
+  <p>Pass when the second technician can explain what ran, who authorized it, when the device last reported, and what still needs action. If any answer depends on the first technician’s memory, record the gap and repeat the exercise before expanding the pilot.</p>
+</aside>
 <aside class="note" aria-labelledby="first-day-handoff">
   <h2 id="first-day-handoff">Hand off an endpoint that has stopped checking in</h2>
   <p><strong>Example:</strong> The agent service started at 14:05 UTC. The portal showed the correct endpoint at 14:07, but last check-in still read 14:07 at the 14:30 review. The first connection succeeded. Ongoing reporting still needs verification.</p>
