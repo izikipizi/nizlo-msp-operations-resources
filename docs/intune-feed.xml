@@ -13,7 +13,7 @@
   <entry>
     <title>Intune and RMM offboarding when a laptop is offline</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-remote-support-vs-mdm-vs-endpoint-management.html#offline-device-offboarding</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-remote-support-vs-mdm-vs-endpoint-management.html#offline-device-offboarding" />
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-remote-support-vs-mdm-vs-endpoint-management.html?utm_source=nizlo_intune_feed&amp;utm_medium=rss&amp;utm_campaign=intune_field_notes#offline-device-offboarding" />
     <updated>2026-11-26T23:01:13Z</updated>
     <category term="intune" />
     <category term="device-management" />
@@ -22,7 +22,7 @@
   <entry>
     <title>Test diagnostics consent in Microsoft Intune Remote Help</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-session-authorization-checklist.html#intune-remote-help-diagnostics</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-session-authorization-checklist.html#intune-remote-help-diagnostics" />
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-session-authorization-checklist.html?utm_source=nizlo_intune_feed&amp;utm_medium=rss&amp;utm_campaign=intune_field_notes#intune-remote-help-diagnostics" />
     <updated>2026-11-26T18:45:10Z</updated>
     <category term="intune" />
     <category term="remote-help" />
@@ -31,7 +31,7 @@
   <entry>
     <title>Test Windows update ownership when Autopatch and RMM overlap</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-policy-review-checklist.html#autopatch-and-rmm</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-policy-review-checklist.html#autopatch-and-rmm" />
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-policy-review-checklist.html?utm_source=nizlo_intune_feed&amp;utm_medium=rss&amp;utm_campaign=intune_field_notes#autopatch-and-rmm" />
     <updated>2026-11-26T11:14:59Z</updated>
     <category term="intune" />
     <category term="windows-autopatch" />
