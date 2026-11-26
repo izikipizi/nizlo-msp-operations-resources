@@ -6,12 +6,24 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-26T11:40:51Z</updated>
+  <updated>2026-11-26T11:52:55Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>Atera-to-Syncro export and migration validation worksheet</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/atera-to-syncro-export-validation-worksheet.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/atera-to-syncro-export-validation-worksheet.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/atera-to-syncro-export-validation-worksheet.csv" />
+    <updated>2026-11-26T11:52:55Z</updated>
+    <category term="Atera" />
+    <category term="Syncro" />
+    <category term="RMM migration" />
+    <category term="data export" />
+    <summary>Use worked examples and the CSV to reconcile migrated tickets and verify that a device with a duplicate hostname belongs to the correct customer and policy before enabling automation. Includes a pilot check for AI ticket summaries after migration.</summary>
+  </entry>
   <entry>
     <title>RMM checkout and billing readiness checklist</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-checkout-billing-readiness-checklist.html</id>
@@ -165,18 +177,6 @@
     <updated>2026-11-26T03:15:48Z</updated>
     <category term="MSP onboarding" /><category term="RACI matrix" /><category term="client lifecycle" />
     <summary>Assign customer and MSP responsibilities across twenty onboarding workstreams. The after-hours tabletop tests who can authorize a remote-access suspension, how the customer can regain access independently, and who can verify access to a recovery point before go-live.</summary>
-  </entry>
-  <entry>
-    <title>Atera-to-Syncro export and migration validation worksheet</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/atera-to-syncro-export-validation-worksheet.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/atera-to-syncro-export-validation-worksheet.html" />
-    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/atera-to-syncro-export-validation-worksheet.csv" />
-    <updated>2026-11-26T00:28:59Z</updated>
-    <category term="Atera" />
-    <category term="Syncro" />
-    <category term="RMM migration" />
-    <category term="data export" />
-    <summary>Use worked examples and the CSV to reconcile migrated tickets and verify that a device with a duplicate hostname belongs to the correct customer and policy before enabling automation.</summary>
   </entry>
   <entry>
     <title>30 RMM vendor demo questions checklist</title>
