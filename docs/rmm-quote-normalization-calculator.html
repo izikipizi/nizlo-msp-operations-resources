@@ -19,7 +19,7 @@
   "description":"A browser-only calculator for converting an RMM quote into comparable monthly, annual, first-year, contract, and per-endpoint costs.",
   "url":"https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html",
   "applicationCategory":"BusinessApplication","operatingSystem":"Any","browserRequirements":"JavaScript",
-  "isAccessibleForFree":true,"dateModified":"2026-11-25","inLanguage":"en",
+  "isAccessibleForFree":true,"dateModified":"2026-11-26","inLanguage":"en",
   "creator":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},
   "featureList":["Base fee normalization","Endpoint overage calculation","Technician overage calculation","Monthly minimum handling","Add-on normalization","Contract discount","One-time fee allocation","Per-endpoint effective cost"]
 }</script>
@@ -91,6 +91,12 @@
   <p>If you spend six months at each count, the modeled first-year subscription is <strong>$3,375</strong> before tax and other charges. Use each scenario’s monthly result for the months it applies to. Ask which date the vendor uses to count devices and whether removing devices can lower the bill again.</p>
   <p><a href="?example=before-growth#calculator-form">Load the 80-device quote</a> · <a href="?example=after-growth#calculator-form">Load the 125-device quote</a></p>
 </aside>
+<aside class="note" aria-labelledby="free-tier-inputs">
+  <h2 id="free-tier-inputs">Enter a free-tier threshold correctly</h2>
+  <p>Use <strong>Included endpoints</strong> when the allowance still applies on the paid plan. If crossing the threshold makes the whole fleet billable, run the free and paid cases separately. For the paid case, set <strong>Included endpoints</strong> to 0 and use the count the vendor actually bills.</p>
+  <p>For example, Level’s published rate is $2 per device for the whole fleet starting at 11 devices. If the month peaks at 15 devices and ends at 12, enter 15 for the endpoint count to reproduce the $30 subscription. The calculator’s per-endpoint result in this case also uses 15. If you want the cost per device still managed at month end, divide $30 by 12 separately.</p>
+  <p><a href="public-rmm-pricing-dataset.html#free-tier-billing-thresholds">See the sourced Level and Action1 examples</a>.</p>
+</aside>
 <aside class="formula"><strong>Transparent formulas</strong><ul><li><code>endpoint charge = max(minimum paid endpoints, endpoints − included endpoints) × endpoint rate</code></li><li><code>technician charge = max(0, technicians − included technicians) × extra-technician rate</code></li><li><code>add-ons = endpoints × required add-on rate + other required monthly fees</code></li><li><code>pre-discount monthly = max(monthly minimum, base + endpoint charge + technician charge + add-ons)</code></li><li><code>recurring monthly = pre-discount monthly × (1 − discount %)</code></li><li><code>contract cost = recurring monthly × contract months + one-time fees</code></li><li><code>effective monthly = contract cost ÷ contract months</code></li></ul></aside>
 <section class="faq" aria-labelledby="faq-title"><h2 id="faq-title">RMM quote-normalization questions</h2><h3>How do you normalize an RMM quote?</h3><p>Separate the base fee, included quantities, overage rates, add-ons, minimum, discount, one-time fees, and term. Compare the resulting recurring, first-year, contract, and per-endpoint costs.</p><h3>Should implementation fees be included?</h3><p>Keep one-time fees visible and allocate them across the term only as a comparison aid. Do not disguise them as recurring subscription cost.</p><h3>Does the lowest normalized quote win?</h3><p>No. Verify operating-system coverage, security, integrations, support, retained tools, export, migration, and pilot evidence before selecting a platform.</p></section>
 <section class="next" aria-label="Related pricing resources"><article><h2>Compare actual quotes</h2><p>Record pricing units, minimums, included quantities, add-ons, renewals, cancellation, and exit costs side by side.</p><a href="rmm-quote-comparison-worksheet.html">Open the 30-field worksheet →</a></article><article><h2>Check public price evidence</h2><p>Review source-dated public rates and preserve quote-only entries as unknown rather than inventing a number.</p><a href="public-rmm-pricing-dataset.html">Open the pricing dataset →</a></article><article><h2>Model migration economics</h2><p>Add labor, overlap, retained tools, and implementation fees to estimate payback and 12-month ROI.</p><a href="rmm-migration-cost-calculator.html">Open the migration calculator →</a></article></section>
@@ -103,7 +109,7 @@
 <aside class="note"><strong>Relationship disclosure:</strong> Nizlo maintains this vendor-neutral calculator and sells RMM software. The example values are illustrative and do not prefill Nizlo pricing. Use the current public pricing page as one source, and verify every vendor quote directly.</aside>
 <aside class="note"><strong>Planning limitation:</strong> this is arithmetic, not a quote, procurement decision, tax calculation, or recommendation. Confirm taxes, currency, increases, minimum commitments, retained tools, support, implementation, renewal, cancellation, and exit terms in the controlling agreement.</aside>
 </main>
-<footer class="wrap"><span>Maintained by Nizlo · Updated November 25, 2026</span><span><a href="./">Resource library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source</a></span></footer>
+<footer class="wrap"><span>Maintained by Nizlo · Updated November 26, 2026</span><span><a href="./">Resource library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source</a></span></footer>
 <script>
 const standardExample = {
   "endpoints": 100, "technicians": 2, "base": 99, "minimum": 0,
