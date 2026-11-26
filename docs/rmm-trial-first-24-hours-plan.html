@@ -88,17 +88,5 @@
 </section>
 <aside class="note"><strong>Relationship disclosure:</strong> Nizlo, a Windows-first RMM and IT-management platform, maintains this vendor-neutral activation plan. The tracked trial links point to Nizlo. No vendor is assumed to pass these gates.</aside></main>
 <footer class="wrap"><span>Maintained by Nizlo · Updated November 26, 2026</span><span><a href="citation.html">Citation</a> · <a href="feed.xml">Feed</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source repository</a></span></footer>
-<script>
-  const referral = new URLSearchParams(window.location.search);
-  const campaignFields = ['utm_source', 'utm_medium', 'utm_campaign'];
-  const campaign = campaignFields.map((field) => [field, referral.get(field)?.trim()]);
-  if (campaign.every(([, value]) => value)) {
-    // Leave the destination's plan and link placement intact.
-    for (const link of document.querySelectorAll('a[data-trial-campaign]')) {
-      const destination = new URL(link.href);
-      for (const [field, value] of campaign) destination.searchParams.set(field, value);
-      link.href = destination.href;
-    }
-  }
-</script>
+<script src="assets/trial-campaign.js" defer></script>
 </body></html>
