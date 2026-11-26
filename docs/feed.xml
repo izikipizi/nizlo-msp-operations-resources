@@ -302,7 +302,8 @@
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/macos-rmm-pilot-evaluation-matrix.html" />
     <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/macos-rmm-pilot-evaluation-matrix.csv" />
     <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/macos-rmm-pilot-evaluation-matrix.html#remote-support-example" />
-    <updated>2026-11-25T00:00:00Z</updated>
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/macos-rmm-pilot-evaluation-matrix.html#one-mac-pilot" />
+    <updated>2026-11-26T00:00:00Z</updated>
     <category term="macOS RMM" />
     <category term="RMM evaluation" />
     <category term="MDM" />

@@ -27,7 +27,7 @@
   "identifier":"https://izikipizi.github.io/nizlo-msp-operations-resources/templates/macos-rmm-pilot-evaluation-matrix.csv",
   "creator":{"@type":"Person","name":"Kip Ecklund"},
   "publisher":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},
-  "datePublished":"2026-11-10","dateModified":"2026-11-25","version":"2026-11-10",
+  "datePublished":"2026-11-10","dateModified":"2026-11-26","version":"2026-11-10",
   "license":"https://creativecommons.org/licenses/by/4.0/","isAccessibleForFree":true,
   "measurementTechnique":"Operator-entered macOS RMM pilot review with evidence links, bounded tests, pass criteria, stop conditions, owners, exceptions, and retest dates.",
   "keywords":["macOS RMM","Mac RMM","RMM for Mac","macOS RMM checklist","Mac RMM evaluation","Apple silicon RMM","RMM MDM coexistence"],
@@ -63,6 +63,15 @@
   <p>A pilot Mac reports current inventory after sleep and reconnect. The same technician completes an attended session on the Windows pilot device, but the Mac session opens with a blank screen. Record the Mac inventory check as passed and the Mac remote-support check as failed. If attended support is required, hold the Mac rollout for that workflow.</p>
   <p>Ask the Mac policy owner to verify the documented screen capture permission for the exact support component under the standard user's policy. Record the policy owner and retest date in the matrix. To clear the gate, demonstrate that the technician can see the screen after approved consent, that access ends when the session closes, and that the session is attributable in the audit record.</p>
 </aside>
+<section class="note" aria-labelledby="one-mac-pilot">
+  <h2 id="one-mac-pilot">Start the pilot with one Mac</h2>
+  <ol>
+    <li>Choose one authorized, noncritical Mac. Record its architecture, expected customer and site, and the MDM that owns configuration profiles and updates.</li>
+    <li>Install the matching package. Verify the device appears in the expected site, then refresh inventory and confirm that the console shows a new check-in. A device in the wrong site or a stale check-in needs investigation before the pilot expands.</li>
+    <li>Record remote support separately. Use the normal technician role and approved consent workflow. Record the result and confirm access ends when the session closes.</li>
+  </ol>
+  <p>Enter the check-in time, evidence link, owner, and retest date in the <a href="templates/macos-rmm-pilot-evaluation-matrix.csv" download>pilot CSV</a>. Use the full matrix before expanding beyond the test device.</p>
+</section>
 <section class="note" aria-labelledby="mixed-fleet-pilot">
   <h2 id="mixed-fleet-pilot">Run the matrix on a mixed fleet</h2>
   <p>Start with one authorized, noncritical Mac and one representative Windows device. Record the tenant and site, verify that both devices check in, and capture one inventory result and one support result per operating system. Keep your existing MDM in charge of Mac configuration and updates until you have tested who owns each control.</p>
@@ -72,5 +81,5 @@
 <aside class="note"><strong>Do not store secrets in the worksheet:</strong> link to approved evidence systems. Do not place FileVault recovery keys, passwords, tokens, private keys, customer data, or support-session contents in this CSV.</aside>
 <aside class="note"><strong>Relationship disclosure:</strong> Nizlo, a Windows-first RMM and IT-management platform with a native macOS agent, maintains this vendor-neutral template. The worksheet does not claim that Nizlo or any other vendor passes every control.</aside>
 </main>
-<footer class="wrap"><span>Maintained by Nizlo · Updated November 25, 2026</span><span><a href="citation.html">Citation</a> · <a href="resource-index.json">Machine-readable index</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source</a></span></footer>
+<footer class="wrap"><span>Maintained by Nizlo · Updated November 26, 2026</span><span><a href="citation.html">Citation</a> · <a href="resource-index.json">Machine-readable index</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source</a></span></footer>
 </body></html>
