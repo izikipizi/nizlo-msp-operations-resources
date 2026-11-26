@@ -27,7 +27,7 @@
   "identifier":"https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-client-onboarding-evidence-register.csv",
   "creator":{"@type":"Person","name":"Kip Ecklund"},
   "publisher":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},
-  "datePublished":"2026-11-02","dateModified":"2026-11-25","version":"2026-11-25",
+  "datePublished":"2026-11-02","dateModified":"2026-11-26","version":"2026-11-26",
   "license":"https://creativecommons.org/licenses/by/4.0/","isAccessibleForFree":true,
   "measurementTechnique":"Operator-entered MSP onboarding control review with named ownership, evidence, acceptance criteria, exceptions, and follow-up fields.",
   "keywords":["MSP onboarding checklist","MSP client onboarding checklist","MSP client go-live checklist","MSP service readiness checklist","MSP onboarding checklist template","MSP onboarding questionnaire","MSP onboarding process UK","managed services onboarding template","new client onboarding process","RMM deployment checklist","MSP onboarding evidence"],
@@ -104,6 +104,16 @@
 <li><strong>Release decision.</strong> Hold the handoff and keep the existing response arrangement in effect. Repeat the test after the correction, capture acknowledgement in the expected queue, and record both parties' acceptance once the gate passes.</li>
 </ul>
 <p>Use the <a href="https://nizlo.com/guides/msp-client-onboarding-checklist?utm_source=github_pages&amp;utm_medium=resource&amp;utm_campaign=msp_client_onboarding&amp;utm_content=go_live_example">full client onboarding checklist</a> to decide which alerts and escalation paths to test during discovery and the pilot.</p>
+</section>
+<section class="register" aria-labelledby="pilot-reconciliation-heading">
+<h2 id="pilot-reconciliation-heading">Worked example: reconcile the client inventory against the RMM pilot</h2>
+<p>A client approves six Windows laptops at one site for an RMM pilot. Five report to the expected customer workspace. The sixth device appears under two names in the old inventory and has yet to check in.</p>
+<ol>
+<li><strong>Resolve the inventory record.</strong> Compare the client's asset tag and serial number against the old export. Keep both names as aliases if the client confirms they refer to the same laptop. Record that decision and the source in the <a href="endpoint-inventory-cmdb-template.html">endpoint inventory worksheet</a>.</li>
+<li><strong>Record five of six verified on ONB-014.</strong> Capture the expected customer and site, five matched device IDs, and their latest check-in times in the <a href="templates/msp-client-onboarding-evidence-register.csv" download>onboarding evidence register</a>. Attach a ticket for the missing check-in. Name the client contact who can make the laptop available and the MSP technician who will retest.</li>
+<li><strong>Close the exception before expanding.</strong> Confirm the sixth laptop reports under its own identity in the right workspace and shows fresh inventory. Update the register with the result and have the pilot owner approve the next group. If the approved scope changes, record the customer's decision and the revised device count.</li>
+</ol>
+<p>For a Nizlo trial, use the <a href="rmm-trial-first-24-hours-plan.html#second-technician-proof">first-day pilot test plan</a> to capture the first device's identity and check-in before enrolling the rest of the pilot.</p>
 </section>
 <aside class="note"><strong>Bundle-scope example:</strong> review <a href="https://nizlo.com/suite?utm_source=github_pages&amp;utm_medium=authority_bridge&amp;utm_campaign=nizlo_suite&amp;utm_content=client_onboarding">Nizlo's published RMM and cloud-backup suite</a>, then record which client endpoints receive RMM, which receive backup, the storage allocation, recovery owner, exclusions, and acceptance evidence.</aside>
 <aside class="note"><strong>IT-consultant onboarding:</strong> use the <a href="https://nizlo.com/solutions/rmm-for-it-consultants?utm_source=github_pages&amp;utm_medium=authority_bridge&amp;utm_campaign=rmm_for_it_consultants&amp;utm_content=client_onboarding">RMM for IT consultants guide</a> to define each customer's authorized scope, site and endpoint baseline, monitoring ownership, patch window, escalation contacts, remote-support approval, reporting expectations, and first-device acceptance evidence.</aside>
