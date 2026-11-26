@@ -6,12 +6,23 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-26T05:04:34Z</updated>
+  <updated>2026-11-26T05:10:05Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>RMM first endpoint not connecting? Activation troubleshooting checklist</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html" />
+    <link rel="related" href="https://www.techwrix.com/the-first-15-minutes-after-an-rmm-endpoint-disappears/" />
+    <updated>2026-11-26T05:10:05Z</updated>
+    <category term="deployment" />
+    <category term="troubleshooting" />
+    <category term="activation" />
+    <summary>Find the first missing proof when an RMM agent has never reported. If it reported before and is now missing or stale, follow the separate Techwrix walkthrough to preserve identity and heartbeat evidence.</summary>
+  </entry>
   <entry>
     <title>RMM quote normalization calculator</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html</id>
@@ -543,16 +554,6 @@
     <category term="SLA" />
     <category term="template" />
     <summary>Define response, restoration, and resolution separately with explicit clock rules, responsibilities, escalation, exclusions, evidence, and approval.</summary>
-  </entry>
-  <entry>
-    <title>RMM first endpoint not connecting? Activation troubleshooting checklist</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html" />
-    <updated>2026-11-20T00:00:00Z</updated>
-    <category term="deployment" />
-    <category term="troubleshooting" />
-    <category term="activation" />
-    <summary>Trace an RMM agent from installer execution through service state, tenant enrollment, outbound connectivity, and verified dashboard telemetry, using safe Windows commands for service, DNS, TCP 443, proxy, and time evidence.</summary>
   </entry>
   <entry>
     <title>RMM patch-compliance report template and calculator</title>
