@@ -6,12 +6,21 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-26T01:59:32Z</updated>
+  <updated>2026-11-26T02:06:57Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>RMM checkout and billing readiness checklist</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-checkout-billing-readiness-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-checkout-billing-readiness-checklist.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-checkout-billing-readiness-checklist.csv" />
+    <updated>2026-11-26T02:06:57Z</updated>
+    <category term="RMM checkout" /><category term="RMM billing" /><category term="trial conversion" />
+    <summary>Verify price, trial timing, first-charge exposure, add-ons, payment authority, renewal, cancellation, invoices, and operational approval across sixteen evidence gates. A worked first invoice example shows how to reconcile plan price and extra technicians.</summary>
+  </entry>
   <entry>
     <title>RMM quote normalization calculator</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html</id>
@@ -248,15 +257,6 @@
     <updated>2026-11-13T00:00:00Z</updated>
     <category term="MSP standards" /><category term="IT service provider governance" /><category term="evidence readiness" />
     <summary>Organize governance, workforce, service, security, continuity, supplier, customer, exit, and improvement evidence across twenty-four vendor-neutral controls without claiming an unofficial certification.</summary>
-  </entry>
-  <entry>
-    <title>RMM checkout and billing readiness checklist</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-checkout-billing-readiness-checklist.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-checkout-billing-readiness-checklist.html" />
-    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-checkout-billing-readiness-checklist.csv" />
-    <updated>2026-11-13T00:00:00Z</updated>
-    <category term="RMM checkout" /><category term="RMM billing" /><category term="trial conversion" />
-    <summary>Verify price, trial timing, first-charge exposure, add-ons, payment authority, renewal, cancellation, invoices, and operational approval across sixteen evidence gates.</summary>
   </entry>
   <entry>
     <title>MSP client onboarding RACI matrix</title>
