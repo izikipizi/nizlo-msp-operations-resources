@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Intune and RMM field notes from Nizlo</title>
+  <subtitle>Practical worksheets for teams using Microsoft Intune alongside RMM.</subtitle>
+  <id>https://izikipizi.github.io/nizlo-msp-operations-resources/intune-feed.xml</id>
+  <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/intune-feed.xml" />
+  <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-remote-support-vs-mdm-vs-endpoint-management.html" />
+  <updated>2026-11-26T23:01:13Z</updated>
+  <author>
+    <name>Nizlo</name>
+    <uri>https://nizlo.com/</uri>
+  </author>
+  <entry>
+    <title>Intune and RMM offboarding when a laptop is offline</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-remote-support-vs-mdm-vs-endpoint-management.html#offline-device-offboarding</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-remote-support-vs-mdm-vs-endpoint-management.html#offline-device-offboarding" />
+    <updated>2026-11-26T23:01:13Z</updated>
+    <category term="intune" />
+    <category term="device-management" />
+    <summary>Assign separate owners for Intune retirement, RMM agent removal, and identity revocation. Record which actions were verified, which remain pending, and who owns the follow-up.</summary>
+  </entry>
+  <entry>
+    <title>Test diagnostics consent in Microsoft Intune Remote Help</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-session-authorization-checklist.html#intune-remote-help-diagnostics</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-session-authorization-checklist.html#intune-remote-help-diagnostics" />
+    <updated>2026-11-26T18:45:10Z</updated>
+    <category term="intune" />
+    <category term="remote-help" />
+    <summary>Use an approved test device to check what happens when the user declines or stops optional diagnostics sharing during an attended support session.</summary>
+  </entry>
+  <entry>
+    <title>Test Windows update ownership when Autopatch and RMM overlap</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-policy-review-checklist.html#autopatch-and-rmm</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-policy-review-checklist.html#autopatch-and-rmm" />
+    <updated>2026-11-26T11:14:59Z</updated>
+    <category term="intune" />
+    <category term="windows-autopatch" />
+    <category term="patch-management" />
+    <summary>On a pilot device, compare the assigned quality update policy and ring settings with the install, restart, and fresh scan evidence.</summary>
+  </entry>
+</feed>
