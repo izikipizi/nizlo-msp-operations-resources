@@ -14,7 +14,7 @@
 "@context":"https://schema.org","@type":"Dataset","name":"Easy RMM setup and technician training plan",
 "description":"A vendor-neutral CSV with 10 practical exercises for measuring RMM setup and technician training effort, evidence requirements, pass criteria, owners, due dates, stop conditions, and status.",
 "url":"https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-technician-onboarding-training-plan.html",
-"creator":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},"dateModified":"2026-11-18","isAccessibleForFree":true,"inLanguage":"en",
+"creator":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},"dateModified":"2026-11-25","isAccessibleForFree":true,"inLanguage":"en",
 "keywords":["easy RMM setup","minimal RMM training","RMM technician training","RMM onboarding plan","MSP technician training","RMM implementation","RMM adoption checklist"],
 "variableMeasured":["Training exercise","Expected outcome","Evidence","Pass criterion","Stop condition","Trainer","Technician","Due date","Status"],
 "distribution":{"@type":"DataDownload","contentUrl":"https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-technician-onboarding-training-plan.csv","encodingFormat":"text/csv"},
@@ -40,6 +40,12 @@
 <article><h2>10. Escalation and stop conditions</h2><p>Recognize wrong-target risk, excessive privilege, unclear output, failed rollback, or cross-tenant ambiguity and stop before causing wider impact.</p></article>
 </section>
 <aside class="note"><strong>Completion rule:</strong> attendance is not evidence of readiness. Mark an exercise passed only when the named technician produces the required proof without unsafe prompting. Record remediation and repeat the same exercise after a failure.</aside>
+<section class="note" aria-labelledby="ambiguous-endpoint-exercise">
+  <h2 id="ambiguous-endpoint-exercise">First-week drill for two devices with the same name</h2>
+  <p>Use fictional device records or an authorized lab. Give the trainee a sample ticket that names a workstation but omits the site. Prepare two device records with that hostname and different customer or site assignments.</p>
+  <p>The trainee passes by stopping before connecting, finding the approved contact, and reconciling the customer, site, and a stable device identifier in the ticket. The mentor can then authorize a harmless action on one lab endpoint. Record the trainee’s evidence and remaining supervision in the training CSV.</p>
+  <p>For the next exercise, use the <a href="rmm-remote-access-session-authorization-checklist.html#integrated-access-pilot">second-technician session review</a> to check whether another technician can reconstruct the approval and result from the record.</p>
+</section>
 <aside class="note"><strong>Relationship disclosure:</strong> Nizlo, a Windows-first RMM and IT-management platform, maintains this plan. It is designed for training on any RMM and does not claim that Nizlo or another vendor requires the least training.</aside></main>
-<footer class="wrap"><span>Maintained by Nizlo · Updated November 18, 2026</span><span><a href="templates/">Template library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source repository</a></span></footer>
+<footer class="wrap"><span>Maintained by Nizlo · Updated November 25, 2026</span><span><a href="templates/">Template library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source repository</a></span></footer>
 </body></html>
