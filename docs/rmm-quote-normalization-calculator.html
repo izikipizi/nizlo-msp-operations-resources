@@ -77,11 +77,13 @@
   <h2 id="short-term-example">Compare quotes over the same 12 months</h2>
   <p>If a quote is $100/month for three months with a $200 setup fee, the calculator shows $500 in quoted cash cost for three months. Months four through twelve are unpriced. The annualized recurring line shows $1,200 at the entered monthly rate, which assumes that rate continues.</p>
   <p>Ask for the renewal rate before comparing that quote with a 12-month offer. If the remaining nine months are confirmed at $120/month, enter the $500 initial cost and $1,080 renewal cost separately in the <a href="rmm-quote-comparison-worksheet.html">RMM quote comparison worksheet</a>. The modeled first-year total is $1,580 before tax.</p>
+  <p><a href="?example=short-term#calculator-form">Load the three-month quote</a></p>
 </aside>
 <aside class="note" aria-labelledby="endpoint-minimum-example">
   <h2 id="endpoint-minimum-example">Model a minimum endpoint count</h2>
   <p>For 60 managed devices with a 100-device minimum at $2.50 per device, enter 60 managed endpoints, 100 minimum paid endpoints, and a $2.50 endpoint rate. With other charges set to zero, the result is $250/month, or $4.17 per managed endpoint. Set minimum monthly spend only if the quote has a separate dollar minimum.</p>
   <p>Per-endpoint add-ons use the managed count. If a required add-on is also charged on the minimum, enter its full cost under other required monthly fees instead.</p>
+  <p><a href="?example=endpoint-minimum#calculator-form">Load the 100-device minimum quote</a></p>
 </aside>
 <aside class="formula"><strong>Transparent formulas</strong><ul><li><code>endpoint charge = max(minimum paid endpoints, endpoints − included endpoints) × endpoint rate</code></li><li><code>technician charge = max(0, technicians − included technicians) × extra-technician rate</code></li><li><code>add-ons = endpoints × required add-on rate + other required monthly fees</code></li><li><code>pre-discount monthly = max(monthly minimum, base + endpoint charge + technician charge + add-ons)</code></li><li><code>recurring monthly = pre-discount monthly × (1 − discount %)</code></li><li><code>contract cost = recurring monthly × contract months + one-time fees</code></li><li><code>effective monthly = contract cost ÷ contract months</code></li></ul></aside>
 <section class="faq" aria-labelledby="faq-title"><h2 id="faq-title">RMM quote-normalization questions</h2><h3>How do you normalize an RMM quote?</h3><p>Separate the base fee, included quantities, overage rates, add-ons, minimum, discount, one-time fees, and term. Compare the resulting recurring, first-year, contract, and per-endpoint costs.</p><h3>Should implementation fees be included?</h3><p>Keep one-time fees visible and allocate them across the term only as a comparison aid. Do not disguise them as recurring subscription cost.</p><h3>Does the lowest normalized quote win?</h3><p>No. Verify operating-system coverage, security, integrations, support, retained tools, export, migration, and pilot evidence before selecting a platform.</p></section>
@@ -102,15 +104,20 @@ const standardExample = {
   "included-techs": 1, "tech-rate": 25, "addon-endpoint": 0, "addon-flat": 0,
   "discount": 0, "term": 12, "one-time": 500,
 };
-const useEndpointMinimum =
-  new URLSearchParams(window.location.search).get("example") === "endpoint-minimum";
-const defaults = useEndpointMinimum
-  ? {
-      ...standardExample,
-      "endpoints": 60, "technicians": 0, "base": 0, "minimum-paid-endpoints": 100,
-      "included-techs": 0, "tech-rate": 0, "one-time": 0,
-    }
-  : standardExample;
+const examples = new Map([
+  ["endpoint-minimum", {
+    ...standardExample,
+    "endpoints": 60, "technicians": 0, "base": 0, "minimum-paid-endpoints": 100,
+    "included-techs": 0, "tech-rate": 0, "one-time": 0,
+  }],
+  ["short-term", {
+    ...standardExample,
+    "endpoints": 0, "technicians": 0, "base": 100, "endpoint-rate": 0,
+    "included-techs": 0, "tech-rate": 0, "term": 3, "one-time": 200,
+  }],
+]);
+const exampleName = new URLSearchParams(window.location.search).get("example");
+const defaults = examples.get(exampleName) ?? standardExample;
 
 function resetExample() {
   for (const [id, amount] of Object.entries(defaults)) {
