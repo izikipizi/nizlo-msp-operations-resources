@@ -10,7 +10,6 @@
   "schema:description": "Fourteen source-dated RMM pricing records covering published numeric prices, free tiers, source-available software, published ranges, and quote-only vendors, with normalized one-technician scenarios at 10, 50, 100, and 500 endpoints where public rates permit exact calculation.",
   "schema:url": "https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html",
   "schema:mainEntityOfPage": "https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html",
-  "schema:sameAs": "https://nizlo.com/guides/cheapest-rmm-for-small-msps",
   "schema:creator": {
     "@type": "schema:Organization",
     "schema:name": "Nizlo",

@@ -10,7 +10,6 @@
   "schema:description": "Six source-dated public RMM pricing models normalized to one technician and fleets of 10, 50, 100, and 500 endpoints.",
   "schema:url": "https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html",
   "schema:mainEntityOfPage": "https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html",
-  "schema:sameAs": "https://nizlo.com/guides/cheapest-rmm-for-small-msps",
   "schema:creator": {
     "@type": "schema:Organization",
     "schema:name": "Nizlo",
