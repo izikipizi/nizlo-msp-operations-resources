@@ -6,12 +6,25 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-26T13:28:02Z</updated>
+  <updated>2026-11-26T13:32:57Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>RMM trial-to-paid rollout decision checklist</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-go-no-go-decision-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-go-no-go-decision-checklist.html" />
+    <updated>2026-11-26T13:32:57Z</updated>
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-go-no-go-decision-checklist.html#billing-connected-trial" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-go-no-go-decision-checklist.html#continue-unfinished-checkout" />
+    <category term="evaluation" />
+    <category term="pilot" />
+    <category term="decision" />
+    <category term="activation" />
+    <summary>Decide when to approve an RMM rollout and compare Core and Scale on a proven workflow. If Nizlo billing is connected during the trial, verify the scheduled start and first invoice in the existing workspace.</summary>
+  </entry>
   <entry>
     <title>Windows patch exception review and closure template</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-exception-review-template.html</id>
@@ -185,18 +198,6 @@
     <category term="pilot" />
     <category term="template" />
     <summary>Use a 25-test RMM pilot checklist. The worked offline-device check shows how to verify whether queued work obeys a documented expiry or maintenance cutoff.</summary>
-  </entry>
-  <entry>
-    <title>RMM trial-to-paid rollout decision checklist</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-go-no-go-decision-checklist.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-go-no-go-decision-checklist.html" />
-    <updated>2026-11-26T05:25:42Z</updated>
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-go-no-go-decision-checklist.html#continue-unfinished-checkout" />
-    <category term="evaluation" />
-    <category term="pilot" />
-    <category term="decision" />
-    <category term="activation" />
-    <summary>Decide when to approve an RMM rollout and compare Core and Scale with one proven workflow. If you left Nizlo checkout early, return to the approved workspace and review when paid billing would start.</summary>
   </entry>
   <entry>
     <title>Easy RMM setup and technician training plan</title>
