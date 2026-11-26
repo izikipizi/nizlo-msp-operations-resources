@@ -3120,8 +3120,8 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "bytes": 1845,
-      "hash": "sha256:328e45b3b50b0f501b93a74457673c01d05d81425466867bc3c8fe1563fc5028",
+      "bytes": 2112,
+      "hash": "sha256:5cc9a6c78b3d0ff6fa7a6132318a105fbfa199bf0271d05df79be5c6eac2c607",
       "schema": {
         "fields": [
           { "name": "gate_id", "type": "string" },
