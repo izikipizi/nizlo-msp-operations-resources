@@ -50,6 +50,13 @@
   <h2 id="ai-ticket-summary-test">Verify ticket summaries after migration</h2>
   <p>Choose a sanitized pilot ticket with several technician handoffs, a failed troubleshooting step, and an open next action. Reconcile the imported comments and status with the original ticket before evaluating any generated summary.</p>
   <p>Have the receiving technician compare the summary to the imported record. Check that it identifies the unresolved issue, retains the failed step, and gives the next technician the correct action. Record the required plan and who can enable the feature. A summary that omits a failed step or makes an unsupported claim should be corrected before the team relies on it.</p>
+  <h3>Worked example with fictional ticket notes</h3>
+  <ul>
+    <li><strong>09:10, first technician:</strong> Two users report jobs stuck in the shared print queue. A restart of the print service did not clear the queue.</li>
+    <li><strong>09:35, second technician:</strong> A locally generated test page prints, but a new print job from an affected workstation still stalls. The ticket is open, assigned to desktop support, and has a follow-up to reproduce the problem from that workstation.</li>
+    <li><strong>Expected summary:</strong> Keep the failure and the pending follow-up. A local test page is evidence of partial function. The affected user's print job remains unverified, so the summary should leave the issue open.</li>
+  </ul>
+  <p>Run the same fixture in each pilot and record the approved plan, who enabled summaries, and how much editing the technician needed. Check disposition and assignee against the imported record. If one tool marks the ticket resolved or skips the failed restart, record that as a failed handoff before comparing time saved.</p>
   <p>Use the <a href="https://nizlo.com/compare/atera-vs-syncro?utm_source=github_pages&amp;utm_medium=resource&amp;utm_campaign=atera_syncro_migration&amp;utm_content=ai_ticket_summary#ai-capabilities">Atera and Syncro AI comparison</a> to check plan requirements and vendor documentation before approving the workflow.</p>
 </section>
 <section class="section" aria-labelledby="agent-placement-example">
