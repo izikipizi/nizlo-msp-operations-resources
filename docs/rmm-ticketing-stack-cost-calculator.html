@@ -114,7 +114,7 @@
     <p><a href="https://nizlo.com/guides/rmm-pricing-models?utm_source=github_pages&amp;utm_medium=external_resource&amp;utm_campaign=rmm_ticketing_stack_cost">Compare RMM pricing models</a><br />Understand per-endpoint, per-technician, and flat-rate structures before entering a quote.</p>
     <p><a href="https://nizlo.com/solutions/rmm-with-ticketing?utm_source=github_pages&amp;utm_medium=external_resource&amp;utm_campaign=rmm_ticketing_stack_cost">Evaluate RMM with ticketing</a><br />Define the alert-to-ticket, ownership, escalation, reporting, and PSA boundaries the stack must cover.</p>
     <p><a href="https://nizlo.com/guides/best-rmm-for-small-msps?utm_source=github_pages&amp;utm_medium=external_resource&amp;utm_campaign=rmm_ticketing_stack_cost">Choose an RMM for a small MSP</a><br />Connect the cost model to setup, training, patching, support, and a controlled pilot.</p>
-    <p><a href="rmm-quote-normalization-calculator.html">Normalize each vendor quote</a><br />Reconcile included quantities, overages, minimums, discounts, and contract terms.</p>
+    <p><a data-trial-campaign href="rmm-quote-normalization-calculator.html">Normalize each vendor quote</a><br />Reconcile included quantities, overages, minimums, discounts, and contract terms.</p>
     <p><a href="rmm-migration-cost-calculator.html">Model migration ROI</a><br />Estimate overlap, retained tools, labor, payback, and multi-year value.</p>
     <p><a href="rmm-vs-psa-software.html">Separate RMM and PSA responsibilities</a><br />Map functional ownership before treating two products as substitutes.</p>
   </div></section>
@@ -154,4 +154,5 @@ document.querySelectorAll("input").forEach(input=>input.addEventListener("input"
 document.getElementById("copy").addEventListener("click",async()=>{try{await navigator.clipboard.writeText(summary());document.getElementById("status").textContent="Summary copied."}catch{document.getElementById("status").textContent="Copy was blocked by the browser. Select and copy the visible results instead."}});
 document.getElementById("csv").addEventListener("click",()=>{const blob=new Blob([csv()],{type:"text/csv;charset=utf-8"}),link=document.createElement("a");link.href=URL.createObjectURL(blob);link.download="rmm-ticketing-stack-cost-comparison.csv";link.click();URL.revokeObjectURL(link.href);document.getElementById("status").textContent="CSV downloaded."});
 update();
-</script></body></html>
+</script><script src="assets/trial-campaign.js" defer></script>
+</body></html>
