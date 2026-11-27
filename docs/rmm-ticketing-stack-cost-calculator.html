@@ -19,7 +19,7 @@
   "description":"A browser-only calculator for comparing two RMM and ticketing or PSA stacks across recurring software, operating labor, implementation, annual, and 36-month cost.",
   "url":"https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-ticketing-stack-cost-calculator.html",
   "applicationCategory":"BusinessApplication","operatingSystem":"Any","browserRequirements":"JavaScript",
-  "isAccessibleForFree":true,"dateModified":"2026-11-13","inLanguage":"en",
+  "isAccessibleForFree":true,"dateModified":"2026-11-27","inLanguage":"en",
   "creator":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},
   "featureList":["Per-endpoint pricing","Per-technician pricing","Ticketing or PSA cost","Required add-ons","Operating labor","Implementation cost","First-year comparison","36-month comparison","CSV export"]
 }</script>
@@ -45,7 +45,7 @@
     <p class="hint">Use the same managed scope and loaded labor rate for both stacks.</p>
     <div class="global">
       <div class="field"><label for="endpoints">Managed endpoints<span class="sub">Devices in the priced scope</span></label><input id="endpoints" type="number" min="0" step="1" value="800" /></div>
-      <div class="field"><label for="technicians">Technicians<span class="sub">Paid or active seats in the quote</span></label><input id="technicians" type="number" min="0" step="1" value="10" /></div>
+      <div class="field"><label for="technicians">Technicians<span class="sub">Total seats each stack must cover</span></label><input id="technicians" type="number" min="0" step="1" value="10" /></div>
       <div class="field"><label for="laborRate">Loaded labor rate / hour<span class="sub">Wage, burden, and overhead</span></label><input id="laborRate" type="number" min="0" step="1" value="55" /></div>
     </div>
   </section>
@@ -57,7 +57,8 @@
         <div class="field"><label for="aName">Stack name</label><input id="aName" type="text" value="Stack A" /></div>
         <div class="field"><label for="aBase">Base fee / month</label><input id="aBase" type="number" min="0" step="0.01" value="0" /></div>
         <div class="field"><label for="aEndpoint">Per endpoint / month</label><input id="aEndpoint" type="number" min="0" step="0.01" value="2.5" /></div>
-        <div class="field"><label for="aTechnician">Per technician / month</label><input id="aTechnician" type="number" min="0" step="0.01" value="0" /></div>
+        <div class="field"><label for="aIncluded">Technicians included in base fee</label><input id="aIncluded" type="number" min="0" step="1" value="0" /></div>
+        <div class="field"><label for="aTechnician">Per additional technician / month</label><input id="aTechnician" type="number" min="0" step="0.01" value="0" /></div>
         <div class="field"><label for="aTicketing">Ticketing or PSA / month</label><input id="aTicketing" type="number" min="0" step="0.01" value="0" /></div>
         <div class="field"><label for="aAddons">Required add-ons / month</label><input id="aAddons" type="number" min="0" step="0.01" value="0" /></div>
         <div class="field"><label for="aHours">Admin and integration hours / month</label><input id="aHours" type="number" min="0" step="0.25" value="12" /></div>
@@ -72,7 +73,8 @@
         <div class="field"><label for="bName">Stack name</label><input id="bName" type="text" value="Stack B" /></div>
         <div class="field"><label for="bBase">Base fee / month</label><input id="bBase" type="number" min="0" step="0.01" value="99" /></div>
         <div class="field"><label for="bEndpoint">Per endpoint / month</label><input id="bEndpoint" type="number" min="0" step="0.01" value="0" /></div>
-        <div class="field"><label for="bTechnician">Per technician / month</label><input id="bTechnician" type="number" min="0" step="0.01" value="129" /></div>
+        <div class="field"><label for="bIncluded">Technicians included in base fee</label><input id="bIncluded" type="number" min="0" step="1" value="0" /></div>
+        <div class="field"><label for="bTechnician">Per additional technician / month</label><input id="bTechnician" type="number" min="0" step="0.01" value="129" /></div>
         <div class="field"><label for="bTicketing">Ticketing or PSA / month</label><input id="bTicketing" type="number" min="0" step="0.01" value="300" /></div>
         <div class="field"><label for="bAddons">Required add-ons / month</label><input id="bAddons" type="number" min="0" step="0.01" value="150" /></div>
         <div class="field"><label for="bHours">Admin and integration hours / month</label><input id="bHours" type="number" min="0" step="0.25" value="8" /></div>
@@ -91,7 +93,8 @@
   </section>
 
   <section class="formula"><h2>Published formulas</h2>
-    <p><code>Recurring software = base + (endpoints × endpoint rate) + (technicians × technician rate) + ticketing/PSA + add-ons</code></p>
+    <p><code>Billable technician seats = max(0, total technicians − included technicians)</code></p>
+    <p><code>Recurring software = base + (endpoints × endpoint rate) + (billable seats × technician rate) + ticketing/PSA + add-ons</code></p>
     <p><code>Recurring labor = monthly admin/integration hours × loaded hourly rate</code></p>
     <p><code>Complete monthly operating cost = recurring software + recurring labor</code></p>
     <p><code>First-year total = (complete monthly operating cost × 12) + one-time implementation/migration</code></p>
@@ -100,8 +103,8 @@
 
   <section class="formula" aria-labelledby="included-seats-heading">
     <h2 id="included-seats-heading">How to enter a quote with an included technician</h2>
-    <p>The per-technician field multiplies by every technician in the shared assumptions. If a quote includes seats in its base plan, add only the charge for extra seats to the base fee and leave the per-technician field at $0. Recalculate the base fee if you change the team size.</p>
-    <p>For example, a three-technician team comparing <a href="https://nizlo.com/pricing?utm_source=github_pages&amp;utm_medium=external_resource&amp;utm_campaign=rmm_ticketing_stack_cost&amp;utm_content=included_seats_example">Nizlo's published rates</a> would enter $79 as the adjusted base fee for Core ($59 plus two $10 seats) or $99 for Scale ($79 plus two $10 seats). These are monthly RMM subscription totals before tax. Enter any standalone ticketing or PSA tool the team still needs on its own line, then add labor and migration costs separately. Pricing checked November 25, 2026.</p>
+    <p>Enter the quoted base fee, the number of technicians included, and the price of each additional technician. Leave included technicians at zero for a plan that charges for every seat. Change the total technician count to see how both quotes change.</p>
+    <p>For example, using <a href="https://nizlo.com/pricing?utm_source=github_pages&amp;utm_medium=external_resource&amp;utm_campaign=rmm_ticketing_stack_cost&amp;utm_content=included_seats_example">Nizlo's published rates</a>, enter a $59 base for Core or a $79 base for Scale. Enter one included technician and $10 per additional technician for either plan. Both include unlimited RMM endpoints, so leave the endpoint rate at zero. At three technicians, Core is $79 and Scale is $99 per month before tax. Enter any retained PSA and labor separately. Pricing checked November 27, 2026.</p>
     <p>Use the <a href="rmm-quote-comparison-worksheet.html">RMM quote comparison worksheet</a> to record the base price, included seats, and renewal terms before comparing the totals.</p>
   </section>
 
@@ -119,21 +122,24 @@
     <p><a href="rmm-vs-psa-software.html">Separate RMM and PSA responsibilities</a><br />Map functional ownership before treating two products as substitutes.</p>
   </div></section>
 </main>
-<footer class="wrap"><span>Maintained by Nizlo · Updated November 25, 2026</span><span><a href="./">Resource library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source</a></span></footer>
+<footer class="wrap"><span>Maintained by Nizlo · Updated November 27, 2026</span><span><a href="./">Resource library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source</a></span></footer>
 <script>
-const ids=["endpoints","technicians","laborRate","aName","aBase","aEndpoint","aTechnician","aTicketing","aAddons","aHours","aOneTime","bName","bBase","bEndpoint","bTechnician","bTicketing","bAddons","bHours","bOneTime"];
+const ids=["endpoints","technicians","laborRate","aName","aBase","aEndpoint","aIncluded","aTechnician","aTicketing","aAddons","aHours","aOneTime","bName","bBase","bEndpoint","bIncluded","bTechnician","bTicketing","bAddons","bHours","bOneTime"];
 const el=Object.fromEntries(ids.map(id=>[id,document.getElementById(id)]));
 const number=id=>Math.max(0,Number.parseFloat(el[id].value)||0);
 const money=value=>new Intl.NumberFormat("en-US",{style:"currency",currency:"USD",maximumFractionDigits:2}).format(value);
 function calculate(prefix){
   const endpoints=number("endpoints"),technicians=number("technicians"),laborRate=number("laborRate");
   const name=el[prefix+"Name"].value.trim()||`Stack ${prefix.toUpperCase()}`;
-  const software=number(prefix+"Base")+endpoints*number(prefix+"Endpoint")+technicians*number(prefix+"Technician")+number(prefix+"Ticketing")+number(prefix+"Addons");
+  const includedTechnicians = Math.floor(number(prefix + "Included"));
+  const billableTechnicians = Math.max(0, Math.floor(technicians) - includedTechnicians);
+  const technicianCost = billableTechnicians * number(prefix + "Technician");
+  const software=number(prefix+"Base")+endpoints*number(prefix+"Endpoint")+technicianCost+number(prefix+"Ticketing")+number(prefix+"Addons");
   const labor=number(prefix+"Hours")*laborRate,monthly=software+labor,oneTime=number(prefix+"OneTime");
-  return{name,software,labor,monthly,annual:monthly*12,firstYear:monthly*12+oneTime,threeYear:monthly*36+oneTime,perEndpoint:endpoints?monthly/endpoints:0,perTechnician:technicians?monthly/technicians:0,oneTime};
+  return{name,software,labor,monthly,annual:monthly*12,firstYear:monthly*12+oneTime,threeYear:monthly*36+oneTime,perEndpoint:endpoints?monthly/endpoints:0,perTechnician:technicians?monthly/technicians:0,oneTime,includedTechnicians,billableTechnicians};
 }
 function cards(result){return [
-  ["Software / month",money(result.software)],["Operating labor / month",money(result.labor)],["Complete monthly cost",money(result.monthly)],["Annual run rate",money(result.annual)],
+  ["Billable technician seats",result.billableTechnicians],["Software / month",money(result.software)],["Operating labor / month",money(result.labor)],["Complete monthly cost",money(result.monthly)],["Annual run rate",money(result.annual)],
   ["First-year total",money(result.firstYear)],["36-month total",money(result.threeYear)],["Per endpoint / month",money(result.perEndpoint)],["Per technician / month",money(result.perTechnician)]
 ].map(([label,value])=>`<div class="result"><span>${label}</span><strong>${value}</strong></div>`).join("")}
 let latest;
@@ -149,7 +155,7 @@ function update(){
   ].map(([label,value])=>`<div class="result"><span>${label}</span><strong>${value}</strong></div>`).join("");
 }
 function summary(){const {a,b}=latest;return `RMM + ticketing stack cost comparison\nScope: ${number("endpoints")} endpoints, ${number("technicians")} technicians, ${money(number("laborRate"))}/hour loaded labor\n\n${a.name}\nSoftware/month: ${money(a.software)}\nLabor/month: ${money(a.labor)}\nComplete monthly: ${money(a.monthly)}\nFirst year: ${money(a.firstYear)}\n36 months: ${money(a.threeYear)}\n\n${b.name}\nSoftware/month: ${money(b.software)}\nLabor/month: ${money(b.labor)}\nComplete monthly: ${money(b.monthly)}\nFirst year: ${money(b.firstYear)}\n36 months: ${money(b.threeYear)}\n\nArithmetic only; verify scope, feature fit, pilot evidence, and written terms.`}
-function csv(){const {a,b}=latest;const rows=[["Metric",a.name,b.name],["Managed endpoints",number("endpoints"),number("endpoints")],["Technicians",number("technicians"),number("technicians")],["Recurring software monthly",a.software,b.software],["Operating labor monthly",a.labor,b.labor],["Complete monthly operating cost",a.monthly,b.monthly],["Annual run rate",a.annual,b.annual],["One-time implementation and migration",a.oneTime,b.oneTime],["First-year total",a.firstYear,b.firstYear],["36-month total",a.threeYear,b.threeYear],["Effective cost per endpoint monthly",a.perEndpoint,b.perEndpoint],["Effective cost per technician monthly",a.perTechnician,b.perTechnician]];return rows.map(row=>row.map(value=>`"${String(value).replaceAll('"','""')}"`).join(",")).join("\r\n")}
+function csv(){const {a,b}=latest;const rows=[["Metric",a.name,b.name],["Managed endpoints",number("endpoints"),number("endpoints")],["Technicians",number("technicians"),number("technicians")],["Technicians included in base fee",a.includedTechnicians,b.includedTechnicians],["Billable technician seats",a.billableTechnicians,b.billableTechnicians],["Recurring software monthly",a.software,b.software],["Operating labor monthly",a.labor,b.labor],["Complete monthly operating cost",a.monthly,b.monthly],["Annual run rate",a.annual,b.annual],["One-time implementation and migration",a.oneTime,b.oneTime],["First-year total",a.firstYear,b.firstYear],["36-month total",a.threeYear,b.threeYear],["Effective cost per endpoint monthly",a.perEndpoint,b.perEndpoint],["Effective cost per technician monthly",a.perTechnician,b.perTechnician]];return rows.map(row=>row.map(value=>`"${String(value).replaceAll('"','""')}"`).join(",")).join("\r\n")}
 document.querySelectorAll("input").forEach(input=>input.addEventListener("input",update));
 document.getElementById("copy").addEventListener("click",async()=>{try{await navigator.clipboard.writeText(summary());document.getElementById("status").textContent="Summary copied."}catch{document.getElementById("status").textContent="Copy was blocked by the browser. Select and copy the visible results instead."}});
 document.getElementById("csv").addEventListener("click",()=>{const blob=new Blob([csv()],{type:"text/csv;charset=utf-8"}),link=document.createElement("a");link.href=URL.createObjectURL(blob);link.download="rmm-ticketing-stack-cost-comparison.csv";link.click();URL.revokeObjectURL(link.href);document.getElementById("status").textContent="CSV downloaded."});
