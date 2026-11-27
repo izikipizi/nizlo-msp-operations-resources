@@ -44,6 +44,7 @@
     <div class="fields">
       <div class="field"><label for="currency">Quote currency</label><select id="currency"><option value="USD">USD</option><option value="EUR">EUR</option><option value="GBP">GBP</option></select></div>
       <div class="field"><label for="endpoints">Managed endpoints</label><input id="endpoints" type="number" min="0" step="1" value="100" inputmode="numeric" /></div>
+      <div class="field"><label for="managed-users">Managed users <span class="sub">Optional, for monthly cost per user</span></label><input id="managed-users" type="number" min="1" step="1" inputmode="numeric" /></div>
       <div class="field"><label for="technicians">Technicians</label><input id="technicians" type="number" min="0" step="1" value="2" inputmode="numeric" /></div>
       <div class="field"><label for="base">Monthly base fee <span class="sub">Before variable usage</span></label><input id="base" type="number" min="0" step="0.01" value="99" inputmode="decimal" /></div>
       <div class="field"><label for="minimum">Minimum monthly spend <span class="sub">Applied before discount</span></label><input id="minimum" type="number" min="0" step="0.01" value="0" inputmode="decimal" /></div>
@@ -70,6 +71,7 @@
       <div class="result"><span>Total contract cost</span><strong id="contract">$0</strong><small id="contract-note"></small></div>
       <div class="result"><span>Effective monthly cost</span><strong id="effective">$0</strong><small>Includes one-time fees across the term</small></div>
       <div class="result"><span>Effective cost / endpoint</span><strong id="per-endpoint">—</strong><small>Effective monthly cost ÷ endpoints</small></div>
+      <div class="result" id="per-managed-user-result" hidden><span>Recurring cost / managed user</span><strong id="per-managed-user">—</strong><small>Monthly subscription ÷ managed users</small></div>
     </div>
     <ul class="breakdown" id="breakdown"></ul>
     <div class="actions"><button class="button" type="button" id="copy">Copy normalized summary</button><a data-trial-campaign class="button" href="rmm-quote-comparison-worksheet.html">Open quote comparison worksheet</a><a data-trial-campaign class="button" href="https://nizlo.com/guides/rmm-pricing-models?utm_source=github_pages&amp;utm_medium=external_calculator&amp;utm_campaign=rmm_quote_normalization">Compare pricing models</a><a data-trial-campaign class="button" href="https://nizlo.com/pricing?utm_source=github_pages&amp;utm_medium=external_calculator&amp;utm_campaign=rmm_quote_normalization">Use Nizlo's published pricing as one input</a></div>
@@ -147,7 +149,7 @@
 <footer class="wrap"><span>Maintained by Nizlo · Updated November 27, 2026</span><span><a href="./">Resource library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source</a></span></footer>
 <script>
 const standardExample = {
-  "endpoints": 100, "technicians": 2, "base": 99, "minimum": 0,
+  "endpoints": 100, "managed-users": "", "technicians": 2, "base": 99, "minimum": 0,
   "included-endpoints": 0, "endpoint-rate": 2.5, "endpoint-rate-period": "month", "minimum-paid-endpoints": 0,
   "included-techs": 1, "tech-rate": 25, "addon-endpoint": 0, "addon-flat": 0,
   "discount": 0, "term": 12, "one-time": 500,
@@ -170,7 +172,7 @@ const examples = new Map([
   }],
   ["manageengine-monthly", {
     ...standardExample,
-    "endpoints": 50, "technicians": 1, "base": 104, "included-endpoints": 50,
+    "endpoints": 50, "managed-users": 40, "technicians": 1, "base": 104, "included-endpoints": 50,
     "endpoint-rate": 0, "tech-rate": 0, "addon-flat": 44, "term": 10, "one-time": 0,
   }],
   ["short-term", {
@@ -206,11 +208,16 @@ function calculate(){
  const endpointUnits=Math.max(minimumPaidEndpoints,endpoints-includedEndpoints),techUnits=Math.max(0,techs-includedTechs),endpointCharge=(endpointUnits*endpointRate)/(endpointRatePeriod==="year"?12:1),techCharge=techUnits*techRate,addonCharge=endpoints*addonEndpoint+addonFlat,subtotal=base+endpointCharge+techCharge+addonCharge,preDiscount=Math.max(minimum,subtotal),monthly=preDiscount*(1-discount/100),annual=monthly*12,firstYear=monthly*Math.min(12,term)+oneTime,contract=monthly*term+oneTime,effective=contract/term,perEndpoint=endpoints>0?effective/endpoints:null;
  const cashCostLabel=term<12?`Quoted cash cost (${term} mo.)`:"First-year cash cost";
  const cashCostNote=term<12?`Quote covers ${term} of 12 months, plus one-time fees`:"12 months plus one-time fees";
+ const managedUsers = value("managed-users");
+ const hasManagedUsers = Number.isSafeInteger(managedUsers) && managedUsers > 0;
+ const recurringPerUser = hasManagedUsers ? money.format(monthly / managedUsers) : null;
+ document.getElementById("per-managed-user-result").hidden = !hasManagedUsers;
+ document.getElementById("per-managed-user").textContent = recurringPerUser ?? "—";
  document.getElementById("monthly").textContent=money.format(monthly);document.getElementById("annual").textContent=money.format(annual);document.getElementById("first-year").textContent=money.format(firstYear);document.getElementById("contract").textContent=money.format(contract);document.getElementById("contract-note").textContent=`${term}-month term including one-time fees`;document.getElementById("effective").textContent=money.format(effective);document.getElementById("per-endpoint").textContent=perEndpoint===null?"—":money.format(perEndpoint);
  document.getElementById("first-year-label").textContent=cashCostLabel;
  document.getElementById("first-year-note").textContent=cashCostNote;
  document.getElementById("breakdown").innerHTML=`<li>Base: <strong>${money.format(base)}</strong></li><li>${endpointUnits} billable endpoints${minimumPaidEndpoints>endpoints-includedEndpoints && minimumPaidEndpoints>0?" (minimum applied)":""}: <strong>${money.format(endpointCharge)}</strong></li><li>${techUnits} billable technicians: <strong>${money.format(techCharge)}</strong></li><li>Required add-ons: <strong>${money.format(addonCharge)}</strong></li><li>Pre-discount subtotal${minimum>subtotal?" (minimum applied)":""}: <strong>${money.format(preDiscount)}</strong></li><li>Discount: <strong>${discount.toFixed(2)}%</strong></li><li>One-time fees: <strong>${money.format(oneTime)}</strong></li>`;
- window.quoteSummary=`RMM quote normalization (${currency})\nManaged endpoints: ${endpoints}\nBillable endpoint units: ${endpointUnits} (minimum ${minimumPaidEndpoints})\nTechnicians: ${techs}\nRecurring monthly: ${money.format(monthly)}\nAnnualized recurring: ${money.format(annual)} (12 months at the quoted rate)\n${cashCostLabel}: ${money.format(firstYear)} (${cashCostNote})\nTotal ${term}-month contract: ${money.format(contract)}\nEffective monthly incl. one-time fees: ${money.format(effective)}\nEffective monthly per endpoint: ${perEndpoint===null?"n/a":money.format(perEndpoint)}\nAssumptions: base ${money.format(base)}, endpoint rate ${money.format(endpointRate)} per ${endpointRatePeriod}, monthly endpoint charge ${money.format(endpointCharge)}, technician overage ${money.format(techCharge)}, required add-ons ${money.format(addonCharge)}, minimum ${money.format(minimum)}, discount ${discount.toFixed(2)}%, one-time fees ${money.format(oneTime)}.`;
+ window.quoteSummary=`RMM quote normalization (${currency})\nManaged endpoints: ${endpoints}\nBillable endpoint units: ${endpointUnits} (minimum ${minimumPaidEndpoints})\nTechnicians: ${techs}\nRecurring monthly: ${money.format(monthly)}\nAnnualized recurring: ${money.format(annual)} (12 months at the quoted rate)\n${cashCostLabel}: ${money.format(firstYear)} (${cashCostNote})\nTotal ${term}-month contract: ${money.format(contract)}\nEffective monthly incl. one-time fees: ${money.format(effective)}\nEffective monthly per endpoint: ${perEndpoint===null?"n/a":money.format(perEndpoint)}\n${hasManagedUsers ? `Managed users: ${managedUsers}\nRecurring monthly per managed user: ${recurringPerUser}\n` : ""}Assumptions: base ${money.format(base)}, endpoint rate ${money.format(endpointRate)} per ${endpointRatePeriod}, monthly endpoint charge ${money.format(endpointCharge)}, technician overage ${money.format(techCharge)}, required add-ons ${money.format(addonCharge)}, minimum ${money.format(minimum)}, discount ${discount.toFixed(2)}%, one-time fees ${money.format(oneTime)}.`;
 }
 currencyField.addEventListener("change", calculate);
 document.getElementById("calculator-form").addEventListener("submit",event=>{event.preventDefault();calculate()});Object.keys(defaults).forEach(id=>document.getElementById(id).addEventListener("input",calculate));document.getElementById("reset").addEventListener("click",resetExample);document.getElementById("copy").addEventListener("click", async () => {
