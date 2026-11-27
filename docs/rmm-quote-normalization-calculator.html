@@ -98,6 +98,8 @@
   <p>Compare two fictional quotes with the same $2.50 per-device rate and 100-device floor. Both start with 125 devices. At the start of month seven, one client leaves and the fleet falls to 80 devices.</p>
   <p>If the vendor allows a monthly reduction, six months at $312.50 and six at the $250 floor total <strong>$3,375</strong>. If the signed commitment holds at 125 devices until renewal, all 12 months cost $312.50, or <strong>$3,750</strong>. The same rate and floor produce a $375 difference before tax or add-ons.</p>
   <p>Ask for the committed device count, earliest reduction date, and notice deadline in writing. Model the current and reduced monthly costs separately, then carry the date when the lower amount actually begins into the quote worksheet.</p>
+  <p>Compare the same 80 active devices under both terms. The held commitment enters 125 as the minimum paid count for the remaining months.</p>
+  <p><a data-trial-campaign href="?example=before-growth#calculator-form">Load the reduced 100-device bill</a> · <a data-trial-campaign href="?example=held-commitment#calculator-form">Load the held 125-device bill</a></p>
 </aside>
 <aside class="note" aria-labelledby="annual-device-quote">
   <h2 id="annual-device-quote">Compare an annual per-device quote with a monthly plan</h2>
@@ -146,6 +148,7 @@ const examples = new Map([
   ["endpoint-minimum", endpointMinimumExample],
   ["before-growth", { ...endpointMinimumExample, "endpoints": 80 }],
   ["after-growth", { ...endpointMinimumExample, "endpoints": 125 }],
+  ["held-commitment", { ...endpointMinimumExample, "endpoints": 80, "minimum-paid-endpoints": 125 }],
   ["annual-device", {
     ...endpointMinimumExample,
     "endpoints": 80, "endpoint-rate": 30, "endpoint-rate-period": "year", "one-time": 300,
