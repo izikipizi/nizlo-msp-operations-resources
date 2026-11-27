@@ -1,0 +1,7 @@
+source_customer_id,source_ticket_id,source_status,expected_destination_organization_id,expected_disposition,destination_ticket_id,actual_destination_organization_id,actual_destination_status,reconciliation_result,exception_owner,next_action,evidence_reference
+EXAMPLE-C01,EXAMPLE-A101,Open,EXAMPLE-ORG01,Import into working queue,EXAMPLE-S801,EXAMPLE-ORG01,Open,matched,,,
+EXAMPLE-C01,EXAMPLE-A102,Pending,EXAMPLE-ORG01,Import and preserve Pending,EXAMPLE-S802,EXAMPLE-ORG01,Pending,duplicate,Queue owner,Verify both destination records and designate the correct one before closing the exception,
+EXAMPLE-C01,EXAMPLE-A102,Pending,EXAMPLE-ORG01,Import and preserve Pending,EXAMPLE-S803,EXAMPLE-ORG01,Pending,duplicate,Queue owner,Check the same source ID against destination ticket EXAMPLE-S802,
+EXAMPLE-C01,EXAMPLE-A103,Open,EXAMPLE-ORG01,Import into working queue,,,,missing,Migration owner,Keep source queue available and locate the missing ticket and its comments,
+EXAMPLE-C01,EXAMPLE-A104,Closed,,Approved archive only,,,,archive_only,Retention owner,Verify that the archived source record is readable,
+EXAMPLE-C01,EXAMPLE-A105,Closed,EXAMPLE-ORG01,Import as history outside active work,EXAMPLE-S805,EXAMPLE-ORG01,Open,status_exception,Queue owner,Remove the unexpected active work from the handoff only after confirming the correct disposition,
