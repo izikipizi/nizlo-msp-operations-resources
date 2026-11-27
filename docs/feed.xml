@@ -6,12 +6,27 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-27T20:41:52Z</updated>
+  <updated>2026-11-27T21:37:29Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>RMM first endpoint not connecting? Activation troubleshooting checklist</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=first_endpoint_download_recovery#windows-installer-signing" />
+    <link rel="related" href="https://www.techwrix.com/the-first-15-minutes-after-an-rmm-endpoint-disappears/" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html#installer-warning-evidence" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html#resume-prepared-installer" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html#online-inventory-empty" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html#unexpected-device-check-in" />
+    <updated>2026-11-27T21:37:29Z</updated>
+    <category term="deployment" />
+    <category term="troubleshooting" />
+    <category term="activation" />
+    <summary>Check whether Nizlo is still signing the Windows installer, the browser or Windows blocked it, or the agent installed without checking in. Follow the matching steps and use the same workspace and prepared installer.</summary>
+  </entry>
   <entry>
     <title>RMM patch management policy checklist for Windows</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-policy-review-checklist.html</id>
@@ -159,21 +174,6 @@
     <category term="pricing" />
     <category term="dataset" />
     <summary>Compare published pricing for 14 RMM products. The worked example holds technician count at two, checks which Atera plan covers the fleet, and shows how to budget a year of Nizlo monthly billing with a second technician.</summary>
-  </entry>
-  <entry>
-    <title>RMM first endpoint not connecting? Activation troubleshooting checklist</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=first_endpoint_download_recovery#resume-prepared-installer" />
-    <link rel="related" href="https://www.techwrix.com/the-first-15-minutes-after-an-rmm-endpoint-disappears/" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html#installer-warning-evidence" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html#resume-prepared-installer" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html#online-inventory-empty" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html#unexpected-device-check-in" />
-    <updated>2026-11-27T06:09:34Z</updated>
-    <category term="deployment" />
-    <category term="troubleshooting" />
-    <category term="activation" />
-    <summary>If the first device is missing, check whether the installer finished saving, run it on the intended computer, and verify a fresh check-in. Resume in the same workspace and capture browser or Windows warnings before retrying.</summary>
   </entry>
   <entry>
     <title>RMM quote normalization calculator</title>
@@ -937,7 +937,7 @@
   <entry>
     <title>RMM Pricing 2026: Cost Calculator &amp; Pricing Models</title>
     <id>https://nizlo.com/guides/rmm-pricing-models</id>
-    <link href="https://nizlo.com/guides/rmm-pricing-models" />
+    <link href="https://nizlo.com/guides/rmm-pricing-models?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_pricing_models" />
     <updated>2026-11-03T00:00:00Z</updated>
     <category term="pricing" />
     <summary>Calculate RMM costs for 10, 25, 50, 100, or 500 endpoints and compare per-device, per-technician, flat monthly, add-on, and annual totals.</summary>
@@ -945,7 +945,7 @@
   <entry>
     <title>RMM software comparisons: pricing, features, and trials</title>
     <id>https://nizlo.com/compare</id>
-    <link href="https://nizlo.com/compare" />
+    <link href="https://nizlo.com/compare?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_comparison_library" />
     <updated>2026-11-03T00:00:00Z</updated>
     <category term="comparison" />
     <summary>Compare pricing models, trial terms, endpoint coverage, patching, automation, and remote support in head-to-head and alternative guides.</summary>
@@ -961,7 +961,7 @@
   <entry>
     <title>ManageEngine Endpoint Central Alternative for MSPs</title>
     <id>https://nizlo.com/compare/manageengine-endpoint-central-msp-alternative</id>
-    <link href="https://nizlo.com/compare/manageengine-endpoint-central-msp-alternative" />
+    <link href="https://nizlo.com/compare/manageengine-endpoint-central-msp-alternative?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=manageengine_msp_alternative" />
     <updated>2026-11-03T00:00:00Z</updated>
     <category term="comparison" />
     <summary>Compare current entry pricing, trial length, endpoint limits, platform coverage, patching, remote access, APIs, deployment, and controlled-pilot fit.</summary>
