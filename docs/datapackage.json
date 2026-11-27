@@ -1243,8 +1243,8 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "bytes": 1717,
-      "hash": "sha256:2f49bb73af73f9629f310e380c750ecc70ffc1c5a27be48f2a51bbcf2fad1b8c",
+      "bytes": 1911,
+      "hash": "sha256:300ad1d9f29c69d2b5b58a540b0795dbfce9e0dcee82d1bf5569704b5582c24f",
       "schema": {
         "fields": [
           {
