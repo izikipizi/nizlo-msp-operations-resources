@@ -6,12 +6,23 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-27T06:09:34Z</updated>
+  <updated>2026-11-27T06:47:41Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>RMM pricing transparency dataset: 14 products</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=atera_alternative&amp;utm_content=two_technician_cost#atera-mixed-fleet-cost" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html#compare-two-vendor-quotes" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html#atera-mixed-fleet-cost" />
+    <updated>2026-11-27T06:47:41Z</updated>
+    <category term="pricing" />
+    <category term="dataset" />
+    <summary>Compare published pricing for 14 RMM products. The worked example holds technician count at two, checks which Atera plan covers the fleet, and shows how to budget a year of Nizlo monthly billing with a second technician.</summary>
+  </entry>
   <entry>
     <title>RMM first endpoint not connecting? Activation troubleshooting checklist</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html</id>
@@ -204,17 +215,6 @@
     <category term="onboarding" />
     <category term="template" />
     <summary>Use the worked examples to assign alert, change, and restore responsibility when the outgoing MSP misses the handoff date, then check the evidence before accepting service.</summary>
-  </entry>
-  <entry>
-    <title>RMM pricing transparency dataset: 14 products</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html#compare-two-vendor-quotes" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html#atera-mixed-fleet-cost" />
-    <updated>2026-11-26T15:59:56Z</updated>
-    <category term="pricing" />
-    <category term="dataset" />
-    <summary>Compare source-dated prices for 14 RMM products and see how the required Atera plan changes a two-technician quote when Mac or Linux agents are in scope.</summary>
   </entry>
   <entry>
     <title>RMM pricing calculator and free cost tools</title>
