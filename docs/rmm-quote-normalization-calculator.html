@@ -39,6 +39,7 @@
 <p class="privacy">Your quote figures stay in this browser. Nothing is submitted or stored by this page.</p>
 <section class="calculator" aria-label="RMM quote normalization calculator">
   <form class="panel" id="calculator-form">
+    <p id="billing-unit-example-context" class="hint" hidden>Loaded a public USD rate for 50 endpoints and one technician. For the annual ManageEngine tier, the monthly amount is a comparison figure. Check the <a data-trial-campaign href="rmm-quote-comparison-worksheet.html#compare-billing-units-at-50">source rates and billing terms</a> before changing the fleet size or using the total.</p>
     <h2>Enter one vendor quote</h2><p class="hint">Choose USD, EUR or GBP and enter every quote in the same currency. The calculator formats amounts without converting them. Use zero where a charge does not apply, then copy each vendor’s summary into the comparison worksheet.</p>
     <p id="manageengine-example-context" class="hint" hidden>This example starts with ManageEngine’s published USD base plan and add-on for 50 endpoints and one technician. The 10-month estimate assumes you can stop monthly billing after 10 months. <a data-trial-campaign href="rmm-quote-comparison-worksheet.html#manageengine-billing-term-example">Review the source and annual comparison</a>.</p>
     <div class="fields">
@@ -146,7 +147,7 @@
   <p>Use the <a data-trial-campaign href="rmm-trial-first-24-hours-plan.html">first-day RMM checklist</a> with any shortlisted vendor. If Nizlo is on your list, <a data-trial-campaign href="https://nizlo.com/solutions/rmm-free-trial?utm_source=github_pages&amp;utm_medium=external_calculator&amp;utm_campaign=rmm_quote_normalization&amp;utm_content=pilot_after_quote">review Nizlo’s 14-day trial plan</a>. It requires no card and ends without an automatic charge.</p>
   <p>When you have a technician and an authorized test endpoint ready, <a data-trial-campaign href="https://app.nizlo.com/signup?plan=core&amp;utm_source=github_pages&amp;utm_medium=external_calculator&amp;utm_campaign=rmm_quote_normalization&amp;utm_content=core_trial_after_quote">start a Core trial</a> to test monitoring, patching and remote support, or <a data-trial-campaign href="https://app.nizlo.com/signup?plan=scale&amp;utm_source=github_pages&amp;utm_medium=external_calculator&amp;utm_campaign=rmm_quote_normalization&amp;utm_content=start_trial_after_quote">start a Scale trial</a> to evaluate advanced automation and reporting. If you choose to upgrade, Core is $59/month and Scale is $79/month per workspace.</p>
 </aside>
-<aside class="note"><strong>Relationship disclosure:</strong> Nizlo maintains this vendor-neutral calculator and sells RMM software. The example values are illustrative and do not prefill Nizlo pricing. Use the current public pricing page as one source, and verify every vendor quote directly.</aside>
+<aside class="note"><strong>Relationship disclosure:</strong> Nizlo maintains this calculator and sells RMM software. The default values are illustrative. The 50-device examples use public vendor rates to demonstrate the math. Verify each quote directly.</aside>
 <aside class="note"><strong>Planning limitation:</strong> this is arithmetic, not a quote, procurement decision, tax calculation, or recommendation. Confirm taxes, currency, increases, minimum commitments, retained tools, support, implementation, renewal, cancellation, and exit terms in the controlling agreement.</aside>
 </main>
 <footer class="wrap"><span>Maintained by Nizlo · Updated November 27, 2026</span><span><a href="./">Resource library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source</a></span></footer>
@@ -162,7 +163,18 @@ const endpointMinimumExample = {
   "endpoints": 60, "technicians": 0, "base": 0, "minimum-paid-endpoints": 100,
   "included-techs": 0, "tech-rate": 0, "one-time": 0,
 };
+const fiftyDeviceExample = {
+  ...standardExample,
+  "endpoints": 50, "technicians": 1, "base": 0,
+  "endpoint-rate": 0, "tech-rate": 0, "one-time": 0,
+};
+const billingUnitExamples = new Map([
+  ["ninjaone-50", { ...fiftyDeviceExample, "endpoint-rate": 3.75 }],
+  ["manageengine-on-premises-50", { ...fiftyDeviceExample, "base": 795 / 12, "included-endpoints": 50 }],
+  ["nizlo-core-50", { ...fiftyDeviceExample, "base": 59, "included-endpoints": 50, "tech-rate": 10 }],
+]);
 const examples = new Map([
+  ...billingUnitExamples,
   ["endpoint-minimum", endpointMinimumExample],
   ["before-growth", { ...endpointMinimumExample, "endpoints": 80 }],
   ["after-growth", { ...endpointMinimumExample, "endpoints": 125 }],
@@ -193,19 +205,22 @@ const query = new URLSearchParams(window.location.search);
 const exampleName = query.get("example");
 const defaults = examples.get(exampleName) ?? standardExample;
 const isManageEngineExample = exampleName === "manageengine-monthly";
+const isBillingUnitExample = billingUnitExamples.has(exampleName);
+const usesSourceUsd = isManageEngineExample || isBillingUnitExample;
 
 function resetExample() {
   for (const [id, amount] of Object.entries(defaults)) {
     document.getElementById(id).value = amount;
   }
-  if (isManageEngineExample) currencyField.value = "USD";
+  if (usesSourceUsd) currencyField.value = "USD";
   calculate();
 }
 const currencyField = document.getElementById("currency");
 const supportedCurrencies = new Set(Array.from(currencyField.options, option => option.value));
 const supportedCurrency = (currency) => supportedCurrencies.has(currency) ? currency : "USD";
-currencyField.value = isManageEngineExample ? "USD" : supportedCurrency(query.get("currency"));
+currencyField.value = usesSourceUsd ? "USD" : supportedCurrency(query.get("currency"));
 document.getElementById("manageengine-example-context").hidden = !isManageEngineExample;
+document.getElementById("billing-unit-example-context").hidden = !isBillingUnitExample;
 const value=id=>Math.max(0,Number(document.getElementById(id).value)||0);
 function calculate(){
  const currency = supportedCurrency(currencyField.value);
