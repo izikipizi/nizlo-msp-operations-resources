@@ -127,7 +127,7 @@
         <h2 id="offline-patch-pilot-title">Test what happens after a Windows device misses its patch window</h2>
         <p>On an authorized pilot laptop, record the intended install and restart behavior before testing. Keep it offline through the scheduled window, then reconnect it outside that window. Record when it checks in, whether it queues or installs the update, and whether it restarts, prompts, or waits. Check the endpoint state after the next allowed window and compare it with the dashboard and exported report.</p>
         <p>For example, suppose a pilot targets eight devices. Five have verified installation, one is awaiting restart, one is deferred, and one is still offline. Record five of eight as verified complete and keep the other three outcomes visible. Assign an owner and a next check time for each open outcome. If it is unclear whether the missed device can install or restart during business hours, repeat the test before expanding the rollout.</p>
-        <p>Use the <a href="windows-patch-failure-triage-checklist.html">patch failure triage checklist</a> when an endpoint comes back online but the installation still cannot be verified.</p>
+        <p>Use the <a href="windows-patch-failure-triage-checklist.html">patch failure triage checklist</a> when an endpoint comes back online but the installation still cannot be verified. The <a href="windows-patch-failure-triage-checklist.html#patch-coverage-example">worked fleet coverage example</a> shows how to reconcile counts before approving the next ring.</p>
       </section>
       <section class="use" aria-labelledby="autopatch-and-rmm">
         <h2 id="autopatch-and-rmm">Test Windows update ownership when Autopatch and RMM overlap</h2>
