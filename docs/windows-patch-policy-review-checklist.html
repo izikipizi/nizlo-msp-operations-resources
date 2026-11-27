@@ -51,7 +51,7 @@
         "headline":"RMM Patch Management Policy Checklist for Windows",
         "description":"A vendor-neutral 24-control checklist for reviewing an RMM patch management policy across Windows scope, rings, deadlines, reboots, exceptions, rollback, evidence, ownership, and approval.",
         "datePublished":"2026-11-03",
-        "dateModified":"2026-11-26",
+        "dateModified":"2026-11-27",
         "author":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},
         "publisher":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},
         "mainEntityOfPage":"https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-policy-review-checklist.html",
@@ -133,7 +133,9 @@
         <h2 id="autopatch-and-rmm">Test Windows update ownership when Autopatch and RMM overlap</h2>
         <p>Start with one authorized pilot device. Record its assigned quality update policy, update ring, approval state, deferral, deadline, and grace period. Microsoft documents that the Autopatch quality update policy takes priority for approvals and deferrals when both policies apply, while the ring still supplies settings such as deadlines and grace periods. <a href="https://learn.microsoft.com/en-us/windows/deployment/windows-autopatch/manage/windows-autopatch-windows-quality-update-overview">Check Microsoft's precedence rules for Windows quality updates</a>.</p>
         <p>For that cohort, record which tool authorizes the install and restart and which tool observes the result. If Autopatch owns Windows quality updates, verify that the RMM is only reporting on those updates for the pilot. Keep any separately approved third-party app workflow under its own owner and scope. Before expanding, compare the expected schedule with the actual install, restart, and fresh scan evidence on the device.</p>
-        <p>Use the <a data-trial-campaign href="https://nizlo.com/guides/rmm-vs-intune?utm_source=github_pages&amp;utm_medium=resource&amp;utm_campaign=intune_rmm_policy_ownership&amp;utm_content=patch_policy_review">Intune and RMM comparison</a> to assign the rest of the overlapping workflows. If patching will stay in Intune, use the <a data-trial-campaign href="rmm-evaluation-scorecard-template.html#separate-patching-pilot">two-school RMM pilot</a> to check alert recovery, technician scope, and what the second tool still costs.</p>
+        <h3 id="hotpatch-baseline-check">Check whether Hotpatch still needs a restart</h3>
+        <p>Record the pilot device’s update type and baseline before judging a restart. A Hotpatch security update on a current baseline takes effect without a restart, but the baseline update itself requires one. A device that falls behind the baseline can still need a restart in a Hotpatch month. Confirm the update type in <a href="https://learn.microsoft.com/en-us/intune/device-updates/windows/configure-hotpatch">Microsoft’s Hotpatch guidance</a> and record the installed update, restart state, and next planned window before changing either tool’s policy.</p>
+        <p>Use the <a data-trial-campaign href="https://nizlo.com/guides/rmm-vs-intune?utm_source=github_pages&amp;utm_medium=resource&amp;utm_campaign=intune_rmm_policy_ownership&amp;utm_content=patch_policy_review">Intune and RMM comparison</a> to assign the rest of the overlapping workflows. If patching will stay in Intune, use the <a data-trial-campaign href="rmm-evaluation-scorecard-template.html#separate-patching-pilot">two-tool RMM pilot</a> to check alert recovery, technician scope, and what the second tool still costs.</p>
       </section>
       <section class="use"><h2>Definition of review-ready</h2><p>A patch policy is review-ready when another authorized operator can identify its scope, make the same promotion and exception decisions, stop an unsafe deployment, locate the required evidence, and prove that every endpoint has a known disposition. A green dashboard alone is not closure if failed, offline, excluded, or unknown devices are not reconciled.</p></section>
       <section class="use" aria-labelledby="app-pilot">
@@ -151,7 +153,7 @@
       <aside class="disclosure"><strong>Restaurant patching example:</strong> use the <a href="https://nizlo.com/solutions/rmm-for-restaurants?utm_source=github_pages&amp;utm_medium=authority_bridge&amp;utm_campaign=rmm_for_restaurants&amp;utm_content=patch_policy">RMM for restaurants guide</a> to separate point-of-sale, kitchen, office, manager, and shared Windows systems, then verify pilot rings, meal-service and event blackouts, restart notices, offline-device handling, vendor dependencies, exceptions, rollback, and per-device evidence before broader deployment.</aside>
       <aside class="disclosure"><strong>Relationship disclosure:</strong> this checklist is maintained by the Nizlo team. Nizlo is a Windows-first RMM and IT-management platform. The checklist is vendor-neutral and does not claim that Nizlo—or any other product—passes every control.</aside>
     </main>
-    <footer><div class="wrap">Maintained by Nizlo · Updated November 26, 2026 · <a href="./">Browse all MSP operations resources</a></div></footer>
+    <footer><div class="wrap">Maintained by Nizlo · Updated November 27, 2026 · <a href="./">Browse all MSP operations resources</a></div></footer>
   <script src="assets/trial-campaign.js" defer></script>
 </body>
 </html>
