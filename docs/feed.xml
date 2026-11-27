@@ -6,12 +6,49 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-27T13:32:23Z</updated>
+  <updated>2026-11-27T14:01:34Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>Easy RMM setup and technician training plan</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-technician-onboarding-training-plan.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-technician-onboarding-training-plan.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_mobile_handoff#mobile-technician-handoff" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-technician-onboarding-training-plan.csv" />
+    <updated>2026-11-27T14:01:34Z</updated>
+    <category term="easy RMM setup" /><category term="RMM training" /><category term="technician onboarding" /><category term="MSP operations" />
+    <summary>Rehearse an iPhone technician handoff with the Nizlo app and its separate remote viewer. Verify the workspace, test device, and access permissions before opening a remote session.</summary>
+  </entry>
+  <entry>
+    <title>RMM migration plan template and checklist workbook</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-workbook-template.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-workbook-template.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_suite_handoff#suite-handoff-test" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-workbook-template.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_cutover_two_sites#migrazione-due-sedi" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-migration-workbook.csv" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-workbook-template.html#atera-syncro-handoff" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-workbook-template.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_cutover_proof#customer-cutover-update" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-workbook-template.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=connectwise_automate_migration#automate-pilot" />
+    <updated>2026-11-27T13:56:51Z</updated>
+    <category term="migration" />
+    <category term="change-management" />
+    <summary>Compare a partial replacement with a full MSP suite. At one customer, test alert-to-ticket routing and a file restore, then confirm the terms for leaving a single module.</summary>
+  </entry>
+  <entry>
+    <title>RMM security checklist and evidence register</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-security-evidence-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-security-evidence-checklist.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_first_30_minutes#first-30-minutes" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-first-30-minutes-evidence-log.csv" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-security-evidence-checklist.csv" />
+    <link rel="related" type="text/html" href="https://nizlo.com/guides/rmm-mfa-recovery-code-security-checklist?utm_source=atom&amp;utm_medium=external_resource&amp;utm_campaign=rmm_mfa_recovery_code_security" />
+    <link rel="related" type="text/html" href="https://www.technovice.net/post/rmm-agent-security-first-30-minutes" />
+    <updated>2026-11-27T13:54:03Z</updated>
+    <category term="security" />
+    <category term="RMM" />
+    <category term="template" />
+    <summary>Download the six-step RMM pilot evidence log to record the result, owner, and follow-up for one authorized endpoint. Use it alongside Kip Ecklund’s TechNovice article and the broader security checklist.</summary>
+  </entry>
   <entry>
     <title>RMM first-endpoint pilot acceptance checklist</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-acceptance-checklist.html</id>
@@ -68,19 +105,6 @@
     <summary>Compare RMM and PSA quotes with different included and billable technician seats, retained subscriptions, labor, and implementation costs. Export both seat counts with the monthly and first-year totals.</summary>
   </entry>
   <entry>
-    <title>RMM security checklist and evidence register</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-security-evidence-checklist.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-security-evidence-checklist.html" />
-    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-security-evidence-checklist.csv" />
-    <link rel="related" type="text/html" href="https://nizlo.com/guides/rmm-mfa-recovery-code-security-checklist?utm_source=atom&amp;utm_medium=external_resource&amp;utm_campaign=rmm_mfa_recovery_code_security" />
-    <link rel="related" type="text/html" href="https://www.technovice.net/post/rmm-agent-security-first-30-minutes" />
-    <updated>2026-11-27T11:52:00Z</updated>
-    <category term="security" />
-    <category term="RMM" />
-    <category term="template" />
-    <summary>Kip Ecklund’s TechNovice article shows what to verify in the first 30 minutes with one authorized RMM endpoint. Use the 30-control CSV to record owners and follow-up across access, privileged actions, audit evidence, recovery, and offboarding.</summary>
-  </entry>
-  <entry>
     <title>Atera-to-Syncro export and migration validation worksheet</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/atera-to-syncro-export-validation-worksheet.html</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/atera-to-syncro-export-validation-worksheet.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=atera_syncro_ai_handoff#ai-ticket-summary-test" />
@@ -93,19 +117,6 @@
     <category term="RMM migration" />
     <category term="data export" />
     <summary>The new example prices one fully billed overlap month for a two-technician Atera-to-Syncro migration. Use the validation worksheet to check customer, ticket and agent placement before ending the old subscription.</summary>
-  </entry>
-  <entry>
-    <title>RMM migration plan template and checklist workbook</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-workbook-template.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-workbook-template.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_cutover_two_sites#migrazione-due-sedi" />
-    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-migration-workbook.csv" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-workbook-template.html#atera-syncro-handoff" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-workbook-template.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_cutover_proof#customer-cutover-update" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-workbook-template.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=connectwise_automate_migration#automate-pilot" />
-    <updated>2026-11-27T09:24:35Z</updated>
-    <category term="migration" />
-    <category term="change-management" />
-    <summary>The new ConnectWise Automate pilot checklist covers patch policies, script and alert evidence, and rollback during agent overlap. The workbook also includes an Italian-language example for checking patch evidence and alert routing across two sites.</summary>
   </entry>
   <entry>
     <title>RMM pricing transparency dataset: 14 products</title>
@@ -366,15 +377,6 @@
     <updated>2026-11-26T08:35:00Z</updated>
     <category term="pricing" />
     <summary>Compare six public RMM pricing options using your endpoint and technician counts.</summary>
-  </entry>
-  <entry>
-    <title>Easy RMM setup and technician training plan</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-technician-onboarding-training-plan.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-technician-onboarding-training-plan.html" />
-    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-technician-onboarding-training-plan.csv" />
-    <updated>2026-11-26T04:42:49Z</updated>
-    <category term="easy RMM setup" /><category term="RMM training" /><category term="technician onboarding" /><category term="MSP operations" />
-    <summary>Measure setup and training with ten observable exercises and a downloadable CSV. The new first-week drill gives a trainee two records with the same hostname and checks whether they verify the customer, site, and device before connecting.</summary>
   </entry>
   <entry>
     <title>MSP client onboarding RACI matrix</title>
