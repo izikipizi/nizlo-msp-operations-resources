@@ -6,12 +6,27 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-27T01:16:23Z</updated>
+  <updated>2026-11-27T02:48:24Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>RMM first endpoint not connecting? Activation troubleshooting checklist</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html" />
+    <link rel="related" href="https://www.techwrix.com/the-first-15-minutes-after-an-rmm-endpoint-disappears/" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html#installer-warning-evidence" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html#resume-prepared-installer" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html#online-inventory-empty" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html#unexpected-device-check-in" />
+    <updated>2026-11-27T02:48:24Z</updated>
+    <category term="deployment" />
+    <category term="troubleshooting" />
+    <category term="activation" />
+    <summary>Collect evidence when an RMM endpoint fails to check in, reports no inventory, or appears briefly outside the approved deployment. Includes a reconciliation path for unexpected device records.</summary>
+  </entry>
   <entry>
     <title>Windows patch failure triage checklist for MSPs</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-failure-triage-checklist.html</id>
@@ -151,20 +166,6 @@
     <category term="migration" />
     <category term="change-management" />
     <summary>Use the migration workbook to stage cutover by site and map Atera exports, Syncro import review, and destination check-in evidence to specific controls.</summary>
-  </entry>
-  <entry>
-    <title>RMM first endpoint not connecting? Activation troubleshooting checklist</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html" />
-    <link rel="related" href="https://www.techwrix.com/the-first-15-minutes-after-an-rmm-endpoint-disappears/" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html#installer-warning-evidence" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html#resume-prepared-installer" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html#online-inventory-empty" />
-    <updated>2026-11-26T15:49:09Z</updated>
-    <category term="deployment" />
-    <category term="troubleshooting" />
-    <category term="activation" />
-    <summary>Collect evidence when setup blocks the first check-in, or when the endpoint checks in but inventory remains empty.</summary>
   </entry>
   <entry>
     <title>Free RMM pricing comparison worksheet</title>
