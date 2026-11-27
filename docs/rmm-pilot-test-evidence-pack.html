@@ -81,6 +81,14 @@
 <article><h2>Test failure and recovery</h2><p>Make offline state, stale data, queued work, cancellation, service interruption, bounded retries, and reconciliation visible before production.</p></article>
 <article><h2>Remove and decide</h2><p>Prove clean uninstall and credential revocation, record residual risk, then choose go, limited go, remediate and retest, or no-go.</p></article>
 </section>
+<aside class="note" aria-labelledby="alert-to-ticket-timing">
+  <h2 id="alert-to-ticket-timing">Time the alert-to-ticket path in an RMM pilot</h2>
+  <p>On an authorised, noncritical endpoint, trigger a reversible health warning that your test policy already monitors. Agree on the expected ticket queue, the timing limits and the signal that proves recovery. Match the same device, alert and ticket across logs and use one time zone.</p>
+  <p><strong>Fictional online run.</strong> The endpoint shows the warning at 09:00. The RMM detects it at 09:02, the ticket reaches the right queue at 09:03, and the technician verifies recovery at 09:11. That is 2 minutes to detect, 1 minute from detection to routing, and 8 minutes from routing to verified recovery.</p>
+  <p><strong>Fictional offline run.</strong> The warning starts at 10:00 while the device is offline. It reconnects at 10:06, the RMM detects the warning at 10:07, the ticket reaches the queue at 10:08, and recovery is verified at 10:14. Record both 7 minutes from fault to detection and 1 minute from reconnect to detection. Keep any separate offline alert out of the health-warning clock.</p>
+  <p>If the alert or ticket never appears, record it as missing. Record duplicates and wrong-queue tickets separately. Use the same warning and routing policy for each candidate. Measure vendor support response on its own clock.</p>
+  <p><a href="templates/rmm-pilot-test-evidence-pack.csv" download>Download the pilot evidence CSV</a> to record timing limits, observed results and evidence links.</p>
+</aside>
 <aside class="note" aria-labelledby="offline-queue-example">
   <h2 id="offline-queue-example">Check what runs when an offline device reconnects</h2>
   <p>On one authorized lab endpoint, use a harmless task that only records a test marker. Write down the documented queue expiry and the maintenance-window end time. With the device offline, queue the task and record its ID and status. Reconnect after the applicable expiry or cutoff and check the job history and endpoint for the marker.</p>
