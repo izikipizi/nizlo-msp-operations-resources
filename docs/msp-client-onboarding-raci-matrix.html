@@ -26,7 +26,7 @@
   "identifier":"https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-client-onboarding-raci-matrix.csv",
   "creator":{"@type":"Person","name":"Kip Ecklund"},
   "publisher":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},
-  "datePublished":"2026-11-13","dateModified":"2026-11-25","version":"2026-11-13",
+  "datePublished":"2026-11-13","dateModified":"2026-11-27","version":"2026-11-13",
   "license":"https://creativecommons.org/licenses/by/4.0/","isAccessibleForFree":true,
   "measurementTechnique":"Operator-entered responsibility assignment with required evidence, acceptance criteria, status, exception ownership, and due dates.",
   "keywords":["MSP onboarding RACI matrix","MSP client onboarding checklist","managed services responsibility matrix","MSP onboarding roles and responsibilities","MSP onboarding template"],
@@ -70,9 +70,14 @@
   </ol>
   <p>If authorization, contact, or recovery access fails, log the affected workstream, one owner, a deadline, and a retest in <code>ONB-RACI-19</code> before approving that part of the handoff. Save exercise evidence in the approved system of record and link to it from the matrix. <a href="https://www.ncsc.gov.uk/guidance/choosing-a-managed-service-provider-msp">NCSC guidance on choosing an MSP</a>.</p>
 </section>
+<section class="card" aria-labelledby="outsourced-noc-handoff">
+  <h2 id="outsourced-noc-handoff">Test the handoff to an outsourced NOC</h2>
+  <p>Record the provider’s specific shift, contact channel, and fallback in <code>ONB-RACI-03</code>. In <code>ONB-RACI-10</code>, name who acknowledges an alert, who authorizes any disruptive change, and who owns the ticket when coverage turns over. Confirm those facts for the service you purchased. A provider’s published tool list cannot establish that your alert and ticket routing work. <a href="https://mspshortlist.com/research/msp-outsourcing-transparency/">MSP Shortlist’s provider disclosure study</a>.</p>
+  <p>For a handoff test, send one approved test alert shortly before the coverage boundary. The NOC acknowledges it, records its permitted action or escalates, and hands the still-open ticket to the named MSP owner. Capture when each person took ownership and verify that the receiver can find the original alert and next action. If the test falls through the shift boundary, assign an exception and repeat it before launch.</p>
+</section>
 <aside class="note"><strong>RACI boundary:</strong> this template uses accountable, responsible, consulted, and informed fields as an operating aid. It does not replace the contract, professional advice, or customer approval. Confirm current obligations and local requirements before use.</aside>
 <aside class="note"><strong>Keep secrets out:</strong> link to the approved vault or system of record. Do not store passwords, recovery codes, tokens, private keys, regulated data, or backup contents in the CSV.</aside>
 <aside class="note"><strong>Relationship disclosure:</strong> Nizlo, a Windows-first RMM and IT-management platform, maintains this vendor-neutral matrix. It is designed to remain usable with any MSP, RMM, service desk, security, backup, identity, or documentation stack.</aside>
 </main>
-<footer class="wrap"><span>Maintained by Nizlo · Updated November 25, 2026</span><span><a href="datapackage.json">Data Package</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Current source</a></span></footer>
+<footer class="wrap"><span>Maintained by Nizlo · Updated November 27, 2026</span><span><a href="datapackage.json">Data Package</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Current source</a></span></footer>
 </body></html>
