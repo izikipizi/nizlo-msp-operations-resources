@@ -39,12 +39,13 @@
 <p class="privacy">Your quote figures stay in this browser. Nothing is submitted or stored by this page.</p>
 <section class="calculator" aria-label="RMM quote normalization calculator">
   <form class="panel" id="calculator-form">
-    <h2>Enter one vendor quote</h2><p class="hint">Enter all quotes in USD before comparing them. The calculator does not convert currencies. Use zero where a charge does not apply, then copy each vendor’s summary into the comparison worksheet.</p>
+    <h2>Enter one vendor quote</h2><p class="hint">Choose USD or EUR and enter every quote in the same currency. The calculator formats amounts without converting them. Use zero where a charge does not apply, then copy each vendor’s summary into the comparison worksheet.</p>
     <div class="fields">
+      <div class="field"><label for="currency">Quote currency</label><select id="currency"><option value="USD">USD</option><option value="EUR">EUR</option></select></div>
       <div class="field"><label for="endpoints">Managed endpoints</label><input id="endpoints" type="number" min="0" step="1" value="100" inputmode="numeric" /></div>
       <div class="field"><label for="technicians">Technicians</label><input id="technicians" type="number" min="0" step="1" value="2" inputmode="numeric" /></div>
       <div class="field"><label for="base">Monthly base fee <span class="sub">Before variable usage</span></label><input id="base" type="number" min="0" step="0.01" value="99" inputmode="decimal" /></div>
-      <div class="field"><label for="minimum">Minimum monthly spend <span class="sub">USD, applied before discount</span></label><input id="minimum" type="number" min="0" step="0.01" value="0" inputmode="decimal" /></div>
+      <div class="field"><label for="minimum">Minimum monthly spend <span class="sub">Applied before discount</span></label><input id="minimum" type="number" min="0" step="0.01" value="0" inputmode="decimal" /></div>
       <div class="field"><label for="included-endpoints">Included endpoints</label><input id="included-endpoints" type="number" min="0" step="1" value="0" inputmode="numeric" /></div>
       <div class="field"><label for="endpoint-rate">Price per endpoint</label><input id="endpoint-rate" type="number" min="0" step="0.01" value="2.5" inputmode="decimal" /></div>
       <div class="field"><label for="endpoint-rate-period">Endpoint price period</label><select id="endpoint-rate-period"><option value="month" selected>Per month</option><option value="year">Per year</option></select></div>
@@ -108,7 +109,8 @@
       <li><strong>Monatliche Anpassung:</strong> 6 × 312,50 € + 6 × 250 € = <strong>3.375 €</strong> im ersten Jahr.</li>
       <li><strong>125 Geräte bis zur Verlängerung:</strong> 12 × 312,50 € = <strong>3.750 €</strong> im ersten Jahr.</li>
     </ul>
-    <p>Der Unterschied beträgt 375 € vor Steuern und Zusatzkosten. Lassen Sie sich Mindestmenge, frühesten Anpassungstermin und Meldefrist schriftlich bestätigen. Die englischen Rechnerbeispiele zeigen dieselbe Rechnung in US-Dollar. Eine Währungsumrechnung findet dabei nicht statt.</p>
+    <p>Der Unterschied beträgt 375 € vor Steuern und Zusatzkosten. Lassen Sie sich Mindestmenge, frühesten Anpassungstermin und Meldefrist schriftlich bestätigen. Die folgenden Links laden beide Monatsbeträge in Euro. Wählen Sie im Rechner dieselbe Währung für alle Angebote.</p>
+    <p><a data-trial-campaign href="?example=before-growth&amp;currency=EUR#calculator-form">100 abgerechnete Geräte laden</a> · <a data-trial-campaign href="?example=held-commitment&amp;currency=EUR#calculator-form">125 abgerechnete Geräte laden</a></p>
   </div>
 </aside>
 <aside class="note" aria-labelledby="annual-device-quote">
@@ -169,7 +171,8 @@ const examples = new Map([
     "included-techs": 0, "tech-rate": 0, "term": 3, "one-time": 200,
   }],
 ]);
-const exampleName = new URLSearchParams(window.location.search).get("example");
+const query = new URLSearchParams(window.location.search);
+const exampleName = query.get("example");
 const defaults = examples.get(exampleName) ?? standardExample;
 
 function resetExample() {
@@ -178,9 +181,12 @@ function resetExample() {
   }
   calculate();
 }
-const money=new Intl.NumberFormat("en-US",{style:"currency",currency:"USD",maximumFractionDigits:2});
+const currencyField = document.getElementById("currency");
+currencyField.value = query.get("currency") === "EUR" ? "EUR" : "USD";
 const value=id=>Math.max(0,Number(document.getElementById(id).value)||0);
 function calculate(){
+ const currency = currencyField.value === "EUR" ? "EUR" : "USD";
+ const money = new Intl.NumberFormat("en-US", { style: "currency", currency });
  const endpoints=value("endpoints"),techs=value("technicians"),base=value("base"),minimum=value("minimum"),includedEndpoints=value("included-endpoints"),endpointRate=value("endpoint-rate"),includedTechs=value("included-techs"),techRate=value("tech-rate"),addonEndpoint=value("addon-endpoint"),addonFlat=value("addon-flat"),discount=Math.min(100,value("discount")),term=Math.max(1,Math.round(value("term"))),oneTime=value("one-time");
  const minimumPaidEndpoints=value("minimum-paid-endpoints");
  const endpointRatePeriod=document.getElementById("endpoint-rate-period").value === "year" ? "year" : "month";
@@ -191,8 +197,9 @@ function calculate(){
  document.getElementById("first-year-label").textContent=cashCostLabel;
  document.getElementById("first-year-note").textContent=cashCostNote;
  document.getElementById("breakdown").innerHTML=`<li>Base: <strong>${money.format(base)}</strong></li><li>${endpointUnits} billable endpoints${minimumPaidEndpoints>endpoints-includedEndpoints && minimumPaidEndpoints>0?" (minimum applied)":""}: <strong>${money.format(endpointCharge)}</strong></li><li>${techUnits} billable technicians: <strong>${money.format(techCharge)}</strong></li><li>Required add-ons: <strong>${money.format(addonCharge)}</strong></li><li>Pre-discount subtotal${minimum>subtotal?" (minimum applied)":""}: <strong>${money.format(preDiscount)}</strong></li><li>Discount: <strong>${discount.toFixed(2)}%</strong></li><li>One-time fees: <strong>${money.format(oneTime)}</strong></li>`;
- window.quoteSummary=`RMM quote normalization (USD)\nManaged endpoints: ${endpoints}\nBillable endpoint units: ${endpointUnits} (minimum ${minimumPaidEndpoints})\nTechnicians: ${techs}\nRecurring monthly: ${money.format(monthly)}\nAnnualized recurring: ${money.format(annual)} (12 months at the quoted rate)\n${cashCostLabel}: ${money.format(firstYear)} (${cashCostNote})\nTotal ${term}-month contract: ${money.format(contract)}\nEffective monthly incl. one-time fees: ${money.format(effective)}\nEffective monthly per endpoint: ${perEndpoint===null?"n/a":money.format(perEndpoint)}\nAssumptions: base ${money.format(base)}, endpoint rate ${money.format(endpointRate)} per ${endpointRatePeriod}, monthly endpoint charge ${money.format(endpointCharge)}, technician overage ${money.format(techCharge)}, required add-ons ${money.format(addonCharge)}, minimum ${money.format(minimum)}, discount ${discount.toFixed(2)}%, one-time fees ${money.format(oneTime)}.`;
+ window.quoteSummary=`RMM quote normalization (${currency})\nManaged endpoints: ${endpoints}\nBillable endpoint units: ${endpointUnits} (minimum ${minimumPaidEndpoints})\nTechnicians: ${techs}\nRecurring monthly: ${money.format(monthly)}\nAnnualized recurring: ${money.format(annual)} (12 months at the quoted rate)\n${cashCostLabel}: ${money.format(firstYear)} (${cashCostNote})\nTotal ${term}-month contract: ${money.format(contract)}\nEffective monthly incl. one-time fees: ${money.format(effective)}\nEffective monthly per endpoint: ${perEndpoint===null?"n/a":money.format(perEndpoint)}\nAssumptions: base ${money.format(base)}, endpoint rate ${money.format(endpointRate)} per ${endpointRatePeriod}, monthly endpoint charge ${money.format(endpointCharge)}, technician overage ${money.format(techCharge)}, required add-ons ${money.format(addonCharge)}, minimum ${money.format(minimum)}, discount ${discount.toFixed(2)}%, one-time fees ${money.format(oneTime)}.`;
 }
+currencyField.addEventListener("change", calculate);
 document.getElementById("calculator-form").addEventListener("submit",event=>{event.preventDefault();calculate()});Object.keys(defaults).forEach(id=>document.getElementById(id).addEventListener("input",calculate));document.getElementById("reset").addEventListener("click",resetExample);document.getElementById("copy").addEventListener("click", async () => {
   const status = document.getElementById("copy-status");
   try {
