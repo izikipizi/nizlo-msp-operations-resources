@@ -4,9 +4,9 @@
   "name": "nizlo-rmm-operations-resources",
   "id": "https://izikipizi.github.io/nizlo-msp-operations-resources/datapackage.json",
   "title": "Nizlo RMM Operations Resources",
-  "description": "Sixty-two catalogued, vendor-neutral CSV template datasets and one source-dated public RMM pricing comparison dataset.",
+  "description": "Vendor-neutral CSV templates and source-dated snapshots of public RMM pricing.",
   "homepage": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
-  "version": "1.106.0",
+  "version": "1.107.0",
   "created": "2026-11-01",
   "contributors": [
     {
@@ -1292,6 +1292,67 @@
           }
         ],
         "primaryKey": "criterion_id"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "rmm-first-30-minutes-evidence-log",
+      "title": "First 30 minutes RMM pilot evidence log",
+      "description": "Record observations, evidence, owners, and retest dates for six checks on an authorized RMM pilot endpoint.",
+      "path": "templates/rmm-first-30-minutes-evidence-log.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 1972,
+      "hash": "sha256:5f0bbf463d50cfefc9b8b555b6f71bedeee4e10ddd6649a3ae5c9f7d563819b2",
+      "schema": {
+        "fields": [
+          {
+            "name": "checkpoint_id",
+            "type": "string"
+          },
+          {
+            "name": "checkpoint",
+            "type": "string"
+          },
+          {
+            "name": "pass_condition",
+            "type": "string"
+          },
+          {
+            "name": "evidence_to_save",
+            "type": "string"
+          },
+          {
+            "name": "pause_if",
+            "type": "string"
+          },
+          {
+            "name": "device_reference",
+            "type": "string"
+          },
+          {
+            "name": "observed_at",
+            "type": "string"
+          },
+          {
+            "name": "evidence_reference",
+            "type": "string"
+          },
+          {
+            "name": "result",
+            "type": "string"
+          },
+          {
+            "name": "owner",
+            "type": "string"
+          },
+          {
+            "name": "retest_due",
+            "type": "string"
+          }
+        ],
+        "primaryKey": "checkpoint_id"
       }
     },
     {

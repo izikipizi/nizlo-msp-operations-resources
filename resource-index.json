@@ -1274,6 +1274,18 @@
       "account_required": false
     },
     {
+      "id": "rmm-first-30-minutes-evidence-log",
+      "title": "First 30 minutes RMM pilot evidence log",
+      "category": "security",
+      "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-security-evidence-checklist.html#first-30-minutes",
+      "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-first-30-minutes-evidence-log.csv",
+      "format": "text/csv",
+      "controls": 6,
+      "fields": 11,
+      "access": "public",
+      "account_required": false
+    },
+    {
       "id": "rmm-first-endpoint-acceptance",
       "title": "RMM first-endpoint pilot acceptance checklist",
       "category": "selection",
