@@ -6,12 +6,24 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-27T01:08:55Z</updated>
+  <updated>2026-11-27T01:16:23Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>Windows patch failure triage checklist for MSPs</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-failure-triage-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-failure-triage-checklist.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/windows-update-log-evidence-worksheet.csv" />
+    <updated>2026-11-27T01:16:23Z</updated>
+    <link rel="related" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-failure-triage-checklist.html?utm_source=atom&amp;utm_medium=external_resource&amp;utm_campaign=windows_patch_triage&amp;utm_content=fleet_coverage#patch-coverage-example" />
+    <category term="patch-management" />
+    <category term="troubleshooting" />
+    <category term="checklist" />
+    <summary>Compare verified Windows patch coverage across a fictional 1,400-device fleet. Reconcile unknown devices, pending reboots, confirmed installs, failures and deferrals before releasing the next ring. Includes the existing 24-check triage guide and evidence worksheet.</summary>
+  </entry>
   <entry>
     <title>Beste RMM voor een MSP: Nederlandse evaluatiematrix</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/beste-rmm-voor-msp-evaluatiematrix.html</id>
@@ -715,17 +727,6 @@
     <category term="procurement" />
     <category term="template" />
     <summary>Use 32 example RMM requirements and 18 decision fields to collect comparable vendor responses, evidence, pilot tests, acceptance criteria, owned gaps, remediation commitments, and defensible RFP decisions.</summary>
-  </entry>
-  <entry>
-    <title>Windows patch failure triage checklist for MSPs</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-failure-triage-checklist.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-failure-triage-checklist.html" />
-    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/windows-update-log-evidence-worksheet.csv" />
-    <updated>2026-11-08T00:00:00Z</updated>
-    <category term="patch-management" />
-    <category term="troubleshooting" />
-    <category term="checklist" />
-    <summary>Run 24 vendor-neutral checks for failure and Windows Update log evidence, fleet scope, prerequisites, servicing health, safe retry, post-change validation, exception ownership, and closure, with a 12-field CSV worksheet and primary Microsoft references.</summary>
   </entry>
   <entry>
     <title>MSP backup restore test checklist</title>
