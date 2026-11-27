@@ -23,6 +23,15 @@
 <header><nav class="wrap"><a class="brand" href="./"><span class="mark">N</span><span>Nizlo MSP Operations Resources</span></a><a class="back" href="templates/">All templates</a></nav></header>
 <main class="wrap"><div class="eyebrow">24 controls · Official-source boundaries · Public CSV · No signup</div><h1>Export Atera to Syncro without mistaking an import for a migration.</h1>
 <p class="lede">Use this source-dated worksheet to preserve Atera records, map ticket states, run Syncro's documented importer, deploy destination agents in a controlled pilot, rebuild what does not transfer, and reconcile every endpoint before source retirement.</p>
+<section class="section" aria-labelledby="atera-syncro-import-quick-start">
+  <h2 id="atera-syncro-import-quick-start">How to export Atera data and import it into Syncro</h2>
+  <ol>
+    <li><strong>Keep the source exports.</strong> Save the ticket, customer and device records you need, along with their filters and row counts. Preserve invoices and required attachments separately. Syncro's importer excludes Atera invoices.</li>
+    <li><strong>Map ticket statuses first.</strong> In Syncro, open <strong>Admin → RMM Settings → Migration Tools → Atera</strong>. Review the <a href="https://syncro.helpjuice.com/atera-importer">one-time importer instructions</a> and confirm the approved scope with the migration owner before running the import.</li>
+    <li><strong>Check the queue as a technician.</strong> For example, pick one source ticket that was Closed and one that was Pending. Compare the imported IDs and statuses, then check whether each ticket appears in the intended working queue. Syncro says imported Atera tickets do not arrive under its Resolved status. Hold the queue handoff until the owner accounts for any unexpected open work. <a href="#ticket-reconciliation-example">See the ticket reconciliation example</a>.</li>
+  </ol>
+  <p>Reconcile devices separately after destination agents check in. The <a href="#export-atera-device-inventory">device inventory export</a> gives you the source list to match against the destination.</p>
+</section>
 <section class="section" aria-labelledby="export-atera-device-inventory">
   <h2 id="export-atera-device-inventory">Export the Atera device inventory to Excel</h2>
   <p class="intro">In Atera, open <strong>Devices</strong> and select or create a table view for the customer or site in your pilot. Include the device name, customer or site, and an available stable device identifier. Use the download icon in the top-right corner to export the view to Excel. Keep the original file with the view filters, export date and row count so another technician can reproduce the scope. <a href="https://support.atera.com/hc/en-us/articles/9903603088284-The-Devices-page">Atera Devices documentation</a>.</p>
