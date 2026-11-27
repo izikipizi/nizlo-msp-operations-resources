@@ -6,12 +6,31 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-27T21:37:29Z</updated>
+  <updated>2026-11-27T22:53:58Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>Free RMM pricing comparison worksheet</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_billing_units_50_devices#compare-billing-units-at-50" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_quote_to_pilot#quote-example" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_billing_term#manageengine-billing-term-example" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_small_fleet_pricing#pckgr-device-pricing" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_billable_endpoint_count#billable-endpoint-reconciliation" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html#gbp-commitment-floor" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-quote-comparison-worked-example.csv" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html#renewal-cap-example" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html#workstation-and-server-rates" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=atera_datto_quote_threshold#atera-datto-quote-threshold" />
+    <updated>2026-11-27T22:53:58Z</updated>
+    <category term="pricing" />
+    <category term="selection" />
+    <category term="template" />
+    <summary>Compare per-device, annual tier, and flat workspace quotes for the same 50 devices and 12 months. Load the editable examples to adjust rates or required add-ons, and record when the actual invoices are due.</summary>
+  </entry>
   <entry>
     <title>RMM first endpoint not connecting? Activation troubleshooting checklist</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html</id>
@@ -37,24 +56,6 @@
     <category term="policy" />
     <category term="checklist" />
     <summary>On one authorized endpoint, document which tool detects an outdated app, which tool installs the update, and how you confirm the running version. Use the linked first-day RMM plan if a separate tool will keep deploying third-party updates.</summary>
-  </entry>
-  <entry>
-    <title>Free RMM pricing comparison worksheet</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_quote_to_pilot#quote-example" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_billing_term#manageengine-billing-term-example" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_small_fleet_pricing#pckgr-device-pricing" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_billable_endpoint_count#billable-endpoint-reconciliation" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html#gbp-commitment-floor" />
-    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-quote-comparison-worked-example.csv" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html#renewal-cap-example" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html#workstation-and-server-rates" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=atera_datto_quote_threshold#atera-datto-quote-threshold" />
-    <updated>2026-11-27T20:39:18Z</updated>
-    <category term="pricing" />
-    <category term="selection" />
-    <category term="template" />
-    <summary>Compare a one- and two-technician workspace, then choose a plan to test on one device. The worksheet still includes examples for device minimums, retained tools, annual commitments, and renewal.</summary>
   </entry>
   <entry>
     <title>RMM and ticketing stack cost calculator: renewal payback example</title>
