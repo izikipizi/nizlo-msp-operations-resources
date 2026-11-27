@@ -44,6 +44,12 @@
 </section>
 <section class="note" aria-labelledby="nizlo-payment-help">
   <h2 id="nizlo-payment-help">Continue an approved Nizlo workspace</h2>
+  <p>Open <a href="https://app.nizlo.com/admin/usage">Subscription &amp; billing</a> in the workspace you evaluated, then follow the status you see.</p>
+  <ul>
+    <li><a href="#billing-connected-trial">Billing is connected and the trial is still active</a>. Check the scheduled first charge.</li>
+    <li><a href="#nizlo-unpaid-invoice">There is a payment warning or open invoice</a>. Review the existing invoice.</li>
+    <li><a href="#continue-unfinished-checkout">You left checkout and billing is still unconnected</a>. Review the plan and retry from the same workspace.</li>
+  </ul>
   <p>If the pilot passed and the trial has ended, sign in to the workspace you evaluated. On <strong>Your trial has ended</strong>, a user with billing access can select <strong>Choose a plan</strong> when there is no subscription. Review the plan, technician count, monthly total, and first billing date before continuing to secure checkout. If the screen shows <strong>Review subscription</strong>, check the existing subscription and invoice first.</p>
   <h3 id="handoff-to-billing-owner">If the technician cannot change billing</h3>
   <p>Fill in the brackets and send this handoff to the owner or administrator who can manage billing.</p>
@@ -61,7 +67,7 @@
   <h3 id="billing-connected-trial">If billing is connected and your trial is still active</h3>
   <p>If you chose to keep the remaining trial and completed checkout, Nizlo can show connected billing while your workspace is still in its trial. In <strong>Subscription &amp; billing</strong>, confirm the plan and trial end date. Use <strong>Invoices</strong> to check whether Stripe has issued or collected the first paid invoice.</p>
   <p>If the date and plan match what you approved, wait for the scheduled start. If you intentionally want to start sooner, review the existing subscription's <strong>End trial and start paid billing</strong> confirmation. That action ends the remaining free trial and Stripe may charge the saved payment method.</p>
-  <h3>If a payment needs attention</h3>
+    <h3 id="nizlo-unpaid-invoice">If a payment needs attention</h3>
   <p>Sign in to <a href="https://app.nizlo.com/admin/usage">Subscription &amp; billing</a> as a workspace owner or billing administrator. If you already started checkout and see a payment warning, open <strong>Invoices</strong> first. Check whether an invoice is still open and follow any payment or verification instructions shown there. Use <strong>Update card</strong> if the payment method needs to change.</p>
   <p>Check the existing invoice before starting another checkout. Nizlo updates the subscription after it receives the payment result. If the invoice shows paid but the workspace still shows a warning, <a href="https://nizlo.com/support">contact Nizlo support</a> with the invoice number and the message you see. Keep card numbers and bank verification codes out of support messages.</p>
 </section>
