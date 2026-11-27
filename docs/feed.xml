@@ -6,12 +6,25 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-27T11:11:08Z</updated>
+  <updated>2026-11-27T11:52:00Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>RMM security checklist and evidence register</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-security-evidence-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-security-evidence-checklist.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-security-evidence-checklist.csv" />
+    <link rel="related" type="text/html" href="https://nizlo.com/guides/rmm-mfa-recovery-code-security-checklist?utm_source=atom&amp;utm_medium=external_resource&amp;utm_campaign=rmm_mfa_recovery_code_security" />
+    <link rel="related" type="text/html" href="https://www.technovice.net/post/rmm-agent-security-first-30-minutes" />
+    <updated>2026-11-27T11:52:00Z</updated>
+    <category term="security" />
+    <category term="RMM" />
+    <category term="template" />
+    <summary>Kip Ecklund’s TechNovice article shows what to verify in the first 30 minutes with one authorized RMM endpoint. Use the 30-control CSV to record owners and follow-up across access, privileged actions, audit evidence, recovery, and offboarding.</summary>
+  </entry>
   <entry>
     <title>Atera-to-Syncro export and migration validation worksheet</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/atera-to-syncro-export-validation-worksheet.html</id>
@@ -670,18 +683,6 @@
     <category term="vendor-exit" />
     <category term="template" />
     <summary>Use thirty-two controls to plan contract review, inventory, exports, automation, credentials, replacement readiness, coexistence, cutover, source removal, access revocation, data disposition, commercial closure, acceptance, and stabilization.</summary>
-  </entry>
-  <entry>
-    <title>RMM security checklist and evidence register</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-security-evidence-checklist.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-security-evidence-checklist.html" />
-    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-security-evidence-checklist.csv" />
-    <link rel="related" type="text/html" href="https://nizlo.com/guides/rmm-mfa-recovery-code-security-checklist?utm_source=atom&amp;utm_medium=external_resource&amp;utm_campaign=rmm_mfa_recovery_code_security" />
-    <updated>2026-11-13T00:00:00Z</updated>
-    <category term="security" />
-    <category term="RMM" />
-    <category term="template" />
-    <summary>Use a free 30-control RMM security checklist and 15-field CSV to test tenant isolation, privileged identity, agent enrollment, remote access, audit evidence, resilience, data lifecycle, and offboarding.</summary>
   </entry>
   <entry>
     <title>RMM patch-compliance report template and calculator</title>
