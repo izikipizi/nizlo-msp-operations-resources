@@ -22,7 +22,7 @@
   "url":"https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-remote-support-vs-mdm-vs-endpoint-management.html",
   "mainEntityOfPage":"https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-remote-support-vs-mdm-vs-endpoint-management.html",
   "author":{"@type":"Person","name":"Kip Ecklund"},"publisher":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},
-  "datePublished":"2026-11-04","dateModified":"2026-11-26","isAccessibleForFree":true,"inLanguage":"en","version":"2026-11-21",
+  "datePublished":"2026-11-04","dateModified":"2026-11-27","isAccessibleForFree":true,"inLanguage":"en","version":"2026-11-21",
   "keywords":["RMM vs Intune","Microsoft Intune vs RMM","RMM vs remote support","RMM vs MDM","endpoint management comparison","remote support software","managed device enrollment"]
 },{"@type":"FAQPage","mainEntity":[
   {"@type":"Question","name":"What is the difference between RMM and MDM?","acceptedAnswer":{"@type":"Answer","text":"RMM primarily supports continuous endpoint operations such as health monitoring, alerting, patch workflows, automation, remote support, and multi-customer evidence. MDM primarily governs enrolled-device policy, compliance, applications, restrictions, identity posture, and retirement actions such as lock or wipe."}},
@@ -62,6 +62,11 @@
   <p>A technician can have permission to help while the user declines a separate request to share device diagnostics. Microsoft documents this choice for attended Windows Remote Help sessions as the feature rolls out. In a buyer pilot, record whether assistance continues after a decline, whether both people can see the report when sharing is allowed, and whether the helper can refresh it after the user stops sharing.</p>
   <p>Put session access, optional diagnostics, and report retention on separate rows in your evaluation. Use the <a href="rmm-remote-access-session-authorization-checklist.html#intune-remote-help-diagnostics">worked diagnostics consent test</a> to record those outcomes on an approved test device.</p>
 </aside>
+<aside class="note" aria-labelledby="intune-update-ring-owner">
+  <h2 id="intune-update-ring-owner">Who owns Windows updates when you use Intune and RMM?</h2>
+  <p>Say Intune assigns the Windows update ring for a pilot laptop. The Intune owner manages the update deadline and restart policy. The RMM technician checks endpoint health and records whether the expected Windows build is visible after the maintenance window. Assign both checks to the same device and name the person who follows up if the update is overdue.</p>
+  <p>For this pilot, keep the RMM installation and restart schedule out of scope for that same update. If the device still reports the old build, compare the assigned ring, update target, device identity, and latest check-in before changing either policy. Record who can approve an exception and what evidence closes it. <a href="https://learn.microsoft.com/en-us/intune/device-updates/windows/manage-update-rings">Microsoft's update ring documentation</a> explains the policy settings. The <a data-trial-campaign href="windows-patch-policy-review-checklist.html#autopatch-and-rmm">Windows patch ownership checklist</a> gives the team a place to record the test.</p>
+</aside>
 <aside class="note" aria-labelledby="cross-platform-patch-evidence">
   <h2 id="cross-platform-patch-evidence">Compare patch coverage on Windows, Mac, and Linux</h2>
   <p>If a scanner shows missing updates while a management tool installs them, score those jobs separately. Pick one authorized test device per required OS. Record who owns OS updates and who owns third-party apps on each device. Include the required Linux distro and version in the test.</p>
@@ -79,6 +84,6 @@
 <aside class="note"><strong>Microsoft source check:</strong> Microsoft describes Intune as a cloud-based endpoint-management service for devices and applications. Its documentation also distinguishes lifecycle actions such as <a href="https://learn.microsoft.com/en-us/intune/fundamentals/what-is-intune">enrollment, application protection, and compliance</a>, <a href="https://learn.microsoft.com/en-us/intune/device-management/actions/retire?pivots=windows">retire</a>, and <a href="https://learn.microsoft.com/en-us/intune/device-management/actions/wipe">wipe</a>. Confirm current platform-specific behavior in Microsoft Learn during evaluation.</aside>
 <aside class="note"><strong>Safe evaluation:</strong> choose authorized, non-critical devices and test one category requirement at a time. Record expected evidence and a stop condition before granting privileged access, applying policy, running automation, or enabling unattended control.</aside>
 <aside class="note"><strong>Relationship disclosure:</strong> Nizlo, a Windows-first RMM and IT-management platform, maintains this buyer map. It is vendor-created rather than independent research, and it does not claim that Nizlo or any other product provides every capability shown.</aside></main>
-<footer class="wrap"><span>Maintained by Nizlo · Updated November 26, 2026</span><span><a href="citation.html">Citation</a> · <a href="intune-feed.xml">Intune field notes feed</a> · <a href="feed.xml">All resource updates</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Current source</a></span></footer>
+<footer class="wrap"><span>Maintained by Nizlo · Updated November 27, 2026</span><span><a href="citation.html">Citation</a> · <a href="intune-feed.xml">Intune field notes feed</a> · <a href="feed.xml">All resource updates</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Current source</a></span></footer>
 <script src="assets/trial-campaign.js" defer></script>
 </body></html>
