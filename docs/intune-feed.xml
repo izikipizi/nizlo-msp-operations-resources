@@ -34,6 +34,7 @@
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-policy-review-checklist.html?utm_source=nizlo_intune_feed&amp;utm_medium=rss&amp;utm_campaign=intune_field_notes#autopatch-and-rmm" />
     <updated>2026-11-26T11:14:59Z</updated>
     <category term="intune" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-evaluation-scorecard-template.html?utm_source=nizlo_intune_feed&amp;utm_medium=rss&amp;utm_campaign=intune_field_notes#separate-patching-pilot" />
     <category term="windows-autopatch" />
     <category term="patch-management" />
     <summary>On a pilot device, compare the assigned quality update policy and ring settings with the install, restart, and fresh scan evidence.</summary>
