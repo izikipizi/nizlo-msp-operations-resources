@@ -6,12 +6,41 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-27T19:31:52Z</updated>
+  <updated>2026-11-27T20:41:52Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>RMM patch management policy checklist for Windows</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-policy-review-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-policy-review-checklist.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=windows_patch_pilot_ownership#app-pilot" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-first-24-hours-plan.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=windows_patch_pilot_ownership#nizlo-first-device" />
+    <updated>2026-11-27T20:41:52Z</updated>
+    <category term="patch-management" />
+    <category term="policy" />
+    <category term="checklist" />
+    <summary>On one authorized endpoint, document which tool detects an outdated app, which tool installs the update, and how you confirm the running version. Use the linked first-day RMM plan if a separate tool will keep deploying third-party updates.</summary>
+  </entry>
+  <entry>
+    <title>Free RMM pricing comparison worksheet</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_quote_to_pilot#quote-example" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_billing_term#manageengine-billing-term-example" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_small_fleet_pricing#pckgr-device-pricing" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_billable_endpoint_count#billable-endpoint-reconciliation" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html#gbp-commitment-floor" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-quote-comparison-worked-example.csv" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html#renewal-cap-example" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html#workstation-and-server-rates" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=atera_datto_quote_threshold#atera-datto-quote-threshold" />
+    <updated>2026-11-27T20:39:18Z</updated>
+    <category term="pricing" />
+    <category term="selection" />
+    <category term="template" />
+    <summary>Compare a one- and two-technician workspace, then choose a plan to test on one device. The worksheet still includes examples for device minimums, retained tools, annual commitments, and renewal.</summary>
+  </entry>
   <entry>
     <title>RMM and ticketing stack cost calculator: renewal payback example</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-ticketing-stack-cost-calculator.html</id>
@@ -37,23 +66,6 @@
     <updated>2026-11-27T15:26:58Z</updated>
     <category term="operations" /><category term="remote access" /><category term="remote support" /><category term="troubleshooting" /><category term="RMM" />
     <summary>Use 24 checks to isolate an authorized remote-support failure. Verify recovery by matching the technician, endpoint identity, and session timestamps in the device activity record.</summary>
-  </entry>
-  <entry>
-    <title>Free RMM pricing comparison worksheet</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_billing_term#manageengine-billing-term-example" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_small_fleet_pricing#pckgr-device-pricing" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_billable_endpoint_count#billable-endpoint-reconciliation" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html#gbp-commitment-floor" />
-    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-quote-comparison-worked-example.csv" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html#renewal-cap-example" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html#workstation-and-server-rates" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=atera_datto_quote_threshold#atera-datto-quote-threshold" />
-    <updated>2026-11-27T14:05:08Z</updated>
-    <category term="pricing" />
-    <category term="selection" />
-    <category term="template" />
-    <summary>Compare monthly and annual billing for 50 endpoints with a required add-on. The worked quote shows how 10, 11, and 12 months change the cost and what exit terms to ask about. Earlier device and technician examples remain available.</summary>
   </entry>
   <entry>
     <title>Easy RMM setup and technician training plan</title>
@@ -357,16 +369,6 @@
     <updated>2026-11-26T11:40:51Z</updated>
     <category term="RMM checkout" /><category term="RMM billing" /><category term="trial conversion" />
     <summary>Verify price, trial timing, first-charge exposure, add-ons, payment authority, renewal, cancellation, invoices, and operational approval across sixteen evidence gates. A worked first invoice example shows how to reconcile plan price and extra technicians.</summary>
-  </entry>
-  <entry>
-    <title>RMM patch management policy checklist for Windows</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-policy-review-checklist.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-policy-review-checklist.html" />
-    <updated>2026-11-26T11:14:59Z</updated>
-    <category term="patch-management" />
-    <category term="policy" />
-    <category term="checklist" />
-    <summary>Review a Windows patch policy and verify third-party app coverage in a pilot. Separate detecting an outdated app from applying an approved update and checking the running version. Includes an offline-device pilot and a sample eight-device reporting breakdown.</summary>
   </entry>
   <entry>
     <title>RMM audit log review checklist: 24-control evidence register</title>
