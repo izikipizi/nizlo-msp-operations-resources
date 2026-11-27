@@ -6,6 +6,7 @@
 <meta name="robots" content="index,follow,max-image-preview:large" />
 <link rel="canonical" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html" />
 <link rel="alternate" type="application/atom+xml" title="Nizlo MSP Operations Resources" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
+<link rel="alternate" type="application/atom+xml" title="Intune and RMM field notes from Nizlo" href="https://izikipizi.github.io/nizlo-msp-operations-resources/intune-feed.xml" />
 <meta property="og:type" content="article" /><meta property="og:title" content="RMM First Endpoint Activation Troubleshooting Checklist" />
 <meta property="og:description" content="Trace the first missing proof—from installer execution through verified dashboard telemetry—without disabling security controls or repeatedly reinstalling." />
 <meta property="og:url" content="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html" />
@@ -80,6 +81,7 @@
   <p>Datto documents that automated security analysis can run a site-specific agent installer and create a short-lived device record. A cloud IP, a Hyper-V MAC address, or a brief check-in is a clue. Confirm the device against an approved inventory record before classifying it or acting on it. <a href="https://rmm.datto.com/help/en/Content/3NEWUI/Devices/MysteryDeviceRecords.htm">Datto mystery device records</a>.</p>
   <p>Record the first and last check-in in UTC, the RMM device ID and site, and the deployment batch. If the installer was assigned through Intune, compare the expected device and assignment with the app’s Device install status. An absent match is a reason to investigate further. Share the evidence through the vendor’s private support channel and keep the unexplained record out of the pilot acceptance count. <a href="https://learn.microsoft.com/en-us/intune/app-management/monitor-assignments">Microsoft Intune app monitoring</a>.</p>
   <p>Keep scripts and remote actions off the unexplained record while you investigate. For Datto, evaluate New Device Approval in a controlled rollout with an assigned approver and a test of the normal Intune deployment. Datto documents that devices awaiting approval can send audit data while jobs, policies and remote takeover remain blocked. <a href="https://rmm.datto.com/help/en/Content/3NEWUI/Devices/DeviceApproval.htm">Datto device approval</a>.</p>
+  <p>Follow the <a href="intune-feed.xml">Intune and RMM field notes</a> for more deployment checks.</p>
 </article>
 <article aria-labelledby="first-endpoint-support-ticket">
   <h2 id="first-endpoint-support-ticket">8. Send a first-endpoint support ticket</h2>
