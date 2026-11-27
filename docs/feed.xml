@@ -6,12 +6,22 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-27T13:17:09Z</updated>
+  <updated>2026-11-27T13:32:23Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>RMM first-endpoint pilot acceptance checklist</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-acceptance-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-acceptance-checklist.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_first_check_in#first-check-in-evidence" />
+    <updated>2026-11-27T13:32:23Z</updated>
+    <category term="selection" />
+    <category term="template" />
+    <category term="rmm-pilot" />
+    <summary>Record who signed the installer, when the first endpoint checked in, and which customer, site, and policy it received. Pause if it appears in the wrong customer or more than once. The checklist covers five evidence gates before you expand the RMM pilot.</summary>
+  </entry>
   <entry>
     <title>Free RMM pricing comparison worksheet</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html</id>
@@ -840,16 +850,6 @@
     <category term="onboarding" />
     <category term="project-plan" />
     <summary>Use 30 vendor-neutral milestones to structure a six-week MSP onboarding project from authority and discovery through one controlled pilot, NOC training, acceptance, and handoff.</summary>
-  </entry>
-  <entry>
-    <title>RMM first-endpoint pilot acceptance checklist</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-acceptance-checklist.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-acceptance-checklist.html" />
-    <updated>2026-11-13T00:00:00Z</updated>
-    <category term="selection" />
-    <category term="template" />
-    <category term="rmm-pilot" />
-    <summary>Use five evidence gates to prove endpoint identity, alert routing, authorized action, patch-state reconciliation, and clean removal before an RMM pilot expands.</summary>
   </entry>
   <entry>
     <title>MSP client offboarding checklist and evidence register</title>
