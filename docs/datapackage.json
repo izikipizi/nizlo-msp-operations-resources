@@ -1179,6 +1179,66 @@
     },
     {
       "profile": "tabular-data-resource",
+      "name": "rmm-migration-workbook-two-site-example",
+      "title": "Worked two-site RMM cutover example",
+      "description": "Six fictional site-level rows showing inventory reconciliation, alert test evidence, and separate cutover decisions.",
+      "path": "templates/rmm-migration-workbook-two-site-example.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 1942,
+      "hash": "sha256:51a96603409a5ae273e96201bf20db6e3a7e79cb18f6b864a75bb7aebbb2f280",
+      "schema": {
+        "fields": [
+          {
+            "name": "phase",
+            "type": "string"
+          },
+          {
+            "name": "control_id",
+            "type": "string"
+          },
+          {
+            "name": "activity",
+            "type": "string"
+          },
+          {
+            "name": "owner",
+            "type": "string"
+          },
+          {
+            "name": "status",
+            "type": "string"
+          },
+          {
+            "name": "evidence",
+            "type": "string"
+          },
+          {
+            "name": "dependency",
+            "type": "string"
+          },
+          {
+            "name": "rollback_plan",
+            "type": "string"
+          },
+          {
+            "name": "decision_due_utc",
+            "type": "string"
+          },
+          {
+            "name": "notes",
+            "type": "string"
+          }
+        ],
+        "primaryKey": [
+          "control_id",
+          "activity"
+        ]
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
       "name": "rmm-evaluation-scorecard",
       "title": "RMM evaluation scorecard and comparison template",
       "description": "Ten evidence-based evaluation areas for comparing RMM products during a controlled pilot.",
