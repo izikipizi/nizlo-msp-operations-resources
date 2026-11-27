@@ -6,12 +6,25 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-27T02:48:24Z</updated>
+  <updated>2026-11-27T03:10:39Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>RMM quote normalization calculator</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=annual_rmm_quotes&amp;utm_content=device_commitment#endpoint-true-down-example" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html?example=annual-device#calculator-form" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html#endpoint-growth-example" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html#renewal-cap-example" />
+    <updated>2026-11-27T03:10:39Z</updated>
+    <category term="pricing" />
+    <category term="quote" />
+    <category term="calculator" />
+    <summary>Compare two fictional endpoint quotes when a fleet drops from 125 to 80 devices halfway through the year. Test whether the bill falls to the 100-device minimum or stays at 125 devices until renewal. The worked example shows a $375 first-year difference at $2.50 per device per month.</summary>
+  </entry>
   <entry>
     <title>RMM first endpoint not connecting? Activation troubleshooting checklist</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html</id>
@@ -21,7 +34,7 @@
     <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html#resume-prepared-installer" />
     <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html#online-inventory-empty" />
     <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html#unexpected-device-check-in" />
-    <updated>2026-11-27T02:48:24Z</updated>
+    <updated>2026-11-27T03:10:39Z</updated>
     <category term="deployment" />
     <category term="troubleshooting" />
     <category term="activation" />
@@ -62,18 +75,6 @@
     <category term="RMM migration" />
     <category term="data export" />
     <summary>Compare how Atera and Syncro summarize the same fictional printer ticket. Verify that the handoff retains the failed restart, the open status, the owner, and the next action before comparing time saved.</summary>
-  </entry>
-  <entry>
-    <title>RMM quote normalization calculator</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html?example=annual-device&amp;utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=annual_rmm_quotes#calculator-form" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html#endpoint-growth-example" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html#renewal-cap-example" />
-    <updated>2026-11-27T00:26:35Z</updated>
-    <category term="pricing" />
-    <category term="quote" />
-    <category term="calculator" />
-    <summary>Enter monthly or yearly endpoint rates directly. The worked quote applies a 100-device minimum at $30 per device per year, then adds setup separately to show a $250 monthly equivalent and $3,300 first-year cost.</summary>
   </entry>
   <entry>
     <title>MSP tool consolidation savings calculator</title>
