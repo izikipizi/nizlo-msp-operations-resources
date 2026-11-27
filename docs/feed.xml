@@ -6,12 +6,28 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-27T12:47:49Z</updated>
+  <updated>2026-11-27T13:17:09Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>Free RMM pricing comparison worksheet</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_small_fleet_pricing#pckgr-device-pricing" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_billable_endpoint_count#billable-endpoint-reconciliation" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html#gbp-commitment-floor" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-quote-comparison-worked-example.csv" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html#renewal-cap-example" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html#workstation-and-server-rates" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=atera_datto_quote_threshold#atera-datto-quote-threshold" />
+    <updated>2026-11-27T13:17:09Z</updated>
+    <category term="pricing" />
+    <category term="selection" />
+    <category term="template" />
+    <summary>Compare Pckgr RMM by device count with Nizlo Core at $59 a month. The 50- and 100-device examples show how the monthly prices change as your fleet grows or you add a technician. The worksheet also covers device minimums, add-ons and renewal costs.</summary>
+  </entry>
   <entry>
     <title>RMM contract renewal deadline calculator</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-contract-renewal-deadline-calculator.html</id>
@@ -67,21 +83,6 @@
     <category term="RMM migration" />
     <category term="data export" />
     <summary>The new example prices one fully billed overlap month for a two-technician Atera-to-Syncro migration. Use the validation worksheet to check customer, ticket and agent placement before ending the old subscription.</summary>
-  </entry>
-  <entry>
-    <title>Free RMM pricing comparison worksheet</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_billable_endpoint_count#billable-endpoint-reconciliation" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html#gbp-commitment-floor" />
-    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-quote-comparison-worked-example.csv" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html#renewal-cap-example" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html#workstation-and-server-rates" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=atera_datto_quote_threshold#atera-datto-quote-threshold" />
-    <updated>2026-11-27T10:31:18Z</updated>
-    <category term="pricing" />
-    <category term="selection" />
-    <category term="template" />
-    <summary>Compare Atera’s published two-technician baseline with your written Datto RMM quote. The new worked example shows how a one-time implementation fee changes the monthly amount you can spend in year one. The worksheet also covers which devices count toward billing.</summary>
   </entry>
   <entry>
     <title>RMM migration plan template and checklist workbook</title>
