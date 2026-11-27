@@ -6,12 +6,26 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-27T22:53:58Z</updated>
+  <updated>2026-11-27T23:53:47Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>macOS RMM pilot evaluation matrix</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/macos-rmm-pilot-evaluation-matrix.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/macos-rmm-pilot-evaluation-matrix.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=mac_rmm_reconnect#mac-sleep-and-reconnect" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/macos-rmm-pilot-evaluation-matrix.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/macos-rmm-pilot-evaluation-matrix.csv" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/macos-rmm-pilot-evaluation-matrix.html#remote-support-example" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/macos-rmm-pilot-evaluation-matrix.html#one-mac-pilot" />
+    <updated>2026-11-27T23:53:47Z</updated>
+    <category term="macOS RMM" />
+    <category term="RMM evaluation" />
+    <category term="MDM" />
+    <summary>Use 24 controls to evaluate macOS RMM. The sleep-and-reconnect test checks whether the console marks a sleeping Mac stale and updates the same device record when it wakes. Record the result under MAC-22 in the pilot CSV before expanding the rollout.</summary>
+  </entry>
   <entry>
     <title>Free RMM pricing comparison worksheet</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html</id>
@@ -426,19 +440,6 @@
     <updated>2026-11-25T00:00:00Z</updated>
     <category term="deployment" />
     <summary>Use 38 controls to plan, verify and close an RMM rollout. A branch-pilot example covers the local maintenance window, endpoint location and after-hours alert ownership.</summary>
-  </entry>
-  <entry>
-    <title>macOS RMM pilot evaluation matrix</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/macos-rmm-pilot-evaluation-matrix.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/macos-rmm-pilot-evaluation-matrix.html" />
-    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/macos-rmm-pilot-evaluation-matrix.csv" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/macos-rmm-pilot-evaluation-matrix.html#remote-support-example" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/macos-rmm-pilot-evaluation-matrix.html#one-mac-pilot" />
-    <updated>2026-11-26T00:00:00Z</updated>
-    <category term="macOS RMM" />
-    <category term="RMM evaluation" />
-    <category term="MDM" />
-    <summary>Evaluate RMM on representative Apple-silicon and Intel Macs across enrollment, identity, privacy permissions, MDM boundaries, monitoring, updates, remote support, security coexistence, audit, removal, and rollout acceptance. A separate worked example shows how to stop remote-support rollout when inventory passes but remote support fails.</summary>
   </entry>
   <entry>
     <title>Windows patch maintenance window calculator</title>
