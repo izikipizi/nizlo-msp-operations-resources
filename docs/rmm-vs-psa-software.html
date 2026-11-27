@@ -27,7 +27,7 @@
             "headline": "RMM vs PSA Software: Differences, Integration, and Buyer Checks",
             "description": "A vendor-neutral guide to the different operating centers of RMM and PSA software and the integration evidence MSPs should test before buying.",
             "datePublished": "2026-11-07",
-            "dateModified": "2026-11-12",
+            "dateModified": "2026-11-27",
             "author": { "@type": "Person", "name": "Kip Ecklund" },
             "publisher": { "@type": "Organization", "name": "Nizlo", "url": "https://nizlo.com/" },
             "mainEntityOfPage": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-psa-software.html",
@@ -128,10 +128,21 @@
         </div>
       </section>
 
+      <section aria-labelledby="ticket-retry-example">
+        <h2 id="ticket-retry-example">Worked example: a ticket is created but the reply times out</h2>
+        <p>In a test customer and queue, send one alert from an authorized Windows endpoint. Let the PSA save the ticket, then simulate a timeout before the integration receives confirmation. Retry the same event using its original source identifier.</p>
+        <ol>
+          <li><strong>Check the customer and ticket.</strong> The retry finds the original ticket in the correct customer, queue, and priority. It does not create a second ticket or restart the SLA clock.</li>
+          <li><strong>Check endpoint recovery separately.</strong> Close the test ticket while the original condition is still active. The RMM should still report the active condition. Clear it on the device, then verify the corresponding recovery event reached the right ticket history.</li>
+          <li><strong>Record the handoff decision.</strong> Save the source event ID, ticket ID, retry outcome, and recovery time. If the integration creates a duplicate or marks the device healthy too early, assign a fix and repeat the same case before adding more customers.</li>
+        </ol>
+        <p>Use the <a href="rmm-api-integration-preflight-checklist.html">integration preflight checklist</a> to record the expected behavior before the pilot.</p>
+      </section>
+
       <section aria-labelledby="sources-title">
         <h2 id="sources-title">Primary-source verification notes</h2>
         <ul class="sources">
-          <li><a href="https://helpdesk.kaseya.com/hc/en-gb/articles/52594557549329-Autotask-MCP-Skills">Kaseya's Autotask entity documentation</a> exposes the breadth of PSA records: companies, contacts, contracts, projects, tasks, service calls, time entries, tickets, notes, history, checklists, and linked devices.</li>
+          <li><a href="https://ww5.autotask.net/help/developerhelp/content/APIs/REST/Entities/_EntitiesOverview.htm">Autotask's REST API resource index</a> documents companies, contacts, contracts, projects, service calls, time entries, tickets, notes, and configuration items.</li>
           <li><a href="https://www.connectwise.com/platform/psa/slas">ConnectWise PSA agreement and SLA documentation</a> describes recurring billing, agreement profitability, covered service hours, response plans, and per-agreement SLA behavior.</li>
           <li><a href="https://helpdesk.kaseya.com/hc/en-gb/articles/40648871867537-Autotask-How-to-Enable-Ticket-Creation">Kaseya's RMM-to-Autotask ticket-sync guide</a> explicitly calls for mapping queues, priority, issue, sub-issue, work type, notes, and visibility, then triggering a test alert and verifying the result.</li>
           <li><a href="https://helpdesk.kaseya.com/hc/en-gb/articles/27595269363473-Expert-Led-Pre-Implementation-Checklist">Kaseya's PSA migration checklist</a> documents important non-migrated records, including billing items, invoices, contracts, charges, timesheets, procurement records, reports, and configuration items—evidence that exit and migration scope must be verified, not assumed.</li>
@@ -141,7 +152,7 @@
       <aside class="note"><strong>Repair-shop workflow boundary:</strong> use the <a href="https://nizlo.com/guides/repair-shop-software-vs-rmm?utm_source=github_pages&amp;utm_medium=authority_bridge&amp;utm_campaign=repair_shop_software_vs_rmm&amp;utm_content=rmm_psa_comparison">repair-shop software vs RMM guide</a> to identify which intake, estimate, parts, invoice, ticket, asset, monitoring, patching, automation, and remote-support records need a repair platform, PSA, RMM, or an explicit integration.</aside>
       <aside class="note"><strong>Relationship disclosure:</strong> this vendor-neutral guide is maintained by the Nizlo team. Nizlo develops RMM and IT-management software; it does not claim to replace every PSA workflow or pass every control above. Product scope changes, so verify current capabilities directly and test with authorized non-critical records.</aside>
     </main>
-    <footer class="wrap"><span>Maintained by Nizlo · Updated November 12, 2026</span><span><a href="templates/rmm-psa-all-in-one-decision-matrix.csv">All-in-one matrix</a> · <a href="rmm-api-integration-preflight-checklist.html">Integration checklist</a> · <a data-trial-campaign href="rmm-evaluation-scorecard-template.html">RMM scorecard</a> · <a href="./">Resource library</a></span></footer>
+    <footer class="wrap"><span>Maintained by Nizlo · Updated November 27, 2026</span><span><a href="templates/rmm-psa-all-in-one-decision-matrix.csv">All-in-one matrix</a> · <a href="rmm-api-integration-preflight-checklist.html">Integration checklist</a> · <a data-trial-campaign href="rmm-evaluation-scorecard-template.html">RMM scorecard</a> · <a href="./">Resource library</a></span></footer>
   <script src="assets/trial-campaign.js" defer></script>
 </body>
 </html>
