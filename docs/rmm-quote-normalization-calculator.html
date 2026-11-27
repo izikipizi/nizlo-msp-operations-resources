@@ -40,6 +40,7 @@
 <section class="calculator" aria-label="RMM quote normalization calculator">
   <form class="panel" id="calculator-form">
     <h2>Enter one vendor quote</h2><p class="hint">Choose USD, EUR or GBP and enter every quote in the same currency. The calculator formats amounts without converting them. Use zero where a charge does not apply, then copy each vendor’s summary into the comparison worksheet.</p>
+    <p id="manageengine-example-context" class="hint" hidden>This example starts with ManageEngine’s published USD base plan and add-on for 50 endpoints and one technician. The 10-month estimate assumes you can stop monthly billing after 10 months. <a data-trial-campaign href="rmm-quote-comparison-worksheet.html#manageengine-billing-term-example">Review the source and annual comparison</a>.</p>
     <div class="fields">
       <div class="field"><label for="currency">Quote currency</label><select id="currency"><option value="USD">USD</option><option value="EUR">EUR</option><option value="GBP">GBP</option></select></div>
       <div class="field"><label for="endpoints">Managed endpoints</label><input id="endpoints" type="number" min="0" step="1" value="100" inputmode="numeric" /></div>
@@ -181,17 +182,20 @@ const examples = new Map([
 const query = new URLSearchParams(window.location.search);
 const exampleName = query.get("example");
 const defaults = examples.get(exampleName) ?? standardExample;
+const isManageEngineExample = exampleName === "manageengine-monthly";
 
 function resetExample() {
   for (const [id, amount] of Object.entries(defaults)) {
     document.getElementById(id).value = amount;
   }
+  if (isManageEngineExample) currencyField.value = "USD";
   calculate();
 }
 const currencyField = document.getElementById("currency");
 const supportedCurrencies = new Set(Array.from(currencyField.options, option => option.value));
 const supportedCurrency = (currency) => supportedCurrencies.has(currency) ? currency : "USD";
-currencyField.value = supportedCurrency(query.get("currency"));
+currencyField.value = isManageEngineExample ? "USD" : supportedCurrency(query.get("currency"));
+document.getElementById("manageengine-example-context").hidden = !isManageEngineExample;
 const value=id=>Math.max(0,Number(document.getElementById(id).value)||0);
 function calculate(){
  const currency = supportedCurrency(currencyField.value);
