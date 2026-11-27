@@ -2,7 +2,7 @@
 <html lang="en"><head>
 <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>RMM First Endpoint Not Connecting? Troubleshooting Checklist</title>
-<meta name="description" content="Diagnose an RMM agent that installs but never checks in with a vendor-neutral evidence path and safe Windows commands for service state, DNS, TCP 443, proxy, time, enrollment, and telemetry." />
+<meta name="description" content="Troubleshoot an RMM installer that stalls or an agent that never checks in. Verify the download, installation, service, network and enrollment in order." />
 <meta name="robots" content="index,follow,max-image-preview:large" />
 <link rel="canonical" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html" />
 <link rel="alternate" type="application/atom+xml" title="Nizlo MSP Operations Resources" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
@@ -22,7 +22,7 @@
 "description":"A vendor-neutral sequence for diagnosing an RMM agent that installs but does not connect or report telemetry.",
 "url":"https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html",
 "author":{"@type":"Person","name":"Kip Ecklund","url":"https://nizlo.com/about"},
-"publisher":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},"dateModified":"2026-11-26","inLanguage":"en","totalTime":"PT30M",
+"publisher":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},"dateModified":"2026-11-27","inLanguage":"en","totalTime":"PT30M",
 "isBasedOn":["https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-deployment-readiness-template.html","https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-acceptance-checklist.html","https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-workbook-template.html"],
 "step":[
 {"@type":"HowToStep","name":"Define the missing proof","text":"Separate installer launch, service installation, outbound connection, tenant enrollment, and dashboard telemetry."},
@@ -104,6 +104,6 @@
 <aside class="note"><strong>Stop condition:</strong> do not widen the rollout while the first endpoint lacks a stable identity, fresh telemetry, a known communications path, and a documented owner for any remaining exception.</aside>
 <section aria-labelledby="primary-sources"><h2 id="primary-sources">Primary command references</h2><ul><li><a href="https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/sc-query">Microsoft Learn: <code>sc.exe query</code></a></li><li><a href="https://learn.microsoft.com/en-us/powershell/module/nettcpip/test-netconnection?view=windowsserver2025-ps">Microsoft Learn: <code>Test-NetConnection</code></a></li><li><a href="https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/netsh-winhttp">Microsoft Learn: <code>netsh winhttp</code></a></li><li><a href="https://learn.microsoft.com/en-us/windows-server/networking/windows-time-service/windows-time-service-tools-and-settings">Microsoft Learn: Windows Time service tools and settings</a></li></ul></section>
 <aside class="note"><strong>Relationship disclosure:</strong> Nizlo, a Windows-first RMM and IT-management platform, maintains this vendor-neutral checklist. The tracked trial link above points to Nizlo. No vendor is assumed to pass these checks.</aside></main>
-<footer class="wrap"><span>Maintained by Nizlo · Updated November 26, 2026</span><span><a href="citation.html">Citation</a> · <a href="feed.xml">Feed</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source repository</a></span></footer>
+<footer class="wrap"><span>Maintained by Nizlo · Updated November 27, 2026</span><span><a href="citation.html">Citation</a> · <a href="feed.xml">Feed</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source repository</a></span></footer>
 <script src="assets/trial-campaign.js" defer></script>
 </body></html>
