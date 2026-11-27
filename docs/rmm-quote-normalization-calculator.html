@@ -143,7 +143,7 @@
 <aside class="note"><strong>Relationship disclosure:</strong> Nizlo maintains this vendor-neutral calculator and sells RMM software. The example values are illustrative and do not prefill Nizlo pricing. Use the current public pricing page as one source, and verify every vendor quote directly.</aside>
 <aside class="note"><strong>Planning limitation:</strong> this is arithmetic, not a quote, procurement decision, tax calculation, or recommendation. Confirm taxes, currency, increases, minimum commitments, retained tools, support, implementation, renewal, cancellation, and exit terms in the controlling agreement.</aside>
 </main>
-<footer class="wrap"><span>Maintained by Nizlo · Updated November 26, 2026</span><span><a href="./">Resource library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source</a></span></footer>
+<footer class="wrap"><span>Maintained by Nizlo · Updated November 27, 2026</span><span><a href="./">Resource library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source</a></span></footer>
 <script>
 const standardExample = {
   "endpoints": 100, "technicians": 2, "base": 99, "minimum": 0,
@@ -166,6 +166,11 @@ const examples = new Map([
   ["annual-device", {
     ...endpointMinimumExample,
     "endpoints": 80, "endpoint-rate": 30, "endpoint-rate-period": "year", "one-time": 300,
+  }],
+  ["manageengine-monthly", {
+    ...standardExample,
+    "endpoints": 50, "technicians": 1, "base": 104, "included-endpoints": 50,
+    "endpoint-rate": 0, "tech-rate": 0, "addon-flat": 44, "term": 10, "one-time": 0,
   }],
   ["short-term", {
     ...standardExample,
