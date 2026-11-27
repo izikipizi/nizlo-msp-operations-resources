@@ -71,7 +71,17 @@
     <li>Record remote support separately. Use the normal technician role and approved consent workflow. Record the result and confirm access ends when the session closes.</li>
   </ol>
   <p>Enter the check-in time, evidence link, owner, and retest date in the <a href="templates/macos-rmm-pilot-evaluation-matrix.csv" download>pilot CSV</a>. Use the full matrix before expanding beyond the test device.</p>
+    <p>Before enrolling another Mac, <a href="#mac-sleep-and-reconnect">check what happens after sleep and reconnect</a>, especially if your users work away from the office.</p>
 </section>
+  <section class="note" aria-labelledby="mac-sleep-and-reconnect">
+    <h2 id="mac-sleep-and-reconnect">Verify that the same Mac checks in after sleep</h2>
+    <ol>
+      <li>Record the pilot Mac's device identifier, customer and site, and last check-in. Agree on an acceptable offline threshold for your team.</li>
+      <li>Let the authorized test Mac sleep beyond that threshold. Check whether the console shows the device's last contact and distinguishes stale inventory from a fresh report.</li>
+      <li>Wake it and reconnect normally. Confirm that the same record shows a new check-in. If a second record appears or inventory stays stale, capture the two timestamps and leave rollout on hold until a retest passes.</li>
+    </ol>
+    <p>Record the result under MAC-22 in the pilot CSV. If Nizlo is on your shortlist, review its <a data-trial-campaign href="https://nizlo.com/solutions/macos-rmm?utm_source=github_pages&amp;utm_medium=authority_bridge&amp;utm_campaign=macos_rmm&amp;utm_content=mac_sleep_reconnect">macOS coverage and pilot setup</a>.</p>
+  </section>
 <section class="note" aria-labelledby="mixed-fleet-pilot">
   <h2 id="mixed-fleet-pilot">Run the matrix on a mixed fleet</h2>
   <p>Start with one authorized, noncritical Mac and one representative Windows device. Record the tenant and site, verify that both devices check in, and capture one inventory result and one support result per operating system. Keep your existing MDM in charge of Mac configuration and updates until you have tested who owns each control.</p>
