@@ -2534,13 +2534,13 @@
       "profile": "tabular-data-resource",
       "name": "rmm-quote-comparison-worked-example",
       "title": "Worked RMM quote comparison example",
-      "description": "Three completed rows showing first-year totals for a published RMM price, a fictional proposal with setup and add-on costs, and a fictional per-endpoint quote with a billing minimum.",
+      "description": "Five completed RMM quote rows, including the separate invoices for a two-technician Atera-to-Syncro overlap month and fictional examples for setup fees and device minimums.",
       "path": "templates/rmm-quote-comparison-worked-example.csv",
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "bytes": 1651,
-      "hash": "sha256:41a510df05b490415b1363610f01e262ba855ca40005c730fc6ca603b426c434",
+      "bytes": 2485,
+      "hash": "sha256:745c4318b4c6a983994a8015fffdb5cfa57d49d684c554880ba1b4fb4686c9fc",
       "schema": {
         "fields": [
           {
