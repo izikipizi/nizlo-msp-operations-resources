@@ -114,6 +114,9 @@
     </ul>
     <p>Der Unterschied beträgt 375 € vor Steuern und Zusatzkosten. Lassen Sie sich Mindestmenge, frühesten Anpassungstermin und Meldefrist schriftlich bestätigen. Die folgenden Links laden beide Monatsbeträge in Euro. Wählen Sie im Rechner dieselbe Währung für alle Angebote.</p>
     <p><a data-trial-campaign href="?example=before-growth&amp;currency=EUR#calculator-form">100 abgerechnete Geräte laden</a> · <a data-trial-campaign href="?example=held-commitment&amp;currency=EUR#calculator-form">125 abgerechnete Geräte laden</a></p>
+    <h3 id="rmm-kosten-pro-benutzer">RMM-Kosten pro betreutem Benutzer</h3>
+    <p>Ihr RMM-Anbieter berechnet 50 Geräte zu je 2,40 € pro Monat. Wenn diese Geräte 40 betreuten Benutzern zugeordnet sind, ergeben 120 € monatliche RMM-Kosten <strong>3,00 € pro betreutem Benutzer</strong>. Server und gemeinsam genutzte Geräte können die Rechnung erhöhen, ohne die Zahl der Benutzer zu ändern. Das Beispiel enthält keine Einrichtungsgebühr und keine Steuern.</p>
+    <p><a data-trial-campaign href="?example=per-user-euro&amp;currency=EUR#calculator-form">Beispiel im englischsprachigen Rechner öffnen</a>. Ändern Sie die Zahl der Geräte oder Benutzer, um ein eigenes Angebot zu berechnen.</p>
   </div>
 </aside>
 <aside class="note" aria-labelledby="annual-device-quote">
@@ -169,6 +172,11 @@ const examples = new Map([
   ["annual-device", {
     ...endpointMinimumExample,
     "endpoints": 80, "endpoint-rate": 30, "endpoint-rate-period": "year", "one-time": 300,
+  }],
+  ["per-user-euro", {
+    ...standardExample,
+    "endpoints": 50, "managed-users": 40, "technicians": 1, "base": 0,
+    "endpoint-rate": 2.4, "one-time": 0,
   }],
   ["manageengine-monthly", {
     ...standardExample,
