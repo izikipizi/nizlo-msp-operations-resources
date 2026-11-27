@@ -26,6 +26,13 @@ function matchOne(source, pattern, label, path) {
   return match[1];
 }
 
+function* datasetEntities(value) {
+  if (!value || typeof value !== "object") return;
+  const types = [value["@type"]].flat();
+  if (types.includes("Dataset") || types.includes("sc:Dataset")) yield value;
+  for (const child of Object.values(value)) yield* datasetEntities(child);
+}
+
 function localUrlFor(path) {
   const relativePath = relative(docsRoot, path).replaceAll("\\", "/");
   if (relativePath === "index.html") return siteOrigin;
@@ -294,15 +301,21 @@ for (const path of htmlFiles) {
     if (jsonLdBlocks.length === 0)
       throw new Error(`${relativePath}: missing JSON-LD`);
     const structuredData = jsonLdBlocks.map(([, json]) => JSON.parse(json));
+    const datasets = [...datasetEntities(structuredData)];
+    for (const dataset of datasets) {
+      for (const field of ["name", "description"]) {
+        if (typeof dataset[field] !== "string" || !dataset[field].trim()) {
+          throw new Error(`${relativePath}: Dataset is missing ${field}`);
+        }
+      }
+      if (!dataset.creator) {
+        throw new Error(`${relativePath}: Dataset is missing creator`);
+      }
+    }
     if (relativePath === "docs/public-rmm-pricing-dataset.html") {
-      const datasets = structuredData.filter(({ "@type": type }) =>
-        ["Dataset", "sc:Dataset"].includes(type),
-      );
       if (
         datasets.length !== 1 ||
-        datasets[0]["@context"] !== "https://schema.org" ||
-        !datasets[0].name ||
-        !datasets[0].description
+        datasets[0]["@context"] !== "https://schema.org"
       ) {
         throw new Error(
           `${relativePath}: expected one Schema.org Dataset with a name and description; keep Croissant metadata in its linked file`,
