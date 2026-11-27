@@ -148,7 +148,7 @@
     <category term="migration" />
     <category term="pricing" />
     <category term="calculator" />
-    <summary>Compare the combined software invoices during a parallel run with the extra cost of switching. Load the two-technician Atera-to-Syncro example, then add your own labor, fees, retained tools, and billing dates.</summary>
+    <summary>Compare the first twelve months of staying with the first twelve months of switching. See what concurrent RMM bills and labor do to the budget, then calculate how long it takes to recover the switching cost after cutover.</summary>
   </entry>
   <entry>
     <title>Atera-to-Syncro export and migration validation worksheet</title>
