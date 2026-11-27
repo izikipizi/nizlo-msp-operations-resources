@@ -163,10 +163,47 @@
     <h2 id="self-hosted-rmm-operator-cost">Compare self-hosted and vendor-hosted RMM operating costs</h2>
     <p>Use the same endpoint scope on both quotes. For self-hosting, record the license, infrastructure, offsite backups, monitoring, and technician time for upgrades and restore drills. For vendor hosting, record the subscription, retained tools, and the work your team still owns. Keep setup and migration costs separate from recurring operations.</p>
     <p>For an illustrative comparison, assume self-hosting has a $0 license, $30 in infrastructure, $15 in backup costs, and 90 minutes of operator time per month at $60/hour. That totals <strong>$135/month</strong>. A hypothetical $115 hosted subscription still requiring 30 minutes of operator time totals <strong>$145/month</strong>. At those inputs, the totals meet when self-hosting takes 100 minutes per month. Replace every assumption with your own quotes and measured pilot effort.</p>
+    <form id="hosting-cost-example">
+      <fieldset>
+        <legend>Compare your monthly costs in USD</legend>
+        <ul>
+          <li><label>Self-hosted costs before labor ($) <input id="selfFees" type="number" min="0" step="any" value="45" required /></label></li>
+          <li><label>Self-hosted operator minutes <input id="selfMinutes" type="number" min="0" step="any" value="90" required /></label></li>
+          <li><label>Vendor-hosted costs before labor ($) <input id="hostedFees" type="number" min="0" step="any" value="115" required /></label></li>
+          <li><label>Vendor-hosted operator minutes <input id="hostedMinutes" type="number" min="0" step="any" value="30" required /></label></li>
+          <li><label>Loaded operator rate per hour ($) <input id="rate" type="number" min="0.01" step="any" value="60" required /></label></li>
+        </ul>
+        <button type="submit" disabled>Compare costs</button>
+        <p><output id="hosting-cost-result" aria-live="polite"></output></p>
+      </fieldset>
+    </form>
     <p>Check which responsibilities the provider actually takes on before valuing the difference. The <a data-trial-campaign href="https://nizlo.com/compare/netlock-rmm-alternative?utm_source=github_pages&amp;utm_medium=resource&amp;utm_campaign=self_hosted_rmm_operating_cost&amp;utm_content=quote_worksheet">NetLock and Nizlo comparison</a> covers deployment models and fit. Use the <a data-trial-campaign href="rmm-migration-workbook-template.html">migration workbook</a> for first-year setup, overlap, and exit costs.</p>
   </aside>
 </section>
 <section class="wrap"><aside class="note"><strong>ConnectWise RMM quote scope:</strong> use the <a href="https://nizlo.com/compare/connectwise-rmm-alternative?utm_source=github_pages&amp;utm_medium=authority_bridge&amp;utm_campaign=connectwise_rmm_alternative&amp;utm_content=quote_worksheet">ConnectWise RMM alternative comparison</a> to normalize package, device, add-on, implementation, ScreenConnect, patching, automation, support, contract, renewal, and exit assumptions hidden behind quote-only pricing.</aside></section>
 <section class="wrap"><aside class="note"><strong>Minimum and commitment check:</strong> record device minimums and contract length as separate fields; “unlimited endpoints” does not establish month-to-month billing, and “monthly price” does not establish that there is no annual term. Nizlo publishes separate <a href="https://nizlo.com/solutions/unlimited-endpoint-rmm?utm_source=github_pages&amp;utm_medium=authority_bridge&amp;utm_campaign=unlimited_endpoint_rmm&amp;utm_content=quote_worksheet">unlimited-endpoint terms</a> and <a href="https://nizlo.com/solutions/no-contract-rmm?utm_source=github_pages&amp;utm_medium=authority_bridge&amp;utm_campaign=no_contract_rmm&amp;utm_content=quote_worksheet">month-to-month terms</a> as one comparison example. Confirm the same fields directly with every vendor before relying on a proposal.</aside></section>
+<script>
+  const hostingForm = document.getElementById("hosting-cost-example");
+  const hostingResult = document.getElementById("hosting-cost-result");
+  const dollars = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" });
+  const minutes = new Intl.NumberFormat("en-US", { maximumFractionDigits: 2 });
+  hostingForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const { selfFees, selfMinutes, hostedFees, hostedMinutes, rate } = hostingForm.elements;
+    const perMinute = rate.valueAsNumber / 60;
+    const selfHosted = selfFees.valueAsNumber + selfMinutes.valueAsNumber * perMinute;
+    const vendorHosted = hostedFees.valueAsNumber + hostedMinutes.valueAsNumber * perMinute;
+    const breakEven = (vendorHosted - selfFees.valueAsNumber) / perMinute;
+    if (![selfHosted, vendorHosted, breakEven].every(Number.isFinite)) {
+      hostingResult.textContent = "Enter smaller values to compare the costs.";
+      return;
+    }
+    const crossover = breakEven < 0
+      ? "Self-hosting costs more before its operator time is added."
+      : `The two totals match at ${minutes.format(breakEven)} self-hosted operator minutes per month.`;
+    hostingResult.textContent = `Self-hosted: ${dollars.format(selfHosted)}/month. Vendor-hosted: ${dollars.format(vendorHosted)}/month. ${crossover}`;
+  });
+  hostingForm.querySelector('button[type="submit"]').disabled = false;
+</script>
 <script src="assets/trial-campaign.js" defer></script>
 </body></html>
