@@ -28,7 +28,7 @@
         "description": "A vendor-neutral CSV with 30 controls for readiness, detection, containment, investigation, recovery, and post-incident improvement after a suspected RMM security event.",
         "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-incident-response-runbook-template.html",
         "creator": { "@type": "Organization", "name": "Nizlo", "url": "https://nizlo.com/" },
-        "dateModified": "2026-11-18",
+        "dateModified": "2026-11-27",
         "subjectOf": {
           "@type": "CreativeWork",
           "name": "Awesome SRE",
@@ -115,6 +115,12 @@
         <h2>Keep the first incident update concise</h2>
         <p>For a lightweight opening summary, Josh Beckman’s <cite><a href="https://www.joshbeckman.org/blog/practicing/my-foursometimes-five-bullet-incident-snapshot">“Four-(Sometimes Five-) Bullet” incident snapshot</a></cite> is a useful communication pattern: detection, mitigation, remediation, impact, and optional communication speed. It complements—but does not replace—the runbook’s evidence, authority, containment, recovery, notification, and post-incident controls.</p>
       </section>
+      <section aria-labelledby="first-recovery-device">
+        <h2 id="first-recovery-device">Prove recovery on one endpoint before expanding</h2>
+        <p>After the incident lead clears the recovery test, use one authorized, noncritical endpoint. Record the clean baseline under <strong>IR-024</strong>, the endpoint and approved recovery scope under <strong>IR-025</strong>, and the criteria and length of the observation period under <strong>IR-026</strong>.</p>
+        <p>For example, a device can report a fresh heartbeat and still belong to the wrong customer or site. Keep that device out of the restored group until another technician verifies its enrollment, policy assignment, and permitted access from the evidence. Expand only after the named owner records the decision.</p>
+        <p>Use the <a href="rmm-first-endpoint-acceptance-checklist.html?utm_source=github_pages&amp;utm_medium=resource&amp;utm_campaign=rmm_incident_recovery&amp;utm_content=first_device">first-endpoint acceptance checklist</a> for the device checks and the <a href="rmm-trial-go-no-go-decision-checklist.html?utm_source=github_pages&amp;utm_medium=resource&amp;utm_campaign=rmm_incident_recovery&amp;utm_content=rollout_gate">rollout decision checklist</a> to capture approvals and unresolved exceptions.</p>
+      </section>
       <section>
         <h2>Field reference</h2>
         <p>The CSV uses consistent fields for <strong>phase</strong>, <strong>control ID</strong>, <strong>activity</strong>, <strong>owner</strong>, <strong>priority</strong>, <strong>status</strong>, <strong>evidence</strong>, <strong>decision</strong>, <strong>communication audience</strong>, <strong>next review time</strong>, and <strong>notes</strong>.</p>
@@ -132,6 +138,6 @@
         <p>The maintainer of <a href="https://github.com/adriannovegil/awesome-sre#11-runbooks-and-playbooks">Awesome SRE</a> merged this runbook into its Runbooks and Playbooks collection on November 6, 2026. The independent editorial inclusion improves discovery; it is not a certification, product endorsement, or claim that Nizlo satisfies every control in the runbook.</p>
       </section>
     </main>
-    <footer><div class="wrap">Maintained by <a href="https://nizlo.com/">Nizlo</a> · Updated November 18, 2026 · <a href="citation.html">Citation and preservation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source repository</a></div></footer>
+    <footer><div class="wrap">Maintained by <a href="https://nizlo.com/">Nizlo</a> · Updated November 27, 2026 · <a href="citation.html">Citation and preservation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source repository</a></div></footer>
   </body>
 </html>
