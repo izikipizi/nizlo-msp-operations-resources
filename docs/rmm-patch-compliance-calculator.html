@@ -31,6 +31,8 @@
 <p class="lede">A percentage is only useful when every in-scope endpoint is reconciled. Use the CSV to retain the report boundary, evidence timestamp, denominator, outcome states, exceptions, owner, and next action. Use the calculator to verify that pending reboots, failures, unpatched devices, stale records, and unknown states were not silently removed.</p>
 <div class="actions"><a class="button primary" href="templates/rmm-patch-compliance-report-template.csv" download>Download the report CSV</a><a class="button" href="#calculator">Calculate compliance</a><a class="button" href="windows-patch-maintenance-window-calculator.html">Size the maintenance window</a><a class="button" href="windows-patch-failure-triage-checklist.html">Triage failures</a><a class="button" href="windows-patch-exception-review-template.html">Govern approved exceptions</a><a class="button" href="windows-patch-policy-review-checklist.html">Review the patch policy</a><a class="button" href="https://nizlo.com/guides/rmm-vs-patch-management?utm_source=github_pages&amp;utm_medium=authority_bridge&amp;utm_campaign=rmm_vs_patch_management&amp;utm_content=patch_compliance_calculator">Compare RMM with patch management</a><a class="button" href="https://nizlo.com/guides/windows-patch-management-checklist?utm_source=github_pages&amp;utm_medium=resource&amp;utm_campaign=patch_compliance_denominator">Open the patch checklist</a></div>
 <section class="panel" id="calculator" aria-labelledby="calculator-title"><h2 id="calculator-title">Patch-compliance evidence model</h2>
+<p><button type="button" class="button" id="load-fleet-example">Load the 1,400-device example</button></p>
+<p>The <a href="windows-patch-failure-triage-checklist.html#patch-coverage-example">worked pilot</a> uses 1,200 devices with confirmed applicability. This calculator also counts the 80 unknown devices in scope, giving 1,280. The 25 approved deferrals remain applicable and outstanding.</p>
 <div class="grid">
 <div class="field"><label for="managed">Managed endpoints</label><small>Every endpoint expected in the reporting population.</small><input id="managed" type="number" min="0" step="1" value="100" /></div>
 <div class="field"><label for="excluded">Approved exclusions</label><small>Documented, time-bounded devices outside this cycle.</small><input id="excluded" type="number" min="0" step="1" value="5" /></div>
@@ -53,5 +55,58 @@
 </tbody></table></div>
 <section class="notes"><aside class="note"><strong>Formula:</strong> <code>verified installed ÷ (managed endpoints − approved exclusions)</code>. The outcome-state total must equal the denominator before the percentage is reportable.</aside><aside class="note"><strong>Reusable report:</strong> the <a href="templates/rmm-patch-compliance-report-template.csv" download>20-field CSV</a> keeps one row per customer, business unit, site, or endpoint group for a named baseline and timestamp. Its three rows are examples only and must be replaced with verified evidence.</aside><aside class="note"><strong>Independent field context:</strong> Christian Bautista's current <a href="https://allegianceitadvisory.com/blog/msp-patch-compliance/">MSP patch-compliance guide</a> explains why inventory scope, baseline, stale evidence, failed or pending states, exception age, ownership, next action, and later verification belong in a useful client report. This CSV turns those concepts into a portable record; Allegiance IT Advisory did not create, review, or endorse it.</aside><aside class="note"><strong>Reporting boundary:</strong> record the customer/site, required update baseline, reporting timestamp, maximum evidence age, approved exclusions, source system, report owner, and next action beside the result.</aside><aside class="note"><strong>Do not reward missing data:</strong> an offline, stale, or disappeared endpoint stays unresolved until it is reconnected, formally retired, or moved through an approved exception process.</aside><aside class="note"><strong>Relationship disclosure:</strong> Nizlo, a Windows-first RMM and IT-management platform, maintains this calculator and template. They are vendor-created, not independent research, and do not claim that any product produces complete evidence automatically.</aside></section>
 </main><footer class="wrap"><span>Maintained by Nizlo · Updated November 8, 2026</span><span><a href="citation.html">Citation</a> · <a href="feed.xml">Atom feed</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources/tree/v1.87.2">Version 1.87.2</a></span></footer>
-<script>(()=>{const ids=["managed","excluded","installed","reboot","failed","unpatched","unknown"];const el=Object.fromEntries(ids.map(id=>[id,document.getElementById(id)]));const denominator=document.getElementById("denominator"),compliance=document.getElementById("compliance"),unresolved=document.getElementById("unresolved"),status=document.getElementById("status");function n(id){return Math.max(0,Number(el[id].value)||0)}function calculate(){const scope=Math.max(0,n("managed")-n("excluded"));const outcomes=n("installed")+n("reboot")+n("failed")+n("unpatched")+n("unknown");const gap=scope-outcomes;denominator.textContent=String(scope);compliance.textContent=scope?`${(n("installed")/scope*100).toFixed(1)}%`:"—";unresolved.textContent=String(Math.max(0,scope-n("installed")));status.className="status";if(n("excluded")>n("managed")){status.classList.add("bad");status.textContent="Approved exclusions cannot exceed managed endpoints."}else if(gap>0){status.classList.add("warn");status.textContent=`${gap} in-scope endpoint${gap===1?" is":"s are"} not assigned to an outcome state. Reconcile them before reporting compliance.`}else if(gap<0){status.classList.add("bad");status.textContent=`Outcome states exceed the denominator by ${Math.abs(gap)}. Remove duplicate or out-of-scope counts.`}else{status.textContent="Outcome states reconcile exactly to the in-scope denominator."}}ids.forEach(id=>el[id].addEventListener("input",calculate));calculate()})()</script>
+<script>
+(() => {
+  const ids = ["managed", "excluded", "installed", "reboot", "failed", "unpatched", "unknown"];
+  const fields = Object.fromEntries(ids.map(id => [id, document.getElementById(id)]));
+  const denominator = document.getElementById("denominator");
+  const compliance = document.getElementById("compliance");
+  const unresolved = document.getElementById("unresolved");
+  const status = document.getElementById("status");
+
+  function calculate() {
+    const [managed, excluded, installed, reboot, failed, unpatched, unknown] =
+      ids.map(id => fields[id].validity.badInput ? NaN : Number(fields[id].value));
+    const scope = managed - excluded;
+    const gap = scope - installed - reboot - failed - unpatched - unknown;
+    compliance.textContent = "—";
+    unresolved.textContent = "—";
+    status.className = "status";
+    const validCounts = [managed, excluded, installed, reboot, failed, unpatched, unknown]
+      .every(count => Number.isSafeInteger(count) && count >= 0);
+    denominator.textContent = validCounts && scope >= 0 ? String(scope) : "—";
+    if (!validCounts) {
+      status.classList.add("bad");
+      status.textContent = "Enter non-negative whole numbers for endpoint counts.";
+    } else if (scope < 0) {
+      status.classList.add("bad");
+      status.textContent = "Approved exclusions cannot exceed managed endpoints.";
+    } else if (gap > 0) {
+      status.classList.add("warn");
+      status.textContent = `${gap} in-scope endpoint${gap === 1 ? " is" : "s are"} missing an outcome. Reconcile the counts before reporting compliance.`;
+    } else if (gap < 0) {
+      status.classList.add("bad");
+      status.textContent = `Outcome states exceed the denominator by ${Math.abs(gap)}. Remove duplicate or out-of-scope counts.`;
+    } else {
+      if (scope > 0) compliance.textContent = `${(installed / scope * 100).toFixed(1)}%`;
+      unresolved.textContent = String(scope - installed);
+      status.textContent = "Outcome states reconcile exactly to the in-scope denominator.";
+    }
+  }
+
+  function loadFleetExample() {
+    const counts = [1400, 120, 1050, 90, 35, 25, 80];
+    ids.forEach((id, index) => { fields[id].value = counts[index]; });
+    calculate();
+  }
+
+  ids.forEach(id => fields[id].addEventListener("input", calculate));
+  document.getElementById("load-fleet-example").addEventListener("click", loadFleetExample);
+  if (new URLSearchParams(window.location.search).get("example") === "fleet-coverage") {
+    loadFleetExample();
+  } else {
+    calculate();
+  }
+})();
+</script>
 </body></html>
