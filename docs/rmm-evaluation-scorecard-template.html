@@ -58,6 +58,16 @@
   </ol>
   <p>Use the <a data-trial-campaign href="rmm-quote-comparison-worksheet.html">quote worksheet</a> to record how many technicians need access and which tools you would retain. For a Nizlo pilot, read the <a data-trial-campaign href="https://nizlo.com/solutions/rmm-free-trial?utm_source=github_pages&amp;utm_medium=resource&amp;utm_campaign=evaluation_scorecard&amp;utm_content=remote_client_pilot">trial walkthrough</a> or <a data-trial-campaign href="https://app.nizlo.com/signup?utm_source=github_pages&amp;utm_medium=resource&amp;utm_campaign=evaluation_scorecard&amp;utm_content=remote_client_pilot_signup">start a 14-day trial without a credit card</a>.</p>
 </section>
+<section class="note" aria-labelledby="separate-patching-pilot">
+  <h2 id="separate-patching-pilot">Run an RMM pilot when patching stays in another tool</h2>
+  <p>If your MSP already patches each school's devices with Intune or another platform, assess the proposed RMM alongside it on approved pilot devices. Set the patching weight before scoring so the existing tool's work does not inflate the candidate's score.</p>
+  <ol>
+    <li><strong>Prove patch ownership.</strong> Name the tool allowed to approve, install, and restart for one update. Record that tool's install and reboot result. Refresh the RMM inventory afterward and confirm the RMM did not issue a competing install or restart. Log any reporting gap separately.</li>
+    <li><strong>Test alert closure and access.</strong> Use one approved device in each of two school groups. Generate and clear a test alert in both groups. Verify the alert, recovery and service ticket reach the intended queue. Confirm a technician scoped to one school cannot start a session or script in the other school.</li>
+    <li><strong>Price the complete stack.</strong> Confirm the quote's billing period, device minimum, inactive-device rules and support scope in writing. Keep the existing patching subscription and the time needed to reconcile two sets of evidence in your estimate.</li>
+  </ol>
+  <p>Use the <a href="windows-patch-policy-review-checklist.html#autopatch-and-rmm">patch ownership checklist</a> to record who installed the update, and the <a data-trial-campaign href="msp-tool-consolidation-savings-calculator.html#retained-tools-example">worked quote comparison</a> to model the costs that stay.</p>
+</section>
 <section class="calculator" aria-labelledby="calculator-title">
 <div class="calculator-head"><div><div class="eyebrow">Interactive · Runs in your browser</div><h2 id="calculator-title">Weighted RMM evaluation calculator</h2><p>Adjust the weights for your environment, then score only observed trial behavior. Nothing entered here is transmitted or saved.</p></div><button class="button" type="button" id="reset-scorecard">Reset</button></div>
 <div class="table-scroll"><table><thead><tr><th scope="col">Evaluation area</th><th scope="col">Weight %</th><th scope="col">Observed score</th></tr></thead><tbody id="scorecard-body">
