@@ -181,7 +181,7 @@ Test whether an RMM audit trail can support operations and investigation with th
 
 Subscribe to [all resource updates](https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml) or the [Intune field notes feed](https://izikipizi.github.io/nizlo-msp-operations-resources/intune-feed.xml) for worksheets about offboarding, Remote Help, and Windows update ownership.
 
-Use the [two-device Intune rollout example](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html?utm_source=github&utm_medium=repository&utm_campaign=intune_pilot_reconciliation#pilot-reconciliation-example) to reconcile a device in the wrong RMM site and a brief, unexpected check-in before expanding the pilot.
+Use the [two-device Intune rollout example](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html?utm_source=github&utm_medium=repository&utm_campaign=intune_pilot_reconciliation#pilot-reconciliation-example) to reconcile a device in the wrong RMM site and a brief, unexpected check-in before expanding the pilot. The [Intune client log checks](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html?utm_source=github&utm_medium=repository&utm_campaign=intune_pilot_reconciliation&utm_content=client_log_verification#intune-unmatched-device) show how to verify the installation and compare its timestamp with the RMM check-in.
 
 ## Source-dated pricing dataset
 
