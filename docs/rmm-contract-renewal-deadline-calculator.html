@@ -16,7 +16,7 @@
   "@context":"https://schema.org","@type":"WebApplication","name":"RMM Contract Renewal Deadline Calculator",
   "description":"A browser-only calculator for estimating an RMM non-renewal notice deadline and an earlier internal decision date from a renewal date, contractual notice period, and planning buffer.",
   "url":"https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-contract-renewal-deadline-calculator.html",
-  "applicationCategory":"BusinessApplication","operatingSystem":"Any","browserRequirements":"JavaScript","isAccessibleForFree":true,"dateModified":"2026-11-08","inLanguage":"en",
+  "applicationCategory":"BusinessApplication","operatingSystem":"Any","browserRequirements":"JavaScript","isAccessibleForFree":true,"dateModified":"2026-11-27","inLanguage":"en",
   "creator":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},
   "featureList":["Non-renewal notice deadline","Internal decision deadline","Days remaining","Calendar file download","Copyable planning summary"]
 }</script>
@@ -63,7 +63,7 @@
 <aside class="note"><strong>Relationship disclosure:</strong> Nizlo, a Windows-first RMM and IT-management platform, maintains this free calculator. Compare the full operating and contract evidence for every vendor. You can also review <a href="https://nizlo.com/solutions/no-contract-rmm?utm_source=github_pages&amp;utm_medium=resource&amp;utm_campaign=rmm_renewal_deadline_calculator">Nizlo's month-to-month RMM terms</a> and <a href="https://nizlo.com/guides/rmm-pricing-models?utm_source=github_pages&amp;utm_medium=resource&amp;utm_campaign=rmm_renewal_deadline_calculator">RMM pricing models</a>.</aside>
 <aside class="note"><strong>Planning limitation:</strong> this page uses calendar-day subtraction and does not interpret a contract, determine valid service, account for holidays or business-day definitions, or establish a legal deadline.</aside>
 </main>
-<footer class="wrap"><span>Maintained by Nizlo · Updated November 8, 2026</span><span><a href="./">Resource library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source</a></span></footer>
+<footer class="wrap"><span>Maintained by Nizlo · Updated November 27, 2026</span><span><a href="./">Resource library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source</a></span></footer>
 <script>
 (() => {
   const dayMs = 86400000;
@@ -80,17 +80,32 @@
   const dateValue = date => date.toISOString().slice(0,10);
   const daysFromToday = date => {
     const now = new Date();
-    const today = Date.UTC(now.getUTCFullYear(),now.getUTCMonth(),now.getUTCDate());
+    const today = Date.UTC(now.getFullYear(),now.getMonth(),now.getDate());
     return Math.ceil((Date.UTC(date.getUTCFullYear(),date.getUTCMonth(),date.getUTCDate()) - today) / dayMs);
   };
   const dayLabel = days => days < 0 ? `${Math.abs(days)} days past` : days === 0 ? 'Today' : `${days} days remaining`;
   let result = null;
+  function clearResult(){
+    result = null;
+    copy.disabled = true;
+    calendar.disabled = true;
+    document.getElementById('internal-date').textContent = 'Enter a valid renewal date, notice period, and buffer';
+    for (const id of ['notice-date','renewal-date','days-internal','days-notice']) {
+      document.getElementById(id).textContent = '—';
+    }
+    document.getElementById('internal-note').textContent = 'Renewal date − notice period − planning buffer';
+    document.getElementById('internal-card').className = 'result result-wide';
+    document.getElementById('notice-card').className = 'result';
+  }
   function calculate(event){
     if(event) event.preventDefault();
     const renewalDate = parseDate(renewal.value);
     const noticeDays = Number(notice.value);
     const bufferDays = Number(buffer.value);
-    if(!renewalDate || !Number.isFinite(noticeDays) || !Number.isFinite(bufferDays) || noticeDays < 0 || bufferDays < 0) return;
+    if (!form.checkValidity() || !renewalDate || !Number.isFinite(renewalDate.getTime())) {
+      clearResult();
+      return;
+    }
     const noticeDate = addDays(renewalDate,-noticeDays);
     const internalDate = addDays(noticeDate,-bufferDays);
     const internalDays = daysFromToday(internalDate);
@@ -109,11 +124,11 @@
   }
   function setExample(){
     const today = new Date();
-    renewal.value = dateValue(addDays(new Date(Date.UTC(today.getUTCFullYear(),today.getUTCMonth(),today.getUTCDate(),12)),180));
+    renewal.value = dateValue(addDays(new Date(Date.UTC(today.getFullYear(),today.getMonth(),today.getDate(),12)),180));
     notice.value = '90'; buffer.value = '30'; vendor.value = ''; calculate();
   }
   form.addEventListener('submit',calculate);
-  [renewal,notice,buffer].forEach(input => input.addEventListener('change',calculate));
+  [renewal,notice,buffer].forEach(input => input.addEventListener('input',calculate));
   document.getElementById('reset').addEventListener('click',setExample);
   copy.addEventListener('click',async() => {
     if(!result) return;
