@@ -2,26 +2,26 @@
 <html lang="en"><head>
 <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Free RMM Quote Normalization Calculator | Nizlo</title>
-<meta name="description" content="Compare RMM quotes in USD or EUR. Calculate monthly and first-year costs with device minimums, technician fees, add-ons, discounts, and setup charges." />
+<meta name="description" content="Compare RMM quotes in USD, EUR or GBP. Calculate monthly and first-year costs with device minimums, technician fees, add-ons, discounts, and setup charges." />
 <meta name="robots" content="index,follow,max-image-preview:large" />
 <link rel="canonical" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html" />
 <link rel="alternate" type="application/atom+xml" title="Nizlo MSP Operations Resources" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
 <meta property="og:type" content="website" /><meta property="og:title" content="Free RMM Quote Normalization Calculator" />
-<meta property="og:description" content="Calculate RMM quote costs in USD or EUR. Try worked device minimum and renewal scenarios, then edit the figures for your own quote." />
+<meta property="og:description" content="Calculate RMM quote costs in USD, EUR or GBP. Try worked device minimum and renewal scenarios, then edit the figures for your own quote." />
 <meta property="og:url" content="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html" />
 <meta property="og:image" content="https://izikipizi.github.io/nizlo-msp-operations-resources/assets/rmm-calculators-social-card-v1.png" />
 <meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" />
 <meta property="og:image:alt" content="Free RMM quote normalization calculator from Nizlo" />
-<meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="Free RMM Quote Normalization Calculator" /><meta name="twitter:description" content="Calculate RMM quote costs in USD or EUR. Try worked device minimum and renewal scenarios, then edit the figures for your own quote." /><meta name="twitter:image" content="https://izikipizi.github.io/nizlo-msp-operations-resources/assets/rmm-calculators-social-card-v1.png" />
+<meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="Free RMM Quote Normalization Calculator" /><meta name="twitter:description" content="Calculate RMM quote costs in USD, EUR or GBP. Try worked device minimum and renewal scenarios, then edit the figures for your own quote." /><meta name="twitter:image" content="https://izikipizi.github.io/nizlo-msp-operations-resources/assets/rmm-calculators-social-card-v1.png" />
 <meta name="twitter:image:alt" content="Free RMM quote normalization calculator from Nizlo" /><meta name="theme-color" content="#07171d" />
 <script type="application/ld+json">{
   "@context":"https://schema.org","@type":"WebApplication","name":"RMM Quote Normalization Calculator",
-  "description":"A browser-only calculator that calculates comparable monthly, annual, first-year, contract, and per-endpoint costs in the selected quote currency, USD or EUR.",
+  "description":"A browser-only calculator that calculates comparable monthly, annual, first-year, contract, and per-endpoint costs in the selected quote currency, USD, EUR or GBP.",
   "url":"https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html",
   "applicationCategory":"BusinessApplication","operatingSystem":"Any","browserRequirements":"JavaScript",
   "isAccessibleForFree":true,"dateModified":"2026-11-27","inLanguage":"en",
   "creator":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},
-  "featureList":["Base fee normalization","Endpoint overage calculation","Technician overage calculation","Monthly minimum handling","Add-on normalization","Contract discount","One-time fee allocation","Per-endpoint effective cost","USD and EUR amount formatting"]
+  "featureList":["Base fee normalization","Endpoint overage calculation","Technician overage calculation","Monthly minimum handling","Add-on normalization","Contract discount","One-time fee allocation","Per-endpoint effective cost","USD, EUR and GBP amount formatting"]
 }</script>
 <script type="application/ld+json">{
   "@context":"https://schema.org","@type":"FAQPage","mainEntity":[
@@ -39,9 +39,9 @@
 <p class="privacy">Your quote figures stay in this browser. Nothing is submitted or stored by this page.</p>
 <section class="calculator" aria-label="RMM quote normalization calculator">
   <form class="panel" id="calculator-form">
-    <h2>Enter one vendor quote</h2><p class="hint">Choose USD or EUR and enter every quote in the same currency. The calculator formats amounts without converting them. Use zero where a charge does not apply, then copy each vendor’s summary into the comparison worksheet.</p>
+    <h2>Enter one vendor quote</h2><p class="hint">Choose USD, EUR or GBP and enter every quote in the same currency. The calculator formats amounts without converting them. Use zero where a charge does not apply, then copy each vendor’s summary into the comparison worksheet.</p>
     <div class="fields">
-      <div class="field"><label for="currency">Quote currency</label><select id="currency"><option value="USD">USD</option><option value="EUR">EUR</option></select></div>
+      <div class="field"><label for="currency">Quote currency</label><select id="currency"><option value="USD">USD</option><option value="EUR">EUR</option><option value="GBP">GBP</option></select></div>
       <div class="field"><label for="endpoints">Managed endpoints</label><input id="endpoints" type="number" min="0" step="1" value="100" inputmode="numeric" /></div>
       <div class="field"><label for="technicians">Technicians</label><input id="technicians" type="number" min="0" step="1" value="2" inputmode="numeric" /></div>
       <div class="field"><label for="base">Monthly base fee <span class="sub">Before variable usage</span></label><input id="base" type="number" min="0" step="0.01" value="99" inputmode="decimal" /></div>
@@ -161,6 +161,8 @@ const examples = new Map([
   ["before-growth", { ...endpointMinimumExample, "endpoints": 80 }],
   ["after-growth", { ...endpointMinimumExample, "endpoints": 125 }],
   ["held-commitment", { ...endpointMinimumExample, "endpoints": 80, "minimum-paid-endpoints": 125 }],
+  ["uk-held-minimum", { ...endpointMinimumExample, "endpoints": 140, "minimum-paid-endpoints": 200, "term": 6 }],
+  ["uk-without-minimum", { ...endpointMinimumExample, "endpoints": 140, "minimum-paid-endpoints": 0, "term": 6 }],
   ["annual-device", {
     ...endpointMinimumExample,
     "endpoints": 80, "endpoint-rate": 30, "endpoint-rate-period": "year", "one-time": 300,
@@ -182,10 +184,12 @@ function resetExample() {
   calculate();
 }
 const currencyField = document.getElementById("currency");
-currencyField.value = query.get("currency") === "EUR" ? "EUR" : "USD";
+const supportedCurrencies = new Set(Array.from(currencyField.options, option => option.value));
+const supportedCurrency = (currency) => supportedCurrencies.has(currency) ? currency : "USD";
+currencyField.value = supportedCurrency(query.get("currency"));
 const value=id=>Math.max(0,Number(document.getElementById(id).value)||0);
 function calculate(){
- const currency = currencyField.value === "EUR" ? "EUR" : "USD";
+ const currency = supportedCurrency(currencyField.value);
  const money = new Intl.NumberFormat("en-US", { style: "currency", currency });
  const endpoints=value("endpoints"),techs=value("technicians"),base=value("base"),minimum=value("minimum"),includedEndpoints=value("included-endpoints"),endpointRate=value("endpoint-rate"),includedTechs=value("included-techs"),techRate=value("tech-rate"),addonEndpoint=value("addon-endpoint"),addonFlat=value("addon-flat"),discount=Math.min(100,value("discount")),term=Math.max(1,Math.round(value("term"))),oneTime=value("one-time");
  const minimumPaidEndpoints=value("minimum-paid-endpoints");
