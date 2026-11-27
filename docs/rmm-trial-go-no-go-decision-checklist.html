@@ -26,7 +26,14 @@
   <p>Record <strong>remediate and retest</strong> when patching is mandatory for the rollout. Name the person who will run Thursday’s test and specify the evidence they owe: the approved window, actual restart time, and post-restart check-in and patch status. Keep bulk enrollment and checkout pending until the reviewer sees those results.</p>
   <p>If monitoring can run independently, a <strong>limited go</strong> means approving only named endpoints for monitoring and explicitly excluding patching until the test passes. Compare the <a data-trial-campaign href="rmm-quote-normalization-calculator.html">first-year cost</a> of that narrower rollout with the cost of retaining the current patching tool.</p>
 </section>
-<aside class="note"><strong>Activation blocked?</strong> Use the <a href="rmm-first-endpoint-activation-troubleshooting-checklist.html">first-endpoint activation troubleshooting checklist</a>, then record a clean acceptance result with the <a href="rmm-first-endpoint-acceptance-checklist.html">first-endpoint acceptance checklist</a>. Do not score untested capabilities as failures.</aside>
+<section class="note" aria-labelledby="stalled-activation-decision">
+  <h2 id="stalled-activation-decision">If the first endpoint still has not checked in by day 2</h2>
+  <ol>
+    <li>Record the last event you can prove, such as an installer offered, a completed download, or a running local service. Keep the expected device, workspace, time, and visible status in the trial record.</li>
+    <li>Assign one technician to retry on the approved pilot endpoint. Use the <a href="rmm-first-endpoint-activation-troubleshooting-checklist.html#choose-installer-stage">installer stage that matches what the technician saw</a> and set a retest time before your trial expires.</li>
+    <li>Mark downstream tests as <strong>Not tested</strong> and the rollout decision as <strong>Remediate and retest</strong> while activation is open. Resume scoring when the correct device shows a fresh check-in and passes the <a href="rmm-first-endpoint-acceptance-checklist.html#first-check-in-evidence">first check-in evidence checks</a>.</li>
+  </ol>
+</section>
 <aside class="note"><strong>Do not use this as a substitute for testing:</strong> begin with the <a href="rmm-pilot-test-evidence-pack.html">25-test RMM proof-of-concept pack</a>. A polished demo, unchecked feature list, or undocumented impression is not decision-quality evidence.</aside>
 <aside class="note"><strong>Want to run the same controlled process with Nizlo?</strong> Nizlo maintains this vendor-neutral resource. Review the <a href="https://nizlo.com/solutions/rmm-free-trial?utm_source=github_pages&amp;utm_medium=decision_resource&amp;utm_campaign=rmm_trial_decision">14-day trial plan</a> and <a href="https://nizlo.com/pricing?utm_source=github_pages&amp;utm_medium=decision_resource&amp;utm_campaign=rmm_trial_decision">published pricing</a>; neither link implies that Nizlo passes these gates without your own evidence.</aside>
 <section class="note" aria-labelledby="choose-core-or-scale">
