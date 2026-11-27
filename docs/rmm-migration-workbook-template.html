@@ -54,6 +54,16 @@
   </ol>
   <p>For example, if old-console access ends Friday and two laptops are offline, name who will reach their users and by when. Keep both laptops on the exception list until the incoming team sees them check in and confirms support access. Use the <a href="rmm-first-endpoint-activation-troubleshooting-checklist.html">first endpoint troubleshooting checklist</a> when an installer runs but the device never checks in.</p>
 </section>
+<section class="section" aria-labelledby="suite-handoff-test">
+  <h2 id="suite-handoff-test">Test an MSP suite with one customer before switching</h2>
+  <p>Ask for two written proposals using the same device and technician counts. One covers only the products you want to replace. The other covers the full suite. Put overlapping subscriptions, implementation, and the cost of keeping a module after you cancel the bundle on separate rows in the <a data-trial-campaign href="rmm-quote-comparison-worksheet.html">quote worksheet</a>.</p>
+  <ol>
+    <li><strong>Follow an alert through the service desk.</strong> Generate a safe test alert on an authorized device. Have the technician who would handle it after hours open the ticket, verify the correct customer and queue, and resolve the test. Check whether the corresponding alert closes or still needs a separate action. Keep the alert and ticket IDs together.</li>
+    <li><strong>Restore a test file without the implementation team.</strong> Use a harmless file from a known recovery point. Have the on-call technician restore it to an approved alternate location, confirm it opens, and record how long it took. Keep the old backup arrangements in place for the test.</li>
+    <li><strong>Confirm the partial exit in writing.</strong> Ask which subscriptions, prices, and support terms survive if you later replace only RMM, backup, or PSA. Record the notice dates and who exports the configuration and tickets. Use the <a href="rmm-vendor-exit-plan-checklist.html">vendor exit checklist</a> for the owner and evidence fields.</li>
+  </ol>
+  <p>Rehearse on one customer before committing another. A passing ticket handoff does not prove the restore or establish what the contract allows. Give each incomplete test a named owner and date in the workbook.</p>
+</section>
 <section class="section" aria-labelledby="two-site-cutover">
   <h2 id="two-site-cutover">Worked cutover decision for two customer sites</h2>
   <p>In this example, Site A has 20 endpoints and Site B has 10. The new console shows all 20 at Site A and eight at Site B. A test alert from Site A reaches its assigned queue once, but Site B's test alert goes to Site A's queue. Site B also has two offline laptops. Record 28 of 30 endpoints visible, two deferred, and Site B's routing test failed.</p>
@@ -101,6 +111,6 @@
 <aside class="note"><strong>Coexistence and exit criteria:</strong> NetLock RMM's current <a href="https://netlockrmm.com/guides/rmm-migration-checklist">vendor-neutral migration checklist</a> independently argues for a defined parallel period and measurable destination exit criteria before the source agent is removed. This workbook adds control ownership, one authoritative system per function, evidence, dependencies, rollback, exceptions, and closeout fields around those ideas. NetLock RMM did not create, review, or endorse this workbook.</aside>
 <aside class="note"><strong>Service-continuity evidence:</strong> Worksent's November 2026 <a href="https://worksent.com/blog/rmm-migration-guide-for-msp/">RMM migration guide for MSPs</a> independently emphasizes reconciled inventories, monitoring equivalence, controlled test alerts, PSA ticket routing, representative pilots, rollback, phased waves, and post-migration KPI comparison. This workbook turns those concepts into owner, dependency, evidence, exception, rollback, and decision fields. Worksent did not create, review, or endorse this workbook.</aside>
 <aside class="note"><strong>Relationship disclosure:</strong> Nizlo, a Windows-first RMM and IT-management platform, maintains this workbook. It is designed for use with any source or target RMM and does not claim that any vendor passes its controls.</aside></main>
-<footer class="wrap"><span>Maintained by Nizlo · Updated November 8, 2026</span><span><a href="templates/">Template library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source repository</a></span></footer>
+<footer class="wrap"><span>Maintained by Nizlo · Updated November 27, 2026</span><span><a href="templates/">Template library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source repository</a></span></footer>
 <script src="assets/trial-campaign.js" defer></script>
 </body></html>
