@@ -109,6 +109,12 @@
     <p>Use the <a href="rmm-quote-comparison-worksheet.html">RMM quote comparison worksheet</a> to record the base price, included seats, and renewal terms before comparing the totals.</p>
   </section>
 
+  <section class="formula" aria-labelledby="renewal-payback">
+    <h2 id="renewal-payback">When a lower renewal bill costs more in year one</h2>
+    <p><a href="?example=renewal-payback#comparison-heading">Load the 200-endpoint renewal example</a>. In this illustration, the current stack costs $700 a month, including $200 for ticketing. The proposed RMM and ticketing bundle costs $520 a month, plus $110 for a separate patching tool. Both options assume the same ongoing admin time, which is excluded from this example.</p>
+    <p>The proposed stack saves $70 a month but costs $1,050 to switch. That leaves it $210 more expensive in year one ($8,610 versus $8,400). The one-time cost is recovered after 15 months if the savings hold. Add any period of double billing, remaining contract charges, or difference in admin time when modeling your renewal.</p>
+  </section>
+
   <section class="formula" aria-labelledby="retained-patching">
     <h2 id="retained-patching">Senso IT Ops with a separate patching tool</h2>
     <p><a href="https://senso.cloud/en-gb/pricing/">Senso’s UK pricing</a> lists IT Ops at £3 per managed device per year, excluding VAT. For 240 devices that is £720 per year, equivalent to £60 per month. Confirm the actual term and invoice timing in your quote.</p>
@@ -143,21 +149,30 @@ const money = value => new Intl.NumberFormat("en-US", {
   maximumFractionDigits: 2,
 }).format(value);
 
-if (new URLSearchParams(window.location.search).get("example") === "senso-retained-patching") {
-  currencyField.value = "GBP";
-  const example = { endpoints: 240, technicians: 1, laborRate: 50 };
-  for (const [prefix, name, addOns] of [
-    ["a", "Senso IT Ops with existing patch licensing", 0],
-    ["b", "Senso IT Ops with a new patch quote", 120],
-  ]) {
-    for (const [field, value] of Object.entries({
-      Name: name, Base: 0, Endpoint: 0.25, Included: 0, Technician: 0,
-      Ticketing: 0, Addons: addOns, Hours: 2, OneTime: 400,
-    })) {
-      example[prefix + field] = value;
+const exampleKey = new URLSearchParams(window.location.search).get("example");
+const examples = new Map([
+  ["senso-retained-patching", {
+    currency: "GBP",
+    scope: { endpoints: 240, technicians: 1, laborRate: 50 },
+    a: { Name: "Senso IT Ops with existing patch licensing", Endpoint: 0.25, Hours: 2, OneTime: 400 },
+    b: { Name: "Senso IT Ops with a new patch quote", Endpoint: 0.25, Addons: 120, Hours: 2, OneTime: 400 },
+  }],
+  ["renewal-payback", {
+    currency: "USD",
+    scope: { endpoints: 200, technicians: 1, laborRate: 0 },
+    a: { Name: "Current stack", Endpoint: 2.5, Ticketing: 200 },
+    b: { Name: "Proposed bundle with separate patching", Base: 520, Addons: 110, OneTime: 1050 },
+  }],
+]);
+const example = examples.get(exampleKey);
+if (example) {
+  currencyField.value = example.currency;
+  for (const [id, value] of Object.entries(example.scope)) el[id].value = String(value);
+  for (const prefix of ["a", "b"]) {
+    for (const field of ["Name", "Base", "Endpoint", "Included", "Technician", "Ticketing", "Addons", "Hours", "OneTime"]) {
+      el[prefix + field].value = String(example[prefix][field] ?? 0);
     }
   }
-  for (const [id, value] of Object.entries(example)) el[id].value = String(value);
 }
 function calculate(prefix){
   const endpoints=number("endpoints"),technicians=number("technicians"),laborRate=number("laborRate");
