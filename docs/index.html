@@ -69,7 +69,7 @@
         "name": "Nizlo MSP Operations Resources",
         "description": "Free operational resources for managed service providers and IT teams.",
         "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/",
-        "dateModified": "2026-11-26",
+        "dateModified": "2026-11-27",
         "image": "https://nizlo.com/opengraph-image",
         "isPartOf": {
           "@type": "WebSite",
@@ -1153,6 +1153,14 @@
         font-size: 0.95rem;
       }
 
+      #published-articles .step::before {
+        content: none;
+      }
+      #published-articles .step span {
+        display: block;
+        margin-top: 0.5rem;
+      }
+
       .disclosure {
         margin: 4.5rem 0;
         padding: 1.5rem 0;
@@ -1333,6 +1341,28 @@
           product evaluation; the library's checklists remain public and usable
           without Nizlo.
         </aside>
+      </section>
+
+      <section id="published-articles" class="method" aria-labelledby="published-articles-title">
+        <h2 id="published-articles-title">Published articles and companion worksheets</h2>
+        <p>Read Kip Ecklund’s articles for the reasoning behind the checks, then use the free worksheets to record your own results. Kip is the founder of Nizlo.</p>
+        <div class="steps">
+          <div class="step">
+            <strong>Verify the first RMM agent</strong>
+            <span><a href="https://www.technovice.net/post/rmm-agent-security-first-30-minutes">Read the TechNovice article</a> for the first 30 minutes after installation.</span>
+            <span><a href="rmm-security-evidence-checklist.html#first-30-minutes">Record installer, alert, access, and removal evidence</a>.</span>
+          </div>
+          <div class="step">
+            <strong>Confirm patch exposure is closed</strong>
+            <span><a href="https://www.cybersecurity-insiders.com/patch-counts-do-not-prove-exposure-closure/">Read the Cybersecurity Insiders article</a> on what patch totals miss.</span>
+            <span><a href="windows-patch-exception-review-template.html">Track restarts, rescans, and open patch exceptions</a>.</span>
+          </div>
+          <div class="step">
+            <strong>Document who can manage each endpoint</strong>
+            <span><a href="https://msp-channel.com/blogs/24996-the-rmm-boundary-register-every-msp-should-keep">Read the MSP Channel Insights article</a> on the RMM boundary register.</span>
+            <span><a href="rmm-technician-access-review-matrix.html">Review technician access and customer boundaries</a>.</span>
+          </div>
+        </div>
       </section>
 
       <section id="library" aria-labelledby="library-title">
@@ -2694,7 +2724,7 @@
     </main>
 
     <footer class="wrap">
-      <span>Maintained by Nizlo · Updated November 17, 2026</span>
+      <span>Maintained by Nizlo · Updated November 27, 2026</span>
       <span
         ><a
           href="https://nizlo.com/?utm_source=github_pages&amp;utm_medium=resource_hub&amp;utm_campaign=remote_monitoring_management"
