@@ -1245,6 +1245,7 @@
       "category": "migration",
       "landing_page": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-workbook-template.html",
       "download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-migration-workbook.csv",
+      "example_download_url": "https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-migration-workbook-two-site-example.csv",
       "format": "text/csv",
       "controls": 30,
       "access": "public",
