@@ -2,7 +2,7 @@
 <html lang="en"><head>
 <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Free MSP Client Onboarding Timeline Calculator | Nizlo</title>
-<meta name="description" content="Build a six-phase MSP client onboarding timeline from a start date and phase length. Download the schedule as CSV or calendar events. Free and browser-only." />
+<meta name="description" content="Build a six-phase MSP onboarding timeline that skips weekends and customer blackout dates. Download a CSV or calendar file. Free and browser-only." />
 <meta name="robots" content="index,follow,max-image-preview:large" />
 <link rel="canonical" href="https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-onboarding-timeline-calculator.html" />
 <link rel="alternate" type="application/atom+xml" title="Nizlo MSP Operations Resources" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
@@ -14,9 +14,9 @@
   "@context":"https://schema.org","@type":"WebApplication","name":"MSP Client Onboarding Timeline Calculator",
   "description":"A browser-only calculator for building an adjustable six-phase MSP client onboarding schedule with CSV and calendar exports.",
   "url":"https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-onboarding-timeline-calculator.html",
-  "applicationCategory":"BusinessApplication","operatingSystem":"Any","browserRequirements":"JavaScript","isAccessibleForFree":true,"dateModified":"2026-11-13","inLanguage":"en",
+  "applicationCategory":"BusinessApplication","operatingSystem":"Any","browserRequirements":"JavaScript","isAccessibleForFree":true,"dateModified":"2026-11-28","inLanguage":"en",
   "creator":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},
-  "featureList":["Six onboarding phases","Adjustable phase length","Business-day scheduling","CSV export","Calendar event export"]
+  "featureList":["Six onboarding phases","Adjustable phase length","Business-day scheduling","Optional blackout dates","CSV export","Calendar event export"]
 }</script>
 <script type="application/ld+json">{
   "@context":"https://schema.org","@type":"FAQPage","mainEntity":[
@@ -39,6 +39,7 @@
       <div class="field"><label for="project">Customer or project name <span class="sub">Optional; used only in downloaded files</span></label><input id="project" type="text" maxlength="100" placeholder="New client onboarding" /></div>
       <div class="field"><label for="start">Project start date</label><input id="start" type="date" required /></div>
       <div class="field"><label for="length">Business days per phase</label><input id="length" type="number" min="1" max="30" step="1" value="5" required inputmode="numeric" /></div>
+      <div class="field"><label for="blackouts">Blackout dates <span class="sub" id="blackouts-help">Optional. Enter dates as YYYY-MM-DD, separated by commas or spaces.</span></label><input id="blackouts" type="text" maxlength="1100" aria-describedby="blackouts-help" autocomplete="off" spellcheck="false" /></div>
     </div>
     <div class="actions"><button class="button primary" type="submit">Build timeline</button><button class="button" type="button" id="reset">Reset example</button></div>
   </form>
@@ -49,12 +50,12 @@
   </section>
 </section>
 <aside class="method"><strong>Do not treat dates as acceptance evidence.</strong><ol><li>Confirm written authority, scope, exclusions, customer contacts, provider ownership, and change approval before access work.</li><li>Reconcile the customer inventory, identities, documentation, dependencies, security controls, and service expectations from observed evidence.</li><li>Pilot representative endpoints and workflows before broad deployment.</li><li>Record exceptions, remediation owners, due dates, and retest evidence.</li><li>Require explicit customer and provider acceptance before steady-state support begins.</li></ol><p>If the outgoing MSP misses the handoff date, agree who covers alerts, changes, and restores during the gap before changing the acceptance date. Use the <a href="msp-client-onboarding-evidence-register.html#incumbent-handoff-heading">delayed handoff example</a> to record those responsibilities.</p></aside>
-<section class="faq" aria-labelledby="faq-title"><h2 id="faq-title">MSP onboarding timeline questions</h2><h3>How long should MSP client onboarding take?</h3><p>There is no universal duration. Use the contracted scope, endpoint count, access readiness, customer response time, migration work, and acceptance requirements to set realistic phase lengths.</p><h3>Why use business days?</h3><p>The calculator skips Saturdays and Sundays so the milestones align with a typical working schedule. It does not know local holidays, blackout dates, or customer-specific calendars.</p><h3>Does reaching the last date mean the customer is live?</h3><p>No. A date is a planning checkpoint. Go-live requires the named evidence, resolved or accepted exceptions, operational ownership, and explicit acceptance.</p></section>
+<section class="faq" aria-labelledby="faq-title"><h2 id="faq-title">MSP onboarding timeline questions</h2><h3>How long should MSP client onboarding take?</h3><p>There is no universal duration. Use the contracted scope, endpoint count, access readiness, customer response time, migration work, and acceptance requirements to set realistic phase lengths.</p><h3>Why use business days?</h3><p>The calculator skips Saturdays, Sundays, and any blackout dates you enter. Add local holidays and customer change freezes before exporting the schedule.</p><h3>Does reaching the last date mean the customer is live?</h3><p>No. A date is a planning checkpoint. Go-live requires the named evidence, resolved or accepted exceptions, operational ownership, and explicit acceptance.</p></section>
 <section class="next" aria-label="Related MSP onboarding resources"><article><h2>Collect the evidence</h2><p>Coordinate authority, discovery, access, security, service desk, documentation, readiness, and acceptance.</p><a href="msp-client-onboarding-evidence-register.html">Open the onboarding register →</a></article><article><h2>Assign accountability</h2><p>Map customer and MSP responsibility, accountability, consultation, and notification before work begins.</p><a href="msp-client-onboarding-raci-matrix.html">Open the RACI matrix →</a></article><article><h2>Use the detailed plan</h2><p>Adapt thirty evidence-based milestones across a six-week onboarding project.</p><a href="six-week-msp-onboarding-project-plan.html">Open the project plan →</a></article></section>
 <aside class="note"><strong>Relationship disclosure:</strong> Nizlo, a Windows-first RMM and IT-management platform, maintains this vendor-neutral planning tool. It can be used with any MSP toolset and does not claim that Nizlo or another vendor guarantees an onboarding duration. Use Nizlo's <a href="https://nizlo.com/guides/msp-client-onboarding-checklist?utm_source=github_pages&amp;utm_medium=onboarding_calculator&amp;utm_campaign=msp_client_onboarding_timeline">complete MSP client onboarding guide</a> for the evidence-led workflow behind these phases.</aside>
-<aside class="note"><strong>Scheduling limitation:</strong> this page skips weekends only. It does not account for holidays, customer blackout dates, resource capacity, contract dependencies, or the evidence required to pass a phase.</aside>
+<aside class="note"><strong>Scheduling limitation:</strong> the calculator skips weekends and the blackout dates you enter. Calendar events show each phase as a date range, which can span non-working days. Check resource capacity, contract dependencies, and the evidence required to pass each phase separately.</aside>
 </main>
-<footer class="wrap"><span>Maintained by Nizlo · Updated November 13, 2026</span><span><a href="./">Resource library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source</a></span></footer>
+<footer class="wrap"><span>Maintained by Nizlo · Updated November 28, 2026</span><span><a href="./">Resource library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source</a></span></footer>
 <script>
 (() => {
   const phases = [
@@ -69,28 +70,67 @@
   const start = document.getElementById('start');
   const length = document.getElementById('length');
   const project = document.getElementById('project');
+  const blackouts = document.getElementById('blackouts');
+  const summary = document.getElementById('summary');
   const timeline = document.getElementById('timeline');
   const controls = ['copy','csv','calendar'].map(id => document.getElementById(id));
   const parseDate = value => value ? new Date(`${value}T12:00:00Z`) : null;
   const formatDate = date => new Intl.DateTimeFormat(undefined,{year:'numeric',month:'short',day:'numeric',timeZone:'UTC'}).format(date);
   const isoDate = date => date.toISOString().slice(0,10);
   const addCalendarDays = (date,days) => new Date(date.getTime()+days*86400000);
-  const addBusinessDays = (date,days) => { let result=new Date(date); let added=0; while(added<days){result=addCalendarDays(result,1); if(result.getUTCDay()!==0&&result.getUTCDay()!==6) added++;} return result; };
-  const nextBusinessDay = date => { let result=addCalendarDays(date,1); while(result.getUTCDay()===0||result.getUTCDay()===6) result=addCalendarDays(result,1); return result; };
+  function isBusinessDay(date, excludedDates) {
+    return date.getUTCDay() !== 0 && date.getUTCDay() !== 6 &&
+      !excludedDates.has(isoDate(date));
+  }
+  function nextBusinessDay(date, excludedDates) {
+    let next = addCalendarDays(date, 1);
+    while (!isBusinessDay(next, excludedDates)) {
+      next = addCalendarDays(next, 1);
+    }
+    return next;
+  }
   let schedule = [];
-  function calculate(event){
-    if(event) event.preventDefault();
-    const startDate=parseDate(start.value); const days=Number(length.value);
-    if(!startDate||!Number.isInteger(days)||days<1||days>30) return;
-    schedule=[]; let cursor=new Date(startDate); while(cursor.getUTCDay()===0||cursor.getUTCDay()===6) cursor=addCalendarDays(cursor,1);
-    phases.forEach(([name,outcome],index)=>{ const end=addBusinessDays(cursor,days-1); schedule.push({index:index+1,name,outcome,start:new Date(cursor),end}); cursor=nextBusinessDay(end); });
+  function calculate(event) {
+    if (event) event.preventDefault();
+    const startDate = parseDate(start.value);
+    const days = Number(length.value);
+    const excludedDates = new Set(blackouts.value.split(/[\s,]+/).filter(Boolean));
+    const invalidDate = [...excludedDates].find(value => {
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return true;
+      const date = parseDate(value);
+      return Number.isNaN(date.getTime()) || isoDate(date) !== value;
+    });
+    if (!startDate || Number.isNaN(startDate.getTime()) ||
+        !Number.isInteger(days) || days < 1 || days > 30 || invalidDate) {
+      schedule = [];
+      timeline.replaceChildren();
+      controls.forEach(button => button.disabled = true);
+      blackouts.setAttribute('aria-invalid', invalidDate ? 'true' : 'false');
+      summary.textContent = invalidDate
+        ? 'Check the blackout dates. Use valid YYYY-MM-DD dates separated by commas or spaces.'
+        : 'Choose a start date and enter 1 to 30 business days per phase.';
+      return;
+    }
+    blackouts.removeAttribute('aria-invalid');
+    let cursor = isBusinessDay(startDate, excludedDates)
+      ? startDate
+      : nextBusinessDay(startDate, excludedDates);
+    schedule = phases.map(([name, outcome], index) => {
+      let end = cursor;
+      for (let day = 1; day < days; day++) {
+        end = nextBusinessDay(end, excludedDates);
+      }
+      const item = { index: index + 1, name, outcome, start: cursor, end };
+      cursor = nextBusinessDay(end, excludedDates);
+      return item;
+    });
     timeline.replaceChildren(...schedule.map(item=>{ const article=document.createElement('article'); article.className='phase'; const num=document.createElement('span'); num.className='num'; num.textContent=item.index; const body=document.createElement('div'); const h=document.createElement('h3'); h.textContent=item.name; const p=document.createElement('p'); p.textContent=item.outcome; body.append(h,p); const dates=document.createElement('div'); dates.className='dates'; const strong=document.createElement('strong'); strong.textContent=formatDate(item.start); const span=document.createElement('span'); span.textContent=`through ${formatDate(item.end)}`; dates.append(strong,span); article.append(num,body,dates); return article; }));
-    document.getElementById('summary').textContent=`${days} business day${days===1?'':'s'} per phase · ${formatDate(schedule[0].start)} through ${formatDate(schedule[5].end)} · weekends skipped`;
+    summary.textContent=`${days} business day${days===1?'':'s'} per phase · ${formatDate(schedule[0].start)} through ${formatDate(schedule[5].end)} · weekends and entered blackout dates skipped`;
     controls.forEach(button=>button.disabled=false);
   }
-  function setExample(){ const today=new Date(); const date=new Date(Date.UTC(today.getUTCFullYear(),today.getUTCMonth(),today.getUTCDate(),12)); while(date.getUTCDay()===0||date.getUTCDay()===6) date.setUTCDate(date.getUTCDate()+1); start.value=isoDate(date); length.value='5'; project.value=''; calculate(); }
+  function setExample(){ const today=new Date(); const date=new Date(Date.UTC(today.getUTCFullYear(),today.getUTCMonth(),today.getUTCDate(),12)); while(date.getUTCDay()===0||date.getUTCDay()===6) date.setUTCDate(date.getUTCDate()+1); start.value=isoDate(date); length.value='5'; project.value=''; blackouts.value=''; calculate(); }
   function download(contents,type,name){ const blob=new Blob([contents],{type}); const link=document.createElement('a'); link.href=URL.createObjectURL(blob); link.download=name; link.click(); setTimeout(()=>URL.revokeObjectURL(link.href),1000); }
-  form.addEventListener('submit',calculate); [start,length].forEach(input=>input.addEventListener('change',calculate)); document.getElementById('reset').addEventListener('click',setExample);
+  form.addEventListener('submit',calculate); [start,length,blackouts].forEach(input=>input.addEventListener('change',calculate)); document.getElementById('reset').addEventListener('click',setExample);
   document.getElementById('copy').addEventListener('click',async()=>{ if(!schedule.length)return; const name=project.value.trim()||'MSP client onboarding'; const text=[`${name} timeline`,...schedule.map(item=>`${item.index}. ${item.name}: ${isoDate(item.start)} to ${isoDate(item.end)} — ${item.outcome}`),'','Planning dates do not replace evidence, exception ownership, or explicit go-live acceptance.'].join('\n'); await navigator.clipboard.writeText(text); const button=document.getElementById('copy'); button.textContent='Copied'; setTimeout(()=>button.textContent='Copy timeline',1600); });
   document.getElementById('csv').addEventListener('click',()=>{ if(!schedule.length)return; const escape=value=>`"${String(value).replace(/"/g,'""')}"`; const rows=[['phase','phase_name','start_date','end_date','required_outcome','customer_owner','msp_owner','status','evidence_link'],...schedule.map(item=>[item.index,item.name,isoDate(item.start),isoDate(item.end),item.outcome,'','','Not started',''])]; download(rows.map(row=>row.map(escape).join(',')).join('\r\n'),'text/csv','msp-client-onboarding-timeline.csv'); });
   document.getElementById('calendar').addEventListener('click',()=>{ if(!schedule.length)return; const name=(project.value.trim()||'MSP client onboarding').replace(/[\\,;]/g,' '); const stamp=new Date().toISOString().replace(/[-:]/g,'').replace(/\.\d{3}/,''); const compact=date=>isoDate(date).replace(/-/g,''); const events=schedule.map(item=>`BEGIN:VEVENT\r\nUID:msp-onboarding-${stamp}-${item.index}@nizlo.com\r\nDTSTAMP:${stamp}\r\nDTSTART;VALUE=DATE:${compact(item.start)}\r\nDTEND;VALUE=DATE:${compact(addCalendarDays(item.end,1))}\r\nSUMMARY:${name}: ${item.index}. ${item.name}\r\nDESCRIPTION:${item.outcome}\r\nEND:VEVENT`).join('\r\n'); download(`BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Nizlo//MSP Onboarding Timeline Calculator//EN\r\nCALSCALE:GREGORIAN\r\n${events}\r\nEND:VCALENDAR\r\n`,'text/calendar','msp-client-onboarding-timeline.ics'); });
