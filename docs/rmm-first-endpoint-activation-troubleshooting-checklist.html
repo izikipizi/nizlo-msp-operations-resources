@@ -41,6 +41,7 @@
 <section class="note" aria-labelledby="choose-installer-stage">
 <h2 id="choose-installer-stage">Where did setup stop?</h2>
 <ul>
+<li><a href="#agent-or-technician-app">Nizlo Remote opened, but the device is missing</a></li>
 <li><a href="#windows-installer-signing">Nizlo is still preparing the Windows installer</a></li>
 <li><a href="#installer-warning-evidence">Chrome or Windows showed a warning</a></li>
 <li><a href="#resume-prepared-installer">The download started or the file is ready</a></li>
@@ -53,6 +54,11 @@
 <div class="actions"><a class="button primary" href="#checklist">Start the checklist</a><a data-trial-campaign class="button" href="rmm-trial-first-24-hours-plan.html">Return to the first-day activation plan</a><a class="button" href="rmm-agent-certificate-tls-enrollment-troubleshooting-checklist.html">Trace certificate or TLS enrollment failures</a><a class="button" href="rmm-first-endpoint-acceptance-checklist.html">Use the acceptance gates</a><a class="button" href="rmm-deployment-readiness-template.html">Plan the implementation rollout</a><a class="button" href="rmm-migration-workbook-template.html">Track a migration wave</a><a data-trial-campaign class="button" href="https://nizlo.com/guides/rmm-agent-installation-troubleshooting?utm_source=github_pages&amp;utm_medium=authority_bridge&amp;utm_campaign=rmm_agent_installation_troubleshooting&amp;utm_content=first_endpoint_activation">Trace download, install, service, and check-in failures</a><a data-trial-campaign class="button" href="https://nizlo.com/guides/rmm-deployment-checklist?utm_source=github_pages&amp;utm_medium=authority_bridge&amp;utm_campaign=rmm_deployment_checklist&amp;utm_content=first_endpoint_troubleshooting">Continue from first endpoint to rollout</a><a class="button" href="https://nizlo.com/guides/rmm-for-new-msps?utm_source=github_pages&amp;utm_medium=authority_bridge&amp;utm_campaign=rmm_for_new_msps&amp;utm_content=first_endpoint_troubleshooting">Read the new-MSP RMM guide</a><a data-trial-campaign class="button" href="https://nizlo.com/solutions/rmm-free-trial?utm_source=github_pages&amp;utm_medium=activation_guide&amp;utm_campaign=first_endpoint_troubleshooting">Run a controlled 14-day RMM trial</a></div>
 <section class="status" aria-label="Activation evidence chain"><div><strong>1. Downloaded</strong>Correct installer obtained</div><div><strong>2. Executed</strong>Started with required authority</div><div><strong>3. Installed</strong>Expected service exists</div><div><strong>4. Enrolled</strong>Correct tenant accepted identity</div><div><strong>5. Reporting</strong>Fresh telemetry is visible</div></section>
 <section id="checklist">
+<article aria-labelledby="agent-or-technician-app">
+<h2 id="agent-or-technician-app">Nizlo Remote opened, but the device is missing</h2>
+<p>On Windows, Nizlo Remote is the app a technician uses to connect from their own computer. Installing it does not enroll that computer as a managed endpoint. The <a data-trial-campaign href="https://nizlo.com/downloads?utm_source=github_pages&amp;utm_medium=activation_guide&amp;utm_campaign=first_endpoint_troubleshooting&amp;utm_content=agent_vs_technician_app">official downloads page explains both roles</a>.</p>
+<p>On the authorized device you want to manage, open <a href="https://app.nizlo.com/admin/enrollment">Enrollment in your existing workspace</a>. Choose <strong>Install agent</strong>, check the customer, site and platform, then <a href="#resume-prepared-installer">resume the installer and verify the first check-in</a>.</p>
+</article>
 <article aria-labelledby="resume-prepared-installer">
 <h2 id="resume-prepared-installer">Prepared an installer? Resume on the device you want to manage</h2>
 <p>Preparing or downloading the installer leaves the device list unchanged until the agent runs on the target computer and checks in.</p>
