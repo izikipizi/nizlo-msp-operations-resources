@@ -372,15 +372,26 @@ for (const path of htmlFiles) {
 
     for (const match of source.matchAll(/href="([^"]+)"/g)) {
       const href = match[1];
-      if (/^(?:https?:|mailto:|tel:|#|data:|javascript:)/.test(href)) continue;
+      if (/^(?:https?:|mailto:|tel:|data:|javascript:)/.test(href)) continue;
       const cleanHref = href.split(/[?#]/, 1)[0];
-      if (!cleanHref) continue;
-      let target = resolve(dirname(path), cleanHref);
+      let target = cleanHref ? resolve(dirname(path), cleanHref) : path;
       if (cleanHref.endsWith("/")) target = join(target, "index.html");
-      try {
-        if (!(await stat(target)).isFile()) throw new Error();
-      } catch {
-        throw new Error(`${relativePath}: broken internal link ${href}`);
+      if (target !== path) {
+        try {
+          if (!(await stat(target)).isFile()) throw new Error();
+        } catch {
+          throw new Error(`${relativePath}: broken internal link ${href}`);
+        }
+      }
+
+      const hashStart = href.indexOf("#");
+      if (hashStart < 0 || hashStart === href.length - 1 || !target.endsWith(".html"))
+        continue;
+      const fragment = decodeURIComponent(href.slice(hashStart + 1));
+      const targetSource = target === path ? source : await readFile(target, "utf8");
+      const anchors = targetSource.matchAll(/\sid=(?:"([^"]+)"|'([^']+)')/g);
+      if (![...anchors].some((anchor) => (anchor[1] ?? anchor[2]) === fragment)) {
+        throw new Error(`${relativePath}: missing internal anchor ${href}`);
       }
     }
   } catch (error) {
