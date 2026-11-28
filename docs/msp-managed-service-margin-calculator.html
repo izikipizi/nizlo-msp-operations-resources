@@ -19,7 +19,7 @@
   "description":"A browser-only calculator for modeling managed-service revenue, direct delivery cost, contribution margin, break-even price, and target-margin endpoint pricing.",
   "url":"https://izikipizi.github.io/nizlo-msp-operations-resources/msp-managed-service-margin-calculator.html",
   "applicationCategory":"BusinessApplication","operatingSystem":"Any","browserRequirements":"JavaScript",
-  "isAccessibleForFree":true,"dateModified":"2026-11-26","inLanguage":"en",
+  "isAccessibleForFree":true,"dateModified":"2026-11-28","inLanguage":"en",
   "creator":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},
   "featureList":["Per-endpoint service revenue","Client base fees","RMM and security tool cost","Delivery labor","Contribution margin","Break-even price","Target-margin price","Copyable results"]
 }</script>
@@ -43,9 +43,11 @@
     <h2 id="first-client-heading">Price a repair shop’s first managed-service customer</h2>
     <p>In this fictional pilot, a shop agrees to monitor ten authorized business workstations, review alerts, and check patches during an agreed window. Emergency callouts and project work are quoted separately.</p>
     <p>Half an hour of monthly labor at $60 per hour plus $18 in allocated tools costs $48 per month. An $80 monthly base fee leaves $32 of modeled contribution, or 40%, before unentered costs. If labor doubles to one hour, cost rises to $78 and the same quote leaves $2. Use the pilot to measure recurring work and include any admin, coverage, or shared costs your service needs to recover.</p>
+    <p>If this is your only managed client and you need a new RMM workspace, charge the full monthly subscription to the scenario. With <a href="https://nizlo.com/pricing?utm_source=github_pages&amp;utm_medium=resource&amp;utm_campaign=computer_repair_rmm&amp;utm_content=first_workspace_pricing">Nizlo Core at $59 per month</a>, $18 for separate tools, and $30 of labor, monthly cost is $107. An $80 customer fee leaves a $27 monthly shortfall before other costs.</p>
     <div class="actions">
-      <button class="button" type="button" id="load-first-client">Use the 10-device example</button>
-      <a class="button" href="https://nizlo.com/guides/rmm-for-computer-repair-shops?utm_source=github_pages&amp;utm_medium=resource&amp;utm_campaign=computer_repair_rmm&amp;utm_content=first_client_margin">Plan your repair shop pilot</a>
+      <button class="button" type="button" id="load-first-client">Load the shared-tool example</button>
+      <button class="button" type="button" id="load-first-workspace">Load the new-workspace example</button>
+      <a class="button" href="https://nizlo.com/solutions/rmm-for-computer-repair-shops?utm_source=github_pages&amp;utm_medium=resource&amp;utm_campaign=computer_repair_rmm&amp;utm_content=first_client_margin">Plan your repair shop pilot</a>
     </div>
     <p class="hint">Using the example fills in the calculator below. You can change every input.</p>
   </section>
@@ -69,10 +71,10 @@
     <div class="result"><span>Recurring service revenue</span><strong id="revenue">—</strong></div><div class="result"><span>Included monthly delivery cost</span><strong id="cost">—</strong></div><div class="result good"><span>Modeled monthly contribution</span><strong id="contribution">—</strong></div><div class="result" id="marginCard"><span>Modeled contribution margin</span><strong id="margin">—</strong></div><div class="result"><span>Included cost / endpoint</span><strong id="costPerEndpoint">—</strong></div><div class="result"><span>Break-even endpoint price</span><strong id="breakEven">—</strong></div><div class="result good"><span>Endpoint price for target margin</span><strong id="targetPrice">—</strong></div><div class="result"><span>Difference from current price</span><strong id="priceGap">—</strong></div>
   </div><div class="actions"><button class="button" type="button" id="copy">Copy pricing summary</button></div><p class="hint" id="status" role="status" aria-live="polite"></p></section>
   <section class="formula"><h2>Published formulas</h2><p><code>Revenue = endpoints × endpoint price + clients × client base fee</code></p><p><code>Included cost = endpoints × (RMM + security + other device tools) + endpoints × delivery minutes ÷ 60 × loaded labor rate + clients × client overhead + fixed costs</code></p><p><code>Modeled margin = (revenue − included cost) ÷ revenue</code></p><p><code>Break-even endpoint price = (included cost − client base-fee revenue) ÷ endpoints</code></p><p><code>Target endpoint price = (included cost ÷ (1 − target margin) − client base-fee revenue) ÷ endpoints</code></p></section>
-  <aside class="notice"><h2>This is a pricing model, not accounting or financial advice.</h2><p>Accounting definitions of gross margin and direct cost differ. This page reports a modeled contribution margin using only the costs entered. It does not include taxes, sales and marketing, bad debt, churn, utilization changes, escalation spikes, after-hours work, warranty obligations, financing, or scope creep unless you include them in an input.</p><p><strong>Relationship disclosure:</strong> Nizlo maintains this vendor-neutral tool. It does not prefill Nizlo pricing or claim that Nizlo—or any other vendor—will produce the margin shown.</p></aside>
+  <aside class="notice"><h2>This is a pricing model, not accounting or financial advice.</h2><p>Accounting definitions of gross margin and direct cost differ. This page reports a modeled contribution margin using only the costs entered. It does not include taxes, sales and marketing, bad debt, churn, utilization changes, escalation spikes, after-hours work, warranty obligations, financing, or scope creep unless you include them in an input.</p><p><strong>Relationship disclosure:</strong> Nizlo maintains this calculator. The new-workspace example uses Nizlo’s published Core rate. Replace it with your own costs to evaluate any vendor.</p></aside>
   <section class="related"><h2>Continue with written evidence</h2><div class="related-grid"><p><a href="msp-technician-capacity-calculator.html">Model technician capacity</a><br />Convert measured ticket demand, handling time, non-ticket work, rework, and headroom into a required-FTE estimate.</p><p><a href="rmm-ticketing-stack-cost-calculator.html">Compare complete stack costs</a><br />Normalize platform, endpoint, technician, ticketing, add-on, labor, implementation, and multi-year costs.</p><p><a href="rmm-quote-comparison-worksheet.html">Compare actual vendor quotes</a><br />Record minimums, included quantities, renewal terms, cancellation, and exit costs.</p><p><a href="https://nizlo.com/pricing?utm_source=github_pages&amp;utm_medium=external_resource&amp;utm_campaign=msp_service_margin_calculator">Check Nizlo's disclosed pricing</a><br />Use the public plan prices as one dated input; verify scope and fit separately.</p><p><a href="https://nizlo.com/guides/rmm-pricing-models?utm_source=github_pages&amp;utm_medium=external_resource&amp;utm_campaign=msp_service_margin_calculator">Compare RMM pricing models</a><br />Separate per-endpoint, per-technician, flat-rate, minimum, and add-on structures.</p><p><a href="rmm-calculators.html">Browse all calculators</a><br />Continue with migration ROI, quote normalization, public pricing, and renewal deadlines.</p></div></section>
 </main>
-<footer class="wrap"><span>Maintained by Nizlo · Updated November 26, 2026</span><span><a href="./">Resource library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source</a></span></footer>
+<footer class="wrap"><span>Maintained by Nizlo · Updated November 28, 2026</span><span><a href="./">Resource library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source</a></span></footer>
 <script>
 const ids=["endpoints","clients","endpointPrice","clientBase","targetMargin","rmmCost","securityCost","otherDeviceCost","minutesPerEndpoint","laborRate","clientOverhead","fixedCost"];const el=Object.fromEntries(ids.map(id=>[id,document.getElementById(id)]));const num=id=>Math.max(0,Number.parseFloat(el[id].value)||0);const money=value=>new Intl.NumberFormat("en-US",{style:"currency",currency:"USD",maximumFractionDigits:2}).format(value);let latest={};
 function update(){const endpoints=Math.max(1,num("endpoints")),clients=Math.max(1,num("clients")),endpointPrice=num("endpointPrice"),clientBase=num("clientBase"),target=Math.min(99.9,num("targetMargin"))/100;const deviceTools=endpoints*(num("rmmCost")+num("securityCost")+num("otherDeviceCost"));const labor=endpoints*num("minutesPerEndpoint")/60*num("laborRate");const clientCosts=clients*num("clientOverhead"),fixed=num("fixedCost"),cost=deviceTools+labor+clientCosts+fixed;const baseRevenue=clients*clientBase,revenue=endpoints*endpointPrice+baseRevenue,contribution=revenue-cost,margin=revenue?contribution/revenue:null;const breakEven=(cost-baseRevenue)/endpoints,targetPrice=(cost/(1-target)-baseRevenue)/endpoints,gap=targetPrice-endpointPrice;latest={endpoints,clients,endpointPrice,clientBase,target,deviceTools,labor,clientCosts,fixed,cost,baseRevenue,revenue,contribution,margin,breakEven,targetPrice,gap};document.getElementById("revenue").textContent=money(revenue);document.getElementById("cost").textContent=money(cost);document.getElementById("contribution").textContent=money(contribution);document.getElementById("margin").textContent=margin===null?"Not available":`${(margin*100).toFixed(1)}%`;document.getElementById("costPerEndpoint").textContent=money(cost/endpoints);document.getElementById("breakEven").textContent=money(Math.max(0,breakEven));document.getElementById("targetPrice").textContent=money(Math.max(0,targetPrice));document.getElementById("priceGap").textContent=`${gap>0?"Raise ":gap<0?"Above target by ":"On target "}${money(Math.abs(gap))}`;document.getElementById("marginCard").className=`result ${margin!==null&&margin>=target?"good":"warn"}`;}
@@ -91,12 +93,18 @@ const firstClientExample = {
   clientOverhead: 0,
   fixedCost: 0,
 };
-document.getElementById("load-first-client").addEventListener("click", () => {
-  for (const [id, value] of Object.entries(firstClientExample)) {
+function loadExample(example) {
+  for (const [id, value] of Object.entries(example)) {
     el[id].value = String(value);
   }
   update();
   el.endpoints.focus();
-});
+}
+document.getElementById("load-first-client").addEventListener("click", () =>
+  loadExample(firstClientExample)
+);
+document.getElementById("load-first-workspace").addEventListener("click", () =>
+  loadExample({ ...firstClientExample, fixedCost: 59 })
+);
 document.querySelectorAll("input").forEach(input=>input.addEventListener("input",update));document.getElementById("copy").addEventListener("click",async()=>{try{await navigator.clipboard.writeText(summary());document.getElementById("status").textContent="Pricing summary copied."}catch{document.getElementById("status").textContent="Copy was blocked. Select and copy the visible results instead."}});update();
 </script></body></html>
