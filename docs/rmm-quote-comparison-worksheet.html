@@ -231,6 +231,7 @@
         </ul>
         <button type="submit" disabled>Compare costs</button>
         <p><output id="hosting-cost-result" aria-live="polite"></output></p>
+        <p id="hosting-cost-sharing" hidden><a id="hosting-cost-share">Open shareable comparison</a>. The link includes the costs and operator time you entered.</p>
       </fieldset>
     </form>
     <p>Use a short pilot to replace guessed operator time. Time one recurring maintenance task on each option and multiply the hands-on minutes by how often you expect to do it. For example, a 15-minute weekly health check and a 30-minute monthly restore drill add up to about 90 operator minutes in a four-week month. Record unattended wait time and one-time setup separately. Use the <a data-trial-campaign href="rmm-trial-first-24-hours-plan.html">first-day RMM pilot plan</a> to choose one representative device and agree on what to measure before you install.</p>
@@ -244,8 +245,18 @@
   const hostingResult = document.getElementById("hosting-cost-result");
   const dollars = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" });
   const minutes = new Intl.NumberFormat("en-US", { maximumFractionDigits: 2 });
-  hostingForm.addEventListener("submit", (event) => {
-    event.preventDefault();
+  const shareContainer = document.getElementById("hosting-cost-sharing");
+  const shareLink = document.getElementById("hosting-cost-share");
+  const hostingInputs = {
+    selfFees: "hosting_self_fees",
+    selfMinutes: "hosting_self_minutes",
+    hostedFees: "hosting_vendor_fees",
+    hostedMinutes: "hosting_vendor_minutes",
+    rate: "hosting_hourly_rate",
+  };
+  const incomingUrl = new URL(window.location.href);
+  function showHostingComparison() {
+    shareContainer.hidden = true;
     const { selfFees, selfMinutes, hostedFees, hostedMinutes, rate } = hostingForm.elements;
     const perMinute = rate.valueAsNumber / 60;
     const selfHosted = selfFees.valueAsNumber + selfMinutes.valueAsNumber * perMinute;
@@ -271,8 +282,44 @@
         ? "The estimated monthly costs are equal to the cent."
         : `${lowerCost} costs ${dollars.format(Math.abs(difference) / 100)} less per month at these inputs.`;
     hostingResult.textContent = `Self-hosted: ${dollars.format(selfCents / 100)}/month. Vendor-hosted: ${dollars.format(vendorCents / 100)}/month. ${comparison} ${crossover}`;
+    const shareUrl = new URL(incomingUrl.pathname, incomingUrl.origin);
+    for (const key of ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term"]) {
+      const value = incomingUrl.searchParams.get(key);
+      if (value) shareUrl.searchParams.set(key, value);
+    }
+    for (const [field, key] of Object.entries(hostingInputs)) {
+      shareUrl.searchParams.set(key, String(hostingForm.elements[field].valueAsNumber));
+    }
+    shareUrl.hash = "self-hosted-rmm-operator-cost";
+    shareLink.href = shareUrl.href;
+    shareContainer.hidden = false;
+  }
+  hostingForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    showHostingComparison();
+  });
+  hostingForm.addEventListener("input", () => {
+    shareContainer.hidden = true;
+    hostingResult.textContent = "";
   });
   hostingForm.querySelector('button[type="submit"]').disabled = false;
+
+  const inputsFromLink = Object.entries(hostingInputs).map(([field, key]) => {
+    const values = incomingUrl.searchParams.getAll(key);
+    const [value] = values;
+    const number = Number(value);
+    const input = hostingForm.elements[field];
+    return {
+      input,
+      usable: values.length === 1 && value.trim() !== "" &&
+        Number.isFinite(number) && number >= Number(input.min),
+      number,
+    };
+  });
+  if (inputsFromLink.every(({ usable }) => usable)) {
+    for (const { input, number } of inputsFromLink) input.valueAsNumber = number;
+    showHostingComparison();
+  }
 </script>
 <script src="assets/trial-campaign.js" defer></script>
 </body></html>
