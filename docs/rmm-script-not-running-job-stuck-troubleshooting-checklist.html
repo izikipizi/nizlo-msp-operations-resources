@@ -40,6 +40,15 @@
       </div>
       <section class="use"><h2>Definition of a completed RMM automation job</h2><p>A job is complete only when the intended endpoint state—not merely the console label—is verified for the correct tenant and durable device identity; every target is reconciled; privileged activity is attributable to an actor and script version; temporary access and artifacts are removed; and failures, exclusions, unknowns, and partial changes have owners and dated next actions.</p></section>
       <section class="use"><h2>When the job runs but the app fails to install</h2><p>If the endpoint ran the package, collect the installer exit code and log. Check any pending restart and confirm the expected app version on the device. Use the <a href="rmm-software-deployment-install-failed-troubleshooting-checklist.html">software deployment troubleshooting checklist</a> to distinguish installer failure from an incorrect detection rule.</p></section>
+      <section class="use" id="restart-during-job">
+        <h2>Check the endpoint before retrying a job interrupted by a restart</h2>
+        <p>Suppose a package job starts at 02:03 UTC, its last progress arrives at 02:06, and the next endpoint check-in is at 02:14. A boot time inside that gap supports a restart during the job. It leaves open whether the package finished or whether the job lost its result.</p>
+        <ol>
+          <li>Compare the job window with the Windows boot time and System log on one authorized endpoint. Event 1074 can identify a restart request. Events 41 and 6008 flag an unclean shutdown. Use the <a href="https://learn.microsoft.com/en-us/troubleshoot/windows-client/performance/event-id-41-restart">Microsoft guidance on interpreting event 41</a> before assigning a cause.</li>
+          <li>Check the installer log, expected version, and detection rule on the device. If the expected version is present and healthy, record the endpoint evidence and investigate the missing job result before scheduling another install.</li>
+          <li>If installation is incomplete, record the partial state and confirm the next action is safe to repeat. Retest on one authorized device in a maintenance window with a clear stop condition.</li>
+        </ol>
+      </section>
       <section class="use" id="dns-drift-pilot">
         <h2>Before retrying a DNS automation job, check the active adapter</h2>
         <p>A job can finish successfully on a disconnected Ethernet adapter while the device still uses Wi-Fi or a VPN. Use Microsoft's <a href="https://learn.microsoft.com/en-us/powershell/module/dnsclient/get-dnsclientserveraddress?view=windowsserver2025-ps">DNS client address reference</a> to compare the intended interface and address family with the resolver configuration on one authorized pilot device.</p>
