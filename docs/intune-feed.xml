@@ -6,11 +6,27 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/intune-feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-remote-support-vs-mdm-vs-endpoint-management.html" />
-  <updated>2026-11-28T08:28:54Z</updated>
+  <updated>2026-11-28T10:44:54Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
+  <entry>
+    <title>Test diagnostics consent in Microsoft Intune Remote Help</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-session-authorization-checklist.html#intune-remote-help-diagnostics</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-session-authorization-checklist.html?utm_source=nizlo_intune_feed&amp;utm_medium=rss&amp;utm_campaign=intune_field_notes#intune-remote-help-diagnostics" />
+    <link rel="related" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-session-authorization-checklist.html?utm_source=nizlo_intune_feed&amp;utm_medium=rss&amp;utm_campaign=intune_field_notes&amp;utm_content=remote_help_snapshot#remote-help-snapshot-evidence" />
+    <updated>2026-11-28T10:44:54Z</updated>
+    <category term="intune" />
+    <category term="remote-help" />
+    <summary>Use an approved test device to check what happens when the user declines or stops optional diagnostics sharing during an attended support session.</summary>
+    <content type="html">
+      &lt;p&gt;Use an authorized Windows test device and a sample helpdesk ticket to verify the device diagnostics prompt during an attended Remote Help session.&lt;/p&gt;
+      &lt;ol&gt;&lt;li&gt;Decline diagnostics and confirm that remote assistance continues.&lt;/li&gt;&lt;li&gt;Allow diagnostics and confirm that the end user can view the same report as the helper.&lt;/li&gt;&lt;li&gt;Stop sharing and confirm that the helper is notified and cannot refresh the report while sharing is off. Handle data already saved under the client's retention policy.&lt;/li&gt;&lt;/ol&gt;
+      &lt;p&gt;Record the consent outcome, test time, technician, and any approved retention exceptions. Keep the raw report out of the ticket unless the client requires it. If the prompt is unavailable, record the tenant and app version and retest after rollout. See &lt;a href="https://learn.microsoft.com/en-us/intune/remote-help/start-session#attended-support"&gt;Microsoft's instructions for attended support&lt;/a&gt;.&lt;/p&gt;
+      &lt;p&gt;Example ticket note: Consent started at 14:03 UTC and ended at 14:08 UTC. The 14:05 snapshot included memory use but did not report network use. Check that the helper cannot refresh after consent is withdrawn. Record the missing field as not reported and leave the raw report out of the ticket unless retention is authorized.&lt;/p&gt;
+    </content>
+  </entry>
   <entry>
     <title>Budget for Intune and RMM in the same stack</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html#intune-rmm-budget</id>
@@ -75,19 +91,5 @@
     <category term="intune" />
     <category term="device-management" />
     <summary>Assign separate owners for Intune retirement, RMM agent removal, and identity revocation. Record which actions were verified, which remain pending, and who owns the follow-up.</summary>
-  </entry>
-  <entry>
-    <title>Test diagnostics consent in Microsoft Intune Remote Help</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-session-authorization-checklist.html#intune-remote-help-diagnostics</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-session-authorization-checklist.html?utm_source=nizlo_intune_feed&amp;utm_medium=rss&amp;utm_campaign=intune_field_notes#intune-remote-help-diagnostics" />
-    <updated>2026-11-28T07:18:22Z</updated>
-    <category term="intune" />
-    <category term="remote-help" />
-    <summary>Use an approved test device to check what happens when the user declines or stops optional diagnostics sharing during an attended support session.</summary>
-    <content type="html">
-      &lt;p&gt;Use an authorized Windows test device and a sample helpdesk ticket to verify the device diagnostics prompt during an attended Remote Help session.&lt;/p&gt;
-      &lt;ol&gt;&lt;li&gt;Decline diagnostics and confirm that remote assistance continues.&lt;/li&gt;&lt;li&gt;Allow diagnostics and confirm that the end user can view the same report as the helper.&lt;/li&gt;&lt;li&gt;Stop sharing and confirm that the helper is notified and cannot refresh the report while sharing is off. Handle data already saved under the client's retention policy.&lt;/li&gt;&lt;/ol&gt;
-      &lt;p&gt;Record the consent outcome, test time, technician, and any approved retention exceptions. Keep the raw report out of the ticket unless the client requires it. If the prompt is unavailable, record the tenant and app version and retest after rollout. See &lt;a href="https://learn.microsoft.com/en-us/intune/remote-help/start-session#attended-support"&gt;Microsoft's instructions for attended support&lt;/a&gt;.&lt;/p&gt;
-    </content>
   </entry>
 </feed>
