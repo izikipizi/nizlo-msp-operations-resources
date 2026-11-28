@@ -16,7 +16,7 @@
 "@context":"https://schema.org","@type":"Dataset","name":"Windows patch exception review and closure template",
 "description":"A vendor-neutral CSV with eighteen controls for recording patch exception scope, risk, approval, compensating controls, monitoring, expiry, retest, and closure evidence.",
 "url":"https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-exception-review-template.html",
-"creator":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},"dateModified":"2026-11-26","isAccessibleForFree":true,"inLanguage":"en",
+"creator":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},"dateModified":"2026-11-28","isAccessibleForFree":true,"inLanguage":"en",
 "keywords":["Windows patch exception template","patch waiver register","patch deferral checklist","MSP patch management","patch exception expiry"],
 "variableMeasured":["Phase","Control ID","Control","Owner","Status","Evidence","Exception owner","Due date","Risk","Notes"],
 "distribution":{"@type":"DataDownload","contentUrl":"https://izikipizi.github.io/nizlo-msp-operations-resources/templates/windows-patch-exception-review.csv","encodingFormat":"text/csv"}}
@@ -35,6 +35,11 @@
 <p>Report 10 of 12 verified closures. Keep the other two in scope and record their pending restarts, last evidence timestamps, accountable owner, and scheduled restart and retest. If a device misses the window, escalate to the risk owner. Close each record only after fresh evidence confirms the expected build or patch state. If the job stopped reporting during its approved restart, <a href="rmm-script-not-running-job-stuck-troubleshooting-checklist.html#restart-during-job">check the restart and endpoint evidence</a> before recording a retry.</p>
 <p>For the rationale behind separating installed from verified, see Nizlo founder Kip Ecklund's <a href="https://www.cybersecurity-insiders.com/patch-counts-do-not-prove-exposure-closure/">patch exposure article in Cybersecurity Insiders</a>.</p>
 </section>
+<section class="note" aria-labelledby="patch-exception-client-review">
+<h2 id="patch-exception-client-review">Bring unresolved exceptions to the client review</h2>
+<p>Group the open rows by the decision needed. For a pending restart, name who can approve the window. For a stale device, name who will confirm its inventory status and collect a fresh check-in. A stale device stays in scope until the inventory owner confirms its disposition.</p>
+<p>In the worksheet, use <code>exception_owner</code> and <code>due_date</code> for the decision owner and deadline. In <code>evidence</code>, record the last scan or check-in timestamp. Update the verified count only after a fresh scan confirms the result or the authorized inventory owner approves a scope change. Use the <a href="msp-qbr-agenda-client-report-checklist.html?utm_source=github_pages&amp;utm_medium=resource&amp;utm_campaign=qbr_patch_decisions&amp;utm_content=patch_exception_client_review#qbr-patch-decisions">worked quarterly-review example</a> to present the two decisions together.</p>
+</section>
 <section class="note" aria-labelledby="dotnet-runtime-exception">
 <h2 id="dotnet-runtime-exception">Worked example: an old .NET runtime stays after an upgrade</h2>
 <p>A fresh scan still flags an unsupported shared runtime after the team installs a supported .NET version. Record the exact runtime, version, architecture, and install location behind the finding. On the selected Windows pilot, <code>dotnet --list-runtimes</code> shows what the invoked .NET installation can see. Use the scanner's evidence to check other architectures and install locations.</p>
@@ -44,5 +49,5 @@
 </section>
 <aside class="note"><strong>Windows RMM exception example:</strong> use the <a href="https://nizlo.com/solutions/windows-rmm?utm_source=github_pages&amp;utm_medium=authority_bridge&amp;utm_campaign=windows_rmm&amp;utm_content=patch_exception_review">Windows RMM guide</a> to define patch visibility and operating scope, then keep every deferral bounded by affected endpoints, evidence, compensating controls, an owner, approval, expiry, retest, and closure criteria.</aside>
 <aside class="note"><strong>Relationship disclosure:</strong> Nizlo, a Windows-first RMM and IT-management platform, maintains this template. It is designed for use with any relevant patch, RMM, ITSM, inventory, or change-management workflow and does not claim that Nizlo or another vendor satisfies its controls.</aside></main>
-<footer class="wrap"><span>Maintained by Nizlo · Updated November 26, 2026</span><span><a href="templates/">Template library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources/tree/v1.24.0">Version 1.24.0</a></span></footer>
+<footer class="wrap"><span>Maintained by Nizlo · Updated November 28, 2026</span><span><a href="templates/">Template library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources/tree/v1.24.0">Version 1.24.0</a></span></footer>
 </body></html>
