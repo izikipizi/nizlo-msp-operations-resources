@@ -16,7 +16,7 @@
   "@context":"https://schema.org","@type":"HowTo","name":"RMM contract renewal checklist",
   "description":"A twelve-step operational checklist for reviewing an RMM contract renewal, non-renewal notice requirement, pricing, transition obligations, data access, and delivery evidence.",
   "url":"https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-contract-renewal-checklist-nonrenewal-notice-template.html",
-  "dateModified":"2026-11-08","inLanguage":"en","totalTime":"PT90M",
+  "dateModified":"2026-11-28","inLanguage":"en","totalTime":"PT90M",
   "publisher":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},
   "step":[
     {"@type":"HowToStep","name":"Assemble the controlling documents","text":"Collect the executed agreement, order forms, amendments, renewal notices, invoices, and relevant correspondence."},
@@ -85,11 +85,20 @@ Authorized sender:
 <div class="actions"><button class="button primary" type="button" id="copy-notice">Copy notice starting point</button><a class="button" href="rmm-quote-comparison-worksheet.html">Open contract and pricing worksheet</a></div></section>
 
 <aside class="note"><strong>Evidence pack:</strong> keep the controlling documents, deadline calculation, approval, final notice, exact delivery artifact, tracking, receipt, acknowledgement, vendor response, transition plan, export evidence, access-removal evidence, final invoice reconciliation, and closure decision together.</aside>
+<section class="note" aria-labelledby="bundled-protection">
+  <h2 id="bundled-protection">What happens to bundled endpoint protection when you change RMM?</h2>
+  <p>Ask the current vendor which licences, agents, alert routing and console access end with the agreement. Record the last covered day and what the provider will export. A separate patching or device-management tool can stay in place while you evaluate remote support and monitoring.</p>
+  <ol>
+    <li>Confirm the replacement protection licence applies to each pilot device. Verify the device is reporting in the protection console and that a test alert reaches the person who owns it. For Microsoft Defender for Business, use <a href="https://learn.microsoft.com/en-us/defender-business/mdb-manage-devices">Microsoft’s device inventory and health guidance</a> to check onboarding.</li>
+    <li>Put replacement licences, any overlap, and the transition work in the <a href="rmm-quote-comparison-worksheet.html#intune-rmm-budget">quote worksheet</a>. Keep the existing Microsoft subscription as a retained cost if it already covers the pilot, and price any missing protection separately.</li>
+    <li>Assign someone to verify coverage after the switch, and agree how to restore it if the test fails. Keep the existing protection active until the replacement and handoff are verified. Separately test one attended support session and one useful monitoring alert on an authorized pilot device.</li>
+  </ol>
+</section>
 <section class="faq" aria-labelledby="faq-title"><h2 id="faq-title">RMM renewal and notice questions</h2><h3>What should an RMM renewal review include?</h3><p>Review the controlling documents, renewal date, notice rules, delivery method, complete price, operating evidence, exports, transition assistance, termination fees, access removal, approvals, and proof.</p><h3>Can I send the sample notice as written?</h3><p>No. It is an operational starting point, not legal advice. Replace every placeholder and obtain authorized commercial and qualified legal review where needed.</p><h3>What proof should be retained?</h3><p>Retain the approved final notice, timestamp, channel, recipient, tracking or portal confirmation, receipt, acknowledgement, and follow-up correspondence.</p></section>
 <section class="related" aria-label="Related renewal and exit resources"><article><h2>Calculate the deadline</h2><p>Subtract the notice window and an internal planning buffer, then download calendar reminders.</p><a href="rmm-contract-renewal-deadline-calculator.html">Open calculator →</a></article><article><h2>Normalize the agreement</h2><p>Compare dates, pricing, minimums, renewal terms, cancellation, and exit costs in one worksheet.</p><a href="rmm-quote-comparison-worksheet.html">Open worksheet →</a></article><article><h2>Plan a controlled exit</h2><p>Coordinate exports, replacement proof, coexistence, cutover, agent removal, billing, and acceptance.</p><a href="rmm-vendor-exit-plan-checklist.html">Open exit plan →</a></article></section>
 <aside class="note"><strong>Relationship disclosure:</strong> Nizlo, a Windows-first RMM and IT-management platform, maintains this vendor-neutral resource. Review <a href="https://nizlo.com/solutions/no-contract-rmm?utm_source=github_pages&amp;utm_medium=resource&amp;utm_campaign=rmm_contract_renewal_checklist">Nizlo's month-to-month terms</a> only as one product's current public disclosure, and verify the signed agreement for any vendor.</aside>
 <aside class="note"><strong>Not legal advice:</strong> this checklist and sample language are operational planning aids. They do not interpret a contract, determine a valid deadline, establish authority, satisfy a notice requirement, or replace advice from qualified counsel.</aside>
 </main>
-<footer class="wrap"><span>Maintained by Nizlo · Updated November 8, 2026</span><span><a href="./">Resource library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source</a></span></footer>
+<footer class="wrap"><span>Maintained by Nizlo · Updated November 28, 2026</span><span><a href="./">Resource library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source</a></span></footer>
 <script>document.getElementById('copy-notice').addEventListener('click',async function(){await navigator.clipboard.writeText(document.getElementById('notice-text').textContent);this.textContent='Copied';setTimeout(()=>this.textContent='Copy notice starting point',1600);});</script>
 </body></html>
