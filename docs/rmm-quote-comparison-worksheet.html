@@ -234,7 +234,7 @@
       </fieldset>
     </form>
     <p>Use a short pilot to replace guessed operator time. Time one recurring maintenance task on each option and multiply the hands-on minutes by how often you expect to do it. For example, a 15-minute weekly health check and a 30-minute monthly restore drill add up to about 90 operator minutes in a four-week month. Record unattended wait time and one-time setup separately. Use the <a data-trial-campaign href="rmm-trial-first-24-hours-plan.html">first-day RMM pilot plan</a> to choose one representative device and agree on what to measure before you install.</p>
-    <p>Check which responsibilities the provider actually takes on before valuing the difference. The <a data-trial-campaign href="https://nizlo.com/compare/netlock-rmm-alternative?utm_source=github_pages&amp;utm_medium=resource&amp;utm_campaign=self_hosted_rmm_operating_cost&amp;utm_content=quote_worksheet">NetLock and Nizlo comparison</a> covers deployment models and fit. Use the <a data-trial-campaign href="rmm-migration-workbook-template.html">migration workbook</a> for first-year setup, overlap, and exit costs.</p>
+    <p>Check which responsibilities the provider actually takes on before valuing the difference. Set a recovery target and check who can produce the evidence using the <a data-trial-campaign href="rmm-requirements-matrix-template.html#rmm-hosting-recovery-requirements">hosted and self-hosted recovery checklist</a>. The <a data-trial-campaign href="https://nizlo.com/compare/netlock-rmm-alternative?utm_source=github_pages&amp;utm_medium=resource&amp;utm_campaign=self_hosted_rmm_operating_cost&amp;utm_content=quote_worksheet">NetLock and Nizlo comparison</a> covers deployment models and fit. Use the <a data-trial-campaign href="rmm-migration-workbook-template.html">migration workbook</a> for first-year setup, overlap, and exit costs.</p>
   </aside>
 </section>
 <section class="wrap"><aside class="note"><strong>ConnectWise RMM quote scope:</strong> use the <a href="https://nizlo.com/compare/connectwise-rmm-alternative?utm_source=github_pages&amp;utm_medium=authority_bridge&amp;utm_campaign=connectwise_rmm_alternative&amp;utm_content=quote_worksheet">ConnectWise RMM alternative comparison</a> to normalize package, device, add-on, implementation, ScreenConnect, patching, automation, support, contract, renewal, and exit assumptions hidden behind quote-only pricing.</aside></section>
@@ -258,7 +258,19 @@
     const crossover = breakEven < 0
       ? "Self-hosting costs more before its operator time is added."
       : `The two totals match at ${minutes.format(breakEven)} self-hosted operator minutes per month.`;
-    hostingResult.textContent = `Self-hosted: ${dollars.format(selfHosted)}/month. Vendor-hosted: ${dollars.format(vendorHosted)}/month. ${crossover}`;
+    const selfCents = Math.round(selfHosted * 100);
+    const vendorCents = Math.round(vendorHosted * 100);
+    if (![selfCents, vendorCents].every(Number.isSafeInteger)) {
+      hostingResult.textContent = "Enter smaller values to compare the costs.";
+      return;
+    }
+    const difference = selfCents - vendorCents;
+    const lowerCost = difference < 0 ? "Self-hosted RMM" : "Vendor-hosted RMM";
+    const comparison =
+      difference === 0
+        ? "The estimated monthly costs are equal to the cent."
+        : `${lowerCost} costs ${dollars.format(Math.abs(difference) / 100)} less per month at these inputs.`;
+    hostingResult.textContent = `Self-hosted: ${dollars.format(selfCents / 100)}/month. Vendor-hosted: ${dollars.format(vendorCents / 100)}/month. ${comparison} ${crossover}`;
   });
   hostingForm.querySelector('button[type="submit"]').disabled = false;
 </script>
