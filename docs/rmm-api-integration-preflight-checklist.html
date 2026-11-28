@@ -57,6 +57,32 @@
   </ul>
 </section>
 
+<section class="decision" id="powershell-first-read">
+  <h2>Verify the first device read in PowerShell 7</h2>
+  <p>Use a Nizlo personal access token from an approved test workspace with the <code>devices.view</code> scope. The technician who created the token also needs permission to view devices. The prompt masks the token, and the example displays counts without printing device records.</p>
+  <pre tabindex="0" aria-label="PowerShell 7 example" style="overflow-x:auto"><code>$token = Read-Host 'Nizlo API token' -AsSecureString
+try {
+    $request = @{
+        Uri                = 'https://app.nizlo.com/api/v1/devices?page=1&amp;pageSize=25&amp;view=summary'
+        Method             = 'Get'
+        Authentication     = 'Bearer'
+        Token              = $token
+        MaximumRedirection = 0
+        TimeoutSec         = 15
+        ErrorAction        = 'Stop'
+    }
+    $response = Invoke-RestMethod @request
+    [pscustomobject]@{
+        ReturnedOnPage = $response.items.Count
+        TotalMatching  = $response.total
+    }
+} finally {
+    $token.Dispose()
+}</code></pre>
+  <p>A successful response with zero matching devices means the read completed. If you expected a device, check that it has enrolled in the test workspace and is visible to the token owner. For HTTP 401, check the token's validity. For HTTP 403, check the token scope and the owner's workspace permissions. If the workspace has more than 25 visible devices, use the pagination checks below before relying on the inventory report.</p>
+  <p><a href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/invoke-restmethod">PowerShell request options</a> · <a href="https://nizlo.com/rmm-api?utm_source=github_pages&amp;utm_medium=resource&amp;utm_campaign=rmm_api_preflight&amp;utm_content=powershell_first_read">Nizlo API setup and trial</a></p>
+</section>
+
 <div id="checklist">
 <section class="phase"><h2>1. Identity and boundaries</h2><div class="checklist">
 <label class="check"><input type="checkbox" /><span><h3>Use a dedicated integration identity</h3><p>Do not reuse a technician login. Document who owns the identity, how it is disabled, and which environment it belongs to.</p><span class="evidence">Evidence: identity record, owner, creation date, disable procedure.</span></span></label>
