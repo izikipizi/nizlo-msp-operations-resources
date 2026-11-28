@@ -6,12 +6,26 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-28T12:50:43Z</updated>
+  <updated>2026-11-28T13:57:51Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>RMM trial first 24 hours plan</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-first-24-hours-plan.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-first-24-hours-plan.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=first_device_selection#choose-first-device" />
+    <updated>2026-11-28T13:57:51Z</updated>
+    <link rel="related" title="Check Windows x64 before running the Nizlo MSI" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=first_device_selection&amp;utm_content=windows_agent_system_type#windows-agent-system-type" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html#installer-warning-evidence" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-first-24-hours-plan.html#second-technician-proof" />
+    <link rel="related" title="Decide whether a second pilot device is needed" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-first-24-hours-plan.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=first_endpoint_plan_decision#after-first-endpoint" />
+    <category term="evaluation" />
+    <category term="activation" />
+    <category term="first endpoint" />
+    <summary>Check for a supported 64-bit Windows installation on an x64 processor before running the Windows agent installer. Use Windows Settings or a read-only PowerShell check on Server. After the first check-in, use a second authorized device only to answer a remaining question, such as whether a test alert from another site reaches the right technician. The guide also covers plan choice and billing recovery.</summary>
+  </entry>
   <entry>
     <title>Verify RMM device access in PowerShell 7</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-api-integration-preflight-checklist.html</id>
@@ -54,19 +68,6 @@
     <updated>2026-11-28T11:45:00Z</updated>
     <category term="patching" /><category term="maintenance-window" /><category term="calculator" />
     <summary>Estimate staged Windows patch duration, retries and safety reserve. The worked example shows how to set a last-start cutoff and account for Windows Update actions that can run past the scheduled window.</summary>
-  </entry>
-  <entry>
-    <title>RMM trial first 24 hours plan</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-first-24-hours-plan.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-first-24-hours-plan.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=first_device_selection#choose-first-device" />
-    <updated>2026-11-28T11:31:06Z</updated>
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html#installer-warning-evidence" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-first-24-hours-plan.html#second-technician-proof" />
-    <link rel="related" title="Decide whether a second pilot device is needed" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-first-24-hours-plan.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=first_endpoint_plan_decision#after-first-endpoint" />
-    <category term="evaluation" />
-    <category term="activation" />
-    <category term="first endpoint" />
-    <summary>Choose a device that can prove your pilot workflow. After the first check-in, use a second authorized device only to answer a remaining question, such as whether a test alert from another site reaches the right technician. The guide also covers plan choice and billing recovery.</summary>
   </entry>
   <entry>
     <title>Check the active adapter before retrying a DNS job</title>
