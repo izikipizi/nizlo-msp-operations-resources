@@ -26,7 +26,7 @@
     "author":{"@type":"Person","name":"Kip Ecklund"},
     "publisher":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},
     "datePublished":"2026-11-07",
-    "dateModified":"2026-11-17",
+    "dateModified":"2026-11-28",
     "inLanguage":"en",
     "isAccessibleForFree":true,
     "about":["n8n RMM integration","n8n community node","MSP automation","RMM API","Nizlo"]
@@ -91,7 +91,9 @@ npm install github:izikipizi/n8n-nodes-nizlo#v0.1.0</code></pre><p>Restart n8n a
       <article class="panel"><h3>What the examples do not do</h3><p>They do not contain tokens, send messages, create tickets, run scripts, patch or reboot endpoints, open remote sessions, or mutate Nizlo data.</p><p><a href="https://github.com/izikipizi/n8n-nodes-nizlo/tree/main/examples">Browse both examples</a></p></article>
     </div></section>
 
-    <section><h2>Safe evaluation sequence</h2><div class="steps">
+    <section><h2>Safe evaluation sequence</h2>
+      <p>Need a workspace for the pilot? <a href="https://nizlo.com/solutions/rmm-free-trial?utm_source=github_pages&amp;utm_medium=external_resource&amp;utm_campaign=n8n_rmm_automation&amp;utm_content=trial_workspace">Start a 14-day Nizlo trial with no credit card</a>. Before running the offline-Windows example, enroll one authorized Windows test device. A successful connection with no matching devices or alerts can return an empty list. Check the test workspace and filters before treating an empty result as a setup failure.</p>
+      <div class="steps">
       <div class="step"><strong>Review the source and release.</strong> Confirm the repository, license, manifest entry points, dependencies, and exact version you intend to test.</div>
       <div class="step"><strong>Use a test workspace and dedicated token.</strong> Keep the token's effective scope to the smallest read permission required by the selected workflow.</div>
       <div class="step"><strong>Import one inactive example.</strong> Inspect every node and filter before selecting a credential or running it.</div>
@@ -109,6 +111,6 @@ npm install github:izikipizi/n8n-nodes-nizlo#v0.1.0</code></pre><p>Restart n8n a
 
     <aside class="disclosure"><strong>Relationship and limitation disclosure:</strong> Nizlo maintains this page and the linked node; Kip Ecklund founded Nizlo. The initial implementation and documentation were AI-assisted and human-reviewed. This is a functional first-party integration, not an independent endorsement by n8n. Personal access tokens remain attached to an active Nizlo technician identity, and their effective permissions are the intersection of token scope and that technician's current role. Independent service accounts are not currently available.</aside>
   </main>
-  <footer class="wrap"><span>Maintained by Nizlo · Updated November 17, 2026</span><span><a href="./">Resource library</a> · <a href="rmm-api-integration-preflight-checklist.html">API preflight</a> · <a href="https://nizlo.com/guides/n8n-rmm-automation?utm_source=github_pages&amp;utm_medium=external_resource&amp;utm_campaign=n8n_rmm_automation&amp;utm_content=footer">Workflow guide</a> · <a href="https://github.com/izikipizi/n8n-nodes-nizlo">Source</a></span></footer>
+  <footer class="wrap"><span>Maintained by Nizlo · Updated November 28, 2026</span><span><a href="./">Resource library</a> · <a href="rmm-api-integration-preflight-checklist.html">API preflight</a> · <a href="https://nizlo.com/guides/n8n-rmm-automation?utm_source=github_pages&amp;utm_medium=external_resource&amp;utm_campaign=n8n_rmm_automation&amp;utm_content=footer">Workflow guide</a> · <a href="https://github.com/izikipizi/n8n-nodes-nizlo">Source</a></span></footer>
 </body>
 </html>
