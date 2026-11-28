@@ -14,17 +14,24 @@
   ) {
     values = ["apple_community_bookmarks", "referral", "macos_rmm_pilot_matrix"];
   }
-  // The same feeds are available in many readers. Use a directory source only
-  // when the browser reports a click from that directory's public site.
+  // Identify the directory only when the browser reports its origin.
+  const feedSource = [
+    ["https://rss.mobi/", "rss_mobi"],
+    ["https://rssamp.com/", "rssamp"],
+  ].find(([origin]) => document.referrer.startsWith(origin))?.[1];
   const [source, medium, campaign] = explicitCampaign;
   const isIntuneFeed = source === "nizlo_intune_feed" && campaign === "intune_field_notes";
   const isResourceFeed = source === "nizlo_resource_feed" && Boolean(campaign);
-  if (medium === "rss" && (isIntuneFeed || isResourceFeed)) {
-    if (document.referrer.startsWith("https://rss.mobi/")) {
-      values = ["rss_mobi", "referral", campaign];
-    } else if (document.referrer.startsWith("https://rssamp.com/")) {
-      values = ["rssamp", "referral", campaign];
-    }
+  const cleanFeedCampaign = document.documentElement.dataset.resourceFeedCampaign;
+
+  if (feedSource && medium === "rss" && (isIntuneFeed || isResourceFeed)) {
+    values = [feedSource, "referral", campaign];
+  } else if (
+    feedSource &&
+    cleanFeedCampaign &&
+    campaignFields.every((field) => !referral.has(field))
+  ) {
+    values = [feedSource, "referral", cleanFeedCampaign];
   }
   if (!values.every(Boolean)) return;
 
