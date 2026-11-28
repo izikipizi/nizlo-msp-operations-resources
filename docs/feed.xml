@@ -6,12 +6,20 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-28T11:31:06Z</updated>
+  <updated>2026-11-28T11:45:00Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>Windows patch maintenance window calculator</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-maintenance-window-calculator.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-maintenance-window-calculator.html" />
+    <updated>2026-11-28T11:45:00Z</updated>
+    <category term="patching" /><category term="maintenance-window" /><category term="calculator" />
+    <summary>Estimate staged Windows patch duration, retries and safety reserve. The worked example shows how to set a last-start cutoff and account for Windows Update actions that can run past the scheduled window.</summary>
+  </entry>
   <entry>
     <title>RMM trial first 24 hours plan</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-first-24-hours-plan.html</id>
@@ -507,14 +515,6 @@
     <updated>2026-11-25T00:00:00Z</updated>
     <category term="deployment" />
     <summary>Use 38 controls to plan, verify and close an RMM rollout. A branch-pilot example covers the local maintenance window, endpoint location and after-hours alert ownership.</summary>
-  </entry>
-  <entry>
-    <title>Windows patch maintenance window calculator</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-maintenance-window-calculator.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-maintenance-window-calculator.html" />
-    <updated>2026-11-22T00:00:00Z</updated>
-    <category term="patching" /><category term="maintenance-window" /><category term="calculator" />
-    <summary>Estimate staged Windows patch deployment duration, retry load, safety reserve, maintenance-window fit, and modeled endpoint capacity using local timing assumptions.</summary>
   </entry>
   <entry>
     <title>MSP technician capacity calculator</title>
