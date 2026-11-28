@@ -47,6 +47,7 @@
 <li><a href="#installer-warning-evidence">Chrome or Windows showed a warning</a></li>
 <li><a href="#resume-prepared-installer">The download started or the file is ready</a></li>
 <li><a href="#agent-installed-no-check-in">The installer ran and the device has never checked in</a></li>
+<li><a href="#nizlo-windows-service-check">The Nizlo Windows MSI finished, but no device appeared</a></li>
 <li><a href="#online-inventory-empty">The device is online, but inventory is still empty</a></li>
 <li><a href="#unexpected-device-check-in">A device checked in that was outside the approved pilot</a></li>
 <li><a data-trial-campaign href="rmm-software-deployment-install-failed-troubleshooting-checklist.html#already-enrolled">The endpoint checks in, but an app deployment failed</a></li>
@@ -99,6 +100,17 @@
 <p>If you prepared the file from Nizlo's Enrollment page, share those details with <a href="https://nizlo.com/support?utm_source=github_pages&amp;utm_medium=resource&amp;utm_campaign=first_endpoint_troubleshooting&amp;utm_content=installer_warning">Nizlo Support</a> before retrying. A filename or displayed publisher helps identify the package. Support can use it with the preparation time to check the specific file.</p>
 </article>
 <article><h2>3. Verify local agent state</h2><ul><li>Locate the documented service, process, installation directory, and log path.</li><li>Record whether the service is missing, stopped, repeatedly restarting, or stable.</li><li>Review the newest relevant log lines around the attempted installation and first start.</li><li>Check endpoint-security, application-control, quarantine, and operating-system event logs for a matching block.</li></ul><p><strong>Do not disable endpoint protection as a diagnostic shortcut.</strong> If evidence shows a block, use a narrow, time-bounded exception approved through your normal change process, then remove it after the test.</p></article>
+<article aria-labelledby="nizlo-windows-service-check">
+<h2 id="nizlo-windows-service-check">The Nizlo Windows installer finished. Is the agent service running?</h2>
+<p>On the authorized Windows endpoint that ran the MSI, open PowerShell and query the installed service. This command reads its state without starting, stopping, or changing it.</p>
+<pre><code>sc.exe query "Nizlo RMM Agent"</code></pre>
+<ul>
+  <li><strong>Service missing:</strong> error 1060 means Windows has no service registered under that name. Record the installer result and UTC time, then verify that the intended device ran the workspace-scoped MSI.</li>
+  <li><strong>Service stopped:</strong> record the Windows and service exit codes. Compare the time with the installer result and local Windows events before retrying.</li>
+  <li><strong>Service running:</strong> preserve the result and continue with the workspace, customer and site checks below. A running service alone does not show that the agent enrolled or reported.</li>
+</ul>
+<p>Use the <a data-trial-campaign href="https://nizlo.com/guides/nizlo-rmm-security-indicators?utm_source=github_pages&amp;utm_medium=activation_guide&amp;utm_campaign=first_endpoint_troubleshooting&amp;utm_content=windows_service_check">published Nizlo Windows service reference</a> to confirm the name and expected destination. If the endpoint still has no check-in, use the <a href="#first-endpoint-support-ticket">support ticket outline</a> to send the result without including any enrollment token or private installer URL.</p>
+</article>
 <article><h2>4. Verify identity and enrollment data</h2><ul><li>Confirm the workspace, tenant, customer, site, token, or enrollment code belongs to the intended destination.</li><li>Check whether the enrollment credential expired, was revoked, or was copied with extra characters.</li><li>Search for a stale or duplicate endpoint identity before creating another record. If this is a Nizlo device, <a href="#nizlo-archived-endpoint">check whether the endpoint was archived</a>.</li><li>Do not delete an existing record until you know what audit history, policy assignment, or billing data deletion would remove.</li></ul></article>
 <aside class="note"><strong>Two records for one machine?</strong> Before retrying enrollment, use the <a href="rmm-duplicate-device-identity-troubleshooting-checklist.html">duplicate device checklist</a> to compare device IDs, serial number, customer and site, and last check-in. If you find a single archived Nizlo record, use the restore steps below.</aside>
 <article aria-labelledby="nizlo-first-device-wrong-site">
