@@ -19,7 +19,7 @@
   "description":"A browser-only calculator that calculates comparable monthly, annual, first-year, contract, and per-endpoint costs in the selected quote currency, USD, EUR or GBP.",
   "url":"https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html",
   "applicationCategory":"BusinessApplication","operatingSystem":"Any","browserRequirements":"JavaScript",
-  "isAccessibleForFree":true,"dateModified":"2026-11-27","inLanguage":"en",
+  "isAccessibleForFree":true,"dateModified":"2026-11-28","inLanguage":"en",
   "creator":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},
   "featureList":["Base fee normalization","Endpoint overage calculation","Technician overage calculation","Monthly minimum handling","Add-on normalization","Contract discount","One-time fee allocation","Per-endpoint effective cost","USD, EUR and GBP amount formatting"]
 }</script>
@@ -40,6 +40,7 @@
 <section class="calculator" aria-label="RMM quote normalization calculator">
   <form class="panel" id="calculator-form">
     <p id="billing-unit-example-context" class="hint" hidden>Loaded a public USD rate for 50 endpoints and one technician. For the annual ManageEngine tier, the monthly amount is a comparison figure. Check the <a data-trial-campaign href="rmm-quote-comparison-worksheet.html#compare-billing-units-at-50">source rates and billing terms</a> before changing the fleet size or using the total.</p>
+    <p id="retained-tools-example-context" class="hint" hidden>These USD examples start with a 50-device, two-technician scenario. Confirm the actual Naverisk quote and included coverage. The $41 retained-tool cost on the Core side is the amount that brings the modeled totals to parity. Replace it with your own recurring costs and add implementation fees separately. <a data-trial-campaign href="rmm-quote-comparison-worksheet.html#naverisk-retained-tools">See the price assumptions</a>.</p>
     <h2>Enter one vendor quote</h2><p class="hint">Choose USD, EUR or GBP and enter every quote in the same currency. The calculator formats amounts without converting them. Use zero where a charge does not apply, then copy each vendor’s summary into the comparison worksheet.</p>
     <p id="manageengine-example-context" class="hint" hidden>This example starts with ManageEngine’s published USD base plan and add-on for 50 endpoints and one technician. The 10-month estimate assumes you can stop monthly billing after 10 months. <a data-trial-campaign href="rmm-quote-comparison-worksheet.html#manageengine-billing-term-example">Review the source and annual comparison</a>.</p>
     <div class="fields">
@@ -150,7 +151,7 @@
 <aside class="note"><strong>Relationship disclosure:</strong> Nizlo maintains this calculator and sells RMM software. The default values are illustrative. The 50-device examples use public vendor rates to demonstrate the math. Verify each quote directly.</aside>
 <aside class="note"><strong>Planning limitation:</strong> this is arithmetic, not a quote, procurement decision, tax calculation, or recommendation. Confirm taxes, currency, increases, minimum commitments, retained tools, support, implementation, renewal, cancellation, and exit terms in the controlling agreement.</aside>
 </main>
-<footer class="wrap"><span>Maintained by Nizlo · Updated November 27, 2026</span><span><a href="./">Resource library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source</a></span></footer>
+<footer class="wrap"><span>Maintained by Nizlo · Updated November 28, 2026</span><span><a href="./">Resource library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source</a></span></footer>
 <script>
 const standardExample = {
   "endpoints": 100, "managed-users": "", "technicians": 2, "base": 99, "minimum": 0,
@@ -173,8 +174,13 @@ const billingUnitExamples = new Map([
   ["manageengine-on-premises-50", { ...fiftyDeviceExample, "base": 795 / 12, "included-endpoints": 50 }],
   ["nizlo-core-50", { ...fiftyDeviceExample, "base": 59, "included-endpoints": 50, "tech-rate": 10 }],
 ]);
+const retainedToolExamples = new Map([
+  ["naverisk-starting-price", { ...fiftyDeviceExample, "technicians": 2, "base": 110 }],
+  ["nizlo-core-retained-tools", { ...billingUnitExamples.get("nizlo-core-50"), "technicians": 2, "addon-flat": 41 }],
+]);
 const examples = new Map([
   ...billingUnitExamples,
+  ...retainedToolExamples,
   ["endpoint-minimum", endpointMinimumExample],
   ["before-growth", { ...endpointMinimumExample, "endpoints": 80 }],
   ["after-growth", { ...endpointMinimumExample, "endpoints": 125 }],
@@ -206,7 +212,8 @@ const exampleName = query.get("example");
 const defaults = examples.get(exampleName) ?? standardExample;
 const isManageEngineExample = exampleName === "manageengine-monthly";
 const isBillingUnitExample = billingUnitExamples.has(exampleName);
-const usesSourceUsd = isManageEngineExample || isBillingUnitExample;
+const isRetainedToolExample = retainedToolExamples.has(exampleName);
+const usesSourceUsd = isManageEngineExample || isBillingUnitExample || isRetainedToolExample;
 
 function resetExample() {
   for (const [id, amount] of Object.entries(defaults)) {
@@ -221,6 +228,7 @@ const supportedCurrency = (currency) => supportedCurrencies.has(currency) ? curr
 currencyField.value = usesSourceUsd ? "USD" : supportedCurrency(query.get("currency"));
 document.getElementById("manageengine-example-context").hidden = !isManageEngineExample;
 document.getElementById("billing-unit-example-context").hidden = !isBillingUnitExample;
+document.getElementById("retained-tools-example-context").hidden = !isRetainedToolExample;
 const value=id=>Math.max(0,Number(document.getElementById(id).value)||0);
 function calculate(){
  const currency = supportedCurrency(currencyField.value);
