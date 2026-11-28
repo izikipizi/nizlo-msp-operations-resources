@@ -132,6 +132,9 @@
           <li><strong>Stop sharing.</strong> Confirm that the helper is notified and can no longer refresh the report while sharing is off. Handle any data already saved under the client’s retention policy.</li>
         </ol>
         <p>Record the consent outcome, test time, technician and approved retention exceptions. Keep the raw report out of the ticket unless the client’s policy calls for it. If the prompt is unavailable, record the tenant and app version and retest after rollout.</p>
+        <h3 id="remote-help-snapshot-evidence">Record what the diagnostic snapshot actually showed</h3>
+        <p>Example ticket note: The user allowed diagnostics at 14:03 UTC and stopped sharing at 14:08 UTC. The 14:05 snapshot showed memory use, but the network field was unavailable. The helper could not refresh after sharing stopped. No diagnostic report was copied into the ticket. Ask the user whether they are comfortable continuing with ordinary screen sharing if more troubleshooting is needed.</p>
+        <p>Microsoft describes the report as a point-in-time snapshot. Label an absent field <strong>not reported</strong> when it matters to the diagnosis. If you need another reading, explain why and ask for renewed consent before requesting it.</p>
         <p><a href="https://learn.microsoft.com/en-us/intune/remote-help/start-session#attended-support">Microsoft’s diagnostics-sharing instructions</a></p>
         <p>Follow the <a href="intune-feed.xml" type="application/atom+xml">Intune and RMM field notes</a> in a feed reader for more tests on access, offboarding, and update ownership.</p>
       </section>
