@@ -14,27 +14,17 @@
   ) {
     values = ["apple_community_bookmarks", "referral", "macos_rmm_pilot_matrix"];
   }
-  // The same Intune feed is available in many readers. Use the directory
-  // source only when the browser reports a click from its public site.
-  if (
-    explicitCampaign[0] === "nizlo_intune_feed" &&
-    explicitCampaign[1] === "rss" &&
-    explicitCampaign[2] === "intune_field_notes" &&
-    document.referrer.startsWith("https://rss.mobi/")
-  ) {
-    values = ["rss_mobi", "referral", "intune_field_notes"];
-  }
-  // RSSAmp's original-page links preserve the feed campaign. Distinguish its
-  // browser traffic from the many readers that use the same upstream feeds.
+  // The same feeds are available in many readers. Use a directory source only
+  // when the browser reports a click from that directory's public site.
   const [source, medium, campaign] = explicitCampaign;
   const isIntuneFeed = source === "nizlo_intune_feed" && campaign === "intune_field_notes";
   const isResourceFeed = source === "nizlo_resource_feed" && Boolean(campaign);
-  if (
-    medium === "rss" &&
-    (isIntuneFeed || isResourceFeed) &&
-    document.referrer.startsWith("https://rssamp.com/")
-  ) {
-    values = ["rssamp", "referral", campaign];
+  if (medium === "rss" && (isIntuneFeed || isResourceFeed)) {
+    if (document.referrer.startsWith("https://rss.mobi/")) {
+      values = ["rss_mobi", "referral", campaign];
+    } else if (document.referrer.startsWith("https://rssamp.com/")) {
+      values = ["rssamp", "referral", campaign];
+    }
   }
   if (!values.every(Boolean)) return;
 
