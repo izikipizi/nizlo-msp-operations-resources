@@ -439,6 +439,7 @@
     {
       "id": "msp-client-onboarding-timeline-calculator",
       "title": "MSP client onboarding timeline calculator",
+      "description": "Build a six-phase MSP client onboarding schedule that skips weekends and entered blackout dates. Export phase date ranges as CSV or calendar events.",
       "category": "client-lifecycle",
       "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-onboarding-timeline-calculator.html",
       "audience": [
