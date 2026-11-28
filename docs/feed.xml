@@ -6,12 +6,22 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-28T03:24:00Z</updated>
+  <updated>2026-11-28T03:46:09Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>n8n RMM integration: read-only MSP workflows</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/n8n-rmm-integration.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/n8n-rmm-integration.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=n8n_trial_pilot&amp;utm_content=built_in_workflow#built-in-http-template" />
+    <link rel="related" type="text/html" href="https://nizlo.com/guides/n8n-rmm-automation?utm_source=atom&amp;utm_medium=external_resource&amp;utm_campaign=n8n_rmm_automation" />
+    <link rel="enclosure" type="application/json" href="https://izikipizi.github.io/nizlo-msp-operations-resources/downloads/n8n-nizlo-active-critical-alerts-http.json" />
+    <updated>2026-11-28T03:46:09Z</updated>
+    <category term="n8n" /><category term="RMM API" /><category term="MSP automation" />
+    <summary>Download an inactive n8n workflow that uses the built-in HTTP Request node to read the first 50 active critical alerts from an authorized Nizlo workspace. The guide covers credential setup, empty results, and two additional examples for the Nizlo community node.</summary>
+  </entry>
   <entry>
     <title>RMM first-endpoint pilot acceptance checklist</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-acceptance-checklist.html</id>
@@ -71,15 +81,6 @@
     <updated>2026-11-28T02:23:13Z</updated>
     <category term="MSP onboarding" /><category term="calculator" /><category term="project planning" />
     <summary>Build an adjustable six-phase MSP client onboarding timeline that skips weekends and entered customer blackout dates. Export phase date ranges as CSV or calendar events and confirm the evidence and approvals before go-live.</summary>
-  </entry>
-  <entry>
-    <title>n8n RMM integration: read-only MSP workflows</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/n8n-rmm-integration.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/n8n-rmm-integration.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=n8n_trial_pilot" />
-    <link rel="related" type="text/html" href="https://nizlo.com/guides/n8n-rmm-automation?utm_source=atom&amp;utm_medium=external_resource&amp;utm_campaign=n8n_rmm_automation" />
-    <updated>2026-11-28T02:02:01Z</updated>
-    <category term="n8n" /><category term="RMM API" /><category term="MSP automation" />
-    <summary>Review a disclosed, read-only n8n community node for tenant-scoped customers, sites, endpoints, and alerts, with two inactive workflows, exact permission boundaries, and a 14-day trial workspace path. Enroll one authorized Windows device to test the offline workflow and distinguish an authenticated empty result from a connection failure.</summary>
   </entry>
   <entry>
     <title>Free RMM pricing comparison worksheet</title>
