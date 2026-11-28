@@ -94,8 +94,8 @@ npm install github:izikipizi/n8n-nodes-nizlo#v0.1.0</code></pre><p>Restart n8n a
       <p><a href="downloads/n8n-nizlo-active-critical-alerts-http.json" download>Download the built-in n8n workflow (JSON)</a></p>
       <ol>
         <li>Import the file and open <strong>Read active critical alerts</strong>.</li>
-        <li>In your authorized test workspace, open <a href="https://app.nizlo.com/admin/api-access">API Access</a> and create a Nizlo personal access token limited to <code>alerts.view</code>. Add it to an n8n Header Auth credential with the name <code>Authorization</code> and the value <code>Bearer YOUR_TOKEN</code>. Keep the actual token in n8n credentials.</li>
-        <li>Run manually and compare the <code>items</code> and <code>total</code> fields with the Nizlo alert list. An empty list can be a valid result. If <code>total</code> exceeds 50, this workflow displays only the first page.</li>
+        <li>In your authorized test workspace, open <a href="https://app.nizlo.com/admin/api-access">API Access</a> and create a Nizlo personal access token limited to <code>alerts.view</code>. Add it to an n8n Header Auth credential with the name <code>Authorization</code> and the value <code>Bearer YOUR_TOKEN</code>. Select that credential in the HTTP Request node before running it. Keep the actual token in n8n credentials.</li>
+        <li>Run manually and compare the <code>items</code> and <code>total</code> fields with the Nizlo alert list. If <code>total</code> exceeds 50, this workflow displays only the first page. Use the <a href="#verify-first-manual-run">first-run checks</a> if the result is empty or the request fails.</li>
       </ol>
       <p>For the request and response fields, see the <a href="https://nizlo.com/openapi.json">Nizlo API contract</a> and <a href="https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.httprequest/">n8n's HTTP Request documentation</a>.</p>
     </section>
@@ -105,7 +105,18 @@ npm install github:izikipizi/n8n-nodes-nizlo#v0.1.0</code></pre><p>Restart n8n a
       <p>Use this manual starter to review the first 100 active Windows endpoints that Nizlo currently reports offline. It uses standard n8n nodes and requires an API token with <code>devices.view</code>.</p>
       <p><a href="downloads/n8n-nizlo-offline-windows-endpoints-http.json" download>Download the offline Windows workflow (JSON)</a></p>
       <p>Import the workflow inactive. In the HTTP Request node, select or create a Header Auth credential with the name <code>Authorization</code> and value <code>Bearer YOUR_TOKEN</code>. Run it manually in an authorized test workspace.</p>
-      <p>Check <code>items</code> for the first page of matches and <code>total</code> for the overall count. An empty list means the filters found no matches. If you see HTTP 401 or 403, check the credential and its access before changing the filters.</p>
+      <p>Check <code>items</code> for the first page of matches and <code>total</code> for the overall count. Use the <a href="#verify-first-manual-run">first-run checks</a> to distinguish an empty result from a credential or access error.</p>
+    </section>
+
+    <section aria-labelledby="verify-first-manual-run">
+      <h2 id="verify-first-manual-run">Verify the first manual run</h2>
+      <p>Keep the workflow inactive and run it once in the test workspace. Open the HTTP Request node output or error and record the endpoint, filters, UTC run time and response status.</p>
+      <div class="grid">
+        <article class="panel"><h3>HTTP 200 with zero matches</h3><p>Page 1 with empty <code>items</code> and <code>total</code> equal to zero is a valid response. Check the workspace and matching filters in Nizlo, then record that the connection succeeded and no records matched. When records exist, spot-check one device or alert ID. Counts above the workflow's page size mean more matches exist beyond the returned page.</p></article>
+        <article class="panel"><h3>HTTP 401</h3><p>Check that the node has a local Header Auth credential selected. Verify that it uses the <code>Authorization</code> header, the <code>Bearer</code> prefix and an active token. Confirm the request still points to the documented Nizlo API origin.</p></article>
+        <article class="panel"><h3>HTTP 403</h3><p>Check the token scope and the technician's current workspace permissions. Use <code>devices.view</code> for the offline Windows request or <code>alerts.view</code> for the critical alerts request. Ask the workspace owner to review access if the required read permission is unavailable.</p></article>
+      </div>
+      <p>Share only the status, sanitized request details and a safe example result if you ask for help. Keep the token and authorization header out of logs and screenshots. <a href="https://nizlo.com/openapi.json">Nizlo response contract</a> · <a href="https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.httprequest/#response">n8n response options</a></p>
     </section>
 
     <section><h2>Two workflows for the Nizlo community node</h2><div class="grid">
