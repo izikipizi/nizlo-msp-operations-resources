@@ -6,12 +6,26 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-28T06:01:08Z</updated>
+  <updated>2026-11-28T08:03:56Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>Compare RMM quotes for 50 endpoints and two technicians</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_workspace_break_even#workspace-break-even" />
+    <link rel="enclosure" type="text/csv" length="4335" href="https://izikipizi.github.io/nizlo-msp-operations-resources/data/public-rmm-pricing-comparison-2026-11-26.csv" />
+    <link rel="related" type="text/html" href="https://github.com/izikipizi/nizlo-msp-operations-resources/releases/tag/rmm-pricing-2026-11-26" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html#compare-two-vendor-quotes" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=free_rmm_tier_limits#free-tier-billing-thresholds" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=atera_alternative&amp;utm_content=two_technician_cost#atera-mixed-fleet-cost" />
+    <updated>2026-11-28T08:03:56Z</updated>
+    <category term="pricing" />
+    <category term="dataset" />
+    <summary>Load three editable examples for 50 endpoints and two technicians. Nizlo Core totals $69 a month, Scale totals $89, and an illustrative $2.50-per-endpoint quote totals $125. Adjust the fleet size and add required tools or setup fees. The source-dated CSV covers 14 products.</summary>
+  </entry>
   <entry>
     <title>How to verify a third-party Windows app update</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-policy-review-checklist.html</id>
@@ -240,18 +254,6 @@
     <category term="RMM migration" />
     <category term="data export" />
     <summary>The new example prices one fully billed overlap month for a two-technician Atera-to-Syncro migration. Use the validation worksheet to check customer, ticket and agent placement before ending the old subscription.</summary>
-  </entry>
-  <entry>
-    <title>RMM pricing transparency dataset: 14 products</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=atera_alternative&amp;utm_content=two_technician_cost#atera-mixed-fleet-cost" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html#compare-two-vendor-quotes" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=free_rmm_tier_limits#free-tier-billing-thresholds" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html#atera-mixed-fleet-cost" />
-    <updated>2026-11-27T06:47:41Z</updated>
-    <category term="pricing" />
-    <category term="dataset" />
-    <summary>Compare published pricing for 14 RMM products. The worked example holds technician count at two, checks which Atera plan covers the fleet, and shows how to budget a year of Nizlo monthly billing with a second technician.</summary>
   </entry>
   <entry>
     <title>MSP SLA response time template</title>
