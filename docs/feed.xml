@@ -6,12 +6,26 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-28T09:01:12Z</updated>
+  <updated>2026-11-28T09:10:47Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>Compare RMM quotes for 50 endpoints and two technicians</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_workspace_break_even#workspace-break-even" />
+    <link rel="enclosure" type="text/csv" length="4335" href="https://izikipizi.github.io/nizlo-msp-operations-resources/data/public-rmm-pricing-comparison-2026-11-26.csv" />
+    <link rel="related" type="text/html" href="https://github.com/izikipizi/nizlo-msp-operations-resources/releases/tag/rmm-pricing-2026-11-26" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html#compare-two-vendor-quotes" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=free_rmm_tier_limits#free-tier-billing-thresholds" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=atera_alternative&amp;utm_content=two_technician_cost#atera-mixed-fleet-cost" />
+    <updated>2026-11-28T09:10:47Z</updated>
+    <category term="pricing" />
+    <category term="dataset" />
+    <summary>Nizlo Core starts at $59/month and Scale at $79/month, each with one technician. The editable 50-endpoint examples add a second technician for $10/month, bringing Core to $69/month and Scale to $89/month. An illustrative $2.50-per-endpoint quote totals $125/month. Adjust the fleet size and add required tools or setup fees. The source-dated CSV covers 14 products.</summary>
+  </entry>
   <entry>
     <title>Check bundled endpoint protection before changing RMM</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-contract-renewal-checklist-nonrenewal-notice-template.html</id>
@@ -23,20 +37,6 @@
     <category term="renewal" />
     <category term="vendor-management" />
     <summary>Confirm when bundled protection and alert access end, verify the replacement on an authorized pilot device and price overlap before switching RMM. The full renewal checklist, notice starting point and deadline calculator remain available.</summary>
-  </entry>
-  <entry>
-    <title>Compare RMM quotes for 50 endpoints and two technicians</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_workspace_break_even#workspace-break-even" />
-    <link rel="enclosure" type="text/csv" length="4335" href="https://izikipizi.github.io/nizlo-msp-operations-resources/data/public-rmm-pricing-comparison-2026-11-26.csv" />
-    <link rel="related" type="text/html" href="https://github.com/izikipizi/nizlo-msp-operations-resources/releases/tag/rmm-pricing-2026-11-26" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html#compare-two-vendor-quotes" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=free_rmm_tier_limits#free-tier-billing-thresholds" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=atera_alternative&amp;utm_content=two_technician_cost#atera-mixed-fleet-cost" />
-    <updated>2026-11-28T08:03:56Z</updated>
-    <category term="pricing" />
-    <category term="dataset" />
-    <summary>Load three editable examples for 50 endpoints and two technicians. Nizlo Core totals $69 a month, Scale totals $89, and an illustrative $2.50-per-endpoint quote totals $125. Adjust the fleet size and add required tools or setup fees. The source-dated CSV covers 14 products.</summary>
   </entry>
   <entry>
     <title>How to verify a third-party Windows app update</title>
