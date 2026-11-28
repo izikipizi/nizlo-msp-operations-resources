@@ -6,12 +6,40 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-28T03:46:09Z</updated>
+  <updated>2026-11-28T04:25:47Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>RMM first endpoint not connecting? Activation troubleshooting checklist</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=first_endpoint_download_recovery#windows-installer-signing" />
+    <link rel="related" href="https://www.techwrix.com/the-first-15-minutes-after-an-rmm-endpoint-disappears/" />
+    <link rel="related" title="Installer warning evidence" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=first_endpoint_installer_warning#installer-warning-evidence" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html#resume-prepared-installer" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html#online-inventory-empty" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html#unexpected-device-check-in" />
+    <updated>2026-11-28T04:25:47Z</updated>
+    <category term="deployment" />
+    <category term="troubleshooting" />
+    <category term="activation" />
+    <summary>If a browser or endpoint protection blocks an installer, pause and keep protections enabled. Record the warning, source, and time. Remove workspace-specific enrollment details before sharing filenames or screenshots. The same guide covers signing waits, unfinished downloads, and missing first check-ins.</summary>
+  </entry>
+  <entry>
+    <title>RMM trial first 24 hours plan</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-first-24-hours-plan.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-first-24-hours-plan.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=first_device_selection#choose-first-device" />
+    <updated>2026-11-28T04:25:47Z</updated>
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html#installer-warning-evidence" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-first-24-hours-plan.html#second-technician-proof" />
+    <link rel="related" title="Decide after the first check-in" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-first-24-hours-plan.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=first_endpoint_plan_decision#after-first-endpoint" />
+    <category term="evaluation" />
+    <category term="activation" />
+    <category term="first endpoint" />
+    <summary>Choose a device that can prove your pilot workflow. After it checks in, test one recurring task and compare Core and Scale before checkout. The guide also links to the original-workspace billing recovery path.</summary>
+  </entry>
   <entry>
     <title>n8n RMM integration: read-only MSP workflows</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/n8n-rmm-integration.html</id>
@@ -100,21 +128,6 @@
     <category term="selection" />
     <category term="template" />
     <summary>Compare per-device, annual tier, and flat workspace quotes for the same 50 devices and 12 months. Load the editable examples to adjust rates or required add-ons, and record when the actual invoices are due.</summary>
-  </entry>
-  <entry>
-    <title>RMM first endpoint not connecting? Activation troubleshooting checklist</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=first_endpoint_download_recovery#windows-installer-signing" />
-    <link rel="related" href="https://www.techwrix.com/the-first-15-minutes-after-an-rmm-endpoint-disappears/" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html#installer-warning-evidence" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html#resume-prepared-installer" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html#online-inventory-empty" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html#unexpected-device-check-in" />
-    <updated>2026-11-27T21:37:29Z</updated>
-    <category term="deployment" />
-    <category term="troubleshooting" />
-    <category term="activation" />
-    <summary>Check whether Nizlo is still signing the Windows installer, the browser or Windows blocked it, or the agent installed without checking in. Follow the matching steps and use the same workspace and prepared installer.</summary>
   </entry>
   <entry>
     <title>RMM patch management policy checklist for Windows</title>
@@ -258,18 +271,6 @@
     <category term="pilot" />
     <category term="template" />
     <summary>Measure fault detection, ticket routing and verified recovery with worked online and offline pilot runs. The offline example records reconnect time separately, so MSPs can distinguish the delay while the device was unreachable from the time the RMM took to detect the fault after reconnect.</summary>
-  </entry>
-  <entry>
-    <title>RMM trial first 24 hours plan</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-first-24-hours-plan.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-first-24-hours-plan.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=first_device_selection#choose-first-device" />
-    <updated>2026-11-27T04:13:06Z</updated>
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-activation-troubleshooting-checklist.html#installer-warning-evidence" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-first-24-hours-plan.html#second-technician-proof" />
-    <category term="evaluation" />
-    <category term="activation" />
-    <category term="first endpoint" />
-    <summary>Choose a first device that can prove the workflow your RMM pilot needs. Use Windows for a Windows Update test, verify inventory and remote-support requirements on a Mac, or start with health and inventory on supported Ubuntu.</summary>
   </entry>
   <entry>
     <title>Windows patch failure triage checklist for MSPs</title>
