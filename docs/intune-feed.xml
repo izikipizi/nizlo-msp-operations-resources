@@ -6,7 +6,7 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/intune-feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-remote-support-vs-mdm-vs-endpoint-management.html" />
-  <updated>2026-11-27T20:09:38Z</updated>
+  <updated>2026-11-28T07:18:22Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
@@ -15,13 +15,18 @@
     <title>Test Windows update ownership when Autopatch and RMM overlap</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-policy-review-checklist.html#autopatch-and-rmm</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-policy-review-checklist.html?utm_source=nizlo_intune_feed&amp;utm_medium=rss&amp;utm_campaign=intune_field_notes&amp;utm_content=hotpatch_baseline#hotpatch-baseline-check" />
-    <updated>2026-11-27T20:09:38Z</updated>
+    <updated>2026-11-28T07:18:22Z</updated>
     <category term="intune" />
     <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-evaluation-scorecard-template.html?utm_source=nizlo_intune_feed&amp;utm_medium=rss&amp;utm_campaign=intune_field_notes#separate-patching-pilot" />
     <category term="windows-autopatch" />
     <category term="patch-management" />
     <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vs-remote-support-vs-mdm-vs-endpoint-management.html?utm_source=nizlo_intune_feed&amp;utm_medium=rss&amp;utm_campaign=intune_field_notes&amp;utm_content=update_ring_ownership#intune-update-ring-owner" />
     <summary>Assign the Intune owner the update ring and restart policy. Have the RMM technician verify the expected Windows build and current check-in on the same pilot device. Use the partner checklist to distinguish a no-restart Hotpatch from a baseline update that still needs a restart.</summary>
+    <content type="html">
+      &lt;p&gt;On one authorized pilot device, have the Intune owner record the update ring, expected update, and restart policy. Have the RMM technician verify the installed Windows build, check-in, and restart state on that same device.&lt;/p&gt;
+      &lt;p&gt;An eligible Hotpatch security update on a current baseline takes effect without a restart. The baseline update itself requires a restart, and a device behind the baseline can still receive it in a Hotpatch month. Check the update type in &lt;a href="https://learn.microsoft.com/en-us/intune/device-updates/windows/configure-hotpatch"&gt;Microsoft's Hotpatch guidance&lt;/a&gt;, then record the installed update, restart state, and next maintenance window before changing either tool's policy.&lt;/p&gt;
+      &lt;p&gt;If Windows patching will stay in Intune, test alert recovery and technician scope separately from patch deployment in your RMM pilot.&lt;/p&gt;
+    </content>
   </entry>
   <entry>
     <title>Reconcile an unexpected RMM check-in during an Intune rollout</title>
@@ -49,9 +54,14 @@
     <title>Test diagnostics consent in Microsoft Intune Remote Help</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-session-authorization-checklist.html#intune-remote-help-diagnostics</id>
     <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-remote-access-session-authorization-checklist.html?utm_source=nizlo_intune_feed&amp;utm_medium=rss&amp;utm_campaign=intune_field_notes#intune-remote-help-diagnostics" />
-    <updated>2026-11-26T18:45:10Z</updated>
+    <updated>2026-11-28T07:18:22Z</updated>
     <category term="intune" />
     <category term="remote-help" />
     <summary>Use an approved test device to check what happens when the user declines or stops optional diagnostics sharing during an attended support session.</summary>
+    <content type="html">
+      &lt;p&gt;Use an authorized Windows test device and a sample helpdesk ticket to verify the device diagnostics prompt during an attended Remote Help session.&lt;/p&gt;
+      &lt;ol&gt;&lt;li&gt;Decline diagnostics and confirm that remote assistance continues.&lt;/li&gt;&lt;li&gt;Allow diagnostics and confirm that the end user can view the same report as the helper.&lt;/li&gt;&lt;li&gt;Stop sharing and confirm that the helper is notified and cannot refresh the report while sharing is off. Handle data already saved under the client's retention policy.&lt;/li&gt;&lt;/ol&gt;
+      &lt;p&gt;Record the consent outcome, test time, technician, and any approved retention exceptions. Keep the raw report out of the ticket unless the client requires it. If the prompt is unavailable, record the tenant and app version and retest after rollout. See &lt;a href="https://learn.microsoft.com/en-us/intune/remote-help/start-session#attended-support"&gt;Microsoft's instructions for attended support&lt;/a&gt;.&lt;/p&gt;
+    </content>
   </entry>
 </feed>
