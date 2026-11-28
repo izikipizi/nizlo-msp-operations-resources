@@ -42,6 +42,11 @@ function localUrlFor(path) {
   return `${siteOrigin}${relativePath}`;
 }
 
+function hasHtmlAnchor(source, fragment) {
+  const anchors = source.matchAll(/\sid=(?:"([^"]+)"|'([^']+)')/g);
+  return [...anchors].some((anchor) => (anchor[1] ?? anchor[2]) === fragment);
+}
+
 function parseCsvHeader(source) {
   const fields = [];
   let field = "";
@@ -389,13 +394,33 @@ for (const path of htmlFiles) {
         continue;
       const fragment = decodeURIComponent(href.slice(hashStart + 1));
       const targetSource = target === path ? source : await readFile(target, "utf8");
-      const anchors = targetSource.matchAll(/\sid=(?:"([^"]+)"|'([^']+)')/g);
-      if (![...anchors].some((anchor) => (anchor[1] ?? anchor[2]) === fragment)) {
+      if (!hasHtmlAnchor(targetSource, fragment)) {
         throw new Error(`${relativePath}: missing internal anchor ${href}`);
       }
     }
   } catch (error) {
     errors.push(error.message);
+  }
+}
+
+const hostedFiles = new Map(allFiles.map((path) => [localUrlFor(path), path]));
+let feedLinksChecked = 0;
+for (const feed of ["feed.xml", "intune-feed.xml"]) {
+  const atom = await readFile(join(docsRoot, feed), "utf8");
+  for (const [, href] of atom.matchAll(/<link\b[^>]*\bhref="([^"]+)"/g)) {
+    if (!href.startsWith(siteOrigin)) continue;
+    feedLinksChecked += 1;
+    const url = new URL(href.replaceAll("&amp;", "&"));
+    const target = hostedFiles.get(`${url.origin}${url.pathname}`);
+    if (!target) {
+      errors.push(`docs/${feed}: missing resource for ${href}`);
+      continue;
+    }
+    if (!url.hash || !target.endsWith(".html")) continue;
+    const source = await readFile(target, "utf8");
+    if (!hasHtmlAnchor(source, decodeURIComponent(url.hash.slice(1)))) {
+      errors.push(`docs/${feed}: missing resource anchor for ${href}`);
+    }
   }
 }
 
@@ -438,6 +463,6 @@ if (errors.length > 0) {
   process.exitCode = 1;
 } else {
   console.log(
-    `Verified ${htmlFiles.length} HTML pages, ${sitemapUrls.size} sitemap URLs, JSON-LD, canonicals, metadata, headings, and internal links.`,
+    `Verified ${htmlFiles.length} HTML pages, ${sitemapUrls.size} sitemap URLs, ${feedLinksChecked} local Atom links, JSON-LD, canonicals, metadata, headings, and internal links.`,
   );
 }
