@@ -46,6 +46,7 @@
     <p id="retained-tools-example-context" class="hint" hidden>These USD examples start with a 50-device, two-technician scenario. Confirm the actual Naverisk quote and included coverage. The $41 retained-tool cost on the Core side is the amount that brings the modeled totals to parity. Replace it with your own recurring costs and add implementation fees separately. <a data-trial-campaign href="rmm-quote-comparison-worksheet.html#naverisk-retained-tools">See the price assumptions</a>.</p>
     <p id="quoted-minimum-example-context" class="hint" hidden>This example starts with 50 managed devices and a 150-device billing minimum. Confirm both quantities, enter your written quote's endpoint rate and currency, then add any other charges. <a data-trial-campaign href="rmm-quote-comparison-worksheet.html#superops-endpoint-minimum">See the comparison assumptions</a>.</p>
     <p id="workspace-comparison-context" class="hint" hidden>Compare 50 managed endpoints and two technicians. The $2.50 per-device rate is an illustration. The Nizlo plans use published USD rates. Change the endpoint count to test your crossover and include any required tools or setup fees. <a data-trial-campaign href="public-rmm-pricing-dataset.html#workspace-break-even">Review the worked comparison</a>.</p>
+    <p id="intune-budget-context" class="hint" hidden>These examples model 50 devices, 40 Intune users and two RMM technicians. The standalone case adds a $320 monthly equivalent for Intune. Record the separate $3,840 annual Microsoft invoice in the worksheet. The already-licensed case shows incremental RMM spend. <a data-trial-campaign href="rmm-quote-comparison-worksheet.html#intune-rmm-budget">Check the licensing assumptions</a>.</p>
     <h2>Enter one vendor quote</h2><p class="hint">Choose USD, EUR or GBP and enter every quote in the same currency. The calculator formats amounts without converting them. Use zero where a charge does not apply, then download a row for the comparison worksheet.</p>
     <p id="manageengine-example-context" class="hint" hidden>This example starts with ManageEngine’s published USD base plan and add-on for 50 endpoints and one technician. The 10-month estimate assumes you can stop monthly billing after 10 months. <a data-trial-campaign href="rmm-quote-comparison-worksheet.html#manageengine-billing-term-example">Review the source and annual comparison</a>.</p>
     <div class="fields">
@@ -189,6 +190,14 @@ const workspaceComparisonExamples = new Map([
   ["scale-2-technicians", { ...billingUnitExamples.get("nizlo-scale-50"), "technicians": 2 }],
   ["per-device-2-technicians", { ...fiftyDeviceExample, "technicians": 2, "included-techs": 2, "endpoint-rate": 2.5 }],
 ]);
+const intuneBudgetBase = {
+  ...workspaceComparisonExamples.get("core-2-technicians"),
+  "managed-users": 40,
+};
+const intuneBudgetExamples = new Map([
+  ["intune-core-already-licensed", intuneBudgetBase],
+  ["intune-core-standalone", { ...intuneBudgetBase, "addon-flat": 320 }],
+]);
 const retainedToolExamples = new Map([
   ["naverisk-starting-price", { ...fiftyDeviceExample, "technicians": 2, "base": 110 }],
   ["nizlo-core-retained-tools", { ...billingUnitExamples.get("nizlo-core-50"), "technicians": 2, "addon-flat": 41 }],
@@ -197,6 +206,7 @@ const examples = new Map([
   ...billingUnitExamples,
   ...retainedToolExamples,
   ...workspaceComparisonExamples,
+  ...intuneBudgetExamples,
   ["endpoint-minimum", endpointMinimumExample],
   ["quoted-endpoint-minimum", {
     ...endpointMinimumExample,
@@ -234,12 +244,13 @@ const defaults = examples.get(exampleName) ?? standardExample;
 const isManageEngineExample = exampleName === "manageengine-monthly";
 const isBillingUnitExample = billingUnitExamples.has(exampleName);
 const isWorkspaceComparison = workspaceComparisonExamples.has(exampleName);
+const isIntuneBudgetExample = intuneBudgetExamples.has(exampleName);
 const isRetainedToolExample = retainedToolExamples.has(exampleName);
 const isQuotedMinimumExample = exampleName === "quoted-endpoint-minimum";
 const unlimitedEndpointsField = document.getElementById("unlimited-endpoints");
-const unlimitedEndpointExamples = new Set(["nizlo-core-50", "nizlo-scale-50", "nizlo-core-retained-tools", "core-2-technicians", "scale-2-technicians"]);
+const unlimitedEndpointExamples = new Set(["nizlo-core-50", "nizlo-scale-50", "nizlo-core-retained-tools", "core-2-technicians", "scale-2-technicians", ...intuneBudgetExamples.keys()]);
 const endpointOverageFields = ["included-endpoints", "endpoint-rate", "endpoint-rate-period", "minimum-paid-endpoints"].map(id => document.getElementById(id));
-const usesSourceUsd = isManageEngineExample || isBillingUnitExample || isRetainedToolExample || isWorkspaceComparison;
+const usesSourceUsd = isManageEngineExample || isBillingUnitExample || isRetainedToolExample || isWorkspaceComparison || isIntuneBudgetExample;
 
 function resetExample() {
   for (const [id, amount] of Object.entries(defaults)) {
@@ -257,6 +268,7 @@ document.getElementById("manageengine-example-context").hidden = !isManageEngine
 document.getElementById("billing-unit-example-context").hidden = !isBillingUnitExample;
 document.getElementById("retained-tools-example-context").hidden = !isRetainedToolExample;
 document.getElementById("workspace-comparison-context").hidden = !isWorkspaceComparison;
+document.getElementById("intune-budget-context").hidden = !isIntuneBudgetExample;
 document.getElementById("quoted-minimum-example-context").hidden = !isQuotedMinimumExample;
 const endpointRateField = document.getElementById("endpoint-rate");
 endpointRateField.required = isQuotedMinimumExample;
