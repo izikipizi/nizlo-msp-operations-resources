@@ -6,12 +6,24 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-28T09:31:40Z</updated>
+  <updated>2026-11-28T10:03:24Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>n8n RMM integration: read-only MSP workflows</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/n8n-rmm-integration.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/n8n-rmm-integration.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=n8n_trial_pilot&amp;utm_content=built_in_workflow#built-in-http-template" />
+    <link rel="related" type="text/html" href="https://nizlo.com/guides/n8n-rmm-automation?utm_source=atom&amp;utm_medium=external_resource&amp;utm_campaign=n8n_rmm_automation" />
+    <link rel="enclosure" type="application/json" href="https://izikipizi.github.io/nizlo-msp-operations-resources/downloads/n8n-nizlo-active-critical-alerts-http.json" />
+    <link rel="related" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/n8n-rmm-integration.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=n8n_trial_pilot&amp;utm_content=offline_windows#built-in-offline-windows-template" />
+    <link rel="enclosure" type="application/json" href="https://izikipizi.github.io/nizlo-msp-operations-resources/downloads/n8n-nizlo-offline-windows-endpoints-http.json" />
+    <updated>2026-11-28T10:03:24Z</updated>
+    <category term="n8n" /><category term="RMM API" /><category term="MSP automation" />
+    <summary>Download two inactive workflows using n8n's built-in HTTP Request node. Read up to 50 active critical alerts or up to 100 active Windows endpoints reported offline in an authorized Nizlo workspace. The guide covers credential setup and expected results.</summary>
+  </entry>
   <entry>
     <title>Check the active adapter before retrying a DNS job</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-script-not-running-job-stuck-troubleshooting-checklist.html</id>
@@ -128,16 +140,6 @@
     <category term="activation" />
     <category term="first endpoint" />
     <summary>Choose a device that can prove your pilot workflow. After it checks in, test one recurring task and compare Core and Scale before checkout. The guide also links to the original-workspace billing recovery path.</summary>
-  </entry>
-  <entry>
-    <title>n8n RMM integration: read-only MSP workflows</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/n8n-rmm-integration.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/n8n-rmm-integration.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=n8n_trial_pilot&amp;utm_content=built_in_workflow#built-in-http-template" />
-    <link rel="related" type="text/html" href="https://nizlo.com/guides/n8n-rmm-automation?utm_source=atom&amp;utm_medium=external_resource&amp;utm_campaign=n8n_rmm_automation" />
-    <link rel="enclosure" type="application/json" href="https://izikipizi.github.io/nizlo-msp-operations-resources/downloads/n8n-nizlo-active-critical-alerts-http.json" />
-    <updated>2026-11-28T03:46:09Z</updated>
-    <category term="n8n" /><category term="RMM API" /><category term="MSP automation" />
-    <summary>Download an inactive n8n workflow that uses the built-in HTTP Request node to read the first 50 active critical alerts from an authorized Nizlo workspace. The guide covers credential setup, empty results, and two additional examples for the Nizlo community node.</summary>
   </entry>
   <entry>
     <title>RMM first-endpoint pilot acceptance checklist</title>
