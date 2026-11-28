@@ -6,12 +6,22 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-28T02:58:25Z</updated>
+  <updated>2026-11-28T03:20:15Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>MSP managed service margin calculator</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/msp-managed-service-margin-calculator.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/msp-managed-service-margin-calculator.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=repair_shop_first_workspace#first-managed-client" />
+    <updated>2026-11-28T03:20:15Z</updated>
+    <category term="calculator" />
+    <category term="pricing" />
+    <category term="margin" />
+    <summary>Compare the cost of serving a first 10-device managed customer with shared tools versus a new RMM workspace. Edit the separate tools and labor inputs, check your break-even, and use the linked pilot before committing to a recurring price.</summary>
+  </entry>
   <entry>
     <title>macOS RMM pilot evaluation matrix</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/macos-rmm-pilot-evaluation-matrix.html</id>
@@ -417,16 +427,6 @@
     <category term="audit-logging" />
     <category term="template" />
     <summary>Use a free RMM audit log review checklist to test twenty-four controls for actor and tenant attribution, endpoint identity, privileged workflows, outcomes, retention, export, monitoring, investigation readiness, and exception closure. Includes a worked example for preserving evidence before retiring a device.</summary>
-  </entry>
-  <entry>
-    <title>MSP managed service margin calculator</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/msp-managed-service-margin-calculator.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/msp-managed-service-margin-calculator.html" />
-    <updated>2026-11-26T08:51:23Z</updated>
-    <category term="calculator" />
-    <category term="pricing" />
-    <category term="margin" />
-    <summary>Model managed-service margin and load a worked 10-device example for a repair shop pricing its first managed client.</summary>
   </entry>
   <entry>
     <title>RMM cost calculator for small MSPs</title>

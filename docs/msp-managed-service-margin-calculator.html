@@ -43,11 +43,11 @@
     <h2 id="first-client-heading">Price a repair shop’s first managed-service customer</h2>
     <p>In this fictional pilot, a shop agrees to monitor ten authorized business workstations, review alerts, and check patches during an agreed window. Emergency callouts and project work are quoted separately.</p>
     <p>Half an hour of monthly labor at $60 per hour plus $18 in allocated tools costs $48 per month. An $80 monthly base fee leaves $32 of modeled contribution, or 40%, before unentered costs. If labor doubles to one hour, cost rises to $78 and the same quote leaves $2. Use the pilot to measure recurring work and include any admin, coverage, or shared costs your service needs to recover.</p>
-    <p>If this is your only managed client and you need a new RMM workspace, charge the full monthly subscription to the scenario. With <a href="https://nizlo.com/pricing?utm_source=github_pages&amp;utm_medium=resource&amp;utm_campaign=computer_repair_rmm&amp;utm_content=first_workspace_pricing">Nizlo Core at $59 per month</a>, $18 for separate tools, and $30 of labor, monthly cost is $107. An $80 customer fee leaves a $27 monthly shortfall before other costs.</p>
+    <p>If this is your only managed client and you need a new RMM workspace, charge the full monthly subscription to the scenario. With <a data-trial-campaign href="https://nizlo.com/pricing?utm_source=github_pages&amp;utm_medium=resource&amp;utm_campaign=computer_repair_rmm&amp;utm_content=first_workspace_pricing">Nizlo Core at $59 per month</a>, $18 for separate tools, and $30 of labor, monthly cost is $107. An $80 customer fee leaves a $27 monthly shortfall before other costs.</p>
     <div class="actions">
       <button class="button" type="button" id="load-first-client">Load the shared-tool example</button>
       <button class="button" type="button" id="load-first-workspace">Load the new-workspace example</button>
-      <a class="button" href="https://nizlo.com/solutions/rmm-for-computer-repair-shops?utm_source=github_pages&amp;utm_medium=resource&amp;utm_campaign=computer_repair_rmm&amp;utm_content=first_client_margin">Plan your repair shop pilot</a>
+      <a data-trial-campaign class="button" href="https://nizlo.com/solutions/rmm-for-computer-repair-shops?utm_source=github_pages&amp;utm_medium=resource&amp;utm_campaign=computer_repair_rmm&amp;utm_content=first_client_margin">Plan your repair shop pilot</a>
     </div>
     <p class="hint">Using the example fills in the calculator below. You can change every input.</p>
   </section>
@@ -107,4 +107,4 @@ document.getElementById("load-first-workspace").addEventListener("click", () =>
   loadExample({ ...firstClientExample, fixedCost: 59 })
 );
 document.querySelectorAll("input").forEach(input=>input.addEventListener("input",update));document.getElementById("copy").addEventListener("click",async()=>{try{await navigator.clipboard.writeText(summary());document.getElementById("status").textContent="Pricing summary copied."}catch{document.getElementById("status").textContent="Copy was blocked. Select and copy the visible results instead."}});update();
-</script></body></html>
+</script><script src="assets/trial-campaign.js" defer></script></body></html>
