@@ -1,0 +1,56 @@
+{
+  "name": "Read active critical Nizlo alerts with HTTP Request",
+  "nodes": [
+    {
+      "parameters": {
+        "width": 620,
+        "height": 260,
+        "content": "## Before you run\n\nUse an authorized test workspace and a Nizlo personal access token limited to `alerts.view`. On the HTTP Request node, add a Header Auth credential with name `Authorization` and value `Bearer YOUR_TOKEN`. Save the credential in n8n.\n\nThis manual workflow requests only page 1, with up to 50 alerts reported as active and critical. Inspect `items` and `total` in the node output. An empty list is valid.\n\n[Setup and expected output](https://izikipizi.github.io/nizlo-msp-operations-resources/n8n-rmm-integration.html?utm_source=n8n_workflow&utm_medium=template&utm_campaign=n8n_critical_alerts#built-in-http-template)"
+      },
+      "id": "34bff9a7-b0aa-4c8a-9d6b-11be63dfb8d8",
+      "name": "Read this first",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [0, 0]
+    },
+    {
+      "parameters": {},
+      "id": "868bc972-c0c5-4806-92fe-b28072042417",
+      "name": "Run manually",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [80, 340]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "https://app.nizlo.com/api/v1/alerts",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            { "name": "status", "value": "ACTIVE" },
+            { "name": "severity", "value": "CRITICAL" },
+            { "name": "page", "value": "1" },
+            { "name": "pageSize", "value": "50" }
+          ]
+        },
+        "options": { "timeout": 10000 }
+      },
+      "id": "f2e459f0-2bbe-485d-b850-98e550317544",
+      "name": "Read active critical alerts",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [340, 340]
+    }
+  ],
+  "connections": {
+    "Run manually": {
+      "main": [[{ "node": "Read active critical alerts", "type": "main", "index": 0 }]]
+    }
+  },
+  "active": false,
+  "settings": {},
+  "tags": []
+}

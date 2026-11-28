@@ -4,13 +4,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>n8n RMM Integration: Read-Only MSP Workflows | Nizlo</title>
-  <meta name="description" content="Use a public read-only n8n RMM integration for Nizlo customers, sites, endpoints, and alerts, with two inactive starter workflows and a safe deployment checklist." />
+  <meta name="description" content="Read Nizlo alerts in n8n with a built-in HTTP Request template, or use the community node for customers, sites, endpoints, and alerts." />
   <meta name="robots" content="index,follow,max-image-preview:large" />
   <link rel="canonical" href="https://izikipizi.github.io/nizlo-msp-operations-resources/n8n-rmm-integration.html" />
   <link rel="alternate" type="application/atom+xml" title="Nizlo MSP Operations Resources" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="n8n RMM Integration: Read-Only MSP Workflows" />
-  <meta property="og:description" content="Review the public node, exact permission boundary, GitHub installation path, and two credential-free workflow examples." />
+  <meta property="og:description" content="Download a read-only alert workflow for n8n's built-in HTTP Request node and review the community node, permissions, and setup guide." />
   <meta property="og:url" content="https://izikipizi.github.io/nizlo-msp-operations-resources/n8n-rmm-integration.html" />
   <meta property="og:image" content="https://nizlo.com/opengraph-image" />
   <meta property="og:image:alt" content="n8n RMM integration for read-only MSP workflows" />
@@ -21,7 +21,7 @@
     "@context":"https://schema.org",
     "@type":"TechArticle",
     "headline":"n8n RMM Integration: Read-Only MSP Workflows",
-    "description":"A practical guide to the public read-only Nizlo n8n community node, its permission boundary, GitHub installation path, and two starter workflows.",
+    "description":"A read-only alert workflow using n8n's built-in HTTP Request node, with setup instructions and examples for the Nizlo community node.",
     "url":"https://izikipizi.github.io/nizlo-msp-operations-resources/n8n-rmm-integration.html",
     "author":{"@type":"Person","name":"Kip Ecklund"},
     "publisher":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},
@@ -85,7 +85,19 @@
     <section><h2>Install from the public GitHub package</h2><div class="panel"><p>An administrator of a self-hosted n8n instance with community nodes enabled can review the public release and install the tagged version from GitHub:</p><pre><code>cd ~/.n8n/nodes
 npm install github:izikipizi/n8n-nodes-nizlo#v0.1.0</code></pre><p>Restart n8n after installation. Review n8n's current <a href="https://docs.n8n.io/integrations/community-nodes/installation-and-management/">community-node installation and management guidance</a> and your own change-control requirements before adding any third-party package to production.</p></div></section>
 
-    <section><h2>Two starter workflows</h2><div class="grid">
+    <section aria-labelledby="built-in-http-template">
+      <h2 id="built-in-http-template">Read critical alerts with n8n's built-in HTTP Request node</h2>
+      <p>Import this workflow to check Nizlo alerts without installing a community node. It starts inactive and makes one manual request for up to 50 active critical alerts from your workspace.</p>
+      <p><a href="downloads/n8n-nizlo-active-critical-alerts-http.json" download>Download the built-in n8n workflow (JSON)</a></p>
+      <ol>
+        <li>Import the file and open <strong>Read active critical alerts</strong>.</li>
+        <li>In an authorized test workspace, create a Nizlo personal access token limited to <code>alerts.view</code>. Add it to an n8n Header Auth credential with the name <code>Authorization</code> and the value <code>Bearer YOUR_TOKEN</code>. Keep the actual token in n8n credentials.</li>
+        <li>Run manually and compare the <code>items</code> and <code>total</code> fields with the Nizlo alert list. An empty list can be a valid result. If <code>total</code> exceeds 50, this workflow displays only the first page.</li>
+      </ol>
+      <p>For the request and response fields, see the <a href="https://nizlo.com/openapi.json">Nizlo API contract</a> and <a href="https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.httprequest/">n8n's HTTP Request documentation</a>.</p>
+    </section>
+
+    <section><h2>Two workflows for the Nizlo community node</h2><div class="grid">
       <article class="panel"><h3>Active critical alerts</h3><p>Reads up to 50 unresolved critical alerts for a later triage, ticketing, reporting, or notification step that you define.</p><p><a href="https://github.com/izikipizi/n8n-nodes-nizlo/blob/main/examples/active-critical-alerts.json">Review the workflow JSON</a> · <a href="https://raw.githubusercontent.com/izikipizi/n8n-nodes-nizlo/main/examples/active-critical-alerts.json">Download raw JSON</a></p></article>
       <article class="panel"><h3>Offline Windows endpoints</h3><p>Reads up to 100 active Windows endpoints that Nizlo currently reports offline, without changing endpoint state.</p><p><a href="https://github.com/izikipizi/n8n-nodes-nizlo/blob/main/examples/offline-windows-endpoints.json">Review the workflow JSON</a> · <a href="https://raw.githubusercontent.com/izikipizi/n8n-nodes-nizlo/main/examples/offline-windows-endpoints.json">Download raw JSON</a></p></article>
       <article class="panel"><h3>What the examples do not do</h3><p>They do not contain tokens, send messages, create tickets, run scripts, patch or reboot endpoints, open remote sessions, or mutate Nizlo data.</p><p><a href="https://github.com/izikipizi/n8n-nodes-nizlo/tree/main/examples">Browse both examples</a></p></article>
