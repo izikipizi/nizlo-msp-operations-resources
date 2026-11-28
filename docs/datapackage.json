@@ -1406,6 +1406,78 @@
     },
     {
       "profile": "tabular-data-resource",
+      "name": "third-party-app-patch-pilot",
+      "title": "Third-party Windows app patch pilot worksheet",
+      "description": "Twelve illustrative device rows that separate application detection, installation, running-version verification, and next checks.",
+      "path": "templates/third-party-app-patch-pilot.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 1947,
+      "hash": "sha256:923c6ca12c30290c1a00995cb119528239fa260b3d7fac3f1a92510bbcd85c9d",
+      "schema": {
+        "fields": [
+          {
+            "name": "Record type",
+            "type": "string"
+          },
+          {
+            "name": "Device alias",
+            "type": "string"
+          },
+          {
+            "name": "Application",
+            "type": "string"
+          },
+          {
+            "name": "Architecture",
+            "type": "string"
+          },
+          {
+            "name": "Update channel",
+            "type": "string"
+          },
+          {
+            "name": "Catalog match checked",
+            "type": "string"
+          },
+          {
+            "name": "Version detected before update",
+            "type": "string"
+          },
+          {
+            "name": "Approved target version",
+            "type": "string"
+          },
+          {
+            "name": "Install result",
+            "type": "string"
+          },
+          {
+            "name": "Observed running version",
+            "type": "string"
+          },
+          {
+            "name": "Smoke test",
+            "type": "string"
+          },
+          {
+            "name": "Verification status",
+            "type": "string"
+          },
+          {
+            "name": "Owner",
+            "type": "string"
+          },
+          {
+            "name": "Next check",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
       "name": "windows-patch-exception-review",
       "title": "Windows patch exception review and closure template",
       "description": "Eighteen controls for recording patch exception scope, evidence, risk, approval, compensating controls, monitoring, expiry, retest, and closure.",
