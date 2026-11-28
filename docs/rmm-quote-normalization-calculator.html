@@ -33,6 +33,8 @@
 <style>
 :root{color-scheme:dark;--bg:#06141a;--panel:#0b222b;--panel2:#0d2933;--line:#21424c;--text:#edf8fa;--muted:#abc2c8;--teal:#1dc6c7;--teal2:#8be7e4;--ink:#03282d;--good:#8de3b0}*{box-sizing:border-box}body{margin:0;color:var(--text);background:radial-gradient(circle at 80% 0,rgba(29,198,199,.17),transparent 32rem),var(--bg);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.55}a{color:inherit}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--teal2);outline-offset:3px}.wrap{width:min(1120px,calc(100% - 2rem));margin:auto}header{padding:1.1rem 0;border-bottom:1px solid rgba(139,231,228,.13)}nav{display:flex;justify-content:space-between;align-items:center;gap:1rem}.brand{display:flex;align-items:center;gap:.7rem;font-weight:850;text-decoration:none}.mark{display:grid;place-items:center;width:2rem;height:2rem;border-radius:.65rem;background:var(--teal);color:var(--ink)}.back{color:var(--muted)}main{padding:4.4rem 0 4rem}.eyebrow{color:var(--teal2);font-weight:800;text-transform:uppercase;letter-spacing:.12em;font-size:.78rem}h1{max-width:940px;margin:.65rem 0 1rem;font-size:clamp(2.5rem,7vw,5rem);line-height:.98;letter-spacing:-.052em}.lede{max-width:850px;margin:0;color:var(--muted);font-size:1.12rem}.privacy{margin:1.4rem 0 2.2rem;color:var(--teal2);font-weight:750}.calculator{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(310px,.92fr);gap:1.25rem;align-items:start}.panel{padding:1.35rem;border:1px solid var(--line);border-radius:1.15rem;background:linear-gradient(145deg,rgba(14,41,50,.97),rgba(8,28,35,.98));box-shadow:0 20px 60px rgba(0,0,0,.16)}.panel h2{margin:.1rem 0 .3rem;font-size:1.45rem}.hint{margin:0 0 1.25rem;color:var(--muted);font-size:.94rem}.fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.field{display:grid;gap:.38rem}.field-wide{grid-column:1/-1}label{font-weight:760}.sub{display:block;color:var(--muted);font-size:.82rem;font-weight:500}input,select{width:100%;padding:.78rem .82rem;border:1px solid var(--line);border-radius:.7rem;background:#061a21;color:var(--text);font:inherit}input:hover,select:hover{border-color:#3a6670}.results{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.85rem;margin-top:1.1rem}.result{padding:1rem;border:1px solid var(--line);border-radius:.85rem;background:rgba(5,24,30,.72)}.result span{display:block;color:var(--muted);font-size:.84rem}.result strong{display:block;margin-top:.1rem;font-size:1.45rem;line-height:1.2}.result small{display:block;margin-top:.28rem;color:var(--muted)}.positive strong{color:var(--good)}.breakdown{margin:.9rem 0 0;padding-left:1.2rem;color:var(--muted)}.breakdown strong{color:var(--text)}.actions{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1rem}.button{display:inline-flex;align-items:center;justify-content:center;padding:.76rem .95rem;border-radius:.72rem;border:1px solid var(--line);background:transparent;color:var(--text);font:inherit;font-weight:800;text-decoration:none;cursor:pointer}.primary{background:var(--teal);color:var(--ink);border-color:var(--teal)}.formula,.note,.faq{margin-top:1.2rem;padding:1.15rem 1.25rem;border-left:4px solid var(--teal);background:var(--panel);color:var(--muted)}.formula code{color:var(--text)}.formula ul{margin:.6rem 0 0;padding-left:1.2rem}.faq h2{margin:.1rem 0 .8rem;color:var(--text)}.faq h3{margin:1rem 0 .25rem;color:var(--text);font-size:1rem}.faq p{margin:0}.next{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin-top:1.25rem}.next article{padding:1.25rem;border:1px solid var(--line);border-radius:1rem;background:var(--panel)}.next h2{font-size:1.15rem;margin:0 0 .4rem}.next p{color:var(--muted);margin:0 0 .8rem}footer{display:flex;justify-content:space-between;gap:1rem;padding:2rem 0;border-top:1px solid var(--line);color:var(--muted);font-size:.92rem}@media(max-width:840px){main{padding-top:3rem}.calculator{grid-template-columns:1fr}.next{grid-template-columns:1fr}}@media(max-width:600px){.fields,.results{grid-template-columns:1fr}.field-wide{grid-column:auto}nav,footer{align-items:flex-start;flex-direction:column}}
 .results[hidden] { display: none; }
+.coverage-toggle { display: flex; align-items: center; gap: .55rem; }
+.coverage-toggle input { width: auto; accent-color: var(--teal); }
 </style></head><body>
 <header><nav class="wrap"><a class="brand" href="./"><span class="mark">N</span><span>Nizlo MSP Operations Resources</span></a><a class="back" href="rmm-calculators.html">All calculators</a></nav></header>
 <main class="wrap"><div class="eyebrow">Free · Browser only · Vendor neutral</div><h1>Normalize an RMM quote before comparing it.</h1>
@@ -52,6 +54,7 @@
       <div class="field"><label for="technicians">Technicians</label><input id="technicians" type="number" min="0" step="1" value="2" inputmode="numeric" /></div>
       <div class="field"><label for="base">Monthly base fee <span class="sub">Before variable usage</span></label><input id="base" type="number" min="0" step="0.01" value="99" inputmode="decimal" /></div>
       <div class="field"><label for="minimum">Minimum monthly spend <span class="sub">Applied before discount</span></label><input id="minimum" type="number" min="0" step="0.01" value="0" inputmode="decimal" /></div>
+      <label class="field-wide coverage-toggle"><input id="unlimited-endpoints" type="checkbox" /> Unlimited endpoints in base fee</label>
       <div class="field"><label for="included-endpoints">Included endpoints</label><input id="included-endpoints" type="number" min="0" step="1" value="0" inputmode="numeric" /></div>
       <div class="field"><label for="endpoint-rate">Price per endpoint</label><input id="endpoint-rate" type="number" min="0" step="0.01" value="2.5" inputmode="decimal" /></div>
       <div class="field"><label for="endpoint-rate-period">Endpoint price period</label><select id="endpoint-rate-period"><option value="month" selected>Per month</option><option value="year">Per year</option></select></div>
@@ -138,7 +141,7 @@
   <p>For example, Level’s published rate is $2 per device for the whole fleet starting at 11 devices. If the month peaks at 15 devices and ends at 12, enter 15 for the endpoint count to reproduce the $30 subscription. The calculator’s per-endpoint result in this case also uses 15. If you want the cost per device still managed at month end, divide $30 by 12 separately.</p>
   <p><a data-trial-campaign href="public-rmm-pricing-dataset.html#free-tier-billing-thresholds">See the sourced Level and Action1 examples</a>.</p>
 </aside>
-<aside class="formula"><strong>Transparent formulas</strong><ul><li><code>endpoint charge = max(minimum paid endpoints, endpoints − included endpoints) × monthly endpoint rate (annual rate ÷ 12)</code></li><li><code>technician charge = max(0, technicians − included technicians) × extra-technician rate</code></li><li><code>add-ons = endpoints × required add-on rate + other required monthly fees</code></li><li><code>pre-discount monthly = max(monthly minimum, base + endpoint charge + technician charge + add-ons)</code></li><li><code>recurring monthly = pre-discount monthly × (1 − discount %)</code></li><li><code>contract cost = recurring monthly × contract months + one-time fees</code></li><li><code>effective monthly = contract cost ÷ contract months</code></li></ul></aside>
+<aside class="formula"><strong>Transparent formulas</strong><p>Select unlimited endpoints when the base plan includes them. The endpoint overage is then zero. Required per-device add-ons still use the managed count.</p><ul><li><code>endpoint charge = max(minimum paid endpoints, endpoints − included endpoints) × monthly endpoint rate (annual rate ÷ 12)</code></li><li><code>technician charge = max(0, technicians − included technicians) × extra-technician rate</code></li><li><code>add-ons = endpoints × required add-on rate + other required monthly fees</code></li><li><code>pre-discount monthly = max(monthly minimum, base + endpoint charge + technician charge + add-ons)</code></li><li><code>recurring monthly = pre-discount monthly × (1 − discount %)</code></li><li><code>contract cost = recurring monthly × contract months + one-time fees</code></li><li><code>effective monthly = contract cost ÷ contract months</code></li></ul></aside>
 <section class="faq" aria-labelledby="faq-title"><h2 id="faq-title">RMM quote-normalization questions</h2><h3>How do you normalize an RMM quote?</h3><p>Separate the base fee, included quantities, overage rates, add-ons, minimum, discount, one-time fees, and term. Compare the resulting recurring, first-year, contract, and per-endpoint costs.</p><h3>Should implementation fees be included?</h3><p>Keep one-time fees visible and allocate them across the term only as a comparison aid. Do not disguise them as recurring subscription cost.</p><h3>Does the lowest normalized quote win?</h3><p>No. Verify operating-system coverage, security, integrations, support, retained tools, export, migration, and pilot evidence before selecting a platform.</p></section>
 <section aria-labelledby="verify-checkout">
   <h2 id="verify-checkout">Check the actual charge before approving checkout</h2>
@@ -177,7 +180,8 @@ const fiftyDeviceExample = {
 const billingUnitExamples = new Map([
   ["ninjaone-50", { ...fiftyDeviceExample, "endpoint-rate": 3.75 }],
   ["manageengine-on-premises-50", { ...fiftyDeviceExample, "base": 795 / 12, "included-endpoints": 50 }],
-  ["nizlo-core-50", { ...fiftyDeviceExample, "base": 59, "included-endpoints": 50, "tech-rate": 10 }],
+  ["nizlo-core-50", { ...fiftyDeviceExample, "base": 59, "tech-rate": 10 }],
+  ["nizlo-scale-50", { ...fiftyDeviceExample, "base": 79, "tech-rate": 10 }],
 ]);
 const retainedToolExamples = new Map([
   ["naverisk-starting-price", { ...fiftyDeviceExample, "technicians": 2, "base": 110 }],
@@ -224,12 +228,16 @@ const isManageEngineExample = exampleName === "manageengine-monthly";
 const isBillingUnitExample = billingUnitExamples.has(exampleName);
 const isRetainedToolExample = retainedToolExamples.has(exampleName);
 const isQuotedMinimumExample = exampleName === "quoted-endpoint-minimum";
+const unlimitedEndpointsField = document.getElementById("unlimited-endpoints");
+const unlimitedEndpointExamples = new Set(["nizlo-core-50", "nizlo-scale-50", "nizlo-core-retained-tools"]);
+const endpointOverageFields = ["included-endpoints", "endpoint-rate", "endpoint-rate-period", "minimum-paid-endpoints"].map(id => document.getElementById(id));
 const usesSourceUsd = isManageEngineExample || isBillingUnitExample || isRetainedToolExample;
 
 function resetExample() {
   for (const [id, amount] of Object.entries(defaults)) {
     document.getElementById(id).value = amount;
   }
+  unlimitedEndpointsField.checked = unlimitedEndpointExamples.has(exampleName);
   if (usesSourceUsd) currencyField.value = "USD";
   calculate();
 }
@@ -247,8 +255,10 @@ const value=id=>Math.max(0,Number(document.getElementById(id).value)||0);
 const worksheetColumns = "record_id,vendor,quote_date,currency,billing_basis,contract_term_months,service_start_date,renewal_or_end_date,nonrenewal_notice_days,automatic_renewal_term_months,minimum_spend_or_seats,base_platform_fee,included_technicians,included_endpoints,additional_technician_fee,additional_endpoint_fee,mandatory_addons_monthly,optional_addons_monthly,implementation_fee,training_fee,estimated_monthly_total,estimated_year_one_total,renewal_uplift_or_cap,early_termination_terms,data_export_or_exit_cost,source_or_quote_reference,assumptions,decision_owner,status,notes".split(",");
 let worksheetRow;
 function calculate(){
+ const unlimitedEndpoints = unlimitedEndpointsField.checked;
+ for (const field of endpointOverageFields) field.disabled = unlimitedEndpoints;
  if (isQuotedMinimumExample) {
-   const needsRate = !endpointRateField.value || !endpointRateField.validity.valid;
+   const needsRate = !unlimitedEndpoints && (!endpointRateField.value || !endpointRateField.validity.valid);
    document.getElementById("quote-rate-missing").hidden = !needsRate;
    document.getElementById("quote-results").hidden = needsRate;
    document.getElementById("breakdown").hidden = needsRate;
@@ -264,9 +274,10 @@ function calculate(){
  const currency = supportedCurrency(currencyField.value);
  const money = new Intl.NumberFormat("en-US", { style: "currency", currency });
  const endpoints=value("endpoints"),techs=value("technicians"),base=value("base"),minimum=value("minimum"),includedEndpoints=value("included-endpoints"),endpointRate=value("endpoint-rate"),includedTechs=value("included-techs"),techRate=value("tech-rate"),addonEndpoint=value("addon-endpoint"),addonFlat=value("addon-flat"),discount=Math.min(100,value("discount")),term=Math.max(1,Math.round(value("term"))),oneTime=value("one-time");
- const minimumPaidEndpoints=value("minimum-paid-endpoints");
+ const minimumPaidEndpoints=unlimitedEndpoints ? 0 : value("minimum-paid-endpoints");
  const endpointRatePeriod=document.getElementById("endpoint-rate-period").value === "year" ? "year" : "month";
- const endpointUnits=Math.max(minimumPaidEndpoints,endpoints-includedEndpoints),techUnits=Math.max(0,techs-includedTechs),endpointCharge=(endpointUnits*endpointRate)/(endpointRatePeriod==="year"?12:1),techCharge=techUnits*techRate,addonCharge=endpoints*addonEndpoint+addonFlat,subtotal=base+endpointCharge+techCharge+addonCharge,preDiscount=Math.max(minimum,subtotal),monthly=preDiscount*(1-discount/100),annual=monthly*12,firstYear=monthly*Math.min(12,term)+oneTime,contract=monthly*term+oneTime,effective=contract/term,perEndpoint=endpoints>0?effective/endpoints:null;
+ const endpointUnits=unlimitedEndpoints ? 0 : Math.max(minimumPaidEndpoints,endpoints-includedEndpoints),techUnits=Math.max(0,techs-includedTechs),endpointCharge=(endpointUnits*endpointRate)/(endpointRatePeriod==="year"?12:1),techCharge=techUnits*techRate,addonCharge=endpoints*addonEndpoint+addonFlat,subtotal=base+endpointCharge+techCharge+addonCharge,preDiscount=Math.max(minimum,subtotal),monthly=preDiscount*(1-discount/100),annual=monthly*12,firstYear=monthly*Math.min(12,term)+oneTime,contract=monthly*term+oneTime,effective=contract/term,perEndpoint=endpoints>0?effective/endpoints:null;
+ const endpointRateDescription = unlimitedEndpoints ? "unlimited endpoints in base fee" : `${endpointRate.toFixed(2)} ${currency} per endpoint per ${endpointRatePeriod}`;
  const cashCostLabel=term<12?`Quoted cash cost (${term} mo.)`:"First-year cash cost";
  const cashCostNote=term<12?`Quote covers ${term} of 12 months, plus one-time fees`:"12 months plus one-time fees";
  worksheetRow = {
@@ -275,13 +286,13 @@ function calculate(){
    minimum_spend_or_seats: `Monthly minimum ${minimum.toFixed(2)} ${currency}; ${minimumPaidEndpoints} minimum paid endpoints`,
    base_platform_fee: base.toFixed(2),
    included_technicians: includedTechs,
-   included_endpoints: includedEndpoints,
+   included_endpoints: unlimitedEndpoints ? "Unlimited" : includedEndpoints,
    additional_technician_fee: techRate.toFixed(2),
-   additional_endpoint_fee: endpointRate.toFixed(2),
+   additional_endpoint_fee: (unlimitedEndpoints ? 0 : endpointRate).toFixed(2),
    mandatory_addons_monthly: addonCharge.toFixed(2),
    estimated_monthly_total: monthly.toFixed(2),
    estimated_year_one_total: term >= 12 ? firstYear.toFixed(2) : "",
-   assumptions: `${endpoints} managed endpoints; ${techs} technicians; ${endpointRate.toFixed(2)} ${currency} per endpoint per ${endpointRatePeriod}; ${discount}% discount; ${oneTime.toFixed(2)} ${currency} combined one-time fees`,
+   assumptions: `${endpoints} managed endpoints; ${techs} technicians; ${endpointRateDescription}; ${discount}% discount; ${oneTime.toFixed(2)} ${currency} combined one-time fees`,
    notes: `${cashCostNote}. Total quoted contract: ${contract.toFixed(2)} ${currency}. Split one-time fees using the vendor proposal.`,
  };
  const managedUsers = value("managed-users");
@@ -292,10 +303,11 @@ function calculate(){
  document.getElementById("monthly").textContent=money.format(monthly);document.getElementById("annual").textContent=money.format(annual);document.getElementById("first-year").textContent=money.format(firstYear);document.getElementById("contract").textContent=money.format(contract);document.getElementById("contract-note").textContent=`${term}-month term including one-time fees`;document.getElementById("effective").textContent=money.format(effective);document.getElementById("per-endpoint").textContent=perEndpoint===null?"—":money.format(perEndpoint);
  document.getElementById("first-year-label").textContent=cashCostLabel;
  document.getElementById("first-year-note").textContent=cashCostNote;
- document.getElementById("breakdown").innerHTML=`<li>Base: <strong>${money.format(base)}</strong></li><li>${endpointUnits} billable endpoints${minimumPaidEndpoints>endpoints-includedEndpoints && minimumPaidEndpoints>0?" (minimum applied)":""}: <strong>${money.format(endpointCharge)}</strong></li><li>${techUnits} billable technicians: <strong>${money.format(techCharge)}</strong></li><li>Required add-ons: <strong>${money.format(addonCharge)}</strong></li><li>Pre-discount subtotal${minimum>subtotal?" (minimum applied)":""}: <strong>${money.format(preDiscount)}</strong></li><li>Discount: <strong>${discount.toFixed(2)}%</strong></li><li>One-time fees: <strong>${money.format(oneTime)}</strong></li>`;
- window.quoteSummary=`RMM quote normalization (${currency})\nManaged endpoints: ${endpoints}\nBillable endpoint units: ${endpointUnits} (minimum ${minimumPaidEndpoints})\nTechnicians: ${techs}\nRecurring monthly: ${money.format(monthly)}\nAnnualized recurring: ${money.format(annual)} (12 months at the quoted rate)\n${cashCostLabel}: ${money.format(firstYear)} (${cashCostNote})\nTotal ${term}-month contract: ${money.format(contract)}\nEffective monthly incl. one-time fees: ${money.format(effective)}\nEffective monthly per endpoint: ${perEndpoint===null?"n/a":money.format(perEndpoint)}\n${hasManagedUsers ? `Managed users: ${managedUsers}\nRecurring monthly per managed user: ${recurringPerUser}\n` : ""}Assumptions: base ${money.format(base)}, endpoint rate ${money.format(endpointRate)} per ${endpointRatePeriod}, monthly endpoint charge ${money.format(endpointCharge)}, technician overage ${money.format(techCharge)}, required add-ons ${money.format(addonCharge)}, minimum ${money.format(minimum)}, discount ${discount.toFixed(2)}%, one-time fees ${money.format(oneTime)}.`;
+ document.getElementById("breakdown").innerHTML=`<li>Base: <strong>${money.format(base)}</strong></li><li>${unlimitedEndpoints ? "Unlimited endpoints included" : `${endpointUnits} billable endpoints${minimumPaidEndpoints>endpoints-includedEndpoints && minimumPaidEndpoints>0?" (minimum applied)":""}`}: <strong>${money.format(endpointCharge)}</strong></li><li>${techUnits} billable technicians: <strong>${money.format(techCharge)}</strong></li><li>Required add-ons: <strong>${money.format(addonCharge)}</strong></li><li>Pre-discount subtotal${minimum>subtotal?" (minimum applied)":""}: <strong>${money.format(preDiscount)}</strong></li><li>Discount: <strong>${discount.toFixed(2)}%</strong></li><li>One-time fees: <strong>${money.format(oneTime)}</strong></li>`;
+ window.quoteSummary=`RMM quote normalization (${currency})\nManaged endpoints: ${endpoints}\nBillable endpoint units: ${endpointUnits} (minimum ${minimumPaidEndpoints})\nTechnicians: ${techs}\nRecurring monthly: ${money.format(monthly)}\nAnnualized recurring: ${money.format(annual)} (12 months at the quoted rate)\n${cashCostLabel}: ${money.format(firstYear)} (${cashCostNote})\nTotal ${term}-month contract: ${money.format(contract)}\nEffective monthly incl. one-time fees: ${money.format(effective)}\nEffective monthly per endpoint: ${perEndpoint===null?"n/a":money.format(perEndpoint)}\n${hasManagedUsers ? `Managed users: ${managedUsers}\nRecurring monthly per managed user: ${recurringPerUser}\n` : ""}Assumptions: base ${money.format(base)}, ${endpointRateDescription}, monthly endpoint charge ${money.format(endpointCharge)}, technician overage ${money.format(techCharge)}, required add-ons ${money.format(addonCharge)}, minimum ${money.format(minimum)}, discount ${discount.toFixed(2)}%, one-time fees ${money.format(oneTime)}.`;
 }
 currencyField.addEventListener("change", calculate);
+unlimitedEndpointsField.addEventListener("change", calculate);
 document.getElementById("calculator-form").addEventListener("submit",event=>{event.preventDefault();calculate()});Object.keys(defaults).forEach(id=>document.getElementById(id).addEventListener("input",calculate));document.getElementById("reset").addEventListener("click",resetExample);document.getElementById("copy").addEventListener("click", async () => {
   const status = document.getElementById("copy-status");
   try {
