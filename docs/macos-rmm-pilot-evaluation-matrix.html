@@ -62,13 +62,16 @@
   <h2 id="remote-support-example">Worked example: inventory passes, remote support fails</h2>
   <p>A pilot Mac reports current inventory after sleep and reconnect. The same technician completes an attended session on the Windows pilot device, but the Mac session opens with a blank screen. Record the Mac inventory check as passed and the Mac remote-support check as failed. If attended support is required, hold the Mac rollout for that workflow.</p>
   <p>Ask the Mac policy owner to verify the documented screen capture permission for the exact support component under the standard user's policy. Record the policy owner and retest date in the matrix. To clear the gate, demonstrate that the technician can see the screen after approved consent, that access ends when the session closes, and that the session is attributable in the audit record.</p>
+  <h3 id="mac-remote-support-decline">Test what happens when a Mac user declines remote support</h3>
+  <p>On one authorized pilot Mac with attended support required, have the test user decline the first request. Confirm the technician sees that it was declined and cannot view or control the device. Check whether the audit record distinguishes the declined request from a started session.</p>
+  <p>Start a separate request, approve it under the same policy, and verify that viewing and control end when the session closes. Record both outcomes under MAC-16 and the session closure under MAC-17 in the CSV. Hold rollout if a declined request permits access. Review <a href="https://support.apple.com/guide/deployment/dep38df53c2a/web">Apple's privacy permission documentation</a> for the Mac policy and the vendor's documentation for its separate session approval.</p>
 </aside>
 <section class="note" aria-labelledby="one-mac-pilot">
   <h2 id="one-mac-pilot">Start the pilot with one Mac</h2>
   <ol>
     <li>Choose one authorized, noncritical Mac. Record its architecture, expected customer and site, and the MDM that owns configuration profiles and updates.</li>
     <li>Install the matching package. Verify the device appears in the expected site, then refresh inventory and confirm that the console shows a new check-in. A device in the wrong site or a stale check-in needs investigation before the pilot expands.</li>
-    <li>Record remote support separately. Use the normal technician role and approved consent workflow. Record the result and confirm access ends when the session closes.</li>
+    <li>Record remote support separately. Use the normal technician role and <a href="#mac-remote-support-decline">test both declining and approving an attended request</a>. Confirm access ends when the approved session closes.</li>
   </ol>
   <p>Enter the check-in time, evidence link, owner, and retest date in the <a href="templates/macos-rmm-pilot-evaluation-matrix.csv" download>pilot CSV</a>. Use the full matrix before expanding beyond the test device.</p>
     <p>Before enrolling another Mac, <a href="#mac-sleep-and-reconnect">check what happens after sleep and reconnect</a>, especially if your users work away from the office.</p>
