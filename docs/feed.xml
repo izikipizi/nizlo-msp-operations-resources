@@ -6,12 +6,23 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-28T03:20:15Z</updated>
+  <updated>2026-11-28T03:24:00Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>RMM first-endpoint pilot acceptance checklist</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-acceptance-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-acceptance-checklist.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_first_check_in#first-check-in-evidence" />
+    <link rel="related" title="PC refresh handoff" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-acceptance-checklist.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=pc_refresh_handoff#field-refresh-handoff" />
+    <updated>2026-11-28T03:24:00Z</updated>
+    <category term="selection" />
+    <category term="template" />
+    <category term="rmm-pilot" />
+    <summary>Record who signed the installer, when the first endpoint checked in, and which customer, site, and policy it received. For a PC refresh, give the service desk both asset IDs and have them verify that the replacement checks in under the intended customer, site, and policy before closing monitoring acceptance.</summary>
+  </entry>
   <entry>
     <title>MSP managed service margin calculator</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/msp-managed-service-margin-calculator.html</id>
@@ -177,16 +188,6 @@
     <category term="RMM" />
     <category term="template" />
     <summary>Download the six-step RMM pilot evidence log to record the result, owner, and follow-up for one authorized endpoint. Use it alongside Kip Ecklund’s TechNovice article and the broader security checklist.</summary>
-  </entry>
-  <entry>
-    <title>RMM first-endpoint pilot acceptance checklist</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-acceptance-checklist.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-acceptance-checklist.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_first_check_in#first-check-in-evidence" />
-    <updated>2026-11-27T13:32:23Z</updated>
-    <category term="selection" />
-    <category term="template" />
-    <category term="rmm-pilot" />
-    <summary>Record who signed the installer, when the first endpoint checked in, and which customer, site, and policy it received. Pause if it appears in the wrong customer or more than once. The checklist covers five evidence gates before you expand the RMM pilot.</summary>
   </entry>
   <entry>
     <title>RMM contract renewal deadline calculator</title>
