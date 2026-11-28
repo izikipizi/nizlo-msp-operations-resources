@@ -91,8 +91,8 @@
   <h2 id="nizlo-first-device">Use the plan with Nizlo</h2>
   <h3 id="choose-first-device">Choose a device that can prove the workflow</h3>
   <ul>
-    <li><strong>Windows 10, 11 or Server:</strong> use a Windows device if the pass criteria include the Windows Update workflow. Verify inventory and the correct site before you test a patch.</li>
-    <li><strong>Mac with Apple silicon or Intel:</strong> verify the device checks in and shows usable inventory. If remote support is required, check the permissions and test that workflow separately.</li>
+    <li><strong>Windows 10, 11 or Server:</strong> use a Windows device if the pass criteria include Windows Update. Verify inventory and the correct site, then use the <a data-trial-campaign href="rmm-first-endpoint-acceptance-checklist.html#first-workflow-proof">read-only uptime check</a> to prove one job reaches that device before you schedule a patch.</li>
+    <li><strong>Mac with Apple silicon or Intel:</strong> use the <a data-trial-campaign href="macos-rmm-pilot-evaluation-matrix.html#one-mac-pilot">one-Mac pilot checks</a> to choose the matching package and verify check-in and fresh inventory. Record remote support as a separate test when it is required.</li>
     <li><strong><a href="#ubuntu-first-device">Ubuntu 24.04 LTS on x64 or ARM64</a>:</strong> start with health and inventory. Choose another supported platform if the pilot requires remote desktop, patch management or Nizlo Backup on that first device.</li>
   </ul>
   <p><a data-trial-campaign href="https://nizlo.com/downloads?utm_source=github_pages&amp;utm_medium=activation_plan&amp;utm_campaign=rmm_trial_first_24_hours&amp;utm_content=first_device_requirements">Check the current agent requirements</a> before selecting the first device.</p>
