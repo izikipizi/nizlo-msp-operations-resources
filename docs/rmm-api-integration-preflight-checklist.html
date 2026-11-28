@@ -49,7 +49,7 @@
 
 <section class="decision" id="stale-device-inventory">
   <h2>Worked preflight for a seven-day stale-device report</h2>
-  <p>Start with the vendor's current API contract. In the <a href="https://nizlo.com/openapi.json">Nizlo OpenAPI 3.1 contract</a>, <code>GET /devices</code> uses the <code>https://app.nizlo.com/api/v1</code> base URL and returns <code>items</code>, <code>total</code>, <code>page</code>, and <code>pageSize</code>. The date cutoff and customer grouping belong to the report. Review the <a href="https://nizlo.com/rmm-api?utm_source=github_pages&amp;utm_medium=resource&amp;utm_campaign=rmm_api_preflight&amp;utm_content=stale_device_example">API documentation for token scope and testing</a> before connecting a workspace.</p>
+  <p>Start with the vendor's current API contract. In the <a href="https://nizlo.com/openapi.json">Nizlo OpenAPI 3.1 contract</a>, <code>GET /devices</code> uses the <code>https://app.nizlo.com/api/v1</code> base URL and returns <code>items</code>, <code>total</code>, <code>page</code>, and <code>pageSize</code>. The date cutoff and customer grouping belong to the report. Review the <a data-trial-campaign href="https://nizlo.com/rmm-api?utm_source=github_pages&amp;utm_medium=resource&amp;utm_campaign=rmm_api_preflight&amp;utm_content=stale_device_example">API documentation for token scope and testing</a> before connecting a workspace.</p>
   <ul>
     <li><strong>Check the cutoff.</strong> Freeze the UTC report time and test check-ins just before, at, and after seven days. Record how you handle devices that have never checked in.</li>
     <li><strong>Check coverage.</strong> Use enough approved pilot devices to cross a page boundary. Reconcile unique device IDs against the expected inventory. Flag a scan that changes mid-run for review before sending the report.</li>
@@ -103,4 +103,4 @@
 <aside class="disclosure"><strong>Relationship disclosure:</strong> Nizlo, a Windows-first RMM and IT-management platform, maintains this vendor-neutral checklist. It can be used to assess Nizlo or any other RMM API. It is an operational starting point, not a security certification, penetration test, legal opinion, or guarantee.</aside>
 </main>
 <footer class="wrap"><span>Maintained by Nizlo · Updated November 28, 2026</span><span><a href="./">Resource library</a> · <a href="citation.html">Citation</a> · <a href="https://nizlo.com/rmm-api?utm_source=github_pages&amp;utm_medium=resource_footer&amp;utm_campaign=rmm_api_preflight">Nizlo RMM API</a></span></footer>
-</body></html>
+<script src="assets/trial-campaign.js" defer></script></body></html>
