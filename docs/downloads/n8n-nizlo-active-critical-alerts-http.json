@@ -36,7 +36,10 @@
             { "name": "pageSize", "value": "50" }
           ]
         },
-        "options": { "timeout": 10000 }
+        "options": {
+          "timeout": 10000,
+          "redirect": { "redirect": { "followRedirects": false } }
+        }
       },
       "id": "f2e459f0-2bbe-485d-b850-98e550317544",
       "name": "Read active critical alerts",

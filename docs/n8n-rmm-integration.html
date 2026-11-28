@@ -63,7 +63,8 @@
     <h1>n8n RMM integration for read-only MSP workflows</h1>
     <p class="lede">Connect a self-hosted n8n instance to the Nizlo RMM API without beginning with write access. The public community node retrieves customers, sites, endpoints, and alerts; two inactive example workflows show a bounded starting point for critical-alert triage and offline-Windows reporting.</p>
     <div class="actions">
-      <a class="button primary" href="https://github.com/izikipizi/n8n-nodes-nizlo">Review the source</a>
+      <a class="button primary" href="#built-in-http-template">Try the built-in HTTP workflow</a>
+      <a class="button" href="https://github.com/izikipizi/n8n-nodes-nizlo">Review the source</a>
       <a class="button" href="https://github.com/izikipizi/n8n-nodes-nizlo/releases/tag/v0.1.0">Open release v0.1.0</a>
       <a class="button" href="rmm-api-integration-preflight-checklist.html">Use the API preflight</a>
       <a class="button" href="https://nizlo.com/rmm-api?utm_source=github_pages&amp;utm_medium=resource&amp;utm_campaign=n8n_rmm_integration">Review the Nizlo API</a>
@@ -87,11 +88,11 @@ npm install github:izikipizi/n8n-nodes-nizlo#v0.1.0</code></pre><p>Restart n8n a
 
     <section aria-labelledby="built-in-http-template">
       <h2 id="built-in-http-template">Read critical alerts with n8n's built-in HTTP Request node</h2>
-      <p>Import this workflow to check Nizlo alerts without installing a community node. It starts inactive and makes one manual request for up to 50 active critical alerts from your workspace.</p>
+      <p>Import this workflow to check Nizlo alerts without installing a community node. It starts inactive and makes one manual request for up to 50 active critical alerts from your workspace. The request uses the Nizlo API address and has redirects turned off.</p>
       <p><a href="downloads/n8n-nizlo-active-critical-alerts-http.json" download>Download the built-in n8n workflow (JSON)</a></p>
       <ol>
         <li>Import the file and open <strong>Read active critical alerts</strong>.</li>
-        <li>In an authorized test workspace, create a Nizlo personal access token limited to <code>alerts.view</code>. Add it to an n8n Header Auth credential with the name <code>Authorization</code> and the value <code>Bearer YOUR_TOKEN</code>. Keep the actual token in n8n credentials.</li>
+        <li>In your authorized test workspace, open <a href="https://app.nizlo.com/admin/api-access">API Access</a> and create a Nizlo personal access token limited to <code>alerts.view</code>. Add it to an n8n Header Auth credential with the name <code>Authorization</code> and the value <code>Bearer YOUR_TOKEN</code>. Keep the actual token in n8n credentials.</li>
         <li>Run manually and compare the <code>items</code> and <code>total</code> fields with the Nizlo alert list. An empty list can be a valid result. If <code>total</code> exceeds 50, this workflow displays only the first page.</li>
       </ol>
       <p>For the request and response fields, see the <a href="https://nizlo.com/openapi.json">Nizlo API contract</a> and <a href="https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.httprequest/">n8n's HTTP Request documentation</a>.</p>
