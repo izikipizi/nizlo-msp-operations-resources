@@ -321,6 +321,53 @@ for (const path of htmlFiles) {
           `${relativePath}: expected one Schema.org Dataset with a name and description; keep Croissant metadata in its linked file`,
         );
       }
+
+      const [dataset] = datasets;
+      if (typeof dataset.license !== "string" || !dataset.license.trim()) {
+        throw new Error(
+          `${relativePath}: pricing Dataset is missing its published license`,
+        );
+      }
+
+      if (typeof dataset.creator.name !== "string" || !dataset.creator.name.trim()) {
+        throw new Error(
+          `${relativePath}: pricing Dataset is missing its creator name`,
+        );
+      }
+
+      const metadataLinks = [
+        [
+          /<link rel="alternate" type="application\/ld\+json" href="([^"]+)" title="Dataset metadata"/,
+          "Schema.org and DCAT metadata",
+          "schema:",
+        ],
+        [
+          /<link rel="alternate" type="application\/ld\+json" href="([^"]+)" title="MLCommons Croissant metadata"/,
+          "Croissant metadata",
+          "",
+        ],
+      ];
+      for (const [pattern, label, prefix] of metadataLinks) {
+        const href = matchOne(source, pattern, label, relativePath);
+        const metadata = JSON.parse(
+          await readFile(resolve(dirname(path), href), "utf8"),
+        );
+        for (const field of ["name", "description"]) {
+          const value = metadata[prefix + field];
+          if (typeof value !== "string" || !value.trim()) {
+            throw new Error(`${href}: pricing Dataset is missing ${field}`);
+          }
+        }
+        if (
+          metadata["@id"] !== dataset["@id"] ||
+          metadata[prefix + "creator"]?.[prefix + "name"] !== dataset.creator.name ||
+          metadata[prefix + "license"] !== dataset.license
+        ) {
+          throw new Error(
+            `${href}: pricing Dataset identity, creator, or license differs from the landing page`,
+          );
+        }
+      }
     }
 
     for (const match of source.matchAll(/href="([^"]+)"/g)) {
