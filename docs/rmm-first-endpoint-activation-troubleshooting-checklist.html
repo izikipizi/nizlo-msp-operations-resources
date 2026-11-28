@@ -42,6 +42,7 @@
 <h2 id="choose-installer-stage">Where did setup stop?</h2>
 <ul>
 <li><a href="#agent-or-technician-app">Nizlo Remote opened, but the device is missing</a></li>
+<li><a href="#windows-agent-system-type">The Windows installer may not match the device architecture</a></li>
 <li><a href="#windows-installer-signing">Nizlo is still preparing the Windows installer</a></li>
 <li><a href="#installer-warning-evidence">Chrome or Windows showed a warning</a></li>
 <li><a href="#resume-prepared-installer">The download started or the file is ready</a></li>
@@ -74,6 +75,12 @@
 </article>
 <article><h2 id="agent-installed-no-check-in">1. Define exactly what failed</h2><p>Record the last stage you can prove, the first stage you cannot prove, the endpoint name, operating system build, architecture, installer version, local time and UTC time. A dashboard with no endpoint does not prove that the installer never ran; an installed service does not prove enrollment.</p></article>
 <article><h2>2. Verify the test is authorized and supported</h2><ul><li>Use a designated test endpoint with an owner and rollback plan.</li><li>Confirm the operating system, edition, architecture, and required runtime match the vendor's current support documentation.</li><li>Verify the installer is current and came from the intended workspace or customer.</li><li>Check file integrity or signature when the vendor publishes a signature or checksum.</li><li>Run with the documented elevation level. Capture the exit code rather than assuming a quiet installer succeeded.</li></ul></article>
+<article aria-labelledby="windows-agent-system-type">
+<h2 id="windows-agent-system-type">Check Windows x64 before running the Nizlo MSI</h2>
+<p>On the Windows 10 or 11 device you want to manage, open <strong>Settings → System → About</strong>. Under <strong>Device specifications</strong>, read <strong>System type</strong>. The current <a data-trial-campaign href="https://nizlo.com/faq?utm_source=github_pages&amp;utm_medium=activation_guide&amp;utm_campaign=first_endpoint_troubleshooting&amp;utm_content=windows_agent_system_type">Nizlo requirements</a> list a native Windows x64 agent.</p>
+<p>On a Windows Server without that Settings page, the read-only PowerShell command <code>Get-CimInstance Win32_Processor | Select-Object -ExpandProperty Architecture</code> reports the processor architecture. <a href="https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-processor#properties">Microsoft documents</a> <code>9</code> for x64 and <code>12</code> for ARM64. Check the Windows version separately.</p>
+<p>If the device runs a supported 64-bit Windows version on an x64-based processor, <a href="#resume-prepared-installer">resume the scoped installer</a>. If it reports an ARM-based processor or a 32-bit Windows installation, choose another authorized x64 Windows device for this pilot. Windows on Arm can emulate some x64 apps, but that does not establish support for the endpoint agent. <a href="https://support.microsoft.com/en-us/windows/hardware/printer/help-with-installing-printers-on-arm-pcs">Microsoft's guide shows where to find System type</a>.</p>
+</article>
 <article aria-labelledby="windows-installer-signing">
 <h2 id="windows-installer-signing">When Nizlo is still preparing the Windows installer</h2>
 <p><strong>Waiting for signing</strong> or <strong>Signing your installer</strong> means the workspace-specific package is still being prepared. Leave the setup open while that message is displayed. Check the browser’s downloads list after the file is offered.</p>
