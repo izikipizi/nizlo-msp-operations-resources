@@ -6,12 +6,24 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-28T08:03:56Z</updated>
+  <updated>2026-11-28T09:01:12Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>Check bundled endpoint protection before changing RMM</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-contract-renewal-checklist-nonrenewal-notice-template.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-contract-renewal-checklist-nonrenewal-notice-template.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_renewal_protection#bundled-protection" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-contract-renewal-checklist-nonrenewal-notice-template.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_renewal_protection#checklist" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-contract-renewal-deadline-calculator.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_renewal_protection#calculator-form" />
+    <updated>2026-11-28T09:01:12Z</updated>
+    <category term="contract" />
+    <category term="renewal" />
+    <category term="vendor-management" />
+    <summary>Confirm when bundled protection and alert access end, verify the replacement on an authorized pilot device and price overlap before switching RMM. The full renewal checklist, notice starting point and deadline calculator remain available.</summary>
+  </entry>
   <entry>
     <title>Compare RMM quotes for 50 endpoints and two technicians</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/public-rmm-pricing-dataset.html</id>
@@ -828,16 +840,6 @@
     <category term="alert-tuning" />
     <category term="alert-fatigue" />
     <summary>Measure raw monitoring events, unique incidents, duplicates, false positives, actionable yield, after-hours burden, acknowledgement, and resolution with a CC BY 4.0 23-field CSV and repeatable 14-day method grounded in Google SRE and Prometheus guidance.</summary>
-  </entry>
-  <entry>
-    <title>RMM contract renewal checklist and non-renewal notice template</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-contract-renewal-checklist-nonrenewal-notice-template.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-contract-renewal-checklist-nonrenewal-notice-template.html" />
-    <updated>2026-11-08T00:00:00Z</updated>
-    <category term="contract" />
-    <category term="renewal" />
-    <category term="vendor-management" />
-    <summary>Review controlling documents, notice rules, delivery, complete cost, operating evidence, exports, transition obligations, approvals, and proof with a 12-step checklist and copyable notice starting point.</summary>
   </entry>
   <entry>
     <title>RMM vendor due-diligence evidence register</title>
