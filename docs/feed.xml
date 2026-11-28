@@ -6,12 +6,26 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-27T23:53:47Z</updated>
+  <updated>2026-11-28T01:14:04Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>RMM quote normalization calculator</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html?example=nizlo-core-retained-tools&amp;utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=naverisk_retained_tools&amp;utm_content=two_technician_example#calculator-form" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=annual_rmm_quotes&amp;utm_content=device_commitment_eur#mindestabnahme-kundenverlust" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html?example=annual-device#calculator-form" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html#endpoint-growth-example" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html#renewal-cap-example" />
+    <updated>2026-11-28T01:14:04Z</updated>
+    <category term="pricing" />
+    <category term="quote" />
+    <category term="calculator" />
+    <summary>Compare a published RMM starting price with a new plan plus the tools you would keep. The editable two-technician example separates the Core base price, extra seat, and recurring tool costs. Enter your own quote and one-time fees to check the first-year total.</summary>
+  </entry>
   <entry>
     <title>macOS RMM pilot evaluation matrix</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/macos-rmm-pilot-evaluation-matrix.html</id>
@@ -190,19 +204,6 @@
     <category term="pricing" />
     <category term="dataset" />
     <summary>Compare published pricing for 14 RMM products. The worked example holds technician count at two, checks which Atera plan covers the fleet, and shows how to budget a year of Nizlo monthly billing with a second technician.</summary>
-  </entry>
-  <entry>
-    <title>RMM quote normalization calculator</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=annual_rmm_quotes&amp;utm_content=device_commitment_eur#mindestabnahme-kundenverlust" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html?example=annual-device#calculator-form" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html#endpoint-growth-example" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html#renewal-cap-example" />
-    <updated>2026-11-27T05:01:54Z</updated>
-    <category term="pricing" />
-    <category term="quote" />
-    <category term="calculator" />
-    <summary>The German-language worked example shows how a 125-device commitment can cost 375 euros more over the first year after an MSP loses a client. Check the minimum, the earliest reduction date and the notice deadline.</summary>
   </entry>
   <entry>
     <title>MSP SLA response time template</title>
