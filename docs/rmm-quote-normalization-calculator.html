@@ -2,7 +2,7 @@
 <html lang="en"><head>
 <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Free RMM Quote Normalization Calculator | Nizlo</title>
-<meta name="description" content="Compare RMM quotes in USD, EUR or GBP. Calculate monthly and first-year costs with device minimums, technician fees, add-ons, discounts, and setup charges." />
+<meta name="description" content="Compare RMM quotes in USD, EUR or GBP. Calculate monthly and first-year costs with device minimums, setup fees and add-ons, then download a worksheet row." />
 <meta name="robots" content="index,follow,max-image-preview:large" />
 <link rel="canonical" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html" />
 <link rel="alternate" type="application/atom+xml" title="Nizlo MSP Operations Resources" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
@@ -21,7 +21,7 @@
   "applicationCategory":"BusinessApplication","operatingSystem":"Any","browserRequirements":"JavaScript",
   "isAccessibleForFree":true,"dateModified":"2026-11-28","inLanguage":"en",
   "creator":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},
-  "featureList":["Base fee normalization","Endpoint overage calculation","Technician overage calculation","Monthly minimum handling","Add-on normalization","Contract discount","One-time fee allocation","Per-endpoint effective cost","USD, EUR and GBP amount formatting"]
+  "featureList":["Base fee normalization","Endpoint overage calculation","Technician overage calculation","Monthly minimum handling","Add-on normalization","Contract discount","One-time fee allocation","Per-endpoint effective cost","USD, EUR and GBP amount formatting","Comparison worksheet CSV export"]
 }</script>
 <script type="application/ld+json">{
   "@context":"https://schema.org","@type":"FAQPage","mainEntity":[
@@ -41,7 +41,7 @@
   <form class="panel" id="calculator-form">
     <p id="billing-unit-example-context" class="hint" hidden>Loaded a public USD rate for 50 endpoints and one technician. For the annual ManageEngine tier, the monthly amount is a comparison figure. Check the <a data-trial-campaign href="rmm-quote-comparison-worksheet.html#compare-billing-units-at-50">source rates and billing terms</a> before changing the fleet size or using the total.</p>
     <p id="retained-tools-example-context" class="hint" hidden>These USD examples start with a 50-device, two-technician scenario. Confirm the actual Naverisk quote and included coverage. The $41 retained-tool cost on the Core side is the amount that brings the modeled totals to parity. Replace it with your own recurring costs and add implementation fees separately. <a data-trial-campaign href="rmm-quote-comparison-worksheet.html#naverisk-retained-tools">See the price assumptions</a>.</p>
-    <h2>Enter one vendor quote</h2><p class="hint">Choose USD, EUR or GBP and enter every quote in the same currency. The calculator formats amounts without converting them. Use zero where a charge does not apply, then copy each vendor’s summary into the comparison worksheet.</p>
+    <h2>Enter one vendor quote</h2><p class="hint">Choose USD, EUR or GBP and enter every quote in the same currency. The calculator formats amounts without converting them. Use zero where a charge does not apply, then download a row for the comparison worksheet.</p>
     <p id="manageengine-example-context" class="hint" hidden>This example starts with ManageEngine’s published USD base plan and add-on for 50 endpoints and one technician. The 10-month estimate assumes you can stop monthly billing after 10 months. <a data-trial-campaign href="rmm-quote-comparison-worksheet.html#manageengine-billing-term-example">Review the source and annual comparison</a>.</p>
     <div class="fields">
       <div class="field"><label for="currency">Quote currency</label><select id="currency"><option value="USD">USD</option><option value="EUR">EUR</option><option value="GBP">GBP</option></select></div>
@@ -77,6 +77,8 @@
     </div>
     <ul class="breakdown" id="breakdown"></ul>
     <div class="actions"><button class="button" type="button" id="copy">Copy normalized summary</button><a data-trial-campaign class="button" href="rmm-quote-comparison-worksheet.html">Open quote comparison worksheet</a><a data-trial-campaign class="button" href="https://nizlo.com/guides/rmm-pricing-models?utm_source=github_pages&amp;utm_medium=external_calculator&amp;utm_campaign=rmm_quote_normalization">Compare pricing models</a><a data-trial-campaign class="button" href="https://nizlo.com/pricing?utm_source=github_pages&amp;utm_medium=external_calculator&amp;utm_campaign=rmm_quote_normalization">Use Nizlo's published pricing as one input</a></div>
+    <div class="actions"><button class="button" type="button" id="download-quote">Download worksheet row (CSV)</button></div>
+    <p class="hint">Open the CSV in your spreadsheet and copy the data row into the comparison worksheet. Fill in the vendor, source, and contract dates from the proposal. Quotes shorter than 12 months leave the year-one total blank until you know the remaining cost.</p>
     <div id="copy-status" role="status"></div>
   </section>
 </section>
@@ -230,6 +232,8 @@ document.getElementById("manageengine-example-context").hidden = !isManageEngine
 document.getElementById("billing-unit-example-context").hidden = !isBillingUnitExample;
 document.getElementById("retained-tools-example-context").hidden = !isRetainedToolExample;
 const value=id=>Math.max(0,Number(document.getElementById(id).value)||0);
+const worksheetColumns = "record_id,vendor,quote_date,currency,billing_basis,contract_term_months,service_start_date,renewal_or_end_date,nonrenewal_notice_days,automatic_renewal_term_months,minimum_spend_or_seats,base_platform_fee,included_technicians,included_endpoints,additional_technician_fee,additional_endpoint_fee,mandatory_addons_monthly,optional_addons_monthly,implementation_fee,training_fee,estimated_monthly_total,estimated_year_one_total,renewal_uplift_or_cap,early_termination_terms,data_export_or_exit_cost,source_or_quote_reference,assumptions,decision_owner,status,notes".split(",");
+let worksheetRow;
 function calculate(){
  const currency = supportedCurrency(currencyField.value);
  const money = new Intl.NumberFormat("en-US", { style: "currency", currency });
@@ -239,6 +243,21 @@ function calculate(){
  const endpointUnits=Math.max(minimumPaidEndpoints,endpoints-includedEndpoints),techUnits=Math.max(0,techs-includedTechs),endpointCharge=(endpointUnits*endpointRate)/(endpointRatePeriod==="year"?12:1),techCharge=techUnits*techRate,addonCharge=endpoints*addonEndpoint+addonFlat,subtotal=base+endpointCharge+techCharge+addonCharge,preDiscount=Math.max(minimum,subtotal),monthly=preDiscount*(1-discount/100),annual=monthly*12,firstYear=monthly*Math.min(12,term)+oneTime,contract=monthly*term+oneTime,effective=contract/term,perEndpoint=endpoints>0?effective/endpoints:null;
  const cashCostLabel=term<12?`Quoted cash cost (${term} mo.)`:"First-year cash cost";
  const cashCostNote=term<12?`Quote covers ${term} of 12 months, plus one-time fees`:"12 months plus one-time fees";
+ worksheetRow = {
+   currency,
+   contract_term_months: term,
+   minimum_spend_or_seats: `Monthly minimum ${minimum.toFixed(2)} ${currency}; ${minimumPaidEndpoints} minimum paid endpoints`,
+   base_platform_fee: base.toFixed(2),
+   included_technicians: includedTechs,
+   included_endpoints: includedEndpoints,
+   additional_technician_fee: techRate.toFixed(2),
+   additional_endpoint_fee: endpointRate.toFixed(2),
+   mandatory_addons_monthly: addonCharge.toFixed(2),
+   estimated_monthly_total: monthly.toFixed(2),
+   estimated_year_one_total: term >= 12 ? firstYear.toFixed(2) : "",
+   assumptions: `${endpoints} managed endpoints; ${techs} technicians; ${endpointRate.toFixed(2)} ${currency} per endpoint per ${endpointRatePeriod}; ${discount}% discount; ${oneTime.toFixed(2)} ${currency} combined one-time fees`,
+   notes: `${cashCostNote}. Total quoted contract: ${contract.toFixed(2)} ${currency}. Split one-time fees using the vendor proposal.`,
+ };
  const managedUsers = value("managed-users");
  const hasManagedUsers = Number.isSafeInteger(managedUsers) && managedUsers > 0;
  const recurringPerUser = hasManagedUsers ? money.format(monthly / managedUsers) : null;
@@ -259,6 +278,16 @@ document.getElementById("calculator-form").addEventListener("submit",event=>{eve
   } catch {
     status.textContent = "Clipboard unavailable. Select and copy the figures above.";
   }
+});
+document.getElementById("download-quote").addEventListener("click", () => {
+  const cells = worksheetColumns.map(column => `"${String(worksheetRow[column] ?? "").replaceAll('"', '""')}"`);
+  const csv = `${worksheetColumns.join(",")}\r\n${cells.join(",")}\r\n`;
+  const url = URL.createObjectURL(new Blob([csv], { type: "text/csv;charset=utf-8" }));
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = "rmm-quote-worksheet-row.csv";
+  link.click();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
 });
 resetExample();
 </script><script src="assets/trial-campaign.js" defer></script>
