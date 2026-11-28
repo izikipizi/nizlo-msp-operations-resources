@@ -6,12 +6,27 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-28T02:23:13Z</updated>
+  <updated>2026-11-28T02:40:03Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>RMM quote normalization calculator</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_quote_csv&amp;utm_content=worksheet_export#calculator-form" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html?example=nizlo-core-retained-tools&amp;utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=naverisk_retained_tools&amp;utm_content=two_technician_example#calculator-form" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=annual_rmm_quotes&amp;utm_content=device_commitment_eur#mindestabnahme-kundenverlust" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html?example=annual-device#calculator-form" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html#endpoint-growth-example" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html#renewal-cap-example" />
+    <updated>2026-11-28T02:40:03Z</updated>
+    <category term="pricing" />
+    <category term="quote" />
+    <category term="calculator" />
+    <summary>Calculate recurring and contract costs in USD, EUR, or GBP and download a CSV row that matches the free comparison worksheet. Quotes shorter than 12 months keep the full-year estimate blank until the rest of the year can be priced.</summary>
+  </entry>
   <entry>
     <title>MSP client onboarding timeline calculator</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-onboarding-timeline-calculator.html</id>
@@ -29,20 +44,6 @@
     <updated>2026-11-28T02:02:01Z</updated>
     <category term="n8n" /><category term="RMM API" /><category term="MSP automation" />
     <summary>Review a disclosed, read-only n8n community node for tenant-scoped customers, sites, endpoints, and alerts, with two inactive workflows, exact permission boundaries, and a 14-day trial workspace path. Enroll one authorized Windows device to test the offline workflow and distinguish an authenticated empty result from a connection failure.</summary>
-  </entry>
-  <entry>
-    <title>RMM quote normalization calculator</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html?example=nizlo-core-retained-tools&amp;utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=naverisk_retained_tools&amp;utm_content=two_technician_example#calculator-form" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=annual_rmm_quotes&amp;utm_content=device_commitment_eur#mindestabnahme-kundenverlust" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html?example=annual-device#calculator-form" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html#endpoint-growth-example" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html#renewal-cap-example" />
-    <updated>2026-11-28T01:14:04Z</updated>
-    <category term="pricing" />
-    <category term="quote" />
-    <category term="calculator" />
-    <summary>Compare a published RMM starting price with a new plan plus the tools you would keep. The editable two-technician example separates the Core base price, extra seat, and recurring tool costs. Enter your own quote and one-time fees to check the first-year total.</summary>
   </entry>
   <entry>
     <title>macOS RMM pilot evaluation matrix</title>
