@@ -10,7 +10,7 @@
   <link rel="alternate" type="application/atom+xml" title="Nizlo MSP Operations Resources" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="RMM Pricing Calculator &amp; Free Cost Tools" />
-  <meta property="og:description" content="Twelve free, no-signup tools for modeling patch windows, technician capacity, alert fatigue, MSP service margin, RMM stacks, quotes, migration cost, and ROI." />
+  <meta property="og:description" content="Free, no-signup tools to compare RMM quotes, hosting costs, migration and ROI, and estimate patch windows and MSP staffing." />
   <meta property="og:url" content="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-calculators.html" />
   <meta property="og:image" content="https://izikipizi.github.io/nizlo-msp-operations-resources/assets/rmm-calculators-social-card-v1.png" />
   <meta property="og:image:width" content="1200" />
@@ -27,7 +27,7 @@
     "name": "RMM Pricing Calculator and Free Cost Tools",
     "description": "Free calculators for MSP managed-service margin, RMM and ticketing stack cost, quote normalization, pricing models, public price comparison, migration cost, break-even, and ROI.",
     "url": "https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-calculators.html",
-    "dateModified": "2026-11-26",
+    "dateModified": "2026-11-28",
     "isPartOf": {
       "@type": "WebSite",
       "name": "Nizlo MSP Operations Resources",
@@ -35,7 +35,7 @@
     },
     "mainEntity": {
       "@type": "ItemList",
-      "numberOfItems": 12,
+      "numberOfItems": 13,
       "itemListElement": [
         {"@type":"ListItem","position":1,"name":"RMM ROI, Migration Cost and Payback Calculator","url":"https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-migration-cost-calculator.html"},
         {"@type":"ListItem","position":2,"name":"RMM Contract Renewal Deadline Calculator","url":"https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-contract-renewal-deadline-calculator.html"},
@@ -48,7 +48,8 @@
         {"@type":"ListItem","position":9,"name":"MSP Tool Consolidation Savings Calculator","url":"https://izikipizi.github.io/nizlo-msp-operations-resources/msp-tool-consolidation-savings-calculator.html"},
         {"@type":"ListItem","position":10,"name":"RMM Alert Fatigue Cost Calculator","url":"https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-alert-fatigue-cost-calculator.html"},
         {"@type":"ListItem","position":11,"name":"MSP Technician Capacity Calculator","url":"https://izikipizi.github.io/nizlo-msp-operations-resources/msp-technician-capacity-calculator.html"},
-        {"@type":"ListItem","position":12,"name":"Windows Patch Maintenance Window Calculator","url":"https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-maintenance-window-calculator.html"}
+        {"@type":"ListItem","position":12,"name":"Windows Patch Maintenance Window Calculator","url":"https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-maintenance-window-calculator.html"},
+        {"@type":"ListItem","position":13,"name":"RMM Hosting Cost Calculator","url":"https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html#self-hosted-rmm-operator-cost"}
       ]
     }
   }
@@ -69,6 +70,7 @@
     <ul>
       <li><strong>Public rates:</strong> use the <a data-trial-campaign href="public-rmm-pricing-dataset.html">pricing dataset</a> to check which vendors publish enough detail for your fleet size.</li>
       <li><strong>Written quotes:</strong> <a data-trial-campaign href="rmm-quote-normalization-calculator.html">normalize your quotes</a> before comparing first-year totals. Include minimums, required add-ons, and setup fees.</li>
+      <li><strong>Hosted and self-hosted on the same shortlist:</strong> <a href="#hosting-cost-tool">compare the work each option leaves to your team</a> alongside the subscription and infrastructure costs.</li>
       <li><strong>A shortlist and an incumbent:</strong> <a href="rmm-migration-cost-calculator.html">estimate the cost of switching</a>, then use the <a href="rmm-pilot-test-evidence-pack.html">pilot evidence pack</a> to test the workflows behind the savings estimate.</li>
     </ul>
   </section>
@@ -137,6 +139,13 @@
       <ul><li>Monthly and annual recurring cost</li><li>First-year and contract cash cost</li><li>Effective monthly cost</li><li>Effective cost per endpoint</li></ul>
       <a data-trial-campaign class="button" href="rmm-quote-normalization-calculator.html">Normalize an RMM quote</a> <a data-trial-campaign class="button" href="rmm-quote-comparison-worksheet.html#gbp-commitment-floor">See the UK device minimum example</a>
     </article>
+    <article class="card" id="hosting-cost-tool">
+      <span class="tag">Hosting costs</span>
+      <h2>Hosted vs self-hosted RMM cost calculator</h2>
+      <p>Compare subscription and infrastructure fees with the time your team spends running each option. The example opens with editable inputs for both and identifies the break-even point.</p>
+      <ul><li>Monthly cost for each model</li><li>Loaded operator rate and time</li><li>Shareable comparison link</li></ul>
+      <a data-trial-campaign class="button" href="rmm-quote-comparison-worksheet.html?hosting_self_fees=45&amp;hosting_self_minutes=120&amp;hosting_vendor_fees=115&amp;hosting_vendor_minutes=30&amp;hosting_hourly_rate=60&amp;utm_source=github_pages&amp;utm_medium=resource&amp;utm_campaign=rmm_hosting_cost_share&amp;utm_content=calculators_hub#self-hosted-rmm-operator-cost">Open the worked hosting comparison</a>
+    </article>
     <article class="card">
       <span class="tag">Source-dated public prices</span>
       <h2>Public RMM price comparison</h2>
@@ -173,7 +182,7 @@
     <p><strong>Small-MSP planning:</strong> use the <a href="https://nizlo.com/solutions/rmm-for-small-msps?utm_source=github_pages&amp;utm_medium=authority_bridge&amp;utm_campaign=rmm_for_small_msps&amp;utm_content=calculator_hub">RMM for small MSPs guide</a> to connect calculator assumptions to customer separation, endpoint count, technician capacity, patching, scripts, remote support, reporting, retained tools, and a controlled pilot.</p>
   </aside>
 </main>
-<footer class="wrap"><span>Maintained by Nizlo · Updated November 26, 2026</span><span><a href="./">Resource library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source</a></span></footer>
+<footer class="wrap"><span>Maintained by Nizlo · Updated November 28, 2026</span><span><a href="./">Resource library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source</a></span></footer>
 <script src="assets/trial-campaign.js" defer></script>
 </body>
 </html>
