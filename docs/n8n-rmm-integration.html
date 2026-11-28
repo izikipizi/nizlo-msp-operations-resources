@@ -64,6 +64,7 @@
     <p class="lede">Connect a self-hosted n8n instance to the Nizlo RMM API without beginning with write access. The public community node retrieves customers, sites, endpoints, and alerts; two inactive example workflows show a bounded starting point for critical-alert triage and offline-Windows reporting.</p>
     <div class="actions">
       <a class="button primary" href="#built-in-http-template">Try the built-in HTTP workflow</a>
+      <a class="button" href="#built-in-offline-windows-template">Try the offline Windows workflow</a>
       <a class="button" href="https://github.com/izikipizi/n8n-nodes-nizlo">Review the source</a>
       <a class="button" href="https://github.com/izikipizi/n8n-nodes-nizlo/releases/tag/v0.1.0">Open release v0.1.0</a>
       <a class="button" href="rmm-api-integration-preflight-checklist.html">Use the API preflight</a>
@@ -96,6 +97,14 @@ npm install github:izikipizi/n8n-nodes-nizlo#v0.1.0</code></pre><p>Restart n8n a
         <li>Run manually and compare the <code>items</code> and <code>total</code> fields with the Nizlo alert list. An empty list can be a valid result. If <code>total</code> exceeds 50, this workflow displays only the first page.</li>
       </ol>
       <p>For the request and response fields, see the <a href="https://nizlo.com/openapi.json">Nizlo API contract</a> and <a href="https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.httprequest/">n8n's HTTP Request documentation</a>.</p>
+    </section>
+
+    <section aria-labelledby="built-in-offline-windows-template">
+      <h2 id="built-in-offline-windows-template">List offline Windows endpoints with n8n's built-in HTTP Request node</h2>
+      <p>Use this manual starter to review the first 100 active Windows endpoints that Nizlo currently reports offline. It uses standard n8n nodes and requires an API token with <code>devices.view</code>.</p>
+      <p><a href="downloads/n8n-nizlo-offline-windows-endpoints-http.json" download>Download the offline Windows workflow (JSON)</a></p>
+      <p>Import the workflow inactive. In the HTTP Request node, select or create a Header Auth credential with the name <code>Authorization</code> and value <code>Bearer YOUR_TOKEN</code>. Run it manually in an authorized test workspace.</p>
+      <p>Check <code>items</code> for the first page of matches and <code>total</code> for the overall count. An empty list means the filters found no matches. If you see HTTP 401 or 403, check the credential and its access before changing the filters.</p>
     </section>
 
     <section><h2>Two workflows for the Nizlo community node</h2><div class="grid">

@@ -1,0 +1,100 @@
+{
+  "name": "List offline Windows endpoints in Nizlo",
+  "nodes": [
+    {
+      "parameters": {
+        "width": 620,
+        "height": 260,
+        "content": "## Before you run\n\nUse an authorized test workspace and a Nizlo personal access token limited to `devices.view`. On the HTTP Request node, add a Header Auth credential named `Authorization` with value `Bearer YOUR_TOKEN`. Save it in n8n's credential store.\n\nThis manual workflow reads page 1 of up to 100 active Windows endpoints currently reported offline. `items` holds that page and `total` counts all matches. An empty list is valid.\n\n[Setup and expected output](https://izikipizi.github.io/nizlo-msp-operations-resources/n8n-rmm-integration.html?utm_source=n8n_workflow&utm_medium=template&utm_campaign=n8n_offline_windows#built-in-offline-windows-template)"
+      },
+      "id": "7f42849b-d406-420a-a8eb-ea1285ab1566",
+      "name": "Read this first",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "a7947997-12d5-4679-a7a2-4047a62dc438",
+      "name": "Run manually",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        80,
+        340
+      ]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "https://app.nizlo.com/api/v1/devices",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "status",
+              "value": "offline"
+            },
+            {
+              "name": "platform",
+              "value": "WINDOWS"
+            },
+            {
+              "name": "view",
+              "value": "summary"
+            },
+            {
+              "name": "lifecycle",
+              "value": "active"
+            },
+            {
+              "name": "page",
+              "value": "1"
+            },
+            {
+              "name": "pageSize",
+              "value": "100"
+            }
+          ]
+        },
+        "options": {
+          "timeout": 10000,
+          "redirect": {
+            "redirect": {
+              "followRedirects": false
+            }
+          }
+        }
+      },
+      "id": "e6c5b432-d949-44ba-8230-532c461ab541",
+      "name": "Read offline Windows endpoints",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        340,
+        340
+      ]
+    }
+  ],
+  "connections": {
+    "Run manually": {
+      "main": [
+        [
+          {
+            "node": "Read offline Windows endpoints",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {},
+  "tags": []
+}
