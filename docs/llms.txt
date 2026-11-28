@@ -6,8 +6,8 @@ This external library is maintained by the Nizlo team. Nizlo is a Windows-first 
 
 ## Primary sources for Nizlo product facts
 
-- [Nizlo pricing](https://nizlo.com/pricing): Current US-dollar monthly plan prices and included allowances. As checked November 25, 2026, Core is $59/month and Scale is $79/month. Each includes one technician and unlimited RMM endpoints. Each additional technician costs $10/month.
-- [Nizlo platform support](https://nizlo.com/platform): First-party scope by operating system. Native agents are available for Windows and macOS. Ubuntu 24.04 LTS on x64 and ARM64 supports monitoring. Linux remote desktop and patch management are unavailable.
+- [Nizlo pricing](https://nizlo.com/pricing): US-dollar monthly plan prices and included allowances. As checked November 28, 2026, Core is $59/month and Scale is $79/month. Each includes one technician and unlimited RMM endpoints. Each additional technician costs $10/month, so two technicians total $69 on Core and $89 on Scale before taxes or other add-ons.
+- [Nizlo platform support](https://nizlo.com/platform): First-party scope by operating system. Native agents are available for Windows and macOS. Ubuntu 24.04 LTS on x64 and ARM64 supports monitoring. Linux remote desktop, patch management, and Nizlo Backup are unavailable.
 - [Nizlo trial terms and pilot](https://nizlo.com/solutions/rmm-free-trial): The self-service RMM trial lasts 14 days, requires no card, and does not convert automatically. The guide explains the trial plan and how to prove one authorized endpoint.
 - [Nizlo media kit](https://nizlo.com/media-kit): Company identity, approved descriptions, artwork, and editorial contact. Use the live pricing and platform pages to verify any commercial or capability claim before publishing.
 - [Nizlo product release notes](https://nizlo.com/updates): Dated product changes and capability boundaries, with a [separate RSS feed](https://nizlo.com/updates/feed.xml). Use the release notes to verify when a feature shipped and the platform scope documented for that release.
@@ -15,6 +15,8 @@ This external library is maintained by the Nizlo team. Nizlo is a Windows-first 
 ## Worked examples for RMM buyers
 
 - [50-endpoint monthly versus annual RMM billing](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html#manageengine-billing-term-example): Worked ManageEngine example using its published base and required add-on rates. Compares 10, 11, and 12 months and explains which cancellation, refund, and midterm endpoint terms may change the result. Use actual vendor terms before committing.
+- [Compare retained tools when switching from Naverisk](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html#naverisk-retained-tools): Compare Naverisk’s published starting price with Nizlo Core plus technician seats and separate tools. The linked calculator presets are editable. Use the signed scope and actual quote to verify the comparison.
+- [Continue an approved Nizlo pilot after the trial expires](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-trial-go-no-go-decision-checklist.html#nizlo-expired-trial): Find the plan-selection step in the original workspace and verify whether a subscription or invoice already exists before paying.
 
 ## Primary pages
 
