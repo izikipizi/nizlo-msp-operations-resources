@@ -6,12 +6,21 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-28T01:14:04Z</updated>
+  <updated>2026-11-28T02:02:01Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>n8n RMM integration: read-only MSP workflows</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/n8n-rmm-integration.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/n8n-rmm-integration.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=n8n_trial_pilot" />
+    <link rel="related" type="text/html" href="https://nizlo.com/guides/n8n-rmm-automation?utm_source=atom&amp;utm_medium=external_resource&amp;utm_campaign=n8n_rmm_automation" />
+    <updated>2026-11-28T02:02:01Z</updated>
+    <category term="n8n" /><category term="RMM API" /><category term="MSP automation" />
+    <summary>Review a disclosed, read-only n8n community node for tenant-scoped customers, sites, endpoints, and alerts, with two inactive workflows, exact permission boundaries, and a 14-day trial workspace path. Enroll one authorized Windows device to test the offline workflow and distinguish an authenticated empty result from a connection failure.</summary>
+  </entry>
   <entry>
     <title>RMM quote normalization calculator</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html</id>
@@ -487,15 +496,6 @@
     <updated>2026-11-18T00:00:00Z</updated>
     <category term="RMM security" /><category term="integration security" /><category term="MSP operations" />
     <summary>Inventory RMM extensions and integration paths, map effective authority, and prove secret safety, tenant isolation, attributable audit evidence, containment, and revocation.</summary>
-  </entry>
-  <entry>
-    <title>n8n RMM integration: read-only MSP workflows</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/n8n-rmm-integration.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/n8n-rmm-integration.html" />
-    <link rel="related" type="text/html" href="https://nizlo.com/guides/n8n-rmm-automation?utm_source=atom&amp;utm_medium=external_resource&amp;utm_campaign=n8n_rmm_automation" />
-    <updated>2026-11-17T00:00:00Z</updated>
-    <category term="n8n" /><category term="RMM API" /><category term="MSP automation" />
-    <summary>Review a disclosed, read-only n8n community node for tenant-scoped customers, sites, endpoints, and alerts, with two inactive workflows, exact permission boundaries, and a controlled evaluation sequence.</summary>
   </entry>
   <entry>
     <title>Endpoint stack alignment register</title>
