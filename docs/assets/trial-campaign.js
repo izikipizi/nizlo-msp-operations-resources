@@ -24,6 +24,18 @@
   ) {
     values = ["rss_mobi", "referral", "intune_field_notes"];
   }
+  // RSSAmp's original-page links preserve the feed campaign. Distinguish its
+  // browser traffic from the many readers that use the same upstream feeds.
+  const [source, medium, campaign] = explicitCampaign;
+  const isIntuneFeed = source === "nizlo_intune_feed" && campaign === "intune_field_notes";
+  const isResourceFeed = source === "nizlo_resource_feed" && Boolean(campaign);
+  if (
+    medium === "rss" &&
+    (isIntuneFeed || isResourceFeed) &&
+    document.referrer.startsWith("https://rssamp.com/")
+  ) {
+    values = ["rssamp", "referral", campaign];
+  }
   if (!values.every(Boolean)) return;
 
   // Leave the destination's plan and link placement intact.
