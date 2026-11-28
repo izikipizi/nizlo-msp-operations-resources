@@ -6,12 +6,34 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-28T11:45:00Z</updated>
+  <updated>2026-11-28T12:15:39Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>Free RMM pricing comparison worksheet</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_billing_units_50_devices#compare-billing-units-at-50" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_hybrid_100_endpoint_quote#hybrid-100-endpoint-example" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_quote_to_pilot#quote-example" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_billing_term#manageengine-billing-term-example" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_small_fleet_pricing#pckgr-device-pricing" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_billable_endpoint_count#billable-endpoint-reconciliation" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html#gbp-commitment-floor" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-quote-comparison-worked-example.csv" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html#renewal-cap-example" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html#workstation-and-server-rates" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=atera_datto_quote_threshold#atera-datto-quote-threshold" />
+    <link rel="related" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_quote_minimum_growth#superops-endpoint-minimum" />
+    <link rel="related" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html?hosting_self_fees=45&amp;hosting_self_minutes=120&amp;hosting_vendor_fees=115&amp;hosting_vendor_minutes=30&amp;hosting_hourly_rate=60&amp;utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_hosting_cost_share#self-hosted-rmm-operator-cost" />
+    <updated>2026-11-28T12:15:39Z</updated>
+    <category term="pricing" />
+    <category term="selection" />
+    <category term="template" />
+    <summary>Open a shareable hosting comparison with editable subscription, infrastructure and operator-time inputs. The illustrative example shows a 100-minute break-even point. Earlier links still cover 50-device quotes, hybrid bills and endpoint minimums.</summary>
+  </entry>
   <entry>
     <title>Windows patch maintenance window calculator</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/windows-patch-maintenance-window-calculator.html</id>
@@ -32,27 +54,6 @@
     <category term="activation" />
     <category term="first endpoint" />
     <summary>Choose a device that can prove your pilot workflow. After the first check-in, use a second authorized device only to answer a remaining question, such as whether a test alert from another site reaches the right technician. The guide also covers plan choice and billing recovery.</summary>
-  </entry>
-  <entry>
-    <title>Free RMM pricing comparison worksheet</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_billing_units_50_devices#compare-billing-units-at-50" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_hybrid_100_endpoint_quote#hybrid-100-endpoint-example" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_quote_to_pilot#quote-example" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_billing_term#manageengine-billing-term-example" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_small_fleet_pricing#pckgr-device-pricing" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_billable_endpoint_count#billable-endpoint-reconciliation" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html#gbp-commitment-floor" />
-    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-quote-comparison-worked-example.csv" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html#renewal-cap-example" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html#workstation-and-server-rates" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=atera_datto_quote_threshold#atera-datto-quote-threshold" />
-    <link rel="related" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_quote_minimum_growth#superops-endpoint-minimum" />
-    <updated>2026-11-28T10:22:55Z</updated>
-    <category term="pricing" />
-    <category term="selection" />
-    <category term="template" />
-    <summary>Compare 50-device quotes over 12 months and use the 100-endpoint hybrid example to see what happens when one option needs a retained patching tool. Replace the example figures with your actual quotes. A worked example also shows what happens to the per-device comparison threshold when the billable count rises above a 150-device minimum.</summary>
   </entry>
   <entry>
     <title>Check the active adapter before retrying a DNS job</title>
