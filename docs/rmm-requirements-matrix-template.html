@@ -47,6 +47,15 @@
 <article class="step"><h3>Reconcile requirements, pilot evidence, and price</h3><p>Use the requirements matrix to define fit, the evaluation scorecard to record observed results, and the quote worksheet to compare full commercial terms.</p></article>
 </div></section>
 
+<section aria-labelledby="rmm-hosting-recovery-requirements">
+  <h2 id="rmm-hosting-recovery-requirements">How to test recovery for hosted and self-hosted RMM</h2>
+  <p>Add a requirement with its own owner and evidence when a failed update or outage prevents technicians from using the RMM. For example, require one authorized pilot endpoint to check in and show the correct customer and site within two hours of starting a recovery drill. Record how much recent configuration or activity the team could lose. Use your own recovery targets.</p>
+  <div class="grid">
+    <article class="card"><h3>Self-hosted RMM</h3><p>Ask the platform owner to restore the management server in an isolated test environment. Record the age of the backup, the time it took to restore, and whether a test endpoint checked in through the recovered service. Review the documented backup and restore procedure before estimating operator time. <a href="https://docs.tacticalrmm.com/restore/">Example from Tactical RMM documentation</a>.</p></article>
+    <article class="card"><h3>Vendor-hosted RMM</h3><p>Ask the provider who handles platform recovery, how incidents are communicated, and what recovery evidence can be shared. Then test what your team controls. Confirm technicians can reach the support route, recover authorized console access, and verify tenant placement and fresh check-in on one pilot endpoint. Keep the provider's recovery commitment and your observed results in separate fields.</p></article>
+  </div>
+  <p>Use the <a data-trial-campaign href="https://nizlo.com/guides/self-hosted-vs-cloud-rmm?utm_source=github_pages&amp;utm_medium=authority_bridge&amp;utm_campaign=self_hosted_vs_cloud_rmm&amp;utm_content=recovery_requirements">self-hosted vs cloud RMM guide</a> to assign responsibilities. Then use the <a data-trial-campaign href="rmm-quote-comparison-worksheet.html#self-hosted-rmm-operator-cost">operating cost worksheet</a> to price the recovery work your team owns.</p>
+</section>
 <section><h2>Coverage included in the starter matrix</h2><div class="grid">
 <article class="card"><h3>Control and architecture</h3><p>Ownership, tenant or site scope, audit records, data boundaries, agent communication, proxy behavior, and outage resilience.</p></article>
 <article class="card"><h3>Identity and privileged actions</h3><p>MFA, least-privilege roles, session revocation, script targeting, staged automation, remote-access policy, and per-action evidence.</p></article>
