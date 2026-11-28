@@ -24,7 +24,7 @@ Free, public, vendor-neutral field guides, decision aids, calculators, and reusa
 
 > **Relationship disclosure:** this library is maintained by the Nizlo team. Nizlo offers Windows-first RMM and IT-management software. The resources are designed to remain usable without Nizlo and do not represent independent research, third-party validation, or an endorsement of the product.
 
-Build an adjustable six-phase schedule with the free [MSP client onboarding timeline calculator](https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-onboarding-timeline-calculator.html). It skips weekends, keeps project details in the browser, and exports milestone dates as CSV or calendar events while preserving the distinction between planned dates and evidence-based go-live acceptance.
+Build an adjustable six-phase schedule with the free [MSP client onboarding timeline calculator](https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-onboarding-timeline-calculator.html). It skips weekends and entered blackout dates, keeps project details in the browser, and exports milestone dates as CSV or calendar events while preserving the distinction between planned dates and evidence-based go-live acceptance.
 
 Taking over from another MSP? Use the [worked delayed-handoff example](https://izikipizi.github.io/nizlo-msp-operations-resources/msp-client-onboarding-evidence-register.html#incumbent-handoff-heading) and [go-live acceptance CSV](https://izikipizi.github.io/nizlo-msp-operations-resources/templates/msp-client-onboarding-go-live-acceptance.csv) to record the switch time and who owns alerts, patching, and restores on either side of it.
 
