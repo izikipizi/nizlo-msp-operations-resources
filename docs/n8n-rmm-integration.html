@@ -4,13 +4,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>n8n RMM Integration: Read-Only MSP Workflows | Nizlo</title>
-  <meta name="description" content="Read Nizlo alerts in n8n with a built-in HTTP Request template, or use the community node for customers, sites, endpoints, and alerts." />
+  <meta name="description" content="Import two read-only n8n HTTP Request templates for Nizlo RMM to list critical alerts and offline Windows endpoints. Includes API credential setup." />
   <meta name="robots" content="index,follow,max-image-preview:large" />
   <link rel="canonical" href="https://izikipizi.github.io/nizlo-msp-operations-resources/n8n-rmm-integration.html" />
   <link rel="alternate" type="application/atom+xml" title="Nizlo MSP Operations Resources" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="n8n RMM Integration: Read-Only MSP Workflows" />
-  <meta property="og:description" content="Download a read-only alert workflow for n8n's built-in HTTP Request node and review the community node, permissions, and setup guide." />
+  <meta property="og:description" content="Import two read-only n8n HTTP Request templates for Nizlo RMM to list critical alerts and offline Windows endpoints. Includes API credential setup." />
   <meta property="og:url" content="https://izikipizi.github.io/nizlo-msp-operations-resources/n8n-rmm-integration.html" />
   <meta property="og:image" content="https://nizlo.com/opengraph-image" />
   <meta property="og:image:alt" content="n8n RMM integration for read-only MSP workflows" />
@@ -21,13 +21,14 @@
     "@context":"https://schema.org",
     "@type":"TechArticle",
     "headline":"n8n RMM Integration: Read-Only MSP Workflows",
-    "description":"A read-only alert workflow using n8n's built-in HTTP Request node, with setup instructions and examples for the Nizlo community node.",
+    "description":"Import two read-only n8n HTTP Request templates for Nizlo RMM to list critical alerts and offline Windows endpoints. Includes API credential setup.",
     "url":"https://izikipizi.github.io/nizlo-msp-operations-resources/n8n-rmm-integration.html",
     "author":{"@type":"Person","name":"Kip Ecklund"},
     "publisher":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},
     "datePublished":"2026-11-07",
     "dateModified":"2026-11-28",
     "inLanguage":"en",
+    "hasPart":[{"@type":"MediaObject","name":"n8n critical-alert workflow","contentUrl":"https://izikipizi.github.io/nizlo-msp-operations-resources/downloads/n8n-nizlo-active-critical-alerts-http.json","encodingFormat":"application/json","isAccessibleForFree":true},{"@type":"MediaObject","name":"n8n offline Windows endpoint workflow","contentUrl":"https://izikipizi.github.io/nizlo-msp-operations-resources/downloads/n8n-nizlo-offline-windows-endpoints-http.json","encodingFormat":"application/json","isAccessibleForFree":true}],
     "isAccessibleForFree":true,
     "about":["n8n RMM integration","n8n community node","MSP automation","RMM API","Nizlo"]
   }</script>
@@ -48,7 +49,7 @@
     "mainEntity":[
       {"@type":"Question","name":"Can n8n connect to an RMM?","acceptedAnswer":{"@type":"Answer","text":"Yes. An n8n community node or HTTP workflow can connect to an RMM API when the platform exposes one. The public Nizlo node currently supports read-only retrieval of customers, sites, endpoints, and alerts."}},
       {"@type":"Question","name":"What can the Nizlo n8n node change?","acceptedAnswer":{"@type":"Answer","text":"Nothing in version 0.1.0. It intentionally exposes no create, update, delete, script, patch, reboot, remote-access, or token-management operation."}},
-      {"@type":"Question","name":"Does the workflow file contain a Nizlo token?","acceptedAnswer":{"@type":"Answer","text":"No. The two public examples omit credentials and start inactive. A user must select a local n8n credential before running a workflow."}},
+      {"@type":"Question","name":"Does the workflow file contain a Nizlo token?","acceptedAnswer":{"@type":"Answer","text":"No. The downloadable examples omit credentials and start inactive. A user must select a local n8n credential before running a workflow."}},
       {"@type":"Question","name":"Is the Nizlo n8n integration published on npm?","acceptedAnswer":{"@type":"Answer","text":"Not yet. Version 0.1.0 is available from its public GitHub repository for a self-hosted n8n administrator to review and install. The repository documents the current GitHub installation command."}}
     ]
   }</script>
@@ -61,7 +62,7 @@
   <main class="wrap">
     <div class="eyebrow">Public source · MIT license · Version 0.1.0 · Read-only</div>
     <h1>n8n RMM integration for read-only MSP workflows</h1>
-    <p class="lede">Connect a self-hosted n8n instance to the Nizlo RMM API without beginning with write access. The public community node retrieves customers, sites, endpoints, and alerts; two inactive example workflows show a bounded starting point for critical-alert triage and offline-Windows reporting.</p>
+    <p class="lede">Connect a self-hosted n8n instance to the Nizlo RMM API without beginning with write access. Use the two built-in HTTP Request templates to check active critical alerts and offline Windows endpoints. The optional community node also reads customer and site records.</p>
     <div class="actions">
       <a class="button primary" href="#built-in-http-template">Try the built-in HTTP workflow</a>
       <a class="button" href="#built-in-offline-windows-template">Try the offline Windows workflow</a>
