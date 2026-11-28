@@ -6,12 +6,25 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-28T12:15:39Z</updated>
+  <updated>2026-11-28T12:50:43Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>Verify RMM device access in PowerShell 7</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-api-integration-preflight-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-api-integration-preflight-checklist.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_api_powershell#powershell-first-read" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-api-integration-preflight-checklist.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_stale_device_preflight#stale-device-inventory" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-api-integration-preflight-checklist.html#checklist" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-api-integration-preflight-checklist.csv" />
+    <updated>2026-11-28T12:50:43Z</updated>
+    <category term="integration" />
+    <category term="security" />
+    <category term="checklist" />
+    <summary>Check device access with one read-only Nizlo API request. The example masks token entry and displays counts. The guide explains how to interpret empty results and permission errors. The stale-device report example and preflight CSV remain available.</summary>
+  </entry>
   <entry>
     <title>Free RMM pricing comparison worksheet</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-comparison-worksheet.html</id>
@@ -77,18 +90,6 @@
     <updated>2026-11-28T10:03:24Z</updated>
     <category term="n8n" /><category term="RMM API" /><category term="MSP automation" />
     <summary>Download two inactive workflows using n8n's built-in HTTP Request node. Read up to 50 active critical alerts or up to 100 active Windows endpoints reported offline in an authorized Nizlo workspace. The guide covers credential setup and expected results.</summary>
-  </entry>
-  <entry>
-    <title>Test a seven-day stale-device report before rollout</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-api-integration-preflight-checklist.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-api-integration-preflight-checklist.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_stale_device_preflight#stale-device-inventory" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-api-integration-preflight-checklist.html#checklist" />
-    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-api-integration-preflight-checklist.csv" />
-    <updated>2026-11-28T09:18:10Z</updated>
-    <category term="integration" />
-    <category term="security" />
-    <category term="checklist" />
-    <summary>Test the seven-day cutoff, missing check-ins, page boundaries and customers with the same name before distributing a stale-device report. The 18-check preflight and downloadable CSV remain available.</summary>
   </entry>
   <entry>
     <title>Compare RMM quotes for 50 endpoints and two technicians</title>
