@@ -19,7 +19,7 @@
   "description":"A browser-only calculator for comparing two RMM and ticketing or PSA stacks across recurring software, operating labor, implementation, annual, and 36-month cost.",
   "url":"https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-ticketing-stack-cost-calculator.html",
   "applicationCategory":"BusinessApplication","operatingSystem":"Any","browserRequirements":"JavaScript",
-  "isAccessibleForFree":true,"dateModified":"2026-11-27","inLanguage":"en",
+  "isAccessibleForFree":true,"dateModified":"2026-11-28","inLanguage":"en",
   "creator":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},
   "featureList":["Per-endpoint pricing","Per-technician pricing","Ticketing or PSA cost","Required add-ons","Operating labor","Implementation cost","First-year comparison","36-month comparison","CSV export"]
 }</script>
@@ -116,6 +116,12 @@
     <p>The proposed stack saves $70 a month but costs $1,050 to switch. That leaves it $210 more expensive in year one ($8,610 versus $8,400). The one-time cost is recovered after 15 months if the savings hold. Add any period of double billing, remaining contract charges, or difference in admin time when modeling your renewal.</p>
   </section>
 
+  <section class="formula" aria-labelledby="hybrid-quote-cost">
+    <h2 id="hybrid-quote-cost">Compare retained patching costs across 100 endpoints</h2>
+    <p><a data-trial-campaign href="?example=hybrid-100-endpoints#shared-heading">Load the two-technician USD example</a>. The illustrative per-device proposal costs $250 a month and includes the patching scope in this scenario. Core costs $69 a month with two technicians. Keeping a separate $120 monthly patching tool brings that option to $189 a month, or $2,268 versus $3,000 over 12 months before tax and migration.</p>
+    <p>Replace the illustrative tool charge with your quote. Confirm equivalent patching coverage on an authorized pilot device and add any one-time migration costs. The <a data-trial-campaign href="rmm-quote-comparison-worksheet.html#hybrid-100-endpoint-example">worked quote worksheet</a> records the underlying assumptions.</p>
+  </section>
+
   <section class="formula" aria-labelledby="retained-patching">
     <h2 id="retained-patching">Senso IT Ops with a separate patching tool</h2>
     <p><a href="https://senso.cloud/en-gb/pricing/">Senso’s UK pricing</a> lists IT Ops at £3 per managed device per year, excluding VAT. For 240 devices that is £720 per year, equivalent to £60 per month. Confirm the actual term and invoice timing in your quote.</p>
@@ -137,7 +143,7 @@
     <p><a href="rmm-vs-psa-software.html">Separate RMM and PSA responsibilities</a><br />Map functional ownership before treating two products as substitutes.</p>
   </div></section>
 </main>
-<footer class="wrap"><span>Maintained by Nizlo · Updated November 27, 2026</span><span><a href="./">Resource library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source</a></span></footer>
+<footer class="wrap"><span>Maintained by Nizlo · Updated November 28, 2026</span><span><a href="./">Resource library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source</a></span></footer>
 <script>
 const ids=["endpoints","technicians","laborRate","aName","aBase","aEndpoint","aIncluded","aTechnician","aTicketing","aAddons","aHours","aOneTime","bName","bBase","bEndpoint","bIncluded","bTechnician","bTicketing","bAddons","bHours","bOneTime"];
 const el=Object.fromEntries(ids.map(id=>[id,document.getElementById(id)]));
@@ -152,6 +158,12 @@ const money = value => new Intl.NumberFormat("en-US", {
 
 const exampleKey = new URLSearchParams(window.location.search).get("example");
 const examples = new Map([
+  ["hybrid-100-endpoints", {
+    currency: "USD",
+    scope: { endpoints: 100, technicians: 2, laborRate: 0 },
+    a: { Name: "Illustrative per-device quote", Endpoint: 2.5, Included: 2 },
+    b: { Name: "Nizlo Core with retained patching", Base: 59, Included: 1, Technician: 10, Addons: 120 },
+  }],
   ["senso-retained-patching", {
     currency: "GBP",
     scope: { endpoints: 240, technicians: 1, laborRate: 50 },
