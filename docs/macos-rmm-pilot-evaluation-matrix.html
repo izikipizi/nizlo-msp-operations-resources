@@ -27,7 +27,7 @@
   "identifier":"https://izikipizi.github.io/nizlo-msp-operations-resources/templates/macos-rmm-pilot-evaluation-matrix.csv",
   "creator":{"@type":"Person","name":"Kip Ecklund"},
   "publisher":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},
-  "datePublished":"2026-11-10","dateModified":"2026-11-26","version":"2026-11-10",
+  "datePublished":"2026-11-10","dateModified":"2026-11-28","version":"2026-11-10",
   "license":"https://creativecommons.org/licenses/by/4.0/","isAccessibleForFree":true,
   "measurementTechnique":"Operator-entered macOS RMM pilot review with evidence links, bounded tests, pass criteria, stop conditions, owners, exceptions, and retest dates.",
   "keywords":["macOS RMM","Mac RMM","RMM for Mac","macOS RMM checklist","Mac RMM evaluation","Apple silicon RMM","RMM MDM coexistence"],
@@ -83,8 +83,18 @@
       <li>Let the authorized test Mac sleep beyond that threshold. Check whether the console shows the device's last contact and distinguishes stale inventory from a fresh report.</li>
       <li>Wake it and reconnect normally. Confirm that the same record shows a new check-in. If a second record appears or inventory stays stale, capture the two timestamps and leave rollout on hold until a retest passes.</li>
     </ol>
-    <p>Record the result under MAC-22 in the pilot CSV. If Nizlo is on your shortlist, review its <a data-trial-campaign href="https://nizlo.com/solutions/macos-rmm?utm_source=github_pages&amp;utm_medium=authority_bridge&amp;utm_campaign=macos_rmm&amp;utm_content=mac_sleep_reconnect">macOS coverage and pilot setup</a>.</p>
+    <p>Record the result under MAC-22 in the pilot CSV. If your Macs use FileVault, run the <a href="#filevault-restart-pilot">restart test</a> separately. If Nizlo is on your shortlist, review its <a data-trial-campaign href="https://nizlo.com/solutions/macos-rmm?utm_source=github_pages&amp;utm_medium=authority_bridge&amp;utm_campaign=macos_rmm&amp;utm_content=mac_sleep_reconnect">macOS coverage and pilot setup</a>.</p>
   </section>
+<section class="note" aria-labelledby="filevault-restart-pilot">
+  <h2 id="filevault-restart-pilot">Check when a FileVault Mac returns after restart</h2>
+  <p>Use one approved, noncritical Mac with your existing FileVault and MDM policies. Confirm who handles unlock and recovery, and agree how long a device can be offline during maintenance. Keep any recovery key in the approved system.</p>
+  <ol>
+    <li>Before the restart, record the macOS build, device record, last RMM check-in, and the FileVault status reported by the system responsible for encryption.</li>
+    <li>During the approved restart, record what the console shows before an authorized user unlocks the Mac. After unlock, time the first fresh check-in and confirm it belongs to the same device record.</li>
+    <li>Test the remote support workflow separately after sign-in using the normal consent policy. Record when it becomes usable. Compare these timings with the team's maintenance window.</li>
+  </ol>
+  <p>Record encryption ownership under MAC-19, reconnect under MAC-22, and remote support under MAC-16 in the CSV. If the required workflow depends on someone being onsite to unlock a remote Mac, document who can do that before expanding the rollout. See <a href="https://support.apple.com/guide/deployment/dep0a2cb7686/web">Apple's FileVault device management guidance</a> for the encryption and recovery responsibilities.</p>
+</section>
 <section class="note" aria-labelledby="mixed-fleet-pilot">
   <h2 id="mixed-fleet-pilot">Run the matrix on a mixed fleet</h2>
   <p>Start with one authorized, noncritical Mac and one representative Windows device. Record the tenant and site, verify that both devices check in, and capture one inventory result and one support result per operating system. Keep your existing MDM in charge of Mac configuration and updates until you have tested who owns each control.</p>
@@ -94,6 +104,6 @@
 <aside class="note"><strong>Do not store secrets in the worksheet:</strong> link to approved evidence systems. Do not place FileVault recovery keys, passwords, tokens, private keys, customer data, or support-session contents in this CSV.</aside>
 <aside class="note"><strong>Relationship disclosure:</strong> Nizlo, a Windows-first RMM and IT-management platform with a native macOS agent, maintains this vendor-neutral template. The worksheet does not claim that Nizlo or any other vendor passes every control.</aside>
 </main>
-<footer class="wrap"><span>Maintained by Nizlo · Updated November 26, 2026</span><span><a href="citation.html">Citation</a> · <a href="resource-index.json">Machine-readable index</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source</a></span></footer>
+<footer class="wrap"><span>Maintained by Nizlo · Updated November 28, 2026</span><span><a href="citation.html">Citation</a> · <a href="resource-index.json">Machine-readable index</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source</a></span></footer>
 <script src="assets/trial-campaign.js?v=20261127" defer></script>
 </body></html>
