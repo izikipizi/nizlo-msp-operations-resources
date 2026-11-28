@@ -6,12 +6,23 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-28T10:03:24Z</updated>
+  <updated>2026-11-28T10:14:46Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>Check the active adapter before retrying a DNS job</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-script-not-running-job-stuck-troubleshooting-checklist.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-script-not-running-job-stuck-troubleshooting-checklist.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_dns_drift#dns-drift-pilot" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-script-not-running-job-stuck-troubleshooting-checklist.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-script-not-running-job-stuck-troubleshooting-checklist.csv" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-script-not-running-job-stuck-troubleshooting-checklist.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_restart_recovery#restart-during-job" />
+    <updated>2026-11-28T10:14:46Z</updated>
+    <category term="operations" /><category term="automation" /><category term="troubleshooting" /><category term="RMM" />
+    <summary>Check the active Windows interface, IPv4 and IPv6 settings, and the DHCP or static DNS baseline before retrying a job. The full 24-step checklist and CSV remain available. Includes a worked restart example to verify endpoint state before retrying an interrupted installer.</summary>
+  </entry>
   <entry>
     <title>n8n RMM integration: read-only MSP workflows</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/n8n-rmm-integration.html</id>
@@ -23,16 +34,6 @@
     <updated>2026-11-28T10:03:24Z</updated>
     <category term="n8n" /><category term="RMM API" /><category term="MSP automation" />
     <summary>Download two inactive workflows using n8n's built-in HTTP Request node. Read up to 50 active critical alerts or up to 100 active Windows endpoints reported offline in an authorized Nizlo workspace. The guide covers credential setup and expected results.</summary>
-  </entry>
-  <entry>
-    <title>Check the active adapter before retrying a DNS job</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-script-not-running-job-stuck-troubleshooting-checklist.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-script-not-running-job-stuck-troubleshooting-checklist.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=rmm_dns_drift#dns-drift-pilot" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-script-not-running-job-stuck-troubleshooting-checklist.html" />
-    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-script-not-running-job-stuck-troubleshooting-checklist.csv" />
-    <updated>2026-11-28T09:31:40Z</updated>
-    <category term="operations" /><category term="automation" /><category term="troubleshooting" /><category term="RMM" />
-    <summary>Check the active Windows interface, IPv4 and IPv6 settings, and the DHCP or static DNS baseline before retrying a job. The full 24-step checklist and CSV remain available.</summary>
   </entry>
   <entry>
     <title>Test a seven-day stale-device report before rollout</title>

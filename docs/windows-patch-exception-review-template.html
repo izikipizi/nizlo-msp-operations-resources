@@ -32,7 +32,7 @@
 <section class="note" aria-labelledby="pending-restart-evidence">
 <h2 id="pending-restart-evidence">Worked example: 12 installs, 10 verified closures</h2>
 <p>In this example a fix takes effect only after restart. The console shows 12 successful installs. Ten devices restarted and passed a fresh check for the expected build. Two production devices are still waiting for their approved maintenance window.</p>
-<p>Report 10 of 12 verified closures. Keep the other two in scope and record their pending restarts, last evidence timestamps, accountable owner, and scheduled restart and retest. If a device misses the window, escalate to the risk owner. Close each record only after fresh evidence confirms the expected build or patch state.</p>
+<p>Report 10 of 12 verified closures. Keep the other two in scope and record their pending restarts, last evidence timestamps, accountable owner, and scheduled restart and retest. If a device misses the window, escalate to the risk owner. Close each record only after fresh evidence confirms the expected build or patch state. If the job stopped reporting during its approved restart, <a href="rmm-script-not-running-job-stuck-troubleshooting-checklist.html#restart-during-job">check the restart and endpoint evidence</a> before recording a retry.</p>
 <p>For the rationale behind separating installed from verified, see Nizlo founder Kip Ecklund's <a href="https://www.cybersecurity-insiders.com/patch-counts-do-not-prove-exposure-closure/">patch exposure article in Cybersecurity Insiders</a>.</p>
 </section>
 <section class="note" aria-labelledby="dotnet-runtime-exception">
