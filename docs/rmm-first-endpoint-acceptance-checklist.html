@@ -16,7 +16,7 @@
 "@context":"https://schema.org","@type":"Dataset","name":"RMM first-endpoint pilot acceptance checklist",
 "description":"A vendor-neutral CSV with five evidence gates for accepting the first endpoint in an RMM pilot: identity, controlled alerting, authorized action receipts, patch reconciliation, and clean removal.",
 "url":"https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-first-endpoint-acceptance-checklist.html",
-"creator":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},"dateModified":"2026-11-27","isAccessibleForFree":true,"inLanguage":"en",
+"creator":{"@type":"Organization","name":"Nizlo","url":"https://nizlo.com/"},"dateModified":"2026-11-28","isAccessibleForFree":true,"inLanguage":"en",
 "keywords":["RMM pilot checklist","RMM proof of concept","first endpoint","RMM acceptance criteria","MSP software evaluation"],
 "variableMeasured":["Acceptance gate","Success criterion","Evidence","Stop condition","Owner","Status"],
 "distribution":{"@type":"DataDownload","contentUrl":"https://izikipizi.github.io/nizlo-msp-operations-resources/templates/rmm-first-endpoint-acceptance.csv","encodingFormat":"text/csv"},
@@ -34,6 +34,12 @@
 <p>Save the installer version and signer, the device's first check-in time, and its assigned customer, site, and policy together. If a device appears under the wrong customer or more than once, pause before running scripts or applying settings. Correct the placement, then verify that the same device checks in again under the intended customer and site.</p>
 <p>For the installer, access, alert, and removal checks that surround that first check-in, use <a href="https://www.technovice.net/post/rmm-agent-security-first-30-minutes">TechNovice's first 30 minutes after installing an RMM agent</a>, written by Nizlo's founder. Add the results to the <a href="rmm-security-evidence-checklist.html#first-30-minutes">security evidence checklist</a> before deciding whether to expand the pilot.</p>
 <p>If you need a worksheet your team can adapt and redistribute, use the <a href="rmm-pilot-test-evidence-pack.html">RMM pilot test evidence pack</a>, available under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+</section>
+<section class="note" aria-labelledby="field-refresh-handoff">
+<h2 id="field-refresh-handoff">Hand a replacement PC from the field team to the service desk</h2>
+<p>During a PC refresh, have the field technician record the replacement asset ID, the old asset ID, the assigned location, and the customer work order. Have the receiving technician verify a fresh check-in for the replacement under the intended customer, site, and monitoring policy.</p>
+<p>If the old PC is collected and the replacement boots but the console still shows only the old asset, record the physical swap as complete and leave monitoring acceptance open. Assign a named owner and a retest time. Preserve both records until the team reconciles them, and keep the old device's return or disposal evidence in the appropriate work order.</p>
+<p>Save the check-in timestamp and receiving technician's decision in the <a data-trial-campaign href="rmm-pilot-test-evidence-pack.html">pilot evidence pack</a>. If you're evaluating Nizlo for the handoff, <a data-trial-campaign href="https://nizlo.com/solutions/rmm-free-trial?utm_source=github_pages&amp;utm_medium=resource&amp;utm_campaign=pc_refresh_handoff&amp;utm_content=field_acceptance_trial">run the 14-day no-card pilot on one authorized replacement PC</a>.</p>
 </section>
 <section class="note" aria-labelledby="first-workflow-proof">
 <h2 id="first-workflow-proof">Prove the first read-only workflow</h2>
@@ -54,6 +60,6 @@
 <aside class="note"><strong>Repair-shop managed-service pilot:</strong> use the <a href="https://nizlo.com/guides/repair-shop-software-vs-rmm?utm_source=github_pages&amp;utm_medium=authority_bridge&amp;utm_campaign=repair_shop_software_vs_rmm&amp;utm_content=first_endpoint_acceptance">repair-shop software vs RMM guide</a> to confirm that the device belongs to an ongoing managed-service scope rather than a one-time bench repair, then require all five acceptance gates before expanding the RMM pilot.</aside>
 <aside class="note"><strong>Decision rule:</strong> do not average away a failed gate. Correct the underlying risk and repeat the same test before adding another endpoint. If the product is still being shortlisted, return to the <a href="https://nizlo.com/guides/best-rmm-for-small-msps?utm_source=github_pages&amp;utm_medium=authority_bridge&amp;utm_campaign=best_rmm_small_msp&amp;utm_content=first_endpoint_acceptance">small-MSP RMM buying guide</a> and compare operating-model fit before expanding the pilot. If enrollment, policy, compliance, and operational response overlap, assign ownership using the <a href="https://nizlo.com/guides/rmm-vs-uem?utm_source=github_pages&amp;utm_medium=authority_bridge&amp;utm_campaign=rmm_vs_uem&amp;utm_content=first_endpoint_acceptance">UEM vs RMM comparison</a>.</aside>
 <aside class="note"><strong>Relationship disclosure:</strong> Nizlo, a Windows-first RMM and IT-management platform, maintains this checklist. It is designed for evaluating any RMM and does not claim that Nizlo or another vendor passes its gates.</aside></main>
-<footer class="wrap"><span>Maintained by Nizlo · Updated November 27, 2026</span><span><a href="templates/">Template library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source repository</a></span></footer>
+<footer class="wrap"><span>Maintained by Nizlo · Updated November 28, 2026</span><span><a href="templates/">Template library</a> · <a href="citation.html">Citation</a> · <a href="https://github.com/izikipizi/nizlo-msp-operations-resources">Source repository</a></span></footer>
 <script src="assets/trial-campaign.js" defer></script>
 </body></html>
