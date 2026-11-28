@@ -6,12 +6,27 @@
   <link rel="self" type="application/atom+xml" href="https://izikipizi.github.io/nizlo-msp-operations-resources/feed.xml" />
   <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
   <link rel="alternate" type="text/html" href="https://izikipizi.github.io/nizlo-msp-operations-resources/" />
-  <updated>2026-11-28T02:40:03Z</updated>
+  <updated>2026-11-28T02:58:25Z</updated>
   <author>
     <name>Nizlo</name>
     <uri>https://nizlo.com/</uri>
   </author>
   <rights>Copyright 2026 Nizlo. Resource titles and links may be used for discovery.</rights>
+  <entry>
+    <title>macOS RMM pilot evaluation matrix</title>
+    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/macos-rmm-pilot-evaluation-matrix.html</id>
+    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/macos-rmm-pilot-evaluation-matrix.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=mac_rmm_filevault_restart#filevault-restart-pilot" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/macos-rmm-pilot-evaluation-matrix.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=mac_rmm_reconnect#mac-sleep-and-reconnect" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/macos-rmm-pilot-evaluation-matrix.html" />
+    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/macos-rmm-pilot-evaluation-matrix.csv" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/macos-rmm-pilot-evaluation-matrix.html#remote-support-example" />
+    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/macos-rmm-pilot-evaluation-matrix.html#one-mac-pilot" />
+    <updated>2026-11-28T02:58:25Z</updated>
+    <category term="macOS RMM" />
+    <category term="RMM evaluation" />
+    <category term="MDM" />
+    <summary>Evaluate when an encrypted Mac resumes monitoring and remote support after a restart. Record the console before unlock, time the first new check-in afterward, and test the support session separately. Includes the 24-control pilot CSV and retains the separate sleep test.</summary>
+  </entry>
   <entry>
     <title>RMM quote normalization calculator</title>
     <id>https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-quote-normalization-calculator.html</id>
@@ -44,20 +59,6 @@
     <updated>2026-11-28T02:02:01Z</updated>
     <category term="n8n" /><category term="RMM API" /><category term="MSP automation" />
     <summary>Review a disclosed, read-only n8n community node for tenant-scoped customers, sites, endpoints, and alerts, with two inactive workflows, exact permission boundaries, and a 14-day trial workspace path. Enroll one authorized Windows device to test the offline workflow and distinguish an authenticated empty result from a connection failure.</summary>
-  </entry>
-  <entry>
-    <title>macOS RMM pilot evaluation matrix</title>
-    <id>https://izikipizi.github.io/nizlo-msp-operations-resources/macos-rmm-pilot-evaluation-matrix.html</id>
-    <link href="https://izikipizi.github.io/nizlo-msp-operations-resources/macos-rmm-pilot-evaluation-matrix.html?utm_source=nizlo_resource_feed&amp;utm_medium=rss&amp;utm_campaign=mac_rmm_reconnect#mac-sleep-and-reconnect" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/macos-rmm-pilot-evaluation-matrix.html" />
-    <link rel="enclosure" type="text/csv" href="https://izikipizi.github.io/nizlo-msp-operations-resources/templates/macos-rmm-pilot-evaluation-matrix.csv" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/macos-rmm-pilot-evaluation-matrix.html#remote-support-example" />
-    <link rel="related" href="https://izikipizi.github.io/nizlo-msp-operations-resources/macos-rmm-pilot-evaluation-matrix.html#one-mac-pilot" />
-    <updated>2026-11-27T23:53:47Z</updated>
-    <category term="macOS RMM" />
-    <category term="RMM evaluation" />
-    <category term="MDM" />
-    <summary>Use 24 controls to evaluate macOS RMM. The sleep-and-reconnect test checks whether the console marks a sleeping Mac stale and updates the same device record when it wakes. Record the result under MAC-22 in the pilot CSV before expanding the rollout.</summary>
   </entry>
   <entry>
     <title>Free RMM pricing comparison worksheet</title>
